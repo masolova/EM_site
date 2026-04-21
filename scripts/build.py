@@ -133,6 +133,21 @@ def coerce(s):
 # Markdown → HTML (минимальный конвертер для тела поста)
 # ═══════════════════════════════════════════════════════════════════
 
+def _img_orient(src):
+    """Определяет 'portrait' если h > w * 1.1, иначе ''. Читает реальный файл."""
+    try:
+        from PIL import Image as _PILImage
+        rel = src.lstrip('/')
+        full = ROOT / rel
+        if not full.exists():
+            return ''
+        with _PILImage.open(full) as im:
+            w, h = im.size
+        return 'portrait' if h > w * 1.1 else ''
+    except Exception:
+        return ''
+
+
 def md_to_html(md):
     """
     Простой Markdown-конвертер. Поддерживает:
@@ -262,9 +277,13 @@ def inline(text):
     # Экранируем HTML-спецсимволы (но осторожно — уже вставленные теги не трогаем)
     # Этот парсер работает с чистым markdown, HTML-теги внутри обрабатываются как есть.
 
-    # Картинки ![alt](url)
-    text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)',
-                  r'<img src="\2" alt="\1">', text)
+    # Картинки ![alt](url) — добавляем data-orient="portrait" для высоких
+    def _img_repl(m):
+        alt, src = m.group(1), m.group(2)
+        orient = _img_orient(src)
+        attr = f' data-orient="{orient}"' if orient else ''
+        return f'<img src="{src}" alt="{alt}"{attr}>'
+    text = re.sub(r'!\[([^\]]*)\]\(([^)]+)\)', _img_repl, text)
     # Ссылки [text](url)
     text = re.sub(r'\[([^\]]+)\]\(([^)]+)\)',
                   r'<a href="\2">\1</a>', text)

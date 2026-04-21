@@ -570,12 +570,17 @@ body {
 }
 .article__body img {
   display: block;
-  max-width: 45%;
-  max-height: 50vh;
+  max-width: 100%;
   height: auto;
-  object-fit: contain;
   margin: 32px auto;
   border-radius: 4px;
+}
+/* Высокие картинки (вертикальные/квадратные) — ограничиваем по высоте,
+   горизонтальные (aspect-ratio > 1.1) остаются в полную ширину колонки. */
+.article__body img[data-orient="portrait"] {
+  max-width: 55%;
+  max-height: 70vh;
+  object-fit: contain;
 }
 .article__body figure { margin: 32px 0; }
 .article__body figure figcaption {
