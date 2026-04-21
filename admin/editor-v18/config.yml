@@ -1,0 +1,205 @@
+# ═══════════════════════════════════════════════════════════════════
+# Конфиг Decap CMS — редактор постов Елены Масоловой
+# ═══════════════════════════════════════════════════════════════════
+#
+# Файл читается браузером при заходе на /admin/editor-v18/
+# Меняешь его в репо → правки применяются сразу после пуша.
+#
+# ═══════════════════════════════════════════════════════════════════
+
+# ─── Подключение к GitHub ───────────────────────────────────────────
+backend:
+  name: github
+  repo: masolova/EM_site
+  branch: main
+  # OAuth-сервер (Decap-team публичный хостинг). Безопасно: он только
+  # передаёт тебе токен GitHub после твоего логина, пароль не видит.
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
+
+# Локальный тестовый режим: если запустишь `npx decap-server`,
+# CMS будет писать в реальные файлы в твоей папке, без GitHub.
+local_backend: true
+
+# ─── Хранилище картинок ─────────────────────────────────────────────
+# ВРЕМЕННО: картинки падают в assets/posts/ в репо.
+# Когда настроишь Cloudflare R2 — заменим на external_media_library.
+media_folder: "assets/posts"
+public_folder: "/assets/posts"
+
+# ─── Редакторский режим (черновики через PR) ────────────────────────
+# simple — правки идут прямо в main. Можно поменять на editorial_workflow,
+# тогда Decap будет создавать PR и давать кнопки «в ревью / опубликовать».
+publish_mode: simple
+
+# ─── Язык интерфейса ────────────────────────────────────────────────
+locale: "ru"
+
+# ═══════════════════════════════════════════════════════════════════
+# КОЛЛЕКЦИИ
+# ═══════════════════════════════════════════════════════════════════
+collections:
+
+  # ─── ПОСТЫ ────────────────────────────────────────────────────────
+  - name: "posts"
+    label: "Посты"
+    label_singular: "Пост"
+    folder: "content/posts"
+    create: true
+    # Файл создаётся с именем по слагу, например: finite-games.md
+    slug: "{{fields.slug}}"
+    # Что показывать в списке слева
+    summary: "{{title}} · {{date | date('YYYY-MM-DD')}} · {{status}}"
+    # Сортировка списка
+    sortable_fields: ["date", "title", "status"]
+    view_filters:
+      - label: "Опубликованные"
+        field: status
+        pattern: "published"
+      - label: "Черновики"
+        field: status
+        pattern: "draft"
+      - label: "Закреплённые"
+        field: pinned
+        pattern: true
+    # Поля — точно как в content/posts/_template.md
+    fields:
+      - { label: "Заголовок",      name: "title",        widget: "string",  hint: "Пиши как есть, с русскими кавычками и тире." }
+
+      - { label: "Slug (URL)",     name: "slug",         widget: "string",
+          hint: "Латиница в нижнем регистре, слова через дефис. Пример: finite-games",
+          pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "только латиница в нижнем регистре, слова через дефис"] }
+
+      - { label: "Дата публикации", name: "date",        widget: "datetime",
+          date_format: "YYYY-MM-DD", time_format: false, picker_utc: false,
+          hint: "Устанавливается один раз. По этой дате пост встаёт в ленту." }
+
+      - { label: "Краткое описание", name: "summary",    widget: "text",
+          hint: "1–2 предложения. Показывается в превью на главной и в мета-тегах." }
+
+      - { label: "Язык",           name: "lang",         widget: "select",
+          options: ["ru", "en"], default: "ru" }
+
+      # ─── Опциональные ────────────────────────────────────────────
+      - { label: "Теги", name: "tags", widget: "list", required: false,
+          hint: "Русские слова в нижнем регистре. Пример: продукт, книги." }
+
+      - { label: "Рубрика (kicker)", name: "kicker",    widget: "string", required: false,
+          hint: "Подпись над заголовком. Например: «Книги»." }
+
+      - { label: "Время чтения (мин)", name: "reading_time", widget: "number", required: false,
+          value_type: "int", min: 1, max: 120,
+          hint: "Если не задано — build.py посчитает автоматически." }
+
+      - { label: "Статус", name: "status", widget: "select",
+          options:
+            - { label: "Опубликовано", value: "published" }
+            - { label: "Черновик",     value: "draft" }
+          default: "published" }
+
+      - { label: "Закрепить на главной", name: "pinned", widget: "boolean",
+          default: false, required: false,
+          hint: "Отмеченный пост встанет сверху ленты на главной." }
+
+      # ─── Тело поста (WYSIWYG) ────────────────────────────────────
+      - label: "Текст поста"
+        name: "body"
+        widget: "markdown"
+        hint: "Кнопки форматирования сверху: B I, заголовки, ссылки, картинки, списки, цитаты."
+        buttons:
+          - bold
+          - italic
+          - code
+          - link
+          - heading-two
+          - heading-three
+          - quote
+          - bulleted-list
+          - numbered-list
+        editor_components:
+          - image
+          - code-block
+
+  # ─── НАСТРОЙКИ САЙТА ──────────────────────────────────────────────
+  # Правит один файл content/settings.yaml
+  - name: "settings"
+    label: "Настройки сайта"
+    editor:
+      preview: false
+    files:
+      - name: "site_settings"
+        label: "Основные настройки"
+        file: "content/settings.yaml"
+        fields:
+
+          # ─── Профиль ─────────────────────────────────────────────
+          - label: "Профиль (главная страница)"
+            name: "profile"
+            widget: "object"
+            fields:
+              - { label: "Имя в шапке",  name: "name",  widget: "string" }
+              - { label: "Фото",          name: "photo", widget: "image",  hint: "Ссылка вида /assets/elena.jpg" }
+              - { label: "Био (абзац под именем)", name: "bio", widget: "text" }
+              - label: "Список «о себе»"
+                name: "about"
+                widget: "list"
+                field: { label: "Пункт", name: "item", widget: "string", hint: "Поддерживает Markdown-ссылки: [текст](url)" }
+
+          # ─── Меню ────────────────────────────────────────────────
+          - label: "Меню в шапке"
+            name: "menu"
+            widget: "list"
+            summary: "{{fields.title}} → {{fields.url}}"
+            fields:
+              - { label: "Название", name: "title", widget: "string" }
+              - { label: "URL",      name: "url",   widget: "string", hint: "Например: /about/" }
+
+          # ─── Рассылка ────────────────────────────────────────────
+          - label: "Email-рассылка"
+            name: "newsletter"
+            widget: "object"
+            fields:
+              - { label: "Провайдер", name: "provider", widget: "select",
+                  options: ["none", "buttondown", "mailerlite", "substack"],
+                  default: "none" }
+              - { label: "URL формы подписки", name: "form_url", widget: "string", required: false }
+              - { label: "Заголовок",          name: "title",    widget: "string", required: false }
+              - { label: "Подзаголовок",       name: "subtitle", widget: "string", required: false }
+              - { label: "Текст кнопки",       name: "button_label", widget: "string", required: false }
+
+          # ─── Внешние ссылки ──────────────────────────────────────
+          - label: "Внешние ссылки"
+            name: "external"
+            widget: "object"
+            fields:
+              - { label: "Telegram", name: "telegram", widget: "string", required: false }
+              - { label: "Email",    name: "email",    widget: "string", required: false }
+
+          # ─── Хранилище картинок ──────────────────────────────────
+          - label: "Хранилище картинок"
+            name: "media"
+            widget: "object"
+            fields:
+              - { label: "Провайдер", name: "provider", widget: "select",
+                  options: ["repo", "r2"], default: "r2" }
+              - { label: "Base URL (для R2)", name: "base_url", widget: "string", required: false,
+                  hint: "Например: https://cdn.elenamasolova.com" }
+              - label: "Сжатие при загрузке"
+                name: "compression"
+                widget: "object"
+                fields:
+                  - { label: "Формат",     name: "format",    widget: "select",
+                      options: ["webp", "jpg", "png"], default: "webp" }
+                  - { label: "Макс. ширина (px)", name: "max_width", widget: "number",
+                      value_type: "int", default: 1600 }
+                  - { label: "Качество (1-100)",  name: "quality",   widget: "number",
+                      value_type: "int", default: 82, min: 1, max: 100 }
+
+          # ─── SEO ─────────────────────────────────────────────────
+          - label: "SEO"
+            name: "seo"
+            widget: "object"
+            fields:
+              - { label: "Заголовок сайта (title)", name: "site_title", widget: "string" }
+              - { label: "Описание (description)",  name: "description", widget: "text" }
+              - { label: "OG-картинка",             name: "og_image",   widget: "image" }

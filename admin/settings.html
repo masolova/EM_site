@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Настройки — Админка — Елена Масолова</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <style>
+    .settings { max-width: 760px; }
+
+    .field {
+      margin-bottom: 20px;
+    }
+    .field__label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .field__hint {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .field input[type="text"],
+    .field input[type="url"],
+    .field textarea,
+    .field select {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      font-family: var(--sans);
+      font-size: 14px;
+      background: var(--panel);
+      color: var(--text);
+      outline: none;
+      line-height: 1.4;
+    }
+    .field textarea {
+      resize: vertical;
+      min-height: 80px;
+      font-family: var(--serif);
+      font-size: 15px;
+    }
+    .field input:focus, .field textarea:focus, .field select:focus { border-color: var(--accent); }
+
+    /* Фото */
+    .photo-field {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 20px;
+      align-items: start;
+    }
+    .photo-field img {
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+    .photo-field__actions {
+      padding-top: 10px;
+    }
+    .photo-field__actions .btn { margin-right: 6px; }
+
+    /* Список пунктов меню */
+    .menu-list {
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      background: var(--panel);
+      overflow: hidden;
+    }
+    .menu-item {
+      display: grid;
+      grid-template-columns: 24px 1fr 1.3fr 80px;
+      gap: 10px;
+      align-items: center;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .menu-item:last-child { border-bottom: none; }
+    .menu-item .drag {
+      color: var(--muted-2);
+      font-size: 14px;
+      cursor: grab;
+      text-align: center;
+      user-select: none;
+    }
+    .menu-item input {
+      padding: 7px 10px;
+      border: 1px solid var(--border);
+      border-radius: 5px;
+      font-family: var(--sans);
+      font-size: 13px;
+      background: var(--bg);
+      color: var(--text);
+      outline: none;
+    }
+    .menu-item input:focus { border-color: var(--accent); background: var(--panel); }
+    .menu-item .remove {
+      text-align: center;
+      color: var(--muted-2);
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .menu-item .remove:hover { color: var(--danger); }
+    .menu-item--head {
+      background: #faf9f3;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 8px 12px;
+    }
+    .menu-add {
+      padding: 10px 12px;
+      text-align: left;
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+      border-top: 1px solid var(--border);
+    }
+    .menu-add:hover { color: var(--accent); background: var(--pill); }
+
+    /* Email провайдер */
+    .radio-card {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 12px 14px;
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      background: var(--panel);
+      cursor: pointer;
+      margin-bottom: 8px;
+    }
+    .radio-card.is-on {
+      border-color: var(--accent);
+      background: rgba(31,31,30,.04);
+    }
+    .radio-card__dot {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      border: 1.5px solid var(--border-strong);
+      background: var(--panel);
+      margin-top: 2px;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .radio-card.is-on .radio-card__dot {
+      border-color: var(--accent);
+      background: var(--panel);
+    }
+    .radio-card.is-on .radio-card__dot::after {
+      content: "";
+      position: absolute;
+      top: 3px; left: 3px;
+      width: 7px; height: 7px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+    .radio-card__body { flex: 1; }
+    .radio-card__title {
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--text);
+    }
+    .radio-card__text {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .radio-card__tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--pill);
+      padding: 2px 6px;
+      border-radius: 3px;
+      margin-left: 6px;
+    }
+
+    /* Save bar — в рабочей версии sticky, в макете обычный */
+    .save-bar {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 8px;
+      margin-top: 24px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Шапка -->
+  <div class="adm-top">
+    <div class="adm-top__brand">
+      Елена Масолова <span class="label">Админка</span>
+    </div>
+    <nav class="adm-top__nav">
+            <a href="home.html">Главная</a>
+      <a href="posts.html">Посты</a>
+      <a href="settings.html" class="is-active">Настройки</a>
+      <a href="../" target="_blank">Открыть сайт ↗</a>
+    </nav>
+    <div class="adm-top__user">
+      <span class="adm-top__user-name">elena.masolova</span>
+      <div class="adm-top__avatar">ЕМ</div>
+    </div>
+  </div>
+
+  <main class="adm-main">
+
+    <div class="adm-header">
+      <div>
+        <h1>Настройки сайта</h1>
+        <p class="adm-header__sub" style="margin: 4px 0 0;">Всё, что редактируется без&nbsp;написания нового поста.</p>
+      </div>
+    </div>
+
+    <div class="settings">
+
+      <!-- Профиль -->
+      <section class="panel" style="margin-bottom: 16px;">
+        <div class="panel__hd"><h2>Профиль</h2></div>
+        <div class="panel__bd">
+
+          <div class="field">
+            <label class="field__label">Имя на&nbsp;сайте</label>
+            <input type="text" value="Елена Масолова">
+          </div>
+
+          <div class="field photo-field">
+            <img src="../assets/elena.jpg" alt="">
+            <div>
+              <label class="field__label">Фото</label>
+              <div class="photo-field__actions">
+                <button class="btn btn--secondary">Загрузить другое</button>
+                <button class="btn btn--ghost">Удалить</button>
+              </div>
+              <p class="field__hint">Квадратное, минимум 400×400. Обрезается в&nbsp;круг автоматически.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label">Краткое описание</label>
+            <textarea>продуктовый менеджер и основатель, делаю AI-инструменты для анализа рынка недвижимости и качества медиа-контента. Веду этот блог, пишу про продукт, данные и языки.</textarea>
+            <p class="field__hint">Один абзац под именем на&nbsp;главной.</p>
+          </div>
+
+          <div class="field">
+            <label class="field__label">Список «о себе» (по&nbsp;строке на&nbsp;пункт)</label>
+            <textarea style="min-height: 110px;">Создала AI-поиск и аналитику для рынка недвижимости Балтии.
+Запустила MVP для автоматической проверки качества новостей.
+Веду проекты вокруг латышского и ливского языков.
+Пишу в [Телеграм-канал](https://t.me/...).</textarea>
+            <p class="field__hint">Ссылки в&nbsp;формате [текст](URL) — сработают автоматически.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Меню -->
+      <section class="panel" style="margin-bottom: 16px;">
+        <div class="panel__hd"><h2>Меню в&nbsp;шапке</h2></div>
+        <div class="panel__bd">
+
+          <div class="menu-list">
+            <div class="menu-item menu-item--head">
+              <span></span>
+              <span>Название</span>
+              <span>Ссылка</span>
+              <span></span>
+            </div>
+            <div class="menu-item">
+              <span class="drag">⋮⋮</span>
+              <input type="text" value="Обо мне">
+              <input type="text" value="/stati/obo-mne/">
+              <span class="remove">Убрать</span>
+            </div>
+            <div class="menu-item">
+              <span class="drag">⋮⋮</span>
+              <input type="text" value="Проекты">
+              <input type="text" value="/stati/proekty/">
+              <span class="remove">Убрать</span>
+            </div>
+            <div class="menu-item">
+              <span class="drag">⋮⋮</span>
+              <input type="text" value="Контакты">
+              <input type="text" value="/stati/kontakty/">
+              <span class="remove">Убрать</span>
+            </div>
+            <div class="menu-add">＋ Добавить пункт</div>
+          </div>
+
+          <p class="field__hint" style="margin-top: 10px;">Перетягивай за&nbsp;⋮⋮, чтобы менять порядок. В&nbsp;ссылку можно вставить внешний URL или путь к&nbsp;странице.</p>
+        </div>
+      </section>
+
+      <!-- Email-рассылка -->
+      <section class="panel" style="margin-bottom: 16px;">
+        <div class="panel__hd"><h2>Email-рассылка</h2></div>
+        <div class="panel__bd">
+
+          <p class="field__hint" style="margin: -4px 0 14px;">Сервис, к&nbsp;которому подключена кнопка «Подписаться» на&nbsp;сайте.</p>
+
+          <label class="radio-card">
+            <span class="radio-card__dot"></span>
+            <span class="radio-card__body">
+              <span class="radio-card__title">Не&nbsp;подключено <span class="radio-card__tag">Сейчас</span></span>
+              <span class="radio-card__text">Кнопка «Подписаться» ведёт на&nbsp;заглушку.</span>
+            </span>
+          </label>
+
+          <label class="radio-card is-on">
+            <span class="radio-card__dot"></span>
+            <span class="radio-card__body">
+              <span class="radio-card__title">Buttondown <span class="radio-card__tag">Выбрано</span></span>
+              <span class="radio-card__text">Простой и&nbsp;дешёвый сервис. Бесплатно до&nbsp;100 подписчиков, $9/мес дальше.</span>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <span class="radio-card__dot"></span>
+            <span class="radio-card__body">
+              <span class="radio-card__title">Mailerlite</span>
+              <span class="radio-card__text">Бесплатно до&nbsp;1&nbsp;000 подписчиков. Больше шаблонов, чуть сложнее интерфейс.</span>
+            </span>
+          </label>
+
+          <label class="radio-card">
+            <span class="radio-card__dot"></span>
+            <span class="radio-card__body">
+              <span class="radio-card__title">Substack / Beehiiv / Kit</span>
+              <span class="radio-card__text">Если хочется сразу социальную ленту и&nbsp;платные подписки в&nbsp;будущем.</span>
+            </span>
+          </label>
+
+          <div class="field" style="margin-top: 18px;">
+            <label class="field__label">URL формы Buttondown</label>
+            <input type="url" value="https://buttondown.email/elenamasolova" placeholder="https://…">
+            <p class="field__hint">Вставится как&nbsp;action у&nbsp;формы подписки. Нужен только после выбора сервиса.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Соцсети / внешние ссылки -->
+      <section class="panel" style="margin-bottom: 16px;">
+        <div class="panel__hd"><h2>Внешние ссылки</h2></div>
+        <div class="panel__bd">
+          <div class="field">
+            <label class="field__label">Телеграм-канал</label>
+            <input type="url" value="https://t.me/...">
+          </div>
+          <div class="field">
+            <label class="field__label">Email для связи</label>
+            <input type="text" value="elena@elenamasolova.com">
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="save-bar">
+      <button class="btn btn--ghost">Отменить</button>
+      <button class="btn btn--primary btn--lg">Сохранить изменения</button>
+    </div>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Елена Масолова</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="alternate" type="application/rss+xml" title="Елена Масолова — блог (RSS)" href="/feed.xml">
+  <script defer src="assets/site.js"></script>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Верхняя строка: имя + навигация (десктоп) / имя + бургер (мобайл) -->
+    <header class="top">
+      <a href="#" class="brand">Елена Масолова</a>
+      <div class="top-right">
+
+        <nav class="top-nav">
+
+          <a href="#" data-highlight-slot="1" hidden>Хайлайт-1</a>
+          <a href="#" data-highlight-slot="2" hidden>Хайлайт-2</a>
+          <a href="#" data-highlight-slot="3" hidden>Хайлайт-3</a>
+
+        </nav>
+
+        <div class="lang" data-lang>
+          <button type="button" class="lang__current" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang__flag" aria-hidden="true">🇷🇺</span>RU<span class="lang__chev" aria-hidden="true"></span>
+          </button>
+          <div class="lang__menu" role="listbox">
+            <a href="#" class="is-active" role="option"><span class="lang__flag" aria-hidden="true">🇷🇺</span>Русский</a>
+            <a href="#" role="option"><span class="lang__flag" aria-hidden="true">🇬🇧</span>English</a>
+          </div>
+        </div>
+
+        <button class="top-burger" aria-label="Меню" type="button">
+        <span></span><span></span><span></span>
+      </button>
+
+      </div>
+    </header>
+
+    <!-- Биография -->
+    <section class="bio">
+      <div class="bio__photo">
+        <img src="assets/elena.jpg" alt="Елена Масолова">
+      </div>
+      <div class="bio__text">
+        <h1>Елена Масолова</h1>
+        <div class="bio__body">
+          <p>Предприниматель, 6&nbsp;экзитов (в&nbsp;т.ч. Groupon, Pixonic, Eduson).</p>
+          <p>11&nbsp;стартапов с&nbsp;выручкой $1+&nbsp;млн. (в&nbsp;т.ч. AddVenture&nbsp;II, Wallstr, BeautyBox).</p>
+          <p>Сейчас инвестирую в&nbsp;<a href="https://forza.capital" target="_blank" rel="noopener">Forza.Capital</a>.</p>
+          <p>
+            Норильск
+            <span class="arrow" aria-hidden="true">
+              <svg viewBox="0 0 22 12" fill="none" stroke="#1f1f1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 6 H20 M15 2 L20 6 L15 10"/>
+              </svg>
+            </span>
+            Москва
+            <span class="arrow" aria-hidden="true">
+              <svg viewBox="0 0 22 12" fill="none" stroke="#1f1f1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M1 6 H20 M15 2 L20 6 L15 10"/>
+              </svg>
+            </span>
+            Кремниевая&nbsp;Долина.
+          </p>
+          <p>Читаю 180–200&nbsp;книг в&nbsp;год <span class="emo">📚</span>. Играю в&nbsp;теннис <span class="emo">🎾</span>.</p>
+        </div>
+
+        <div class="bio__socials">
+          <a href="https://linkedin.com/in/masolova" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://x.com/masolova" target="_blank" rel="noopener">Twitter</a>
+          <a href="https://www.instagram.com/elena_masolova/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.goodreads.com/user/show/107770261-elena-masolova" target="_blank" rel="noopener">Goodreads</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Компактный CTA-подписки (показывается на мобильном) -->
+    <aside class="cta-strip" aria-label="Подписка">
+      <form class="cta-strip__form" action="https://buttondown.com/api/emails/embed-subscribe/elenamasolova" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/elenamasolova', 'popupwindow')">
+        <input type="hidden" name="tag" value="ru">
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <button type="submit">Подписаться</button>
+      </form>
+      <div class="cta-strip__hint">Дайджест каждые 2&nbsp;недели.</div>
+    </aside>
+
+    <!-- Основной блок: сайдбар + посты -->
+    <main class="main">
+
+      <aside class="tags" aria-label="Теги">
+        <div class="tags__head">
+          <h2 class="tags__title">Темы</h2>
+          <button class="tags__toggle" type="button" aria-expanded="false">Показать все&nbsp;20&nbsp;→</button>
+        </div>
+        <ul class="tags__list">
+          <li><a href="/tags/produkt/"><span class="tag">Продукт</span><span class="count">48</span></a></li>
+          <li><a href="#"><span class="tag">Недвижимость</span><span class="count">42</span></a></li>
+          <li><a href="#"><span class="tag">AI и&nbsp;ML</span><span class="count">37</span></a></li>
+          <li><a href="#"><span class="tag">Данные</span><span class="count">29</span></a></li>
+          <li><a href="#"><span class="tag">Стартапы</span><span class="count">26</span></a></li>
+          <li><a href="#"><span class="tag">Мысли</span><span class="count">24</span></a></li>
+          <li><a href="#"><span class="tag">NLP</span><span class="count">21</span></a></li>
+          <li><a href="#"><span class="tag">Языки</span><span class="count">19</span></a></li>
+          <li><a href="#"><span class="tag">Книги</span><span class="count">17</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Аналитика</span><span class="count">15</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Команда</span><span class="count">13</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Инструменты</span><span class="count">12</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Медиа</span><span class="count">11</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Латышский</span><span class="count">9</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Интервью</span><span class="count">8</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Принципы</span><span class="count">7</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">MVP</span><span class="count">6</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Ливский</span><span class="count">5</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Переезд</span><span class="count">4</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Грузия</span><span class="count">3</span></a></li>
+        </ul>
+      </aside>
+
+      <section class="posts" aria-label="Посты">
+        <ul class="posts__list posts__list--arrow">
+          <!-- POSTS:START -->
+<li data-slug="lies-damn-lies-and-design"><a href="/articles/lies-damn-lies-and-design/">Ложь, наглая ложь и дизайн</a></li>
+          <!-- POSTS:END -->
+          <li data-slug="finite-games"><a href="/articles/finite-games/">Конечные и&nbsp;бесконечные игры</a></li>
+          <li data-slug="life-knowledge"><a href="#">Жизнь&nbsp;— агент создания знания</a></li>
+          <li data-slug="brain-plasticity"><a href="#">Как адаптируется мозг</a></li>
+          <li data-slug="focus-hard"><a href="#">Вот почему мне тяжело фокусироваться</a></li>
+          <li data-slug="you-are-creator"><a href="#">Ты&nbsp;— творец</a></li>
+          <li data-slug="finding-calling"><a href="#">Как я&nbsp;нашла своё призвание</a></li>
+          <li data-slug="macos-setup"><a href="#">Как я&nbsp;настраиваю macOS для эффективной работы</a></li>
+          <li data-slug="hard-work"><a href="#">Как и&nbsp;зачем усердно трудиться</a></li>
+          <li data-slug="startup-is-motion"><a href="#">Стартап&nbsp;— это движение</a></li>
+          <li data-slug="meta-to-profi"><a href="#">Почему я&nbsp;передаю Мету в&nbsp;Profi.ru</a></li>
+          <li data-slug="resist-or-fall"><a href="#">Сопротивляться или управляемо падать</a></li>
+          <li data-slug="crazy-ideas"><a href="#">Новые безумные идеи</a></li>
+          <li data-slug="work-setup"><a href="#">Мой сетап для работы дома и&nbsp;по&nbsp;кафешкам</a></li>
+          <li data-slug="finding-self-machine"><a href="#">Идея машинки, которая помогает найти себя</a></li>
+          <li data-slug="mindful-practice"><a href="#">Самый полный гайд по&nbsp;осознанной практике</a></li>
+          <li data-slug="peterson-valuetainment"><a href="#">Тезисы из&nbsp;интервью Питерсона в&nbsp;Valuetainment</a></li>
+          <li data-slug="jobs-us-eu"><a href="#">Круглый стол: как найти работу в&nbsp;США и&nbsp;Европе</a></li>
+          <li data-slug="worldview-engineering"><a href="#">Картина мира: инженерный подход, творчество и&nbsp;сложность</a></li>
+          <li data-slug="worldview-mindfulness"><a href="#">Картина мира: осознанность, медитация и&nbsp;внутренний зов</a></li>
+          <li data-slug="worldview-life-system"><a href="#">Картина мира: система жизни, баланс и&nbsp;любимое дело</a></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <!-- Вариант C: большой CTA перед подвалом (десктоп) -->
+    <section class="cta-footer" aria-label="Подписка">
+      <h2 class="cta-footer__title">Новые статьи вам на&nbsp;почту</h2>
+      <p class="cta-footer__hint">Дайджест каждые 2&nbsp;недели.</p>
+      <form class="cta-footer__form" action="https://buttondown.com/api/emails/embed-subscribe/elenamasolova" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/elenamasolova', 'popupwindow')">
+        <input type="hidden" name="tag" value="ru">
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <button type="submit">Подписаться</button>
+      </form>
+    </section>
+
+    <footer class="foot">
+      <img class="foot__email" src="assets/email-small.png" alt="email">
+      <p>© Елена Масолова</p>
+    </footer>
+
+  </div>
+</body>
+</html>

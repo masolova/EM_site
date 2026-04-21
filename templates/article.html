@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} — Елена Масолова</title>
+  <meta name="description" content="{{SUMMARY}}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/rss+xml" title="Елена Масолова — блог (RSS)" href="/feed.xml">
+  <script defer src="/assets/site.js"></script>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Та же шапка, что на главной -->
+    <header class="top">
+      <a href="/" class="brand">Елена Масолова</a>
+      <div class="top-right">
+
+        <nav class="top-nav">
+          <a href="#">Обо мне</a>
+          <a href="#">Проекты</a>
+          <a href="#">Контакты</a>
+        </nav>
+
+        <div class="lang" data-lang>
+          <button type="button" class="lang__current" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang__flag" aria-hidden="true">🇷🇺</span>RU<span class="lang__chev" aria-hidden="true"></span>
+          </button>
+          <div class="lang__menu" role="listbox">
+            <a href="/" class="is-active" role="option"><span class="lang__flag" aria-hidden="true">🇷🇺</span>Русский</a>
+            <a href="/en/" role="option"><span class="lang__flag" aria-hidden="true">🇬🇧</span>English</a>
+          </div>
+        </div>
+
+        <button class="top-burger" aria-label="Меню" type="button">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </header>
+
+    <!-- Статья — узкая колонка по центру -->
+    <article class="article">
+      {{#KICKER}}<div class="article__kicker">{{KICKER}}</div>{{/KICKER}}
+      <h1 class="article__title">{{TITLE}}</h1>
+      {{#READING_TIME}}<div class="article__meta">{{READING_TIME}} мин</div>{{/READING_TIME}}
+
+      <div class="article__body">
+        {{BODY}}
+      </div>
+    </article>
+
+    <!-- CTA-подписки -->
+    <form class="cta" action="https://buttondown.com/api/emails/embed-subscribe/elenamasolova" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/elenamasolova', 'popupwindow')">
+        <input type="hidden" name="tag" value="ru">
+      <p class="cta__title">Получать новые статьи на&nbsp;почту</p>
+      <p class="cta__text">Дайджест каждые 2&nbsp;недели.</p>
+      <div class="cta__form">
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <button type="submit">Подписаться</button>
+      </div>
+    </form>
+
+    <footer class="foot">
+      <p>© Елена Масолова</p>
+    </footer>
+
+  </div>
+</body>
+</html>

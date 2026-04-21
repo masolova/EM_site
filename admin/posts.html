@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Посты — Админка — Елена Масолова</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <style>
+    /* --- Toolbar --- */
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .search {
+      position: relative;
+      flex: 1;
+      max-width: 360px;
+    }
+    .search input {
+      width: 100%;
+      padding: 8px 12px 8px 34px;
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      font-family: var(--sans);
+      font-size: 14px;
+      background: var(--panel);
+      color: var(--text);
+      outline: none;
+    }
+    .search input::placeholder { color: var(--muted-2); }
+    .search input:focus { border-color: var(--accent); }
+    .search::before {
+      content: "";
+      position: absolute;
+      left: 10px; top: 50%;
+      width: 16px; height: 16px;
+      transform: translateY(-50%);
+      background: url(data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a877e' stroke-width='2' stroke-linecap='round'><circle cx='11' cy='11' r='7'/><path d='m21 21-4.35-4.35'/></svg>) center/contain no-repeat;
+    }
+    .filters {
+      display: flex;
+      gap: 4px;
+      padding: 3px;
+      background: var(--pill);
+      border-radius: 8px;
+    }
+    .filters button {
+      border: none;
+      background: transparent;
+      padding: 6px 14px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: var(--muted);
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .filters button.is-active {
+      background: var(--panel);
+      color: var(--text);
+      box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    }
+    .filters .count {
+      margin-left: 6px;
+      font-weight: 400;
+      color: var(--muted-2);
+    }
+    .filters button.is-active .count { color: var(--muted); }
+    .tag-filter {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 12px;
+      background: var(--panel);
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--text);
+    }
+    .tag-filter svg { color: var(--muted); }
+
+    /* --- Таблица постов --- */
+    .posts {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .post-row {
+      display: grid;
+      grid-template-columns: 24px 1fr 280px 140px 40px;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 20px;
+      border-bottom: 1px solid var(--border);
+    }
+    .post-row:last-child { border-bottom: none; }
+    .post-row:hover { background: #fafaf5; }
+    .post-row--head {
+      background: #faf9f3;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .post-row--head:hover { background: #faf9f3; }
+
+    .pin-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted-2);
+      font-size: 14px;
+    }
+    .pin-cell.is-pinned { color: var(--accent); }
+
+    .post-title {
+      font-family: var(--serif);
+      font-size: 16px;
+      line-height: 1.3;
+      color: var(--text);
+      text-decoration: none;
+      display: block;
+    }
+    .post-title:hover { color: var(--accent); text-decoration: none; }
+
+    .post-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .post-tags .t {
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--pill);
+      padding: 2px 8px;
+      border-radius: 999px;
+    }
+
+    .row-menu {
+      color: var(--muted-2);
+      text-align: center;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 4px;
+    }
+    .row-menu:hover { background: var(--pill); color: var(--text); }
+  </style>
+</head>
+<body>
+  <!-- Шапка -->
+  <div class="adm-top">
+    <div class="adm-top__brand">
+      Елена Масолова <span class="label">Админка</span>
+    </div>
+    <nav class="adm-top__nav">
+            <a href="home.html">Главная</a>
+      <a href="posts.html" class="is-active">Посты</a>
+      <a href="settings.html">Настройки</a>
+      <a href="../" target="_blank">Открыть сайт ↗</a>
+    </nav>
+    <div class="adm-top__user">
+      <span class="adm-top__user-name">elena.masolova</span>
+      <div class="adm-top__avatar">ЕМ</div>
+    </div>
+  </div>
+
+  <main class="adm-main">
+
+    <div class="adm-header">
+      <div>
+        <h1>Посты</h1>
+        <p class="adm-header__sub" style="margin: 4px 0 0;">Всего 48 · опубликовано 42 · черновиков 6</p>
+      </div>
+      <a href="editor.html" class="btn btn--primary btn--lg">＋ Новый пост</a>
+    </div>
+
+    <!-- Тулбар: поиск + фильтры статуса + фильтр тега -->
+    <div class="toolbar">
+      <div class="search">
+        <input type="text" placeholder="Найти по заголовку или тексту…">
+      </div>
+      <div class="filters">
+        <button class="is-active">Все <span class="count">48</span></button>
+        <button>Опубликованы <span class="count">42</span></button>
+        <button>Черновики <span class="count">6</span></button>
+      </div>
+      <span class="tag-filter">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.5" fill="currentColor"/></svg>
+        Все теги
+      </span>
+    </div>
+
+    <!-- Таблица -->
+    <div class="posts">
+      <div class="post-row post-row--head">
+        <span></span>
+        <span>Заголовок</span>
+        <span>Теги</span>
+        <span>Статус</span>
+        <span></span>
+      </div>
+
+      <!-- Закреплённые сверху -->
+      <div class="post-row">
+        <div class="pin-cell is-pinned" title="Закреплён">★</div>
+        <a href="editor.html" class="post-title">Конечные и&nbsp;бесконечные игры</a>
+        <div class="post-tags">
+          <span class="t">Продукт</span><span class="t">Книги</span><span class="t">Мысли</span>
+        </div>
+        <span><span class="status status--published">Опубликован</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+
+      <div class="post-row">
+        <div class="pin-cell is-pinned" title="Закреплён">★</div>
+        <a href="#" class="post-title">Стартап&nbsp;— это движение</a>
+        <div class="post-tags">
+          <span class="t">Стартапы</span><span class="t">Продукт</span>
+        </div>
+        <span><span class="status status--published">Опубликован</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+
+      <!-- Черновик -->
+      <div class="post-row">
+        <div class="pin-cell"></div>
+        <a href="#" class="post-title">Как я&nbsp;выбирал сервис рассылки <span style="color:var(--muted-2); font-family:var(--sans); font-size:12px; margin-left:6px;">(черновик)</span></a>
+        <div class="post-tags">
+          <span class="t">Инструменты</span><span class="t">Медиа</span>
+        </div>
+        <span><span class="status status--draft">Черновик</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+
+      <div class="post-row">
+        <div class="pin-cell"></div>
+        <a href="#" class="post-title">Почему я&nbsp;передаю Мету в&nbsp;Profi.ru</a>
+        <div class="post-tags">
+          <span class="t">Стартапы</span><span class="t">Продукт</span>
+        </div>
+        <span><span class="status status--published">Опубликован</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+
+      <div class="post-row">
+        <div class="pin-cell"></div>
+        <a href="#" class="post-title">Сопротивляться или управляемо падать</a>
+        <div class="post-tags">
+          <span class="t">Мысли</span><span class="t">Принципы</span>
+        </div>
+        <span><span class="status status--published">Опубликован</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+
+      <div class="post-row">
+        <div class="pin-cell"></div>
+        <a href="#" class="post-title">AI-поиск для рынка недвижимости: что сработало <span style="color:var(--muted-2); font-family:var(--sans); font-size:12px; margin-left:6px;">(черновик)</span></a>
+        <div class="post-tags">
+          <span class="t">AI и&nbsp;ML</span><span class="t">Недвижимость</span><span class="t">Продукт</span>
+        </div>
+        <span><span class="status status--draft">Черновик</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+
+      <div class="post-row">
+        <div class="pin-cell"></div>
+        <a href="#" class="post-title">Новые безумные идеи</a>
+        <div class="post-tags">
+          <span class="t">Мысли</span>
+        </div>
+        <span><span class="status status--published">Опубликован</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+
+      <div class="post-row">
+        <div class="pin-cell"></div>
+        <a href="#" class="post-title">Самый полный гайд по&nbsp;осознанной практике</a>
+        <div class="post-tags">
+          <span class="t">Принципы</span><span class="t">Книги</span>
+        </div>
+        <span><span class="status status--published">Опубликован</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+
+      <div class="post-row">
+        <div class="pin-cell"></div>
+        <a href="#" class="post-title">Идея машинки, которая помогает найти себя</a>
+        <div class="post-tags">
+          <span class="t">Мысли</span><span class="t">MVP</span>
+        </div>
+        <span><span class="status status--published">Опубликован</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+
+      <div class="post-row">
+        <div class="pin-cell"></div>
+        <a href="#" class="post-title">Как и&nbsp;зачем усердно трудиться</a>
+        <div class="post-tags">
+          <span class="t">Принципы</span>
+        </div>
+        <span><span class="status status--published">Опубликован</span></span>
+        <div class="row-menu">⋯</div>
+      </div>
+    </div>
+
+    <p style="text-align: center; color: var(--muted); font-size: 13px; margin: 20px 0 0;">
+      Показаны 10 из&nbsp;48. <a href="#">Показать ещё →</a>
+    </p>
+
+  </main>
+</body>
+</html>

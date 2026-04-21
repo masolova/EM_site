@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Админка — Елена Масолова</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <style>
+    body { display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+    .login {
+      width: 420px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 40px 36px;
+      text-align: center;
+    }
+    .login__brand {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 20px;
+      margin: 0 0 4px;
+    }
+    .login__label {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 3px 10px;
+      border: 1px solid var(--border-strong);
+      border-radius: 999px;
+      margin-bottom: 28px;
+    }
+    .login__title {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 10px;
+    }
+    .login__text {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 28px;
+      line-height: 1.55;
+    }
+    .login__gh {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 24px;
+      background: #1f1f1e;
+      color: #fff;
+      border-radius: 8px;
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 15px;
+      text-decoration: none;
+      transition: background .15s;
+    }
+    .login__gh:hover { background: #111; color: #fff; text-decoration: none; }
+    .login__gh svg { flex-shrink: 0; }
+    .login__foot {
+      margin-top: 28px;
+      font-size: 12px;
+      color: var(--muted-2);
+    }
+    .login__foot a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="login">
+    <p class="login__brand">Елена Масолова</p>
+    <span class="login__label">Админка</span>
+
+    <p class="login__title">Войти, чтобы писать посты</p>
+    <p class="login__text">
+      Вход через GitHub — только для тебя.<br>
+      После логина откроется список постов.
+    </p>
+
+    <a href="posts.html" class="login__gh">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.27-1.68-1.27-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.55-.29-5.24-1.27-5.24-5.67 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.94 10.94 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.76.11 3.05.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.25 5.66.41.35.78 1.05.78 2.12 0 1.53-.01 2.77-.01 3.14 0 .31.21.67.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/>
+      </svg>
+      Войти через GitHub
+    </a>
+
+    <p class="login__foot">
+      Вход даёт доступ к&nbsp;репозиторию <a href="#">elenamasolova/site</a>. При первом входе&nbsp;— нужно разрешить приложению Decap CMS.
+    </p>
+  </div>
+</body>
+</html>

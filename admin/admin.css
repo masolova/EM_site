@@ -1,0 +1,224 @@
+/* ==========================================================================
+   Админка Decap CMS — внутренний рабочий интерфейс.
+   Отличается от публичного сайта: sans-serif, плотнее, светло-серый фон.
+   Акцент — тот же бирюзово-зелёный, чтобы узнавался «почерк» сайта.
+   ========================================================================== */
+
+:root {
+  --bg:        #f5f4ee;   /* светлее беж фона сайта */
+  --panel:     #ffffff;
+  --border:    #e4e1d6;
+  --border-strong: #c9c5b6;
+  --text:      #1f1f1e;
+  --muted:     #8a877e;
+  --muted-2:   #b0ada3;
+  --accent:    #1f1f1e;
+  --accent-2:  #1f1f1e;
+  --accent-soft: rgba(31,31,30,.08);
+  --danger:    #b85a3c;
+  --warning:   #c99c3a;
+  --success:   #3e8a5c;
+  --pill:      rgba(31,31,30,.06);
+
+  --serif: 'IBM Plex Serif', Georgia, 'Times New Roman', serif;
+  --sans:  'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-2); text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Шапка админки ---------- */
+.adm-top {
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+  padding: 0 32px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.adm-top__brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text);
+}
+.adm-top__brand .label {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 3px 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+}
+.adm-top__nav {
+  display: flex;
+  gap: 4px;
+}
+.adm-top__nav a {
+  font-family: var(--sans);
+  font-size: 14px;
+  color: var(--text);
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+.adm-top__nav a:hover { background: var(--pill); text-decoration: none; color: var(--text); }
+.adm-top__nav a.is-active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+}
+.adm-top__user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.adm-top__avatar {
+  width: 28px; height: 28px; border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.02em;
+}
+.adm-top__user-name {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ---------- Контейнер ---------- */
+.adm-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 32px 64px;
+}
+
+.adm-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.adm-header h1 {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+}
+.adm-header__sub {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ---------- Кнопки ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1.2;
+  transition: background .12s, border .12s, color .12s;
+}
+.btn--primary {
+  background: var(--accent); color: #fff;
+}
+.btn--primary:hover { background: var(--accent-2); color: #fff; text-decoration: none; }
+.btn--secondary {
+  background: var(--panel);
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+.btn--secondary:hover { background: var(--pill); color: var(--text); text-decoration: none; }
+.btn--ghost {
+  background: transparent;
+  color: var(--text);
+}
+.btn--ghost:hover { background: var(--pill); color: var(--text); text-decoration: none; }
+.btn--danger {
+  background: transparent;
+  color: var(--danger);
+  border-color: transparent;
+}
+.btn--danger:hover { background: rgba(184,90,60,.08); color: var(--danger); text-decoration: none; }
+.btn--lg { padding: 12px 24px; font-size: 15px; }
+
+/* ---------- Плитка / Панель ---------- */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.panel__hd {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.panel__hd h2 {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.panel__bd { padding: 20px; }
+
+/* ---------- Пилюли-статусы ---------- */
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.status::before {
+  content: "";
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.status--draft     { background: rgba(201,156,58,.14); color: #7c5d1a; }
+.status--published { background: rgba(62,138,92,.12); color: var(--success); }
+.status--pinned    { background: var(--accent-soft); color: var(--accent); }
+.status--pinned::before {
+  content: "★";
+  background: transparent;
+  width: auto; height: auto;
+  font-size: 11px;
+  line-height: 1;
+}

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Главная — Админка — Елена Масолова</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <style>
+    .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px;
+    }
+    .panel h2 {
+      font-family: var(--serif);
+      font-size: 22px;
+      margin: 0 0 4px;
+    }
+    .panel .sub {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 20px;
+    }
+    .lang-tabs {
+      display: inline-flex;
+      gap: 4px;
+      padding: 3px;
+      background: var(--pill);
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .lang-tabs button {
+      border: none;
+      background: transparent;
+      padding: 6px 14px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: var(--muted);
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .lang-tabs button.is-active { background: var(--panel); color: var(--text); font-weight: 600; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+
+    .slot {
+      display: grid;
+      grid-template-columns: 80px 1fr 1fr 40px;
+      gap: 12px;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .slot:last-child { border-bottom: 0; }
+    .slot__num {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--muted);
+    }
+    .slot input[type="text"] {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      font-family: var(--sans);
+      font-size: 14px;
+      background: var(--panel);
+      color: var(--text);
+      outline: none;
+    }
+    .slot input[type="text"]:focus { border-color: var(--accent); }
+    .slot input[type="text"]::placeholder { color: var(--muted-2); }
+    .slot__clear {
+      border: 1px solid var(--border-strong);
+      background: var(--panel);
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1;
+      width: 30px; height: 30px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .slot__clear:hover { color: var(--text); border-color: var(--text); }
+
+    .pin-list { list-style: none; margin: 0; padding: 0; max-height: 480px; overflow-y: auto; }
+    .pin-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 4px;
+      border-bottom: 1px solid var(--rule);
+      font-family: var(--serif);
+      font-size: 15px;
+    }
+    .pin-list li:last-child { border-bottom: 0; }
+    .pin-list label { display: flex; align-items: center; gap: 10px; cursor: pointer; flex: 1; }
+    .pin-list input[type="checkbox"] {
+      width: 16px; height: 16px;
+      accent-color: var(--accent);
+    }
+    .pin-list .slug {
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 11px;
+      margin-left: auto;
+    }
+
+    .save-bar {
+      position: sticky;
+      bottom: 20px;
+      margin-top: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--panel);
+      border: 1px solid var(--border-strong);
+      border-radius: 10px;
+      padding: 14px 20px;
+      box-shadow: 0 6px 20px rgba(0,0,0,.08);
+    }
+    .save-bar__hint { color: var(--muted); font-size: 13px; }
+    .save-bar__hint strong { color: var(--text); }
+    .save-bar.is-dirty { border-color: var(--accent); }
+    .save-bar.is-dirty .save-bar__hint strong::before {
+      content: "● ";
+      color: #c74b4b;
+    }
+    .help {
+      background: #fffaed;
+      border: 1px solid #f0e0b0;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #6b5a20;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .help code {
+      background: rgba(0,0,0,.05);
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="adm-top">
+    <div class="adm-top__brand">
+      Елена Масолова <span class="label">Админка</span>
+    </div>
+    <nav class="adm-top__nav">
+      <a href="home.html" class="is-active">Главная</a>
+      <a href="editor-v18/" target="_blank">Редактор постов ↗</a>
+      <a href="posts.html">Посты (превью)</a>
+      <a href="settings.html">Настройки (превью)</a>
+      <a href="../" target="_blank">Открыть сайт ↗</a>
+    </nav>
+    <div class="adm-top__user">
+      <span class="adm-top__user-name">elena.masolova</span>
+      <div class="adm-top__avatar">ЕМ</div>
+    </div>
+  </div>
+
+  <main class="adm-main">
+    <div class="adm-header">
+      <div>
+        <h1>Главная страница</h1>
+        <p class="adm-header__sub" style="margin: 4px 0 0;">Закреплённые посты и три хайлайта в шапке</p>
+      </div>
+    </div>
+
+    <div class="help">
+      Как сохранить изменения: нажми <strong>«Сохранить и скачать config.json»</strong>. Браузер загрузит обновлённый файл. Открой репозиторий на GitHub, зайди в <code>config.json</code>, нажми карандаш «Edit», перетащи туда скачанный файл (или скопируй содержимое), жми <strong>Commit changes</strong>. Сайт обновится за минуту.
+    </div>
+
+    <div class="lang-tabs" id="lang-tabs">
+      <button data-lang="ru" class="is-active">🇷🇺 Русская версия</button>
+      <button data-lang="en">🇬🇧 English version</button>
+    </div>
+
+    <div class="panels">
+
+      <section class="panel">
+        <h2>Хайлайты в шапке</h2>
+        <p class="sub">Три слота в меню сайта. Пустой слот скрывается автоматически.</p>
+
+        <div class="slot">
+          <div class="slot__num">Хайлайт&nbsp;1</div>
+          <input type="text" data-hl-title="1" placeholder="Заголовок (что видно в меню)">
+          <input type="text" data-hl-url="1" placeholder="Ссылка, например /articles/my-post/">
+          <button class="slot__clear" data-hl-clear="1" title="Очистить">×</button>
+        </div>
+        <div class="slot">
+          <div class="slot__num">Хайлайт&nbsp;2</div>
+          <input type="text" data-hl-title="2" placeholder="Заголовок">
+          <input type="text" data-hl-url="2" placeholder="Ссылка">
+          <button class="slot__clear" data-hl-clear="2" title="Очистить">×</button>
+        </div>
+        <div class="slot">
+          <div class="slot__num">Хайлайт&nbsp;3</div>
+          <input type="text" data-hl-title="3" placeholder="Заголовок">
+          <input type="text" data-hl-url="3" placeholder="Ссылка">
+          <button class="slot__clear" data-hl-clear="3" title="Очистить">×</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Закреплённые посты</h2>
+        <p class="sub">Отмеченные посты всегда отображаются наверху списка на главной.</p>
+        <ul class="pin-list" id="pin-list"></ul>
+      </section>
+    </div>
+
+    <div class="save-bar" id="save-bar">
+      <div class="save-bar__hint">
+        <strong id="save-status">Все изменения сохранены</strong>
+      </div>
+      <button class="btn btn--primary btn--lg" id="save-btn">Сохранить и скачать config.json</button>
+    </div>
+  </main>
+
+  <script>
+    // Полный каталог постов по языкам (должен совпадать с data-slug на index.html / index-en.html)
+    const POSTS = {
+      ru: [
+        { slug: "finite-games", title: "Конечные и бесконечные игры" },
+        { slug: "life-knowledge", title: "Жизнь — агент создания знания" },
+        { slug: "brain-plasticity", title: "Как адаптируется мозг" },
+        { slug: "focus-hard", title: "Вот почему мне тяжело фокусироваться" },
+        { slug: "you-are-creator", title: "Ты — творец" },
+        { slug: "finding-calling", title: "Как я нашла своё призвание" },
+        { slug: "macos-setup", title: "Как я настраиваю macOS для эффективной работы" },
+        { slug: "hard-work", title: "Как и зачем усердно трудиться" },
+        { slug: "startup-is-motion", title: "Стартап — это движение" },
+        { slug: "meta-to-profi", title: "Почему я передаю Мету в Profi.ru" },
+        { slug: "resist-or-fall", title: "Сопротивляться или управляемо падать" },
+        { slug: "crazy-ideas", title: "Новые безумные идеи" },
+        { slug: "work-setup", title: "Мой сетап для работы дома и по кафешкам" },
+        { slug: "finding-self-machine", title: "Идея машинки, которая помогает найти себя" },
+        { slug: "mindful-practice", title: "Самый полный гайд по осознанной практике" },
+        { slug: "peterson-valuetainment", title: "Тезисы из интервью Питерсона в Valuetainment" },
+        { slug: "jobs-us-eu", title: "Круглый стол: как найти работу в США и Европе" },
+        { slug: "worldview-engineering", title: "Картина мира: инженерный подход, творчество и сложность" },
+        { slug: "worldview-mindfulness", title: "Картина мира: осознанность, медитация и внутренний зов" },
+        { slug: "worldview-life-system", title: "Картина мира: система жизни, баланс и любимое дело" }
+      ],
+      en: [
+        { slug: "pg-01", title: "The Brand Age" },
+        { slug: "pg-02", title: "The Shape of the Essay Field" },
+        { slug: "pg-03", title: "Good Writing" },
+        { slug: "pg-04", title: "What to Do" },
+        { slug: "pg-05", title: "The Origins of Wokeness" },
+        { slug: "pg-06", title: "Writes and Write-Nots" },
+        { slug: "pg-07", title: "When To Do What You Love" },
+        { slug: "pg-08", title: "Founder Mode" },
+        { slug: "pg-09", title: "The Right Kind of Stubborn" },
+        { slug: "pg-10", title: "The Reddits" },
+        { slug: "pg-11", title: "How to Start Google" },
+        { slug: "pg-12", title: "The Best Essay" },
+        { slug: "pg-13", title: "Superlinear Returns" },
+        { slug: "pg-14", title: "How to Do Great Work" },
+        { slug: "pg-15", title: "How to Get New Ideas" },
+        { slug: "pg-16", title: "The Need to Read" },
+        { slug: "pg-17", title: "What You (Want to)* Want" },
+        { slug: "pg-18", title: "Alien Truth" },
+        { slug: "pg-19", title: "What I've Learned from Users" },
+        { slug: "pg-20", title: "Heresy" },
+        { slug: "pg-21", title: "Putting Ideas into Words" }
+      ]
+    };
+
+    const EMPTY = {
+      pinned: { ru: [], en: [] },
+      highlights: {
+        ru: { "1": null, "2": null, "3": null },
+        en: { "1": null, "2": null, "3": null }
+      }
+    };
+
+    let state = null;          // текущее редактируемое состояние
+    let savedState = null;     // последнее сохранённое — чтобы показывать dirty-флаг
+    let currentLang = 'ru';
+
+    // --- Загрузка config.json с сайта ---
+    async function loadConfig() {
+      try {
+        const r = await fetch('../config.json', { cache: 'no-cache' });
+        if (!r.ok) throw new Error('no config');
+        const cfg = await r.json();
+        // нормализуем
+        return {
+          pinned: {
+            ru: Array.isArray(cfg.pinned?.ru) ? cfg.pinned.ru : [],
+            en: Array.isArray(cfg.pinned?.en) ? cfg.pinned.en : []
+          },
+          highlights: {
+            ru: { "1": cfg.highlights?.ru?.["1"] || null, "2": cfg.highlights?.ru?.["2"] || null, "3": cfg.highlights?.ru?.["3"] || null },
+            en: { "1": cfg.highlights?.en?.["1"] || null, "2": cfg.highlights?.en?.["2"] || null, "3": cfg.highlights?.en?.["3"] || null }
+          }
+        };
+      } catch (e) {
+        return JSON.parse(JSON.stringify(EMPTY));
+      }
+    }
+
+    // --- Отрисовка текущего языка ---
+    function render() {
+      // Highlights
+      for (const slot of ['1','2','3']) {
+        const item = state.highlights[currentLang][slot] || {};
+        document.querySelector(`[data-hl-title="${slot}"]`).value = item.title || '';
+        document.querySelector(`[data-hl-url="${slot}"]`).value = item.url || '';
+      }
+      // Pin list
+      const list = document.getElementById('pin-list');
+      list.innerHTML = '';
+      const pinned = new Set(state.pinned[currentLang]);
+      POSTS[currentLang].forEach(p => {
+        const li = document.createElement('li');
+        li.innerHTML = `
+          <label>
+            <input type="checkbox" data-pin="${p.slug}" ${pinned.has(p.slug) ? 'checked' : ''}>
+            <span class="title">${p.title}</span>
+            <span class="slug">${p.slug}</span>
+          </label>`;
+        list.appendChild(li);
+      });
+      updateDirty();
+    }
+
+    function updateDirty() {
+      const dirty = JSON.stringify(state) !== JSON.stringify(savedState);
+      const bar = document.getElementById('save-bar');
+      const status = document.getElementById('save-status');
+      if (dirty) {
+        bar.classList.add('is-dirty');
+        status.textContent = 'Есть несохранённые изменения';
+      } else {
+        bar.classList.remove('is-dirty');
+        status.textContent = 'Все изменения сохранены';
+      }
+    }
+
+    // --- Обработчики ---
+    document.addEventListener('input', e => {
+      const tEl = e.target.closest('[data-hl-title]');
+      const uEl = e.target.closest('[data-hl-url]');
+      if (tEl || uEl) {
+        const slot = (tEl || uEl).dataset.hlTitle || (tEl || uEl).dataset.hlUrl;
+        const title = document.querySelector(`[data-hl-title="${slot}"]`).value.trim();
+        const url = document.querySelector(`[data-hl-url="${slot}"]`).value.trim();
+        state.highlights[currentLang][slot] = (title || url) ? { title, url } : null;
+        updateDirty();
+      }
+    });
+    document.addEventListener('click', e => {
+      const clr = e.target.closest('[data-hl-clear]');
+      if (clr) {
+        const slot = clr.dataset.hlClear;
+        state.highlights[currentLang][slot] = null;
+        render();
+      }
+      const pin = e.target.closest('[data-pin]');
+      if (pin) {
+        const slug = pin.dataset.pin;
+        const arr = state.pinned[currentLang];
+        if (pin.checked) {
+          if (!arr.includes(slug)) arr.push(slug);
+        } else {
+          const i = arr.indexOf(slug);
+          if (i >= 0) arr.splice(i, 1);
+        }
+        updateDirty();
+      }
+      const tab = e.target.closest('#lang-tabs [data-lang]');
+      if (tab) {
+        currentLang = tab.dataset.lang;
+        document.querySelectorAll('#lang-tabs button').forEach(b => b.classList.toggle('is-active', b === tab));
+        render();
+      }
+    });
+
+    // --- Сохранение: отдаёт файл на скачивание ---
+    document.getElementById('save-btn').addEventListener('click', () => {
+      const out = {
+        _comment: "Управляется через /admin/home.html. Правь через UI и загружай файл обратно в репозиторий.",
+        pinned: state.pinned,
+        highlights: state.highlights
+      };
+      const blob = new Blob([JSON.stringify(out, null, 2) + '\n'], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'config.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+      savedState = JSON.parse(JSON.stringify(state));
+      updateDirty();
+    });
+
+    // --- Инициализация ---
+    (async function () {
+      state = await loadConfig();
+      savedState = JSON.parse(JSON.stringify(state));
+      render();
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>Редактор — Админка — Елена Масолова</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+  <style>
+    /* Layout: редактор + правый сайдбар */
+    .editor-wrap {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 32px;
+      margin-top: 8px;
+    }
+
+    /* --- Левая колонка --- */
+    .editor {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* Тулбар форматирования */
+    .tools {
+      display: flex;
+      gap: 2px;
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+      background: #faf9f3;
+      align-items: center;
+    }
+    .tools button {
+      border: none;
+      background: transparent;
+      padding: 6px 10px;
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--text);
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 400;
+      min-width: 30px;
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+    .tools button:hover { background: var(--pill); }
+    .tools .divider {
+      width: 1px; height: 18px;
+      background: var(--border-strong);
+      margin: 0 6px;
+    }
+    .tools .bold   { font-weight: 700; font-family: var(--serif); }
+    .tools .italic { font-style: italic; font-family: var(--serif); }
+    .tools .h2     { font-weight: 700; font-size: 13px; letter-spacing: .02em; }
+    .tools .h3     { font-weight: 700; font-size: 12px; letter-spacing: .02em; }
+    .tools .quote  { font-style: italic; color: var(--muted); }
+    .tools__spacer { flex: 1; }
+    .tools__mode {
+      font-size: 12px;
+      color: var(--muted);
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .tools__mode:hover { background: var(--pill); color: var(--text); }
+
+    /* Поле заголовка */
+    .editor__title {
+      padding: 32px 48px 0;
+    }
+    .editor__title input {
+      width: 100%;
+      border: none;
+      background: transparent;
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: var(--text);
+      outline: none;
+      padding: 0;
+    }
+    .editor__title input::placeholder { color: var(--muted-2); }
+
+    /* Тело статьи */
+    .editor__body {
+      padding: 20px 48px 48px;
+      font-family: var(--serif);
+      font-size: 18px;
+      line-height: 1.65;
+      min-height: 420px;
+      outline: none;
+    }
+    .editor__body h2 {
+      font-family: var(--serif);
+      font-size: 24px;
+      margin: 28px 0 14px;
+    }
+    .editor__body p { margin: 0 0 16px; }
+    .editor__body ul { padding-left: 1.4em; margin: 0 0 16px; }
+    .editor__body li { margin-bottom: 4px; }
+    .editor__body strong { font-weight: 700; }
+    .editor__body a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+
+    .img-placeholder {
+      margin: 20px 0;
+      padding: 32px;
+      border: 1.5px dashed var(--border-strong);
+      border-radius: 8px;
+      text-align: center;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 13px;
+      background: #fafaf5;
+    }
+    .img-placeholder strong { display: block; color: var(--text); font-size: 14px; margin-bottom: 4px; }
+
+    /* --- Правый сайдбар --- */
+    .side {
+      position: sticky;
+      top: 20px;
+      align-self: start;
+    }
+    .side__block {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      margin-bottom: 12px;
+      font-family: var(--sans);
+    }
+    .side__block h3 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin: 0 0 10px;
+    }
+
+    /* Переключатель статуса */
+    .status-toggle {
+      display: flex;
+      gap: 4px;
+      padding: 3px;
+      background: var(--pill);
+      border-radius: 6px;
+    }
+    .status-toggle button {
+      flex: 1;
+      border: none;
+      background: transparent;
+      padding: 7px 10px;
+      font-family: var(--sans);
+      font-size: 13px;
+      color: var(--muted);
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .status-toggle button.is-active {
+      background: var(--panel);
+      color: var(--text);
+      box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    }
+
+    /* Галочка «закрепить» */
+    .check {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .check__box {
+      width: 18px; height: 18px;
+      border: 1.5px solid var(--border-strong);
+      border-radius: 4px;
+      background: var(--panel);
+      position: relative;
+      flex-shrink: 0;
+    }
+    .check.is-on .check__box {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+    .check.is-on .check__box::after {
+      content: "✓";
+      position: absolute;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      top: 0; left: 3px;
+    }
+    .check__hint {
+      margin: 8px 0 0 28px;
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* Теги */
+    .tags-input {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 8px;
+      border: 1px solid var(--border-strong);
+      border-radius: 6px;
+      background: var(--panel);
+      min-height: 40px;
+      align-items: center;
+    }
+    .tag-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 999px;
+    }
+    .tag-chip .x {
+      cursor: pointer;
+      font-size: 12px;
+      opacity: .65;
+    }
+    .tag-chip .x:hover { opacity: 1; }
+    .tags-input input {
+      border: none;
+      outline: none;
+      flex: 1;
+      min-width: 80px;
+      font-family: var(--sans);
+      font-size: 13px;
+      background: transparent;
+    }
+    .tag-suggest {
+      margin-top: 8px;
+      padding: 8px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 12px;
+    }
+    .tag-suggest__title {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .tag-suggest__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .tag-suggest__list .s {
+      background: var(--pill);
+      color: var(--text);
+      padding: 3px 8px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .tag-suggest__list .s:hover { background: var(--accent-soft); color: var(--accent); }
+
+    /* Кнопки внизу сайдбара */
+    .side__actions {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .side__actions .btn { width: 100%; justify-content: center; }
+
+    .autosave {
+      margin-top: 10px;
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .autosave::before {
+      content: "";
+      width: 6px; height: 6px;
+      background: var(--success);
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <!-- Шапка -->
+  <div class="adm-top">
+    <div class="adm-top__brand">
+      Елена Масолова <span class="label">Админка</span>
+    </div>
+    <nav class="adm-top__nav">
+            <a href="home.html">Главная</a>
+      <a href="posts.html" class="is-active">Посты</a>
+      <a href="settings.html">Настройки</a>
+      <a href="../" target="_blank">Открыть сайт ↗</a>
+    </nav>
+    <div class="adm-top__user">
+      <span class="adm-top__user-name">elena.masolova</span>
+      <div class="adm-top__avatar">ЕМ</div>
+    </div>
+  </div>
+
+  <main class="adm-main">
+
+    <div class="adm-header">
+      <div>
+        <a href="posts.html" style="color: var(--muted); font-size: 13px;">← Все посты</a>
+        <h1 style="margin-top: 4px;">Редактировать пост</h1>
+      </div>
+      <div style="display:flex; gap: 8px;">
+        <button class="btn btn--danger">Удалить</button>
+        <a href="#" class="btn btn--secondary">Превью ↗</a>
+      </div>
+    </div>
+
+    <div class="editor-wrap">
+
+      <!-- Редактор -->
+      <div class="editor">
+
+        <div class="tools">
+          <button class="h2" title="Заголовок 2-го уровня">H2</button>
+          <button class="h3" title="Заголовок 3-го уровня">H3</button>
+          <span class="divider"></span>
+          <button class="bold" title="Жирный (Ctrl+B)">Ж</button>
+          <button class="italic" title="Курсив (Ctrl+I)">К</button>
+          <span class="divider"></span>
+          <button title="Список">• Список</button>
+          <button title="Нумерация">1. Список</button>
+          <span class="divider"></span>
+          <button title="Ссылка (Ctrl+K)">🔗 Ссылка</button>
+          <button title="Картинка">🖼 Картинка</button>
+          <button class="quote" title="Цитата">„ Цитата"</button>
+          <div class="tools__spacer"></div>
+          <span class="tools__mode">Визуально / Markdown</span>
+        </div>
+
+        <div class="editor__title">
+          <input type="text" value="Конечные и бесконечные игры" placeholder="Заголовок поста">
+        </div>
+
+        <div class="editor__body" contenteditable="false">
+          <p>Книга Джеймса Карса делит всё, что делает человек, на&nbsp;две категории. <strong>Конечные игры</strong>&nbsp;— те, где есть правила, границы и&nbsp;победитель. <strong>Бесконечные игры</strong>&nbsp;— те, где цель не&nbsp;выиграть, а&nbsp;продолжать играть. Переосмыслить свою работу через эту рамку&nbsp;— неожиданно отрезвляюще.</p>
+
+          <h2>Чем отличаются эти два типа игр</h2>
+
+          <p>Если кратко, различий три: границы, цели и&nbsp;отношение к&nbsp;правилам. В&nbsp;конечной игре границы фиксированы, цель&nbsp;— победа, правила неизменны. В&nbsp;бесконечной&nbsp;— границы подвижны, цель&nbsp;— продолжение, правила меняются, когда это нужно самой игре.</p>
+
+          <ul>
+            <li>Шахматы, футбол, выборы&nbsp;— конечные игры.</li>
+            <li>Наука, культура, воспитание детей&nbsp;— бесконечные.</li>
+            <li>Бизнес может быть и&nbsp;тем, и&nbsp;другим.</li>
+          </ul>
+
+          <div class="img-placeholder">
+            <strong>🖼 Перетащи картинку сюда или нажми, чтобы загрузить</strong>
+            Картинки сохраняются в&nbsp;репозиторий в&nbsp;папку /assets/posts/
+          </div>
+
+          <p>Продукт, построенный как конечная игра, целится в&nbsp;победу над конкурентом. Продукт, построенный как бесконечная игра,&nbsp;— <a href="#">две совершенно разные стратегии</a>.</p>
+        </div>
+
+      </div>
+
+      <!-- Правый сайдбар -->
+      <aside class="side">
+
+        <div class="side__block">
+          <h3>Статус</h3>
+          <div class="status-toggle">
+            <button>Черновик</button>
+            <button class="is-active">Опубликован</button>
+          </div>
+        </div>
+
+        <div class="side__block">
+          <h3>Закрепить</h3>
+          <label class="check is-on">
+            <span class="check__box"></span>
+            <span>Показать в&nbsp;начале списка</span>
+          </label>
+          <p class="check__hint">Закреплённые посты идут первыми на&nbsp;главной и&nbsp;на&nbsp;странице тега.</p>
+        </div>
+
+        <div class="side__block">
+          <h3>Теги</h3>
+          <div class="tags-input">
+            <span class="tag-chip">Продукт <span class="x">×</span></span>
+            <span class="tag-chip">Книги <span class="x">×</span></span>
+            <span class="tag-chip">Мысли <span class="x">×</span></span>
+            <input type="text" placeholder="Добавить…">
+          </div>
+          <div class="tag-suggest">
+            <div class="tag-suggest__title">Похожие из&nbsp;существующих</div>
+            <div class="tag-suggest__list">
+              <span class="s">Принципы</span>
+              <span class="s">Стартапы</span>
+              <span class="s">Мысли</span>
+              <span class="s">MVP</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="side__actions">
+          <button class="btn btn--primary btn--lg">Сохранить</button>
+          <div class="autosave">Сохранено автоматически 2&nbsp;минуты назад</div>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+</body>
+</html>
