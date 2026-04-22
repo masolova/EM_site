@@ -1,0 +1,1342 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAFJklEQVR4nK1XW2xUVRRd+zzuvTPtMNPHlALaAEo0RQLRfplggkGIClGjrRolmijhw4+GoIa/BmOMMShR478/GtIaPyAqEOKXD0IghSAJhnd9QVtxpo+Zub33nO3HnekD2t4LZSfn456c3L32OnuvvQ+hZswEACBiAHhm3+Vc2Y4LLNB0KsOBJjqyve1Gba+nh8WePWQBgCadVx0/9dmF10nIl9kEa8CswAwG0Z0CIDBDCCbpXCTGocr48KdHd3cUayCoFvmWj082sdvwlfYym6wJYAN/QZFPNwZDSAfS8WD80nm/MvrqkV0PHe/pYUGdnb2yvf0sH2945bC3qHljpXA9AJEgYMH0zwBBYFgYnc5oE1SGhMGag90rB0VfX5c50bBtm1uf21gZGZogITQRSRDR3VwEEiRIB6WRQHuZvIH9AEQswEwW9jUbBgxmeTtREQFi2kqSKUSkwvIoM9vntuw916ye/vBMzrpOuw18Skq7FATLjCBkhJZhOcpmKQhaEpQkMEf7syGwJmChnWxoymtV4AiSgEriWBBgGCiWQ7hKoGWRRnO9gqcFrGUUSgbXRwIUygZaEjxFmA0DABBIMIRSVVRznZtyLgjlCQNPCzz/SCMef3ARVuZdpJ0p0gLDGBwNcGqghO/PFHFxsFJlYw4Qgjlx5CXfYGXew7tPtmJVizfrOS0Jy3IOluUctDW66N5/FVrOzQKQgHpBgB8w2hodfNR5LxrSEsYyBBGIgGLZ4K//JmAskEtLLMlpqGqOJFGvWAAMAAS8vXkJGtISoWVIihx8+dMwfvitiJGSgQXgaUJrVuOZdQ3IZxSI5o8+FoAgwphvsH5VBquXpWAtJiP/4sdBfH3sXzTUKTi6pujAlWEfnxy5hpaMipIwBsG8AIgAy4xH768HAzDM0IJwfrCCg6cKyGcUuOq4ZikdJWWxbCBF/CXMW/fWMjwlsLzZnXGfJy6PYyK0EcU3RWg5WiqB83gADLhaoN6NjtWUbmg0jJW92LpOAqBmd9yLFwogKkGLUd8CmLrrfEYhLruSgp4fgCBUQosrw/4MSjuW18FRAsy3jiq1xhTO2ghuEwBzVHa/XBiLmg0RLAOrFnvYui6HodEQxkbpUANSDizGfItsSiZiISYJGXWuwLFLYzj7dxlCRHvMwFsbWrD9sTzqXIGJgFEJIjaWN7nY+UQrdm5qRSWMH+ZilZCqTOw9dA37XmpDbpoUv7E+jxc6GielOJuWWFqV4tN/lKIrwvxqGFsFliOJHbjh452+AVwY9CEFTUaWTUm0L01hzT0ptDU6k/UvEshwIgZqINKuxOVhHzv3X8Wm1VlsmKMdD40G6K+2YyemEyYGAESqmNIChoFvTt7AwdOFmQMJVweS4k0DSVwvML4g6SUr29rolU0pWGYMjQT4pzBxy0iWTcm5R7JpJlgIUWgqjYBwhaRmRvRaiTNjo0rQipB2IqmucwVcTdHYZudxzmASEjYMxo3gc+Lkjo6AQAekkyLAJgIw+S+eaj6Wo+/4xGMjvTpixrHDhf0D1NPD4ufUpYyb4n7pplYEpZGABKlkQ/ZtGYPZkFRSSEUU8sMHulf0CwA4uvu+opkov2hNcM3NNGkSOpqr7+IiEqRSGUVKc1Ae23Gge0V/Z2+vJGDqtbr5/RNLVK7pPTBvBXgx0d17nTFzkYT8lSuVnu92PXC8s5dlXxeZSZqnP5mf/fzPJp8ra5mtggkX5JiEYqkVOa73+7dvLr0KAJ29vbKvq8sAwP8dxZOx44VOIAAAAABJRU5ErkJggg==" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Connections</title>
+<style>
+:root{--bg:#e9e9e9;--panel:#c7e3ea;--tile:#f4f4f4;--stroke:#7e7e7e;--text:#111;--blue:#0d6efd;--red:#d61b1b;--grid-size:10}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+/* For grid=10: no scroll (original behavior) */
+body.grid-10{overflow:hidden}
+body.grid-10 .stage{height:calc(100vh - 34px)}
+/* For grid=15,20: vertical scroll only, 10 tiles per row, same tile size as 10x10 */
+body.grid-15,body.grid-20{overflow-x:hidden;overflow-y:auto}
+body.grid-15 .stage,body.grid-20 .stage{height:auto}
+/* Fixed row height: always 1/10 of stage height so tiles don't stretch when rows disappear */
+:root{--row-h:calc((100vh - 34px - 40px) / 10)}
+@media(max-width:900px){
+  html,body{height:auto;overflow:hidden}
+  .scroll-wrap{overflow:auto;-webkit-overflow-scrolling:touch;height:100vh;width:100vw}
+  .scroll-inner{min-width:760px}
+}
+
+/* ═══ MODE SELECTOR SCREEN ═══ */
+.mode-screen{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:20px}
+.sel-container{background:#fff;border-radius:12px;padding:36px 44px;max-width:620px;width:100%;box-shadow:0 4px 24px rgba(0,0,0,0.1);position:relative}
+.sel-container h1{text-align:center;font-size:28px;font-weight:800;margin-bottom:4px}
+.sel-container .subtitle{text-align:center;color:#888;font-size:14px;margin-bottom:24px}
+.sel-section{margin-bottom:20px}
+.sel-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#999;margin-bottom:10px}
+.sel-row{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+.sel-btn{flex:1 1 0;min-width:0;padding:10px 6px;border:2px solid #ddd;border-radius:8px;background:#fff;cursor:pointer;text-align:center;font-size:14px;font-weight:600;color:#444;transition:all 0.15s;line-height:1.2}
+/* Difficulty buttons */
+.diff-group{display:flex;gap:8px}
+.diff-btn{flex:1;padding:10px 8px;border:2px solid #ddd;border-radius:8px;background:#fff;cursor:pointer;text-align:center;transition:all 0.15s}
+.diff-btn:hover{border-color:#aaa;background:#fafafa}
+.diff-btn.active{border-color:#2563eb;background:#eff6ff}
+.diff-btn .d-label{font-size:14px;font-weight:700;display:block}
+.diff-btn .d-desc{font-size:11px;color:#888;margin-top:2px;display:block}
+.diff-btn.active .d-label{color:#1d4ed8}
+.diff-btn.active .d-desc{color:#6b8fc7}
+.sel-btn:hover{border-color:#aaa;background:#fafafa}
+.sel-btn.active{border-color:#2563eb;background:#eff6ff;color:#1d4ed8}
+.sel-btn .sel-emoji{font-size:20px;display:block;margin-bottom:3px}
+.sel-btn .sel-lbl{font-size:13px}
+.sel-btn .sel-count{font-size:11px;color:#aaa;font-weight:400;display:block;margin-top:2px}
+.sel-divider{display:flex;align-items:center;gap:10px;margin:10px 0}
+.sel-divider span{font-size:11px;color:#bbb;white-space:nowrap;text-transform:uppercase;letter-spacing:0.5px}
+.sel-divider::before,.sel-divider::after{content:'';flex:1;height:1px;background:#e5e5e5}
+.size-group{display:flex;gap:10px}
+.size-btn{flex:1;padding:16px 8px;border:2px solid #ddd;border-radius:10px;background:#fff;cursor:pointer;text-align:center;transition:all 0.15s}
+.size-btn:hover{border-color:#aaa;background:#fafafa}
+.size-btn.active{border-color:#2563eb;background:#eff6ff}
+.size-btn .s-num{font-size:26px;font-weight:800;color:#222}
+.size-btn.active .s-num{color:#1d4ed8}
+.size-btn .s-desc{font-size:12px;color:#888;margin-top:2px}
+.start-btn{display:block;width:100%;padding:14px;margin-top:24px;border:none;border-radius:10px;background:#2563eb;color:#fff;font-size:16px;font-weight:700;cursor:pointer;transition:background 0.15s}
+.start-btn:hover{background:#1d4ed8}
+.game-screen{display:none}
+.game-screen.active{display:block}
+
+.topbar{background:var(--panel);border-bottom:1px solid #aac4cb;padding:5px 12px;display:flex;align-items:center;gap:12px;font-size:16px;line-height:1.1}
+.topbar .title{font-weight:700;font-size:17px}
+.topbar .meta{font-size:15px}
+.topbar .spacer{flex:1}
+.btn{background:#d6d6d6;border:1px solid #9e9e9e;padding:4px 12px;border-radius:2px;color:#555;font-size:14px;cursor:pointer}
+.btn:hover{background:#c8c8c8}
+.btn-danger{background:#f8d7da;border-color:#d69;color:#721c24}
+.btn-danger:hover{background:#f1b0b7}
+.btn-primary{background:#cce5ff;border-color:#69b;color:#004085}
+.btn-primary:hover{background:#b8daff}
+.btn-info{background:#e2e3e5;border-color:#aaa;color:#383d41}
+.btn-info:hover{background:#d6d8db}
+
+.stage{
+  padding:5px 6px 2px 6px;
+  height:calc(100vh - 34px);
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  justify-content:flex-start;
+}
+.row{
+  display:flex;
+  gap:4px;
+  min-height:0;
+}
+body.grid-10 .row{flex:none;height:var(--row-h)}
+body.grid-15 .row,body.grid-20 .row{flex:none;height:var(--row-h)}
+.tile{
+  flex:0 0 calc((100% - var(--tile-gap-total)) / var(--grid-size));
+  min-width:0;
+  background:var(--tile);
+  border:1px solid var(--stroke);
+  border-radius:3px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:2px 3px;
+  line-height:1.1;
+  box-shadow:0 0 0 1px rgba(0,0,0,0.02) inset;
+  cursor:pointer;
+  white-space:normal;
+  overflow:hidden;
+  word-break:normal;
+  overflow-wrap:break-word;
+  hyphens:none;
+  user-select:none;
+  transition:background 0.2s, outline 0.15s;
+  position:relative;
+}
+.tile.selected{outline:2px solid var(--blue);outline-offset:1px;background:#fffbe6}
+.tile.merged{font-weight:700}
+.tile.complete{background:#d0e4f7;border-color:#6aa9df;color:#1a3a5c;cursor:default}
+.tile.complete .merge-num{color:#1a5fb4}
+.tile.removed{visibility:hidden;pointer-events:none}
+.tile.bookmarked::after{content:'★';position:absolute;top:1px;right:3px;font-size:10px;color:#d4a017;pointer-events:none}
+
+/* Reveal colors — Palette B "Confetti" (bright saturated) */
+.tile.reveal-0{background:#A0D8E8;border-color:#50A8C8;color:#0A3040}
+.tile.reveal-1{background:#F0A0A0;border-color:#D06060;color:#501010}
+.tile.reveal-2{background:#90D890;border-color:#50B050;color:#103010}
+.tile.reveal-3{background:#F0D070;border-color:#C8A030;color:#504000}
+.tile.reveal-4{background:#C0A0E8;border-color:#8860C0;color:#201040}
+.tile.reveal-5{background:#F0A0C8;border-color:#C86090;color:#401020}
+.tile.reveal-6{background:#80D8D8;border-color:#40B0B0;color:#003838}
+.tile.reveal-7{background:#C0E880;border-color:#88B840;color:#283808}
+.tile.reveal-8{background:#E8C0A0;border-color:#C08850;color:#402008}
+.tile.reveal-9{background:#A0B8E8;border-color:#6080C0;color:#082040}
+.tile.reveal-10{background:#E8D080;border-color:#C0A030;color:#484000}
+.tile.reveal-11{background:#A0A0E8;border-color:#6060C0;color:#101040}
+.tile.reveal-12{background:#E8A0E8;border-color:#C060C0;color:#401040}
+.tile.reveal-13{background:#80E8B0;border-color:#40C078;color:#003820}
+.tile.reveal-14{background:#E8E0A0;border-color:#C0B860;color:#404000}
+.tile.reveal-15{background:#D0A0A0;border-color:#A06060;color:#381010}
+.tile.reveal-16{background:#A0D0E8;border-color:#6098C0;color:#083040}
+.tile.reveal-17{background:#A0E8A0;border-color:#60C060;color:#103010}
+.tile.reveal-18{background:#E8A0B8;border-color:#C06080;color:#401020}
+.tile.reveal-19{background:#C8C8A0;border-color:#989860;color:#303010}
+
+.merge-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:1.05;max-width:100%}
+.merge-preview{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;word-break:break-word;hyphens:auto;max-height:2.2em;font-size:inherit}
+.merge-num{font-weight:700;color:var(--red);font-size:15px;margin-top:1px}
+
+.statusbar{padding:2px 10px;font-size:13px;line-height:1.3;color:#555;flex-shrink:0;display:flex;align-items:center;gap:12px}
+.statusbar .result{font-weight:700}
+
+/* Overlay panels (history, vocab) */
+.overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.35);z-index:100;display:flex;align-items:center;justify-content:center}
+.overlay-panel{background:#fff;border-radius:6px;padding:16px 20px;max-width:700px;width:94%;max-height:85vh;overflow-y:auto;box-shadow:0 8px 32px rgba(0,0,0,0.2)}
+.overlay-panel h2{font-size:18px;margin-bottom:10px}
+.overlay-panel table{width:100%;border-collapse:collapse;font-size:14px}
+.overlay-panel th,.overlay-panel td{padding:5px 8px;border-bottom:1px solid #ddd;text-align:left}
+.overlay-panel th{background:#f0f0f0;font-weight:600;position:sticky;top:0}
+.overlay-panel .close-btn{float:right;background:none;border:none;font-size:20px;cursor:pointer;color:#888;line-height:1}
+.overlay-panel .close-btn:hover{color:#333}
+.overlay-panel .empty{color:#888;font-style:italic;padding:12px 0}
+.won{color:#155724}.lost{color:#721c24}
+
+/* Vocab panel */
+.vocab-controls{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.vocab-controls input,.vocab-controls select{padding:5px 8px;font-size:13px;border:1px solid #ccc;border-radius:3px}
+.vocab-controls input{flex:1;min-width:120px}
+.vocab-controls select{max-width:200px}
+.vocab-table{width:100%;border-collapse:collapse;font-size:13px}
+.vocab-table th,.vocab-table td{padding:6px 8px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}
+.vocab-table th{background:#f5f5f5;font-weight:600;position:sticky;top:0;z-index:1}
+.vocab-table .vw{font-weight:600}
+.vocab-table .vd{color:#555;font-size:12px}
+.vocab-table .vc{color:#888;font-size:11px}
+.vocab-table .vr{cursor:pointer;color:#c33;font-size:14px;text-align:center;width:30px}
+.vocab-table .vr:hover{color:#900}
+
+/* Post-game reveal panel */
+.reveal-panel{margin-top:6px}
+.reveal-group{margin-bottom:8px}
+.reveal-group-title{font-weight:700;font-size:14px;margin-bottom:3px;padding:3px 6px;border-radius:3px;display:inline-block}
+.reveal-words{display:flex;flex-wrap:wrap;gap:4px;margin-top:2px}
+.reveal-word{display:inline-flex;align-items:center;gap:3px;padding:2px 7px;border-radius:3px;font-size:13px;border:1px solid #ccc;background:#fff;cursor:default}
+.reveal-word .rw-star{cursor:pointer;font-size:14px;color:#ccc;transition:color 0.15s;user-select:none}
+.reveal-word .rw-star:hover{color:#d4a017}
+.reveal-word .rw-star.active{color:#d4a017}
+.reveal-word .rw-text{max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* === Mobile adaptation === */
+@media(max-width:600px){
+  /* --- Mode screen --- */
+  .mode-screen{padding:10px;align-items:flex-start;min-height:auto}
+  .sel-container{padding:18px 14px;border-radius:10px}
+  .sel-container h1{font-size:22px}
+  .sel-container .subtitle{font-size:12px;margin-bottom:14px}
+  .sel-section{margin-bottom:12px}
+  .sel-label{font-size:11px;margin-bottom:6px}
+  .sel-btn{padding:7px 4px;font-size:12px;border-radius:6px}
+  .sel-btn .sel-emoji{font-size:16px;margin-bottom:1px}
+  .sel-btn .sel-lbl{font-size:11px}
+  .sel-btn .sel-count{font-size:10px}
+  .sel-divider{margin:6px 0}
+  .sel-divider span{font-size:10px}
+  .diff-btn{padding:7px 4px}
+  .diff-btn .d-label{font-size:13px}
+  .diff-btn .d-desc{font-size:10px}
+  .size-group{gap:6px}
+  .size-btn{padding:10px 6px}
+  .size-btn .s-num{font-size:20px}
+  .size-btn .s-desc{font-size:10px}
+  .start-btn{margin-top:14px;padding:14px;font-size:16px}
+  .start-btn.btn-fixed{position:fixed;bottom:0;left:0;right:0;margin:0;border-radius:0;padding:16px;font-size:17px;z-index:50}
+  /* --- Game screen --- */
+  body.grid-10,body.grid-15,body.grid-20{overflow-x:hidden;overflow-y:auto}
+  .scroll-wrap{overflow:auto;-webkit-overflow-scrolling:touch;height:auto;width:100%}
+  .scroll-inner{min-width:0!important;width:100%}
+  .topbar{flex-wrap:wrap;gap:4px 8px;font-size:13px;padding:4px 8px}
+  .topbar .title{font-size:13px;flex-basis:auto}
+  .topbar .meta{font-size:12px}
+  .topbar .meta-gamenum{display:none}
+  .topbar #btn-goto{display:none}
+  .topbar .spacer{flex-basis:100%;height:0;padding:0;margin:0;order:5}
+  .topbar .btn{font-size:12px;padding:4px 8px}
+  .stage{height:auto;padding:3px;padding-bottom:calc(80px + env(safe-area-inset-bottom, 0px))}
+  :root{--row-h:64px}
+  .row{flex:none;height:64px}
+  .tile{min-width:0;height:64px}
+  .statusbar{font-size:11px;padding:3px 8px;flex-wrap:wrap;gap:4px}
+  .overlay-panel{width:96%;max-width:none;padding:12px 14px}
+}
+</style>
+
+<!-- Categories bank will be loaded from external file -->
+<script src="categories-bank.js"></script>
+<script src="categories-en.js"></script>
+
+<script>
+/* ══════════════════════════════════════════════════
+   INTERNATIONALISATION (i18n)
+   ══════════════════════════════════════════════════ */
+const I18N = {
+  ru: {
+    subtitle: 'Собери группы слов по категориям',
+    theme: 'Тематика', difficulty: 'Сложность', size: 'Размер',
+    allTopics: 'Все темы', geek: 'Гики', human: 'Гуманитарии',
+    divider: 'или по трём направлениям',
+    history: 'История и политика', tech: 'Технологии и спорт', culture: 'Культура',
+    easyDesc: 'знакомые слова', medDesc: 'нужна эрудиция', hardDesc: 'вынос мозга',
+    s10: '100 слов · 10 групп', s15: '225 слов · 15 групп', s20: '400 слов · 20 групп',
+    startGame: 'Начать игру',
+    backTitle: 'Назад к выбору',
+    gameLabel: 'Игра', groups: 'Группы',
+    vocab: '★ Словарь', historyBtn: '📊', gotoBtn: 'Игра #…',
+    giveUp: 'Сдаюсь', newGame: 'Новая игра',
+    statusDefault: 'Неправильная пара: −1 балл + слова → словарь ★',
+    allGroupsDone: 'Все {n} групп собраны!',
+    gaveUp: 'Сдались.',
+    score: 'Очки',
+    errors: 'Ошибки', time: 'Время',
+    titleText: 'Собери {n} групп по {g}!',
+    allGroups: 'Все группы — Игра #',
+    starHint: 'Нажмите ★ чтобы добавить слово в словарь',
+    historyTitle: 'История игр',
+    noGames: 'Пока нет сыгранных игр.',
+    date: 'Дата', gameNum: 'Игра #', groupsCol: 'Группы', scoreCol: 'Score', errorsCol: 'Ошибки', timeCol: 'Время', resultCol: 'Итог',
+    win: 'Победа', lost: 'Сдался',
+    vocabTitle: 'Словарь ★',
+    vocabWords: 'слов',
+    vocabEmpty: 'Пока пусто. Завершите игру — после этого можно отметить ★ слова.',
+    vocabSearch: 'Поиск по слову…',
+    allCategories: 'Все категории',
+    sortDate: 'По дате', sortAlpha: 'По алфавиту', sortCat: 'По категории',
+    wordCol: 'Слово', defCol: 'Определение', catCol: 'Категория',
+    historyBtnTitle: 'История игр',
+    gotoBtnTitle: 'Играть по номеру',
+    vocabBtnTitle: 'Словарь',
+    inputPlaceholder: '№'
+  },
+  en: {
+    subtitle: 'Group words into categories',
+    theme: 'Theme', difficulty: 'Difficulty', size: 'Grid size',
+    allTopics: 'All topics', geek: 'Science & Tech', human: 'Humanities',
+    divider: 'or by three tracks',
+    history: 'History & Politics', tech: 'Tech & Sports', culture: 'Culture',
+    easyDesc: 'familiar words', medDesc: 'need erudition', hardDesc: 'mind-bending',
+    s10: '100 words · 10 groups', s15: '225 words · 15 groups', s20: '400 words · 20 groups',
+    startGame: 'Start game',
+    backTitle: 'Back to menu',
+    gameLabel: 'Game', groups: 'Groups',
+    vocab: '★ Glossary', historyBtn: '📊', gotoBtn: 'Game #…',
+    giveUp: 'Give up', newGame: 'New game',
+    statusDefault: 'Wrong pair: −1 point + words go to glossary ★',
+    allGroupsDone: 'All {n} groups found!',
+    gaveUp: 'Gave up.',
+    score: 'Score',
+    errors: 'Errors', time: 'Time',
+    titleText: 'Make {n} groups of {g}!',
+    allGroups: 'All groups — Game #',
+    starHint: 'Click ★ to add a word to your glossary',
+    historyTitle: 'Game history',
+    noGames: 'No games played yet.',
+    date: 'Date', gameNum: 'Game #', groupsCol: 'Groups', scoreCol: 'Score', errorsCol: 'Errors', timeCol: 'Time', resultCol: 'Result',
+    win: 'Win', lost: 'Gave up',
+    vocabTitle: 'Glossary ★',
+    vocabWords: 'words',
+    vocabEmpty: 'Empty. Finish a game — then you can bookmark ★ words.',
+    vocabSearch: 'Search…',
+    allCategories: 'All categories',
+    sortDate: 'By date', sortAlpha: 'Alphabetical', sortCat: 'By category',
+    wordCol: 'Word', defCol: 'Definition', catCol: 'Category',
+    historyBtnTitle: 'Game history',
+    gotoBtnTitle: 'Play by number',
+    vocabBtnTitle: 'Glossary',
+    inputPlaceholder: '#'
+  }
+};
+
+let LANG = navigator.language.startsWith('ru') ? 'ru' : 'en';
+function t(key) { return (I18N[LANG] && I18N[LANG][key]) || (I18N['ru'] && I18N['ru'][key]) || key; }
+function getBank() { return LANG === 'ru' ? CATEGORIES_BANK : CATEGORIES_EN; }
+
+/* ══════════════════════════════════════════════════
+   ANALYTICS → Google Sheets (via Apps Script)
+   ══════════════════════════════════════════════════ */
+const ANALYTICS_URL = 'https://sheetdb.io/api/v1/2244ztnziprvn';
+const SESSION_ID = Math.random().toString(36).slice(2,10);
+const IS_OWNER = new URLSearchParams(window.location.search).has('me');
+let USER_COUNTRY = '';
+try { fetch('https://ipapi.co/json/').then(r=>r.json()).then(d=>{USER_COUNTRY=d.country_name||d.country||''}).catch(()=>{}); } catch(e){}
+function track(event, params){
+  if(!ANALYTICS_URL) return;
+  const row = {
+    timestamp: new Date().toISOString(),
+    event: event,
+    session_id: SESSION_ID,
+    owner: IS_OWNER ? 'me' : '',
+    country: USER_COUNTRY,
+    theme: params.theme || '',
+    difficulty: params.difficulty || '',
+    grid: params.grid !== undefined ? String(params.grid) : '',
+    gameNum: params.gameNum !== undefined ? String(params.gameNum) : '',
+    won: params.won !== undefined ? String(params.won) : '',
+    score: params.score !== undefined ? String(params.score) : '',
+    errors: params.errors !== undefined ? String(params.errors) : '',
+    time: params.time !== undefined ? String(params.time) : '',
+    language: LANG,
+    device: /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent) ? 'mobile' : 'desktop'
+  };
+  try {
+    fetch(ANALYTICS_URL, {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({data:[row]})
+    });
+  } catch(e){}
+}
+
+/* ══════════════════════════════════════════════════
+   SEEDED RANDOM (mulberry32)
+   ══════════════════════════════════════════════════ */
+function mulberry32(a){
+  return function(){
+    a |= 0; a = a + 0x6D2B79F5 | 0;
+    var t = Math.imul(a ^ a >>> 15, 1 | a);
+    t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+    return ((t ^ t >>> 14) >>> 0) / 4294967296;
+  }
+}
+
+function shuffleWithSeed(arr, rng){
+  const a = [...arr];
+  for(let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(rng() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+/* ══════════════════════════════════════════════════
+   DEFINITIONS LOOKUP (built into bank)
+   ══════════════════════════════════════════════════ */
+const DEFS = {};
+CATEGORIES_BANK.forEach(cat => {
+  cat.words.forEach(entry => {
+    const word = typeof entry === 'string' ? entry : entry.w;
+    const def = typeof entry === 'string' ? '' : (entry.d || '');
+    DEFS[word] = def;
+  });
+});
+
+/* ══════════════════════════════════════════════════
+   GENERATE GAME from bank + game number
+   ══════════════════════════════════════════════════ */
+function getFilteredBank(){
+  let bank = getBank();
+  // Difficulty filter: easy = only easy, medium = easy+medium, hard = all
+  // Fallback: if not enough categories for GRID, widen difficulty
+  const diffLevels = ['easy','medium','hard'];
+  let diffIdx = chosenDifficulty === 'easy' ? 0 : chosenDifficulty === 'medium' ? 1 : 2;
+  while(diffIdx < 2){
+    let filtered;
+    if(diffIdx === 0) filtered = bank.filter(cat => cat.tags && cat.tags.difficulty === 'easy');
+    else if(diffIdx === 1) filtered = bank.filter(cat => cat.tags && (cat.tags.difficulty === 'easy' || cat.tags.difficulty === 'medium'));
+    else filtered = bank;
+    if(filtered.length >= GRID){ bank = filtered; break; }
+    diffIdx++;
+  }
+  if(diffIdx === 2){ /* hard = all, no filter */ }
+  else if(diffIdx === 1) bank = bank.filter(cat => cat.tags && (cat.tags.difficulty === 'easy' || cat.tags.difficulty === 'medium'));
+  else if(diffIdx === 0) bank = bank.filter(cat => cat.tags && cat.tags.difficulty === 'easy');
+  // Theme filter
+  if(chosenTheme === 'all') return bank;
+  // System A: geek/human, System B: history/tech/culture (supports both direct and granular b-tags)
+  const superB = {history:'history',tech:'tech',culture:'culture',hist:'history',geo:'history',phil:'history',sci:'tech',math:'tech',med:'tech',sport:'tech',biz:'tech',art:'culture',lit:'culture',music:'culture',lang:'culture',nature:'culture',myth:'culture',psych:'culture',movies:'culture',tv:'culture',pop:'culture',games:'culture',internet:'culture',stories:'culture',books:'culture',mythology:'culture',architecture:'culture',business:'tech',politics:'history',adventure:'tech',space:'tech',geography:'history',geek:'tech'};
+  return bank.filter(cat => {
+    if(!cat.tags) return true;
+    if(chosenTheme === 'geek' || chosenTheme === 'human') return cat.tags.a === chosenTheme;
+    return superB[cat.tags.b] === chosenTheme;
+  });
+}
+
+function generateGame(gameNum){
+  const rng = mulberry32(gameNum * 2654435761);
+  const bank = getFilteredBank();
+  const shuffledCats = shuffleWithSeed(bank, rng);
+  const picked = shuffledCats.slice(0, GRID);
+  const categories = picked.map((cat, i) => {
+    const words = cat.words.map(e => typeof e === 'string' ? e : e.w);
+    const shuffledWords = shuffleWithSeed(words, rng);
+    return {
+      id: 'c' + i,
+      name: cat.name,
+      words: shuffledWords.slice(0, GRID)
+    };
+  });
+  const allTiles = [];
+  categories.forEach(cat => {
+    cat.words.forEach(word => {
+      allTiles.push({word, catId: cat.id, catName: cat.name});
+    });
+  });
+  const shuffledTiles = shuffleWithSeed(allTiles, rng);
+  return {categories, tiles: shuffledTiles, gameNum};
+}
+
+/* ══════════════════════════════════════════════════
+   ADAPTIVE FONT
+   ══════════════════════════════════════════════════ */
+function adaptiveFont(text){
+  const len = text.length;
+  const mobile = window.innerWidth <= 600;
+  // Desktop scale (tiles ~160px wide)
+  const deskSingle = len<=5?16:len<=9?16:len<=13?15:len<=18?14:len<=25?12:len<=33?10.5:len<=40?9.5:8.5;
+  // Mobile scale (tiles ~65px wide) — much tighter
+  const mobSingle = len<=3?15:len<=5?14:len<=7?13:len<=9?11:len<=12?9.5:len<=16?8:len<=22?7:6;
+  const singleSize = mobile ? mobSingle : deskSingle;
+  // For multi-word text: tile allows 2 lines, so size by longest word
+  const words = text.split(/[\s\-\/]+/);
+  if(words.length >= 2){
+    const maxWord = Math.max(...words.map(w=>w.length));
+    const deskMulti = maxWord<=5?16:maxWord<=8?16:maxWord<=11?15:maxWord<=16?14:maxWord<=21?12:maxWord<=26?10.5:9.5;
+    const mobMulti = maxWord<=3?15:maxWord<=5?14:maxWord<=7?12:maxWord<=9?10:maxWord<=12?8.5:maxWord<=16?7.5:6.5;
+    const multiSize = mobile ? mobMulti : deskMulti;
+    return Math.max(singleSize, multiSize) + 'px';
+  }
+  return singleSize + 'px';
+}
+
+/* ══════════════════════════════════════════════════
+   GAME STATE
+   ══════════════════════════════════════════════════ */
+let game = null;
+let first = null;
+let score = 0;
+let errors = 0;
+let completedGroups = 0;
+let gameOver = false;
+let gameStartTime = 0;
+let GRID = 10; // 10, 15, or 20
+
+function updateStats(){
+  document.getElementById('score').textContent = score;
+  document.getElementById('groups').textContent = completedGroups + '/' + GRID;
+}
+
+function getWords(el){try{return JSON.parse(el.dataset.words||'[]')}catch(e){return []}}
+function setWords(el, arr){el.dataset.words = JSON.stringify(arr);}
+function escapeHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+function renderTile(el){
+  const size = Number(el.dataset.size||1);
+  const words = getWords(el);
+  const isBookmarked = el.classList.contains('bookmarked');
+  if(size <= 1){
+    const word = words[0] || el.dataset.word || '';
+    el.textContent = word;
+    el.style.fontSize = adaptiveFont(word);
+    el.classList.remove('merged','complete');
+  } else {
+    const previewWords = words.slice(0, Math.min(2, words.length));
+    const preview = previewWords.map(w => escapeHtml(w)).join(', ') + (words.length > 2 ? ', …' : '');
+    el.innerHTML = '<div class="merge-wrap"><div class="merge-preview">'+preview+'</div><div class="merge-num">['+size+']</div></div>';
+    el.style.fontSize = adaptiveFont(preview);
+    el.classList.add('merged');
+    if(size >= GRID){
+      el.classList.add('complete');
+      el.style.cursor = 'default';
+    } else {
+      el.classList.remove('complete');
+    }
+  }
+  if(isBookmarked) el.classList.add('bookmarked');
+}
+
+/* ══════════════════════════════════════════════════
+   GRID REFLOW — merged sorted by size (largest first, top-left)
+   ══════════════════════════════════════════════════ */
+function reflowGrid(){
+  const stage = document.getElementById('stage');
+  const allTiles = [...stage.querySelectorAll('.tile')];
+  const completed = allTiles.filter(t => t.classList.contains('complete') && !t.classList.contains('removed'));
+  const merged = allTiles.filter(t => t.classList.contains('merged') && !t.classList.contains('complete') && !t.classList.contains('removed'));
+  const removed = allTiles.filter(t => t.classList.contains('removed'));
+  const regular = allTiles.filter(t => !t.classList.contains('complete') && !t.classList.contains('merged') && !t.classList.contains('removed'));
+  const bySize = (a, b) => Number(b.dataset.size||1) - Number(a.dataset.size||1);
+  completed.sort(bySize);
+  merged.sort(bySize);
+  const visible = [...completed, ...merged, ...regular];
+  const rows = [...stage.querySelectorAll('.row')];
+  let vi = 0;
+  let ri = 0;
+  const visibleCount = visible.length;
+  const fullVisibleRows = Math.ceil(visibleCount / COLS);
+  rows.forEach((row, rowIdx) => {
+    row.innerHTML = '';
+    if(rowIdx < fullVisibleRows){
+      row.style.display = '';
+      for(let c = 0; c < COLS && vi < visibleCount; c++){
+        row.appendChild(visible[vi]);
+        vi++;
+      }
+    } else {
+      row.style.display = 'none';
+      for(let c = 0; c < COLS && ri < removed.length; c++){
+        row.appendChild(removed[ri]);
+        ri++;
+      }
+    }
+  });
+}
+
+function mergeInto(target, other){
+  const words = [...getWords(target), ...getWords(other)];
+  if(other.classList.contains('bookmarked')) target.classList.add('bookmarked');
+  target.dataset.size = String(words.length);
+  setWords(target, words);
+  renderTile(target);
+  other.classList.remove('merged','complete');
+  other.classList.add('removed');
+  other.disabled = true;
+  if(words.length >= GRID){
+    completedGroups++;
+    updateStats();
+    checkWin();
+  }
+  reflowGrid();
+}
+
+function selectTile(el){
+  if(gameOver) return;
+  if(el.classList.contains('removed') || el.classList.contains('complete')) return;
+  if(first === el){el.classList.remove('selected'); first = null; return;}
+  if(!first){el.classList.add('selected'); first = el; return;}
+  const second = el;
+  second.classList.add('selected');
+  const ok = first.dataset.cat && first.dataset.cat === second.dataset.cat;
+  if(ok){
+    const size1 = Number(first.dataset.size||1), size2 = Number(second.dataset.size||1);
+    const target = size1 >= size2 ? first : second;
+    const other = size1 >= size2 ? second : first;
+    mergeInto(target, other);
+    score += Number(target.dataset.size || 0);
+    updateStats();
+  } else {
+    score = Math.max(0, score - 1);
+    errors++;
+    updateStats();
+    autoBookmarkError(first, second);
+  }
+  first.classList.remove('selected');
+  second.classList.remove('selected');
+  first = null;
+}
+
+function checkWin(){
+  if(completedGroups >= GRID) endGame(true);
+}
+
+function getElapsedSeconds(){
+  return Math.floor((Date.now() - gameStartTime) / 1000);
+}
+function formatTime(sec){
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return m + ':' + String(s).padStart(2, '0');
+}
+
+function endGame(won){
+  gameOver = true;
+  const elapsed = getElapsedSeconds();
+  const statusEl = document.getElementById('status');
+  if(won){
+    statusEl.innerHTML = '<span class="result">'+t('allGroupsDone').replace('{n}',GRID)+'</span> '+t('score')+': '+score+' | '+t('errors')+': '+errors+' | '+t('time')+': '+formatTime(elapsed)+' | '+t('gameNum')+game.gameNum;
+  } else {
+    statusEl.innerHTML = '<span class="result">'+t('gaveUp')+'</span> '+t('score')+': '+score+' | '+t('errors')+': '+errors+' | '+t('time')+': '+formatTime(elapsed)+' | '+t('gameNum')+game.gameNum;
+  }
+  /* Show all tiles in shuffled positions with category colors */
+  revealAll();
+  document.getElementById('btn-new').style.display = '';
+  document.getElementById('btn-giveup').style.display = 'none';
+  saveResult(won, elapsed);
+  track('game_end',{won,score,errors,time:elapsed,grid:GRID,groups:completedGroups,gameNum:game.gameNum});
+  /* After 2 seconds, auto-show vocabulary overlay */
+  setTimeout(() => { showRevealPanel(); }, 2000);
+}
+
+/* ══════════════════════════════════════════════════
+   POST-GAME REVEAL: show all 10 groups with ★ bookmarking
+   ══════════════════════════════════════════════════ */
+function showRevealPanel(){
+  const existing = document.getElementById('reveal-overlay');
+  if(existing) existing.remove();
+
+  const vocab = getVocab();
+  const vocabSet = new Set(vocab.map(v => v.word));
+
+  // Reveal colors matching tile reveal classes
+  const revealColors = [
+    {bg:'#a8d8ea',border:'#6bb7d0',color:'#1a3a5c'},
+    {bg:'#f9c9c9',border:'#e08888',color:'#5c1a1a'},
+    {bg:'#c9f9c9',border:'#7bc97b',color:'#1a4a1a'},
+    {bg:'#f9e6a8',border:'#d4b84a',color:'#5c4a0a'},
+    {bg:'#d4c9f9',border:'#9b8ad4',color:'#2a1a5c'},
+    {bg:'#f9c9e6',border:'#d47ba8',color:'#5c1a3a'},
+    {bg:'#c9f0f9',border:'#6bc4d4',color:'#0a4a5c'},
+    {bg:'#e6f9c9',border:'#a8d46b',color:'#3a5c0a'},
+    {bg:'#f0d4c9',border:'#c9956b',color:'#5c2a0a'},
+    {bg:'#d4e6f9',border:'#6b9bc9',color:'#0a2a5c'},
+    {bg:'#f9d8a8',border:'#d4a04a',color:'#5c3a0a'},
+    {bg:'#c9d4f9',border:'#7b8ad4',color:'#1a2a5c'},
+    {bg:'#f0c9f9',border:'#b87bd4',color:'#4a1a5c'},
+    {bg:'#c9f9d8',border:'#6bd48a',color:'#0a5c2a'},
+    {bg:'#f9f0c9',border:'#d4c86b',color:'#5c4a0a'},
+    {bg:'#e0c9c9',border:'#b89090',color:'#5c2020'},
+    {bg:'#c9e0f9',border:'#6ba0d4',color:'#0a3a5c'},
+    {bg:'#d8f9d8',border:'#80d480',color:'#1a5c1a'},
+    {bg:'#f9d4e0',border:'#d47b90',color:'#5c1a2a'},
+    {bg:'#e0e0c9',border:'#b0b07b',color:'#4a4a1a'}
+  ];
+
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.id = 'reveal-overlay';
+  overlay.addEventListener('click', e => { if(e.target === overlay) overlay.remove(); });
+
+  let html = '<button class="close-btn" onclick="this.closest(\'.overlay\').remove()">&times;</button>';
+  html += '<h2>'+t('allGroups')+game.gameNum+'</h2>';
+  html += '<div style="font-size:12px;color:#888;margin-bottom:8px">'+t('starHint')+'</div>';
+  html += '<div class="reveal-panel">';
+
+  game.categories.forEach((cat, i) => {
+    const rc = revealColors[i];
+    html += '<div class="reveal-group">';
+    html += '<div class="reveal-group-title" style="background:'+rc.bg+';color:'+rc.color+';border:1px solid '+rc.border+'">'+escapeHtml(cat.name)+'</div>';
+    html += '<div class="reveal-words">';
+    cat.words.forEach(word => {
+      const isBookmarked = vocabSet.has(word);
+      const starCls = isBookmarked ? 'rw-star active' : 'rw-star';
+      html += '<div class="reveal-word" style="border-color:'+rc.border+'">';
+      html += '<span class="'+starCls+'" data-word="'+escapeHtml(word)+'" data-cat="'+escapeHtml(cat.name)+'">★</span>';
+      html += '<span class="rw-text" title="'+(DEFS[word] ? escapeHtml(DEFS[word]) : '')+'">'+escapeHtml(word)+'</span>';
+      html += '</div>';
+    });
+    html += '</div></div>';
+  });
+  html += '</div>';
+
+  const panel = document.createElement('div');
+  panel.className = 'overlay-panel';
+  panel.style.maxWidth = '800px';
+  panel.innerHTML = html;
+
+  // Wire up star clicks
+  panel.addEventListener('click', e => {
+    const star = e.target.closest('.rw-star');
+    if(!star) return;
+    const word = star.dataset.word;
+    const catName = star.dataset.cat;
+    const v = getVocab();
+    const idx = v.findIndex(x => x.word === word);
+    if(idx >= 0){
+      v.splice(idx, 1);
+      star.classList.remove('active');
+    } else {
+      v.push({word, category: catName, def: DEFS[word] || '', gameNum: game.gameNum, date: new Date().toLocaleDateString('ru-RU')});
+      star.classList.add('active');
+    }
+    saveVocab(v);
+    // Sync tile bookmarked state
+    document.querySelectorAll('.tile').forEach(t => {
+      const tw = getWords(t);
+      if(tw.includes(word)){
+        if(star.classList.contains('active')) t.classList.add('bookmarked');
+        else t.classList.remove('bookmarked');
+      }
+    });
+  });
+
+  overlay.appendChild(panel);
+  document.body.appendChild(overlay);
+}
+
+function revealAll(){
+  /* Rebuild grid: show ALL original tiles in shuffled order, colored by category */
+  const stage = document.getElementById('stage');
+  stage.innerHTML = '';
+  const totalTiles = game.tiles.length;
+  const totalRows = Math.ceil(totalTiles / COLS);
+  let idx = 0;
+  for(let r = 0; r < totalRows; r++){
+    const row = document.createElement('div');
+    row.className = 'row';
+    row.style.display = '';
+    for(let c = 0; c < COLS && idx < totalTiles; c++){
+      const t = game.tiles[idx++];
+      const btn = document.createElement('button');
+      btn.className = 'tile';
+      btn.dataset.word = t.word;
+      btn.dataset.cat = t.catId;
+      btn.dataset.size = '1';
+      btn.textContent = t.word;
+      btn.style.fontSize = adaptiveFont(t.word);
+      btn.disabled = true;
+      const catIdx = parseInt(t.catId.replace('c',''), 10);
+      btn.classList.add('reveal-' + catIdx);
+      const cat = game.categories.find(cc => cc.id === t.catId);
+      if(cat) btn.title = cat.name;
+      row.appendChild(btn);
+    }
+    stage.appendChild(row);
+  }
+  /* Mark bookmarked words */
+  const vocab = getVocab();
+  const vocabWords = new Set(vocab.map(v => v.word));
+  stage.querySelectorAll('.tile').forEach(btn => {
+    if(vocabWords.has(btn.dataset.word)) btn.classList.add('bookmarked');
+  });
+}
+
+/* ══════════════════════════════════════════════════
+   HISTORY (localStorage)
+   ══════════════════════════════════════════════════ */
+function saveResult(won, elapsed){
+  try {
+    const history = JSON.parse(localStorage.getItem('connections-history') || '[]');
+    history.unshift({
+      gameNum: game.gameNum,
+      grid: GRID,
+      score: score,
+      errors: errors,
+      groups: completedGroups,
+      won: won,
+      time: elapsed,
+      date: new Date().toLocaleString('ru-RU',{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).replace(',','')
+    });
+    if(history.length > 50) history.length = 50;
+    localStorage.setItem('connections-history', JSON.stringify(history));
+  } catch(e){}
+}
+
+function showHistory(){
+  const existing = document.querySelector('.overlay');
+  if(existing){ existing.remove(); return; }
+  let history = [];
+  try { history = JSON.parse(localStorage.getItem('connections-history') || '[]'); } catch(e){}
+
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.addEventListener('click', e => { if(e.target === overlay) overlay.remove(); });
+
+  let html = '<button class="close-btn" onclick="this.closest(\'.overlay\').remove()">&times;</button>';
+  html += '<h2>'+t('historyTitle')+'</h2>';
+  if(history.length === 0){
+    html += '<div class="empty">'+t('noGames')+'</div>';
+  } else {
+    html += '<table><tr><th>'+t('date')+'</th><th>'+t('gameNum')+'</th><th>'+t('groupsCol')+'</th><th>'+t('scoreCol')+'</th><th>'+t('errorsCol')+'</th><th>'+t('timeCol')+'</th><th>'+t('resultCol')+'</th></tr>';
+    history.forEach(h => {
+      const cls = h.won ? 'won' : 'lost';
+      const result = h.won ? t('win') : t('lost');
+      const time = h.time != null ? formatTime(h.time) : '—';
+      const errs = h.errors != null ? h.errors : '—';
+      html += '<tr><td>'+escapeHtml(h.date||'')+'</td><td>'+h.gameNum+'</td><td>'+h.groups+'/'+(h.grid||10)+'</td><td>'+h.score+'</td><td>'+errs+'</td><td>'+time+'</td><td class="'+cls+'">'+result+'</td></tr>';
+    });
+    html += '</table>';
+  }
+  const panel = document.createElement('div');
+  panel.className = 'overlay-panel';
+  panel.innerHTML = html;
+  overlay.appendChild(panel);
+  document.body.appendChild(overlay);
+}
+
+/* ══════════════════════════════════════════════════
+   VOCABULARY (localStorage) with definitions
+   ══════════════════════════════════════════════════ */
+function getVocab(){
+  try { return JSON.parse(localStorage.getItem('connections-vocab') || '[]'); } catch(e){ return []; }
+}
+function saveVocab(vocab){
+  try { localStorage.setItem('connections-vocab', JSON.stringify(vocab)); } catch(e){}
+}
+
+/* Auto-bookmark on wrong pair: only the FIRST word of each tile (no duplicates).
+   For single tiles that's the word itself; for merged tiles it's the first/representative word.
+   This avoids flooding the vocab with all words inside a large merged group. */
+function autoBookmarkError(tile1, tile2){
+  const vocab = getVocab();
+  const vocabSet = new Set(vocab.map(v => v.word));
+  [tile1, tile2].forEach(el => {
+    const words = getWords(el);
+    const word = words[0];
+    if(!word || vocabSet.has(word)) return;
+    const catId = el.dataset.cat;
+    const cat = game.categories.find(c => c.id === catId);
+    const catName = cat ? cat.name : '';
+    vocab.push({word, category: catName, def: DEFS[word] || '', gameNum: game.gameNum, date: new Date().toLocaleDateString('ru-RU')});
+    vocabSet.add(word);
+    el.classList.add('bookmarked');
+  });
+  saveVocab(vocab);
+}
+
+function toggleBookmark(el){
+  if(el.classList.contains('removed')) return;
+  const words = getWords(el);
+  if(!words.length) return;
+  const vocab = getVocab();
+  const word = words[0];
+  const catId = el.dataset.cat;
+  const cat = game.categories.find(c => c.id === catId);
+  const catName = cat ? cat.name : '';
+  const existIdx = vocab.findIndex(v => v.word === word);
+  if(existIdx >= 0){
+    vocab.splice(existIdx, 1);
+    el.classList.remove('bookmarked');
+  } else {
+    vocab.push({word, category: catName, def: DEFS[word] || '', gameNum: game.gameNum, date: new Date().toLocaleDateString('ru-RU')});
+    el.classList.add('bookmarked');
+  }
+  saveVocab(vocab);
+}
+
+function showVocab(){
+  const existing = document.querySelector('.overlay');
+  if(existing){ existing.remove(); return; }
+  const vocab = getVocab();
+
+  const overlay = document.createElement('div');
+  overlay.className = 'overlay';
+  overlay.addEventListener('click', e => { if(e.target === overlay) overlay.remove(); });
+
+  let html = '<button class="close-btn" onclick="this.closest(\'.overlay\').remove()">&times;</button>';
+  html += '<h2>'+t('vocabTitle')+' <span style="font-size:13px;font-weight:400;color:#888">('+vocab.length+' '+t('vocabWords')+')</span></h2>';
+
+  if(vocab.length === 0){
+    html += '<div class="empty">'+t('vocabEmpty')+'</div>';
+  } else {
+    // Controls: search + category filter + sort
+    const cats = [...new Set(vocab.map(v => v.category))].sort();
+    html += '<div class="vocab-controls">';
+    html += '<input type="text" id="vocab-search" placeholder="'+t('vocabSearch')+'">';
+    html += '<select id="vocab-cat-filter"><option value="">'+t('allCategories')+'</option>';
+    cats.forEach(c => { html += '<option value="'+escapeHtml(c)+'">'+escapeHtml(c)+'</option>'; });
+    html += '</select>';
+    html += '<select id="vocab-sort"><option value="date">'+t('sortDate')+'</option><option value="alpha">'+t('sortAlpha')+'</option><option value="cat">'+t('sortCat')+'</option></select>';
+    html += '</div>';
+
+    html += '<table class="vocab-table"><thead><tr><th>'+t('wordCol')+'</th><th>'+t('defCol')+'</th><th>'+t('catCol')+'</th><th></th></tr></thead><tbody id="vocab-tbody">';
+    vocab.forEach((v, i) => {
+      html += '<tr data-word="'+escapeHtml(v.word)+'" data-cat="'+escapeHtml(v.category)+'" data-idx="'+i+'">';
+      html += '<td class="vw">'+escapeHtml(v.word)+'</td>';
+      html += '<td class="vd">'+escapeHtml(v.def || DEFS[v.word] || '—')+'</td>';
+      html += '<td class="vc">'+escapeHtml(v.category)+'</td>';
+      html += '<td class="vr" data-word="'+escapeHtml(v.word)+'">&times;</td>';
+      html += '</tr>';
+    });
+    html += '</tbody></table>';
+  }
+
+  const panel = document.createElement('div');
+  panel.className = 'overlay-panel';
+  panel.innerHTML = html;
+
+  // Wire up search, filter, sort, delete
+  panel.addEventListener('click', e => {
+    if(e.target.classList.contains('vr')){
+      const w = e.target.dataset.word;
+      const v = getVocab().filter(x => x.word !== w);
+      saveVocab(v);
+      document.querySelectorAll('.tile').forEach(t => {
+        const tw = getWords(t);
+        if(tw.includes(w)) t.classList.remove('bookmarked');
+      });
+      overlay.remove();
+      showVocab();
+    }
+  });
+
+  overlay.appendChild(panel);
+  document.body.appendChild(overlay);
+
+  // Search & filter logic
+  if(vocab.length > 0){
+    const searchEl = panel.querySelector('#vocab-search');
+    const catFilter = panel.querySelector('#vocab-cat-filter');
+    const sortEl = panel.querySelector('#vocab-sort');
+    const tbody = panel.querySelector('#vocab-tbody');
+
+    function filterAndSort(){
+      const q = searchEl.value.toLowerCase().trim();
+      const catVal = catFilter.value;
+      const sortVal = sortEl.value;
+      const rows = [...tbody.querySelectorAll('tr')];
+      // Filter
+      rows.forEach(r => {
+        const word = r.dataset.word.toLowerCase();
+        const cat = r.dataset.cat;
+        const matchQ = !q || word.includes(q);
+        const matchCat = !catVal || cat === catVal;
+        r.style.display = (matchQ && matchCat) ? '' : 'none';
+      });
+      // Sort visible rows
+      const visible = rows.filter(r => r.style.display !== 'none');
+      visible.sort((a, b) => {
+        if(sortVal === 'alpha') return a.dataset.word.localeCompare(b.dataset.word, 'ru');
+        if(sortVal === 'cat') return a.dataset.cat.localeCompare(b.dataset.cat, 'ru') || a.dataset.word.localeCompare(b.dataset.word, 'ru');
+        return Number(a.dataset.idx) - Number(b.dataset.idx); // date = insertion order
+      });
+      visible.forEach(r => tbody.appendChild(r));
+    }
+
+    searchEl.addEventListener('input', filterAndSort);
+    catFilter.addEventListener('change', filterAndSort);
+    sortEl.addEventListener('change', filterAndSort);
+  }
+}
+
+/* ══════════════════════════════════════════════════
+   RIGHT CLICK / LONG PRESS: disabled during gameplay,
+   only contextmenu prevention remains to avoid browser menu
+   ══════════════════════════════════════════════════ */
+let longPressTimer = null;
+let longPressTriggered = false;
+
+function setupTileBookmark(btn){
+  /* Block context menu on tiles always (no browser menu on game area) */
+  btn.addEventListener('contextmenu', e => {
+    e.preventDefault();
+  });
+}
+
+/* ══════════════════════════════════════════════════
+   BUILD GRID
+   ══════════════════════════════════════════════════ */
+function getCols(){ return window.innerWidth <= 600 ? 5 : 10; }
+let COLS = getCols();
+function buildGrid(){
+  const stage = document.getElementById('stage');
+  stage.innerHTML = '';
+  const tiles = game.tiles;
+  const totalTiles = tiles.length; // GRID * GRID
+  const totalRows = Math.ceil(totalTiles / COLS);
+  const vocab = getVocab();
+  const vocabWords = new Set(vocab.map(v => v.word));
+  let idx = 0;
+  for(let r = 0; r < totalRows; r++){
+    const row = document.createElement('div');
+    row.className = 'row';
+    for(let c = 0; c < COLS && idx < totalTiles; c++){
+      const t = tiles[idx++];
+      const btn = document.createElement('button');
+      btn.className = 'tile';
+      btn.dataset.word = t.word;
+      btn.dataset.cat = t.catId;
+      btn.dataset.size = '1';
+      btn.textContent = t.word;
+      setWords(btn, [t.word]);
+      if(vocabWords.has(t.word)) btn.classList.add('bookmarked');
+      renderTile(btn);
+      btn.addEventListener('click', () => selectTile(btn));
+      setupTileBookmark(btn);
+      row.appendChild(btn);
+    }
+    stage.appendChild(row);
+  }
+}
+
+/* ══════════════════════════════════════════════════
+   START / NEW GAME
+   ══════════════════════════════════════════════════ */
+function applyGridCSS(){
+  COLS = getCols();
+  document.body.className = 'grid-' + GRID;
+  document.documentElement.style.setProperty('--grid-size', COLS);
+  document.documentElement.style.setProperty('--tile-gap-total', ((COLS - 1) * 4) + 'px');
+}
+
+function startGame(num){
+  game = generateGame(num);
+  first = null;
+  score = 0;
+  errors = 0;
+  completedGroups = 0;
+  gameOver = false;
+  gameStartTime = Date.now();
+  track('game_start',{theme:chosenTheme,difficulty:chosenDifficulty,grid:GRID,gameNum:num});
+  applyGridCSS();
+  document.getElementById('mode-screen').style.display = 'none';
+  document.getElementById('game-screen').classList.add('active');
+  document.getElementById('title-text').textContent = t('titleText').replace('{n}',GRID).replace('{g}',GRID);
+  document.getElementById('game-num').textContent = '#' + num;
+  document.getElementById('status').textContent = t('statusDefault');
+  document.getElementById('btn-new').style.display = 'none';
+  document.getElementById('btn-giveup').style.display = '';
+  updateStats();
+  buildGrid();
+}
+
+function newRandomGame(){
+  const num = Math.floor(Math.random() * 999999) + 1;
+  startGame(num);
+}
+
+function promptGameNumber(){
+  const btn = document.getElementById('btn-goto');
+  const existing = document.getElementById('game-input');
+  if(existing){ existing.remove(); return; }
+  const inp = document.createElement('input');
+  inp.id = 'game-input';
+  inp.type = 'number';
+  inp.min = '1';
+  inp.placeholder = t('inputPlaceholder');
+  inp.style.cssText = 'width:70px;padding:3px 6px;font-size:14px;border:1px solid #69b;border-radius:2px;margin-left:4px';
+  btn.parentNode.insertBefore(inp, btn.nextSibling);
+  inp.focus();
+  inp.addEventListener('keydown', e => {
+    if(e.key === 'Enter'){
+      const num = parseInt(inp.value, 10);
+      if(num > 0){ inp.remove(); startGame(num); }
+    }
+    if(e.key === 'Escape') inp.remove();
+  });
+  inp.addEventListener('blur', () => setTimeout(() => inp.remove(), 200));
+}
+
+let chosenTheme = 'all';
+let chosenSize = 10;
+let chosenDifficulty = 'easy';
+
+function pickTheme(btn){
+  document.querySelectorAll('.sel-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  chosenTheme = btn.dataset.theme;
+  updateThemeCounts();
+}
+function pickDifficulty(btn){
+  document.querySelectorAll('.diff-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  chosenDifficulty = btn.dataset.diff;
+  updateThemeCounts();
+}
+function pickSize(btn){
+  document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  chosenSize = parseInt(btn.dataset.size, 10);
+}
+function launchGame(){
+  GRID = chosenSize;
+  newRandomGame();
+}
+function selectMode(gridSize){
+  GRID = gridSize;
+  newRandomGame();
+}
+
+function backToMenu(){
+  document.getElementById('game-screen').classList.remove('active');
+  document.getElementById('mode-screen').style.display = '';
+  document.body.className = '';
+}
+
+function updateThemeCounts(){
+  // Apply difficulty filter first
+  let bank = getBank();
+  if(chosenDifficulty === 'easy'){
+    bank = bank.filter(cat => cat.tags && cat.tags.difficulty === 'easy');
+  } else if(chosenDifficulty === 'medium'){
+    bank = bank.filter(cat => cat.tags && (cat.tags.difficulty === 'easy' || cat.tags.difficulty === 'medium'));
+  }
+  const superB = {history:'history',tech:'tech',culture:'culture',hist:'history',geo:'history',phil:'history',sci:'tech',math:'tech',med:'tech',sport:'tech',biz:'tech',art:'culture',lit:'culture',music:'culture',lang:'culture',nature:'culture',myth:'culture',psych:'culture',movies:'culture',tv:'culture',pop:'culture',games:'culture',internet:'culture',stories:'culture',books:'culture',mythology:'culture',architecture:'culture',business:'tech',politics:'history',adventure:'tech',space:'tech',geography:'history',geek:'tech'};
+  const counts = {all:0,geek:0,human:0,history:0,tech:0,culture:0};
+  bank.forEach(cat => {
+    counts.all++;
+    if(cat.tags){
+      if(counts[cat.tags.a] !== undefined) counts[cat.tags.a]++;
+      const mapped = superB[cat.tags.b];
+      if(mapped && counts[mapped] !== undefined) counts[mapped]++;
+    }
+  });
+  const declension = n => {
+    if(LANG === 'en') return n + (n === 1 ? ' topic' : ' topics');
+    const m = n % 100;
+    if(m >= 11 && m <= 19) return n + ' тем';
+    const d = n % 10;
+    if(d === 1) return n + ' тема';
+    if(d >= 2 && d <= 4) return n + ' темы';
+    return n + ' тем';
+  };
+  ['all','geek','human','history','tech','culture'].forEach(k => {
+    const el = document.getElementById('cnt-' + k);
+    if(el) el.textContent = declension(counts[k]);
+  });
+}
+
+function updateLangUI(){
+  // Update html lang attribute
+  document.documentElement.lang = LANG;
+  // Mode screen text
+  const subtitle = document.getElementById('sel-subtitle');
+  if(subtitle) subtitle.textContent = t('subtitle');
+  const lblTheme = document.getElementById('lbl-theme');
+  if(lblTheme) lblTheme.textContent = t('theme');
+  const lblDiff = document.getElementById('lbl-difficulty');
+  if(lblDiff) lblDiff.textContent = t('difficulty');
+  const lblSize = document.getElementById('lbl-size');
+  if(lblSize) lblSize.textContent = t('size');
+  const divider = document.getElementById('sel-divider');
+  if(divider) divider.textContent = t('divider');
+  // Theme button labels
+  const lblMap = {all:'allTopics',geek:'geek',human:'human',history:'history',tech:'tech',culture:'culture'};
+  Object.keys(lblMap).forEach(k => {
+    const el = document.getElementById('lbl-theme-' + k);
+    if(el) el.textContent = t(lblMap[k]);
+  });
+  const easyDesc = document.getElementById('d-desc-easy');
+  if(easyDesc) easyDesc.textContent = t('easyDesc');
+  const medDesc = document.getElementById('d-desc-medium');
+  if(medDesc) medDesc.textContent = t('medDesc');
+  const hardDesc = document.getElementById('d-desc-hard');
+  if(hardDesc) hardDesc.textContent = t('hardDesc');
+  // Size button descriptions
+  const s10 = document.getElementById('s-desc-10');
+  if(s10) s10.textContent = t('s10');
+  const s15 = document.getElementById('s-desc-15');
+  if(s15) s15.textContent = t('s15');
+  const s20 = document.getElementById('s-desc-20');
+  if(s20) s20.textContent = t('s20');
+  // Start button
+  const startBtn = document.querySelector('.start-btn');
+  if(startBtn) startBtn.textContent = t('startGame');
+  // Topbar buttons
+  const btnBack = document.getElementById('btn-back');
+  if(btnBack) btnBack.title = t('backTitle');
+  const btnVocab = document.getElementById('btn-vocab');
+  if(btnVocab){ btnVocab.textContent = t('vocab'); btnVocab.title = t('vocabBtnTitle'); }
+  const btnHistory = document.getElementById('btn-history');
+  if(btnHistory){ btnHistory.textContent = t('historyBtn'); btnHistory.title = t('historyBtnTitle'); }
+  const btnGoto = document.getElementById('btn-goto');
+  if(btnGoto){ btnGoto.textContent = t('gotoBtn'); btnGoto.title = t('gotoBtnTitle'); }
+  const btnGiveup = document.getElementById('btn-giveup');
+  if(btnGiveup) btnGiveup.textContent = t('giveUp');
+  const btnNew = document.getElementById('btn-new');
+  if(btnNew) btnNew.textContent = t('newGame');
+  // Topbar meta labels
+  const metaGroups = document.getElementById('meta-groups-label');
+  if(metaGroups) metaGroups.textContent = t('groups') + ': ';
+  const metaScore = document.getElementById('meta-score-label');
+  if(metaScore) metaScore.textContent = t('score') + ': ';
+  const metaGame = document.getElementById('meta-game-label');
+  if(metaGame) metaGame.textContent = t('gameLabel') + ' ';
+  // Status bar default (only if game is active and not over)
+  const statusEl = document.getElementById('status');
+  if(statusEl && !gameOver && game) statusEl.textContent = t('statusDefault');
+  else if(statusEl && !game) statusEl.textContent = t('statusDefault');
+  // Update theme counts with correct bank
+  updateThemeCounts();
+  // Update title-text if game is running
+  if(game) document.getElementById('title-text').textContent = t('titleText').replace('{n}',GRID).replace('{g}',GRID);
+  // Lang switcher button
+  const currentLangLabel = document.getElementById('currentLangLabel');
+  if(currentLangLabel) currentLangLabel.textContent = LANG.toUpperCase();
+  const flagEl = document.getElementById('currentFlag');
+  if(flagEl){
+    if(LANG === 'ru'){
+      flagEl.setAttribute('viewBox','0 0 9 6');
+      flagEl.innerHTML = '<rect width="9" height="2" fill="#fff"/><rect y="2" width="9" height="2" fill="#0039a6"/><rect y="4" width="9" height="2" fill="#d52b1e"/>';
+    } else {
+      flagEl.setAttribute('viewBox','0 0 30 20');
+      flagEl.innerHTML = '<rect width="30" height="20" fill="#fff"/><path fill="#B31942" d="M0,0h30v1.54H0zM0,3.08h30v1.54H0zM0,6.15h30v1.54H0zM0,9.23h30v1.54H0zM0,12.31h30v1.54H0zM0,15.38h30v1.54H0zM0,18.46h30v1.54H0z"/><rect width="12" height="10.77" fill="#002868"/><g fill="#fff"><circle cx="1" cy="1" r=".5"/><circle cx="3" cy="1" r=".5"/><circle cx="5" cy="1" r=".5"/><circle cx="7" cy="1" r=".5"/><circle cx="9" cy="1" r=".5"/><circle cx="11" cy="1" r=".5"/><circle cx="2" cy="2.2" r=".5"/><circle cx="4" cy="2.2" r=".5"/><circle cx="6" cy="2.2" r=".5"/><circle cx="8" cy="2.2" r=".5"/><circle cx="10" cy="2.2" r=".5"/><circle cx="1" cy="3.4" r=".5"/><circle cx="3" cy="3.4" r=".5"/><circle cx="5" cy="3.4" r=".5"/><circle cx="7" cy="3.4" r=".5"/><circle cx="9" cy="3.4" r=".5"/><circle cx="11" cy="3.4" r=".5"/><circle cx="2" cy="4.6" r=".5"/><circle cx="4" cy="4.6" r=".5"/><circle cx="6" cy="4.6" r=".5"/><circle cx="8" cy="4.6" r=".5"/><circle cx="10" cy="4.6" r=".5"/><circle cx="1" cy="5.8" r=".5"/><circle cx="3" cy="5.8" r=".5"/><circle cx="5" cy="5.8" r=".5"/><circle cx="7" cy="5.8" r=".5"/><circle cx="9" cy="5.8" r=".5"/><circle cx="11" cy="5.8" r=".5"/><circle cx="2" cy="7" r=".5"/><circle cx="4" cy="7" r=".5"/><circle cx="6" cy="7" r=".5"/><circle cx="8" cy="7" r=".5"/><circle cx="10" cy="7" r=".5"/><circle cx="1" cy="8.2" r=".5"/><circle cx="3" cy="8.2" r=".5"/><circle cx="5" cy="8.2" r=".5"/><circle cx="7" cy="8.2" r=".5"/><circle cx="9" cy="8.2" r=".5"/><circle cx="11" cy="8.2" r=".5"/><circle cx="2" cy="9.4" r=".5"/><circle cx="4" cy="9.4" r=".5"/><circle cx="6" cy="9.4" r=".5"/><circle cx="8" cy="9.4" r=".5"/><circle cx="10" cy="9.4" r=".5"/><circle cx="1" cy="10.6" r=".5"/><circle cx="3" cy="10.6" r=".5"/><circle cx="5" cy="10.6" r=".5"/><circle cx="7" cy="10.6" r=".5"/><circle cx="9" cy="10.6" r=".5"/><circle cx="11" cy="10.6" r=".5"/></g>';
+    }
+  }
+}
+
+function toggleLangDropdown(e){
+  e.stopPropagation();
+  const dd = document.getElementById('langDropdown');
+  dd.style.display = dd.style.display === 'none' ? 'block' : 'none';
+}
+function setLang(lang, e){
+  e.stopPropagation();
+  LANG = lang;
+  document.getElementById('langDropdown').style.display = 'none';
+  updateLangUI();
+}
+document.addEventListener('click', e => {
+  const sw = document.getElementById('langSwitch');
+  if(sw && !e.target.closest('#langSwitch')) document.getElementById('langDropdown').style.display = 'none';
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+  track('visit',{});
+  updateLangUI();
+  const params = new URLSearchParams(window.location.search);
+  const gn = parseInt(params.get('game'), 10);
+  const gm = parseInt(params.get('grid'), 10);
+  if(gm === 15 || gm === 20) GRID = gm;
+  if(gn > 0){
+    startGame(gn);
+  } else {
+    document.getElementById('mode-screen').style.display = '';
+  }
+
+  document.getElementById('btn-giveup').addEventListener('click', () => {
+    if(!gameOver) endGame(false);
+  });
+  document.getElementById('btn-new').addEventListener('click', newRandomGame);
+  document.getElementById('btn-goto').addEventListener('click', promptGameNumber);
+  document.getElementById('btn-history').addEventListener('click', showHistory);
+  document.getElementById('btn-vocab').addEventListener('click', showVocab);
+  document.getElementById('btn-back').addEventListener('click', backToMenu);
+
+  /* Start button: fixed at bottom only if scrolled out of view on mobile */
+  if(window.innerWidth <= 600){
+    const startBtn = document.querySelector('.start-btn');
+    if(startBtn && 'IntersectionObserver' in window){
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          startBtn.classList.toggle('btn-fixed', !e.isIntersecting);
+        });
+      }, {threshold:0.1});
+      observer.observe(startBtn);
+    }
+  }
+});
+</script>
+</head>
+<body>
+<!-- MODE SELECTOR -->
+<div class="mode-screen" id="mode-screen" style="display:none">
+<div class="sel-container">
+  <div class="lang-switch" id="langSwitch" onclick="toggleLangDropdown(event)" style="position:absolute;top:16px;right:16px;cursor:pointer;display:flex;align-items:center;gap:5px;padding:5px 10px;border-radius:6px;border:1px solid #ddd;background:#fafafa;font-size:13px;font-weight:600;color:#444;user-select:none">
+    <svg id="currentFlag" class="flag-icon" style="width:24px;height:16px;flex-shrink:0;display:block;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,0.1)" viewBox="0 0 9 6"><rect width="9" height="2" fill="#fff"/><rect y="2" width="9" height="2" fill="#0039a6"/><rect y="4" width="9" height="2" fill="#d52b1e"/></svg>
+    <span id="currentLangLabel">RU</span>
+    <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="#999" stroke-width="1.5" stroke-linecap="round"/></svg>
+    <div id="langDropdown" style="display:none;position:absolute;top:100%;right:0;margin-top:4px;background:#fff;border:1px solid #ddd;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.12);z-index:200;min-width:150px;overflow:hidden">
+      <div class="lang-option" data-lang="ru" onclick="setLang('ru',event)" style="display:flex;align-items:center;gap:8px;padding:10px 16px;font-size:14px;font-weight:500;cursor:pointer">
+        <svg style="width:24px;height:16px;flex-shrink:0;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,0.1)" viewBox="0 0 9 6"><rect width="9" height="2" fill="#fff"/><rect y="2" width="9" height="2" fill="#0039a6"/><rect y="4" width="9" height="2" fill="#d52b1e"/></svg>
+        Русский
+      </div>
+      <div class="lang-option" data-lang="en" onclick="setLang('en',event)" style="display:flex;align-items:center;gap:8px;padding:10px 16px;font-size:14px;font-weight:500;cursor:pointer">
+        <svg style="width:24px;height:16px;flex-shrink:0;border-radius:2px;box-shadow:0 0 0 1px rgba(0,0,0,0.1)" viewBox="0 0 30 20"><rect width="30" height="20" fill="#fff"/><path fill="#B31942" d="M0,0h30v1.54H0zM0,3.08h30v1.54H0zM0,6.15h30v1.54H0zM0,9.23h30v1.54H0zM0,12.31h30v1.54H0zM0,15.38h30v1.54H0zM0,18.46h30v1.54H0z"/><rect width="12" height="10.77" fill="#002868"/><g fill="#fff"><circle cx="1" cy="1" r=".5"/><circle cx="3" cy="1" r=".5"/><circle cx="5" cy="1" r=".5"/><circle cx="7" cy="1" r=".5"/><circle cx="9" cy="1" r=".5"/><circle cx="11" cy="1" r=".5"/><circle cx="2" cy="2.2" r=".5"/><circle cx="4" cy="2.2" r=".5"/><circle cx="6" cy="2.2" r=".5"/><circle cx="8" cy="2.2" r=".5"/><circle cx="10" cy="2.2" r=".5"/><circle cx="1" cy="3.4" r=".5"/><circle cx="3" cy="3.4" r=".5"/><circle cx="5" cy="3.4" r=".5"/><circle cx="7" cy="3.4" r=".5"/><circle cx="9" cy="3.4" r=".5"/><circle cx="11" cy="3.4" r=".5"/><circle cx="2" cy="4.6" r=".5"/><circle cx="4" cy="4.6" r=".5"/><circle cx="6" cy="4.6" r=".5"/><circle cx="8" cy="4.6" r=".5"/><circle cx="10" cy="4.6" r=".5"/><circle cx="1" cy="5.8" r=".5"/><circle cx="3" cy="5.8" r=".5"/><circle cx="5" cy="5.8" r=".5"/><circle cx="7" cy="5.8" r=".5"/><circle cx="9" cy="5.8" r=".5"/><circle cx="11" cy="5.8" r=".5"/><circle cx="2" cy="7" r=".5"/><circle cx="4" cy="7" r=".5"/><circle cx="6" cy="7" r=".5"/><circle cx="8" cy="7" r=".5"/><circle cx="10" cy="7" r=".5"/><circle cx="1" cy="8.2" r=".5"/><circle cx="3" cy="8.2" r=".5"/><circle cx="5" cy="8.2" r=".5"/><circle cx="7" cy="8.2" r=".5"/><circle cx="9" cy="8.2" r=".5"/><circle cx="11" cy="8.2" r=".5"/><circle cx="2" cy="9.4" r=".5"/><circle cx="4" cy="9.4" r=".5"/><circle cx="6" cy="9.4" r=".5"/><circle cx="8" cy="9.4" r=".5"/><circle cx="10" cy="9.4" r=".5"/><circle cx="1" cy="10.6" r=".5"/><circle cx="3" cy="10.6" r=".5"/><circle cx="5" cy="10.6" r=".5"/><circle cx="7" cy="10.6" r=".5"/><circle cx="9" cy="10.6" r=".5"/><circle cx="11" cy="10.6" r=".5"/></g></svg>
+        English
+      </div>
+    </div>
+  </div>
+  <h1>Connections</h1>
+  <p class="subtitle" id="sel-subtitle">Собери группы слов по категориям</p>
+  <div class="sel-section">
+    <div class="sel-label" id="lbl-theme">Тематика</div>
+    <div class="sel-row">
+      <button class="sel-btn active" data-theme="all" onclick="pickTheme(this)"><span class="sel-emoji">🎲</span><span class="sel-lbl" id="lbl-theme-all">Все темы</span><span class="sel-count" id="cnt-all"></span></button>
+      <button class="sel-btn" data-theme="geek" onclick="pickTheme(this)"><span class="sel-emoji">⚡</span><span class="sel-lbl" id="lbl-theme-geek">Гики</span><span class="sel-count" id="cnt-geek"></span></button>
+      <button class="sel-btn" data-theme="human" onclick="pickTheme(this)"><span class="sel-emoji">📖</span><span class="sel-lbl" id="lbl-theme-human">Гуманитарии</span><span class="sel-count" id="cnt-human"></span></button>
+    </div>
+    <div class="sel-divider"><span id="sel-divider">или по трём направлениям</span></div>
+    <div class="sel-row">
+      <button class="sel-btn" data-theme="history" onclick="pickTheme(this)"><span class="sel-emoji">🏛</span><span class="sel-lbl" id="lbl-theme-history">История и политика</span><span class="sel-count" id="cnt-history"></span></button>
+      <button class="sel-btn" data-theme="tech" onclick="pickTheme(this)"><span class="sel-emoji">💻</span><span class="sel-lbl" id="lbl-theme-tech">Технологии и спорт</span><span class="sel-count" id="cnt-tech"></span></button>
+      <button class="sel-btn" data-theme="culture" onclick="pickTheme(this)"><span class="sel-emoji">🎭</span><span class="sel-lbl" id="lbl-theme-culture">Культура</span><span class="sel-count" id="cnt-culture"></span></button>
+    </div>
+  </div>
+  <div class="sel-section">
+    <div class="sel-label" id="lbl-difficulty">Сложность</div>
+    <div class="diff-group">
+      <button class="diff-btn active" data-diff="easy" onclick="pickDifficulty(this)"><span class="d-label">Easy</span><span class="d-desc" id="d-desc-easy">знакомые слова</span></button>
+      <button class="diff-btn" data-diff="medium" onclick="pickDifficulty(this)"><span class="d-label">Medium</span><span class="d-desc" id="d-desc-medium">нужна эрудиция</span></button>
+      <button class="diff-btn" data-diff="hard" onclick="pickDifficulty(this)"><span class="d-label">Hard</span><span class="d-desc" id="d-desc-hard">вынос мозга</span></button>
+    </div>
+  </div>
+  <div class="sel-section">
+    <div class="sel-label" id="lbl-size">Размер</div>
+    <div class="size-group">
+      <button class="size-btn active" data-size="10" onclick="pickSize(this)"><div class="s-num">10×10</div><div class="s-desc" id="s-desc-10">100 слов · 10 групп</div></button>
+      <button class="size-btn" data-size="15" onclick="pickSize(this)"><div class="s-num">15×15</div><div class="s-desc" id="s-desc-15">225 слов · 15 групп</div></button>
+      <button class="size-btn" data-size="20" onclick="pickSize(this)"><div class="s-num">20×20</div><div class="s-desc" id="s-desc-20">400 слов · 20 групп</div></button>
+    </div>
+  </div>
+  <button class="start-btn" onclick="launchGame()">Начать игру</button>
+</div>
+</div>
+
+<!-- GAME SCREEN -->
+<div class="game-screen" id="game-screen">
+<div class="scroll-wrap"><div class="scroll-inner">
+<div class="topbar">
+  <button id="btn-back" class="btn" title="Назад к выбору">◀</button>
+  <div class="title" id="title-text">Make 10 groups of 10!</div>
+  <div class="meta meta-gamenum"><span id="meta-game-label">Игра </span><span id="game-num">#1</span></div>
+  <div class="meta"><span id="meta-groups-label">Группы: </span><span id="groups">0/10</span></div>
+  <div class="meta"><span id="meta-score-label">Score: </span><span id="score">0</span></div>
+  <div class="spacer"></div>
+  <button id="btn-vocab" class="btn btn-info" title="Словарь">★ Словарь</button>
+  <button id="btn-history" class="btn btn-info" title="История игр">📊</button>
+  <button id="btn-goto" class="btn" title="Играть по номеру">Игра #…</button>
+  <button id="btn-giveup" class="btn btn-danger">Сдаюсь</button>
+  <button id="btn-new" class="btn btn-primary" style="display:none">Новая игра</button>
+</div>
+<div class="stage" id="stage"></div>
+<div class="statusbar" id="status">Неправильная пара: −1 балл + слова → словарь ★</div>
+</div></div>
+</div>
+</body>
+</html>
