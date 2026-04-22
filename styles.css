@@ -185,10 +185,10 @@ body {
 }
 .bio__body p:last-child { margin-bottom: 0; }
 
-/* Ссылки внутри био — полужирные, без подчёркивания */
+/* Ссылки внутри био — обычный вес, без подчёркивания; подчёркивание только на hover */
 .bio__body a {
   color: #1f1f1e;
-  font-weight: 600;
+  font-weight: inherit;
   text-decoration: none;
   border-bottom: 0;
   padding-bottom: 0;
@@ -450,11 +450,17 @@ body {
 }
 .foot p { margin: 0; }
 .foot__email {
-  width: 142px;
-  height: 14px;
-  user-select: none;
-  pointer-events: none;
-  display: block;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 14px;
+  text-decoration: none;
+  transition: color .15s ease;
+}
+.foot__email:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 /* ==========================================================================
