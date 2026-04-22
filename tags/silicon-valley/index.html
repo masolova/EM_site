@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кремниевая долина — Елена Масолова</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/assets/site.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#1a1a1a">
+</head>
+<body class="page-tag">
+  <div class="page">
+
+    <!-- \u0428\u0430\u043f\u043a\u0430 \u2014 \u0442\u0430\u043a\u0430\u044f \u0436\u0435, \u043a\u0430\u043a \u043d\u0430 \u0433\u043b\u0430\u0432\u043d\u043e\u0439 -->
+    <header class="top">
+      <a href="/" class="brand">Елена Масолова</a>
+      <div class="top-right">
+
+        <nav class="top-nav">
+
+          <a href="#">Обо мне</a>
+        <a href="#">Проекты</a>
+        <a href="#">Контакты</a>
+
+        </nav>
+
+        <div class="lang" data-lang>
+          <button type="button" class="lang__current" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang__flag" aria-hidden="true">🇷🇺</span>RU<span class="lang__chev" aria-hidden="true"></span>
+          </button>
+          <div class="lang__menu" role="listbox">
+            <a href="#" class="is-active" role="option"><span class="lang__flag" aria-hidden="true">🇷🇺</span>Русский</a>
+            <a href="#" role="option"><span class="lang__flag" aria-hidden="true">🇬🇧</span>English</a>
+          </div>
+        </div>
+
+        <button class="top-burger" aria-label="Меню" type="button">
+        <span></span><span></span><span></span>
+      </button>
+
+      </div>
+    </header>
+
+    <!-- Биография — та же, что на главной (верх не должен дёргаться при клике) -->
+    <section class="bio">
+      <div class="bio__photo">
+        <img src="/assets/elena.jpg" alt="Елена Масолова">
+      </div>
+      <div class="bio__text">
+        <h1>Елена Масолова</h1>
+        <p class="bio__lead">
+          продуктовый менеджер и&nbsp;основатель, делаю AI-инструменты
+          для анализа рынка недвижимости и&nbsp;качества медиа-контента.
+          Веду этот блог, пишу про продукт, данные и&nbsp;языки.
+        </p>
+        <ul class="bio__list bio__extra">
+          <li>Создала AI-поиск и&nbsp;аналитику для рынка недвижимости Балтии.</li>
+          <li>Запустила MVP для автоматической проверки качества новостей.</li>
+          <li>Веду проекты вокруг латышского и&nbsp;ливского языков.</li>
+          <li>Пишу в&nbsp;<a href="#">Телеграм-канал</a>.</li>
+        </ul>
+        <button class="bio__more" type="button" aria-expanded="false">Больше <span class="bio__more-arrow">→</span></button>
+      </div>
+    </section>
+
+    <aside class="cta-strip" aria-label="Подписка">
+      <form class="cta-strip__form" action="#" method="post">
+        <input type="email" name="email" placeholder="Ваш email" required>
+        <button type="submit">Подписаться</button>
+      </form>
+      <div class="cta-strip__hint">Дайджест каждые 2&nbsp;недели.</div>
+    </aside>
+
+    <!-- Сайдбар с тегами (активный выделен) + отфильтрованный список постов -->
+    <main class="main">
+
+      <aside class="tags" aria-label="Теги">
+        <div class="tags__head">
+          <h2 class="tags__title">Темы</h2>
+          <button class="tags__toggle" type="button" aria-expanded="false">Показать все&nbsp;20&nbsp;→</button>
+        </div>
+        <ul class="tags__list">
+          <li><a href="/tags/produkt/" class="is-active"><span class="tag">Дизайн</span><span class="count">48</span></a></li>
+          <li><a href="#"><span class="tag">Недвижимость</span><span class="count">42</span></a></li>
+          <li><a href="#"><span class="tag">AI и&nbsp;ML</span><span class="count">37</span></a></li>
+          <li><a href="#"><span class="tag">Данные</span><span class="count">29</span></a></li>
+          <li><a href="#"><span class="tag">Стартапы</span><span class="count">26</span></a></li>
+          <li><a href="#"><span class="tag">Мысли</span><span class="count">24</span></a></li>
+          <li><a href="#"><span class="tag">NLP</span><span class="count">21</span></a></li>
+          <li><a href="#"><span class="tag">Языки</span><span class="count">19</span></a></li>
+          <li><a href="#"><span class="tag">Книги</span><span class="count">17</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Аналитика</span><span class="count">15</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Команда</span><span class="count">13</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Инструменты</span><span class="count">12</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Медиа</span><span class="count">11</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Латышский</span><span class="count">9</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Интервью</span><span class="count">8</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Принципы</span><span class="count">7</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">MVP</span><span class="count">6</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Ливский</span><span class="count">5</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Переезд</span><span class="count">4</span></a></li>
+          <li class="tags__overflow"><a href="#"><span class="tag">Грузия</span><span class="count">3</span></a></li>
+        </ul>
+
+        <!-- CTA-подписка в сайдбаре (десктоп) -->
+        <form class="sidebar-cta" action="#" method="post">
+          <div class="sidebar-cta__label">Подписка</div>
+          <p class="sidebar-cta__text">Дайджест каждые 2&nbsp;недели.</p>
+          <input type="email" name="email" placeholder="Ваш email" required>
+          <button type="submit">Подписаться</button>
+        </form>
+      </aside>
+
+      <section class="posts" aria-label="Посты с тегом Кремниевая долина">
+        <ul class="posts__list posts__list--arrow">
+          <li><a href="/articles/summer/">А в этом году лето было?</a></li>
+          <li><a href="/articles/money-printer-puzzle/">Загадка печатного станка</a></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="foot">
+      <p>© Елена Масолова</p>
+    </footer>
+
+  </div>
+</body>
+</html>

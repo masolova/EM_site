@@ -5,6 +5,7 @@ date: "2026-04-21"
 lang: "ru"
 tags:
   - "дизайн"
+  - "стартап"
 status: "published"
 pinned: false
 ---
