@@ -47,19 +47,34 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     if (!data) return; // первого визита ещё нет облачной строки
     try {
       // Merge: облако приоритетнее по updated_at, но мерджим vocabulary и phrase_state по элементам.
-      const localVocab = JSON.parse(localStorage.getItem('lll2_vocabulary') || '[]');
+      const localVocabRaw = localStorage.getItem('lll2_vocabulary') || '[]';
+      const localVocab = JSON.parse(localVocabRaw);
       const cloudVocab = data.vocabulary || [];
       const mergedVocab = mergeVocab(localVocab, cloudVocab);
-      const localState = JSON.parse(localStorage.getItem('lll2_phrase_state') || '{}');
+      const localStateRaw = localStorage.getItem('lll2_phrase_state') || '{}';
+      const localState = JSON.parse(localStateRaw);
       const cloudState = data.phrase_state || {};
       const mergedState = mergePhraseState(localState, cloudState);
       const localSession = parseInt(localStorage.getItem('lll2_session_count') || '0', 10) || 0;
       const cloudSession = data.session_count || 0;
-      localStorage.setItem('lll2_vocabulary', JSON.stringify(mergedVocab));
-      localStorage.setItem('lll2_phrase_state', JSON.stringify(mergedState));
-      localStorage.setItem('lll2_session_count', String(Math.max(localSession, cloudSession)));
-      if (data.deck_mode) localStorage.setItem('lll2_deck_mode', data.deck_mode);
-      // Перезагружаем страницу, чтобы JS подхватил данные.
+      const newVocabRaw = JSON.stringify(mergedVocab);
+      const newStateRaw = JSON.stringify(mergedState);
+      const newSession = String(Math.max(localSession, cloudSession));
+      // Проверяем, изменился ли хоть один ключ в результате merge.
+      // Если ничего не поменялось — НЕ пишем в localStorage и НЕ перезагружаем, иначе будет петля.
+      const vocabChanged = newVocabRaw !== localVocabRaw;
+      const stateChanged = newStateRaw !== localStateRaw;
+      const sessionChanged = newSession !== String(localSession);
+      const deckChanged = data.deck_mode && data.deck_mode !== localStorage.getItem('lll2_deck_mode');
+      if (!vocabChanged && !stateChanged && !sessionChanged && !deckChanged) {
+        // Ничего не поменялось — выходим без reload.
+        return;
+      }
+      if (vocabChanged) localStorage.setItem('lll2_vocabulary', newVocabRaw);
+      if (stateChanged) localStorage.setItem('lll2_phrase_state', newStateRaw);
+      if (sessionChanged) localStorage.setItem('lll2_session_count', newSession);
+      if (deckChanged) localStorage.setItem('lll2_deck_mode', data.deck_mode);
+      // Перезагружаем только если реально что-то прилетело из облака.
       location.reload();
     } catch (e) {
       console.warn('[lll pull merge]', e);
