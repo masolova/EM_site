@@ -18,8 +18,8 @@
 //   4. В Project Settings → API скопируй "Project URL" и "anon public" ключ.
 //   5. Вставь их в две строки ниже:
 
-const SUPABASE_URL = '';        // <-- сюда вставь URL проекта
-const SUPABASE_ANON_KEY = '';   // <-- сюда вставь anon public ключ
+const SUPABASE_URL = 'https://jihwcozfchbgrduvelmu.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
 
 (function () {
   // Если ключи не заполнены — auth выключен, всё работает оффлайн.
