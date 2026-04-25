@@ -136,7 +136,6 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     btn.type = 'button';
     btn.className = 'auth-btn';
     btn.textContent = 'Войти';
-    btn.style.cssText = 'border:0;background:transparent;color:#5a4a44;cursor:pointer;font:inherit;padding:6px 10px;border-radius:8px;';
     btn.addEventListener('click', onAuthClick);
     header.appendChild(btn);
     return btn;
@@ -164,20 +163,27 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   function updateAuthBtn() {
     const btn = document.getElementById('authBtn');
     if (!btn) return;
+    const iconUser = '<svg class="auth-btn-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>';
+    const iconCheck = '<svg class="auth-btn-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M16 11l2 2 4-4"/></svg>';
     if (currentUser) {
       const e = currentUser.email || '';
       const short = e.length > 22 ? e.slice(0, 20) + '…' : e;
-      btn.textContent = short + ' · выйти';
+      btn.classList.add('auth-btn--in');
+      btn.innerHTML = iconCheck + '<span class="auth-btn-text">' + short + ' · выйти</span>';
       btn.title = 'Вы вошли как ' + e;
+      btn.setAttribute('aria-label', 'Аккаунт ' + e);
     } else {
-      btn.textContent = 'Войти';
+      btn.classList.remove('auth-btn--in');
+      btn.innerHTML = iconUser + '<span class="auth-btn-text">Войти</span>';
       btn.title = 'Войти, чтобы синхронизировать прогресс между устройствами';
+      btn.setAttribute('aria-label', 'Войти');
     }
   }
 
   // Запуск.
   document.addEventListener('DOMContentLoaded', async function () {
     injectAuthButton();
+    updateAuthBtn(); // сразу рендерим иконку, не ждём Supabase
     const { data } = await sb.auth.getSession();
     if (data && data.session && data.session.user) {
       currentUser = data.session.user;

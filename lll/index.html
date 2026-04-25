@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <title>Lena Learns Latvian</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%239B1B30'/%3E%3Crect y='12' width='32' height='8' fill='white'/%3E%3C/svg%3E">
   <style>
@@ -28,7 +28,12 @@
       background: radial-gradient(circle at top, #fbf6f1 0%, var(--bg) 60%, #efe6de 100%);
       color: var(--text);
       overflow: hidden;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
     }
+    button { touch-action: manipulation; }
     .shell {
       width: min(1440px, calc(100vw - 40px));
       height: min(900px, calc(100vh - 32px));
@@ -326,6 +331,7 @@
       background: #ffffff;
       height: 58px;
       flex-shrink: 0;
+      position: relative;
     }
     .legacy-header .logo {
       display: flex;
@@ -378,6 +384,40 @@
       transform: translateY(-1px);
       box-shadow: 0 10px 20px rgba(28, 25, 23, 0.10);
     }
+    /* Кнопка «Войти» / аккаунта в шапке */
+    .legacy-header .auth-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid #e1ddd9;
+      background: #fff;
+      color: #5a4a44;
+      font-family: Inter, system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background .15s, color .15s, border-color .15s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .legacy-header .auth-btn:hover {
+      background: rgba(153,27,27,.06);
+      color: #991b1b;
+      border-color: rgba(153,27,27,.3);
+    }
+    .legacy-header .auth-btn--in {
+      background: #fff;
+      color: #3a9760;
+      border-color: rgba(58,151,96,.4);
+    }
+    .legacy-header .auth-btn--in:hover {
+      background: rgba(58,151,96,.08);
+      color: #2c7847;
+      border-color: rgba(58,151,96,.6);
+    }
+    .legacy-header .auth-btn-icon { display: block; flex-shrink: 0; }
     .legacy-header .vocab-badge {
       position: absolute;
       top: 2px;
@@ -437,6 +477,8 @@
       cursor: pointer;
       transition: background .16s ease, color .16s ease, border-color .16s ease, box-shadow .16s ease, transform .12s ease;
       white-space: nowrap;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
     }
     .legacy-header .deck-segmented button:hover {
       background: rgba(153,27,27,.06);
@@ -847,16 +889,34 @@
       line-height: 1.35;
     }
     @media (max-width: 900px) {
-      .streak-layout { flex-direction: column; }
-      .streak-left { border-right: 0; border-bottom: 1px solid var(--shell-line); }
+      .streak-layout { display: flex; flex-direction: column; }
+      .streak-left { border-right: 0; border-bottom: 0; border-top: 1px solid var(--shell-line); }
     }
     @media (max-width: 600px) {
-      .streak-left { padding: 16px; flex: 0 0 auto; }
-      .streak-right { padding: 16px; }
-      .streak-big { font-size: 72px; }
-      .streak-big small { font-size: 22px; margin-top: 8px; }
-      .streak-today { font-size: 16px; }
-      .streak-hint { font-size: 12px; }
+      .streak-layout {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+      }
+      /* Сверху: карта. Снизу: цифра + «сегодня» */
+      .streak-left { order: 1; padding: 16px 14px 8px; flex: 0 0 auto; align-items: stretch; }
+      .streak-right { order: 2; padding: 16px 16px 24px; flex: 1 1 auto; }
+
+      /* Большая цифра + компактный ряд с «сегодня» */
+      .streak-big { font-size: 88px; line-height: .9; }
+      .streak-big small { font-size: 18px; margin-top: 6px; font-weight: 600; }
+      .streak-today { font-size: 14px; margin-top: 14px; }
+      .streak-hint { font-size: 11px; max-width: none; }
+
+      /* Карта на всю ширину: ячейки растягиваются */
+      .heatmap, .heatmap-months {
+        width: 100%;
+        grid-auto-columns: minmax(0, 1fr);
+      }
+      .heatmap { grid-template-rows: repeat(7, minmax(0, 1fr)); aspect-ratio: var(--hm-aspect, 15 / 7); }
+      .hm-cell { width: auto; height: auto; border-radius: 4px; }
+      .heatmap-legend { font-size: 11px; gap: 6px; flex-wrap: wrap; }
+      .heatmap-legend .hm-cell { width: 14px; height: 14px; border-radius: 3px; }
     }
 
     /* Круглая кнопка динамика слева от фразы — видна только на мобиле */
@@ -915,16 +975,42 @@
       .legacy-header .deck-segmented::-webkit-scrollbar { display: none; }
       .legacy-header .deck-segmented button {
         flex: 0 0 auto;
-        padding: 7px 14px;
-        font-size: 13px;
+        padding: 10px 18px;
+        font-size: 14px;
+        min-height: 40px;
+        touch-action: manipulation;
       }
       /* Streak и словарь — поменьше */
       .legacy-header .streak-btn { padding: 4px 6px; font-size: 13px; }
       .legacy-header .btn-icon { width: 32px; height: 32px; }
 
-      /* Кнопка входа на мобиле прячется в меню (будет сделано отдельным экраном) */
-      .legacy-header .auth-btn,
-      .legacy-header #authBtn { display: none; }
+      /* На мобиле «Войти» — красная пилюля в ПРАВОМ ВЕРХНЕМ углу шапки (абсолютно поверх) */
+      .legacy-header .auth-btn-icon { display: none; }
+      .legacy-header .auth-btn-text { display: inline; }
+      .legacy-header .auth-btn {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        z-index: 4;
+        padding: 8px 18px;
+        min-height: 36px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #991b1b;
+        border: 1px solid #991b1b;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .legacy-header .auth-btn--in {
+        background: #3a9760;
+        border-color: #3a9760;
+        color: #ffffff;
+      }
+      /* Чтобы правая группа (стрик/словарь) не залезала под пилюлю — резервируем справа отступ */
+      .legacy-header .header-right { margin-right: 100px; }
 
       /* Главная область становится вертикальной с обычным потоком */
       .page {
@@ -1051,9 +1137,14 @@
       .vocab-title { font-size: 17px; }
       .vocab-count-label { font-size: 14px; }
 
-      /* Поиск — отдельный ряд, во всю ширину */
+      /* Поиск — отдельный ряд, перемещён ПОСЛЕ фильтров (через JS), чтобы не вылезала клавиатура */
       .vocab-search-wrap { width: 100%; }
+      .vocab-search-wrap.vocab-search-mobile-row {
+        padding: 0 14px 8px;
+        background: #fafaf9;
+      }
       .vocab-search { font-size: 15px; padding: 10px 12px 10px 36px; }
+      .vocab-search-mobile-row::before { left: 26px; }
 
       /* Фильтры: горизонтальный скролл */
       .vocab-filters {
@@ -1660,7 +1751,7 @@ window.addEventListener('DOMContentLoaded', function () {
     const activeKey = streakState.recoverDate || todayKey();
     const progress = getDayProgress(activeKey);
     const remaining = Math.max(0, DAILY_GOAL - progress);
-    streakToday.textContent = (streakState.recoverDate ? 'Восстановление: ' : 'Сегодня: ') + progress + '/' + DAILY_GOAL + (streakState.recoverDate ? '' : ' — ещё ' + remaining);
+    streakToday.textContent = (streakState.recoverDate ? 'Восстановление: ' : 'Сегодня: ') + progress + '/' + DAILY_GOAL;
     recoverBanner.style.display = streakState.recoverDate ? 'block' : 'none';
     recoverBanner.textContent = streakState.recoverDate ? 'Режим восстановления: ' + streakState.recoverDate + '. Сделайте 5 открытий перевода.' : '';
   }
@@ -1807,7 +1898,41 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  vocabToggle.addEventListener('click', function () { vocabOverlay.classList.add('open'); renderVocab(); if (vocabSearch) vocabSearch.focus(); });
+  // На мобиле перемещаем поиск НИЖЕ фильтров, чтобы при открытии словаря не вылезала клавиатура.
+  function reorderVocabForViewport() {
+    const overlay = document.getElementById('vocabOverlay');
+    if (!overlay) return;
+    const header = overlay.querySelector('.vocab-header');
+    const headerRight = overlay.querySelector('.vocab-header-right');
+    const searchWrap = overlay.querySelector('.vocab-search-wrap');
+    const filters = overlay.querySelector('.vocab-filters');
+    const list = overlay.querySelector('.vocab-list-wrap');
+    if (!searchWrap || !filters || !list) return;
+    const isMobile = window.matchMedia('(max-width: 600px)').matches;
+    if (isMobile) {
+      // Выносим поиск из шапки и кладём между фильтрами и списком
+      if (searchWrap.parentElement === headerRight) {
+        overlay.insertBefore(searchWrap, list);
+        searchWrap.classList.add('vocab-search-mobile-row');
+      }
+    } else {
+      // Возвращаем в шапку
+      if (searchWrap.parentElement !== headerRight && headerRight) {
+        headerRight.insertBefore(searchWrap, headerRight.firstChild);
+        searchWrap.classList.remove('vocab-search-mobile-row');
+      }
+    }
+  }
+  window.addEventListener('resize', reorderVocabForViewport);
+  reorderVocabForViewport();
+
+  vocabToggle.addEventListener('click', function () {
+    reorderVocabForViewport();
+    vocabOverlay.classList.add('open');
+    renderVocab();
+    // Фокус на поиск — только на десктопе (на мобиле вылезает клавиатура)
+    if (vocabSearch && window.matchMedia('(min-width: 601px)').matches) vocabSearch.focus();
+  });
   vocabClose.addEventListener('click', function () { vocabOverlay.classList.remove('open'); });
   streakBtn.addEventListener('click', function () { streakOverlay.classList.add('open'); updateStreakSummary(); buildHeatmap(); });
   streakClose.addEventListener('click', function () { streakOverlay.classList.remove('open'); });
