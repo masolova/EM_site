@@ -189,12 +189,14 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       if (name.length > 0) name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
       if (name.length > 14) name = name.slice(0, 13) + '…';
       btn.classList.add('auth-btn--in');
+      document.body.classList.add('auth-in');
       // Компактный вид: только имя, «выйти» серым нежирным, в confirm() при клике.
       btn.innerHTML = '<span class="auth-btn-name">' + name + '</span><span class="auth-btn-logout">выйти</span>';
       btn.title = 'Вы вошли как ' + e + '. Клик для выхода.';
       btn.setAttribute('aria-label', 'Аккаунт ' + e);
     } else {
       btn.classList.remove('auth-btn--in');
+      document.body.classList.remove('auth-in');
       btn.innerHTML = iconUser + '<span class="auth-btn-text">Войти</span>';
       btn.title = 'Войти, чтобы синхронизировать прогресс между устройствами';
       btn.setAttribute('aria-label', 'Войти');

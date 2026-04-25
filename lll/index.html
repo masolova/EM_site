@@ -434,7 +434,8 @@
       justify-content: center;
       padding: 0 4px;
     }
-    .legacy-header .vocab-badge.show { display: flex; }
+    /* (5) Бейдж с числом выключён — бессмысленный индикатор. */
+    .legacy-header .vocab-badge.show { display: none; }
     .legacy-header .streak-btn {
       display: flex;
       align-items: center;
@@ -576,7 +577,7 @@
     }
     .vocab-search {
       width: 100%;
-      padding: 8px 12px 8px 34px;
+      padding: 8px 12px 8px 38px;
       border: 1px solid #b15454;
       border-radius: 10px;
       font-family: Inter, system-ui, sans-serif;
@@ -585,14 +586,19 @@
       color: #57534e;
       outline: none;
     }
+    /* (3) Нормальная лупа — SVG как background-image, под контролем размера. */
     .vocab-search-wrap::before {
-      content: '⌕';
+      content: '';
       position: absolute;
       left: 12px;
       top: 50%;
+      width: 18px;
+      height: 18px;
       transform: translateY(-50%);
-      color: #a8a29e;
-      font-size: 14px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a8a29e' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='7'/><line x1='21' y1='21' x2='16.65' y2='16.65'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
       pointer-events: none;
     }
     .vocab-filters {
@@ -621,6 +627,55 @@
       background: #a61d1d;
       color: #fff;
       border-color: #a61d1d;
+    }
+    .vocab-filter-btn.vocab-filter-heart {
+      padding: 8px 12px;
+      gap: 6px;
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+    }
+    /* Сердечко в фильтре «Избранное» всегда залито красным. */
+    .vocab-filter-btn.vocab-filter-heart svg {
+      display: block;
+      stroke: #c14444;
+      fill: #c14444;
+    }
+    .vocab-filter-btn.vocab-filter-heart.active svg {
+      stroke: #ffffff;
+      fill: #ffffff;
+    }
+    /* Статистика выученного под SRS-кнопками */
+    .learned-progress {
+      width: 100%;
+      padding: 16px 0 16px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .learned-progress__label {
+      font-size: 15px;
+      color: #44403c;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: -0.01em;
+    }
+    .learned-progress__track {
+      width: 95%;
+      margin: 0;
+      height: 10px;
+      background: #e7e5e4;
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .learned-progress__fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #3a9760, #4caf6d);
+      border-radius: 99px;
+      transition: width .35s ease;
     }
     .filter-count {
       font-weight: 500;
@@ -773,15 +828,19 @@
     }
     .btn-export-header { flex-shrink: 0; }
     .recover-banner {
-      background: rgba(153,27,27,.05);
-      border-bottom: 1px solid #e7e5e4;
-      padding: 6px 24px;
+      background: rgba(153,27,27,.08);
+      border-bottom: 1px solid #e7d3d3;
+      padding: 10px 24px;
       font-size: 13px;
       color: #991b1b;
       text-align: center;
       font-weight: 500;
-      display: none;
+      /* Резервируем место всегда, чтобы календарь не прыгал. Скрываем содержимое через visibility. */
+      visibility: hidden;
+      min-height: 38px;
+      box-sizing: border-box;
     }
+    .recover-banner.is-visible { visibility: visible; }
     .streak-body {
       padding: 0;
       overflow: hidden;
@@ -792,10 +851,13 @@
     }
     .streak-layout {
       display: grid;
-      grid-template-columns: 60% 40%;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       align-items: stretch;
       min-height: calc(100vh - 53px);
       background: #fafaf9;
+      max-width: 1320px;
+      margin: 0 auto;
+      width: 100%;
     }
     .streak-left {
       padding: 34px 28px 24px 28px;
@@ -803,14 +865,16 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: flex-end;
     }
+    .streak-left > * { max-width: 420px; width: 100%; }
     .streak-right {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 24px 18px;
+      text-align: center;
+      padding: 24px 28px 24px 24px;
       background: #fafaf9;
     }
     .streak-big {
@@ -907,7 +971,7 @@
       }
       /* Сверху: карта. Снизу: цифра + «сегодня» */
       .streak-left { order: 1; padding: 16px 14px 8px; flex: 0 0 auto; align-items: stretch; }
-      .streak-right { order: 2; padding: 16px 16px 24px; flex: 1 1 auto; }
+      .streak-right { order: 2; padding: 16px 16px 24px; flex: 1 1 auto; align-items: center; text-align: center; }
 
       /* Большая цифра + компактный ряд с «сегодня» */
       .streak-big { font-size: 88px; line-height: .9; }
@@ -970,17 +1034,32 @@
         gap: 4px;
       }
 
-      /* Чипы колоды — отдельный ряд на всю ширину, горизонтальный скролл */
+      /* Чипы колоды — отдельный ряд на всю ширину, горизонтальный скролл с fade-подсказкой справа */
       .legacy-header .deck-segmented {
         order: 3;
         flex: 1 0 100%;
         overflow-x: auto;
+        overflow-y: hidden;
         scrollbar-width: none;
         gap: 6px;
+        /* Сдвигаем второй ряд вниз, чтобы «Войти» была над ним, а не над первым рядом. После логина этот отступ убирается — см. .auth-in . */
+        margin-top: 6px;
         padding-bottom: 2px;
+        padding-right: 8px;
         -webkit-overflow-scrolling: touch;
+        /* Fade справа — подсказка о горизонтальном скролле */
+        -webkit-mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 28px), transparent 100%);
+                mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 28px), transparent 100%);
+        scroll-snap-type: x proximity;
       }
       .legacy-header .deck-segmented::-webkit-scrollbar { display: none; }
+      .legacy-header .deck-segmented button { scroll-snap-align: start; }
+      /* Когда докрутили вправо — снимаем fade */
+      .legacy-header .deck-segmented.scroll-end {
+        -webkit-mask-image: none;
+                mask-image: none;
+        padding-right: 0;
+      }
       .legacy-header .deck-segmented button {
         flex: 0 0 auto;
         padding: 10px 18px;
@@ -997,11 +1076,11 @@
       .legacy-header .auth-btn-text { display: inline; }
       .legacy-header .auth-btn {
         position: absolute;
-        top: 10px;
-        right: 12px;
+        top: 4px;
+        right: 10px;
         z-index: 4;
-        padding: 8px 18px;
-        min-height: 36px;
+        padding: 6px 14px;
+        min-height: 30px;
         border-radius: 999px;
         display: inline-flex;
         align-items: center;
@@ -1009,9 +1088,11 @@
         background: #991b1b;
         border: 1px solid #991b1b;
         color: #ffffff;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 700;
       }
+      /* После логина лишнее место сверху убираем — сжимаем второй ряд обратно к шапке. */
+      body.auth-in .legacy-header .deck-segmented { margin-top: 0; }
       /* (д) Залогиненный вид — без пилюли, просто текст на уровне логотипа. */
       .legacy-header .auth-btn--in {
         top: 14px;            /* выравниваем по baseline с «Lena Learns Latvian» */
@@ -1096,6 +1177,10 @@
       }
       .audio-btn-mobile:active { transform: scale(.94); }
       .audio-btn-mobile.is-playing { background: #7d1414; }
+      .audio-btn-mobile:disabled, .audio-btn-mobile[disabled] {
+        opacity: 0.85;
+        cursor: default;
+      }
 
       /* Скрываем старую кнопку «Прослушать» на мобиле — её роль взял динамик */
       .audio-btn { display: none; }
@@ -1193,13 +1278,21 @@
       .vocab-search { font-size: 15px; padding: 10px 12px 10px 36px; }
       .vocab-search-mobile-row::before { left: 26px; }
 
-      /* Фильтры: горизонтальный скролл */
+      /* Фильтры: горизонтальный скролл с fade-подсказкой */
       .vocab-filters {
         flex-wrap: nowrap;
         overflow-x: auto;
+        overflow-y: hidden;
         scrollbar-width: none;
         padding: 10px 14px;
         gap: 6px;
+        -webkit-overflow-scrolling: touch;
+        -webkit-mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 24px), transparent 100%);
+                mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 24px), transparent 100%);
+      }
+      .vocab-filters.scroll-end {
+        -webkit-mask-image: none;
+                mask-image: none;
       }
       .vocab-filters::-webkit-scrollbar { display: none; }
       .vocab-filter-btn {
@@ -1207,6 +1300,7 @@
         padding: 8px 14px;
         font-size: 13px;
       }
+      .vocab-filter-btn.vocab-filter-heart { padding: 7px 10px; }
       /* Статистику по стадиям на мобиле прячем — перегружает */
       .vocab-stage-stats { display: none; }
 
@@ -1323,6 +1417,10 @@
           </span>
         </button>
       </section>
+      <section class="learned-progress" aria-label="Прогресс изучения">
+        <div class="learned-progress__label" id="learnedProgressLabel">Выучено 0 из 0 (0%)</div>
+        <div class="learned-progress__track"><div class="learned-progress__fill" id="learnedProgressFill"></div></div>
+      </section>
     </main>
   </div>
   <script src="phrases-2813.json.js"></script>
@@ -1393,6 +1491,9 @@ window.addEventListener('DOMContentLoaded', function () {
   const countAll = document.getElementById('countAll');
   const countFav = document.getElementById('countFav');
   const countLearned = document.getElementById('countLearned');
+  const countA2 = document.getElementById('countA2');
+  const countB2 = document.getElementById('countB2');
+  const countLena = document.getElementById('countLena');
   const vocabExport = document.getElementById('vocabExport');
   const streakBtn = document.getElementById('streakBtn');
   const streakOverlay = document.getElementById('streakOverlay');
@@ -1454,6 +1555,22 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   }
   syncDeckSegmented();
+  // Toggle scroll-end class когда пользователь докрутил чипы вправо — убираем fade
+  function updateDeckScrollEnd() {
+    if (!deckSegmented) return;
+    var max = deckSegmented.scrollWidth - deckSegmented.clientWidth;
+    if (max <= 2) {
+      // Нечего скроллить — фейд не нужен
+      deckSegmented.classList.add('scroll-end');
+    } else {
+      deckSegmented.classList.toggle('scroll-end', deckSegmented.scrollLeft >= max - 2);
+    }
+  }
+  if (deckSegmented) {
+    deckSegmented.addEventListener('scroll', updateDeckScrollEnd, { passive: true });
+    window.addEventListener('resize', updateDeckScrollEnd);
+    setTimeout(updateDeckScrollEnd, 0);
+  }
   if (deckSegmented) {
     deckSegmented.addEventListener('click', function (ev) {
       const btn = ev.target.closest('button[data-deck]');
@@ -1666,11 +1783,44 @@ window.addEventListener('DOMContentLoaded', function () {
       };
     });
   }
+  // Все фразы из PHRASES в выбранном диапазоне (для vocab-фильтров a2/b2/lena в словаре — независимо от чипов в шапке).
+  function getRangeEntries(rangeKey) {
+    if (!Array.isArray(PHRASES)) return [];
+    const range = DECK_RANGES[rangeKey];
+    const favIds = getFavIds();
+    const learnedIds = getLearnedIds();
+    return PHRASES.filter(function(item){
+      if (!item || typeof item.lv !== 'string' || !item.lv.trim()) return false;
+      if (range) {
+        var id = (typeof item.id === 'number') ? item.id : null;
+        if (id == null) return false;
+        if (id < range[0] || id > range[1]) return false;
+      }
+      return true;
+    }).map(function(item){
+      var id = item && item.id;
+      return {
+        id: id,
+        lv: item.lv,
+        ru: item.ru,
+        fav: id != null && favIds.has(String(id)),
+        learned: id != null && learnedIds.has(String(id)),
+      };
+    });
+  }
   function getFilteredVocab() {
-    let list = getDeckEntries();
-    if (vocabFilter === 'fav') list = list.filter(v => v.fav && !v.learned);
-    else if (vocabFilter === 'learned') list = list.filter(v => v.learned);
-    else list = list.filter(v => !v.learned);
+    // Новые фильтры по диапазону: a2/b2/lena работают напрямую от PHRASES.
+    let list;
+    if (vocabFilter === 'a2' || vocabFilter === 'b2' || vocabFilter === 'lena') {
+      list = getRangeEntries(vocabFilter).filter(v => !v.learned);
+    } else if (vocabFilter === 'fav') {
+      list = getRangeEntries('all').filter(v => v.fav && !v.learned);
+    } else if (vocabFilter === 'learned') {
+      list = getRangeEntries('all').filter(v => v.learned);
+    } else {
+      // 'all' — все из текущего deck (как раньше), чтобы связь с чипами работала
+      list = getDeckEntries().filter(v => !v.learned);
+    }
     if (vocabSearchQuery) {
       const q = vocabSearchQuery.toLowerCase();
       list = list.filter(v => (v.lv||'').toLowerCase().includes(q) || (v.ru||'').toLowerCase().includes(q));
@@ -1696,6 +1846,14 @@ window.addEventListener('DOMContentLoaded', function () {
     countAll.textContent = totalAll;
     countFav.textContent = totalFav;
     countLearned.textContent = totalLearned;
+    if (countA2 || countB2 || countLena) {
+      var a2List = getRangeEntries('a2').filter(v => !v.learned);
+      var b2List = getRangeEntries('b2').filter(v => !v.learned);
+      var lenaList = getRangeEntries('lena').filter(v => !v.learned);
+      if (countA2) countA2.textContent = a2List.length;
+      if (countB2) countB2.textContent = b2List.length;
+      if (countLena) countLena.textContent = lenaList.length;
+    }
     if (countStageNeg5) countStageNeg5.textContent = stageCounts['-5'];
     if (countStageNeg1) countStageNeg1.textContent = stageCounts['-1'];
     if (countStagePos1) countStagePos1.textContent = stageCounts['1'];
@@ -1815,6 +1973,18 @@ window.addEventListener('DOMContentLoaded', function () {
     renderTranslation();
     srsButtons.forEach(btn => btn.classList.remove('is-selected'));
     if (typeof syncCardFav === 'function') syncCardFav();
+    updateLearnedProgress();
+  }
+  function updateLearnedProgress() {
+    var label = document.getElementById('learnedProgressLabel');
+    var fill  = document.getElementById('learnedProgressFill');
+    if (!label && !fill) return;
+    var total = Array.isArray(PHRASES) ? PHRASES.filter(function(p){ return p && typeof p.lv === 'string' && p.lv.trim(); }).length : 0;
+    var learned = getLearnedIds().size;
+    var pct = total > 0 ? (learned * 100 / total) : 0;
+    var pctText = (pct >= 10 || pct === 0) ? pct.toFixed(0) : pct.toFixed(1);
+    if (label) label.textContent = 'Выучено ' + learned + ' из ' + total + ' (' + pctText + '%)';
+    if (fill)  fill.style.width = pct.toFixed(2) + '%';
   }
   function nextPhrase() {
     if (deck.length < 2) return renderPhrase();
@@ -1849,8 +2019,14 @@ window.addEventListener('DOMContentLoaded', function () {
     const progress = getDayProgress(activeKey);
     const remaining = Math.max(0, DAILY_GOAL - progress);
     streakToday.textContent = (streakState.recoverDate ? 'Восстановление: ' : 'Сегодня: ') + progress + '/' + DAILY_GOAL;
-    recoverBanner.style.display = streakState.recoverDate ? 'block' : 'none';
-    recoverBanner.textContent = streakState.recoverDate ? 'Режим восстановления: ' + streakState.recoverDate + '. Сделайте 5 открытий перевода.' : '';
+    // Полоска восстановления: показываем только когда recoverDate есть; текст ставим один раз — не моргает.
+    if (streakState.recoverDate) {
+      var msg = 'Откройте перевод 5 фраз, и пропущенный день восстановится.';
+      if (recoverBanner.textContent !== msg) recoverBanner.textContent = msg;
+      if (!recoverBanner.classList.contains('is-visible')) recoverBanner.classList.add('is-visible');
+    } else {
+      if (recoverBanner.classList.contains('is-visible')) recoverBanner.classList.remove('is-visible');
+    }
   }
   function buildHeatmap() {
     if (!heatmap || !heatmapMonths) return;
@@ -1933,15 +2109,30 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 
   if (audioButton) {
+    // Флаг: блокируем повторный запуск, пока идёт fetch или играет аудио — иначе эхо.
+    let ttsBusy = false;
+    function setAudioBusy(busy) {
+      ttsBusy = busy;
+      if (audioButton) audioButton.disabled = busy;
+      if (audioButtonMobile) {
+        audioButtonMobile.disabled = busy;
+        audioButtonMobile.classList.toggle('is-playing', busy);
+      }
+    }
     audioButton.addEventListener('click', async function () {
       const text = phraseEl.textContent.trim();
       if (!text) return;
+      // Если играет — останавливаем (toggle).
       if (ttsAudio && !ttsAudio.paused) {
         ttsAudio.pause();
         ttsAudio.currentTime = 0;
         setPlayIcon('play');
+        setAudioBusy(false);
         return;
       }
+      // Если уже загружаем — игнорируем клик.
+      if (ttsBusy) return;
+      setAudioBusy(true);
       audioButton.classList.add('is-pressed');
       setTimeout(function () { audioButton.classList.remove('is-pressed'); }, 150);
       setPlayIcon('pause');
@@ -1954,12 +2145,13 @@ window.addEventListener('DOMContentLoaded', function () {
         const blob = await r.blob();
         const url = URL.createObjectURL(blob);
         ttsAudio = new Audio(url);
-        ttsAudio.addEventListener('ended', function () { setPlayIcon('play'); URL.revokeObjectURL(url); }, { once: true });
-        ttsAudio.addEventListener('error', function () { setPlayIcon('play'); URL.revokeObjectURL(url); }, { once: true });
+        ttsAudio.addEventListener('ended', function () { setPlayIcon('play'); URL.revokeObjectURL(url); setAudioBusy(false); }, { once: true });
+        ttsAudio.addEventListener('error', function () { setPlayIcon('play'); URL.revokeObjectURL(url); setAudioBusy(false); }, { once: true });
         await ttsAudio.play();
       } catch (e) {
         console.warn('TTS error', e);
         setPlayIcon('play');
+        setAudioBusy(false);
       }
     });
   }
@@ -2050,6 +2242,22 @@ window.addEventListener('DOMContentLoaded', function () {
       renderVocab();
     });
   });
+  // Scroll-end логика для vocab-фильтров (убираем fade-маску когда докрутили до конца)
+  (function() {
+    var vocabFiltersEl = document.querySelector('.vocab-filters');
+    if (!vocabFiltersEl) return;
+    function updateVocabFiltersScrollEnd() {
+      var max = vocabFiltersEl.scrollWidth - vocabFiltersEl.clientWidth;
+      if (max <= 2) vocabFiltersEl.classList.add('scroll-end');
+      else vocabFiltersEl.classList.toggle('scroll-end', vocabFiltersEl.scrollLeft >= max - 2);
+    }
+    vocabFiltersEl.addEventListener('scroll', updateVocabFiltersScrollEnd, { passive: true });
+    window.addEventListener('resize', updateVocabFiltersScrollEnd);
+    setTimeout(updateVocabFiltersScrollEnd, 0);
+    // Пересчитать при открытии словаря
+    var vt = document.getElementById('vocabToggle');
+    if (vt) vt.addEventListener('click', function() { setTimeout(updateVocabFiltersScrollEnd, 50); });
+  })();
   vocabListWrap.addEventListener('click', function (e) {
     const btn = e.target.closest('[data-action]');
     if (!btn) return;
@@ -2106,7 +2314,13 @@ window.addEventListener('DOMContentLoaded', function () {
     </div>
     <div class="vocab-filters">
       <button class="vocab-filter-btn active" data-filter="all">Все <span class="filter-count" id="countAll">0</span></button>
-      <button class="vocab-filter-btn" data-filter="fav">Избранное <span class="filter-count" id="countFav">0</span></button>
+      <button class="vocab-filter-btn vocab-filter-heart" data-filter="fav" title="Избранное" aria-label="Избранное">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#c14444" stroke="#c14444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span class="filter-count" id="countFav">0</span>
+      </button>
+      <button class="vocab-filter-btn" data-filter="a2">A2 <span class="filter-count" id="countA2">0</span></button>
+      <button class="vocab-filter-btn" data-filter="b2">B2 <span class="filter-count" id="countB2">0</span></button>
+      <button class="vocab-filter-btn" data-filter="lena">Карточки Лены <span class="filter-count" id="countLena">0</span></button>
       <button class="vocab-filter-btn" data-filter="learned">Выучено <span class="filter-count" id="countLearned">0</span></button>
       <div class="vocab-stage-stats" id="vocabStageStats" aria-live="polite" aria-atomic="true">
         <span class="vocab-stage-stat"><span class="vocab-stage-stat__label">Ужас-ужас:</span><span class="vocab-stage-stat__value" id="countStageNeg5">500</span></span>
