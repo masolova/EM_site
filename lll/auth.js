@@ -167,10 +167,16 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     const iconCheck = '<svg class="auth-btn-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M16 11l2 2 4-4"/></svg>';
     if (currentUser) {
       const e = currentUser.email || '';
-      const short = e.length > 22 ? e.slice(0, 20) + '…' : e;
+      // Имя из email: часть до @, первая буква заглавная.
+      let name = e.split('@')[0] || '';
+      // Берём часть до точки/плюса/подчёркивания, чтобы для elena.masolova получить Elena.
+      name = name.split(/[._+\-]/)[0] || name;
+      if (name.length > 0) name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+      if (name.length > 14) name = name.slice(0, 13) + '…';
       btn.classList.add('auth-btn--in');
-      btn.innerHTML = iconCheck + '<span class="auth-btn-text">' + short + ' · выйти</span>';
-      btn.title = 'Вы вошли как ' + e;
+      // Компактный вид: только имя, «выйти» серым нежирным, в confirm() при клике.
+      btn.innerHTML = '<span class="auth-btn-name">' + name + '</span><span class="auth-btn-logout">выйти</span>';
+      btn.title = 'Вы вошли как ' + e + '. Клик для выхода.';
       btn.setAttribute('aria-label', 'Аккаунт ' + e);
     } else {
       btn.classList.remove('auth-btn--in');
