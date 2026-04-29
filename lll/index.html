@@ -4,7 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <title>Lena Learns Latvian</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=16">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%239B1B30'/%3E%3Crect y='12' width='32' height='8' fill='white'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=16">
+  <link rel="manifest" href="manifest.webmanifest?v=16">
+  <meta name="apple-mobile-web-app-title" content="LLL">
+  <meta name="theme-color" content="#9b1b30">
   <style>
     :root {
       --bg: #f4ede6;
@@ -1590,6 +1595,7 @@ window.addEventListener('DOMContentLoaded', function () {
       if (typeof refillBatch === 'function') { refillBatch(); srsNext(); } else { currentIndex = 0; }
       if (typeof renderPhrase === 'function') renderPhrase();
       if (typeof renderVocab === 'function') renderVocab();
+      if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
     });
   }
   let translationOpen = false;
@@ -1986,20 +1992,38 @@ window.addEventListener('DOMContentLoaded', function () {
     var segY  = document.getElementById('learnedProgressSegY');
     var segG  = document.getElementById('learnedProgressSegG');
     if (!label && !segO && !segY && !segG) return;
-    var total = Array.isArray(PHRASES) ? PHRASES.filter(function(p){ return p && typeof p.lv === 'string' && p.lv.trim(); }).length : 0;
+    // Прогресс считается внутри выбранной колоды (Все/A2/B2/Карточки Лены)
+    var range = (typeof DECK_RANGES !== 'undefined') ? DECK_RANGES[deckMode] : null;
+    var inRange = function(id) {
+      if (!range) return true;
+      var n = Number(id);
+      return Number.isFinite(n) && n >= range[0] && n <= range[1];
+    };
+    var total = 0;
+    if (Array.isArray(PHRASES)) {
+      for (var i = 0; i < PHRASES.length; i++) {
+        var p = PHRASES[i];
+        if (!p || typeof p.lv !== 'string' || !p.lv.trim()) continue;
+        if (!inRange(p.id)) continue;
+        total++;
+      }
+    }
     // Считаем по stage: 1 = Ещё туплю, 2 = ОК, 3 = Выучено
     var c1 = 0, c2 = 0, c3 = 0;
     for (var key in phraseState) {
       if (!Object.prototype.hasOwnProperty.call(phraseState, key)) continue;
+      if (!inRange(key)) continue;
       var st = phraseState[key];
       if (!st) continue;
       if (st.stage === 1) c1++;
       else if (st.stage === 2) c2++;
       else if (st.stage === 3) c3++;
     }
-    // На случай рассинхрона: учтённые «выучено» из vocabulary тоже добавим
-    var learnedFromVocab = getLearnedIds().size;
-    if (learnedFromVocab > c3) c3 = learnedFromVocab;
+    // На случай рассинхрона: «выучено» из vocabulary в диапазоне
+    var learnedInRange = 0;
+    var learnedSet = getLearnedIds();
+    learnedSet.forEach(function(id){ if (inRange(id)) learnedInRange++; });
+    if (learnedInRange > c3) c3 = learnedInRange;
     var sum = c1 + c2 + c3;
     var pct = total > 0 ? (sum * 100 / total) : 0;
     if (label) {

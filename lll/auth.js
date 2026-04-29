@@ -212,17 +212,46 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       currentUser = data.session.user;
       updateAuthBtn();
       await pull();
+      startPeriodicSync();
     }
     sb.auth.onAuthStateChange(async (event, session) => {
       if (event === 'SIGNED_IN' && session) {
         currentUser = session.user;
         updateAuthBtn();
         await pull();
+        startPeriodicSync();
       } else if (event === 'SIGNED_OUT') {
         currentUser = null;
         updateAuthBtn();
+        stopPeriodicSync();
       }
     });
+  });
+
+  // Периодический и event-driven pull, чтобы десктоп подхватывал прогресс с телефона
+  let pullInterval = null;
+  let pullInFlight = false;
+  async function safePull() {
+    if (pullInFlight) return;
+    pullInFlight = true;
+    try { await pull(); } finally { pullInFlight = false; }
+  }
+  function startPeriodicSync() {
+    stopPeriodicSync();
+    // Каждые 60с при активной вкладке
+    pullInterval = setInterval(function () {
+      if (currentUser && document.visibilityState === 'visible') safePull();
+    }, 60000);
+  }
+  function stopPeriodicSync() {
+    if (pullInterval) { clearInterval(pullInterval); pullInterval = null; }
+  }
+  // При возврате во вкладку и получении фокуса — сразу подтягиваем
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible' && currentUser) safePull();
+  });
+  window.addEventListener('focus', function () {
+    if (currentUser) safePull();
   });
 
   window.LLL_AUTH = { enabled: true, push, pull };
