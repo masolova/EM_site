@@ -9,8 +9,13 @@
 //          phrase_state jsonb not null default '{}'::jsonb,
 //          session_count int not null default 0,
 //          deck_mode text,
+//          streak jsonb not null default '{}'::jsonb,
+//          stage_progress jsonb not null default '{}'::jsonb,
 //          updated_at timestamptz not null default now()
 //        );
+//        -- Если таблица уже была без streak/stage_progress, добавь колонки:
+//        alter table lll_progress add column if not exists streak jsonb not null default '{}'::jsonb;
+//        alter table lll_progress add column if not exists stage_progress jsonb not null default '{}'::jsonb;
 //        alter table lll_progress enable row level security;
 //        create policy "own row select" on lll_progress for select using (auth.uid() = user_id);
 //        create policy "own row upsert" on lll_progress for insert with check (auth.uid() = user_id);
@@ -60,13 +65,30 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       const newVocabRaw = JSON.stringify(mergedVocab);
       const newStateRaw = JSON.stringify(mergedState);
       const newSession = String(Math.max(localSession, cloudSession));
+
+      // Streak: мердж дней (max по count) + recoverDate из облака если новее
+      const localStreakRaw = localStorage.getItem('lll2_streak') || '{}';
+      const localStreak = JSON.parse(localStreakRaw);
+      const cloudStreak = data.streak || {};
+      const mergedStreak = mergeStreak(localStreak, cloudStreak);
+      const newStreakRaw = JSON.stringify(mergedStreak);
+      const streakChanged = newStreakRaw !== localStreakRaw;
+
+      // Stage progress: мердж по ключу — берём максимум
+      const localStageRaw = localStorage.getItem('lll2_stage_progress') || '{}';
+      const localStage = JSON.parse(localStageRaw);
+      const cloudStage = data.stage_progress || {};
+      const mergedStage = mergeStageProgress(localStage, cloudStage);
+      const newStageRaw = JSON.stringify(mergedStage);
+      const stageChanged = newStageRaw !== localStageRaw;
+
       // Проверяем, изменился ли хоть один ключ в результате merge.
       // Если ничего не поменялось — НЕ пишем в localStorage и НЕ перезагружаем, иначе будет петля.
       const vocabChanged = newVocabRaw !== localVocabRaw;
       const stateChanged = newStateRaw !== localStateRaw;
       const sessionChanged = newSession !== String(localSession);
       const deckChanged = data.deck_mode && data.deck_mode !== localStorage.getItem('lll2_deck_mode');
-      if (!vocabChanged && !stateChanged && !sessionChanged && !deckChanged) {
+      if (!vocabChanged && !stateChanged && !sessionChanged && !deckChanged && !streakChanged && !stageChanged) {
         // Ничего не поменялось — выходим без reload.
         return;
       }
@@ -74,6 +96,8 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       if (stateChanged) localStorage.setItem('lll2_phrase_state', newStateRaw);
       if (sessionChanged) localStorage.setItem('lll2_session_count', newSession);
       if (deckChanged) localStorage.setItem('lll2_deck_mode', data.deck_mode);
+      if (streakChanged) localStorage.setItem('lll2_streak', newStreakRaw);
+      if (stageChanged) localStorage.setItem('lll2_stage_progress', newStageRaw);
       // Перезагружаем только если реально что-то прилетело из облака.
       location.reload();
     } catch (e) {
@@ -100,6 +124,34 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     return Array.from(map.values());
   }
 
+  function mergeStreak(a, b) {
+    a = a || {}; b = b || {};
+    const daysA = a.days || {};
+    const daysB = b.days || {};
+    const days = {};
+    const keys = new Set([...Object.keys(daysA), ...Object.keys(daysB)]);
+    keys.forEach(k => {
+      const ca = (daysA[k] && daysA[k].count) || 0;
+      const cb = (daysB[k] && daysB[k].count) || 0;
+      days[k] = { count: Math.max(ca, cb) };
+    });
+    // recoverDate: берём непустой; если оба заданы — приоритет облаку (b)
+    const recoverDate = b.recoverDate || a.recoverDate || null;
+    return { days: days, recoverDate: recoverDate };
+  }
+
+  function mergeStageProgress(a, b) {
+    a = a || {}; b = b || {};
+    const out = {};
+    const keys = new Set([...Object.keys(a), ...Object.keys(b)]);
+    keys.forEach(k => {
+      const va = parseInt(a[k] || 0, 10) || 0;
+      const vb = parseInt(b[k] || 0, 10) || 0;
+      out[k] = Math.max(va, vb);
+    });
+    return out;
+  }
+
   function mergePhraseState(a, b) {
     const out = {};
     const keys = new Set([...Object.keys(a || {}), ...Object.keys(b || {})]);
@@ -115,9 +167,11 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     return out;
   }
 
+  // Если в БД нет колонок streak/stage_progress — переключимся на legacy-payload
+  let pushSchemaLegacy = false;
   async function push() {
     if (!currentUser) return;
-    const payload = {
+    const basePayload = {
       user_id: currentUser.id,
       vocabulary: JSON.parse(localStorage.getItem('lll2_vocabulary') || '[]'),
       phrase_state: JSON.parse(localStorage.getItem('lll2_phrase_state') || '{}'),
@@ -125,8 +179,22 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       deck_mode: localStorage.getItem('lll2_deck_mode') || null,
       updated_at: new Date().toISOString(),
     };
+    const payload = pushSchemaLegacy ? basePayload : Object.assign({}, basePayload, {
+      streak: JSON.parse(localStorage.getItem('lll2_streak') || '{}'),
+      stage_progress: JSON.parse(localStorage.getItem('lll2_stage_progress') || '{}'),
+    });
     const { error } = await sb.from('lll_progress').upsert(payload, { onConflict: 'user_id' });
-    if (error) console.warn('[lll push]', error);
+    if (error) {
+      // Колонок streak/stage_progress нет в БД — фолбэк на legacy без них
+      if (!pushSchemaLegacy && /streak|stage_progress|column/i.test(error.message || '')) {
+        console.warn('[lll push] schema missing streak/stage_progress, falling back. Run the ALTER TABLE in auth.js header to enable streak sync.');
+        pushSchemaLegacy = true;
+        const { error: e2 } = await sb.from('lll_progress').upsert(basePayload, { onConflict: 'user_id' });
+        if (e2) console.warn('[lll push fallback]', e2);
+      } else {
+        console.warn('[lll push]', error);
+      }
+    }
   }
   function pushDebounced() {
     if (pushTimer) clearTimeout(pushTimer);
@@ -137,7 +205,7 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   const origSetItem = Storage.prototype.setItem;
   Storage.prototype.setItem = function (k, v) {
     origSetItem.call(this, k, v);
-    if (currentUser && (k === 'lll2_vocabulary' || k === 'lll2_phrase_state' || k === 'lll2_session_count' || k === 'lll2_deck_mode')) {
+    if (currentUser && (k === 'lll2_vocabulary' || k === 'lll2_phrase_state' || k === 'lll2_session_count' || k === 'lll2_deck_mode' || k === 'lll2_streak' || k === 'lll2_stage_progress')) {
       pushDebounced();
     }
   };

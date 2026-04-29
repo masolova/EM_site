@@ -883,8 +883,7 @@
       background: #fafaf9;
     }
     .streak-left {
-      padding: 34px 28px 24px 28px;
-      border-right: 1px solid #e8e4e0;
+      padding: 34px 28px 24px 10%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -960,6 +959,22 @@
     .hm-future { background: #ebedf0; opacity: .55; }
     .hm-recover { cursor: pointer; }
     .hm-recover:hover { outline: 2px solid #d7c1bf; }
+    .hm-cell:hover { outline: 2px solid #d7c1bf; outline-offset: 1px; }
+    .hm-tip {
+      position: fixed;
+      display: none;
+      z-index: 9999;
+      background: #1f1d1b;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.3;
+      padding: 10px 16px;
+      border-radius: 8px;
+      white-space: nowrap;
+      pointer-events: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,.22);
+    }
     .heatmap-legend {
       display: flex;
       align-items: center;
@@ -2148,11 +2163,15 @@ window.addEventListener('DOMContentLoaded', function () {
     const today = new Date();
     const cols = 15;
     const rows = 7;
-    const total = cols * rows;
+    // Первая строка — понедельник. dowMon: пн=0, вт=1, ..., вс=6
+    const dowMon = (today.getDay() + 6) % 7;
+    // Старт = понедельник такой недели, в которой today попадает в последнюю колонку
     const start = new Date(today);
-    start.setDate(today.getDate() - (total - 1));
+    start.setDate(today.getDate() - ((cols - 1) * rows + dowMon));
 
     const monthNames = ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'];
+    const monthFull = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+    const dowFull = ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'];
     const labels = Array(cols).fill('');
     let prevMonth = -1;
     for (let c = 0; c < cols; c++) {
@@ -2190,7 +2209,15 @@ window.addEventListener('DOMContentLoaded', function () {
         else if (count >= 1) lvl = 'hm-1';
         cell.className = 'hm-cell ' + lvl;
         if (isFuture) cell.classList.add('hm-future');
-        cell.title = key + ' — ' + count + ' открытий перевода';
+        // Кастомный тултип: "понедельник, 28 апреля — 5 фраз"
+        const dowLabel = dowFull[d.getDay()];
+        const phrasesLabel = pluralizePhrases(count);
+        const dateLabel = d.getDate() + ' ' + monthFull[d.getMonth()];
+        cell.dataset.tip = isFuture
+          ? (dowLabel + ', ' + dateLabel)
+          : (dowLabel + ', ' + dateLabel + ' — ' + count + ' ' + phrasesLabel);
+        cell.addEventListener('mouseenter', showHmTip);
+        cell.addEventListener('mouseleave', hideHmTip);
         // Кликом восстанавливаем ТОЛЬКО прошлые пустые дни (не сегодня, не будущее, не выполненные)
         if (!done && !isFuture && !isToday) {
           cell.classList.add('hm-recover');
@@ -2204,6 +2231,41 @@ window.addEventListener('DOMContentLoaded', function () {
         heatmap.appendChild(cell);
       }
     }
+  }
+
+  function pluralizePhrases(n) {
+    const nn = Math.abs(n) % 100;
+    const n1 = nn % 10;
+    if (nn > 10 && nn < 20) return 'фраз';
+    if (n1 > 1 && n1 < 5) return 'фразы';
+    if (n1 === 1) return 'фраза';
+    return 'фраз';
+  }
+
+  // Кастомный тултип хитмапа
+  let hmTipEl = null;
+  function ensureHmTip() {
+    if (hmTipEl) return hmTipEl;
+    hmTipEl = document.createElement('div');
+    hmTipEl.className = 'hm-tip';
+    document.body.appendChild(hmTipEl);
+    return hmTipEl;
+  }
+  function showHmTip(ev) {
+    const tip = ensureHmTip();
+    tip.textContent = ev.currentTarget.dataset.tip || '';
+    const r = ev.currentTarget.getBoundingClientRect();
+    tip.style.display = 'block';
+    // Позиционируем сверху по центру ячейки
+    const tipR = tip.getBoundingClientRect();
+    let left = r.left + r.width / 2 - tipR.width / 2;
+    left = Math.max(8, Math.min(left, window.innerWidth - tipR.width - 8));
+    const top = r.top - tipR.height - 8;
+    tip.style.left = left + 'px';
+    tip.style.top = (top < 4 ? r.bottom + 8 : top) + 'px';
+  }
+  function hideHmTip() {
+    if (hmTipEl) hmTipEl.style.display = 'none';
   }
   function recordTranslation() {
     const key = streakState.recoverDate || todayKey();
