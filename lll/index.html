@@ -669,14 +669,15 @@
       background: #e7e5e4;
       border-radius: 99px;
       overflow: hidden;
+      display: flex;
     }
-    .learned-progress__fill {
+    .learned-progress__seg {
       height: 100%;
-      width: 0%;
-      background: linear-gradient(90deg, #3a9760, #4caf6d);
-      border-radius: 99px;
       transition: width .35s ease;
     }
+    .learned-progress__seg--o { background: #dd7d3c; }
+    .learned-progress__seg--y { background: #e6c84a; }
+    .learned-progress__seg--g { background: #3a9760; }
     .filter-count {
       font-weight: 500;
       font-size: 11px;
@@ -1418,8 +1419,12 @@
         </button>
       </section>
       <section class="learned-progress" aria-label="Прогресс изучения">
-        <div class="learned-progress__label" id="learnedProgressLabel">Выучено 0 из 0 (0%)</div>
-        <div class="learned-progress__track"><div class="learned-progress__fill" id="learnedProgressFill"></div></div>
+        <div class="learned-progress__label" id="learnedProgressLabel">Пока выучено 0% фраз. Поехали! 🚀</div>
+        <div class="learned-progress__track" aria-label="Прогресс по этапам">
+          <div class="learned-progress__seg learned-progress__seg--o" id="learnedProgressSegO" style="width:0%"></div>
+          <div class="learned-progress__seg learned-progress__seg--y" id="learnedProgressSegY" style="width:0%"></div>
+          <div class="learned-progress__seg learned-progress__seg--g" id="learnedProgressSegG" style="width:0%"></div>
+        </div>
       </section>
     </main>
   </div>
@@ -1977,14 +1982,50 @@ window.addEventListener('DOMContentLoaded', function () {
   }
   function updateLearnedProgress() {
     var label = document.getElementById('learnedProgressLabel');
-    var fill  = document.getElementById('learnedProgressFill');
-    if (!label && !fill) return;
+    var segO  = document.getElementById('learnedProgressSegO');
+    var segY  = document.getElementById('learnedProgressSegY');
+    var segG  = document.getElementById('learnedProgressSegG');
+    if (!label && !segO && !segY && !segG) return;
     var total = Array.isArray(PHRASES) ? PHRASES.filter(function(p){ return p && typeof p.lv === 'string' && p.lv.trim(); }).length : 0;
-    var learned = getLearnedIds().size;
-    var pct = total > 0 ? (learned * 100 / total) : 0;
-    var pctText = (pct >= 10 || pct === 0) ? pct.toFixed(0) : pct.toFixed(1);
-    if (label) label.textContent = 'Выучено ' + learned + ' из ' + total + ' (' + pctText + '%)';
-    if (fill)  fill.style.width = pct.toFixed(2) + '%';
+    // Считаем по stage: 1 = Ещё туплю, 2 = ОК, 3 = Выучено
+    var c1 = 0, c2 = 0, c3 = 0;
+    for (var key in phraseState) {
+      if (!Object.prototype.hasOwnProperty.call(phraseState, key)) continue;
+      var st = phraseState[key];
+      if (!st) continue;
+      if (st.stage === 1) c1++;
+      else if (st.stage === 2) c2++;
+      else if (st.stage === 3) c3++;
+    }
+    // На случай рассинхрона: учтённые «выучено» из vocabulary тоже добавим
+    var learnedFromVocab = getLearnedIds().size;
+    if (learnedFromVocab > c3) c3 = learnedFromVocab;
+    var sum = c1 + c2 + c3;
+    var pct = total > 0 ? (sum * 100 / total) : 0;
+    if (label) {
+      if (sum === 0) {
+        label.textContent = 'Пока выучено 0% фраз. Поехали! 🚀';
+      } else {
+        // min 0,10%, дальше реальные цифры
+        var shownPct = pct < 0.1 ? 0.1 : pct;
+        var pctText = shownPct.toFixed(2).replace('.', ',');
+        label.textContent = 'Уже ' + pctText + '% фраз (' + sum + ' из ' + total + ')! Продолжай!';
+      }
+    }
+    if (total > 0) {
+      var pO = (c1 * 100 / total).toFixed(3);
+      var pY = (c2 * 100 / total).toFixed(3);
+      var pG = (c3 * 100 / total).toFixed(3);
+      if (segO) segO.style.width = pO + '%';
+      if (segY) segY.style.width = pY + '%';
+      if (segG) {
+        segG.style.width = pG + '%';
+        // Минимальная видимость для крошечных значений
+        segG.style.minWidth = (c3 > 0 ? '2px' : '0');
+      }
+      if (segO) segO.style.minWidth = (c1 > 0 ? '2px' : '0');
+      if (segY) segY.style.minWidth = (c2 > 0 ? '2px' : '0');
+    }
   }
   function nextPhrase() {
     if (deck.length < 2) return renderPhrase();
