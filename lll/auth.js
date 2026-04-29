@@ -206,14 +206,23 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   }
 
   // Диагностический баннер (?diag в URL): показывает email, размер streak, статус push
-  function diagEnabled() { try { return /[?&]diag\b/.test(location.search); } catch(e) { return false; } }
+  function diagEnabled() {
+    try {
+      // Включаем по ?diag в URL ИЛИ по локальному флагу (на iOS по ссылке ? может стрипаться)
+      if (/[?&#]diag\b/.test(location.search) || /[?&#]diag\b/.test(location.hash)) {
+        try { localStorage.setItem('lll2_diag', '1'); } catch(e) {}
+        return true;
+      }
+      return localStorage.getItem('lll2_diag') === '1';
+    } catch(e) { return false; }
+  }
   function ensureDiagBanner() {
     if (!diagEnabled()) return null;
     let el = document.getElementById('lllDiagBanner');
     if (el) return el;
     el = document.createElement('div');
     el.id = 'lllDiagBanner';
-    el.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#1f1d1b;color:#fff;font:12px/1.4 monospace;padding:8px 12px;white-space:pre-wrap;max-height:40vh;overflow:auto;border-top:2px solid #9be9a8;';
+    el.style.cssText = 'position:fixed!important;left:0!important;right:0!important;top:0!important;z-index:2147483647!important;background:#b91c1c!important;color:#fff!important;font:14px/1.4 monospace!important;padding:10px 14px!important;white-space:pre-wrap!important;max-height:60vh!important;overflow:auto!important;border-bottom:3px solid #fff!important;display:block!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;';
     document.body.appendChild(el);
     return el;
   }
