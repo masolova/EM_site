@@ -207,14 +207,9 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
 
   // Диагностический баннер (?diag в URL): показывает email, размер streak, статус push
   function diagEnabled() {
-    try {
-      // Включаем по ?diag в URL ИЛИ по локальному флагу (на iOS по ссылке ? может стрипаться)
-      if (/[?&#]diag\b/.test(location.search) || /[?&#]diag\b/.test(location.hash)) {
-        try { localStorage.setItem('lll2_diag', '1'); } catch(e) {}
-        return true;
-      }
-      return localStorage.getItem('lll2_diag') === '1';
-    } catch(e) { return false; }
+    // Диагностика полностью отключена. Чистим локальный флаг и выходим.
+    try { localStorage.removeItem('lll2_diag'); } catch(e) {}
+    return false;
   }
   function ensureDiagBanner() {
     if (!diagEnabled()) return null;
