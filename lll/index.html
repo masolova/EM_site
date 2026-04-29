@@ -6,8 +6,7 @@
   <title>Lena Learns Latvian</title>
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=16">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%239B1B30'/%3E%3Crect y='12' width='32' height='8' fill='white'/%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=16">
-  <link rel="manifest" href="manifest.webmanifest?v=16">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=17">
   <meta name="apple-mobile-web-app-title" content="LLL">
   <meta name="theme-color" content="#9b1b30">
   <style>
@@ -847,6 +846,27 @@
       box-sizing: border-box;
     }
     .recover-banner.is-visible { visibility: visible; }
+    .recover-banner__close {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 26px;
+      border: none;
+      background: transparent;
+      color: #991b1b;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    .recover-banner__close:hover { background: rgba(153,27,27,.12); }
+    .recover-banner { position: relative; }
     .streak-body {
       padding: 0;
       overflow: hidden;
@@ -857,13 +877,10 @@
     }
     .streak-layout {
       display: grid;
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      grid-template-columns: 60% 40%;
       align-items: stretch;
       min-height: calc(100vh - 53px);
       background: #fafaf9;
-      max-width: 1320px;
-      margin: 0 auto;
-      width: 100%;
     }
     .streak-left {
       padding: 34px 28px 24px 28px;
@@ -871,16 +888,14 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-end;
+      align-items: flex-start;
     }
-    .streak-left > * { max-width: 420px; width: 100%; }
     .streak-right {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 24px 28px 24px 24px;
+      padding: 24px 18px;
       background: #fafaf9;
     }
     .streak-big {
@@ -1609,6 +1624,16 @@ window.addEventListener('DOMContentLoaded', function () {
   let stageProgress = {};
   try { vocabulary = JSON.parse(localStorage.getItem(STORAGE_VOCAB) || '[]'); } catch(e) { vocabulary = []; }
   try { streakState = Object.assign(streakState, JSON.parse(localStorage.getItem(STORAGE_STREAK) || '{}')); } catch(e) {}
+  // Сброс невалидного recoverDate при загрузке: если дата не сегодняшняя — окно восстановления закрыто
+  try {
+    if (streakState.recoverDate) {
+      var _tk = (function(){ var d = new Date(); var y=d.getFullYear(), m=String(d.getMonth()+1).padStart(2,'0'), dd=String(d.getDate()).padStart(2,'0'); return y+'-'+m+'-'+dd; })();
+      if (streakState.recoverDate !== _tk) {
+        streakState.recoverDate = null;
+        localStorage.setItem(STORAGE_STREAK, JSON.stringify(streakState));
+      }
+    }
+  } catch(e) {}
   try { stageProgress = JSON.parse(localStorage.getItem(STORAGE_STAGE_PROGRESS) || '{}'); } catch(e) { stageProgress = {}; }
 
   // ---- SRS (посессионный, Leitner-стиль) ----
@@ -2077,6 +2102,15 @@ window.addEventListener('DOMContentLoaded', function () {
     return count;
   }
   function updateStreakSummary() {
+    // Авто-сброс невалидного recoverDate (будущее, сегодня, уже выполнено)
+    if (streakState.recoverDate) {
+      var rd = streakState.recoverDate;
+      var tk = todayKey();
+      if (rd >= tk || isDayDone(rd)) {
+        streakState.recoverDate = null;
+        saveStreak();
+      }
+    }
     const streak = computeStreak();
     streakNum.textContent = String(streak);
     streakBig.innerHTML = String(streak) + '<small>' + pluralizeDays(streak) + '</small>';
@@ -2084,13 +2118,27 @@ window.addEventListener('DOMContentLoaded', function () {
     const progress = getDayProgress(activeKey);
     const remaining = Math.max(0, DAILY_GOAL - progress);
     streakToday.textContent = (streakState.recoverDate ? 'Восстановление: ' : 'Сегодня: ') + progress + '/' + DAILY_GOAL;
-    // Полоска восстановления: показываем только когда recoverDate есть; текст ставим один раз — не моргает.
+    // Полоска восстановления: показываем только когда recoverDate есть
     if (streakState.recoverDate) {
       var msg = 'Откройте перевод 5 фраз, и пропущенный день восстановится.';
-      if (recoverBanner.textContent !== msg) recoverBanner.textContent = msg;
+      var html = '<span class="recover-banner__text">' + msg + '</span>'
+               + '<button type="button" class="recover-banner__close" id="recoverBannerClose" aria-label="Закрыть">×</button>';
+      if (recoverBanner.innerHTML !== html) recoverBanner.innerHTML = html;
       if (!recoverBanner.classList.contains('is-visible')) recoverBanner.classList.add('is-visible');
+      var closeBtn = document.getElementById('recoverBannerClose');
+      if (closeBtn && !closeBtn.dataset.bound) {
+        closeBtn.dataset.bound = '1';
+        closeBtn.addEventListener('click', function (ev) {
+          ev.stopPropagation();
+          streakState.recoverDate = null;
+          saveStreak();
+          updateStreakSummary();
+          buildHeatmap();
+        });
+      }
     } else {
       if (recoverBanner.classList.contains('is-visible')) recoverBanner.classList.remove('is-visible');
+      recoverBanner.innerHTML = '';
     }
   }
   function buildHeatmap() {
@@ -2122,6 +2170,7 @@ window.addEventListener('DOMContentLoaded', function () {
       heatmapMonths.appendChild(div);
     });
 
+    const todayKeyStr = todayKey();
     for (let c = 0; c < cols; c++) {
       for (let r = 0; r < rows; r++) {
         const index = c * rows + r;
@@ -2131,6 +2180,8 @@ window.addEventListener('DOMContentLoaded', function () {
         const cell = document.createElement('div');
         const done = isDayDone(key);
         const count = getDayProgress(key);
+        const isFuture = key > todayKeyStr;
+        const isToday = key === todayKeyStr;
         // 4 уровня интенсивности GitHub-style
         let lvl = 'hm-empty';
         if (count >= 16) lvl = 'hm-4';
@@ -2138,8 +2189,10 @@ window.addEventListener('DOMContentLoaded', function () {
         else if (count >= 5) lvl = 'hm-2';
         else if (count >= 1) lvl = 'hm-1';
         cell.className = 'hm-cell ' + lvl;
+        if (isFuture) cell.classList.add('hm-future');
         cell.title = key + ' — ' + count + ' открытий перевода';
-        if (!done) {
+        // Кликом восстанавливаем ТОЛЬКО прошлые пустые дни (не сегодня, не будущее, не выполненные)
+        if (!done && !isFuture && !isToday) {
           cell.classList.add('hm-recover');
           cell.addEventListener('click', function () {
             streakState.recoverDate = key;
