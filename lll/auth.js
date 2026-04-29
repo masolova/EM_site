@@ -169,6 +169,8 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
 
   // Если в БД нет колонок streak/stage_progress — переключимся на legacy-payload
   let pushSchemaLegacy = false;
+  let lastPushAt = null;
+  let lastPushError = null;
   async function push() {
     if (!currentUser) return;
     const basePayload = {
@@ -190,11 +192,53 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
         console.warn('[lll push] schema missing streak/stage_progress, falling back. Run the ALTER TABLE in auth.js header to enable streak sync.');
         pushSchemaLegacy = true;
         const { error: e2 } = await sb.from('lll_progress').upsert(basePayload, { onConflict: 'user_id' });
-        if (e2) console.warn('[lll push fallback]', e2);
+        if (e2) { console.warn('[lll push fallback]', e2); lastPushError = e2.message; }
+        else { lastPushAt = new Date(); lastPushError = null; }
       } else {
         console.warn('[lll push]', error);
+        lastPushError = error.message;
       }
+    } else {
+      lastPushAt = new Date();
+      lastPushError = null;
     }
+    updateDiagBanner();
+  }
+
+  // Диагностический баннер (?diag в URL): показывает email, размер streak, статус push
+  function diagEnabled() { try { return /[?&]diag\b/.test(location.search); } catch(e) { return false; } }
+  function ensureDiagBanner() {
+    if (!diagEnabled()) return null;
+    let el = document.getElementById('lllDiagBanner');
+    if (el) return el;
+    el = document.createElement('div');
+    el.id = 'lllDiagBanner';
+    el.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#1f1d1b;color:#fff;font:12px/1.4 monospace;padding:8px 12px;white-space:pre-wrap;max-height:40vh;overflow:auto;border-top:2px solid #9be9a8;';
+    document.body.appendChild(el);
+    return el;
+  }
+  function updateDiagBanner() {
+    const el = ensureDiagBanner();
+    if (!el) return;
+    const streakRaw = localStorage.getItem('lll2_streak') || '{}';
+    let streakDays = 0;
+    let streakSample = '';
+    try {
+      const s = JSON.parse(streakRaw);
+      streakDays = Object.keys(s.days || {}).length;
+      streakSample = JSON.stringify(s).slice(0, 200);
+    } catch(e) {}
+    const stageRaw = localStorage.getItem('lll2_stage_progress') || '{}';
+    let stageKeys = 0;
+    try { stageKeys = Object.keys(JSON.parse(stageRaw)).length; } catch(e) {}
+    const lines = [
+      'email: ' + (currentUser ? (currentUser.email || currentUser.id) : '<НЕ АВТОРИЗОВАН>'),
+      'streak дней в LS: ' + streakDays + (streakSample ? '  образец: ' + streakSample : ''),
+      'stage_progress ключей: ' + stageKeys,
+      'last push: ' + (lastPushAt ? lastPushAt.toLocaleTimeString() : 'было нет') + (pushSchemaLegacy ? '  [LEGACY!]' : ''),
+      'last push error: ' + (lastPushError || 'нет'),
+    ];
+    el.textContent = lines.join('\n');
   }
   function pushDebounced() {
     if (pushTimer) clearTimeout(pushTimer);
@@ -207,8 +251,15 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     origSetItem.call(this, k, v);
     if (currentUser && (k === 'lll2_vocabulary' || k === 'lll2_phrase_state' || k === 'lll2_session_count' || k === 'lll2_deck_mode' || k === 'lll2_streak' || k === 'lll2_stage_progress')) {
       pushDebounced();
+      updateDiagBanner();
     }
   };
+
+  // При открытии оверлея стрика — принудительный push, чтобы гарантировать свежие данные в облаке
+  document.addEventListener('click', function (ev) {
+    const t = ev.target && ev.target.closest && ev.target.closest('#streakBtn');
+    if (t && currentUser) push();
+  }, true);
 
   // UI: кнопка «Войти/Выйти» в шапке.
   function injectAuthButton() {
@@ -275,22 +326,29 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   document.addEventListener('DOMContentLoaded', async function () {
     injectAuthButton();
     updateAuthBtn(); // сразу рендерим иконку, не ждём Supabase
+    updateDiagBanner();
     const { data } = await sb.auth.getSession();
     if (data && data.session && data.session.user) {
       currentUser = data.session.user;
       updateAuthBtn();
+      updateDiagBanner();
       await pull();
+      // При входе сразу пушим текущее локальное состояние — включая streak/stage_progress
+      push();
       startPeriodicSync();
     }
     sb.auth.onAuthStateChange(async (event, session) => {
       if (event === 'SIGNED_IN' && session) {
         currentUser = session.user;
         updateAuthBtn();
+        updateDiagBanner();
         await pull();
+        push();
         startPeriodicSync();
       } else if (event === 'SIGNED_OUT') {
         currentUser = null;
         updateAuthBtn();
+        updateDiagBanner();
         stopPeriodicSync();
       }
     });
