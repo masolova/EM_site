@@ -6,6 +6,7 @@ lang: "ru"
 tags:
   - "дизайн"
   - "стартап"
+  - "лонгрид"
 status: "published"
 pinned: false
 ---

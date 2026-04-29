@@ -14,9 +14,9 @@ GitHub Pages.
 
 ## Что есть в v12
 
-- Главная — `/index.html` (+ варианты `/index-link-1..3.html`)
-- Страница тега — `/tags/produkt/index.html` (пример для тега «Продукт»)
-- Страница статьи — `/articles/finite-games/index.html`
+- Главная — `/index.html`
+- Страницы тегов — `/tags/<slug>/index.html`
+- Страницы статей — `/articles/<slug>/index.html` (генерируются из `content/posts/*.md`)
 - Страница 404 — `/404.html`
 
 Структура путей уже заложена с прицелом на будущую английскую версию:
@@ -28,9 +28,6 @@ GitHub Pages.
 ```
 elena-site/
 ├── index.html                        # главная
-├── index-link-1.html                 # варианты компоновки списка постов
-├── index-link-2.html
-├── index-link-3.html
 ├── 404.html                          # страница «не найдено»
 ├── styles.css                        # стили всего сайта
 ├── assets/

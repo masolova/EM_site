@@ -6,6 +6,7 @@ lang: "ru"
 tags:
   - "стартап"
   - "Кремниевая долина"
+  - "лонгрид"
 status: "published"
 pinned: false
 ---
