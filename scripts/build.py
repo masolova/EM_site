@@ -163,19 +163,38 @@ def md_to_html(md):
     lines = md.split("\n")
     out = []
     i = 0
-    in_ul = False
-    in_ol = False
+    # Стек открытых списков: [("ul"|"ol", indent_level, li_open_bool)]
+    # li_open_bool — есть ли незакрытый <li> в этом списке (родитель для вложенных)
+    list_stack = []
     in_quote = False
     in_code = False
 
+    def close_top_list():
+        """Закрывает верхний список. Если у него есть открытый <li> — сначала его."""
+        if not list_stack:
+            return
+        kind, lvl, li_open = list_stack.pop()
+        if li_open:
+            out.append("</li>")
+        out.append(f"</{kind}>")
+
+    def close_lists_to_level(target_level):
+        """Закрывает списки с indent > target_level (с их открытыми <li>)."""
+        while list_stack and list_stack[-1][1] > target_level:
+            close_top_list()
+            # После закрытия вложенного списка родительский <li> на верхнем элементе стека
+            # должен оставаться открытым, но мы должны его закрыть, потому что вложенный
+            # список был его последним содержимым.
+            if list_stack and list_stack[-1][2]:
+                out.append("</li>")
+                k, l, _ = list_stack[-1]
+                list_stack[-1] = (k, l, False)
+
     def close_lists():
-        nonlocal in_ul, in_ol, in_quote
-        if in_ul:
-            out.append("</ul>")
-            in_ul = False
-        if in_ol:
-            out.append("</ol>")
-            in_ol = False
+        """Полное закрытие всех списков — используется перед не-списочными блоками."""
+        nonlocal in_quote
+        while list_stack:
+            close_top_list()
         if in_quote:
             out.append("</blockquote>")
             in_quote = False
@@ -199,8 +218,19 @@ def md_to_html(md):
             i += 1
             continue
 
-        # Пустая
+        # Пустая строка
         if line.strip() == "":
+            # Если мы внутри списка и следующая непустая строка тоже элемент списка,
+            # то список продолжается (пустые строки внутри списка для визуального разделения).
+            if list_stack:
+                # Проверяем, есть ли дальше элемент списка
+                k = i + 1
+                while k < len(lines) and lines[k].strip() == "":
+                    k += 1
+                if k < len(lines) and re.match(r'^[ \t]*([-*]|\d+\.)\s+', lines[k]):
+                    # Продолжаем список — просто скипаем пустую строку
+                    i += 1
+                    continue
             close_lists()
             i += 1
             continue
@@ -229,38 +259,68 @@ def md_to_html(md):
             out.append("</blockquote>")
             in_quote = False
 
-        # Маркированный список
-        m = re.match(r'^[-*]\s+(.+)$', line)
-        if m:
-            if not in_ul:
-                close_lists()
-                out.append("<ul>")
-                in_ul = True
-            out.append(f"<li>{inline(m.group(1))}</li>")
+        # Список (маркированный или нумерованный, с вложенностью по отступу)
+        # Отступ: 4 пробела или 1 таб = +1 уровень
+        m_ul = re.match(r'^([ \t]*)[-*]\s+(.+)$', line)
+        m_ol = re.match(r'^([ \t]*)\d+\.\s+(.+)$', line)
+        m_list = m_ul or m_ol
+        if m_list:
+            indent_str = m_list.group(1)
+            content = m_list.group(2)
+            kind = "ul" if m_ul else "ol"
+            # Рассчитываем уровень вложенности: таб = 4 пробела
+            spaces = indent_str.replace("\t", "    ")
+            level = len(spaces) // 4
+            # Закрываем все списки с уровнем > level (они закроются вместе со своими <li>)
+            while list_stack and list_stack[-1][1] > level:
+                close_top_list()
+                # После закрытия вложенного списка родительский <li> закрывается
+                if list_stack and list_stack[-1][2]:
+                    out.append("</li>")
+                    k, l, _ = list_stack[-1]
+                    list_stack[-1] = (k, l, False)
+            # Если на этом уровне уже есть список, но другого вида (ul vs ol) — закроем
+            if list_stack and list_stack[-1][1] == level and list_stack[-1][0] != kind:
+                close_top_list()
+            # Если на этом уровне нет открытого списка — открываем
+            if not list_stack or list_stack[-1][1] < level:
+                if in_quote:
+                    out.append("</blockquote>")
+                    in_quote = False
+                # Если открываем вложенный список — НЕ закрываем родительский <li>,
+                # вложенный список становится содержимым родительского <li>.
+                out.append(f"<{kind}>")
+                list_stack.append((kind, level, False))
+            else:
+                # На этом уровне уже открыт список того же вида — закрываем предыдущий <li>
+                if list_stack[-1][2]:
+                    out.append("</li>")
+                    k, l, _ = list_stack[-1]
+                    list_stack[-1] = (k, l, False)
+            # Открываем <li> и оставляем его открытым (помечаем флагом)
+            out.append(f"<li>{inline(content)}")
+            k, l, _ = list_stack[-1]
+            list_stack[-1] = (k, l, True)
             i += 1
             continue
-        elif in_ul:
-            out.append("</ul>")
-            in_ul = False
 
-        # Нумерованный список
-        m = re.match(r'^\d+\.\s+(.+)$', line)
-        if m:
-            if not in_ol:
-                close_lists()
-                out.append("<ol>")
-                in_ol = True
-            out.append(f"<li>{inline(m.group(1))}</li>")
-            i += 1
+        # HTML-блок (строка начинается с <тег) — выводим как есть, без оборачивания в <p>
+        if re.match(r'^\s*<(?:p|div|section|article|aside|figure|table|ul|ol|h[1-6])\b', line, re.IGNORECASE):
+            close_lists()
+            block = [line]
+            j = i + 1
+            # Собираем многострочный HTML-блок до пустой строки
+            while j < len(lines) and lines[j].strip() != "":
+                block.append(lines[j])
+                j += 1
+            out.append("\n".join(block))
+            i = j
             continue
-        elif in_ol:
-            out.append("</ol>")
-            in_ol = False
 
         # Параграф (собираем многострочный)
         para = [line]
         j = i + 1
-        while j < len(lines) and lines[j].strip() and not re.match(r'^(#{1,4}\s|>|[-*]\s|\d+\.\s|```)', lines[j]):
+        while j < len(lines) and lines[j].strip() and not re.match(r'^(#{1,4}\s|>|[-*]\s|\d+\.\s|```|\s*<(?:p|div|section|article|aside|figure|table|ul|ol|h[1-6])\b)', lines[j]):
             para.append(lines[j])
             j += 1
         out.append(f"<p>{inline(' '.join(para))}</p>")
