@@ -151,6 +151,15 @@ body {
   border-bottom-color: var(--accent);
 }
 
+/* Эмодзи в десктопной шапке (видны рядом с текстом ссылок-хайлайтов) */
+.top-nav a .emo-d {
+  display: inline;
+  font-style: normal;
+}
+
+/* ---------- Хайлайты-полоска под шапкой (только мобилка) ---------- */
+.hl-mobile { display: none; }
+
 /* ---------- Bio ---------- */
 .bio {
   display: grid;
@@ -976,6 +985,39 @@ body {
   }
   .brand { font-size: 16px; font-weight: 700; }
   .top-nav { display: none; }
+
+  /* Полоска хайлайтов под шапкой: 50/50, с разделителями */
+  .hl-mobile {
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px solid var(--rule);
+    background: var(--bg);
+  }
+  .hl-mobile a {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 12px 8px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    text-align: center;
+  }
+  .hl-mobile a + a {
+    border-left: 1px solid var(--rule);
+  }
+  .hl-mobile a:hover {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .hl-mobile .emo-d {
+    display: inline;
+    font-style: normal;
+  }
   .top-burger {
     display: flex;
     flex-direction: column;
@@ -1030,6 +1072,8 @@ body {
     border-bottom: 1px solid var(--rule);
     color: var(--text);
   }
+  /* В бургер-меню скрываем эмодзи у ссылок-хайлайтов — только текст */
+  body.menu-open .top-nav a .emo-d { display: none; }
 
   /* ---- Био: фото 128 по центру, имя и био под ним ---- */
   .bio {
