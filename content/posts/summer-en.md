@@ -18,8 +18,9 @@ There are years when the coldest day in Palo Alto is warmer than the warmest day
 
 There's a local joke:
 
-- Was there a summer this year?
-- I don't know. I was in the mine that day.
+— Was there a summer this year?
+
+— I don't know. I was in the mine that day.
 
 I think the photo below shows that very sunny and pleasant summer day in Norilsk.
 

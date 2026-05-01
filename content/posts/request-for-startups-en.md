@@ -28,7 +28,7 @@ Why might such a project be stronger than a random idea? Funds see the wide pict
 
 **Forza is highly likely to invest in these projects, provided the team and execution plan are strong.**
 
-<p class="callout callout--note">↻ The list of projects is updated frequently.</p>
+<p class="callout callout--note">The list of projects is updated frequently.</p>
 
 1. **Home bloodwork OS**
     - Subscription + logistics + interpretation of test results + automated correction protocols (iron, B12, inflammation, lipids) under physician supervision.
