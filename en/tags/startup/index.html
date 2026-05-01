@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Elena Masolova</title>
-  <meta name="description" content="Entrepreneur, investor, reader.">
+  <title>Startup — Elena Masolova</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <link rel="alternate" type="application/rss+xml" title="Elena Masolova — blog (RSS)" href="/feed-en.xml">
   <script defer src="/assets/site.js"></script>
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
@@ -19,7 +17,7 @@
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
   <meta name="theme-color" content="#1a1a1a">
 </head>
-<body>
+<body class="page-tag">
   <div class="page">
 
     <header class="top">
@@ -27,9 +25,11 @@
       <div class="top-right">
 
         <nav class="top-nav">
+
           <a href="/en/articles/looking-for-eir/">Looking for EIR<span class="emo-d" aria-hidden="true"> 🦸‍♂️</span></a>
           <a href="/en/articles/request-for-startups/">Request for Startups<span class="emo-d" aria-hidden="true"> 💎</span></a>
           <a href="/games/connections/">Connections&nbsp;game</a>
+
         </nav>
 
         <div class="lang" data-lang>
@@ -43,8 +43,8 @@
         </div>
 
         <button class="top-burger" aria-label="Menu" type="button">
-          <span></span><span></span><span></span>
-        </button>
+        <span></span><span></span><span></span>
+      </button>
 
       </div>
     </header>
@@ -54,7 +54,7 @@
       <a href="/en/articles/request-for-startups/">Request for Startups<span class="emo-d" aria-hidden="true"> 💎</span></a>
     </nav>
 
-    <!-- Bio -->
+    <!-- Bio — same as homepage -->
     <section class="bio">
       <div class="bio__photo">
         <img src="/assets/elena.jpg" alt="Elena Masolova">
@@ -101,14 +101,15 @@
       <div class="cta-strip__hint">Digest once a month.</div>
     </aside>
 
+    <!-- Tag sidebar (active highlighted) + filtered posts list -->
     <main class="main">
 
-      <aside class="tags" aria-label="Topics">
+                                    <aside class="tags" aria-label="Topics">
         <div class="tags__head">
           <h2 class="tags__title">Topics</h2>
         </div>
         <ul class="tags__list">
-          <li><a href="/en/tags/startup/"><span class="tag">Startup</span><span class="count">4</span></a></li>
+          <li><a href="/en/tags/startup/" class="is-active" aria-current="page"><span class="tag">Startup</span><span class="count">4</span></a></li>
           <li><a href="/en/tags/longread/"><span class="tag">Longread</span><span class="count">3</span></a></li>
           <li><a href="/en/tags/forza/"><span class="tag">Forza</span><span class="count">2</span></a></li>
           <li><a href="/en/tags/silicon-valley/"><span class="tag">Silicon&nbsp;Valley</span><span class="count">2</span></a></li>
@@ -117,30 +118,16 @@
         </ul>
       </aside>
 
-      <section class="posts" aria-label="Posts">
+      <section class="posts" aria-label="Posts tagged Startup">
         <ul class="posts__list posts__list--arrow">
-          <!-- POSTS:START -->
-<li data-slug="exit-is-the-king" class="is-pinned"><a href="/en/articles/exit-is-the-king/">Exit is the King</a></li>
-          <li data-slug="looking-for-eir"><a href="/en/articles/looking-for-eir/">Looking for EIRs</a></li>
+          <li data-slug="exit-is-the-king" class="is-pinned"><a href="/en/articles/exit-is-the-king/">Exit is the King</a></li>
           <li data-slug="request-for-startups"><a href="/en/articles/request-for-startups/">Request for Startups from Forza.Capital</a></li>
           <li data-slug="money-printer-puzzle"><a href="/en/articles/money-printer-puzzle/">The money-printer puzzle</a></li>
-          <li data-slug="summer"><a href="/en/articles/summer/">Was there a summer this year?</a></li>
           <li data-slug="lies-damn-lies-and-design"><a href="/en/articles/lies-damn-lies-and-design/">Lies, damn lies, and design</a></li>
-          <!-- POSTS:END -->
         </ul>
       </section>
 
     </main>
-
-    <section class="cta-footer" aria-label="Subscribe">
-      <h2 class="cta-footer__title">New posts in your inbox</h2>
-      <p class="cta-footer__hint">Digest once a month.</p>
-      <form class="cta-footer__form" action="https://buttondown.com/api/emails/embed-subscribe/elenamasolova" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/elenamasolova', 'popupwindow')">
-        <input type="hidden" name="tag" value="en">
-        <input type="email" name="email" placeholder="Your email" required>
-        <button type="submit">Subscribe</button>
-      </form>
-    </section>
 
     <footer class="foot">
       <a class="foot__email" href="mailto:hello@masolova.com">hello@masolova.com</a>

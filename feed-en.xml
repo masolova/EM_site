@@ -7,8 +7,327 @@
     <link>https://elenamasolova.com/</link>
     <description>Product, data, AI, languages.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Apr 2026 19:51:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 02:13:03 +0000</lastBuildDate>
     <atom:link href="https://elenamasolova.com/feed-en.xml" rel="self" type="application/rss+xml"/>
-
+    <item>
+      <title>Exit is the King</title>
+      <link>https://elenamasolova.com/en/articles/exit-is-the-king/</link>
+      <guid isPermaLink="true">https://elenamasolova.com/en/articles/exit-is-the-king/</guid>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <description>An exit from a startup is the sale of equity to a strategic buyer.</description>
+      <content:encoded><![CDATA[<p><strong>What is a startup exit? Why are exits considered the measure of success? How do you tell whether an exit is good or not?</strong></p>
+<p>An exit from a startup is the sale of equity to a strategic buyer.</p>
+<ul>
+<li>Kinopoisk operated independently; the shareholders sold their stakes to Yandex for $80M and made an exit.
+</li>
+<li>My fund AddVenture II owned a stake in the gaming company Pixonic and sold it to Mail.ru Group (with a 16x cash-on-cash return), making an exit.
+</li>
+</ul>
+<h3>Why is an exit the measure of success?</h3>
+<ul>
+<li>Because it's hard. And extremely rare.
+</li>
+<li>In markets like the Russian one, there are very few strategic acquirers, and IPOs offer no liquidity. I described the problem in more detail <a href="/en/articles/money-printer-puzzle/">here</a>.
+</li>
+<li class="has-snitch">Because venture industry is fueled by capital from VC funds and angel investors, and they expect a return on their money. By the rules of the game from the very start, everyone is heading toward selling the business — that's our <strong>"catching the snitch"</strong> moment.<span class="snitch-floater" aria-label="golden snitch"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 100" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="60" cy="74" r="12"/><circle cx="56" cy="71" r="1.2" fill="currentColor" stroke="none"/><path d="M52 62 C 44 60, 32 54, 22 44 C 16 38, 12 28, 14 18 L 22 30 C 22 26, 26 24, 30 24 L 34 36 C 36 32, 40 30, 44 32 L 46 44 C 48 42, 50 44, 52 62 Z"/><path d="M68 62 C 76 60, 88 54, 98 44 C 104 38, 108 28, 106 18 L 98 30 C 98 26, 94 24, 90 24 L 86 36 C 84 32, 80 30, 76 32 L 74 44 C 72 42, 70 44, 68 62 Z"/></svg></span>
+</li>
+</ul>
+<p>A caveat: I consider my main achievement not the 6 exits (4 of them above $15M and 2 with 3x cash-on-cash), but rather 11 startups with revenue above $1M (the largest two — $120M and $200M+ during my time, and around $1B after I left).</p>
+<p>Why? It's even harder. Building a money-making machine a) practically without investment, b) across 11 different markets (from gaming and e-commerce to advertising and online education).</p>
+<p>11 times — that's confirmation of a <strong>system, not luck</strong>. Clearly, it will work the 12th and 13th time too.</p>
+<h3>Why do founders sell their startups?</h3>
+<ul>
+<li>Suppose a project earned 10 conditional units of profit last year. A buyer comes along and offers to buy the business for 100 units. The business may grow, or there may be a COVID or another black swan. Essentially the offer says: "take your <strong>dividends for the next 10 years</strong> and go do something new."
+</li>
+<li>Most often, by personality type, founders <strong>love new things</strong>. I was climbing the walls in my 12th year at Eduson. Even though the business model changed several times (online MBA => B2B in Russia => B2B in the US, and only in the vertical of sales teams' training => a series of experiments with B2C products (Testla, Ginger, etc.) => and finally the one that took off, <a href="https://eduson.academy/">Academy</a>). Each time it was a new business — new IT solution, new content, new audience, new team. Even so, sitting in a single industry was boring as F for me.
+</li>
+<li>Sometimes further growth requires major investment in infrastructure or marketing (or you need a ready customer base). The YouTube team couldn't pay for the servers, was forced to sell to Google and, swallowing their suffering, took the unfortunate $1.65B.
+</li>
+<li>Other reasons: a) too good an offer, because the buyer is paying a strategic premium; b) the business has outgrown the founder, and competence is insufficient; c) growth has slowed; d) pressure from investors (who have their own fund timelines); e) fire sale — selling a failing business as if there's a fire, for the customer base; f) the founder burned out and\or saw a more interesting idea; g) conflicts inside the team and so on.
+</li>
+</ul>
+<h3>Why do strategics buy startups?</h3>
+<ul>
+<li><strong>Strategic reasons.</strong> Groupon was heading toward IPO. They needed Russia and Japan to call themselves a <strong>"global leader."</strong> The IPO date and the date of the last announcement before the "quiet period" were strictly fixed. The deadline pressed on every party. That's why signing the documents took only 3 weeks (including due diligence by a Big Four firm). I was naive to believe this was how it normally worked.
+</li>
+<li><strong>A premium to valuation.</strong> If a public company trades on the stock market at, say, 5x revenue, and a startup is bought at 3x, then its market cap rises disproportionately, the Board of Directors is happy, and spirits are high.
+</li>
+<li><strong>Speed.</strong> Buying growth is faster than building. The startup has already found product-market fit. Corporations find it cheaper and faster to buy something ready than to spend 2–4 years on internal R&D. Not to mention their two left hands. For example, Headhunter spent many years trying to launch an online education service while sitting on a goldmine of targeted traffic. I'm still waiting.
+</li>
+<li><strong>Capturing market share and customers.</strong> An acquisition gives instant access to a user base, contracts, sales channels, and brand recognition.
+</li>
+<li><strong>Killing a competitor.</strong> Sometimes a startup isn't needed as an asset — it's needed as a threat that has to be neutralized before it's too late. By that logic, Facebook bought Instagram.
+</li>
+<li>Access to <strong>technology or IP</strong> (algorithms, patents, data, content). When Netflix planned to buy Warner Bros. (the deal was later canceled), they were after the rights to the movies.
+</li>
+<li>And the scariest one — <strong>synergies</strong> with current products. Almost never works the way it was planned. The goal is for the startup to strengthen the core business: increase LTV, reduce churn, add upsell, complement the product line.
+</li>
+</ul>
+<h3>How do you evaluate an exit from the outside?</h3>
+<p>It's hard to do without seeing the documents (Share Purchase Agreement, cap table). Too often:</p>
+<p>a) different shareholder groups are bought out at different valuations;</p>
+<p>b) part of the price is tied to KPIs;</p>
+<p>c) often the payment is at least partly in equity — locked up for a long time, and the stock price is volatile;</p>
+<p>d) and to make sure life doesn't feel too sweet, exhausted founders are often kept on for 2–4 years to vest their shares.</p>
+<p>In the (almost documentary) series Silicon Valley, those are the people who sat on the roof drinking beer and waiting for the end of the vesting.</p>
+<p>But there are a few observations\heuristics that help you assess an exit without SPA:</p>
+<ul>
+<li>If the <strong>total amount raised</strong> was, say, $10M, and the company was bought for $15–20M, then almost certainly 100% went to the investors (because of Liquidation Preference), and the founder is left to lecture about "successful success" at Berkeley. Rule of thumb: if the multiple is below 2, the founders are out of luck. Above 3–5, the founders are in chocolate.
+</li>
+<li>Similarly, if the last round's <strong>(post-money) valuation is below the exit</strong>. For example, $6M raised at $30 (i.e. $36M post-money) and sold for $25M. There was definitely heavy dilution in favor of the investors.
+</li>
+<li>Look at the <strong>number of rounds</strong>. The more there are, the worse, because of dilution. 2–3 — OK, there's a chance for a good exit. More than 5 — unlikely.
+</li>
+<li>Usually, unsuccessful deals are quiet.
+</li>
+<li>Founders themselves start investing, especially as LPs in funds — a good signal, but not fast and not public.
+</li>
+<li>A startup acquired (outside of AI) with a <strong>team under 30 people</strong> is almost certainly an acquihire (the investors got 30–60 cents on the dollar, the team got "bread and butter," and were promised a bit of caviar).
+</li>
+<li>Where are the founders? After the MSQRD acquisition, the founders moved to work at Facebook's London office. That means there was vesting in the deal and they had to wait it out. There's no other reason to suffer in a corporate role. This fact says nothing about the size of the deal — only about the timeline.
+</li>
+</ul>
+<h3>What I'd recommend</h3>
+<ul>
+<li>Hire strong M&A advisors with experience in your vertical. Check their references.
+</li>
+<li>Hire lawyers specializing in M&A deals' documentation.
+</li>
+<li>If you have experienced angels among your investors, make active use of their network of contacts.
+</li>
+</ul>
+<p>These 3 points solve 95% of the problems.</p>
+<p>Good luck!</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Looking for EIRs</title>
+      <link>https://elenamasolova.com/en/articles/looking-for-eir/</link>
+      <guid isPermaLink="true">https://elenamasolova.com/en/articles/looking-for-eir/</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Venture funds expect an EIR, as an entrepreneur, to launch a project the fund will finance within 3–9 months.</description>
+      <content:encoded><![CDATA[<p><strong>I am looking for entrepreneurs-in-residence for <a href="https://forza.capital/">Forza.Capital</a>. Who is an EIR? What does he do? Why does the fund need them? And — most importantly — why might you be interested?</strong></p>
+<p>Venture funds expect an EIR, as an entrepreneur, to launch a project the fund will finance within 3–9 months. Often, the idea is unknown at the start, and the EIR spends a lot of time researching the market and testing hypotheses. Andrew Chen (partner at A16Z) gave a good <a href="https://andrewchen.com/whats-an-entrepreneur-in-residence/">description</a>.</p>
+<p>An EIR is never a beginner — they have repeatedly won in venture-backed businesses, not in corporate roles. Startup experience is highly specific, and nothing else looks like it: not a "complex McKinsey project," not "defending a strategy in front of a Forbes-list owner." I have seen plenty of people from corporate backgrounds melt like ice cream in the sun the first time they had to explain to employees that there would be no salary this month. Their corporate brains could absorb neither the fact that this happens nor what they were supposed to do about it.</p>
+<h4>What an EIR does</h4>
+<ol>
+<li>As an experienced founder, <strong>launches new projects</strong>.
+<ul>
+<li>Including <strong>testing the fund's "invisible" ideas</strong>: things partners discuss at the PowerPoint level, the EIR takes to a prototype, first customers.
+</li>
+</ul>
+</li>
+<li><strong>Brings strong deal flow</strong>: through their personal network, the EIR pulls in deals that wouldn't reach the standard channels.
+<ul>
+<li>Including <strong>attracting talent like a magnet</strong>: future co-founders, CTOs, product leaders.
+</li>
+</ul>
+</li>
+</ol>
+<h4>What sets a strong EIR apart</h4>
+<ol>
+<li><strong>A self-guided missile</strong>: receives a problem and brings back a solution, not 8 excuses.
+</li>
+<li><strong>Power of persuasion</strong>: convinces a co-founder to leave corporate world, a customer to buy something that exists only as a prototype, and an investor to write a check.
+</li>
+<li>Despite his experience, still does <strong>a lot of hands-on work</strong>: dives into details, micromanages aggressively at the start.
+</li>
+<li><strong>A fast-iteration machine</strong>: tests hypotheses quickly, comes up with 5 new ones even faster after the failed ones.
+</li>
+<li><strong>Strong track record of success</strong>: a variety of achievements in early-stage startup projects.
+</li>
+</ol>
+<h4>Why an EIR role is worth it</h4>
+<ol>
+<li><strong>Sign your first investor</strong> for your future startup.
+</li>
+<li><strong>Get a feel for the market</strong>: a lot has changed in other industries while you ran your last project. Funds see a wide cross-section. See the latest trends.
+</li>
+<li><strong>Spend 6–9 months experimenting</strong> with different startup ideas while hunting for a unicorn.
+</li>
+</ol>
+<p>If this sounds interesting, find a warm intro and write to me.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Request for Startups from Forza.Capital</title>
+      <link>https://elenamasolova.com/en/articles/request-for-startups/</link>
+      <guid isPermaLink="true">https://elenamasolova.com/en/articles/request-for-startups/</guid>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Early-stage funds often publish lists of project ideas they would be willing to invest in.</description>
+      <content:encoded><![CDATA[<p>Early-stage funds often publish lists of project ideas they would be willing to invest in. The most famous example, "Request for Startups" from YC, can be seen <a href="https://www.ycombinator.com/rfs">here</a>. And <a href="https://www.vccafe.com/2025/02/06/extended-requests-for-startups-2025-list/">another one</a>.</p>
+<p>Why might such a project be stronger than a random idea? Funds see the wide picture — a view of the entire market — while founders see deep but narrow. Usually they don't step beyond a single vertical: the one they studied or worked in at their previous job. As a result, potentially strong founders walk past huge markets and build services for 100 users, losing years of their lives.</p>
+<p><strong>RFS helps founders:</strong></p>
+<ul>
+<li>improve their odds of building a truly large business;
+</li>
+<li>secure financing (no need to write to 200 funds if there are 2 strongly interested ones);
+</li>
+<li>get strong feedback (such a fund has deep expertise in this specific area, and it's probably worth listening).
+</li>
+</ul>
+<p><strong>The fund is interested in:</strong></p>
+<ul>
+<li>receiving 50 targeted pitches instead of 500 random ones;
+</li>
+<li>talking to strong "builders" rather than professional "pitchers" with polished slides;
+</li>
+<li>not buying a "lottery ticket" or "index of the entire market," but focusing on target verticals.
+</li>
+</ul>
+<p><strong>Forza is highly likely to invest in these projects, provided the team and execution plan are strong.</strong></p>
+<p class="callout callout--note">↻ The list of projects is updated frequently.</p>
+<ol>
+<li><strong>Home bloodwork OS</strong>
+<ul>
+<li>Subscription + logistics + interpretation of test results + automated correction protocols (iron, B12, inflammation, lipids) under physician supervision.
+</li>
+<li>Unclear how to maintain high margin with (a) home visits (especially if patients have to wait 2 hours for IV drips), (b) operating under someone else's license.
+</li>
+<li>California is enough at the start.
+</li>
+</ul>
+</li>
+<li><strong>Early cancer detection</strong>
+<ul>
+<li>Subscription business model. A service that combines multi-cancer screening (blood/tests/imaging), reminders, and navigation through diagnostics.
+</li>
+<li>Unclear how to solve the false-positive problem (a service that produces 10 false positives per nurse visit and scares patients to death is not viable). Quite possibly, the problem cannot be solved without technology breakthroughs.
+</li>
+<li>California is enough at the start.
+</li>
+</ul>
+</li>
+<li><strong>Hormone optimization platform</strong>
+<ul>
+<li>A transparent, medically valid platform for hormonal health (men/women) where the result is measured by objective markers. Evidence-based medicine, no charlatanism.
+</li>
+<li>The challenge — how to keep high margin while operating under a lead-generation model (without a license)? We assume the service will start "giving advice", which requires obtaining a license (how would you get it fast/cheaply?).
+</li>
+<li>California is enough at the start.
+</li>
+</ul>
+</li>
+<li><strong>Geo-arbitrage in expensive medical procedures</strong>
+<ul>
+<li>The difficulty isn't in the products (there are dozens of procedures where the price gap between the US and Europe/Mexico is $30K+), but in finding enough customers willing to pay (people who are not rich enough to ignore the price difference, but rich enough to pay without insurance).
+</li>
+<li>The second problem — advertising restrictions.
+</li>
+<li>US only.
+</li>
+</ul>
+</li>
+<li><strong>AI talent scout (next-gen recruiting)</strong>
+<ul>
+<li>Not "resume matching," but an agent that searches for people everywhere, evaluates real skills, writes to them, runs the conversation, and closes the hire.
+</li>
+<li>There are already many alternatives — what makes this one better?
+</li>
+<li>The task is hard, but we're fighting for a high check (one annual salary of the candidate, ~$80K per client).
+</li>
+<li>US only.
+</li>
+</ul>
+</li>
+<li><strong>Digital copy of a person</strong>
+<ul>
+<li>Not just preserving information (correspondence, video, interviews, transcripts of every conversation). Not just chat/video you can talk to. The next level.
+</li>
+</ul>
+</li>
+<li><strong>Family offices</strong>
+<ul>
+<li>Solutions for UHNWI managers. The value should be measured in millions of dollars, not "slides got prettier and faster to make."
+</li>
+</ul>
+</li>
+</ol>]]></content:encoded>
+    </item>
+    <item>
+      <title>The money-printer puzzle</title>
+      <link>https://elenamasolova.com/en/articles/money-printer-puzzle/</link>
+      <guid isPermaLink="true">https://elenamasolova.com/en/articles/money-printer-puzzle/</guid>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <description>If you look at a chart of US versus European company valuations (only companies above $10B are shown), the difference is striking.</description>
+      <content:encoded><![CDATA[<p><strong>What is so special about this Silicon Valley? Why build startups specifically in the American market?</strong></p>
+<p>If you look at a chart of US versus European company valuations (only companies above $10B are shown), the difference is striking.</p>
+<p><img src="/assets/posts/money-printer-puzzle-1.jpg" alt=""></p>
+<p>In AI specifically, the imbalance is even sharper. The Valley concentrates 91% of AI companies (by market cap). Data: CBInsights.</p>
+<p><img src="/assets/posts/money-printer-puzzle-2.jpg" alt=""></p>
+<p>The chart is saying that if your AI startup is in, say, even New York, you will never raise a round of the right size from the right investors, you won't be able to grow fast enough, and your company will never be valued at the same level as a full analog in the Valley. Period.</p>
+<p>It's pointless to argue whether we like this state of affairs. I don't either. But it's objective reality. You don't win arguments with reality. Of course, this is a market phase and a bubble. But in another phase the share would be 81%, not 91%. That doesn't change the point.</p>
+<p><strong>Where does this concentration of capital come from?</strong></p>
+<p>The reasons are clear. If the money printer is in the US, then most of the money will settle in the US: with buyers, with strategic acquirers (those who buy the businesses themselves), with venture funds (who get it from pension funds), and ultimately on the stock market after IPO (from all other institutional players). Whoever prints the money also dances with the girl.</p>
+<p>A couple of examples from my own experience.</p>
+<p><strong>Strategic buyers — 50x more</strong></p>
+<p>The picture will be the same in any industry. I looked at online education as an example. In edtech, over the previous 3 years, 150 different strategic buyers acquired edtech companies. In Russia, in the same period, there were 2. A 75x staggering difference. Makes total sense, given the size of the economy.</p>
+<p><strong>Multiples — 10x higher</strong></p>
+<p>A gaming company with $50M run rate (not revenue) and a loss is bought by a US strategic acquirer for $500M. That's 10x multiple to revenue and an 'infinity' multiple to profit.</p>
+<p>A gaming company based in Russia with $2.5M monthly revenue ($30M run rate) and 50% EBITDA margin (profit forecast of $15M) is bought for $30M. The revenue multiples' difference is 10x. Same business, different conditions. The valuation gap has grown even wider since.</p>
+<p><strong>Demand — 50x higher</strong></p>
+<p>The picture varies by industry. In edtech, I remember running parallel negotiations with a top-10 Russian company (60,000 employees) and a small Texas call center of 40 people. The Texans were ready to pay more for the same product (something like "$1,000 per person, sure, sounds OK for a yearly subscription") and, frankly, drained my brain less.</p>
+<p><strong>What should a founder do?</strong></p>
+<p>A young founder walks into a poker hall. The skills required at different tables are absolutely the same. The concentration of energy and effort required is also the same — total obsessive focus for 7–10 years, with no chance to step out into the daylight and breathe fresh air.</p>
+<p>It's just that some tables are stacked with chips and others aren't. Which table should you pick? In my view, it's a no-brainer.</p>
+<p>Every attempt to get into Indonesia or Brazil hits the question: "And to whom exactly are you planning to sell this? At what valuation?"</p>
+<p>The end of the dollar era (on a 7–10 year horizon) will change this state of affairs. But for now, that's the reality.</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Was there a summer this year?</title>
+      <link>https://elenamasolova.com/en/articles/summer/</link>
+      <guid isPermaLink="true">https://elenamasolova.com/en/articles/summer/</guid>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Basically, this temperature chart gives an exhaustive answer to the question &quot;Why is it better to live in Silicon Valley than in Norilsk.&quot;</description>
+      <content:encoded><![CDATA[<p>Basically, this temperature chart gives an exhaustive answer to the question "Why is it better to live in Silicon Valley than in Norilsk."</p>
+<p><img src="/assets/posts/summer-1.png" alt=""></p>
+<p>There are years when the coldest day in Palo Alto is warmer than the warmest day in Norilsk, the town of my childhood.</p>
+<p>There's a local joke:</p>
+<ul>
+<li>Was there a summer this year?
+</li>
+<li>I don't know. I was in the mine that day.
+</li>
+</ul>
+<p>I think the photo below shows that very sunny and pleasant summer day in Norilsk.</p>
+<p><img src="/assets/posts/summer-2.jpg" alt=""></p>
+<p><strong>Founder training</strong></p>
+<p>As a training course for resilience, endurance, and the ability to keep going — and then keep going some more (the skills of a good startup founder) — Norilsk earns a well-deserved 20 out of 10.</p>
+<p>In 2020, San Francisco and the Valley were covered with a cloud of dust because of the wildfires.</p>
+<p><img src="/assets/posts/summer-3.png" alt=""></p>
+<p>I was just happy to have managed to take some unusual photos. Didn't notice any apocalypse.</p>
+<p><img src="/assets/posts/summer-4.jpg" alt="" data-orient="portrait"></p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Lies, damn lies, and design</title>
+      <link>https://elenamasolova.com/en/articles/lies-damn-lies-and-design/</link>
+      <guid isPermaLink="true">https://elenamasolova.com/en/articles/lies-damn-lies-and-design/</guid>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Here we see that the servers of startup Cluely work almost as well as Amazon&#x27;s servers.</description>
+      <content:encoded><![CDATA[<p><strong>I often run into deliberate distortions of reality through design — in startup pitch decks, and in infographics in general. Here's a part of my collection.</strong></p>
+<p><strong>1. Distort the proportions</strong></p>
+<p>Here we see that the servers of startup Cluely work almost as well as Amazon's servers. Until you read the caption. They run 53% of the time, no less. The designer distorted the proportions heavily.</p>
+<p><img src="/assets/posts/lies-damn-lies-and-design-1.jpg" alt="" data-orient="portrait"></p>
+<p><strong>2. Play with the axes</strong></p>
+<p>Here is another chart. It's obvious to everyone that with a good project manager (PM) there is less chaos on a project. Until you look at the values on the Y axis.</p>
+<p>It's a joke, of course, but it trains your "pattern-recognition eye" well.</p>
+<p><img src="/assets/posts/lies-damn-lies-and-design-2.jpg" alt=""></p>
+<p>Designers call this "playing with the axes" — stretching or, on the contrary, squashing them. A common technique. No false information, just sleight of hand. The inattentive investor might not read the small captions.</p>
+<p><strong>3. Show a forecast, not a fact</strong></p>
+<p>Here is a trickier example. A pretty "hockey stick"? I've seen hundreds. What's the catch? First, this is not quarterly revenue (as it seems at first glance). This is ARR (annual recurring revenue). Quarterly revenue could have been $6M ($1M in January, $2M in February, $3M in March).</p>
+<p>Second, it's calculated as aggressively as possible. How do you compute (not yet earned) annual revenue? Either as $6M × 4 quarters = $24M, or by the best month, which distorts the picture even more. Most often founders take $3M (March's revenue) and multiply by 12 months = $36M. Naturally, if subsequent months are worse than March, March will continue to serve as the basis — no point letting it go to waste.</p>
+<p>You can also show accumulated revenue (everything earned since Adam) instead of strictly the period in question. And, of course, squash the axes so the bars visually shoot upward. The same chart by month would most likely look SAD.</p>
+<p><img src="/assets/posts/lies-damn-lies-and-design-3.jpg" alt="" data-orient="portrait"></p>
+<p><strong>4. Exclude everything inconvenient from the sample</strong></p>
+<p>And here's a challenge problem. What's wrong with this chart? Compared to the previous one, this is child's play. Where are we being lied to?</p>
+<p>In this case, only payment companies are included in the analysis (and I suspect not even all of them). The other 95% of companies are excluded. Even our Groupon, in 2010, hit $1B revenue much faster. Today growth is easier because (a) there are more users on the internet (both individuals and businesses), and (b) every 15 years, due to inflation, the dollar becomes roughly 2x cheaper.</p>
+<p>The second thing to check is whether this is revenue or gross transaction volume. Payment services and exchanges find it easy to show all the money flowing through them as their revenue. That's not correct — the money belongs to others. The platform's revenue is 1.5–2% of all funds (various commissions).</p>
+<p><img src="/assets/posts/lies-damn-lies-and-design-4.jpg" alt=""></p>
+<p><strong>Where is the ethical line?</strong></p>
+<p>I think the maximum permissible move is to accentuate real metrics. The numbers themselves are correct, the captions are correct, but for better demonstration of a thesis (one actually observed in nature, not made up) the visual is slightly emphasized.</p>
+<p>Below is an example. In the first version of the chart from the designer, the metric's growth was almost invisible — The Sorrows of Horizontal Werther of some kind.</p>
+<p>Designer made those edits: (a) start the Y axis not at zero but at 20,000 (the axis is correctly labeled, so there's no deception); (b) start with January (one of the lowest points) and end on the highest point; (c) add a gray trend line with the labeled CAGR (growth rate).</p>
+<p>This approach is fine because the metric did grow in reality.</p>
+<p><img src="/assets/posts/lies-damn-lies-and-design-5.png" alt=""></p>
+<p>Bottom line: these tricks don't work on professional investors and immediately raise a red flag. But training your "pattern-recognition eye" for such techniques is very useful (and entertaining).</p>]]></content:encoded>
+    </item>
   </channel>
 </rss>

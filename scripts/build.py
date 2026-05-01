@@ -33,6 +33,7 @@ from datetime import date, datetime, timezone
 ROOT = Path(__file__).resolve().parent.parent
 POSTS_DIR = ROOT / "content" / "posts"
 ARTICLES_DIR = ROOT / "articles"
+ARTICLES_EN_DIR = ROOT / "en" / "articles"
 TEMPLATES_DIR = ROOT / "templates"
 INDEX_RU = ROOT / "index.html"
 INDEX_EN = ROOT / "index-en.html"
@@ -447,10 +448,15 @@ def load_posts():
 # ═══════════════════════════════════════════════════════════════════
 
 def render_post_page(post):
-    """Создаёт /articles/<slug>/index.html из шаблона."""
-    tpl_path = TEMPLATES_DIR / "article.html"
+    """Создаёт /articles/<slug>/index.html (ru) или /en/articles/<slug>/index.html (en)."""
+    lang = post.get("lang", "ru")
+    tpl_name = "article-en.html" if lang == "en" else "article.html"
+    tpl_path = TEMPLATES_DIR / tpl_name
     if not tpl_path.exists():
-        print(f"  ! templates/article.html не найден — пропускаю генерацию страниц", file=sys.stderr)
+        # Fallback на общий шаблон, если en-шаблона нет
+        tpl_path = TEMPLATES_DIR / "article.html"
+    if not tpl_path.exists():
+        print(f"  ! templates/{tpl_name} не найден — пропускаю генерацию страниц", file=sys.stderr)
         return False
 
     tpl = tpl_path.read_text(encoding="utf-8")
@@ -473,7 +479,8 @@ def render_post_page(post):
     # Условные блоки {{#KICKER}}…{{/KICKER}}
     out = resolve_conditionals(out, post)
 
-    out_dir = ARTICLES_DIR / post["slug"]
+    base_dir = ARTICLES_EN_DIR if lang == "en" else ARTICLES_DIR
+    out_dir = base_dir / post["slug"]
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(out, encoding="utf-8")
     return True
@@ -500,7 +507,9 @@ def escape(s):
 
 def render_card(post):
     """Одна <li>-карточка как в существующей ленте."""
-    url = f'/articles/{post["slug"]}/'
+    lang = post.get("lang", "ru")
+    prefix = "/en/articles" if lang == "en" else "/articles"
+    url = f'{prefix}/{post["slug"]}/'
     title = post["title"]
     cls = ' class="is-pinned"' if post.get("pinned") else ''
     # В существующих карточках используется &nbsp; для типографики — автоматически не ставим,
@@ -547,7 +556,8 @@ def main():
     for post in posts:
         if render_post_page(post):
             generated += 1
-            print(f"  ✓ /articles/{post['slug']}/ ({post['lang']})")
+            prefix = "/en/articles" if post.get("lang") == "en" else "/articles"
+            print(f"  ✓ {prefix}/{post['slug']}/ ({post['lang']})")
     print(f"  сгенерировано страниц: {generated}")
 
     # 2. Вставка карточек на главные
@@ -593,7 +603,9 @@ def write_feed(path, posts, lang, title, description):
     feed_url = f"{SITE_URL}/{path.name}"
     items_xml = []
     for p in posts:
-        url = f"{SITE_URL}/articles/{p['slug']}/"
+        plang = p.get("lang", "ru")
+        prefix = "/en/articles" if plang == "en" else "/articles"
+        url = f"{SITE_URL}{prefix}/{p['slug']}/"
         pub = rfc822(p["_date_key"])
         summary = p.get("lead", "")
         body = p["body_html"]
