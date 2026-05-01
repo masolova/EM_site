@@ -349,6 +349,8 @@ def inline(text):
                   r'<a href="\2">\1</a>', text)
     # Жирный **
     text = re.sub(r'\*\*([^*]+)\*\*', r'<strong>\1</strong>', text)
+    # Зачёркнутый ~~текст~~
+    text = re.sub(r'~~([^~]+)~~', r'<s>\1</s>', text)
     # Курсив *
     text = re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'<em>\1</em>', text)
     # Код `
@@ -497,9 +499,10 @@ def render_card(post):
     """Одна <li>-карточка как в существующей ленте."""
     url = f'/articles/{post["slug"]}/'
     title = post["title"]
+    cls = ' class="is-pinned"' if post.get("pinned") else ''
     # В существующих карточках используется &nbsp; для типографики — автоматически не ставим,
     # пусть автор сам расставляет в title если надо
-    return f'<li data-slug="{escape(post["slug"])}"><a href="{url}">{escape(title)}</a></li>'
+    return f'<li data-slug="{escape(post["slug"])}"{cls}><a href="{url}">{escape(title)}</a></li>'
 
 
 def inject_cards(index_path, cards_html):
