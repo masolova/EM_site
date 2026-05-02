@@ -7,6 +7,7 @@ tags:
   - "Startup"
   - "Silicon Valley"
   - "Longread"
+  - "Gordon Gekko"
 status: "published"
 pinned: false
 ---
@@ -27,7 +28,7 @@ It's pointless to argue whether we like this state of affairs. I don't either. B
 
 **Where does this concentration of capital come from?**
 
-The reasons are clear. If the money printer is in the US, then most of the money will settle in the US: with buyers, with strategic acquirers (those who buy the businesses themselves), with venture funds (who get it from pension funds), and ultimately on the stock market after IPO (from all other institutional players). Whoever prints the money also dances with the girl.
+The reasons are clear. If the money printer is in the US, then most of the money will settle in the US: with buyers, with strategic acquirers (those who buy the businesses themselves), with venture funds (who get it from pension funds), and ultimately on the stock market after IPO (from all other institutional players). Money never sleeps, pal.
 
 A couple of examples from my own experience.
 

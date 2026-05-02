@@ -6,6 +6,7 @@ lang: "en"
 tags:
   - "Forza"
   - "Startup"
+  - "Drucker"
 status: "published"
 pinned: false
 ---
@@ -26,7 +27,7 @@ Why might such a project be stronger than a random idea? Funds see the wide pict
 - talking to strong "builders" rather than professional "pitchers" with polished slides;
 - not buying a "lottery ticket" or "index of the entire market," but focusing on target verticals.
 
-**Forza is highly likely to invest in these projects, provided the team and execution plan are strong.**
+**The best way to predict the future is to create it. Forza is highly likely to invest in these projects, provided the team and execution plan are strong.**
 
 <p class="callout callout--note">The list of projects is updated frequently.</p>
 

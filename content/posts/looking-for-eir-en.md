@@ -5,6 +5,7 @@ date: "2026-04-30"
 lang: "en"
 tags:
   - "Forza"
+  - "Tolkien"
 status: "published"
 pinned: false
 ---
@@ -34,6 +35,6 @@ An EIR is never a beginner — they have repeatedly won in venture-backed busine
 
 1. **Sign your first investor** for your future startup.
 2. **Get a feel for the market**: a lot has changed in other industries while you ran your last project. Funds see a wide cross-section. See the latest trends.
-3. **Spend 6–9 months experimenting** with different startup ideas while hunting for a unicorn.
+3. **Spend 6–9 months experimenting** with different startup ideas while hunting for a unicorn. Not all those who wander are lost.
 
 If this sounds interesting, find a warm intro and write to me.

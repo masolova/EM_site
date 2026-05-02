@@ -6,6 +6,7 @@ lang: "en"
 tags:
   - "Norilsk"
   - "Silicon Valley"
+  - "Brodsky"
 status: "published"
 pinned: false
 ---
@@ -14,7 +15,7 @@ Basically, this temperature chart gives an exhaustive answer to the question "Wh
 
 ![](/assets/posts/summer-1.png)
 
-There are years when the coldest day in Palo Alto is warmer than the warmest day in Norilsk, the town of my childhood.
+There are years when the coldest day in Palo Alto is warmer than the warmest day in Norilsk, the town of my childhood. Don't leave the room, don't blunder, do not go on.
 
 There's a local joke:
 

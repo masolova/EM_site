@@ -1338,7 +1338,10 @@ body {
     line-height: 1.4;
     border: 0;
   }
-  .posts__list li:first-child a { border: 0; }
+  /* На моб первому <a> возвращаем padding-top:5px (на десктопе он 0 — там звезда
+     компенсируется top:7px). Это нужно, чтобы высота <a> у first-child и у остальных
+     совпадала, и top:50% давал одинаковую позицию звезды. */
+  .posts__list li:first-child a { border: 0; padding-top: 5px; }
   /* Звёздочка у топ-поста на моб: выравниваем именно по центру строки (через inline-flex на a) */
   .posts__list li.is-pinned > a {
     padding-left: 24px;

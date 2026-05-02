@@ -17,6 +17,13 @@ TAGS = {
     "silicon-valley": "Silicon&nbsp;Valley",
     "norilsk": "Norilsk",
     "design": "Design",
+    "top": "Top",
+    "twain": "Twain",
+    "brodsky": "Brodsky",
+    "tolkien": "Tolkien",
+    "machiavelli": "Machiavelli",
+    "drucker": "Drucker",
+    "gordon-gekko": "Gordon&nbsp;Gekko",
 }
 
 # Соответствие тег-name → slug
@@ -27,6 +34,13 @@ TAG_SLUG = {
     "Silicon Valley": "silicon-valley",
     "Norilsk": "norilsk",
     "Design": "design",
+    "Top": "top",
+    "Twain": "twain",
+    "Brodsky": "brodsky",
+    "Tolkien": "tolkien",
+    "Machiavelli": "machiavelli",
+    "Drucker": "drucker",
+    "Gordon Gekko": "gordon-gekko",
 }
 
 
@@ -119,7 +133,10 @@ def render_tag_page(active_slug, active_name):
             posts_in_tag.append(p)
 
     # tags aside (sorted by count desc, then by predefined order)
-    tag_order = ["startup", "longread", "forza", "silicon-valley", "norilsk", "design"]
+    tag_order = [
+        "startup", "longread", "forza", "silicon-valley", "norilsk", "design", "top",
+        "twain", "brodsky", "tolkien", "machiavelli", "drucker", "gordon-gekko",
+    ]
     tags_aside_items = []
     for slug in tag_order:
         cnt = tag_counts.get(slug, 0)
@@ -275,6 +292,53 @@ def render_tag_page(active_slug, active_name):
 """
 
 
+ASIDE_RE = re.compile(
+    r'<aside class="tags"[^>]*>.*?</aside>',
+    re.DOTALL | re.IGNORECASE
+)
+
+
+def render_aside(active_slug=None):
+    """Сайдбар тегов: по убыванию count, при равенстве — по алфавиту."""
+    items = sorted(
+        ((slug, cnt) for slug, cnt in tag_counts.items() if cnt > 0),
+        key=lambda kv: (-kv[1], TAGS[kv[0]].replace("&nbsp;", " ").lower())
+    )
+    lis = []
+    for slug, cnt in items:
+        label = TAGS[slug]
+        a_attrs = ""
+        if active_slug == slug:
+            a_attrs = ' class="is-active" aria-current="page"'
+        lis.append(
+            f'          <li><a href="/en/tags/{slug}/"{a_attrs}>'
+            f'<span class="tag">{label}</span>'
+            f'<span class="count">{cnt}</span></a></li>'
+        )
+    return (
+        '      <aside class="tags" aria-label="Topics">\n'
+        '        <div class="tags__head">\n'
+        '          <h2 class="tags__title">Topics</h2>\n'
+        '        </div>\n'
+        '        <ul class="tags__list">\n'
+        + "\n".join(lis) + "\n"
+        '        </ul>\n'
+        '      </aside>'
+    )
+
+
+def replace_aside_in(path, active_slug=None):
+    if not path.exists():
+        return False
+    html = path.read_text(encoding="utf-8")
+    new_block = render_aside(active_slug)
+    new = ASIDE_RE.sub(lambda m: new_block, html, count=1)
+    if new != html:
+        path.write_text(new, encoding="utf-8")
+        return True
+    return False
+
+
 def main():
     print("▶ EN tag pages")
     EN_TAGS_DIR.mkdir(parents=True, exist_ok=True)
@@ -286,6 +350,10 @@ def main():
         html = render_tag_page(slug, name)
         (out_dir / "index.html").write_text(html, encoding="utf-8")
         print(f"  ✓ /en/tags/{slug}/ ({tag_counts[slug]} posts)")
+
+    # Обновляем сайдбар на index-en.html
+    if replace_aside_in(ROOT / "index-en.html"):
+        print("  ✓ index-en.html sidebar")
     print("✔ Done")
 
 

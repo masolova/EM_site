@@ -7,6 +7,7 @@ tags:
   - "Startup"
   - "Longread"
   - "Top"
+  - "Machiavelli"
 status: "published"
 pinned: true
 pin_order: 1
@@ -44,7 +45,7 @@ Why? It's even harder. Building a money-making machine a) practically without in
 - **A premium to valuation.** If a public company trades on the stock market at, say, 5x revenue, and a startup is bought at 3x, then its market cap rises disproportionately, the Board of Directors is happy, and spirits are high.
 - **Speed.** Buying growth is faster than building. The startup has already found product-market fit. Corporations find it cheaper and faster to buy something ready than to spend 2–4 years on internal R&D. Not to mention their two left hands. For example, Headhunter spent many years trying to launch an online education service while sitting on a goldmine of targeted traffic. I'm still waiting.
 - **Capturing market share and customers.** An acquisition gives instant access to a user base, contracts, sales channels, and brand recognition.
-- **Killing a competitor.** Sometimes a startup isn't needed as an asset — it's needed as a threat that has to be neutralized before it's too late. By that logic, Facebook bought Instagram.
+- **Killing a competitor.** Sometimes a startup isn't needed as an asset — it's needed as a threat that has to be neutralized before it's too late. By that logic, Facebook bought Instagram — the ends justify the means.
 - Access to **technology or IP** (algorithms, patents, data, content). When Netflix planned to buy Warner Bros. (the deal was later canceled), they were after the rights to the movies.
 - And the scariest one — **synergies** with current products. Almost never works the way it was planned. The goal is for the startup to strengthen the core business: increase LTV, reduce churn, add upsell, complement the product line.
 
