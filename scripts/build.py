@@ -299,10 +299,7 @@ def md_to_html(md):
                     k, l, _ = list_stack[-1]
                     list_stack[-1] = (k, l, False)
             # Открываем <li> и оставляем его открытым (помечаем флагом).
-            # Если внутри буллета есть .snitch-floater — добавляем класс has-snitch к <li>,
-            # чтобы CSS работал без :has() (для совместимости с любыми браузерами).
-            li_class = ' class="has-snitch"' if 'class="snitch-floater"' in content else ''
-            out.append(f"<li{li_class}>{inline(content)}")
+            out.append(f"<li>{inline(content)}")
             k, l, _ = list_stack[-1]
             list_stack[-1] = (k, l, True)
             i += 1

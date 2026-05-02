@@ -601,46 +601,27 @@ body {
 .article__body a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
 .article__body a:hover { color: var(--accent-2); }
 
-/* Snitch floater — декоративный снитч в буллете.
-   Класс .has-snitch проставляется на <li> в build.py — без :has(),
-   чтобы гарантированно работало в любом браузере.
-   Десктоп: картинка справа во всю высоту <li>, высота фиксирована (130px = ~3-4 строки).
-   Мобайл: картинка под тезисом, центрирована, высота ограничена. */
-.article__body li.has-snitch {
-  position: relative;
-  padding-right: 160px;
-  min-height: 130px;
-}
-.article__body .snitch-floater {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 140px;
-  height: 118px;
+/* Snitch — декоративный блок-иллюстрация.
+   Единый стиль для десктопа и мобайла: блок по центру, ~50% ширины. */
+.article__body .snitch {
+  display: block;
+  width: 50%;
+  max-width: 180px;
+  margin: 28px auto;
   color: var(--text);
   pointer-events: none;
+  aspect-ratio: 140 / 118;
 }
-.article__body .snitch-floater svg {
+.article__body .snitch svg {
   width: 100%;
   height: 100%;
   display: block;
 }
 @media (max-width: 720px) {
-  .article__body li.has-snitch {
-    padding-right: 0;
-    min-height: 0;
-  }
-  .article__body .snitch-floater {
-    position: static;
-    transform: none;
-    display: block;
-    margin: 28px auto 28px;
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    aspect-ratio: 140 / 118;
-    max-height: none;
+  .article__body .snitch {
+    width: 50%;
+    max-width: 180px;
+    margin: 24px auto;
   }
 }
 .article__body blockquote {
@@ -694,6 +675,7 @@ body {
   font-size: 22px;
   margin: 0 0 8px;
 }
+.cta__title-short { display: none; }
 .cta__text {
   font-family: var(--sans);
   font-size: 15px;
@@ -1337,7 +1319,7 @@ body {
 
   /* ---- Посты: плотный список, без линий сверху/снизу в мобайле ---- */
   .posts {
-    padding: 0 20px 20px;
+    padding: 14px 20px 20px;
   }
   .posts__list { max-width: none; }
   .posts__list a {
@@ -1347,12 +1329,19 @@ body {
     border: 0;
   }
   .posts__list li:first-child a { border: 0; }
-  /* Звёздочка у топ-поста на моб: выравниваем по центру первой строки текста */
+  /* Звёздочка у топ-поста на моб: выравниваем именно по центру строки (через inline-flex на a) */
+  .posts__list li.is-pinned > a {
+    padding-left: 24px;
+    position: relative;
+  }
   .posts__list li.is-pinned > a::before {
-    top: 11px; /* padding-top 5px + line-height 25.2/2 - высота звезды 14/2 ≈ 10.6 */
+    top: 50%;
+    transform: translateY(-50%);
+    /* высота <a> на моб = padding 5+5 + 1 строка ~25, чтобы звезда сидела ровно по центру */
   }
   .posts__list li.is-pinned:first-child > a::before {
-    top: 11px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   /* Related на мобайле: линии остаются, шрифт чуть меньше */
@@ -1393,10 +1382,12 @@ body {
 
   .cta {
     margin: 36px 20px 0;
-    padding: 22px 18px;
+    padding: 16px 16px;
   }
-  .cta__title { font-size: 19px; }
-  .cta__text  { font-size: 14px; }
+  .cta__title { font-size: 17px; margin: 0 0 4px; white-space: nowrap; }
+  .cta__title-long { display: none; }
+  .cta__title-short { display: inline; }
+  .cta__text  { font-size: 13px; margin: 0 0 12px; }
   .cta__form  { flex-direction: column; gap: 8px; max-width: none; }
   .cta__form input,
   .cta__form button { width: 100%; }
