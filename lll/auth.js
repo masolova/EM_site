@@ -16,6 +16,8 @@
 //        -- Если таблица уже была без streak/stage_progress, добавь колонки:
 //        alter table lll_progress add column if not exists streak jsonb not null default '{}'::jsonb;
 //        alter table lll_progress add column if not exists stage_progress jsonb not null default '{}'::jsonb;
+//        -- ВКЛЮЧИТЬ REALTIME (иначе мгновенный синк не работает):
+//        alter publication supabase_realtime add table lll_progress;
 //        alter table lll_progress enable row level security;
 //        create policy "own row select" on lll_progress for select using (auth.uid() = user_id);
 //        create policy "own row upsert" on lll_progress for insert with check (auth.uid() = user_id);
@@ -246,7 +248,8 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   }
   function pushDebounced() {
     if (pushTimer) clearTimeout(pushTimer);
-    pushTimer = setTimeout(push, 1500);
+    // 200 мс — почти мгновенно, но коалесцируем серии setItem подряд
+    pushTimer = setTimeout(push, 200);
   }
 
   // Слушаем изменения localStorage, чтобы пушить в облако.
@@ -368,13 +371,39 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   }
   function startPeriodicSync() {
     stopPeriodicSync();
-    // Каждые 60с при активной вкладке
+    // Каждые 8 секунд при активной вкладке (страховка на случай если Realtime отвалился)
     pullInterval = setInterval(function () {
       if (currentUser && document.visibilityState === 'visible') safePull();
-    }, 60000);
+    }, 8000);
+    startRealtime();
   }
   function stopPeriodicSync() {
     if (pullInterval) { clearInterval(pullInterval); pullInterval = null; }
+    stopRealtime();
+  }
+
+  // Realtime: подписываемся на изменения СВОЕЙ строки. Любое обновление от другого
+  // устройства мгновенно прилетает по WebSocket и тригерит pull.
+  let realtimeChannel = null;
+  function startRealtime() {
+    stopRealtime();
+    if (!currentUser) return;
+    try {
+      realtimeChannel = sb.channel('lll_progress_' + currentUser.id)
+        .on('postgres_changes', {
+          event: '*',
+          schema: 'public',
+          table: 'lll_progress',
+          filter: 'user_id=eq.' + currentUser.id,
+        }, function () { safePull(); })
+        .subscribe();
+    } catch (e) { console.warn('[lll realtime]', e); }
+  }
+  function stopRealtime() {
+    if (realtimeChannel) {
+      try { sb.removeChannel(realtimeChannel); } catch (e) {}
+      realtimeChannel = null;
+    }
   }
   // При возврате во вкладку и получении фокуса — сразу подтягиваем
   document.addEventListener('visibilitychange', function () {

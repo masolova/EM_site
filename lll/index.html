@@ -1891,16 +1891,19 @@ window.addEventListener('DOMContentLoaded', function () {
     const totalAll = allEntries.filter(v => !v.learned).length;
     const totalFav = allEntries.filter(v => v.fav && !v.learned).length;
     const totalLearned = allEntries.filter(v => v.learned).length;
-    // Считаем стадии только для фраз в текущем deck (с учётом фильтра Набора).
-    const deckIdSet = new Set(deck.map(function(it){ return String(it && it.id); }));
+    // Стадии отражают текущий фильтр словаря (a2/b2/lena/all/fav).
+    var statRange = (vocabFilter === 'a2' || vocabFilter === 'b2' || vocabFilter === 'lena') ? vocabFilter : 'all';
+    var statBase = getRangeEntries(statRange);
+    if (vocabFilter === 'fav') statBase = statBase.filter(function(v){ return v.fav; });
+    var statIdSet = new Set(statBase.map(function(it){ return String(it && it.id); }));
     const stageCounts = { '-5': 0, '-1': 0, '1': 0, '5': 0 };
     Object.keys(stageProgress || {}).forEach(function(id) {
-      if (!deckIdSet.has(String(id))) return;
+      if (!statIdSet.has(String(id))) return;
       var stage = String(stageProgress[id]);
       if (Object.prototype.hasOwnProperty.call(stageCounts, stage)) stageCounts[stage] += 1;
     });
-    // В «Ужас-ужас» попадает всё остальное: deck.length минус все продвинувшиеся.
-    stageCounts['-5'] = Math.max(0, deck.length - stageCounts['-1'] - stageCounts['1'] - stageCounts['5']);
+    // «Ужас-ужас» = всё остальное в выбранном фильтре.
+    stageCounts['-5'] = Math.max(0, statBase.length - stageCounts['-1'] - stageCounts['1'] - stageCounts['5']);
     countAll.textContent = totalAll;
     countFav.textContent = totalFav;
     countLearned.textContent = totalLearned;
