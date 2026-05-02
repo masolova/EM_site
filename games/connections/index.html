@@ -17,10 +17,20 @@ body.grid-15,body.grid-20{overflow-x:hidden;overflow-y:auto}
 body.grid-15 .stage,body.grid-20 .stage{height:auto}
 /* Fixed row height: always 1/10 of stage height so tiles don't stretch when rows disappear */
 :root{--row-h:calc((100vh - 34px - 40px) / 10)}
-@media(max-width:900px){
+/* Narrow desktop window: shrink up to a minimum, then horizontal scroll. */
+/* Min viewport for full-fit grid: 1080px. Below that, horizontal scroll kicks in with min-width:1000px (10 tiles ~100px). */
+@media(min-width:601px) and (max-width:1080px){
+  html,body{overflow:hidden}
+  body.grid-10,body.grid-15,body.grid-20{overflow:hidden}
+  .scroll-wrap{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;height:100vh;width:100vw}
+  body.grid-15 .scroll-wrap,body.grid-20 .scroll-wrap{overflow-y:auto}
+  .scroll-inner{min-width:1000px}
+  :root{--row-h:calc((100vh - 34px - 40px) / 10)}
+}
+@media(max-width:600px){
   html,body{height:auto;overflow:hidden}
   .scroll-wrap{overflow:auto;-webkit-overflow-scrolling:touch;height:100vh;width:100vw}
-  .scroll-inner{min-width:760px}
+  .scroll-inner{min-width:0}
 }
 
 /* ═══ MODE SELECTOR SCREEN ═══ */
@@ -379,11 +389,13 @@ function shuffleWithSeed(arr, rng){
    DEFINITIONS LOOKUP (built into bank)
    ══════════════════════════════════════════════════ */
 const DEFS = {};
-CATEGORIES_BANK.forEach(cat => {
-  cat.words.forEach(entry => {
-    const word = typeof entry === 'string' ? entry : entry.w;
-    const def = typeof entry === 'string' ? '' : (entry.d || '');
-    DEFS[word] = def;
+[CATEGORIES_BANK, CATEGORIES_EN].forEach(bank => {
+  bank.forEach(cat => {
+    cat.words.forEach(entry => {
+      const word = typeof entry === 'string' ? entry : entry.w;
+      const def = typeof entry === 'string' ? '' : (entry.d || '');
+      if(def && def !== 'нет') DEFS[word] = def;
+    });
   });
 });
 
@@ -743,7 +755,8 @@ function revealAll(){
       const catIdx = parseInt(t.catId.replace('c',''), 10);
       btn.classList.add('reveal-' + catIdx);
       const cat = game.categories.find(cc => cc.id === t.catId);
-      if(cat) btn.title = cat.name;
+      const def = DEFS[t.word];
+      if(cat) btn.title = def ? (cat.name + ': ' + def) : cat.name;
       row.appendChild(btn);
     }
     stage.appendChild(row);
@@ -1247,6 +1260,25 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('btn-history').addEventListener('click', showHistory);
   document.getElementById('btn-vocab').addEventListener('click', showVocab);
   document.getElementById('btn-back').addEventListener('click', backToMenu);
+
+  /* Resize listener: recompute COLS, font sizes, and re-render tiles */
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const newCols = getCols();
+      if(newCols !== COLS){
+        COLS = newCols;
+        applyGridCSS();
+        if(game) buildGrid();
+      } else {
+        document.querySelectorAll('.tile').forEach(btn => {
+          const w = btn.dataset.word || btn.textContent;
+          if(w) btn.style.fontSize = adaptiveFont(w);
+        });
+      }
+    }, 150);
+  });
 
   /* Start button: fixed at bottom only if scrolled out of view on mobile */
   if(window.innerWidth <= 600){
