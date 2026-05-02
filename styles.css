@@ -735,7 +735,7 @@ body {
 /* «Похожие статьи» — идут сразу после текста, без большого отступа и разделителя */
 .related {
   max-width: 680px;
-  margin: 16px auto 0;
+  margin: 56px auto 0;
 }
 .related__title {
   font-family: var(--sans);
@@ -751,13 +751,23 @@ body {
   display: block;
   padding: 14px 0;
   font-family: var(--serif);
+  font-weight: 400;
   font-size: 19px;
   line-height: 1.4;
   color: var(--text);
   border-bottom: 1px solid var(--rule);
+  transition: color .15s ease;
 }
 .related__list li:first-child a { border-top: 1px solid var(--rule); }
+.related__list a::after {
+  content: "\00a0→";
+  color: var(--muted);
+  opacity: .6;
+  display: inline-block;
+  transition: transform .15s ease, opacity .15s ease, color .15s ease;
+}
 .related__list a:hover { color: var(--accent); text-decoration: none; }
+.related__list a:hover::after { color: var(--accent); opacity: 1; transform: translateX(3px); }
 
 /* ==========================================================================
    Страница 404
