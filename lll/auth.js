@@ -100,8 +100,12 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       if (deckChanged) localStorage.setItem('lll2_deck_mode', data.deck_mode);
       if (streakChanged) localStorage.setItem('lll2_streak', newStreakRaw);
       if (stageChanged) localStorage.setItem('lll2_stage_progress', newStageRaw);
-      // Перезагружаем только если реально что-то прилетело из облака.
-      location.reload();
+      // НЕ делаем location.reload() — иначе текущая фраза пропадает. Главный код слушает
+      // 'lll:cloud-sync' и перерисовывает подвижные части (стрик, словарь, стадии) без сброса фразы.
+      window.dispatchEvent(new CustomEvent('lll:cloud-sync', { detail: {
+        vocab: vocabChanged, state: stateChanged, session: sessionChanged,
+        deck: deckChanged, streak: streakChanged, stage: stageChanged
+      }}));
     } catch (e) {
       console.warn('[lll pull merge]', e);
     }

@@ -2485,6 +2485,27 @@ window.addEventListener('DOMContentLoaded', function () {
   srsNext();
   renderPhrase();
   setPlayIcon('play');
+
+  // Приход данных из облака (Realtime/pull) — перерисовываем без сброса текущей фразы.
+  window.addEventListener('lll:cloud-sync', function (ev) {
+    var d = (ev && ev.detail) || {};
+    if (d.vocab) {
+      try { vocabulary = JSON.parse(localStorage.getItem('lll2_vocabulary') || '[]'); } catch (e) {}
+    }
+    if (d.state) {
+      try { phraseState = JSON.parse(localStorage.getItem('lll2_phrase_state') || '{}'); } catch (e) {}
+    }
+    if (d.streak) {
+      try { streakState = JSON.parse(localStorage.getItem('lll2_streak') || '{"days":{},"recoverDate":null}'); } catch (e) {}
+    }
+    if (d.stage) {
+      try { stageProgress = JSON.parse(localStorage.getItem('lll2_stage_progress') || '{}'); } catch (e) {}
+    }
+    updateBadge();
+    renderVocab();
+    updateStreakSummary();
+    buildHeatmap();
+  });
 });
 </script>
   <div class="vocab-overlay" id="vocabOverlay">
