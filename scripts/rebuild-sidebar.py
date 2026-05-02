@@ -28,6 +28,17 @@ TAG_SLUGS = {
     "лонгрид": "longread",
     "forza": "forza",
     "пелевин": "pelevin",
+    "гумилёв": "gumilev",
+    "кант": "kant",
+    "ai": "ai",
+    "ии": "ai",
+    "топ": "top",
+    "бродский": "brodsky",
+    "толкин": "tolkien",
+    "макиавелли": "machiavelli",
+    "друкер": "drucker",
+    "твен": "twain",
+    "олеша": "olesha",
 }
 TAG_LABELS = {
     "design": "Дизайн",
@@ -37,6 +48,16 @@ TAG_LABELS = {
     "longread": "Лонгрид",
     "forza": "Forza",
     "pelevin": "Пелевин",
+    "gumilev": "Гумилёв",
+    "kant": "Кант",
+    "ai": "AI",
+    "top": "Топ",
+    "brodsky": "Бродский",
+    "tolkien": "Толкин",
+    "machiavelli": "Макиавелли",
+    "drucker": "Друкер",
+    "twain": "Твен",
+    "olesha": "Олеша",
 }
 
 
