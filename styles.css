@@ -1340,9 +1340,8 @@ body {
   }
   .posts__list li:first-child a { border: 0; }
 
-  /* Также в related на мобайле убираем линии */
-  .related__list a { padding: 8px 0; font-size: 17px; border: 0; }
-  .related__list li:first-child a { border: 0; }
+  /* Related на мобайле: линии остаются, шрифт чуть меньше */
+  .related__list a { padding: 16px 0; font-size: 18px; }
 
   /* ---- Футер ---- */
   .foot {

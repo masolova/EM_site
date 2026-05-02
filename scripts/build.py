@@ -452,7 +452,101 @@ def load_posts():
 # Генерация страниц постов
 # ═══════════════════════════════════════════════════════════════════
 
-def render_post_page(post):
+TOP_TAG_BY_LANG = {"ru": "топ", "en": "Top"}
+CONNECTIONS_BY_LANG = {
+    "ru": {"title": "Попробуйте мою игру Connections", "url": "/games/connections/"},
+    "en": {"title": "Play my Connections game", "url": "/games/connections/"},
+}
+RELATED_TITLE_BY_LANG = {"ru": "Читать ещё", "en": "Read more"}
+
+
+def pick_related(post, all_posts):
+    """Подбирает ровно 3 рекомендации:
+      1) Тот же язык, кроме текущего поста.
+      2) По пересечению тегов (по убыванию числа пересечений).
+      3) Добор постами с тегом «топ» / «Top» (по pin_order asc).
+      4) При нехватке — запись Connections.
+    Дубли исключаются.
+    Возвращает: список из 3 словарей {"title", "url"}.
+    """
+    lang = post.get("lang", "ru")
+    cur_slug = post.get("slug")
+    cur_tags = set(post.get("tags") or [])
+
+    candidates = [p for p in all_posts
+                  if p.get("lang") == lang and p.get("slug") != cur_slug]
+
+    chosen = []
+    chosen_slugs = set()
+
+    # Шаг 1: посты с пересечением тегов
+    scored = []
+    for p in candidates:
+        overlap = len(cur_tags & set(p.get("tags") or []))
+        if overlap > 0:
+            scored.append((p, overlap))
+    scored.sort(key=lambda x: (-x[1], x[0].get("pin_order", 999), x[0].get("slug", "")))
+    for p, _ in scored:
+        if len(chosen) >= 3:
+            break
+        chosen.append(p)
+        chosen_slugs.add(p["slug"])
+
+    # Шаг 2: добор «топовыми»
+    if len(chosen) < 3:
+        top_tag = TOP_TAG_BY_LANG.get(lang, "топ")
+        tops = [p for p in candidates
+                if p.get("slug") not in chosen_slugs
+                and top_tag in (p.get("tags") or [])]
+        tops.sort(key=lambda p: (p.get("pin_order", 999), p.get("slug", "")))
+        for p in tops:
+            if len(chosen) >= 3:
+                break
+            chosen.append(p)
+            chosen_slugs.add(p["slug"])
+
+    prefix = "/en/articles" if lang == "en" else "/articles"
+    items = [{"title": p["title"], "url": f'{prefix}/{p["slug"]}/'} for p in chosen]
+
+    # Шаг 3: если по тегам и «топу» набралось меньше 3 — добавляем Connections
+    if len(items) < 3:
+        items.append(CONNECTIONS_BY_LANG.get(lang, CONNECTIONS_BY_LANG["ru"]))
+
+    # Шаг 4: финальный фолбэк — добор любыми оставшимися постами того же языка
+    if len(items) < 3:
+        rest = [p for p in candidates if p.get("slug") not in chosen_slugs]
+        rest.sort(key=lambda p: (p.get("pin_order", 999), p.get("slug", "")))
+        for p in rest:
+            if len(items) >= 3:
+                break
+            items.append({"title": p["title"], "url": f'{prefix}/{p["slug"]}/'})
+            chosen_slugs.add(p["slug"])
+
+    return items[:3]
+
+
+def render_related(post, all_posts):
+    """HTML-блок рекомендаций (Ru/En в зависимости от lang поста)."""
+    items = pick_related(post, all_posts)
+    if not items:
+        return ""
+    lang = post.get("lang", "ru")
+    title = RELATED_TITLE_BY_LANG.get(lang, "Читать ещё")
+    lis = "\n        ".join(
+        f'<li><a href="{escape(it["url"])}">{escape(it["title"])}</a></li>'
+        for it in items
+    )
+    return (
+        '<section class="related">\n'
+        f'      <p class="related__title">{escape(title)}</p>\n'
+        '      <ul class="related__list">\n'
+        f'        {lis}\n'
+        '      </ul>\n'
+        '    </section>'
+    )
+
+
+def render_post_page(post, all_posts=None):
     """Создаёт /articles/<slug>/index.html (ru) или /en/articles/<slug>/index.html (en)."""
     lang = post.get("lang", "ru")
     tpl_name = "article-en.html" if lang == "en" else "article.html"
@@ -466,6 +560,9 @@ def render_post_page(post):
 
     tpl = tpl_path.read_text(encoding="utf-8")
 
+    # Блок рекомендаций «Читать ещё» — 3 ссылки (теги → топ → Connections)
+    related_html = render_related(post, all_posts) if all_posts else ""
+
     # Простая замена плейсхолдеров
     replacements = {
         "{{TITLE}}": escape(post["title"]),
@@ -476,6 +573,7 @@ def render_post_page(post):
         "{{KICKER}}": escape(post.get("kicker", "")),
         "{{BODY}}": post["body_html"],
         "{{READING_TIME}}": str(post.get("reading_time", "")),
+        "{{RELATED_BLOCK}}": related_html,
     }
     out = tpl
     for k, v in replacements.items():
@@ -559,7 +657,7 @@ def main():
     # 1. Генерация страниц постов
     generated = 0
     for post in posts:
-        if render_post_page(post):
+        if render_post_page(post, all_posts=posts):
             generated += 1
             prefix = "/en/articles" if post.get("lang") == "en" else "/articles"
             print(f"  ✓ {prefix}/{post['slug']}/ ({post['lang']})")

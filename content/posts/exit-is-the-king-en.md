@@ -6,8 +6,10 @@ lang: "en"
 tags:
   - "Startup"
   - "Longread"
+  - "Top"
 status: "published"
 pinned: true
+pin_order: 1
 ---
 
 **What is a startup exit? Why are exits considered the measure of success? How do you tell whether an exit is good or not?**
