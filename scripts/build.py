@@ -426,6 +426,11 @@ def load_posts():
         meta["source_file"] = path.name
         meta["lang"] = meta.get("lang", "ru")
         meta["pinned"] = bool(meta.get("pinned", False))
+        # pin_order: чем меньше число, тем выше в блоке pinned. Служебное поле.
+        try:
+            meta["pin_order"] = int(meta.get("pin_order", 999))
+        except (TypeError, ValueError):
+            meta["pin_order"] = 999
         # Авто-лид из первого предложения тела
         meta["lead"] = first_sentence(body)
 
@@ -438,8 +443,8 @@ def load_posts():
 
         posts.append(meta)
 
-    # Сортировка: закреплённые сверху, потом по дате (новые сверху)
-    posts.sort(key=lambda p: (not p["pinned"], -p["_date_key"].toordinal()))
+    # Сортировка: закреплённые сверху (в порядке pin_order), потом по дате (новые сверху)
+    posts.sort(key=lambda p: (not p["pinned"], p["pin_order"], -p["_date_key"].toordinal()))
     return posts
 
 
