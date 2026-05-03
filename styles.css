@@ -281,7 +281,7 @@ body {
   padding-top: 28px;
 }
 
-/* Sidebar / tags — облако в стиле inline-перечисления через запятую */
+/* Sidebar / tags — вертикальный список, тег + «пилюля» с числом после слова */
 .tags__title {
   font-family: var(--serif);
   font-weight: 700;
@@ -291,45 +291,42 @@ body {
   color: var(--muted);
   margin: 0 0 14px;
 }
-.tags__list {
-  font-family: var(--serif);
-  font-size: 15.5px;
-  line-height: 1.6;
-  color: var(--text);
-}
-.tags__list li { margin: 0; display: inline; }
-.tags__list li:not(:last-child)::after {
-  content: ",\00a0";
-  color: var(--muted);
-  font-family: var(--serif);
-}
+.tags__list li { margin: 0; display: block; }
 .tags__list a {
-  display: inline;
-  padding: 0;
-  gap: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
   color: var(--text);
-  font-family: var(--serif);
-  font-size: 15.5px;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 1px;
-  white-space: nowrap;
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.3;
+  font-weight: 400;
 }
-.tags__list .tag { white-space: nowrap; }
 .tags__list a:hover {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+  color: var(--text);
+  font-weight: 600;
   text-decoration: none;
 }
-.tags__list a:hover .count { color: var(--accent); }
+.tags__list a:hover .count {
+  background: var(--pill-hover, rgba(200,69,43,.12));
+  color: var(--accent);
+}
 .tags__list .count {
   font-family: var(--sans);
   font-size: 11px;
-  margin-left: 2px;
+  font-weight: 700;
   color: var(--muted);
-  vertical-align: 0.1em;
-  font-weight: 400;
+  background: var(--pill, rgba(138,130,119,.15));
+  padding: 2px 8px;
+  border-radius: 999px;
   font-variant-numeric: tabular-nums;
+  line-height: 1.4;
+  transition: background .15s, color .15s;
 }
+/* На десктопе JS-fit не работает — «Все посты» прячем, все теги видны. */
+.tags__list .tags__more { display: none !important; }
+.tags__list .tags__overflow { display: block; }
 
 /* Posts list — минимализм в духе Пола Грэма, но современный */
 .posts__list {
@@ -855,14 +852,7 @@ body {
   .tags__toggle:hover { color: var(--accent); border-bottom-color: var(--accent) !important; }
 }
 
-/* Скрытые теги (не влезающие в 4 строки) — показваем в .is-open */
-.tags__list .tags__overflow { display: none; }
-.tags.is-open .tags__list .tags__overflow { display: inline; }
-.tags.is-open .tags__list .tags__overflow:not(:last-child)::after {
-  content: ",\00a0";
-  color: var(--muted);
-  font-family: var(--serif);
-}
+/* Правила для облака тегов на мобайле (скрытые теги + разделитель) живут в медиа-блоке (max-width:800px) ниже. */
 
 /* CTA-полоса — только на мобильном */
 .cta-strip { display: none; }
@@ -1357,6 +1347,16 @@ body {
   .tags__list a.is-active .count { color: var(--accent); font-size: 11px; }
   /* Тач-зона: даём ссылке достаточно padding по вертикали, чтобы попадать пальцем */
   .tags__list a { padding: 4px 0; line-height: 1.7; }
+
+  /* Облако: скрытые теги + «Все посты» показываем (перекрываем десктопные дефолты) */
+  .tags__list .tags__more { display: inline-block !important; }
+  .tags__list .tags__overflow { display: none; }
+  .tags.is-open .tags__list .tags__overflow { display: inline; }
+  .tags.is-open .tags__list .tags__overflow:not(:last-child)::after {
+    content: ",\00a0";
+    color: var(--muted);
+    font-family: var(--serif);
+  }
 
   /* ---- Посты: плотный список, без линий сверху/снизу в мобайле ---- */
   .posts {

@@ -13,17 +13,19 @@
     });
   }
 
-  // --- Теги: автообрезка до 4 строк + ссылка «Все посты»/«All topics» в конце
-  //     При клике раскрывает все скрытые теги; повторный клик скрывает.
+  // --- Теги (ТОЛЬКО МОБАЙЛ): облако с автообрезкой до 4 строк
+  //     + ссылка «Все посты»/«All topics» в конце.
+  //     На десктопе сайдбар — вертикальный список, показываем все теги без обрезки.
   (function () {
     var list = document.querySelector('.tags__list');
     if (!list) return;
+    var MOBILE_MAX = 800; // совпадает с медиа-брейкпоинтом в styles.css
     var lang = (document.documentElement.lang || 'ru').toLowerCase().indexOf('en') === 0 ? 'en' : 'ru';
     var labelMore = lang === 'en' ? 'All topics' : 'Все посты';
     var labelLess = lang === 'en' ? 'Hide' : 'Скрыть';
     var tags = list.closest('.tags');
 
-    // Создаём элемент-ссылку "Все посты" в конце
+    // Ссылка "Все посты" в конце
     var moreLi = document.createElement('li');
     moreLi.className = 'tags__more';
     var moreA = document.createElement('a');
@@ -35,30 +37,61 @@
     moreLi.appendChild(moreA);
     list.appendChild(moreLi);
 
-    // Помечаем теги, не влезающие в 4 строки
-    var lh = parseFloat(getComputedStyle(list).lineHeight);
-    var maxH = lh * 4 + 1;
     var items = Array.from(list.querySelectorAll('li:not(.tags__more)'));
+    var applied = false;
 
-    function fits() { return list.scrollHeight <= maxH; }
-
-    if (!fits()) {
-      // Скрываем последние теги (перед ссылкой), пока не влезет
+    function fitMobile() {
+      var lh = parseFloat(getComputedStyle(list).lineHeight) || 24;
+      var maxH = lh * 4 + 1;
+      // снимаем ранее проставленные overflow, чтобы пересчитать чисто
+      items.forEach(function (li) { li.classList.remove('tags__overflow'); });
+      tags.classList.remove('is-open');
+      moreA.setAttribute('aria-expanded', 'false');
+      moreA.textContent = labelMore;
+      if (list.scrollHeight <= maxH) {
+        moreLi.style.display = 'none';
+        return;
+      }
+      moreLi.style.display = '';
       for (var i = items.length - 1; i >= 0; i--) {
         items[i].classList.add('tags__overflow');
-        if (fits()) break;
+        if (list.scrollHeight <= maxH) break;
       }
-    } else {
-      // Все влезают — ссылка не нужна
-      moreLi.style.display = 'none';
     }
+
+    function reset() {
+      moreLi.style.display = 'none';
+      items.forEach(function (li) { li.classList.remove('tags__overflow'); });
+      tags.classList.remove('is-open');
+      moreA.setAttribute('aria-expanded', 'false');
+      moreA.textContent = labelMore;
+    }
+
+    function apply() {
+      var isMobile = window.matchMedia('(max-width: ' + MOBILE_MAX + 'px)').matches;
+      if (isMobile) {
+        applied = true;
+        fitMobile();
+      } else if (applied) {
+        applied = false;
+        reset();
+      } else {
+        moreLi.style.display = 'none';
+      }
+    }
+
+    apply();
+    var t;
+    window.addEventListener('resize', function () {
+      clearTimeout(t);
+      t = setTimeout(apply, 120);
+    });
 
     moreA.addEventListener('click', function (e) {
       e.preventDefault();
       var open = tags.classList.toggle('is-open');
       moreA.setAttribute('aria-expanded', open ? 'true' : 'false');
       moreA.textContent = open ? labelLess : labelMore;
-      // Снимаем фокус — иначе на тач-устройствах залипает эффект hover/active
       moreA.blur();
     });
   })();
