@@ -7,7 +7,7 @@
     <link>https://elenamasolova.com/</link>
     <description>Product, data, AI, languages.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 02 May 2026 23:12:05 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 00:01:00 +0000</lastBuildDate>
     <atom:link href="https://elenamasolova.com/feed-en.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>Exit is the King</title>
@@ -56,7 +56,7 @@
 </li>
 <li><strong>Capturing market share and customers.</strong> An acquisition gives instant access to a user base, contracts, sales channels, and brand recognition.
 </li>
-<li><strong>Killing a competitor.</strong> Sometimes a startup isn't needed as an asset — it's needed as a threat that has to be neutralized before it's too late. By that logic, Facebook bought Instagram.
+<li><strong>Killing a competitor.</strong> Sometimes a startup isn't needed as an asset — it's needed as a threat that has to be neutralized before it's too late. By that logic, Facebook bought Instagram — the ends justify the means.
 </li>
 <li>Access to <strong>technology or IP</strong> (algorithms, patents, data, content). When Netflix planned to buy Warner Bros. (the deal was later canceled), they were after the rights to the movies.
 </li>
@@ -98,6 +98,50 @@
 </ul>
 <p>These 3 points solve 95% of the problems.</p>
 <p>Good luck!</p>]]></content:encoded>
+    </item>
+    <item>
+      <title>Not a day without a line (of code)</title>
+      <link>https://elenamasolova.com/en/articles/not-a-day-without-a-line/</link>
+      <guid isPermaLink="true">https://elenamasolova.com/en/articles/not-a-day-without-a-line/</guid>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <description>Spoiler.</description>
+      <content:encoded><![CDATA[<p><strong>Two weeks ago I decided to jump down the rabbit hole and tried coding with AI. The best way to learn any tool is not to watch videos (you can do that endlessly with no result), but to make your own little project and rack up some bruises.</strong></p>
+<p>Spoiler. It turned out to be not just one project, but five at once, and I'm not planning to stop. But first things first.</p>
+<h3>Starting level</h3>
+<p>I last programmed in school in 2002 (BASIC, Pascal), but I've managed web development a lot. So, my starting level was, of course, not a rookie. For example, seeing a darkened photo, I immediately asked AI to "check whether there is a black overlay on top." Or, when a skyscraper got covered by text, I suggested rescaling (cropping) the photo. These are very simple and logical edits, no rocket science at all, but for a complete beginner they would not be obvious.</p>
+<p>Still, can a complete beginner code with AI? Yes, but a) it takes time to develop an effective model of working with it, b) a logical tech-minded person will have an easier time than a humanities person (the "elegant giraffe" will get badly in the way), c) it's better to lower your expectations (at least temporarily).</p>
+<h3>The very first app</h3>
+<p>The trigger was a Twitter update. Previously you could click on a Latvian news item and immediately, in the same window, see the translation and learn new words. The update broke my established language-learning pattern.</p>
+<p>With a barely contained cry of "Let's get back at Elon Musk!" I opened Perplexity Computer to build my own app in roughly an hour. It took 5 hours and 19 builds, but the task was solved.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-2-lll-news.png" alt=""></p>
+<p>News was pulled in from Delfi, the translation displayed instantly via API, the audio worked (no accent at all and not robotic), new words were added to a dictionary, a calendar with a streak was being drawn, the mobile version worked, and even the favicon was a Latvian flag — beautiful.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-3-lll-vocab.png" alt=""></p>
+<p>Of course, the first app was the simplest. I will make it part (one of the tabs) of a bigger app, LLL (Lena Learns Latvian), and refresh the design. The old version can be seen <a href="https://masolova.github.io/old_LLL/">here</a> on GitHub.</p>
+<h3>So how does AI code?</h3>
+<p>The process looks like an ordinary chat. For example, I want to translate from Latvian to Russian. I ask: "Listen, does such a thing exist at all, where, how much does it cost?" The chat gives options. I go to the service. If I get stuck somewhere, I send a screenshot and it helps: "No, the API keys are handed out on a different tab, go there."</p>
+<p>While doing this, the AI reasons out loud, and you can read it like a funny novel.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-4-ai-debug.jpg" alt=""></p>
+<h3>Second attempt at the bar. The family-office website.</h3>
+<p>Next I decided to build a <a href="http://forza.capital">website</a> for the family office. I got tired of the question, "So what are you doing now?" Well, this.</p>
+<p>My coding experience was limited, so I burned a lot of time looking for a good enough reference or a grid, and then for the hero image.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-1-forza-skyline.jpg" alt=""></p>
+<p>I had the sense to stop and not do animation (windows blinking in the skyscrapers), because we would have spent a month tying down the coordinate grid with AI. And without a grid, what would blink is the starry sky above us and above Wall Street, not windows.</p>
+<p>The typography is sort of newspaper-like. AI's reference was the Wall Street Journal.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-5-forza-rfs.png" alt=""></p>
+<p>I think it came out "rich-and-fancy." Both on web and on mobile. But what's the most important thing in a website? Right — the fa-vi-con. Favicon: not forgotten. Moving on.</p>
+<h3>Third step. The Connections game.</h3>
+<p>In the <a href="/games/connections/">game</a> you have to group words into sets. Very addictive if you're a geek.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-6-connections.png" alt=""></p>
+<p>Technically I had to assemble the matching mechanics, the word sets (about 5 thousand words), test them for duplicates, catch gems like <strong>"The Bearable Lightness of Being,"</strong> make an English version, and an easy mode for everyone who has not played in my "What? Where? When?" team.</p>
+<h3>Fourth. The personal site.</h3>
+<p>This site. Technically it's someone else's ready grid (Vanya Zamesin's blog), tags on posts, a recommendations block, conversion of posts from Word into Markdown, and a newsletter.</p>
+<h3>Fifth. A language-learning service.</h3>
+<p>Spaced repetition flashcards. You can take a look <a href="https://masolova.com/LLL/">here</a>.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-7-cards.png" alt=""></p>
+<p>Technically this is, just like in the very first app, translation, audio without accent, a dictionary, a streak, mobile layout. What's new: a) I had to set up login through Supabase (because storing data in the browser is unreliable; I would not want to come back in two months and find that everything was wiped), b) the logic of spaced repetitions for the cards, c) a motivating progress bar.</p>
+<p>But the main thing is <strong>which words</strong> were selected. I (we) found lists of frequency words in the Latvian language and picked the 2,000 used most often. For the most common verbs, I asked it to make 5 phrases following the 1-3-1 logic (past — present in 3 forms — future). Then we found a corpus of texts used to prepare for the exam, ran it through, and pulled out frequency words from it. It turned out 85% had already been collected before, i.e. the work had been done well. We added the new ones.</p>
+<p>I would have kept fooling around, but unfortunately, I now actually had to learn the language. Pity.</p>
+<p>In the next post I'll share my conclusions and tips on AI coding (which will become obsolete in 5 days).</p>]]></content:encoded>
     </item>
     <item>
       <title>Looking for EIRs</title>
@@ -142,7 +186,7 @@
 </li>
 <li><strong>Get a feel for the market</strong>: a lot has changed in other industries while you ran your last project. Funds see a wide cross-section. See the latest trends.
 </li>
-<li><strong>Spend 6–9 months experimenting</strong> with different startup ideas while hunting for a unicorn.
+<li><strong>Spend 6–9 months experimenting</strong> with different startup ideas while hunting for a unicorn. Not all those who wander are lost.
 </li>
 </ol>
 <p>If this sounds interesting, find a warm intro and write to me.</p>]]></content:encoded>
@@ -173,7 +217,7 @@
 <li>not buying a "lottery ticket" or "index of the entire market," but focusing on target verticals.
 </li>
 </ul>
-<p><strong>Forza is highly likely to invest in these projects, provided the team and execution plan are strong.</strong></p>
+<p><strong>The best way to predict the future is to create it. Forza is highly likely to invest in these projects, provided the team and execution plan are strong.</strong></p>
 <p class="callout callout--note">The list of projects is updated frequently.</p>
 <ol>
 <li><strong>Home bloodwork OS</strong>
@@ -256,7 +300,7 @@
 <p>The chart is saying that if your AI startup is in, say, even New York, you will never raise a round of the right size from the right investors, you won't be able to grow fast enough, and your company will never be valued at the same level as a full analog in the Valley. Period.</p>
 <p>It's pointless to argue whether we like this state of affairs. I don't either. But it's objective reality. You don't win arguments with reality. Of course, this is a market phase and a bubble. But in another phase the share would be 81%, not 91%. That doesn't change the point.</p>
 <p><strong>Where does this concentration of capital come from?</strong></p>
-<p>The reasons are clear. If the money printer is in the US, then most of the money will settle in the US: with buyers, with strategic acquirers (those who buy the businesses themselves), with venture funds (who get it from pension funds), and ultimately on the stock market after IPO (from all other institutional players). Whoever prints the money also dances with the girl.</p>
+<p>The reasons are clear. If the money printer is in the US, then most of the money will settle in the US: with buyers, with strategic acquirers (those who buy the businesses themselves), with venture funds (who get it from pension funds), and ultimately on the stock market after IPO (from all other institutional players). Money never sleeps, pal.</p>
 <p>A couple of examples from my own experience.</p>
 <p><strong>Strategic buyers — 50x more</strong></p>
 <p>The picture will be the same in any industry. I looked at online education as an example. In edtech, over the previous 3 years, 150 different strategic buyers acquired edtech companies. In Russia, in the same period, there were 2. A 75x staggering difference. Makes total sense, given the size of the economy.</p>
@@ -279,7 +323,7 @@
       <description>Basically, this temperature chart gives an exhaustive answer to the question &quot;Why is it better to live in Silicon Valley than in Norilsk.&quot;</description>
       <content:encoded><![CDATA[<p>Basically, this temperature chart gives an exhaustive answer to the question "Why is it better to live in Silicon Valley than in Norilsk."</p>
 <p><img src="/assets/posts/summer-1.png" alt=""></p>
-<p>There are years when the coldest day in Palo Alto is warmer than the warmest day in Norilsk, the town of my childhood.</p>
+<p>There are years when the coldest day in Palo Alto is warmer than the warmest day in Norilsk, the town of my childhood. Don't leave the room, don't blunder, do not go on.</p>
 <p>There's a local joke:</p>
 <p>— Was there a summer this year?</p>
 <p>— I don't know. I was in the mine that day.</p>

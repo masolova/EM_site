@@ -39,6 +39,8 @@ TAG_SLUGS = {
     "друкер": "drucker",
     "твен": "twain",
     "олеша": "olesha",
+    "латвия": "latvia",
+    "кундера": "kundera",
 }
 TAG_LABELS = {
     "design": "Дизайн",
@@ -58,6 +60,8 @@ TAG_LABELS = {
     "drucker": "Друкер",
     "twain": "Твен",
     "olesha": "Олеша",
+    "latvia": "Латвия",
+    "kundera": "Кундера",
 }
 
 

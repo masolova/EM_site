@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Not a day without a line (of code) — Elena Masolova</title>
+  <meta name="description" content="Spoiler.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="alternate" type="application/rss+xml" title="Elena Masolova — blog (RSS)" href="/feed-en.xml">
+  <script defer src="/assets/site.js"></script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#1a1a1a">
+</head>
+<body>
+  <div class="page">
+
+    <!-- Same header as homepage -->
+    <header class="top">
+      <a href="/index-en.html" class="brand">Elena Masolova</a>
+      <div class="top-right">
+
+        <nav class="top-nav">
+
+          <a href="/en/articles/looking-for-eir/">Looking for EIR<span class="emo-d" aria-hidden="true"> 🦸‍♂️</span></a>
+          <a href="/en/articles/request-for-startups/">Request for Startups<span class="emo-d" aria-hidden="true"> 💎</span></a>
+          <a href="/games/connections/">Connections&nbsp;game</a>
+
+        </nav>
+
+        <div class="lang" data-lang>
+          <button type="button" class="lang__current" aria-haspopup="listbox" aria-expanded="false">
+            <span class="lang__flag" aria-hidden="true">🇬🇧</span>EN<span class="lang__chev" aria-hidden="true"></span>
+          </button>
+          <div class="lang__menu" role="listbox">
+            <a href="/" role="option"><span class="lang__flag" aria-hidden="true">🇷🇺</span>Russian</a>
+            <a href="/index-en.html" class="is-active" role="option"><span class="lang__flag" aria-hidden="true">🇬🇧</span>English</a>
+          </div>
+        </div>
+
+        <button class="top-burger" aria-label="Menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </header>
+
+    <!-- Highlights below header for mobile (hidden on desktop) -->
+    <nav class="hl-mobile" aria-label="Highlights">
+      <a href="/en/articles/looking-for-eir/">Looking for EIR<span class="emo-d" aria-hidden="true"> 🦸‍♂️</span></a>
+      <a href="/en/articles/request-for-startups/">Request for Startups<span class="emo-d" aria-hidden="true"> 💎</span></a>
+    </nav>
+
+    <!-- Article — narrow centered column -->
+    <article class="article">
+      
+      <h1 class="article__title">Not a day without a line (of code)</h1>
+      
+
+      <div class="article__body">
+        <p><strong>Two weeks ago I decided to jump down the rabbit hole and tried coding with AI. The best way to learn any tool is not to watch videos (you can do that endlessly with no result), but to make your own little project and rack up some bruises.</strong></p>
+<p>Spoiler. It turned out to be not just one project, but five at once, and I'm not planning to stop. But first things first.</p>
+<h3>Starting level</h3>
+<p>I last programmed in school in 2002 (BASIC, Pascal), but I've managed web development a lot. So, my starting level was, of course, not a rookie. For example, seeing a darkened photo, I immediately asked AI to "check whether there is a black overlay on top." Or, when a skyscraper got covered by text, I suggested rescaling (cropping) the photo. These are very simple and logical edits, no rocket science at all, but for a complete beginner they would not be obvious.</p>
+<p>Still, can a complete beginner code with AI? Yes, but a) it takes time to develop an effective model of working with it, b) a logical tech-minded person will have an easier time than a humanities person (the "elegant giraffe" will get badly in the way), c) it's better to lower your expectations (at least temporarily).</p>
+<h3>The very first app</h3>
+<p>The trigger was a Twitter update. Previously you could click on a Latvian news item and immediately, in the same window, see the translation and learn new words. The update broke my established language-learning pattern.</p>
+<p>With a barely contained cry of "Let's get back at Elon Musk!" I opened Perplexity Computer to build my own app in roughly an hour. It took 5 hours and 19 builds, but the task was solved.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-2-lll-news.png" alt=""></p>
+<p>News was pulled in from Delfi, the translation displayed instantly via API, the audio worked (no accent at all and not robotic), new words were added to a dictionary, a calendar with a streak was being drawn, the mobile version worked, and even the favicon was a Latvian flag — beautiful.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-3-lll-vocab.png" alt=""></p>
+<p>Of course, the first app was the simplest. I will make it part (one of the tabs) of a bigger app, LLL (Lena Learns Latvian), and refresh the design. The old version can be seen <a href="https://masolova.github.io/old_LLL/">here</a> on GitHub.</p>
+<h3>So how does AI code?</h3>
+<p>The process looks like an ordinary chat. For example, I want to translate from Latvian to Russian. I ask: "Listen, does such a thing exist at all, where, how much does it cost?" The chat gives options. I go to the service. If I get stuck somewhere, I send a screenshot and it helps: "No, the API keys are handed out on a different tab, go there."</p>
+<p>While doing this, the AI reasons out loud, and you can read it like a funny novel.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-4-ai-debug.jpg" alt=""></p>
+<h3>Second attempt at the bar. The family-office website.</h3>
+<p>Next I decided to build a <a href="http://forza.capital">website</a> for the family office. I got tired of the question, "So what are you doing now?" Well, this.</p>
+<p>My coding experience was limited, so I burned a lot of time looking for a good enough reference or a grid, and then for the hero image.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-1-forza-skyline.jpg" alt=""></p>
+<p>I had the sense to stop and not do animation (windows blinking in the skyscrapers), because we would have spent a month tying down the coordinate grid with AI. And without a grid, what would blink is the starry sky above us and above Wall Street, not windows.</p>
+<p>The typography is sort of newspaper-like. AI's reference was the Wall Street Journal.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-5-forza-rfs.png" alt=""></p>
+<p>I think it came out "rich-and-fancy." Both on web and on mobile. But what's the most important thing in a website? Right — the fa-vi-con. Favicon: not forgotten. Moving on.</p>
+<h3>Third step. The Connections game.</h3>
+<p>In the <a href="/games/connections/">game</a> you have to group words into sets. Very addictive if you're a geek.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-6-connections.png" alt=""></p>
+<p>Technically I had to assemble the matching mechanics, the word sets (about 5 thousand words), test them for duplicates, catch gems like <strong>"The Bearable Lightness of Being,"</strong> make an English version, and an easy mode for everyone who has not played in my "What? Where? When?" team.</p>
+<h3>Fourth. The personal site.</h3>
+<p>This site. Technically it's someone else's ready grid (Vanya Zamesin's blog), tags on posts, a recommendations block, conversion of posts from Word into Markdown, and a newsletter.</p>
+<h3>Fifth. A language-learning service.</h3>
+<p>Spaced repetition flashcards. You can take a look <a href="https://masolova.com/LLL/">here</a>.</p>
+<p><img src="/assets/posts/not-a-day-without-a-line-7-cards.png" alt=""></p>
+<p>Technically this is, just like in the very first app, translation, audio without accent, a dictionary, a streak, mobile layout. What's new: a) I had to set up login through Supabase (because storing data in the browser is unreliable; I would not want to come back in two months and find that everything was wiped), b) the logic of spaced repetitions for the cards, c) a motivating progress bar.</p>
+<p>But the main thing is <strong>which words</strong> were selected. I (we) found lists of frequency words in the Latvian language and picked the 2,000 used most often. For the most common verbs, I asked it to make 5 phrases following the 1-3-1 logic (past — present in 3 forms — future). Then we found a corpus of texts used to prepare for the exam, ran it through, and pulled out frequency words from it. It turned out 85% had already been collected before, i.e. the work had been done well. We added the new ones.</p>
+<p>I would have kept fooling around, but unfortunately, I now actually had to learn the language. Pity.</p>
+<p>In the next post I'll share my conclusions and tips on AI coding (which will become obsolete in 5 days).</p>
+      </div>
+    </article>
+
+    <section class="related">
+      <p class="related__title">Read more</p>
+      <ul class="related__list">
+        <li><a href="/en/articles/exit-is-the-king/">Exit is the King</a></li>
+        <li><a href="/en/articles/lies-damn-lies-and-design/">Lies, damn lies, and design</a></li>
+        <li><a href="/en/articles/money-printer-puzzle/">The money-printer puzzle</a></li>
+      </ul>
+    </section>
+
+    <!-- Subscription CTA -->
+    <form class="cta" action="https://buttondown.com/api/emails/embed-subscribe/elenamasolova" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/elenamasolova', 'popupwindow')">
+        <input type="hidden" name="tag" value="en">
+      <p class="cta__title"><span class="cta__title-long">Get new posts by&nbsp;email</span><span class="cta__title-short">New posts by&nbsp;email</span></p>
+      <p class="cta__text">Digest once a&nbsp;month.</p>
+      <div class="cta__form">
+        <input type="email" name="email" placeholder="Your email" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+
+    <footer class="foot">
+      <a class="foot__email" href="mailto:hello@masolova.com">hello@masolova.com</a>
+      <p>© Elena Masolova</p>
+    </footer>
+
+  </div>
+</body>
+</html>

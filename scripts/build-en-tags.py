@@ -24,6 +24,9 @@ TAGS = {
     "machiavelli": "Machiavelli",
     "drucker": "Drucker",
     "gordon-gekko": "Gordon&nbsp;Gekko",
+    "ai": "AI",
+    "latvia": "Latvia",
+    "kundera": "Kundera",
 }
 
 # Соответствие тег-name → slug
@@ -41,6 +44,9 @@ TAG_SLUG = {
     "Machiavelli": "machiavelli",
     "Drucker": "drucker",
     "Gordon Gekko": "gordon-gekko",
+    "AI": "ai",
+    "Latvia": "latvia",
+    "Kundera": "kundera",
 }
 
 
@@ -135,7 +141,8 @@ def render_tag_page(active_slug, active_name):
     # tags aside (sorted by count desc, then by predefined order)
     tag_order = [
         "startup", "longread", "forza", "silicon-valley", "norilsk", "design", "top",
-        "twain", "brodsky", "tolkien", "machiavelli", "drucker", "gordon-gekko",
+        "ai", "latvia",
+        "twain", "brodsky", "tolkien", "machiavelli", "drucker", "gordon-gekko", "kundera",
     ]
     tags_aside_items = []
     for slug in tag_order:

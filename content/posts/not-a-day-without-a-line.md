@@ -7,8 +7,10 @@ tags:
   - "ИИ"
   - "лонгрид"
   - "топ"
+  - "Латвия"
   - "Гумилёв"
   - "Кант"
+  - "Кундера"
 status: "published"
 pinned: true
 pin_order: 2
