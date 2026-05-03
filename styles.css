@@ -281,7 +281,7 @@ body {
   padding-top: 28px;
 }
 
-/* Sidebar / tags — тег + «пилюля» с числом сразу после слова */
+/* Sidebar / tags — облако в стиле inline-перечисления через запятую */
 .tags__title {
   font-family: var(--serif);
   font-weight: 700;
@@ -291,38 +291,44 @@ body {
   color: var(--muted);
   margin: 0 0 14px;
 }
-.tags__list li { margin: 0; display: block; }
-.tags__list a {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 0;
+.tags__list {
+  font-family: var(--serif);
+  font-size: 15.5px;
+  line-height: 1.6;
   color: var(--text);
-  font-family: var(--sans);
-  font-size: 15px;
-  line-height: 1.3;
-  font-weight: 400;
 }
-.tags__list a:hover {
+.tags__list li { margin: 0; display: inline; }
+.tags__list li:not(:last-child)::after {
+  content: ",\00a0";
+  color: var(--muted);
+  font-family: var(--serif);
+}
+.tags__list a {
+  display: inline;
+  padding: 0;
+  gap: 0;
   color: var(--text);
-  font-weight: 600;
+  font-family: var(--serif);
+  font-size: 15.5px;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 1px;
+  white-space: nowrap;
+}
+.tags__list .tag { white-space: nowrap; }
+.tags__list a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
   text-decoration: none;
 }
-.tags__list a:hover .count {
-  background: var(--pill-hover, rgba(200,69,43,.12));
-  color: var(--accent);
-}
+.tags__list a:hover .count { color: var(--accent); }
 .tags__list .count {
   font-family: var(--sans);
   font-size: 11px;
-  font-weight: 700;
+  margin-left: 2px;
   color: var(--muted);
-  background: var(--pill, rgba(138,130,119,.15));
-  padding: 2px 8px;
-  border-radius: 999px;
+  vertical-align: 0.1em;
+  font-weight: 400;
   font-variant-numeric: tabular-nums;
-  line-height: 1.4;
-  transition: background .15s, color .15s;
 }
 
 /* Posts list — минимализм в духе Пола Грэма, но современный */
@@ -845,7 +851,9 @@ body {
   border-bottom-color: var(--muted) !important;
   cursor: pointer;
 }
-.tags__toggle:hover { color: var(--accent); border-bottom-color: var(--accent) !important; }
+@media (hover: hover) {
+  .tags__toggle:hover { color: var(--accent); border-bottom-color: var(--accent) !important; }
+}
 
 /* Скрытые теги (не влезающие в 4 строки) — показваем в .is-open */
 .tags__list .tags__overflow { display: none; }
@@ -1285,6 +1293,8 @@ body {
     padding: 12px 20px 12px;
     border-bottom: 1px solid var(--rule);
   }
+  /* На странице тега на мобайле прячем облако тегов сверху — показываем только посты по тегу */
+  body.page-tag .tags { display: none; }
   .tags__head { margin-bottom: 6px; }
   .tags__title {
     font-family: var(--sans);

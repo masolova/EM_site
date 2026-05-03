@@ -58,6 +58,8 @@
       var open = tags.classList.toggle('is-open');
       moreA.setAttribute('aria-expanded', open ? 'true' : 'false');
       moreA.textContent = open ? labelLess : labelMore;
+      // Снимаем фокус — иначе на тач-устройствах залипает эффект hover/active
+      moreA.blur();
     });
   })();
 

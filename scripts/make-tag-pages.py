@@ -73,7 +73,35 @@ def render_post_list(posts):
     return "\n".join(items)
 
 
+REDIRECT_HTML = """<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>{title}</title>
+<link rel="canonical" href="{url}">
+<meta http-equiv="refresh" content="0; url={url}">
+<script>location.replace({url_js});</script>
+</head>
+<body>
+<p>Переход к <a href="{url}">посту</a>…</p>
+</body>
+</html>
+"""
+
+
 def make_page(slug, label, posts):
+    out_dir = TAGS_DIR / slug
+    out_dir.mkdir(parents=True, exist_ok=True)
+    # Если пост один — вместо списка редиректим сразу на пост
+    if len(posts) == 1:
+        url = f'/articles/{posts[0]["slug"]}/'
+        html = REDIRECT_HTML.format(
+            title=f'Посты с тегом «{label}»',
+            url=url,
+            url_js=repr(url),
+        )
+        (out_dir / "index.html").write_text(html, encoding="utf-8")
+        return
     template_html = TEMPLATE.read_text(encoding="utf-8")
     # 1. <title>
     new = re.sub(
@@ -93,8 +121,6 @@ def make_page(slug, label, posts):
         r'<section class="posts"[^>]*>.*?</section>',
         lambda m: posts_block, new, count=1, flags=re.DOTALL
     )
-    out_dir = TAGS_DIR / slug
-    out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(new, encoding="utf-8")
 
 

@@ -350,17 +350,48 @@ def replace_aside_in(path, active_slug=None):
     return False
 
 
+REDIRECT_HTML = """<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{title}</title>
+<link rel="canonical" href="{url}">
+<meta http-equiv="refresh" content="0; url={url}">
+<script>location.replace({url_js});</script>
+</head>
+<body>
+<p>Redirecting to <a href="{url}">post</a>…</p>
+</body>
+</html>
+"""
+
+
 def main():
     print("▶ EN tag pages")
     EN_TAGS_DIR.mkdir(parents=True, exist_ok=True)
     for slug, name in TAGS.items():
-        if tag_counts.get(slug, 0) == 0:
+        cnt = tag_counts.get(slug, 0)
+        if cnt == 0:
             continue
         out_dir = EN_TAGS_DIR / slug
         out_dir.mkdir(parents=True, exist_ok=True)
+        if cnt == 1:
+            # Пост один — редиректим сразу на него
+            target_name = next((n for n, s in TAG_SLUG.items() if s == slug), None)
+            the_post = next(p for p in en_posts if target_name in p["tags"])
+            url = f'/en/articles/{the_post["slug"]}/'
+            plain = name.replace("&nbsp;", " ")
+            html = REDIRECT_HTML.format(
+                title=f'{plain} — Elena Masolova',
+                url=url,
+                url_js=repr(url),
+            )
+            (out_dir / "index.html").write_text(html, encoding="utf-8")
+            print(f"  → /en/tags/{slug}/ → {url} (single post)")
+            continue
         html = render_tag_page(slug, name)
         (out_dir / "index.html").write_text(html, encoding="utf-8")
-        print(f"  ✓ /en/tags/{slug}/ ({tag_counts[slug]} posts)")
+        print(f"  ✓ /en/tags/{slug}/ ({cnt} posts)")
 
     # Обновляем сайдбар на index-en.html
     if replace_aside_in(ROOT / "index-en.html"):
