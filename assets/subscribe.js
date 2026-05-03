@@ -125,9 +125,30 @@
     }
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
-  } else {
+  // Email obfuscation: <a data-u="hello" data-d="masolova.com"> -> mailto:hello@masolova.com
+  function unmaskEmails() {
+    var nodes = document.querySelectorAll('a[data-u][data-d]');
+    for (var i = 0; i < nodes.length; i++) {
+      var a = nodes[i];
+      var u = a.getAttribute('data-u');
+      var d = a.getAttribute('data-d');
+      if (!u || !d) continue;
+      var addr = u + '@' + d;
+      a.href = 'mailto:' + addr;
+      if (!a.textContent.trim()) a.textContent = addr;
+      a.removeAttribute('data-u');
+      a.removeAttribute('data-d');
+    }
+  }
+
+  function bootstrap() {
     init();
+    unmaskEmails();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bootstrap);
+  } else {
+    bootstrap();
   }
 })();
