@@ -41,21 +41,48 @@
     var applied = false;
 
     function fitMobile() {
-      var lh = parseFloat(getComputedStyle(list).lineHeight) || 24;
-      var maxH = lh * 4 + 1;
       // снимаем ранее проставленные overflow, чтобы пересчитать чисто
       items.forEach(function (li) { li.classList.remove('tags__overflow'); });
       tags.classList.remove('is-open');
       moreA.setAttribute('aria-expanded', 'false');
       moreA.textContent = labelMore;
+      moreLi.style.display = '';
+      // Реальную высоту строки вычисляем по первым двум видимым тегам на разных строках.
+      // Ищем первый тег, у которого top отличается от первого — это и есть rowH.
+      var rowH = 26;
+      if (items.length >= 2) {
+        var firstA = items[0].querySelector('a');
+        var t1 = firstA.getBoundingClientRect().top;
+        for (var k = 1; k < items.length; k++) {
+          var a = items[k].querySelector('a');
+          var tk = a.getBoundingClientRect().top;
+          if (tk - t1 > 2) { rowH = tk - t1; break; }
+        }
+      }
+      var maxH = rowH * 4 + 2;
       if (list.scrollHeight <= maxH) {
         moreLi.style.display = 'none';
         return;
       }
-      moreLi.style.display = '';
+      // Прячем теги с конца, пока:
+      //  (1) общая высота (включая moreLi) не влезет в maxH
+      //  (2) «Все посты» не окажется на той же строке, что и последний видимый тег
+      var t1Initial = items[0].querySelector('a').getBoundingClientRect().top;
+      function moreOnLastRow() {
+        var moreTop = moreA.getBoundingClientRect().top;
+        // Находим последний видимый тег
+        for (var j = items.length - 1; j >= 0; j--) {
+          if (!items[j].classList.contains('tags__overflow')) {
+            var lastTop = items[j].querySelector('a').getBoundingClientRect().top;
+            return Math.abs(moreTop - lastTop) < rowH * 0.6;
+          }
+        }
+        return true;
+      }
       for (var i = items.length - 1; i >= 0; i--) {
         items[i].classList.add('tags__overflow');
-        if (list.scrollHeight <= maxH) break;
+        void list.offsetHeight;
+        if (list.scrollHeight <= maxH && moreOnLastRow()) break;
       }
     }
 
@@ -81,6 +108,10 @@
     }
 
     apply();
+    // После загрузки шрифтов размеры могут измениться — пересчитываем
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(apply);
+    }
     var t;
     window.addEventListener('resize', function () {
       clearTimeout(t);
