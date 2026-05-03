@@ -13,16 +13,53 @@
     });
   }
 
-  // --- Теги: «Показать все N →» раскрывает/сворачивает хвост списка
-  var tagsToggle = document.querySelector('.tags__toggle');
-  if (tagsToggle) {
-    var tags = tagsToggle.closest('.tags');
-    tagsToggle.addEventListener('click', function () {
+  // --- Теги: автообрезка до 4 строк + ссылка «Все посты»/«All topics» в конце
+  //     При клике раскрывает все скрытые теги; повторный клик скрывает.
+  (function () {
+    var list = document.querySelector('.tags__list');
+    if (!list) return;
+    var lang = (document.documentElement.lang || 'ru').toLowerCase().indexOf('en') === 0 ? 'en' : 'ru';
+    var labelMore = lang === 'en' ? 'All topics' : 'Все посты';
+    var labelLess = lang === 'en' ? 'Hide' : 'Скрыть';
+    var tags = list.closest('.tags');
+
+    // Создаём элемент-ссылку "Все посты" в конце
+    var moreLi = document.createElement('li');
+    moreLi.className = 'tags__more';
+    var moreA = document.createElement('a');
+    moreA.className = 'tags__toggle';
+    moreA.href = '#';
+    moreA.setAttribute('role', 'button');
+    moreA.setAttribute('aria-expanded', 'false');
+    moreA.textContent = labelMore;
+    moreLi.appendChild(moreA);
+    list.appendChild(moreLi);
+
+    // Помечаем теги, не влезающие в 4 строки
+    var lh = parseFloat(getComputedStyle(list).lineHeight);
+    var maxH = lh * 4 + 1;
+    var items = Array.from(list.querySelectorAll('li:not(.tags__more)'));
+
+    function fits() { return list.scrollHeight <= maxH; }
+
+    if (!fits()) {
+      // Скрываем последние теги (перед ссылкой), пока не влезет
+      for (var i = items.length - 1; i >= 0; i--) {
+        items[i].classList.add('tags__overflow');
+        if (fits()) break;
+      }
+    } else {
+      // Все влезают — ссылка не нужна
+      moreLi.style.display = 'none';
+    }
+
+    moreA.addEventListener('click', function (e) {
+      e.preventDefault();
       var open = tags.classList.toggle('is-open');
-      tagsToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-      tagsToggle.textContent = open ? 'Скрыть \u2190' : 'Показать все\u00a020\u00a0\u2192';
+      moreA.setAttribute('aria-expanded', open ? 'true' : 'false');
+      moreA.textContent = open ? labelLess : labelMore;
     });
-  }
+  })();
 
   // --- Бургер на мобильном: раскрывает top-nav как оверлей
   var burger = document.querySelector('.top-burger');

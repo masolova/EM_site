@@ -614,7 +614,7 @@ def render_card(post):
     cls = ' class="is-pinned"' if post.get("pinned") else ''
     # В существующих карточках используется &nbsp; для типографики — автоматически не ставим,
     # пусть автор сам расставляет в title если надо
-    return f'<li data-slug="{escape(post["slug"])}"{cls}><a href="{url}">{escape(title)}</a></li>'
+    return f'<li data-slug="{escape(post["slug"])}"{cls}><a href="{url}"><span class="title">{escape(title)}</span></a></li>'
 
 
 def inject_cards(index_path, cards_html):

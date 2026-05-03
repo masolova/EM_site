@@ -9,6 +9,8 @@ tags:
   - "Top"
   - "Latvia"
   - "Kundera"
+  - "Olesha"
+  - "Carroll"
 status: "published"
 pinned: true
 pin_order: 2
@@ -29,8 +31,6 @@ Still, can a complete beginner code with AI? Yes, but a) it takes time to develo
 The trigger was a Twitter update. Previously you could click on a Latvian news item and immediately, in the same window, see the translation and learn new words. The update broke my established language-learning pattern.
 
 With a barely contained cry of "Let's get back at Elon Musk!" I opened Perplexity Computer to build my own app in roughly an hour. It took 5 hours and 19 builds, but the task was solved.
-
-![](/assets/posts/not-a-day-without-a-line-2-lll-news.png)
 
 News was pulled in from Delfi, the translation displayed instantly via API, the audio worked (no accent at all and not robotic), new words were added to a dictionary, a calendar with a streak was being drawn, the mobile version worked, and even the favicon was a Latvian flag — beautiful.
 
@@ -60,7 +60,7 @@ The typography is sort of newspaper-like. AI's reference was the Wall Street Jou
 
 ![](/assets/posts/not-a-day-without-a-line-5-forza-rfs.png)
 
-I think it came out "rich-and-fancy." Both on web and on mobile. But what's the most important thing in a website? Right — the fa-vi-con. Favicon: not forgotten. Moving on.
+I think it came out "Fancy-schmancy, right?" Both on web and on mobile. But what's the most important thing in a website? Right — the fa-vi-con. Favicon: not forgotten. Moving on.
 
 ## Third step. The Connections game.
 
@@ -70,7 +70,7 @@ In the [game](/games/connections/) you have to group words into sets. Very addic
 
 Technically I had to assemble the matching mechanics, the word sets (about 5 thousand words), test them for duplicates, catch gems like **"The Bearable Lightness of Being,"** make an English version, and an easy mode for everyone who has not played in my "What? Where? When?" team.
 
-## Fourth. The personal site.
+## Fourth. My own website.
 
 This site. Technically it's someone else's ready grid (Vanya Zamesin's blog), tags on posts, a recommendations block, conversion of posts from Word into Markdown, and a newsletter.
 
@@ -82,7 +82,7 @@ Spaced repetition flashcards. You can take a look [here](https://masolova.com/LL
 
 Technically this is, just like in the very first app, translation, audio without accent, a dictionary, a streak, mobile layout. What's new: a) I had to set up login through Supabase (because storing data in the browser is unreliable; I would not want to come back in two months and find that everything was wiped), b) the logic of spaced repetitions for the cards, c) a motivating progress bar.
 
-But the main thing is **which words** were selected. I (we) found lists of frequency words in the Latvian language and picked the 2,000 used most often. For the most common verbs, I asked it to make 5 phrases following the 1-3-1 logic (past — present in 3 forms — future). Then we found a corpus of texts used to prepare for the exam, ran it through, and pulled out frequency words from it. It turned out 85% had already been collected before, i.e. the work had been done well. We added the new ones.
+But the main thing is **which words** were selected. I (we) found frequency lists in the Latvian language and picked the 2,000 used most often. For the most common verbs, I asked it to make 5 phrases following the 1-3-1 logic (past — present in 3 forms — future). Then we found a corpus of texts used to prepare for the exam, ran it through, and pulled out frequency words from it. It turned out 85% had already been collected before, i.e. the work had been done well. We added the new ones.
 
 I would have kept fooling around, but unfortunately, I now actually had to learn the language. Pity.
 

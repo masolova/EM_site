@@ -41,6 +41,7 @@ TAG_SLUGS = {
     "олеша": "olesha",
     "латвия": "latvia",
     "кундера": "kundera",
+    "кэрролл": "carroll",
 }
 TAG_LABELS = {
     "design": "Дизайн",
@@ -62,6 +63,7 @@ TAG_LABELS = {
     "olesha": "Олеша",
     "latvia": "Латвия",
     "kundera": "Кундера",
+    "carroll": "Кэрролл",
 }
 
 

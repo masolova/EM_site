@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Елена Масолова</title>
+  <title>Посты с тегом «Олеша» — Елена Масолова</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="alternate" type="application/rss+xml" title="Елена Масолова — блог (RSS)" href="/feed.xml">
-  <script defer src="assets/site.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <script defer src="/assets/site.js"></script>
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
@@ -17,16 +16,13 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
   <link rel="manifest" href="/assets/favicon/site.webmanifest">
   <meta name="theme-color" content="#1a1a1a">
-  <link rel="prefetch" href="/games/connections/categories-bank.js" as="script">
-  <link rel="prefetch" href="/games/connections/categories-en.js" as="script">
-  <link rel="prefetch" href="/games/connections/" as="document">
 </head>
-<body>
+<body class="page-tag">
   <div class="page">
 
-    <!-- Верхняя строка: имя + навигация (десктоп) / имя + бургер (мобайл) -->
+    <!-- \u0428\u0430\u043f\u043a\u0430 \u2014 \u0442\u0430\u043a\u0430\u044f \u0436\u0435, \u043a\u0430\u043a \u043d\u0430 \u0433\u043b\u0430\u0432\u043d\u043e\u0439 -->
     <header class="top">
-      <a href="#" class="brand">Елена Масолова</a>
+      <a href="/" class="brand">Елена Масолова</a>
       <div class="top-right">
 
         <nav class="top-nav">
@@ -54,16 +50,15 @@
       </div>
     </header>
 
-    <!-- Хайлайты под шапкой для мобильных (на десктопе скрыты) -->
     <nav class="hl-mobile" aria-label="Хайлайты">
       <a href="/articles/looking-for-eir/">Ищу EIR<span class="emo-d" aria-hidden="true"> 🦸‍♂️</span></a>
       <a href="/articles/request-for-startups/">Ищу стартапы<span class="emo-d" aria-hidden="true"> 💎</span></a>
     </nav>
 
-    <!-- Биография -->
+    <!-- Биография — та же, что на главной (верх не должен дёргаться при клике) -->
     <section class="bio">
       <div class="bio__photo">
-        <img src="assets/elena.jpg" alt="Елена Масолова">
+        <img src="/assets/elena.jpg" alt="Елена Масолова">
       </div>
       <div class="bio__text">
         <h1>Елена Масолова</h1>
@@ -98,17 +93,15 @@
       </div>
     </section>
 
-    <!-- Компактный CTA-подписки (показывается на мобильном) -->
     <aside class="cta-strip" aria-label="Подписка">
-      <form class="cta-strip__form" action="https://buttondown.com/api/emails/embed-subscribe/elenamasolova" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/elenamasolova', 'popupwindow')">
-        <input type="hidden" name="tag" value="ru">
+      <form class="cta-strip__form" action="#" method="post">
         <input type="email" name="email" placeholder="Ваш email" required>
         <button type="submit">Подписаться</button>
       </form>
       <div class="cta-strip__hint">Дайджест 1&nbsp;раз в&nbsp;месяц.</div>
     </aside>
 
-    <!-- Основной блок: сайдбар + посты -->
+    <!-- Сайдбар с тегами (активный выделен) + отфильтрованный список постов -->
     <main class="main">
 
                                                                         <aside class="tags" aria-label="Теги">
@@ -133,39 +126,19 @@
           <li><a href="/tags/machiavelli/"><span class="tag">Макиавелли</span><span class="count">1</span></a></li>
           <li><a href="/tags/norilsk/"><span class="tag">Норильск</span><span class="count">1</span></a></li>
           <li><a href="/tags/olesha/"><span class="tag">Олеша</span><span class="count">1</span></a></li>
-          <li><a href="/tags/pelevin/"><span class="tag">Пелевин</span><span class="count">1</span></a></li>
+          <li><a href="/tags/pelevin/" class="is-active" aria-current="page"><span class="tag">Пелевин</span><span class="count">1</span></a></li>
           <li><a href="/tags/twain/"><span class="tag">Твен</span><span class="count">1</span></a></li>
           <li><a href="/tags/tolkien/"><span class="tag">Толкин</span><span class="count">1</span></a></li>
         </ul>
       </aside>
 
-      <section class="posts" aria-label="Посты">
+      <section class="posts" aria-label="Посты с тегом Олеша">
         <ul class="posts__list posts__list--arrow">
-          <!-- POSTS:START -->
-<li data-slug="exit-is-the-king" class="is-pinned"><a href="/articles/exit-is-the-king/"><span class="title">Exit is the King</span></a></li>
-          <li data-slug="not-a-day-without-a-line" class="is-pinned"><a href="/articles/not-a-day-without-a-line/"><span class="title">Ни дня без строчки (кода)</span></a></li>
-          <li data-slug="looking-for-eir"><a href="/articles/looking-for-eir/"><span class="title">Ищу EIR</span></a></li>
-          <li data-slug="request-for-startups"><a href="/articles/request-for-startups/"><span class="title">Request for Startups от Forza.Capital</span></a></li>
-          <li data-slug="money-printer-puzzle"><a href="/articles/money-printer-puzzle/"><span class="title">Загадка печатного станка</span></a></li>
-          <li data-slug="summer"><a href="/articles/summer/"><span class="title">А в этом году лето было?</span></a></li>
-          <li data-slug="lies-damn-lies-and-design"><a href="/articles/lies-damn-lies-and-design/"><span class="title">Ложь, наглая ложь и дизайн</span></a></li>
-          <!-- POSTS:END -->
-          
+          <li><a href="/articles/not-a-day-without-a-line/"><span class="title">Ни дня без строчки (кода)</span></a></li>
         </ul>
       </section>
 
     </main>
-
-    <!-- Вариант C: большой CTA перед подвалом (десктоп) -->
-    <section class="cta-footer" aria-label="Подписка">
-      <h2 class="cta-footer__title">Новые статьи вам на&nbsp;почту</h2>
-      <p class="cta-footer__hint">Дайджест 1&nbsp;раз в&nbsp;месяц.</p>
-      <form class="cta-footer__form" action="https://buttondown.com/api/emails/embed-subscribe/elenamasolova" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/elenamasolova', 'popupwindow')">
-        <input type="hidden" name="tag" value="ru">
-        <input type="email" name="email" placeholder="Ваш email" required>
-        <button type="submit">Подписаться</button>
-      </form>
-    </section>
 
     <footer class="foot">
       <a class="foot__email" href="mailto:hello@masolova.com">hello@masolova.com</a>

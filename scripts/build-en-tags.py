@@ -27,6 +27,8 @@ TAGS = {
     "ai": "AI",
     "latvia": "Latvia",
     "kundera": "Kundera",
+    "olesha": "Olesha",
+    "carroll": "Carroll",
 }
 
 # Соответствие тег-name → slug
@@ -47,6 +49,8 @@ TAG_SLUG = {
     "AI": "ai",
     "Latvia": "latvia",
     "Kundera": "kundera",
+    "Olesha": "olesha",
+    "Carroll": "carroll",
 }
 
 
@@ -159,7 +163,7 @@ def render_tag_page(active_slug, active_name):
     for p in posts_in_tag:
         cls = ' class="is-pinned"' if p["pinned"] else ''
         posts_list_items.append(
-            f'<li data-slug="{p["slug"]}"{cls}><a href="/en/articles/{p["slug"]}/">{p["title"]}</a></li>'
+            f'<li data-slug="{p["slug"]}"{cls}><a href="/en/articles/{p["slug"]}/"><span class="title">{p["title"]}</span></a></li>'
         )
 
     # name without &nbsp; for title

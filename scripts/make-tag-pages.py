@@ -21,7 +21,7 @@ TAG_SLUGS = {
     "кант": "kant", "ai": "ai", "ии": "ai", "топ": "top",
     "бродский": "brodsky", "толкин": "tolkien", "макиавелли": "machiavelli",
     "друкер": "drucker", "твен": "twain", "олеша": "olesha",
-    "латвия": "latvia", "кундера": "kundera",
+    "латвия": "latvia", "кундера": "kundera", "кэрролл": "carroll",
 }
 TAG_LABELS = {
     "design": "Дизайн", "startup": "Стартап", "norilsk": "Норильск",
@@ -30,7 +30,7 @@ TAG_LABELS = {
     "kant": "Кант", "ai": "AI", "top": "Топ",
     "brodsky": "Бродский", "tolkien": "Толкин", "machiavelli": "Макиавелли",
     "drucker": "Друкер", "twain": "Твен", "olesha": "Олеша",
-    "latvia": "Латвия", "kundera": "Кундера",
+    "latvia": "Латвия", "kundera": "Кундера", "carroll": "Кэрролл",
 }
 
 
@@ -68,7 +68,7 @@ def render_post_list(posts):
     items = []
     for p in posts:
         items.append(
-            f'          <li><a href="/articles/{p["slug"]}/">{p["title"]}</a></li>'
+            f'          <li><a href="/articles/{p["slug"]}/"><span class="title">{p["title"]}</span></a></li>'
         )
     return "\n".join(items)
 

@@ -11,6 +11,8 @@ tags:
   - "Гумилёв"
   - "Кант"
   - "Кундера"
+  - "Олеша"
+  - "Кэрролл"
 status: "published"
 pinned: true
 pin_order: 2

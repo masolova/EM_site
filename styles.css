@@ -376,15 +376,28 @@ body {
    через модификатор: posts__list--arrow / --preview / --meta
    ========================================================================== */
 
-/* Вариант 1: стрелка в конце + подсветка при hover */
+/* Вариант 1: стрелка в конце + подсветка при hover.
+   Структура: <a><span class="title">…</span></a>
+   .title — flex item с min-width:0 и ellipsis; ::after — стрелка с flex-shrink:0.
+   Длинные титлы обрезаются в одну строку, стрелка остаётся справа за словом. */
 .posts__list--arrow a {
+  display: flex;
+  align-items: baseline;
+  min-width: 0;
   transition: color .15s ease;
+}
+.posts__list--arrow a > .title {
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .posts__list--arrow a::after {
   content: "\00a0→";
   color: var(--muted);
   opacity: .6;
-  display: inline-block;
+  flex-shrink: 0;
   transition: transform .15s ease, opacity .15s ease, color .15s ease;
 }
 .posts__list--arrow a:hover {
@@ -825,14 +838,22 @@ body {
   margin-bottom: 6px;
 }
 .tags__head .tags__title { margin: 6px 0 0; }
+/* Ссылка «Все посты» / «All topics» — в конце облака тегов.
+   Добавляется через JS, выглядит как обычный тег, но приглушён. */
 .tags__toggle {
-  display: none;  /* скрыт на десктопе: весь список виден сразу */
-  background: none; border: none; padding: 0;
-  font-family: var(--sans);
-  font-size: 12.5px;
-  color: var(--accent);
-  font-weight: 500;
+  color: var(--muted);
+  border-bottom-color: var(--muted) !important;
   cursor: pointer;
+}
+.tags__toggle:hover { color: var(--accent); border-bottom-color: var(--accent) !important; }
+
+/* Скрытые теги (не влезающие в 4 строки) — показваем в .is-open */
+.tags__list .tags__overflow { display: none; }
+.tags.is-open .tags__list .tags__overflow { display: inline; }
+.tags.is-open .tags__list .tags__overflow:not(:last-child)::after {
+  content: ",\00a0";
+  color: var(--muted);
+  font-family: var(--serif);
 }
 
 /* CTA-полоса — только на мобильном */
