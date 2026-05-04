@@ -1506,7 +1506,7 @@
       </section>
     </main>
   </div>
-  <script src="phrases-3581.json.js"></script>
+  <script src="phrases-3791.json.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <script src="auth.js"></script>
   <script>
@@ -1603,10 +1603,10 @@ window.addEventListener('DOMContentLoaded', function () {
     all:    null,
     a2:     [1, 540],
     lena:   [541, 1362],
-    b2:     [1363, 2816],
-    top:    [2817, 2989],
-    otvety: [2990, 3364],
-    teksty: [3365, 3586],
+    b2:     [1363, 3026],   // расширен на +210 новых частотных фраз (секретных)
+    top:    [3027, 3199],
+    otvety: [3200, 3574],
+    teksty: [3575, 3796],
   };
   // (в) По умолчанию ВСЕГДА «Все», игнорируем сохранённый чип в localStorage.
   // Само сохранение оставляем — на случай будущих изменений политики.
@@ -1620,8 +1620,8 @@ window.addEventListener('DOMContentLoaded', function () {
   function isSecretId(id) {
     var n = Number(id);
     if (!Number.isFinite(n)) return false;
-    if (n >= 541 && n <= 1362) return true;   // Карточки Лены
-    if (n >= 2817 && n <= 3586) return true;  // Топ / Ответы / Тексты
+    if (n >= 541 && n <= 1362) return true;     // Карточки Лены
+    if (n >= 3027 && n <= 3796) return true;    // Топ / Ответы / Тексты
     return false;
   }
   function isElenaUser() {
@@ -1989,17 +1989,14 @@ window.addEventListener('DOMContentLoaded', function () {
     countAll.textContent = totalAll;
     countFav.textContent = totalFav;
     countLearned.textContent = totalLearned;
-    if (countA2 || countB2 || countLena) {
-      var a2List = getRangeEntries('a2').filter(v => !v.learned);
-      var b2List = getRangeEntries('b2').filter(v => !v.learned);
-      var lenaList = getRangeEntries('lena').filter(v => !v.learned);
-      if (countA2) countA2.textContent = a2List.length;
-      if (countB2) countB2.textContent = b2List.length;
-      if (countLena) countLena.textContent = lenaList.length;
-    }
-    if (countTop) countTop.textContent = getRangeEntries('top').filter(v => !v.learned).length;
-    if (countOtvety) countOtvety.textContent = getRangeEntries('otvety').filter(v => !v.learned).length;
-    if (countTeksty) countTeksty.textContent = getRangeEntries('teksty').filter(v => !v.learned).length;
+    // Счётчики на чипах = ОБЩЕЕ количество фраз в категории (не «осталось»),
+    // чтобы цифры были стабильны и не зависели от learned-стейта.
+    if (countA2)     countA2.textContent     = getRangeEntries('a2').length;
+    if (countB2)     countB2.textContent     = getRangeEntries('b2').length;
+    if (countLena)   countLena.textContent   = getRangeEntries('lena').length;
+    if (countTop)    countTop.textContent    = getRangeEntries('top').length;
+    if (countOtvety) countOtvety.textContent = getRangeEntries('otvety').length;
+    if (countTeksty) countTeksty.textContent = getRangeEntries('teksty').length;
     if (countStageNeg5) countStageNeg5.textContent = stageCounts['-5'];
     if (countStageNeg1) countStageNeg1.textContent = stageCounts['-1'];
     if (countStagePos1) countStagePos1.textContent = stageCounts['1'];
@@ -2018,6 +2015,10 @@ window.addEventListener('DOMContentLoaded', function () {
     filtered.forEach(item => {
       const row = document.createElement('div');
       row.className = 'vocab-item';
+      row.dataset.id = item.id;
+      row.setAttribute('role', 'button');
+      row.setAttribute('tabindex', '0');
+      row.title = 'Открыть эту карточку';
       row.innerHTML = '<button class="vocab-fav-btn ' + (item.fav ? 'active' : '') + '" data-action="fav" data-id="' + item.id + '" aria-label="' + (item.fav ? 'Убрать из избранного' : 'Добавить в избранное') + '">' + (item.fav ? heartFilled : heartOutline) + '</button>' +
         '<div class="vocab-words"><span class="vocab-lv"></span><span class="vocab-ru"></span></div>';
       row.querySelector('.vocab-lv').textContent = item.lv;
@@ -2107,20 +2108,49 @@ window.addEventListener('DOMContentLoaded', function () {
     textEl.style.fontSize = '';
     textEl.style.lineHeight = '';
     var startSize = parseFloat(getComputedStyle(textEl).fontSize) || 36;
-    var minSize = 12;
+    var minSize = 11;
     var size = startSize;
     var iterations = 0;
-    while (iterations < 40) {
-      // Проверяем переполнение ПАНЕЛИ и САМОГО ТЕКСТОВОГО элемента по ширине.
-      var overflowsH = panel.scrollHeight > panel.clientHeight + 1;
-      var overflowsW = textEl.scrollWidth > textEl.clientWidth + 1 || panel.scrollWidth > panel.clientWidth + 1;
-      if (!overflowsH && !overflowsW) break;
+    // Берём всё содержимое панели (.panel > div) — это включает и кнопку «Прослушать»,
+    // которая лежит в том же wrap-блоке, но не всегда попадает в panel.scrollHeight при overflow:hidden.
+    var wrap = panel.firstElementChild;
+    var audioBtn = panel.querySelector('.audio-btn');
+    // Сбрасываем предыдущее сжатие кнопки перед перерасчётом.
+    if (audioBtn) {
+      audioBtn.style.marginTop = '';
+      audioBtn.style.height = '';
+      audioBtn.style.padding = '';
+      audioBtn.style.fontSize = '';
+    }
+    function isOverflow() {
+      if (panel.scrollHeight > panel.clientHeight + 1) return true;
+      if (wrap && (wrap.scrollHeight > panel.clientHeight + 1 || wrap.offsetHeight > panel.clientHeight + 1)) return true;
+      return textEl.scrollWidth > textEl.clientWidth + 1 || panel.scrollWidth > panel.clientWidth + 1;
+    }
+    while (iterations < 60) {
+      if (!isOverflow()) break;
       if (size <= minSize) break;
       size = Math.max(minSize, size - 1);
       textEl.style.fontSize = size + 'px';
       if (size < 24) textEl.style.lineHeight = '1.25';
       else if (size < 32) textEl.style.lineHeight = '1.18';
       iterations++;
+    }
+    // Если дошли до min и всё ещё переполнение — сжимаем кнопку «Прослушать»,
+    // чтобы она не вылезала за рамку панели на очень низких экранах.
+    if (audioBtn && audioBtn.offsetParent && isOverflow()) {
+      audioBtn.style.marginTop = '6px';
+      audioBtn.style.height = '34px';
+      audioBtn.style.padding = '0 14px 0 12px';
+      audioBtn.style.fontSize = '13px';
+      // Ещё одна попытка сжать текст после сжатия кнопки.
+      var iter2 = 0;
+      while (iter2 < 30 && isOverflow() && size > minSize) {
+        size = Math.max(minSize, size - 1);
+        textEl.style.fontSize = size + 'px';
+        textEl.style.lineHeight = '1.25';
+        iter2++;
+      }
     }
   }
   function fitAllPanels() {
@@ -2572,25 +2602,79 @@ window.addEventListener('DOMContentLoaded', function () {
     var vt = document.getElementById('vocabToggle');
     if (vt) vt.addEventListener('click', function() { setTimeout(updateVocabFiltersScrollEnd, 50); });
   })();
+  // Переход на карточку по id фразы. Если id вне текущей колоды — переключаем колоду.
+  function goToPhraseId(id) {
+    if (id == null) return false;
+    var sId = String(id);
+    var phraseInPhrases = (Array.isArray(PHRASES) ? PHRASES : []).find(function(p){ return p && String(p.id) === sId; });
+    if (!phraseInPhrases) return false;
+    // Если фразы нет в текущей колоде — выбираем подходящую (по диапазону) или «Все».
+    var idx = deck.findIndex(function(p){ return p && String(p.id) === sId; });
+    if (idx < 0) {
+      var nId = Number(id);
+      var newMode = 'all';
+      if (Number.isFinite(nId)) {
+        var modes = Object.keys(DECK_RANGES).filter(function(k){ return DECK_RANGES[k]; });
+        for (var i = 0; i < modes.length; i++) {
+          var range = DECK_RANGES[modes[i]];
+          if (nId >= range[0] && nId <= range[1]) { newMode = modes[i]; break; }
+        }
+      }
+      // Если фраза секретная, а юзер не Лена — не переключаем.
+      if (isSecretId(id) && !isElenaUser()) return false;
+      if (newMode !== deckMode) {
+        deckMode = newMode;
+        try { localStorage.setItem(STORAGE_DECK_MODE, deckMode); } catch(_) {}
+        if (typeof syncDeckSegmented === 'function') syncDeckSegmented();
+        deck = buildDeck();
+      }
+      idx = deck.findIndex(function(p){ return p && String(p.id) === sId; });
+      if (idx < 0) return false;
+    }
+    currentIndex = idx;
+    if (typeof renderPhrase === 'function') renderPhrase();
+    if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
+    return true;
+  }
+
   vocabListWrap.addEventListener('click', function (e) {
     const btn = e.target.closest('[data-action]');
-    if (!btn) return;
-    const id = btn.dataset.id;
-    if (!id) return;
-    const phrase = deck.find(p => p && String(p.id) === String(id));
-    if (!phrase) return;
-    if (btn.dataset.action === 'fav') {
-      const lv = normalizeTranslation(phrase.lv);
-      const ru = normalizeTranslation(phrase.ru);
-      let found = vocabulary.find(v => String(v.id) === String(id));
-      if (!found) {
-        found = { id: phrase.id, lv, ru, fav: true, learned: false };
-        vocabulary.push(found);
-      } else {
-        found.fav = !found.fav;
+    if (btn) {
+      const id = btn.dataset.id;
+      if (!id) return;
+      const phrase = (Array.isArray(PHRASES) ? PHRASES : []).find(p => p && String(p.id) === String(id));
+      if (!phrase) return;
+      if (btn.dataset.action === 'fav') {
+        const lv = normalizeTranslation(phrase.lv);
+        const ru = normalizeTranslation(phrase.ru);
+        let found = vocabulary.find(v => String(v.id) === String(id));
+        if (!found) {
+          found = { id: phrase.id, lv, ru, fav: true, learned: false };
+          vocabulary.push(found);
+        } else {
+          found.fav = !found.fav;
+        }
+        saveVocab(); updateBadge(); renderVocab();
+        if (typeof syncCardFav === 'function') syncCardFav();
       }
-      saveVocab(); updateBadge(); renderVocab();
-      if (typeof syncCardFav === 'function') syncCardFav();
+      return;
+    }
+    // Клик по самой строке (не по сердечку) — переход на эту карточку.
+    const row = e.target.closest('.vocab-item');
+    if (!row || !row.dataset.id) return;
+    if (goToPhraseId(row.dataset.id)) {
+      vocabOverlay.classList.remove('open');
+    }
+  });
+  // Enter / Space на строке словаря — тоже открывает карточку.
+  vocabListWrap.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const row = e.target.closest('.vocab-item');
+    if (!row || !row.dataset.id) return;
+    if (e.target.closest('[data-action]')) return;
+    e.preventDefault();
+    if (goToPhraseId(row.dataset.id)) {
+      vocabOverlay.classList.remove('open');
     }
   });
   vocabExport.addEventListener('click', function () {

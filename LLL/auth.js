@@ -305,6 +305,21 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     alert('Готово. Проверь почту — там будет ссылка для входа. После клика страница перезагрузится с твоим прогрессом.');
   }
 
+  // SHA-256 хэш email VIP-юзера. Сам email в коде не хранится.
+  const VIP_HASH = 'f528e3bba67c600b849d2a39f5f72846e036ef925772c1ccdf77195e08965645';
+  async function sha256Hex(str) {
+    try {
+      const buf = new TextEncoder().encode(str);
+      const h = await crypto.subtle.digest('SHA-256', buf);
+      return Array.from(new Uint8Array(h)).map(b => b.toString(16).padStart(2, '0')).join('');
+    } catch(_) { return ''; }
+  }
+  async function checkVip(email) {
+    if (!email) return false;
+    const h = await sha256Hex(email.trim().toLowerCase());
+    return h === VIP_HASH;
+  }
+
   function updateAuthBtn() {
     const btn = document.getElementById('authBtn');
     if (!btn) return;
@@ -312,20 +327,21 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     const iconCheck = '<svg class="auth-btn-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M16 11l2 2 4-4"/></svg>';
     if (currentUser) {
       const e = currentUser.email || '';
-      // Секретные чипы — только для Лены
+      // Секретные чипы — проверка по хэшу (email в коде не светится)
       const wasElena = document.body.classList.contains('is-elena');
-      const isElena = e.toLowerCase() === 'elena.masolova@gmail.com';
-      if (isElena) {
-        document.body.classList.add('is-elena');
-      } else {
-        document.body.classList.remove('is-elena');
-      }
-      if (wasElena !== isElena) {
-        try { document.dispatchEvent(new CustomEvent('lll:elena-changed', { detail: { isElena: isElena } })); } catch(_) {}
-      }
+      checkVip(e).then(isElena => {
+        if (isElena) {
+          document.body.classList.add('is-elena');
+        } else {
+          document.body.classList.remove('is-elena');
+        }
+        if (wasElena !== isElena) {
+          try { document.dispatchEvent(new CustomEvent('lll:elena-changed', { detail: { isElena: isElena } })); } catch(_) {}
+        }
+      });
       // Имя из email: часть до @, первая буква заглавная.
       let name = e.split('@')[0] || '';
-      // Берём часть до точки/плюса/подчёркивания, чтобы для elena.masolova получить Elena.
+      // Берём часть до точки/плюса/подчёркивания, чтобы из first.last получить First.
       name = name.split(/[._+\-]/)[0] || name;
       if (name.length > 0) name = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
       if (name.length > 14) name = name.slice(0, 13) + '…';
