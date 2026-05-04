@@ -508,8 +508,10 @@
       .legacy-header .deck-segmented button { padding: 5px 10px; font-size: 11px; }
     }
     /* Секретные чипы — видны только Лене */
-    .legacy-header .deck-segmented button.secret-deck { display: none; }
+    .legacy-header .deck-segmented button.secret-deck,
+    .vocab-filter-btn.secret-deck { display: none; }
     body.is-elena .legacy-header .deck-segmented button.secret-deck { display: inline-flex; }
+    body.is-elena .vocab-filter-btn.secret-deck { display: inline-flex; }
 
     .translate-btn,
     .audio-btn,
@@ -2057,7 +2059,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   }
   function applyLengthClasses(item) {
-    // (3.3) Длинные фразы: уменьшаем размер и убираем жирный, чтобы LV+RU влезали в экран.
+    // (3.3) Длинные фразы: уменьшаем размер, чтобы LV+RU влезали в карточку.
     // Берём МАКСИМАЛЬНУЮ длину из LV и RU — чтобы оба языка влезли одинаковым размером.
     const lvLen = (item && item.lv) ? item.lv.length : 0;
     const ruLen = (item && item.ru) ? item.ru.length : 0;
@@ -2066,7 +2068,8 @@ window.addEventListener('DOMContentLoaded', function () {
     const panels = document.querySelectorAll('.panel');
     panels.forEach(p => {
       p.classList.remove('is-long', 'is-xlong');
-      if (maxLen > 200) p.classList.add('is-xlong');
+      if (maxLen > 180) p.classList.add('is-xlong');
+      else if (maxLen > 90) p.classList.add('is-long');
     });
   }
   function renderPhrase() {
@@ -2578,7 +2581,10 @@ window.addEventListener('DOMContentLoaded', function () {
       </button>
       <button class="vocab-filter-btn" data-filter="a2">A2 <span class="filter-count" id="countA2">0</span></button>
       <button class="vocab-filter-btn" data-filter="b2">B2 <span class="filter-count" id="countB2">0</span></button>
-      <button class="vocab-filter-btn" data-filter="lena">Карточки Лены <span class="filter-count" id="countLena">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="lena">Карточки Лены <span class="filter-count" id="countLena">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="top">Топ <span class="filter-count" id="countTop">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="otvety">Ответы <span class="filter-count" id="countOtvety">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="teksty">Тексты <span class="filter-count" id="countTeksty">0</span></button>
       <button class="vocab-filter-btn" data-filter="learned">Выучено <span class="filter-count" id="countLearned">0</span></button>
       <div class="vocab-stage-stats" id="vocabStageStats" aria-live="polite" aria-atomic="true">
         <span class="vocab-stage-stat"><span class="vocab-stage-stat__label">Ужас-ужас:</span><span class="vocab-stage-stat__value" id="countStageNeg5">500</span></span>
