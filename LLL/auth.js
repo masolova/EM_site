@@ -102,13 +102,13 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       const deckChanged = data.deck_mode && data.deck_mode !== localStorage.getItem('lll2_deck_mode');
       // v39: если облако было грязное — принудительно push даже если локалка не изменилась,
       // чтобы переписать в облаке почищенный state и vocab.
-      const needCloudWriteback = cloudWasDirty && !localStorage.getItem('lll2_cloud_cleaned_v39');
+      const needCloudWriteback = cloudWasDirty && !localStorage.getItem('lll2_cloud_cleaned_v40');
       if (!vocabChanged && !stateChanged && !sessionChanged && !deckChanged && !streakChanged && !stageChanged && !needCloudWriteback) {
         // Ничего не поменялось — выходим без reload.
         return;
       }
       if (needCloudWriteback) {
-        localStorage.setItem('lll2_cloud_cleaned_v39', 'true');
+        localStorage.setItem('lll2_cloud_cleaned_v40', 'true');
         // push() позже в onAuthStateChange / pushDebounced
         setTimeout(function(){ try { push(); } catch(e){} }, 500);
       }
