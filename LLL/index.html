@@ -1620,6 +1620,33 @@ window.addEventListener('DOMContentLoaded', function () {
     otvety:    [3244, 3618],     // секрет
     teksty:    [3619, 3840],     // секрет
   };
+  // v37: ручные перемещения между колодами (по id). Все «Расскажите…» → Runāšana.
+  const DECK_OVERRIDES = {
+    runasana: new Set([2251, 2252, 2253, 2255]),
+  };
+  // ID, исключаемые из своих исходных диапазонов (т.к. перемещены в override)
+  const DECK_EXCLUDED = (function(){
+    var s = new Set();
+    Object.keys(DECK_OVERRIDES).forEach(function(k){ DECK_OVERRIDES[k].forEach(function(id){ s.add(id); }); });
+    return s;
+  })();
+  function deckOf(id) {
+    var n = Number(id);
+    if (!Number.isFinite(n)) return null;
+    // override приоритетнее
+    var keys = Object.keys(DECK_OVERRIDES);
+    for (var i=0;i<keys.length;i++) if (DECK_OVERRIDES[keys[i]].has(n)) return keys[i];
+    var rk = ['a2','b2','numbers','questions','lena','runasana','top','otvety','teksty'];
+    for (var j=0;j<rk.length;j++) {
+      var r = DECK_RANGES[rk[j]];
+      if (r && n>=r[0] && n<=r[1]) return rk[j];
+    }
+    return null;
+  }
+  function inDeck(id, deckKey) {
+    if (!deckKey) return true;
+    return deckOf(id) === deckKey;
+  }
   // (в) По умолчанию ВСЕГДА «Все», игнорируем сохранённый чип в localStorage.
   // Само сохранение оставляем — на случай будущих изменений политики.
   let deckMode = 'all';
@@ -1641,16 +1668,15 @@ window.addEventListener('DOMContentLoaded', function () {
 
   function buildDeck() {
     if (!Array.isArray(PHRASES)) return [];
-    const range = DECK_RANGES[deckMode];
     const elena = isElenaUser();
     return PHRASES.filter(item => {
       if (!item || typeof item.lv !== 'string' || !item.lv.trim()) return false;
-      if (range) {
-        const id = Number(item.id);
-        if (!Number.isFinite(id) || id < range[0] || id > range[1]) return false;
+      if (deckMode && deckMode !== 'all') {
+        if (deckOf(item.id) !== deckMode) return false;
       } else if (!elena) {
         // Режим «Все» для не-Лены: исключаем секретные фразы
-        if (isSecretId(item.id)) return false;
+        var dk = deckOf(item.id);
+        if (dk === 'lena' || dk === 'runasana' || dk === 'top' || dk === 'otvety' || dk === 'teksty') return false;
       }
       return true;
     });
@@ -1932,16 +1958,15 @@ window.addEventListener('DOMContentLoaded', function () {
   // Все фразы из PHRASES в выбранном диапазоне (для vocab-фильтров a2/b2/lena в словаре — независимо от чипов в шапке).
   function getRangeEntries(rangeKey) {
     if (!Array.isArray(PHRASES)) return [];
-    const range = DECK_RANGES[rangeKey];
     const favIds = getFavIds();
     const learnedIds = getLearnedIds();
     const elena = isElenaUser();
     return PHRASES.filter(function(item){
       if (!item || typeof item.lv !== 'string' || !item.lv.trim()) return false;
       var id = (typeof item.id === 'number') ? item.id : null;
-      if (range) {
+      if (rangeKey && rangeKey !== 'all') {
         if (id == null) return false;
-        if (id < range[0] || id > range[1]) return false;
+        if (deckOf(id) !== rangeKey) return false;
       } else if (!elena) {
         // 'all' для не-Елены: скрываем секретные диапазоны
         if (id != null && isSecretId(id)) return false;
@@ -1961,7 +1986,7 @@ window.addEventListener('DOMContentLoaded', function () {
   function getFilteredVocab() {
     // Все фильтры в словаре работают НЕЗАВИСИМО от колоды в шапке.
     let list;
-    if (vocabFilter === 'a2' || vocabFilter === 'b2' || vocabFilter === 'lena' || vocabFilter === 'top' || vocabFilter === 'otvety' || vocabFilter === 'teksty') {
+    if (vocabFilter === 'a2' || vocabFilter === 'b2' || vocabFilter === 'numbers' || vocabFilter === 'questions' || vocabFilter === 'lena' || vocabFilter === 'runasana' || vocabFilter === 'top' || vocabFilter === 'otvety' || vocabFilter === 'teksty') {
       list = getRangeEntries(vocabFilter).filter(v => !v.learned);
     } else if (vocabFilter === 'fav') {
       list = getRangeEntries('all').filter(v => v.fav && !v.learned);
