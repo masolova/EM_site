@@ -507,6 +507,9 @@
     @media (max-width: 720px) {
       .legacy-header .deck-segmented button { padding: 5px 10px; font-size: 11px; }
     }
+    /* Секретные чипы — видны только Лене */
+    .legacy-header .deck-segmented button.secret-deck { display: none; }
+    body.is-elena .legacy-header .deck-segmented button.secret-deck { display: inline-flex; }
 
     .translate-btn,
     .audio-btn,
@@ -1389,7 +1392,10 @@
       <button type="button" class="active" data-deck="all" role="tab" aria-selected="true">Все</button>
       <button type="button" data-deck="a2" role="tab" aria-selected="false">A2</button>
       <button type="button" data-deck="b2" role="tab" aria-selected="false">B2</button>
-      <button type="button" data-deck="lena" role="tab" aria-selected="false">Карточки Лены</button>
+      <button type="button" data-deck="lena" class="secret-deck" role="tab" aria-selected="false">Карточки Лены</button>
+      <button type="button" data-deck="top" class="secret-deck" role="tab" aria-selected="false">Топ</button>
+      <button type="button" data-deck="otvety" class="secret-deck" role="tab" aria-selected="false">Ответы</button>
+      <button type="button" data-deck="teksty" class="secret-deck" role="tab" aria-selected="false">Тексты</button>
     </div>
     <button class="streak-btn" id="streakBtn" title="Стрик">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
@@ -1561,10 +1567,13 @@ window.addEventListener('DOMContentLoaded', function () {
 
   const STORAGE_DECK_MODE = 'lll2_deck_mode';
   const DECK_RANGES = {
-    all:  null,
-    a2:   [1, 540],
-    lena: [541, 1362],
-    b2:   [1363, Infinity],
+    all:    null,
+    a2:     [1, 540],
+    lena:   [541, 1362],
+    b2:     [1363, 2816],
+    top:    [2817, 2989],
+    otvety: [2990, 3364],
+    teksty: [3365, 3586],
   };
   // (в) По умолчанию ВСЕГДА «Все», игнорируем сохранённый чип в localStorage.
   // Само сохранение оставляем — на случай будущих изменений политики.
@@ -1574,14 +1583,30 @@ window.addEventListener('DOMContentLoaded', function () {
     if (false && saved && Object.prototype.hasOwnProperty.call(DECK_RANGES, saved)) deckMode = saved;
   } catch(e) {}
 
+  // Секретные диапазоны (видны только Лене): Карточки Лены + Топ/Ответы/Тексты
+  function isSecretId(id) {
+    var n = Number(id);
+    if (!Number.isFinite(n)) return false;
+    if (n >= 541 && n <= 1362) return true;   // Карточки Лены
+    if (n >= 2817 && n <= 3586) return true;  // Топ / Ответы / Тексты
+    return false;
+  }
+  function isElenaUser() {
+    return document.body && document.body.classList && document.body.classList.contains('is-elena');
+  }
+
   function buildDeck() {
     if (!Array.isArray(PHRASES)) return [];
     const range = DECK_RANGES[deckMode];
+    const elena = isElenaUser();
     return PHRASES.filter(item => {
       if (!item || typeof item.lv !== 'string' || !item.lv.trim()) return false;
       if (range) {
         const id = Number(item.id);
         if (!Number.isFinite(id) || id < range[0] || id > range[1]) return false;
+      } else if (!elena) {
+        // Режим «Все» для не-Лены: исключаем секретные фразы
+        if (isSecretId(item.id)) return false;
       }
       return true;
     });
@@ -1618,6 +1643,25 @@ window.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('resize', updateDeckScrollEnd);
     setTimeout(updateDeckScrollEnd, 0);
   }
+  // При входе/выходе Лены — перестроить колоду и прогресс (влияет на «Все»)
+  document.addEventListener('lll:elena-changed', function () {
+    try {
+      // Если был выбран секретный чип, а Лена вышла — сбросить на «Все»
+      var elena = document.body.classList.contains('is-elena');
+      if (!elena && (deckMode === 'lena' || deckMode === 'top' || deckMode === 'otvety' || deckMode === 'teksty')) {
+        deckMode = 'all';
+        try { localStorage.setItem(STORAGE_DECK_MODE, deckMode); } catch(_) {}
+        if (typeof syncDeckSegmented === 'function') syncDeckSegmented();
+      }
+      deck = buildDeck();
+      if (!deck.length) deck = [{ lv: 'Dati nav ielādēti.', ru: 'Данные не загрузились.' }];
+      if (typeof refillBatch === 'function') { refillBatch(); srsNext(); } else { currentIndex = 0; }
+      if (typeof renderPhrase === 'function') renderPhrase();
+      if (typeof renderVocab === 'function') renderVocab();
+      if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
+    } catch(_) {}
+  });
+
   if (deckSegmented) {
     deckSegmented.addEventListener('click', function (ev) {
       const btn = ev.target.closest('button[data-deck]');
@@ -2041,12 +2085,16 @@ window.addEventListener('DOMContentLoaded', function () {
     var segY  = document.getElementById('learnedProgressSegY');
     var segG  = document.getElementById('learnedProgressSegG');
     if (!label && !segO && !segY && !segG) return;
-    // Прогресс считается внутри выбранной колоды (Все/A2/B2/Карточки Лены)
+    // Прогресс считается внутри выбранной колоды (Все/A2/B2/Карточки Лены/Топ/Ответы/Тексты)
     var range = (typeof DECK_RANGES !== 'undefined') ? DECK_RANGES[deckMode] : null;
+    var elena = (typeof isElenaUser === 'function') ? isElenaUser() : false;
     var inRange = function(id) {
-      if (!range) return true;
       var n = Number(id);
-      return Number.isFinite(n) && n >= range[0] && n <= range[1];
+      if (!Number.isFinite(n)) return false;
+      if (range) return n >= range[0] && n <= range[1];
+      // «Все» для не-Лены: секретные исключаем
+      if (!elena && typeof isSecretId === 'function' && isSecretId(n)) return false;
+      return true;
     };
     var total = 0;
     if (Array.isArray(PHRASES)) {

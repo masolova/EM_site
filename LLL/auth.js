@@ -312,6 +312,17 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     const iconCheck = '<svg class="auth-btn-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M16 11l2 2 4-4"/></svg>';
     if (currentUser) {
       const e = currentUser.email || '';
+      // Секретные чипы — только для Лены
+      const wasElena = document.body.classList.contains('is-elena');
+      const isElena = e.toLowerCase() === 'elena.masolova@gmail.com';
+      if (isElena) {
+        document.body.classList.add('is-elena');
+      } else {
+        document.body.classList.remove('is-elena');
+      }
+      if (wasElena !== isElena) {
+        try { document.dispatchEvent(new CustomEvent('lll:elena-changed', { detail: { isElena: isElena } })); } catch(_) {}
+      }
       // Имя из email: часть до @, первая буква заглавная.
       let name = e.split('@')[0] || '';
       // Берём часть до точки/плюса/подчёркивания, чтобы для elena.masolova получить Elena.
@@ -327,6 +338,11 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     } else {
       btn.classList.remove('auth-btn--in');
       document.body.classList.remove('auth-in');
+      const wasElena2 = document.body.classList.contains('is-elena');
+      document.body.classList.remove('is-elena');
+      if (wasElena2) {
+        try { document.dispatchEvent(new CustomEvent('lll:elena-changed', { detail: { isElena: false } })); } catch(_) {}
+      }
       btn.innerHTML = iconUser + '<span class="auth-btn-text">Войти</span>';
       btn.title = 'Войти, чтобы синхронизировать прогресс между устройствами';
       btn.setAttribute('aria-label', 'Войти');
