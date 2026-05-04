@@ -46,12 +46,22 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
 
   let currentUser = null;
   let pushTimer = null;
+  // v43: echo guard — хэш последнего пуша. Если pull вернёт такой же хэш — игнорим (это наше же эхо).
+  let lastPushedHash = null;
+  function hashPayload(state, vocab) {
+    return JSON.stringify(state || {}) + '|' + JSON.stringify(vocab || []);
+  }
 
   async function pull() {
     if (!currentUser) return;
     const { data: rawData, error } = await sb.from('lll_progress').select('*').eq('user_id', currentUser.id).maybeSingle();
     if (error) { console.warn('[lll pull]', error); return; }
     if (!rawData) return; // первого визита ещё нет облачной строки
+    // v43 echo guard: если облако вернуло ровно то, что мы только что туда положили — выходим.
+    if (lastPushedHash) {
+      const incomingHash = hashPayload(rawData.phrase_state, rawData.vocabulary);
+      if (incomingHash === lastPushedHash) { return; }
+    }
     // v39: чистим облачные данные через миграционный маппинг
     let data = rawData;
     let cloudWasDirty = false;
@@ -199,10 +209,19 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     if (!currentUser) return;
     // v39: ставим маркер версии _v=39 в phrase_state перед отправкой
     let _state = JSON.parse(localStorage.getItem('lll2_phrase_state') || '{}');
-    if (window.__v39 && window.__v39.stampVersion) _state = window.__v39.stampVersion(_state);
+    // v43: принудительно фильтруем через жёсткий cloudCleanState (id 1..3792 only)
+    if (window.__v39 && window.__v39.cloudCleanState) {
+      _state = window.__v39.cloudCleanState(_state);
+    } else if (window.__v39 && window.__v39.stampVersion) {
+      _state = window.__v39.stampVersion(_state);
+    }
+    let _vocab = JSON.parse(localStorage.getItem('lll2_vocabulary') || '[]');
+    if (window.__v39 && window.__v39.cloudCleanVocab) {
+      _vocab = window.__v39.cloudCleanVocab(_vocab);
+    }
     const basePayload = {
       user_id: currentUser.id,
-      vocabulary: JSON.parse(localStorage.getItem('lll2_vocabulary') || '[]'),
+      vocabulary: _vocab,
       phrase_state: _state,
       session_count: parseInt(localStorage.getItem('lll2_session_count') || '0', 10) || 0,
       deck_mode: localStorage.getItem('lll2_deck_mode') || null,
@@ -228,6 +247,8 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     } else {
       lastPushAt = new Date();
       lastPushError = null;
+      // v43 echo guard: запоминаем хэш того, что успешно ушло в облако
+      lastPushedHash = hashPayload(_state, _vocab);
     }
     updateDiagBanner();
   }
