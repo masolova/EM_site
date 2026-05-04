@@ -159,6 +159,7 @@
       min-height: 0;
       text-align: center;
       position: relative;
+      overflow: hidden;
     }
     .panel .card-fav-btn {
       position: absolute;
@@ -189,13 +190,26 @@
       margin: 0 auto;
       text-align: center;
     }
-    /* Только для экстремально длинных (не влезают никак) — уменьшаем размер и снимаем жирный. */
+    /* (3.3) Длинные фразы — 4 ступени. Размер карточки НЕ меняется, только шрифт. */
+    .panel.is-long .phrase,
+    .panel.is-long .translation-text {
+      font-size: clamp(28px, 2.4vw, 38px);
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
     .panel.is-xlong .phrase,
     .panel.is-xlong .translation-text {
-      font-size: clamp(15px, 1.3vw, 19px);
-      font-weight: 500;
-      line-height: 1.3;
-      letter-spacing: 0;
+      font-size: clamp(22px, 1.9vw, 30px);
+      font-weight: 600;
+      line-height: 1.22;
+      letter-spacing: -.02em;
+    }
+    .panel.is-mega .phrase,
+    .panel.is-mega .translation-text {
+      font-size: clamp(16px, 1.4vw, 21px);
+      font-weight: 600;
+      line-height: 1.32;
+      letter-spacing: -.01em;
     }
     .audio-btn {
       cursor: pointer;
@@ -1178,21 +1192,28 @@
         display: flex;
         flex-direction: column;
         min-height: 0;
+        height: 100dvh;
+        overflow: hidden;
       }
       .labels { display: none; }
 
       .content {
         grid-template-columns: 1fr;
         gap: 14px;
+        flex: 1 1 0;
+        min-height: 0;
       }
 
-      /* (3.2) Адаптивный padding: на высоких экранах (Pro Max) панель дышит. */
+      /* (3.2) Mobile: панель жёстко фиксирована по высоте — всё влезает в экран, fit-to-box ужмёт шрифт. */
       .panel {
-        padding: clamp(18px, 3.2vh, 32px) clamp(14px, 4vw, 22px);
+        padding: clamp(14px, 2.4vh, 24px) clamp(14px, 4vw, 22px);
         border-radius: 20px;
-        min-height: clamp(120px, 18vh, 200px);
+        height: 100%;
+        min-height: 0;
+        max-height: 100%;
         width: 100%;
         min-width: 0;
+        overflow: hidden;
       }
       .panel > div { width: 100%; min-width: 0; }
 
@@ -1255,6 +1276,12 @@
         font-weight: 500;
         line-height: 1.3;
       }
+      .panel.is-mega .phrase,
+      .panel.is-mega .translation-text {
+        font-size: clamp(11px, 1.4vh, 13px);
+        font-weight: 500;
+        line-height: 1.32;
+      }
 
       /* Перевод — тот же размер, что и латышский */
       .translate-wrap { height: auto; }
@@ -1275,7 +1302,8 @@
       }
       /* Перевод тоже выравниваем по левому краю когда фраза длинная (как и LV) */
       .panel.is-long .translation-text,
-      .panel.is-xlong .translation-text { text-align: left; }
+      .panel.is-xlong .translation-text,
+      .panel.is-mega .translation-text { text-align: left; }
 
       /* Сетка оценок 2×2 — тоже адаптивная. */
       .srs-zone {
@@ -1549,6 +1577,9 @@ window.addEventListener('DOMContentLoaded', function () {
   const countA2 = document.getElementById('countA2');
   const countB2 = document.getElementById('countB2');
   const countLena = document.getElementById('countLena');
+  const countTop = document.getElementById('countTop');
+  const countOtvety = document.getElementById('countOtvety');
+  const countTeksty = document.getElementById('countTeksty');
   const vocabExport = document.getElementById('vocabExport');
   const streakBtn = document.getElementById('streakBtn');
   const streakOverlay = document.getElementById('streakOverlay');
@@ -1893,12 +1924,16 @@ window.addEventListener('DOMContentLoaded', function () {
     const range = DECK_RANGES[rangeKey];
     const favIds = getFavIds();
     const learnedIds = getLearnedIds();
+    const elena = isElenaUser();
     return PHRASES.filter(function(item){
       if (!item || typeof item.lv !== 'string' || !item.lv.trim()) return false;
+      var id = (typeof item.id === 'number') ? item.id : null;
       if (range) {
-        var id = (typeof item.id === 'number') ? item.id : null;
         if (id == null) return false;
         if (id < range[0] || id > range[1]) return false;
+      } else if (!elena) {
+        // 'all' для не-Елены: скрываем секретные диапазоны
+        if (id != null && isSecretId(id)) return false;
       }
       return true;
     }).map(function(item){
@@ -1913,17 +1948,17 @@ window.addEventListener('DOMContentLoaded', function () {
     });
   }
   function getFilteredVocab() {
-    // Новые фильтры по диапазону: a2/b2/lena работают напрямую от PHRASES.
+    // Все фильтры в словаре работают НЕЗАВИСИМО от колоды в шапке.
     let list;
-    if (vocabFilter === 'a2' || vocabFilter === 'b2' || vocabFilter === 'lena') {
+    if (vocabFilter === 'a2' || vocabFilter === 'b2' || vocabFilter === 'lena' || vocabFilter === 'top' || vocabFilter === 'otvety' || vocabFilter === 'teksty') {
       list = getRangeEntries(vocabFilter).filter(v => !v.learned);
     } else if (vocabFilter === 'fav') {
       list = getRangeEntries('all').filter(v => v.fav && !v.learned);
     } else if (vocabFilter === 'learned') {
       list = getRangeEntries('all').filter(v => v.learned);
     } else {
-      // 'all' — все из текущего deck (как раньше), чтобы связь с чипами работала
-      list = getDeckEntries().filter(v => !v.learned);
+      // 'all' — все доступные пользователю фразы (3581 для Лены, 1991 для остальных)
+      list = getRangeEntries('all').filter(v => !v.learned);
     }
     if (vocabSearchQuery) {
       const q = vocabSearchQuery.toLowerCase();
@@ -1933,7 +1968,8 @@ window.addEventListener('DOMContentLoaded', function () {
   }
   function renderVocab() {
     const filtered = getFilteredVocab();
-    const allEntries = getDeckEntries();
+    // Счётчики словаря НЕ зависят от колоды в шапке
+    const allEntries = getRangeEntries('all');
     const totalAll = allEntries.filter(v => !v.learned).length;
     const totalFav = allEntries.filter(v => v.fav && !v.learned).length;
     const totalLearned = allEntries.filter(v => v.learned).length;
@@ -1961,6 +1997,9 @@ window.addEventListener('DOMContentLoaded', function () {
       if (countB2) countB2.textContent = b2List.length;
       if (countLena) countLena.textContent = lenaList.length;
     }
+    if (countTop) countTop.textContent = getRangeEntries('top').filter(v => !v.learned).length;
+    if (countOtvety) countOtvety.textContent = getRangeEntries('otvety').filter(v => !v.learned).length;
+    if (countTeksty) countTeksty.textContent = getRangeEntries('teksty').filter(v => !v.learned).length;
     if (countStageNeg5) countStageNeg5.textContent = stageCounts['-5'];
     if (countStageNeg1) countStageNeg1.textContent = stageCounts['-1'];
     if (countStagePos1) countStagePos1.textContent = stageCounts['1'];
@@ -2057,20 +2096,45 @@ window.addEventListener('DOMContentLoaded', function () {
       translationText.textContent = '';
       translateWrap.classList.remove('show-text');
     }
+    if (typeof requestAnimationFrame === 'function') requestAnimationFrame(fitAllPanels);
+    else setTimeout(fitAllPanels, 0);
   }
-  function applyLengthClasses(item) {
-    // (3.3) Длинные фразы: уменьшаем размер, чтобы LV+RU влезали в карточку.
-    // Берём МАКСИМАЛЬНУЮ длину из LV и RU — чтобы оба языка влезли одинаковым размером.
-    const lvLen = (item && item.lv) ? item.lv.length : 0;
-    const ruLen = (item && item.ru) ? item.ru.length : 0;
-    const maxLen = Math.max(lvLen, ruLen);
-    // Навешиваем класс на ОБЕ панели (LV и перевод), чтобы размеры были одинаковые.
-    const panels = document.querySelectorAll('.panel');
-    panels.forEach(p => {
-      p.classList.remove('is-long', 'is-xlong');
-      if (maxLen > 180) p.classList.add('is-xlong');
-      else if (maxLen > 90) p.classList.add('is-long');
+  // Fit-to-box: подбираем размер шрифта, чтобы текст влез без переполнения панели.
+  // Каждая панель (LV и RU) подбирается НЕЗАВИСИМО.
+  function fitTextToPanel(panel, textEl) {
+    if (!panel || !textEl || !textEl.textContent.trim()) return;
+    // Сброс inline-стилей и старт с CSS-дефолта
+    textEl.style.fontSize = '';
+    textEl.style.lineHeight = '';
+    var startSize = parseFloat(getComputedStyle(textEl).fontSize) || 36;
+    var minSize = 12;
+    var size = startSize;
+    var iterations = 0;
+    while (iterations < 40) {
+      // Проверяем переполнение ПАНЕЛИ и САМОГО ТЕКСТОВОГО элемента по ширине.
+      var overflowsH = panel.scrollHeight > panel.clientHeight + 1;
+      var overflowsW = textEl.scrollWidth > textEl.clientWidth + 1 || panel.scrollWidth > panel.clientWidth + 1;
+      if (!overflowsH && !overflowsW) break;
+      if (size <= minSize) break;
+      size = Math.max(minSize, size - 1);
+      textEl.style.fontSize = size + 'px';
+      if (size < 24) textEl.style.lineHeight = '1.25';
+      else if (size < 32) textEl.style.lineHeight = '1.18';
+      iterations++;
+    }
+  }
+  function fitAllPanels() {
+    var panels = document.querySelectorAll('.panel');
+    panels.forEach(function(p) {
+      var t = p.querySelector('.phrase') || p.querySelector('.translation-text');
+      if (t) fitTextToPanel(p, t);
     });
+  }
+  window.fitAllPanels = fitAllPanels;
+  function applyLengthClasses(item) {
+    // Старые классы больше не используем — всего подбор через fitTextToPanel в конце renderPhrase/renderTranslation.
+    const panels = document.querySelectorAll('.panel');
+    panels.forEach(p => p.classList.remove('is-long', 'is-xlong', 'is-mega'));
   }
   function renderPhrase() {
     const item = currentPhrase();
@@ -2081,6 +2145,16 @@ window.addEventListener('DOMContentLoaded', function () {
     srsButtons.forEach(btn => btn.classList.remove('is-selected'));
     if (typeof syncCardFav === 'function') syncCardFav();
     updateLearnedProgress();
+    if (typeof requestAnimationFrame === 'function') requestAnimationFrame(fitAllPanels);
+    else setTimeout(fitAllPanels, 0);
+  }
+  // Пересчитать при resize и при загрузке фонтов
+  window.addEventListener('resize', function(){
+    if (typeof requestAnimationFrame === 'function') requestAnimationFrame(fitAllPanels);
+    else setTimeout(fitAllPanels, 0);
+  }, { passive: true });
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function(){ fitAllPanels(); });
   }
   function updateLearnedProgress() {
     var label = document.getElementById('learnedProgressLabel');
