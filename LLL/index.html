@@ -1422,7 +1422,10 @@
       <button type="button" class="active" data-deck="all" role="tab" aria-selected="true">Все</button>
       <button type="button" data-deck="a2" role="tab" aria-selected="false">A2</button>
       <button type="button" data-deck="b2" role="tab" aria-selected="false">B2</button>
+      <button type="button" data-deck="numbers" role="tab" aria-selected="false">Числа</button>
+      <button type="button" data-deck="questions" role="tab" aria-selected="false">Вопросы</button>
       <button type="button" data-deck="lena" class="secret-deck" role="tab" aria-selected="false">Карточки Лены</button>
+      <button type="button" data-deck="runasana" class="secret-deck" role="tab" aria-selected="false">Runāšana</button>
       <button type="button" data-deck="top" class="secret-deck" role="tab" aria-selected="false">Топ</button>
       <button type="button" data-deck="otvety" class="secret-deck" role="tab" aria-selected="false">Ответы</button>
       <button type="button" data-deck="teksty" class="secret-deck" role="tab" aria-selected="false">Тексты</button>
@@ -1506,7 +1509,8 @@
       </section>
     </main>
   </div>
-  <script src="phrases-3791.json.js"></script>
+  <script src="migrate_v37.js"></script>
+  <script src="phrases-v37.json.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <script src="auth.js"></script>
   <script>
@@ -1576,7 +1580,10 @@ window.addEventListener('DOMContentLoaded', function () {
   const countLearned = document.getElementById('countLearned');
   const countA2 = document.getElementById('countA2');
   const countB2 = document.getElementById('countB2');
+  const countNumbers = document.getElementById('countNumbers');
+  const countQuestions = document.getElementById('countQuestions');
   const countLena = document.getElementById('countLena');
+  const countRunasana = document.getElementById('countRunasana');
   const countTop = document.getElementById('countTop');
   const countOtvety = document.getElementById('countOtvety');
   const countTeksty = document.getElementById('countTeksty');
@@ -1599,14 +1606,19 @@ window.addEventListener('DOMContentLoaded', function () {
   const STORAGE_STAGE_PROGRESS = 'lll2_stage_progress';
 
   const STORAGE_DECK_MODE = 'lll2_deck_mode';
+  // v37: новые колоды. Из A2/B2 вынесены вопросы (в questions) и числа (в numbers).
+  // Из lena вынесены вопросы (в runasana, секрет).
   const DECK_RANGES = {
-    all:    null,
-    a2:     [1, 540],
-    lena:   [541, 1362],
-    b2:     [1363, 3026],   // расширен на +210 новых частотных фраз (секретных)
-    top:    [3027, 3199],
-    otvety: [3200, 3574],
-    teksty: [3575, 3796],
+    all:       null,
+    a2:        [1, 248],
+    b2:        [249, 1517],
+    numbers:   [1518, 1903],
+    questions: [1904, 2250],
+    lena:      [2251, 2881],     // секрет
+    runasana:  [2882, 3070],     // секрет
+    top:       [3071, 3243],     // секрет
+    otvety:    [3244, 3618],     // секрет
+    teksty:    [3619, 3840],     // секрет
   };
   // (в) По умолчанию ВСЕГДА «Все», игнорируем сохранённый чип в localStorage.
   // Само сохранение оставляем — на случай будущих изменений политики.
@@ -1616,12 +1628,11 @@ window.addEventListener('DOMContentLoaded', function () {
     if (false && saved && Object.prototype.hasOwnProperty.call(DECK_RANGES, saved)) deckMode = saved;
   } catch(e) {}
 
-  // Секретные диапазоны (видны только Лене): Карточки Лены + Топ/Ответы/Тексты
+  // v37: секретные диапазоны — Лена, Runasana, Топ, Ответы, Тексты
   function isSecretId(id) {
     var n = Number(id);
     if (!Number.isFinite(n)) return false;
-    if (n >= 541 && n <= 1362) return true;     // Карточки Лены
-    if (n >= 3027 && n <= 3796) return true;    // Топ / Ответы / Тексты
+    if (n >= 2251 && n <= 3840) return true;
     return false;
   }
   function isElenaUser() {
@@ -1681,7 +1692,7 @@ window.addEventListener('DOMContentLoaded', function () {
     try {
       // Если был выбран секретный чип, а Лена вышла — сбросить на «Все»
       var elena = document.body.classList.contains('is-elena');
-      if (!elena && (deckMode === 'lena' || deckMode === 'top' || deckMode === 'otvety' || deckMode === 'teksty')) {
+      if (!elena && (deckMode === 'lena' || deckMode === 'runasana' || deckMode === 'top' || deckMode === 'otvety' || deckMode === 'teksty')) {
         deckMode = 'all';
         try { localStorage.setItem(STORAGE_DECK_MODE, deckMode); } catch(_) {}
         if (typeof syncDeckSegmented === 'function') syncDeckSegmented();
@@ -1991,16 +2002,15 @@ window.addEventListener('DOMContentLoaded', function () {
     countLearned.textContent = totalLearned;
     // Счётчики на чипах = ОБЩЕЕ количество фраз в категории (не «осталось»),
     // чтобы цифры были стабильны и не зависели от learned-стейта.
-    if (countA2)     countA2.textContent     = getRangeEntries('a2').length;
-    if (countB2)     countB2.textContent     = getRangeEntries('b2').length;
-    if (countLena)   countLena.textContent   = getRangeEntries('lena').length;
-    if (countTop)    countTop.textContent    = getRangeEntries('top').length;
-    if (countOtvety) countOtvety.textContent = getRangeEntries('otvety').length;
-    if (countTeksty) countTeksty.textContent = getRangeEntries('teksty').length;
-    if (countStageNeg5) countStageNeg5.textContent = stageCounts['-5'];
-    if (countStageNeg1) countStageNeg1.textContent = stageCounts['-1'];
-    if (countStagePos1) countStagePos1.textContent = stageCounts['1'];
-    if (countStagePos5) countStagePos5.textContent = stageCounts['5'];
+    if (countA2)        countA2.textContent        = getRangeEntries('a2').length;
+    if (countB2)        countB2.textContent        = getRangeEntries('b2').length;
+    if (countNumbers)   countNumbers.textContent   = getRangeEntries('numbers').length;
+    if (countQuestions) countQuestions.textContent = getRangeEntries('questions').length;
+    if (countLena)      countLena.textContent      = getRangeEntries('lena').length;
+    if (countRunasana)  countRunasana.textContent  = getRangeEntries('runasana').length;
+    if (countTop)       countTop.textContent       = getRangeEntries('top').length;
+    if (countOtvety)    countOtvety.textContent    = getRangeEntries('otvety').length;
+    if (countTeksty)    countTeksty.textContent    = getRangeEntries('teksty').length;
     var displayCount = filtered.length;
     vocabCountLabel.textContent = displayCount + ' ' + pluralize(displayCount);
     if (vocabFooterStats) vocabFooterStats.textContent = 'Активных: ' + totalAll + ' · Выученных: ' + totalLearned;
@@ -2739,17 +2749,15 @@ window.addEventListener('DOMContentLoaded', function () {
       </button>
       <button class="vocab-filter-btn" data-filter="a2">A2 <span class="filter-count" id="countA2">0</span></button>
       <button class="vocab-filter-btn" data-filter="b2">B2 <span class="filter-count" id="countB2">0</span></button>
+      <button class="vocab-filter-btn" data-filter="numbers">Числа <span class="filter-count" id="countNumbers">0</span></button>
+      <button class="vocab-filter-btn" data-filter="questions">Вопросы <span class="filter-count" id="countQuestions">0</span></button>
       <button class="vocab-filter-btn secret-deck" data-filter="lena">Карточки Лены <span class="filter-count" id="countLena">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="runasana">Runāšana <span class="filter-count" id="countRunasana">0</span></button>
       <button class="vocab-filter-btn secret-deck" data-filter="top">Топ <span class="filter-count" id="countTop">0</span></button>
       <button class="vocab-filter-btn secret-deck" data-filter="otvety">Ответы <span class="filter-count" id="countOtvety">0</span></button>
       <button class="vocab-filter-btn secret-deck" data-filter="teksty">Тексты <span class="filter-count" id="countTeksty">0</span></button>
       <button class="vocab-filter-btn" data-filter="learned">Выучено <span class="filter-count" id="countLearned">0</span></button>
-      <div class="vocab-stage-stats" id="vocabStageStats" aria-live="polite" aria-atomic="true">
-        <span class="vocab-stage-stat"><span class="vocab-stage-stat__label">Ужас-ужас:</span><span class="vocab-stage-stat__value" id="countStageNeg5">500</span></span>
-        <span class="vocab-stage-stat"><span class="vocab-stage-stat__label">Ещё туплю:</span><span class="vocab-stage-stat__value" id="countStageNeg1">0</span></span>
-        <span class="vocab-stage-stat"><span class="vocab-stage-stat__label">ОК:</span><span class="vocab-stage-stat__value" id="countStagePos1">0</span></span>
-        <span class="vocab-stage-stat"><span class="vocab-stage-stat__label">Выучено!:</span><span class="vocab-stage-stat__value" id="countStagePos5">0</span></span>
-      </div>
+      <!-- v37: блок статистики по этапам убран — полоса фильтров не переполняется -->
     </div>
     <div class="vocab-list-wrap" id="vocabListWrap">
       <div class="vocab-empty-state" id="vocabEmpty">Пока словарь пуст.</div>
