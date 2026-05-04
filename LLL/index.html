@@ -1509,8 +1509,8 @@
       </section>
     </main>
   </div>
-  <script src="migrate_v37.js"></script>
-  <script src="phrases-v37.json.js"></script>
+  <script src="migrate_v39.js"></script>
+  <script src="phrases-v39.json.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <script src="auth.js"></script>
   <script>
@@ -1606,19 +1606,18 @@ window.addEventListener('DOMContentLoaded', function () {
   const STORAGE_STAGE_PROGRESS = 'lll2_stage_progress';
 
   const STORAGE_DECK_MODE = 'lll2_deck_mode';
-  // v37: новые колоды. Из A2/B2 вынесены вопросы (в questions) и числа (в numbers).
-  // Из lena вынесены вопросы (в runasana, секрет).
+  // v39: чистка мусора и дублей, диапазоны пересобраны.
   const DECK_RANGES = {
     all:       null,
     a2:        [1, 248],
     b2:        [249, 1517],
     numbers:   [1518, 1903],
     questions: [1904, 2250],
-    lena:      [2251, 2881],     // секрет
-    runasana:  [2882, 3070],     // секрет
-    top:       [3071, 3243],     // секрет
-    otvety:    [3244, 3618],     // секрет
-    teksty:    [3619, 3840],     // секрет
+    lena:      [2251, 2847],     // секрет
+    runasana:  [2848, 3034],     // секрет
+    top:       [3035, 3195],     // секрет
+    otvety:    [3196, 3570],     // секрет
+    teksty:    [3571, 3792],     // секрет
   };
   // v37: ручные перемещения между колодами (по id). Все «Расскажите…» → Runāšana.
   const DECK_OVERRIDES = {
@@ -1655,11 +1654,11 @@ window.addEventListener('DOMContentLoaded', function () {
     if (false && saved && Object.prototype.hasOwnProperty.call(DECK_RANGES, saved)) deckMode = saved;
   } catch(e) {}
 
-  // v37: секретные диапазоны — Лена, Runasana, Топ, Ответы, Тексты
+  // v39: секретные диапазоны — Лена, Runasana, Топ, Ответы, Тексты
   function isSecretId(id) {
     var n = Number(id);
     if (!Number.isFinite(n)) return false;
-    if (n >= 2251 && n <= 3840) return true;
+    if (n >= 2251 && n <= 3792) return true;
     return false;
   }
   function isElenaUser() {
@@ -2749,6 +2748,7 @@ window.addEventListener('DOMContentLoaded', function () {
     renderVocab();
     updateStreakSummary();
     buildHeatmap();
+    if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
   });
 });
 </script>

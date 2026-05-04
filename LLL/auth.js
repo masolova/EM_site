@@ -49,9 +49,19 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
 
   async function pull() {
     if (!currentUser) return;
-    const { data, error } = await sb.from('lll_progress').select('*').eq('user_id', currentUser.id).maybeSingle();
+    const { data: rawData, error } = await sb.from('lll_progress').select('*').eq('user_id', currentUser.id).maybeSingle();
     if (error) { console.warn('[lll pull]', error); return; }
-    if (!data) return; // первого визита ещё нет облачной строки
+    if (!rawData) return; // первого визита ещё нет облачной строки
+    // v39: чистим облачные данные через миграционный маппинг
+    let data = rawData;
+    let cloudWasDirty = false;
+    if (window.__v39 && window.__v39.cloudClean) {
+      const before = JSON.stringify({ v: rawData.vocabulary || [], s: rawData.phrase_state || {} });
+      data = window.__v39.cloudClean(rawData);
+      const after = JSON.stringify({ v: data.vocabulary || [], s: data.phrase_state || {} });
+      cloudWasDirty = before !== after;
+      if (cloudWasDirty) console.log('[v39 cloudClean] cloud data was migrated');
+    }
     try {
       // Merge: облако приоритетнее по updated_at, но мерджим vocabulary и phrase_state по элементам.
       const localVocabRaw = localStorage.getItem('lll2_vocabulary') || '[]';
@@ -90,9 +100,17 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       const stateChanged = newStateRaw !== localStateRaw;
       const sessionChanged = newSession !== String(localSession);
       const deckChanged = data.deck_mode && data.deck_mode !== localStorage.getItem('lll2_deck_mode');
-      if (!vocabChanged && !stateChanged && !sessionChanged && !deckChanged && !streakChanged && !stageChanged) {
+      // v39: если облако было грязное — принудительно push даже если локалка не изменилась,
+      // чтобы переписать в облаке почищенный state и vocab.
+      const needCloudWriteback = cloudWasDirty && !localStorage.getItem('lll2_cloud_cleaned_v39');
+      if (!vocabChanged && !stateChanged && !sessionChanged && !deckChanged && !streakChanged && !stageChanged && !needCloudWriteback) {
         // Ничего не поменялось — выходим без reload.
         return;
+      }
+      if (needCloudWriteback) {
+        localStorage.setItem('lll2_cloud_cleaned_v39', 'true');
+        // push() позже в onAuthStateChange / pushDebounced
+        setTimeout(function(){ try { push(); } catch(e){} }, 500);
       }
       if (vocabChanged) localStorage.setItem('lll2_vocabulary', newVocabRaw);
       if (stateChanged) localStorage.setItem('lll2_phrase_state', newStateRaw);
@@ -179,10 +197,13 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   let lastPushError = null;
   async function push() {
     if (!currentUser) return;
+    // v39: ставим маркер версии _v=39 в phrase_state перед отправкой
+    let _state = JSON.parse(localStorage.getItem('lll2_phrase_state') || '{}');
+    if (window.__v39 && window.__v39.stampVersion) _state = window.__v39.stampVersion(_state);
     const basePayload = {
       user_id: currentUser.id,
       vocabulary: JSON.parse(localStorage.getItem('lll2_vocabulary') || '[]'),
-      phrase_state: JSON.parse(localStorage.getItem('lll2_phrase_state') || '{}'),
+      phrase_state: _state,
       session_count: parseInt(localStorage.getItem('lll2_session_count') || '0', 10) || 0,
       deck_mode: localStorage.getItem('lll2_deck_mode') || null,
       updated_at: new Date().toISOString(),
