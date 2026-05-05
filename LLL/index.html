@@ -1928,10 +1928,15 @@ window.addEventListener('DOMContentLoaded', function () {
     vocabBadge.textContent = String(activeCount);
     vocabBadge.classList.toggle('show', activeCount > 0);
   }
-  // Отдельный set «выученных» по id (синк-точка между карточкой и словарём).
+  // Set «выученных» — это все фразы на stage 3 (зелёная кнопка «Выучено!»).
+  // Источник истины — phraseState, не vocabulary.learned.
   function getLearnedIds() {
     const ids = new Set();
-    vocabulary.forEach(function(v){ if (v.learned && v.id != null) ids.add(String(v.id)); });
+    Object.keys(phraseState || {}).forEach(function(k){
+      if (k === '_v') return;
+      var st = phraseState[k];
+      if (st && st.stage === 3) ids.add(String(k));
+    });
     return ids;
   }
   function getFavIds() {
