@@ -9,6 +9,9 @@
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=17">
   <meta name="apple-mobile-web-app-title" content="LLL">
   <meta name="theme-color" content="#9b1b30">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #f4ede6;
@@ -28,7 +31,7 @@
     html, body { height: 100%; }
     body {
       margin: 0 auto;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: radial-gradient(circle at top, #fbf6f1 0%, var(--bg) 60%, #efe6de 100%);
       color: var(--text);
       overflow: hidden;
@@ -154,7 +157,7 @@
       padding: 30px 34px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       min-height: 0;
       text-align: center;
@@ -183,9 +186,12 @@
     .panel .card-fav-btn:active { transform: scale(.92); }
     .panel .card-fav-btn svg { width: 24px; height: 24px; display: block; }
     .phrase {
+      font-family: Inter, sans-serif;
+      font-weight: 800;
+      color: var(--text);
       font-size: clamp(34px, 3vw, 48px);
       line-height: 1.12;
-      letter-spacing: -.04em;
+      letter-spacing: -.03em;
       max-width: 100%;
       margin: 0 auto;
       text-align: center;
@@ -242,7 +248,7 @@
     }
     .translate-wrap {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: center;
       height: 100%;
       width: 100%;
@@ -250,12 +256,12 @@
     }
     .translate-btn {
       cursor: pointer;
-      height: 56px;
-      padding: 0 28px;
+      height: 54px;
+      padding: 0 22px;
       border-radius: 999px;
-      border: 1px solid #d9cdc4;
-      background: #fffdfa;
-      color: #6b4b51;
+      border: 1px solid #d9c3bf;
+      background: #fbf1ec;
+      color: #6b3440;
       font-size: 16px;
       font-weight: 700;
       box-shadow: 0 10px 20px rgba(82, 46, 56, 0.05);
@@ -265,11 +271,12 @@
       max-width: 100%;
       margin: 0 auto;
       text-align: center;
+      font-family: Inter, sans-serif;
       font-size: clamp(30px, 2.7vw, 46px);
       line-height: 1.14;
-      letter-spacing: -0.04em;
-      font-weight: 800;
-      color: #6b4b51;
+      letter-spacing: -0.03em;
+      font-weight: 700;
+      color: var(--text);
     }
     .translate-wrap.show-text .translate-btn {
       display: none;
@@ -705,9 +712,9 @@
       height: 100%;
       transition: width .35s ease;
     }
-    .learned-progress__seg--o { background: #dd7d3c; }
-    .learned-progress__seg--y { background: #e6c84a; }
-    .learned-progress__seg--g { background: #3a9760; }
+    .learned-progress__seg--o { background: #dd7a33; }
+    .learned-progress__seg--y { background: #96b83f; }
+    .learned-progress__seg--g { background: #2f9658; }
     .filter-count {
       font-weight: 500;
       font-size: 11px;
@@ -1261,7 +1268,7 @@
         letter-spacing: -.02em;
         max-width: none;
         font-weight: 700;
-        text-align: left;
+        text-align: center;
       }
       /* (3.3) Длинные фразы — меньше размер, без жирного. ОДИН размер для LV и RU. */
       .panel.is-long .phrase,
@@ -1300,10 +1307,10 @@
         max-width: none;
         text-align: center;
       }
-      /* Перевод тоже выравниваем по левому краю когда фраза длинная (как и LV) */
+      /* Длинные тоже по центру (правило: обе карточки центрированы) */
       .panel.is-long .translation-text,
       .panel.is-xlong .translation-text,
-      .panel.is-mega .translation-text { text-align: left; }
+      .panel.is-mega .translation-text { text-align: center; }
 
       /* Сетка оценок 2×2 — тоже адаптивная. */
       .srs-zone {
@@ -1424,8 +1431,8 @@
       <button type="button" data-deck="b2" role="tab" aria-selected="false">B2</button>
       <button type="button" data-deck="numbers" role="tab" aria-selected="false">Числа</button>
       <button type="button" data-deck="questions" role="tab" aria-selected="false">Вопросы</button>
-      <button type="button" data-deck="lena" class="secret-deck" role="tab" aria-selected="false">Карточки Лены</button>
       <button type="button" data-deck="runasana" class="secret-deck" role="tab" aria-selected="false">Runāšana</button>
+      <button type="button" data-deck="lena" class="secret-deck" role="tab" aria-selected="false">Карточки Лены</button>
       <button type="button" data-deck="top" class="secret-deck" role="tab" aria-selected="false">Топ</button>
       <button type="button" data-deck="otvety" class="secret-deck" role="tab" aria-selected="false">Ответы</button>
       <button type="button" data-deck="teksty" class="secret-deck" role="tab" aria-selected="false">Тексты</button>
@@ -2781,8 +2788,8 @@ window.addEventListener('DOMContentLoaded', function () {
       <button class="vocab-filter-btn" data-filter="b2">B2 <span class="filter-count" id="countB2">0</span></button>
       <button class="vocab-filter-btn" data-filter="numbers">Числа <span class="filter-count" id="countNumbers">0</span></button>
       <button class="vocab-filter-btn" data-filter="questions">Вопросы <span class="filter-count" id="countQuestions">0</span></button>
-      <button class="vocab-filter-btn secret-deck" data-filter="lena">Карточки Лены <span class="filter-count" id="countLena">0</span></button>
       <button class="vocab-filter-btn secret-deck" data-filter="runasana">Runāšana <span class="filter-count" id="countRunasana">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="lena">Карточки Лены <span class="filter-count" id="countLena">0</span></button>
       <button class="vocab-filter-btn secret-deck" data-filter="top">Топ <span class="filter-count" id="countTop">0</span></button>
       <button class="vocab-filter-btn secret-deck" data-filter="otvety">Ответы <span class="filter-count" id="countOtvety">0</span></button>
       <button class="vocab-filter-btn secret-deck" data-filter="teksty">Тексты <span class="filter-count" id="countTeksty">0</span></button>
