@@ -187,16 +187,20 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   }
 
   function mergePhraseState(a, b) {
+    // v47: last-write-wins по полю updated_at.
+    // Локальная запись побеждает облачную, если её updated_at новее (и наоборот).
+    // Если updated_at нет — считаем 0 (старая запись, проигрывает свежей).
+    // Спец-ключи (вроде '_v') пропускаем.
     const out = {};
     const keys = new Set([...Object.keys(a || {}), ...Object.keys(b || {})]);
     keys.forEach(k => {
+      if (k === '_v') { out[k] = (a[k] || b[k]); return; }
       const ea = a[k], eb = b[k];
       if (!ea) { out[k] = eb; return; }
       if (!eb) { out[k] = ea; return; }
-      // Берём более продвинутую стадию; если стадии равны — больший due.
-      if (ea.stage > eb.stage) out[k] = ea;
-      else if (ea.stage < eb.stage) out[k] = eb;
-      else out[k] = (ea.due >= eb.due ? ea : eb);
+      const ta = (ea && typeof ea === 'object' && ea.updated_at) || 0;
+      const tb = (eb && typeof eb === 'object' && eb.updated_at) || 0;
+      if (ta >= tb) out[k] = ea; else out[k] = eb;
     });
     return out;
   }

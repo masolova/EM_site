@@ -11,7 +11,7 @@
   <meta name="theme-color" content="#9b1b30">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #f4ede6;
@@ -31,7 +31,7 @@
     html, body { height: 100%; }
     body {
       margin: 0 auto;
-      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: radial-gradient(circle at top, #fbf6f1 0%, var(--bg) 60%, #efe6de 100%);
       color: var(--text);
       overflow: hidden;
@@ -186,7 +186,7 @@
     .panel .card-fav-btn:active { transform: scale(.92); }
     .panel .card-fav-btn svg { width: 24px; height: 24px; display: block; }
     .phrase {
-      font-family: Inter, sans-serif;
+      font-family: Manrope, sans-serif;
       font-weight: 800;
       color: var(--text);
       font-size: clamp(34px, 3vw, 48px);
@@ -220,7 +220,7 @@
     .audio-btn {
       cursor: pointer;
       align-self: center;
-      margin-top: 26px;
+      margin-top: auto;
       height: 54px;
       padding: 0 22px 0 18px;
       border-radius: 999px;
@@ -246,12 +246,19 @@
       font-size: 12px;
       color: var(--brand);
     }
+    .phrase-col {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 100%;
+    }
     .translate-wrap {
       display: flex;
-      align-items: flex-start;
+      align-items: flex-end;
       justify-content: center;
       height: 100%;
       width: 100%;
+      padding-bottom: 30px;
       text-align: center;
     }
     .translate-btn {
@@ -271,7 +278,7 @@
       max-width: 100%;
       margin: 0 auto;
       text-align: center;
-      font-family: Inter, sans-serif;
+      font-family: Manrope, sans-serif;
       font-size: clamp(30px, 2.7vw, 46px);
       line-height: 1.14;
       letter-spacing: -0.03em;
@@ -407,7 +414,7 @@
       border-radius: 8px;
       color: #57534e;
       position: relative;
-      font-family: Inter, system-ui, sans-serif;
+      font-family: Manrope, system-ui, sans-serif;
       transition: transform .16s ease, box-shadow .16s ease, background .16s ease, color .16s ease;
     }
     .legacy-header .btn-icon:hover {
@@ -424,7 +431,7 @@
       border: 1px solid #e1ddd9;
       background: #fff;
       color: #5a4a44;
-      font-family: Inter, system-ui, sans-serif;
+      font-family: Manrope, system-ui, sans-serif;
       font-size: 13px;
       font-weight: 600;
       padding: 7px 12px;
@@ -474,7 +481,7 @@
       gap: 4px;
       border: none;
       background: none;
-      font-family: Inter, system-ui, sans-serif;
+      font-family: Manrope, system-ui, sans-serif;
       font-size: 14px;
       font-weight: 700;
       color: #57534e;
@@ -495,7 +502,7 @@
       display: inline-flex;
       gap: 6px;
       align-items: center;
-      font-family: Inter, system-ui, sans-serif;
+      font-family: Manrope, system-ui, sans-serif;
     }
     .legacy-header .deck-segmented button {
       border: 1px solid #e7e5e4;
@@ -617,7 +624,7 @@
       padding: 8px 12px 8px 38px;
       border: 1px solid #b15454;
       border-radius: 10px;
-      font-family: Inter, system-ui, sans-serif;
+      font-family: Manrope, system-ui, sans-serif;
       font-size: 13px;
       background: #ffffff;
       color: #57534e;
@@ -653,7 +660,7 @@
       border: 1px solid #dedad6;
       background: #ffffff;
       border-radius: 999px;
-      font-family: Inter, system-ui, sans-serif;
+      font-family: Manrope, system-ui, sans-serif;
       font-size: 12px;
       font-weight: 600;
       color: #57534e;
@@ -732,7 +739,7 @@
       row-gap: 6px;
       min-height: 40px;
       color: #8b8178;
-      font-family: Inter, system-ui, sans-serif;
+      font-family: Manrope, system-ui, sans-serif;
       font-size: 12px;
       font-weight: 500;
       letter-spacing: -0.01em;
@@ -853,7 +860,7 @@
       border: 1px solid #e1ddd9;
       border-radius: 999px;
       background: #ffffff;
-      font-family: Inter, system-ui, sans-serif;
+      font-family: Manrope, system-ui, sans-serif;
       font-size: 12px;
       color: #a8a29e;
       cursor: pointer;
@@ -1456,7 +1463,7 @@
 
       <section class="content">
         <article class="panel">
-          <div>
+          <div class="phrase-col">
             <button type="button" class="card-fav-btn" id="cardFavBtn" aria-label="Добавить в избранное" title="Избранное">
               <svg id="cardFavIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
             </button>
@@ -1835,7 +1842,7 @@ window.addEventListener('DOMContentLoaded', function () {
       const stepIdx = Math.min(reps - 1, STAGE3_STEPS.length - 1);
       due = sessionCount + STAGE3_STEPS[stepIdx];
     }
-    phraseState[key] = { stage: stage, due: due, reps: reps };
+    phraseState[key] = { stage: stage, due: due, reps: reps, updated_at: Date.now() };
     savePhraseState();
     // Дублируем в stageProgress для совместимости со счётчиками словаря (но используем стадии 0/1/2/3 -> -5/-1/1/5).
     if (stage === 0) delete stageProgress[key];
