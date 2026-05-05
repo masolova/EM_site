@@ -267,8 +267,17 @@
       text-align: center;
     }
     .translate-wrap.show-text {
-      position: static;
-      padding-top: 30px;
+      /* Режим в потоке: перевод центрируется по вертикали как фраза слева. */
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 34px 84px;
     }
     .translate-btn {
       cursor: pointer;
@@ -367,6 +376,17 @@
       outline: 4px solid rgba(255,255,255,0.72);
       transform: translateY(-2px);
       box-shadow: 0 18px 36px rgba(82, 46, 56, 0.16);
+    }
+    /* v47: убираем синюю браузерную обводку после клика на кнопках (остаём только для клавиатуры) */
+    .srs-btn:focus,
+    .audio-btn:focus,
+    .translate-btn:focus,
+    button:focus { outline: none; }
+    .srs-btn:focus-visible,
+    .audio-btn:focus-visible,
+    .translate-btn:focus-visible {
+      outline: 2px solid rgba(122, 51, 64, 0.4);
+      outline-offset: 2px;
     }
   
 
@@ -556,9 +576,14 @@
       transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease, color .16s ease;
       will-change: transform, box-shadow;
     }
-    .translate-btn:hover,
-    .audio-btn:hover {
+    .translate-btn:hover {
       transform: translateY(-2px);
+      box-shadow: 0 16px 30px rgba(82, 46, 56, 0.14);
+      border-color: rgba(122, 51, 64, 0.28);
+    }
+    .audio-btn:hover {
+      /* v47: сохраняем translateX(-50%) для центрирования */
+      transform: translateX(-50%) translateY(-2px);
       box-shadow: 0 16px 30px rgba(82, 46, 56, 0.14);
       border-color: rgba(122, 51, 64, 0.28);
     }
@@ -567,11 +592,14 @@
       box-shadow: 0 18px 34px rgba(82, 46, 56, 0.18);
     }
     .translate-btn:active,
-    .audio-btn:active,
     .srs-btn:active,
     .legacy-header .btn-icon:active,
     .legacy-header .streak-btn:active {
       transform: translateY(0);
+      box-shadow: 0 6px 12px rgba(82, 46, 56, 0.10);
+    }
+    .audio-btn:active {
+      transform: translateX(-50%) translateY(0);
       box-shadow: 0 6px 12px rgba(82, 46, 56, 0.10);
     }
 
@@ -1864,6 +1892,15 @@ window.addEventListener('DOMContentLoaded', function () {
     else if (stage === 2) stageProgress[key] = 1;
     else if (stage === 3) stageProgress[key] = 5;
     saveStageProgress();
+    // v49: если stage<3 — зеркалим vocabulary[id].learned=false СРАЗУ (без ожидания push/pull),
+    // иначе фраза остаётся в «Выученном» в словаре до следующего sync.
+    if (stage !== 3) {
+      var v = vocabulary.find(function(x){ return x && String(x.id) === key; });
+      if (v && v.learned) {
+        v.learned = false;
+        try { saveVocab(); } catch(e) {}
+      }
+    }
   }
 
   // Формирование партии. Возвращает массив фраз (объекты deck) длиной до BATCH_SIZE.
@@ -2190,9 +2227,21 @@ window.addEventListener('DOMContentLoaded', function () {
       audioBtn.style.fontSize = '';
     }
     function isOverflow() {
-      if (panel.scrollHeight > panel.clientHeight + 1) return true;
-      if (wrap && (wrap.scrollHeight > panel.clientHeight + 1 || wrap.offsetHeight > panel.clientHeight + 1)) return true;
-      return textEl.scrollWidth > textEl.clientWidth + 1 || panel.scrollWidth > panel.clientWidth + 1;
+      // v49: мерим переполнение по верхней/нижней границе фразы vs панели и кнопки «Прослушать».
+      // Это надёжнее формул с padding’ами — работает даже при flex justify-content:center.
+      var rect = textEl.getBoundingClientRect();
+      var pRect = panel.getBoundingClientRect();
+      // Верх/низ фразы выходит за панель (с запасом 4px)
+      if (rect.top < pRect.top + 4) return true;
+      if (rect.bottom > pRect.bottom - 4) return true;
+      // Наезд на кнопку «Прослушать» (запас 8px)
+      if (audioBtn && audioBtn.offsetParent) {
+        var bRect = audioBtn.getBoundingClientRect();
+        if (rect.bottom > bRect.top - 8) return true;
+      }
+      // Переполнение по ширине
+      if (textEl.scrollWidth > textEl.clientWidth + 1) return true;
+      return false;
     }
     while (iterations < 60) {
       if (!isOverflow()) break;

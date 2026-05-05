@@ -149,13 +149,14 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       const key = String(v.id);
       const prev = map.get(key);
       if (!prev) { map.set(key, v); return; }
-      // OR-семантика: если хоть в одной fav/learned — true.
+      // v49: fav — OR (пользователь явно лайкнул хотя бы раз). learned — берём из «v» (последняая в порядке [...a, ...b]),
+      // но всё равно syncVocabLearned() после перепишет из mergedState.
       map.set(key, {
         id: v.id,
         lv: v.lv || prev.lv,
         ru: v.ru || prev.ru,
         fav: !!(v.fav || prev.fav),
-        learned: !!(v.learned || prev.learned),
+        learned: !!v.learned,
       });
     });
     return Array.from(map.values());
