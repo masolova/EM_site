@@ -219,8 +219,10 @@
     }
     .audio-btn {
       cursor: pointer;
-      align-self: center;
-      margin-top: auto;
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      transform: translateX(-50%);
       height: 54px;
       padding: 0 22px 0 18px;
       border-radius: 999px;
@@ -247,19 +249,26 @@
       color: var(--brand);
     }
     .phrase-col {
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      height: 100%;
-      width: 100%;
+      justify-content: center;
+      padding-bottom: 84px; /* запас под абсолютную audio-btn */
     }
     .translate-wrap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 30px;
       display: flex;
-      align-items: flex-end;
       justify-content: center;
-      height: 100%;
       width: 100%;
-      padding-bottom: 30px;
       text-align: center;
+    }
+    .translate-wrap.show-text {
+      position: static;
+      padding-top: 30px;
     }
     .translate-btn {
       cursor: pointer;
@@ -1803,20 +1812,25 @@ window.addEventListener('DOMContentLoaded', function () {
   sessionCount += 1;
   try { localStorage.setItem(STORAGE_SESSION_COUNT, String(sessionCount)); } catch(e) {}
 
-  // Миграция старого stageProgress -> phraseState (один раз).
-  (function migrateStageProgress() {
-    if (!stageProgress || typeof stageProgress !== 'object') return;
+  // v47: миграция stageProgress → phraseState теперь СТРОГО ОДИНОКРАТНАЯ.
+  // Раньше она выполнялась на каждой загрузке и воскрешала stage 3 из старого stage_progress.
+  (function migrateStageProgressOnce() {
+    if (localStorage.getItem('lll2_migrated_stageprog_v47') === 'true') return;
+    if (!stageProgress || typeof stageProgress !== 'object') {
+      localStorage.setItem('lll2_migrated_stageprog_v47', 'true');
+      return;
+    }
     const keys = Object.keys(stageProgress);
-    if (!keys.length) return;
     let migrated = 0;
     keys.forEach(function(id) {
       if (phraseState[id]) return; // уже мигрирована
       const v = stageProgress[id];
-      if (v === -1) { phraseState[id] = { stage: 1, due: sessionCount, reps: 0 }; migrated++; }
-      else if (v === 1) { phraseState[id] = { stage: 2, due: sessionCount, reps: 0 }; migrated++; }
-      else if (v === 5) { phraseState[id] = { stage: 3, due: sessionCount + STAGE3_STEPS[0], reps: 1 }; migrated++; }
+      if (v === -1) { phraseState[id] = { stage: 1, due: sessionCount, reps: 0, updated_at: Date.now() }; migrated++; }
+      else if (v === 1) { phraseState[id] = { stage: 2, due: sessionCount, reps: 0, updated_at: Date.now() }; migrated++; }
+      else if (v === 5) { phraseState[id] = { stage: 3, due: sessionCount + STAGE3_STEPS[0], reps: 1, updated_at: Date.now() }; migrated++; }
     });
     if (migrated) savePhraseState();
+    localStorage.setItem('lll2_migrated_stageprog_v47', 'true');
   })();
 
   function savePhraseState() {

@@ -96,17 +96,20 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       const newStreakRaw = JSON.stringify(mergedStreak);
       const streakChanged = newStreakRaw !== localStreakRaw;
 
-      // Stage progress: мердж по ключу — берём максимум
+      // v47: stage_progress больше НЕ мерджится из облака отдельно (источник воскрешения stage 3).
+      // Пересчитываем его из mergedState (single source of truth = phrase_state).
       const localStageRaw = localStorage.getItem('lll2_stage_progress') || '{}';
-      const localStage = JSON.parse(localStageRaw);
-      const cloudStage = data.stage_progress || {};
-      const mergedStage = mergeStageProgress(localStage, cloudStage);
+      const mergedStage = stageProgressFromState(mergedState);
       const newStageRaw = JSON.stringify(mergedStage);
       const stageChanged = newStageRaw !== localStageRaw;
+      // v47: vocabulary.learned также зеркало mergedState.
+      // Берём mergedVocab и переставляем learned = (mergedState[id].stage === 3).
+      const mergedVocabSynced = syncVocabLearned(mergedVocab, mergedState);
+      const newVocabRawSynced = JSON.stringify(mergedVocabSynced);
 
       // Проверяем, изменился ли хоть один ключ в результате merge.
       // Если ничего не поменялось — НЕ пишем в localStorage и НЕ перезагружаем, иначе будет петля.
-      const vocabChanged = newVocabRaw !== localVocabRaw;
+      const vocabChanged = newVocabRawSynced !== localVocabRaw;
       const stateChanged = newStateRaw !== localStateRaw;
       const sessionChanged = newSession !== String(localSession);
       const deckChanged = data.deck_mode && data.deck_mode !== localStorage.getItem('lll2_deck_mode');
@@ -122,7 +125,7 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
         // push() позже в onAuthStateChange / pushDebounced
         setTimeout(function(){ try { push(); } catch(e){} }, 500);
       }
-      if (vocabChanged) localStorage.setItem('lll2_vocabulary', newVocabRaw);
+      if (vocabChanged) localStorage.setItem('lll2_vocabulary', newVocabRawSynced);
       if (stateChanged) localStorage.setItem('lll2_phrase_state', newStateRaw);
       if (sessionChanged) localStorage.setItem('lll2_session_count', newSession);
       if (deckChanged) localStorage.setItem('lll2_deck_mode', data.deck_mode);
@@ -174,6 +177,34 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     return { days: days, recoverDate: recoverDate };
   }
 
+  // v47: пересчитываем stage_progress из phrase_state.
+  // Маппинг: stage 0 → удаляем, 1 → -1, 2 → 1, 3 → 5.
+  function stageProgressFromState(state) {
+    const out = {};
+    Object.keys(state || {}).forEach(function (k) {
+      if (k === '_v') return;
+      const ent = state[k];
+      if (!ent || typeof ent !== 'object') return;
+      const s = ent.stage;
+      if (s === 1) out[k] = -1;
+      else if (s === 2) out[k] = 1;
+      else if (s === 3) out[k] = 5;
+      // stage 0 или другое — отсутствует в stage_progress
+    });
+    return out;
+  }
+
+  // v47: проставляем learned в vocabulary по факту phrase_state[id].stage === 3.
+  function syncVocabLearned(vocab, state) {
+    if (!Array.isArray(vocab)) return vocab;
+    return vocab.map(function (v) {
+      if (!v || v.id == null) return v;
+      const ent = state[String(v.id)];
+      const isLearned = !!(ent && ent.stage === 3);
+      return Object.assign({}, v, { learned: isLearned });
+    });
+  }
+
   function mergeStageProgress(a, b) {
     a = a || {}; b = b || {};
     const out = {};
@@ -223,6 +254,8 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     if (window.__v39 && window.__v39.cloudCleanVocab) {
       _vocab = window.__v39.cloudCleanVocab(_vocab);
     }
+    // v47: перед push принудительно синкаем learned из phrase_state.
+    _vocab = syncVocabLearned(_vocab, _state);
     const basePayload = {
       user_id: currentUser.id,
       vocabulary: _vocab,
@@ -233,7 +266,8 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     };
     const payload = pushSchemaLegacy ? basePayload : Object.assign({}, basePayload, {
       streak: JSON.parse(localStorage.getItem('lll2_streak') || '{}'),
-      stage_progress: JSON.parse(localStorage.getItem('lll2_stage_progress') || '{}'),
+      // v47: stage_progress в облако — всегда пересчитанный из phrase_state, не из LS.
+      stage_progress: stageProgressFromState(_state),
     });
     const { error } = await sb.from('lll_progress').upsert(payload, { onConflict: 'user_id' });
     if (error) {
