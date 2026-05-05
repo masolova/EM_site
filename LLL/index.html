@@ -187,10 +187,11 @@
     .panel .card-fav-btn svg { width: 24px; height: 24px; display: block; }
     .phrase {
       font-family: Manrope, sans-serif;
-      font-weight: 800;
+      /* v50: одинаковый вес и размер у LV и RU */
+      font-weight: 700;
       color: var(--text);
-      font-size: clamp(34px, 3vw, 48px);
-      line-height: 1.12;
+      font-size: clamp(30px, 2.7vw, 46px);
+      line-height: 1.14;
       letter-spacing: -.03em;
       max-width: 100%;
       margin: 0 auto;
@@ -253,7 +254,11 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      /* v50: первая строка LV начинается на той же высоте, что и RU.
+         Не center — иначе короткая фраза «висит» в середине, а длинная сдвигается. */
+      justify-content: flex-start;
+      align-items: center;
+      padding-top: 6px;
       padding-bottom: 84px; /* запас под абсолютную audio-btn */
     }
     .translate-wrap {
@@ -267,7 +272,7 @@
       text-align: center;
     }
     .translate-wrap.show-text {
-      /* Режим в потоке: перевод центрируется по вертикали как фраза слева. */
+      /* v50: первая строка RU стартует на той же высоте, что и LV (flex-start). */
       position: absolute;
       top: 0;
       bottom: 0;
@@ -275,9 +280,9 @@
       right: 0;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      padding: 30px 34px 84px;
+      padding: 36px 34px 84px;
     }
     .translate-btn {
       cursor: pointer;
@@ -297,6 +302,7 @@
       margin: 0 auto;
       text-align: center;
       font-family: Manrope, sans-serif;
+      /* v50: одинаковый размер и вес как у .phrase (LV) */
       font-size: clamp(30px, 2.7vw, 46px);
       line-height: 1.14;
       letter-spacing: -0.03em;
@@ -2271,10 +2277,31 @@ window.addEventListener('DOMContentLoaded', function () {
   }
   function fitAllPanels() {
     var panels = document.querySelectorAll('.panel');
+    var entries = [];
     panels.forEach(function(p) {
       var t = p.querySelector('.phrase') || p.querySelector('.translation-text');
-      if (t) fitTextToPanel(p, t);
+      if (t) {
+        fitTextToPanel(p, t);
+        entries.push(t);
+      }
     });
+    // v50: синхронизируем font-size между панелями — берём минимум.
+    if (entries.length >= 2) {
+      var minSize = Infinity;
+      entries.forEach(function(t){
+        var s = parseFloat(t.style.fontSize);
+        if (!s) s = parseFloat(getComputedStyle(t).fontSize) || 0;
+        if (s && s < minSize) minSize = s;
+      });
+      if (minSize !== Infinity && minSize > 0) {
+        entries.forEach(function(t){
+          t.style.fontSize = minSize + 'px';
+          if (minSize < 24) t.style.lineHeight = '1.25';
+          else if (minSize < 32) t.style.lineHeight = '1.18';
+          else t.style.lineHeight = '1.14';
+        });
+      }
+    }
   }
   window.fitAllPanels = fitAllPanels;
   function applyLengthClasses(item) {
@@ -2902,7 +2929,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v49</div>
+  <div class="version-tag" aria-hidden="true">v50</div>
   <style>
     .version-tag {
       position: fixed;
