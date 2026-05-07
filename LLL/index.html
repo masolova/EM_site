@@ -11,6 +11,9 @@
   <meta name="theme-color" content="#9b1b30">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- v55: preload Manrope-700 latin-ext (латышский) и cyrillic (русский) — чтобы фразы сразу были жирными, без swap с system-ui -->
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE9_M-bnTfc7AGraJwA.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE9_G-bnTfc7AGraJwA.woff2">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -1787,11 +1790,23 @@ window.addEventListener('DOMContentLoaded', function () {
         try { localStorage.setItem(STORAGE_DECK_MODE, deckMode); } catch(_) {}
         if (typeof syncDeckSegmented === 'function') syncDeckSegmented();
       }
+      // v55: запомнить текущую фразу ДО пересборки — не менять её без нужды
+      var _curId = (deck && deck[currentIndex] && deck[currentIndex].id != null) ? String(deck[currentIndex].id) : null;
+      // Инвалидируем кеш PHRASES-индекса т.к. «secret»-видимость меняется от elena (сброс уже висит в отдельном addEventListener)
       deck = buildDeck();
       if (!deck.length) deck = [{ lv: 'Dati nav ielādēti.', ru: 'Данные не загрузились.' }];
-      if (typeof refillBatch === 'function') { refillBatch(); srsNext(); } else { currentIndex = 0; }
-      if (typeof renderPhrase === 'function') renderPhrase();
-      if (typeof renderVocab === 'function') renderVocab();
+      // Если текущая фраза всё ещё в новом deck — НЕ меняем её, лишь поправляем currentIndex
+      var _newIdx = _curId ? deck.findIndex(function(p){ return p && p.id != null && String(p.id) === _curId; }) : -1;
+      if (_newIdx >= 0) {
+        currentIndex = _newIdx;
+        if (typeof refillBatch === 'function') refillBatch(); // batch обновится, но фразу не переключаем
+      } else {
+        if (typeof refillBatch === 'function') { refillBatch(); srsNext(); } else { currentIndex = 0; }
+        if (typeof renderPhrase === 'function') renderPhrase();
+      }
+      // v55: не перерисовываем словарь если он закрыт
+      var _vo2 = document.getElementById('vocabOverlay');
+      if (_vo2 && _vo2.classList.contains('open') && typeof renderVocab === 'function') renderVocab();
       if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
     } catch(_) {}
   });
@@ -1809,7 +1824,9 @@ window.addEventListener('DOMContentLoaded', function () {
       if (!deck.length) deck = [{ lv: 'Šajā kopā nav frāžu.', ru: 'В этом наборе нет фраз.' }];
       if (typeof refillBatch === 'function') { refillBatch(); srsNext(); } else { currentIndex = 0; }
       if (typeof renderPhrase === 'function') renderPhrase();
-      if (typeof renderVocab === 'function') renderVocab();
+      // v55: не перерисовываем словарь если он закрыт — главная причина тормозов клика по тегу
+      var _vo1 = document.getElementById('vocabOverlay');
+      if (_vo1 && _vo1.classList.contains('open') && typeof renderVocab === 'function') renderVocab();
       if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
     });
   }
@@ -1923,12 +1940,17 @@ window.addEventListener('DOMContentLoaded', function () {
   function buildBatch() {
     const sess = sessionCount;
     const buckets = { 0: [], 12: [], 3: [], future: [] };
+    // v55: предвычисляем Set выученных через словарь — иначе O(N*M) при больших vocabulary
+    const learnedVocabSet = new Set();
+    for (let i = 0; i < vocabulary.length; i++) {
+      const v = vocabulary[i];
+      if (v && v.learned && v.id != null) learnedVocabSet.add(String(v.id));
+    }
     deck.forEach(function(p) {
       if (!p || p.id == null) return;
       // Пропустить выученные-через-словарь (lll2_vocabulary.learned=true) — они «откладываются»
       const key = String(p.id);
-      const learned = vocabulary.find(function(v){ return String(v.id) === key && v.learned; });
-      if (learned) return;
+      if (learnedVocabSet.has(key)) return;
       const st = phraseState[key];
       const stage = st ? st.stage : 0;
       const due = st ? st.due : 0;
@@ -2040,24 +2062,38 @@ window.addEventListener('DOMContentLoaded', function () {
       };
     });
   }
+  // v55: кеш getRangeEntries на время одного renderVocab/buildHeatmap (renderVocab зовёт 9+ раз)
+  let _rangeEntriesCache = null;
+  // v55: кеш индекса PHRASES по rangeKey — строится 1 раз, инвалидируется при смене elena-режима
+  let _phraseRangeIndex = null;
+  function buildPhraseRangeIndex() {
+    if (!Array.isArray(PHRASES)) { _phraseRangeIndex = null; return; }
+    const idx = { all: [], a2: [], b2: [], numbers: [], questions: [], lena: [], runasana: [], top: [], otvety: [], teksty: [] };
+    const elena = isElenaUser();
+    for (let i = 0; i < PHRASES.length; i++) {
+      const item = PHRASES[i];
+      if (!item || typeof item.lv !== 'string' || !item.lv.trim()) continue;
+      const id = (typeof item.id === 'number') ? item.id : null;
+      const dk = id != null ? deckOf(id) : null;
+      if (dk && idx[dk]) idx[dk].push(item);
+      // 'all' — все видимые этой персоне (не-Елена не видит секретные)
+      if (!elena && id != null && isSecretId(id)) { /* skip */ } else { idx.all.push(item); }
+    }
+    _phraseRangeIndex = idx;
+  }
+  function invalidatePhraseRangeIndex() { _phraseRangeIndex = null; }
+  function invalidateRangeEntriesCache() { _rangeEntriesCache = null; }
+  document.addEventListener('lll:elena-changed', function(){ _phraseRangeIndex = null; });
   // Все фразы из PHRASES в выбранном диапазоне (для vocab-фильтров a2/b2/lena в словаре — независимо от чипов в шапке).
   function getRangeEntries(rangeKey) {
     if (!Array.isArray(PHRASES)) return [];
-    const favIds = getFavIds();
-    const learnedIds = getLearnedIds();
-    const elena = isElenaUser();
-    return PHRASES.filter(function(item){
-      if (!item || typeof item.lv !== 'string' || !item.lv.trim()) return false;
-      var id = (typeof item.id === 'number') ? item.id : null;
-      if (rangeKey && rangeKey !== 'all') {
-        if (id == null) return false;
-        if (deckOf(id) !== rangeKey) return false;
-      } else if (!elena) {
-        // 'all' для не-Елены: скрываем секретные диапазоны
-        if (id != null && isSecretId(id)) return false;
-      }
-      return true;
-    }).map(function(item){
+    if (_rangeEntriesCache && _rangeEntriesCache[rangeKey]) return _rangeEntriesCache[rangeKey];
+    if (!_phraseRangeIndex) buildPhraseRangeIndex();
+    const key = (rangeKey && _phraseRangeIndex[rangeKey]) ? rangeKey : 'all';
+    const source = _phraseRangeIndex[key] || [];
+    const favIds = (_rangeEntriesCache && _rangeEntriesCache._favIds) || getFavIds();
+    const learnedIds = (_rangeEntriesCache && _rangeEntriesCache._learnedIds) || getLearnedIds();
+    const result = source.map(function(item){
       var id = item && item.id;
       return {
         id: id,
@@ -2067,6 +2103,12 @@ window.addEventListener('DOMContentLoaded', function () {
         learned: id != null && learnedIds.has(String(id)),
       };
     });
+    if (_rangeEntriesCache) {
+      _rangeEntriesCache[rangeKey] = result;
+      _rangeEntriesCache._favIds = favIds;
+      _rangeEntriesCache._learnedIds = learnedIds;
+    }
+    return result;
   }
   function getFilteredVocab() {
     // Все фильтры в словаре работают НЕЗАВИСИМО от колоды в шапке.
@@ -2088,6 +2130,9 @@ window.addEventListener('DOMContentLoaded', function () {
     return list;
   }
   function renderVocab() {
+    // v55: включаем кеш getRangeEntries на время этого вызова (~9+ вызовов по PHRASES экономятся)
+    _rangeEntriesCache = {};
+    try {
     const filtered = getFilteredVocab();
     // Счётчики словаря НЕ зависят от колоды в шапке
     const allEntries = getRangeEntries('all');
@@ -2132,6 +2177,9 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     var heartOutline = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
     var heartFilled  = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+    // v55: DocumentFragment + escape вместо querySelector после innerHTML
+    var frag = document.createDocumentFragment();
+    var esc = function(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); };
     filtered.forEach(item => {
       const row = document.createElement('div');
       row.className = 'vocab-item';
@@ -2140,11 +2188,11 @@ window.addEventListener('DOMContentLoaded', function () {
       row.setAttribute('tabindex', '0');
       row.title = 'Открыть эту карточку';
       row.innerHTML = '<button class="vocab-fav-btn ' + (item.fav ? 'active' : '') + '" data-action="fav" data-id="' + item.id + '" aria-label="' + (item.fav ? 'Убрать из избранного' : 'Добавить в избранное') + '">' + (item.fav ? heartFilled : heartOutline) + '</button>' +
-        '<div class="vocab-words"><span class="vocab-lv"></span><span class="vocab-ru"></span></div>';
-      row.querySelector('.vocab-lv').textContent = item.lv;
-      row.querySelector('.vocab-ru').textContent = item.ru;
-      vocabListWrap.appendChild(row);
+        '<div class="vocab-words"><span class="vocab-lv">' + esc(item.lv) + '</span><span class="vocab-ru">' + esc(item.ru) + '</span></div>';
+      frag.appendChild(row);
     });
+    vocabListWrap.appendChild(frag);
+    } finally { _rangeEntriesCache = null; }
   }
   function ensureVocabEntry(markLearned) {
     const item = currentPhrase();
@@ -2973,7 +3021,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v54</div>
+  <div class="version-tag" aria-hidden="true">v55</div>
   <style>
     .version-tag {
       position: fixed;
