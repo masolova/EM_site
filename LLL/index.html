@@ -1158,16 +1158,22 @@
       .legacy-header .logo-mark { display: none; }
 
       /* Правая группа: streak + иконка словаря */
+      /* v56: min-width:0 чтобы родитель не растягивался по seg.scrollWidth. */
       .legacy-header .header-right {
         order: 2;
         margin-left: auto;
         gap: 4px;
+        min-width: 0;
       }
 
       /* Чипы колоды — отдельный ряд на всю ширину, горизонтальный скролл с fade-подсказкой справа */
+      /* v56: width:100% + min-width:0 чтобы seg сжимался под родителя и содержимое скроллилось внутри. */
       .legacy-header .deck-segmented {
         order: 3;
         flex: 1 0 100%;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
         overflow-x: auto;
         overflow-y: hidden;
         scrollbar-width: none;
@@ -1253,9 +1259,10 @@
       .legacy-header .header-right { margin-right: 100px; }
 
       /* (3.2) Главная область — вертикальный поток; адаптивные отступы и гапы. */
+      /* v56: уменьшены paddings/gaps чтобы learned-progress влезала без скролла. */
       .page {
-        padding: clamp(10px, 2vh, 22px) 14px clamp(16px, 3vh, 32px);
-        gap: clamp(10px, 2vh, 22px);
+        padding: clamp(8px, 1.4vh, 14px) 14px clamp(10px, 2vh, 18px);
+        gap: clamp(8px, 1.4vh, 14px);
         grid-template-rows: none;
         display: flex;
         flex-direction: column;
@@ -1267,9 +1274,34 @@
 
       .content {
         grid-template-columns: 1fr;
-        gap: 14px;
+        /* v56: равные блоки LV и RU на мобиле — 50/50 по высоте в доступном пространстве .content. */
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
         flex: 1 1 0;
         min-height: 0;
+        /* Не раздуваться больше разумного — иначе прогресс-полоса выталкивается за экран. */
+        max-height: min(50vh, 360px);
+      }
+      /* v56: в панели LV audio-btn скрыт на мобиле (используется круглая слева), большой padding-bottom больше не нужен. */
+      .panel .phrase-col {
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        justify-content: center;
+      }
+      /* v56: без перевода — кнопка в центре панели. */
+      .panel .translate-wrap:not(.show-text) {
+        position: static;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      /* v56: с переводом — текст RU центрируем по высоте блока (как LV). */
+      .panel .translate-wrap.show-text {
+        padding-top: 0;
+        padding-bottom: 0;
+        justify-content: center;
       }
 
       /* (3.2) Mobile: панель жёстко фиксирована по высоте — всё влезает в экран, fit-to-box ужмёт шрифт. */
@@ -1322,14 +1354,17 @@
       /* Скрываем старую кнопку «Прослушать» на мобиле — её роль взял динамик */
       .audio-btn { display: none; }
 
-      /* (3.2) Адаптивный размер фразы: 19–26px в зависимости от высоты экрана. */
+      /* (3.2) Адаптивный размер фразы: 17–23px в зависимости от высоты экрана. */
+      /* v56: блоки стали меньше (170хвм вместо 238) — базовый размер чуть меньше, чтобы длинные фразы не наезжали на сердечко/audio-btn. */
       .phrase {
-        font-size: clamp(19px, 2.6vh, 26px);
+        font-size: clamp(18px, 3vh, 24px);
         line-height: 1.25;
         letter-spacing: -.02em;
         max-width: none;
         font-weight: 700;
         text-align: center;
+        /* резерв справа чтобы линии не наезжали на сердечко */
+        padding-right: 32px;
       }
       /* (3.3) Длинные фразы — меньше размер, без жирного. ОДИН размер для LV и RU. */
       .panel.is-long .phrase,
@@ -1361,7 +1396,7 @@
         max-width: 280px;
       }
       .translation-text {
-        font-size: clamp(19px, 2.6vh, 26px);
+        font-size: clamp(18px, 3vh, 24px);
         line-height: 1.25;
         letter-spacing: -.02em;
         font-weight: 700;
@@ -1374,25 +1409,35 @@
       .panel.is-mega .translation-text { text-align: center; }
 
       /* Сетка оценок 2×2 — тоже адаптивная. */
+      /* v56: сжал SRS-кнопки чтобы learned-progress влезала без скролла. */
       .srs-zone {
         grid-template-columns: 1fr 1fr;
-        gap: clamp(8px, 1.4vh, 14px);
-        padding: clamp(8px, 1.4vh, 14px);
-        border-radius: 20px;
+        gap: 6px;
+        padding: 6px;
+        border-radius: 16px;
         min-height: 0;
+        flex: 0 0 auto;
       }
       .srs-btn {
-        min-height: clamp(74px, 11vh, 110px);
-        border-radius: 16px;
-        box-shadow: 0 6px 14px rgba(82, 46, 56, 0.10);
+        min-height: clamp(56px, 8vh, 80px);
+        border-radius: 14px;
+        box-shadow: 0 4px 10px rgba(82, 46, 56, 0.08);
       }
-      .srs-fill { padding: 8px 10px 10px; }
-      .srs-top { font-size: 14px; }
+      .srs-fill { padding: 6px 8px 8px; }
+      .srs-top { font-size: 13px; }
       .srs-label {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 800;
         letter-spacing: -.02em;
       }
+      /* v56: learned-progress внизу — компактнее. */
+      .learned-progress {
+        flex: 0 0 auto;
+        padding: 6px 0 0;
+        gap: 4px;
+      }
+      .learned-progress__label { font-size: 12px; }
+      .learned-progress__track { height: 6px; }
 
       /* ──────────────────────────────────── */
       /* СЛОВАРЬ НА МОБИЛЕ                              */
@@ -2355,7 +2400,9 @@ window.addEventListener('DOMContentLoaded', function () {
     });
     if (lvEntry && ruEntry) {
       var ruWrap = ruEntry.text.closest('.translate-wrap');
-      if (ruWrap && ruWrap.classList.contains('show-text')) {
+      // v56: выравнивание верха RU по верху LV — только на десктопе (>600px). На мобиле оба блока центрируются.
+      var isMobile = window.matchMedia('(max-width: 600px)').matches;
+      if (ruWrap && ruWrap.classList.contains('show-text') && !isMobile) {
         // Сначала сбросим override, чтобы получить базовый layout RU.
         ruWrap.style.paddingTop = '';
         ruWrap.style.justifyContent = 'flex-start';
@@ -2370,6 +2417,10 @@ window.addEventListener('DOMContentLoaded', function () {
         var delta = ruWanted - ruCurrent;
         var basePad = 6;
         ruWrap.style.paddingTop = Math.max(0, basePad + delta) + 'px';
+      } else if (ruWrap && isMobile) {
+        // v56: на мобиле сбрасываем inline-overrideы чтобы сработали CSS-правила.
+        ruWrap.style.paddingTop = '';
+        ruWrap.style.justifyContent = '';
       } else if (ruWrap) {
         // v53 фикс: сбрасываем все inline-стили, иначе justifyContent='flex-start' остаётся
         // после возврата show-text=false и кнопка «Показать перевод» уезжает влево.
@@ -2937,7 +2988,10 @@ window.addEventListener('DOMContentLoaded', function () {
       try { stageProgress = JSON.parse(localStorage.getItem('lll2_stage_progress') || '{}'); } catch (e) {}
     }
     updateBadge();
-    // v54: renderVocab и buildHeatmap — только если соотв. оверлей открыт. Иначе — бессмысленно жрёт main thread.
+    // v56: streak-индикатор в шапке (#streakNum) обновляем ВСЕГДА после cloud-sync,
+    // иначе при первом заходе шапка показывает 0 пока пользователь не откроет оверлей.
+    try { updateStreakSummary(); } catch(e){}
+    // renderVocab и buildHeatmap — только если соотв. оверлей открыт.
     var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 100); };
     ric(function(){
       try {
@@ -2946,7 +3000,7 @@ window.addEventListener('DOMContentLoaded', function () {
       } catch(e){}
       try {
         var so = document.getElementById('streakOverlay');
-        if (so && so.classList.contains('open')) { updateStreakSummary(); buildHeatmap(); }
+        if (so && so.classList.contains('open')) { buildHeatmap(); }
       } catch(e){}
       try { if (typeof updateLearnedProgress === 'function') updateLearnedProgress(); } catch(e){}
     });
@@ -3021,7 +3075,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v55</div>
+  <div class="version-tag" aria-hidden="true">v56</div>
   <style>
     .version-tag {
       position: fixed;
