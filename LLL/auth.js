@@ -340,12 +340,31 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   }
 
   // Слушаем изменения localStorage, чтобы пушить в облако.
+  // v52: batch флаг — во время серии setItem откладываем push до конца.
+  let lllBatchDepth = 0;
+  let lllBatchDirty = false;
+  window.lllBatch = function(fn){
+    lllBatchDepth++;
+    try { return fn(); }
+    finally {
+      lllBatchDepth--;
+      if (lllBatchDepth === 0 && lllBatchDirty) {
+        lllBatchDirty = false;
+        pushDebounced();
+      }
+    }
+  };
   const origSetItem = Storage.prototype.setItem;
   Storage.prototype.setItem = function (k, v) {
     origSetItem.call(this, k, v);
     if (currentUser && (k === 'lll2_vocabulary' || k === 'lll2_phrase_state' || k === 'lll2_session_count' || k === 'lll2_deck_mode' || k === 'lll2_streak' || k === 'lll2_stage_progress')) {
-      pushDebounced();
-      updateDiagBanner();
+      if (lllBatchDepth > 0) {
+        lllBatchDirty = true;
+      } else {
+        pushDebounced();
+      }
+      // updateDiagBanner отключён по флагу diagEnabled (возвращает null быстро), но вызываем реже.
+      if (lllBatchDepth === 0) updateDiagBanner();
     }
   };
 

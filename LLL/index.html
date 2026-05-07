@@ -146,7 +146,8 @@
     }
     .content {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      /* v52: minmax(0, 1fr) — жестко фиксируем 50/50, длинное слово не раздвигает левый трек. */
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       gap: 24px;
       min-height: 0;
     }
@@ -160,6 +161,7 @@
       justify-content: flex-start;
       align-items: center;
       min-height: 0;
+      min-width: 0; /* v52: не раздувать grid трек под длинное слово */
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -196,6 +198,8 @@
       max-width: 100%;
       margin: 0 auto;
       text-align: center;
+      /* v52: длинные слова ломать, чтобы не раздвигать панель */
+      overflow-wrap: anywhere;
     }
     /* (3.3) Длинные фразы — 4 ступени. Размер карточки НЕ меняется, только шрифт. */
     .panel.is-long .phrase,
@@ -220,10 +224,13 @@
     }
     .audio-btn {
       cursor: pointer;
+      /* v52: центрирование через inset+margin вместо left:50%+transform.
+         Из-за transition на transform раньше была видимая «поездка» кнопки влево при смене фразы. */
       position: absolute;
-      left: 50%;
+      left: 0;
+      right: 0;
       bottom: 30px;
-      transform: translateX(-50%);
+      margin: 0 auto;
       height: 54px;
       padding: 0 22px 0 18px;
       border-radius: 999px;
@@ -254,9 +261,9 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      /* v50: первая строка LV начинается на той же высоте, что и RU.
-         Не center — иначе короткая фраза «висит» в середине, а длинная сдвигается. */
-      justify-content: flex-start;
+      /* v52: LV центрирована по высоте в верхней зоне (без нижней полосы 84px).
+         RU подравнивается в JS под верхнюю строку LV. */
+      justify-content: center;
       align-items: center;
       padding-top: 6px;
       padding-bottom: 84px; /* запас под абсолютную audio-btn */
@@ -272,13 +279,14 @@
       text-align: center;
     }
     .translate-wrap.show-text {
-      /* v51: в потоке (как .phrase-col), чтобы LV и RU жили в одинаковой области. */
+      /* v52: в потоке; flex-start, но padding-top динамический —
+         выставляется в fitAllPanels так, чтобы верх RU совпал с верхом LV. */
       position: static;
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       padding: 6px 0 84px;
     }
@@ -306,6 +314,7 @@
       letter-spacing: -0.03em;
       font-weight: 700;
       color: var(--text);
+      overflow-wrap: anywhere;
     }
     .translate-wrap.show-text .translate-btn {
       display: none;
@@ -575,10 +584,13 @@
     body.is-elena .vocab-filter-btn.secret-deck { display: inline-flex; }
 
     .translate-btn,
-    .audio-btn,
     .srs-btn {
       transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease, color .16s ease;
       will-change: transform, box-shadow;
+    }
+    /* v52: у audio-btn transition без transform — иначе видна анимация «прыжка» при смене фразы. */
+    .audio-btn {
+      transition: box-shadow .16s ease, background .16s ease, border-color .16s ease, color .16s ease;
     }
     .translate-btn:hover {
       transform: translateY(-2px);
@@ -586,8 +598,6 @@
       border-color: rgba(122, 51, 64, 0.28);
     }
     .audio-btn:hover {
-      /* v47: сохраняем translateX(-50%) для центрирования */
-      transform: translateX(-50%) translateY(-2px);
       box-shadow: 0 16px 30px rgba(82, 46, 56, 0.14);
       border-color: rgba(122, 51, 64, 0.28);
     }
@@ -603,7 +613,7 @@
       box-shadow: 0 6px 12px rgba(82, 46, 56, 0.10);
     }
     .audio-btn:active {
-      transform: translateX(-50%) translateY(0);
+      /* v52: без transform — центрирование через margin auto */
       box-shadow: 0 6px 12px rgba(82, 46, 56, 0.10);
     }
 
@@ -1877,34 +1887,36 @@ window.addEventListener('DOMContentLoaded', function () {
     return st ? st.due : 0;
   }
   function setPhraseStage(id, stage) {
-    const key = String(id);
-    const prev = phraseState[key] || { stage: 0, due: 0, reps: 0 };
-    let due, reps = prev.reps || 0;
-    if (stage === 0) { due = sessionCount; reps = 0; }
-    else if (stage === 1) { due = sessionCount + 1; reps = 0; }
-    else if (stage === 2) { due = sessionCount + 3; reps = 0; }
-    else if (stage === 3) {
-      reps = (prev.stage === 3 ? reps : 0) + 1;
-      const stepIdx = Math.min(reps - 1, STAGE3_STEPS.length - 1);
-      due = sessionCount + STAGE3_STEPS[stepIdx];
-    }
-    phraseState[key] = { stage: stage, due: due, reps: reps, updated_at: Date.now() };
-    savePhraseState();
-    // Дублируем в stageProgress для совместимости со счётчиками словаря (но используем стадии 0/1/2/3 -> -5/-1/1/5).
-    if (stage === 0) delete stageProgress[key];
-    else if (stage === 1) stageProgress[key] = -1;
-    else if (stage === 2) stageProgress[key] = 1;
-    else if (stage === 3) stageProgress[key] = 5;
-    saveStageProgress();
-    // v49: если stage<3 — зеркалим vocabulary[id].learned=false СРАЗУ (без ожидания push/pull),
-    // иначе фраза остаётся в «Выученном» в словаре до следующего sync.
-    if (stage !== 3) {
-      var v = vocabulary.find(function(x){ return x && String(x.id) === key; });
-      if (v && v.learned) {
-        v.learned = false;
-        try { saveVocab(); } catch(e) {}
+    // v52: batch — все setItem коалесцируются в один push.
+    var run = function() {
+      const key = String(id);
+      const prev = phraseState[key] || { stage: 0, due: 0, reps: 0 };
+      let due, reps = prev.reps || 0;
+      if (stage === 0) { due = sessionCount; reps = 0; }
+      else if (stage === 1) { due = sessionCount + 1; reps = 0; }
+      else if (stage === 2) { due = sessionCount + 3; reps = 0; }
+      else if (stage === 3) {
+        reps = (prev.stage === 3 ? reps : 0) + 1;
+        const stepIdx = Math.min(reps - 1, STAGE3_STEPS.length - 1);
+        due = sessionCount + STAGE3_STEPS[stepIdx];
       }
-    }
+      phraseState[key] = { stage: stage, due: due, reps: reps, updated_at: Date.now() };
+      savePhraseState();
+      if (stage === 0) delete stageProgress[key];
+      else if (stage === 1) stageProgress[key] = -1;
+      else if (stage === 2) stageProgress[key] = 1;
+      else if (stage === 3) stageProgress[key] = 5;
+      saveStageProgress();
+      if (stage !== 3) {
+        var v = vocabulary.find(function(x){ return x && String(x.id) === key; });
+        if (v && v.learned) {
+          v.learned = false;
+          try { saveVocab(); } catch(e) {}
+        }
+      }
+    };
+    if (typeof window.lllBatch === 'function') window.lllBatch(run);
+    else run();
   }
 
   // Формирование партии. Возвращает массив фраз (объекты deck) длиной до BATCH_SIZE.
@@ -2300,32 +2312,35 @@ window.addEventListener('DOMContentLoaded', function () {
         });
       }
     }
-    // v51: вертикальное выравнивание.
-    // Нижняя полоса (84px) — место под кнопку «Прослушать». В верхней зоне центрируем короткие фразы.
-    // Длинные (которые не влезают в верхнюю зону) — прижимаем к верху (flex-start).
-    // Решение «короткая/длинная» — одинаковое для обеих панелей (чтобы LV и RU выравнивались одинаково).
-    if (entries.length >= 1) {
-      // v51: «длинная» = высота фразы > половины верхней зоны. Тогда выравниваем flex-start обе,
-      // чтобы первые строки были на одной высоте (иначе разная высота LV/RU разъедет center).
-      // BTN_RESERVE вычисляем динамически: 84 если есть видимая audio-btn, иначе 0.
-      var anyLong = false;
-      entries.forEach(function(e){
-        var audioBtn = e.panel.querySelector('.audio-btn');
-        var reserve = (audioBtn && audioBtn.offsetParent) ? 84 : 0;
-        var panelH = e.panel.clientHeight;
-        var topZone = panelH - reserve;
-        var textH = e.text.getBoundingClientRect().height;
-        if (textH > topZone / 2) anyLong = true;
-      });
-      entries.forEach(function(e){
-        var container = e.text.closest('.phrase-col') || e.text.closest('.translate-wrap');
-        if (!container) return;
-        if (anyLong) {
-          container.style.justifyContent = 'flex-start';
-        } else {
-          container.style.justifyContent = 'center';
-        }
-      });
+    // v52: LV центрирована в верхней зоне (justify-content: center, CSS).
+    // RU подгоняется через padding-top так, чтобы верх RU и верх LV были на одной горизонтали.
+    var lvEntry = null, ruEntry = null;
+    entries.forEach(function(e){
+      if (e.text.classList.contains('phrase')) lvEntry = e;
+      else if (e.text.classList.contains('translation-text')) ruEntry = e;
+    });
+    if (lvEntry && ruEntry) {
+      var ruWrap = ruEntry.text.closest('.translate-wrap');
+      if (ruWrap && ruWrap.classList.contains('show-text')) {
+        // Сначала сбросим override, чтобы получить базовый layout RU.
+        ruWrap.style.paddingTop = '';
+        ruWrap.style.justifyContent = 'flex-start';
+        // Даём браузеру просчитать.
+        void ruWrap.offsetHeight;
+        var lvPanelTop = lvEntry.panel.getBoundingClientRect().top;
+        var lvTextTop = lvEntry.text.getBoundingClientRect().top;
+        var ruPanelTop = ruEntry.panel.getBoundingClientRect().top;
+        var ruTextTop = ruEntry.text.getBoundingClientRect().top;
+        // Сколько сейчас сверху внутри панели у RU; сколько хотим.
+        var ruCurrent = ruTextTop - ruPanelTop;
+        var ruWanted = lvTextTop - lvPanelTop;
+        var delta = ruWanted - ruCurrent;
+        // Пользуемся padding-top от 0; базовый padding 6px в CSS уже учтён.
+        var basePad = 6;
+        ruWrap.style.paddingTop = Math.max(0, basePad + delta) + 'px';
+      } else if (ruWrap) {
+        ruWrap.style.paddingTop = '';
+      }
     }
   }
   window.fitAllPanels = fitAllPanels;
@@ -2685,10 +2700,14 @@ window.addEventListener('DOMContentLoaded', function () {
       if (stage === 3) {
         ensureVocabEntry(true);
         showToast('Фраза перенесена в выученное');
-      } else {
-        renderVocab();
       }
-      setTimeout(nextPhrase, 180);
+      // v52: смена фразы через 80ms (раньше 180ms) — визуальный фидбек от нажатой кнопки.
+      // renderVocab() отложен — словарь перерисуется при следующем открытии.
+      setTimeout(nextPhrase, 80);
+      if (stage !== 3) {
+        var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 200); };
+        ric(function(){ try { renderVocab(); } catch(e){} });
+      }
     });
   });
 
@@ -2738,8 +2757,8 @@ window.addEventListener('DOMContentLoaded', function () {
   vocabToggle.addEventListener('click', function () {
     reorderVocabForViewport();
     vocabOverlay.classList.add('open');
-    renderVocab();
-    // Фокус на поиск — только на десктопе (на мобиле вылезает клавиатура)
+    // v52: рендер в следующий кадр — иначе оверлей появляется с задержкой 1-2 сек.
+    requestAnimationFrame(function(){ renderVocab(); });
     if (vocabSearch && window.matchMedia('(min-width: 601px)').matches) vocabSearch.focus();
   });
   vocabClose.addEventListener('click', function () { vocabOverlay.classList.remove('open'); });
@@ -2864,6 +2883,8 @@ window.addEventListener('DOMContentLoaded', function () {
   setPlayIcon('play');
 
   // Приход данных из облака (Realtime/pull) — перерисовываем без сброса текущей фразы.
+  // v52: отложенный renderVocab через idle — чтобы не блокировать клик SRS
+  // и не создавать впечатление «фраза сама поменялась» (перерисовка = воспринимается как смена).
   window.addEventListener('lll:cloud-sync', function (ev) {
     var d = (ev && ev.detail) || {};
     if (d.vocab) {
@@ -2879,10 +2900,13 @@ window.addEventListener('DOMContentLoaded', function () {
       try { stageProgress = JSON.parse(localStorage.getItem('lll2_stage_progress') || '{}'); } catch (e) {}
     }
     updateBadge();
-    renderVocab();
-    updateStreakSummary();
-    buildHeatmap();
-    if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
+    var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 100); };
+    ric(function(){
+      try { renderVocab(); } catch(e){}
+      try { updateStreakSummary(); } catch(e){}
+      try { buildHeatmap(); } catch(e){}
+      try { if (typeof updateLearnedProgress === 'function') updateLearnedProgress(); } catch(e){}
+    });
   });
 });
 </script>
@@ -2954,7 +2978,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v51</div>
+  <div class="version-tag" aria-hidden="true">v52</div>
   <style>
     .version-tag {
       position: fixed;
