@@ -433,9 +433,10 @@
       box-shadow: 0 4px 10px rgba(153, 27, 27, 0.18);
     }
     .legacy-header .logo-name {
-      font-size: 16px;
-      font-weight: 700;
-      letter-spacing: -0.01em;
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
       color: #1c1917;
     }
     .legacy-header .logo-name .red { color: #991b1b; }
@@ -1153,7 +1154,7 @@
         height: auto;
         row-gap: 10px;
       }
-      .legacy-header .logo-name { font-size: 14px; }
+      .legacy-header .logo-name { font-size: 16px; font-weight: 800; letter-spacing: -0.03em; }
       /* (г) Декоративная иконка-«гамбургер» без функционала в лого — на мобиле скрываем. */
       .legacy-header .logo-mark { display: none; }
 
@@ -1279,8 +1280,8 @@
         gap: 10px;
         flex: 1 1 0;
         min-height: 0;
-        /* Не раздуваться больше разумного — иначе прогресс-полоса выталкивается за экран. */
-        max-height: min(50vh, 360px);
+        /* v57: сжали до 42vh — освобождает место под крупные SRS-кнопки. */
+        max-height: min(42vh, 320px);
       }
       /* v56: в панели LV audio-btn скрыт на мобиле (используется круглая слева), большой padding-bottom больше не нужен. */
       .panel .phrase-col {
@@ -1321,29 +1322,30 @@
       .panel .card-fav-btn { top: 10px; right: 10px; width: 32px; height: 32px; }
       .panel .card-fav-btn svg { width: 22px; height: 22px; }
 
-      /* Ряд: динамик (слева) + фраза (справа) */
+      /* v57: play-кнопка absolute в верхнем-левом углу панели (зеркально сердечку справа), */
+      /* фраза занимает ВСЮ ширину панели — не теряем колонку под audio-btn. */
       .phrase-row {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        justify-content: center;
-        max-width: 100%;
+        display: contents;
       }
       .audio-btn-mobile {
+        position: absolute;
+        top: 10px;
+        left: 10px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        flex: 0 0 44px;
-        width: 44px;
-        height: 44px;
+        width: 32px;
+        height: 32px;
         border-radius: 50%;
         border: 0;
         background: var(--brand);
         color: #fff;
         cursor: pointer;
-        box-shadow: 0 6px 14px rgba(153, 27, 27, 0.28);
+        box-shadow: 0 4px 10px rgba(153, 27, 27, 0.22);
         transition: transform .14s ease, box-shadow .14s ease;
+        z-index: 2;
       }
+      .audio-btn-mobile svg { width: 16px; height: 16px; }
       .audio-btn-mobile:active { transform: scale(.94); }
       .audio-btn-mobile.is-playing { background: #7d1414; }
       .audio-btn-mobile:disabled, .audio-btn-mobile[disabled] {
@@ -1363,9 +1365,11 @@
         max-width: none;
         font-weight: 700;
         text-align: center;
-        /* резерв справа чтобы линии не наезжали на сердечко */
-        padding-right: 32px;
+        /* v57: симметричный резерв под audio-btn (слева) и сердечко (справа) */
+        padding-left: 8px;
+        padding-right: 8px;
       }
+      .panel.lv .phrase { padding-top: 4px; }
       /* (3.3) Длинные фразы — меньше размер, без жирного. ОДИН размер для LV и RU. */
       .panel.is-long .phrase,
       .panel.is-long .translation-text {
@@ -1410,23 +1414,24 @@
 
       /* Сетка оценок 2×2 — тоже адаптивная. */
       /* v56: сжал SRS-кнопки чтобы learned-progress влезала без скролла. */
+      /* v57: SRS-кнопки крупнее (как в v55), место освобождено за счёт max-height панелей и paddings. */
       .srs-zone {
         grid-template-columns: 1fr 1fr;
-        gap: 6px;
-        padding: 6px;
+        gap: 8px;
+        padding: 8px;
         border-radius: 16px;
         min-height: 0;
         flex: 0 0 auto;
       }
       .srs-btn {
-        min-height: clamp(56px, 8vh, 80px);
+        min-height: clamp(72px, 10.5vh, 100px);
         border-radius: 14px;
         box-shadow: 0 4px 10px rgba(82, 46, 56, 0.08);
       }
-      .srs-fill { padding: 6px 8px 8px; }
-      .srs-top { font-size: 13px; }
+      .srs-fill { padding: 10px 10px 10px; }
+      .srs-top { font-size: 14px; }
       .srs-label {
-        font-size: 16px;
+        font-size: 17px;
         font-weight: 800;
         letter-spacing: -.02em;
       }
@@ -3075,19 +3080,22 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v56</div>
+  <div class="version-tag" aria-hidden="true">v57</div>
   <style>
     .version-tag {
       position: fixed;
-      right: 8px;
-      bottom: 6px;
-      font-size: 10px;
-      color: #b8b8b8;
+      right: 6px;
+      bottom: 4px;
+      font-size: 9px;
+      color: #d6d3d1;
       font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
       pointer-events: none;
       user-select: none;
-      opacity: .7;
+      opacity: .5;
       z-index: 1;
+    }
+    @media (max-width: 600px) {
+      .version-tag { display: none; }
     }
   </style>
 
