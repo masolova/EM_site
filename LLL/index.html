@@ -2295,25 +2295,9 @@ window.addEventListener('DOMContentLoaded', function () {
         entries.push({ panel: p, text: t });
       }
     });
-    // v50: синхронизируем font-size между панелями — берём минимум.
-    if (entries.length >= 2) {
-      var minSize = Infinity;
-      entries.forEach(function(e){
-        var s = parseFloat(e.text.style.fontSize);
-        if (!s) s = parseFloat(getComputedStyle(e.text).fontSize) || 0;
-        if (s && s < minSize) minSize = s;
-      });
-      if (minSize !== Infinity && minSize > 0) {
-        entries.forEach(function(e){
-          e.text.style.fontSize = minSize + 'px';
-          if (minSize < 24) e.text.style.lineHeight = '1.25';
-          else if (minSize < 32) e.text.style.lineHeight = '1.18';
-          else e.text.style.lineHeight = '1.14';
-        });
-      }
-    }
-    // v52: LV центрирована в верхней зоне (justify-content: center, CSS).
-    // RU подгоняется через padding-top так, чтобы верх RU и верх LV были на одной горизонтали.
+    // v53: НЕ синхронизируем font-size между LV и RU. Каждая панель подгоняется независимо.
+    // Раньше брался минимум — из-за длинного RU LV ужималась («прыжок шрифта»).
+    // Теперь LV всегда сохраняет свой размер, RU подбирается под свой контент.
     var lvEntry = null, ruEntry = null;
     entries.forEach(function(e){
       if (e.text.classList.contains('phrase')) lvEntry = e;
@@ -2331,15 +2315,16 @@ window.addEventListener('DOMContentLoaded', function () {
         var lvTextTop = lvEntry.text.getBoundingClientRect().top;
         var ruPanelTop = ruEntry.panel.getBoundingClientRect().top;
         var ruTextTop = ruEntry.text.getBoundingClientRect().top;
-        // Сколько сейчас сверху внутри панели у RU; сколько хотим.
         var ruCurrent = ruTextTop - ruPanelTop;
         var ruWanted = lvTextTop - lvPanelTop;
         var delta = ruWanted - ruCurrent;
-        // Пользуемся padding-top от 0; базовый padding 6px в CSS уже учтён.
         var basePad = 6;
         ruWrap.style.paddingTop = Math.max(0, basePad + delta) + 'px';
       } else if (ruWrap) {
+        // v53 фикс: сбрасываем все inline-стили, иначе justifyContent='flex-start' остаётся
+        // после возврата show-text=false и кнопка «Показать перевод» уезжает влево.
         ruWrap.style.paddingTop = '';
+        ruWrap.style.justifyContent = '';
       }
     }
   }
@@ -2694,20 +2679,22 @@ window.addEventListener('DOMContentLoaded', function () {
       else if (btn.classList.contains('green')) stage = 3;
       srsButtons.forEach(function (b) { b.classList.remove('is-selected'); });
       btn.classList.add('is-selected');
-      if (phraseId) {
-        setPhraseStage(phraseId, stage);
-      }
-      if (stage === 3) {
-        ensureVocabEntry(true);
-        showToast('Фраза перенесена в выученное');
-      }
-      // v52: смена фразы через 80ms (раньше 180ms) — визуальный фидбек от нажатой кнопки.
-      // renderVocab() отложен — словарь перерисуется при следующем открытии.
-      setTimeout(nextPhrase, 80);
-      if (stage !== 3) {
-        var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 200); };
-        ric(function(){ try { renderVocab(); } catch(e){} });
-      }
+      // v53: МГНОВЕННО меняем фразу — ставим всё тяжёлое в idle после.
+      // Это радикально убирает восприятие тормозов: визуально новая фраза появляется в ближайшем кадре.
+      requestAnimationFrame(function(){ nextPhrase(); });
+      // Всё остальное — в idle после отрисовки новой фразы.
+      var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 50); };
+      ric(function(){
+        if (phraseId) {
+          try { setPhraseStage(phraseId, stage); } catch(e){}
+        }
+        if (stage === 3) {
+          try { ensureVocabEntry(true); } catch(e){}
+          try { showToast('Фраза перенесена в выученное'); } catch(e){}
+        }
+        try { renderVocab(); } catch(e){}
+        try { if (typeof updateLearnedProgress === 'function') updateLearnedProgress(); } catch(e){}
+      });
     });
   });
 
@@ -2978,7 +2965,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v52</div>
+  <div class="version-tag" aria-hidden="true">v53</div>
   <style>
     .version-tag {
       position: fixed;
