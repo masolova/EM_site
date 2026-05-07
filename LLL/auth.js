@@ -288,6 +288,8 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
       lastPushError = null;
       // v43 echo guard: запоминаем хэш того, что успешно ушло в облако
       lastPushedHash = hashPayload(_state, _vocab);
+      // v51: подавляем Realtime echo на 3 секунды — supabase пришлёт наши же изменения обратно
+      suppressRealtimeUntil = Date.now() + 3000;
     }
     updateDiagBanner();
   }
@@ -481,8 +483,13 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   // Периодический и event-driven pull, чтобы десктоп подхватывал прогресс с телефона
   let pullInterval = null;
   let pullInFlight = false;
-  async function safePull() {
+  // v51: подавляем Realtime echo своих push'ов, чтобы не делать лишний pull+merge
+  // после каждого клика (Supabase присылает изменение своей же строки обратно через подписку).
+  let suppressRealtimeUntil = 0;
+  async function safePull(reason) {
     if (pullInFlight) return;
+    // Если это Realtime от нашего собственного push'а — игнорируем.
+    if (reason === 'realtime' && Date.now() < suppressRealtimeUntil) return;
     pullInFlight = true;
     try { await pull(); } finally { pullInFlight = false; }
   }
@@ -512,7 +519,7 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
           schema: 'public',
           table: 'lll_progress',
           filter: 'user_id=eq.' + currentUser.id,
-        }, function () { safePull(); })
+        }, function () { safePull('realtime'); })
         .subscribe();
     } catch (e) { console.warn('[lll realtime]', e); }
   }

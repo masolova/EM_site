@@ -36653,7 +36653,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ziemā es spēlēju tenisu sporta zālē (telpās).",
+    "lv": "Ziemā es spēlēju tenisu sporta zālē (telpās).",
     "ru": "Зимой я играю в теннис в спортзале (в помещении).",
     "retired": false
   },
@@ -37169,7 +37169,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Dzer tēju uz terases, lasa grāmatas, spēlē galda spēles un nomierina nervus.",
+    "lv": "Dzer tēju uz terases, lasa grāmatas, spēlē galda spēles un nomierina nervus.",
     "ru": "Пьют чай на террасе, читают книги, играют в настольные игры и успокаивают нервы.",
     "retired": false
   },
@@ -38753,7 +38753,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Padomju laikā mēs pastā abonējām avīzes un žurnālus nākamajam gadam, bet tagad es to daru internetā.",
+    "lv": "Padomju laikā mēs pastā abonējām avīzes un žurnālus nākamajam gadam, bet tagad es to daru internetā.",
     "ru": "В советское время мы оформляли на почте подписку на газеты и журналы на следующий год, а сейчас я делаю это через Интернет.",
     "retired": false
   },
@@ -38933,7 +38933,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Man nepatīk iepirkties, bet dažreiz tirdzniecības centrā ir izpārdošana.",
+    "lv": "Man nepatīk iepirkties, bet dažreiz tirdzniecības centrā ir izpārdošana.",
     "ru": "Я не люблю ходить по магазинам, но иногда в торговом центре бывают распродажи.",
     "retired": false
   },
@@ -38957,7 +38957,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Viss maksā ļoti lēti!",
+    "lv": "Viss maksā ļoti lēti!",
     "ru": "Все стоит очень дешево!",
     "retired": false
   },
@@ -39341,7 +39341,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kurā pilsētas rajonā jūs dzīvojat?",
+    "lv": "Kurā pilsētas rajonā jūs dzīvojat?",
     "ru": "В каком районе города вы живете?",
     "retired": false
   },
@@ -39497,7 +39497,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kur jūs strādājat?\nKāds ir firmas nosaukums? \nCik ilgi jūs strādājat šo darbu (sājā darbavietā)?",
+    "lv": "Kur jūs strādājat?\nKāds ir firmas nosaukums? \nCik ilgi jūs strādājat šo darbu (sājā darbavietā)?",
     "ru": "Где вы работаете?\nКак называется компания? \nКак долго вы работаете на этой работе (на этом рабочем месте)?",
     "retired": false
   },
@@ -39545,7 +39545,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Ko jūs darāt darbā?\nKādi ir jūsu darba pienākumi?\nKas jums darbā jādara? \nAr ko nodarbojas jūsu uzņēmums?",
+    "lv": "Ko jūs darāt darbā?\nKādi ir jūsu darba pienākumi?\nKas jums darbā jādara? \nAr ko nodarbojas jūsu uzņēmums?",
     "ru": "Чем вы занимаетесь на работе?\nКаковы ваши должностные обязанности?\nЧто вам приходится делать на работе? \nЧем занимается ваша компания?",
     "retired": false
   },
@@ -39557,7 +39557,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Ko jūs (ne)patīk darāt darbā?\nKas jums patīk jūsu darbā?\nVai esat apmierināts ar savu pašreizējo darbu?",
+    "lv": "Ko jūs (ne)patīk darāt darbā?\nKas jums patīk jūsu darbā?\nVai esat apmierināts ar savu pašreizējo darbu?",
     "ru": "Что вам (не) нравится делать на работе?\nЧто вам нравится в вашей работе?\nВы довольны своей нынешней работой?",
     "retired": false
   },
@@ -39629,7 +39629,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kāds ir jūsu darbu kolektīvs? \nCik liels ir jūsu darba kolektīvs?\nCik cilvēku strādā kopā ar jums?\nKādas attiecības jums ir ar kolēģiem komandā?",
+    "lv": "Kāds ir jūsu darbu kolektīvs? \nCik liels ir jūsu darba kolektīvs?\nCik cilvēku strādā kopā ar jums?\nKādas attiecības jums ir ar kolēģiem komandā?",
     "ru": "Какой у вас коллектив? \nНасколько велик ваш коллектив?\nСколько человек работает вместе с вами?\nКакие у вас отношения с коллегами по команде?",
     "retired": false
   },
@@ -39701,7 +39701,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Vai jūs brauc darba komandējums?\nUz kurieni jūs braucat komandējumā̄?\nCik ilgs ir komandējums?\nKo jūs darāt komandējumā laikā? Kas ir jums mērķis?",
+    "lv": "Vai jūs brauc darba komandējums?\nUz kurieni jūs braucat komandējumā?\nCik ilgs ir komandējums?\nKo jūs darāt komandējumā laikā? Kas ir jums mērķis?",
     "ru": "Выезжаете ли вы в командировки?\nКуда вы ездите в командировки?\nКак долго длится командировка?\nЧем вы занимаетесь во время командировки? Какова ваша цель?",
     "retired": false
   },
@@ -39941,7 +39941,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kā Jūs mācījāties latviešu valodu?  \nCik ilgi?",
+    "lv": "Kā Jūs mācījāties latviešu valodu?  \nCik ilgi?",
     "ru": "Как вы изучали латышский язык?  \nКак долго?",
     "retired": false
   },
@@ -40553,7 +40553,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kā jūs kopā ar ģimene atpūšaties? \nKā jums/ jūsu ģimenei patīk atpūsties?\nAr ko kopā jūs parasti atpūšaties?",
+    "lv": "Kā jūs kopā ar ģimene atpūšaties? \nKā jums/ jūsu ģimenei patīk atpūsties?\nAr ko kopā jūs parasti atpūšaties?",
     "ru": "Как вы отдыхаете вместе с семьей? \nКак вам/вашей семье нравится отдыхать?\nС кем вы обычно отдыхаете?",
     "retired": false
   },
@@ -40709,7 +40709,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Ar kādu sporta veidu jūs nodarbojaties?\nKurš sporta veids jums patīk?",
+    "lv": "Ar kādu sporta veidu jūs nodarbojaties?\nKurš sporta veids jums patīk?",
     "ru": "Каким видом спорта вы занимаетесь?\nКакой вид спорта вам нравится?",
     "retired": false
   },
@@ -40721,7 +40721,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Un ziemā? Kur Jūs spēlējat tenisu?",
+    "lv": "Un ziemā? Kur Jūs spēlējat tenisu?",
     "ru": "А зимой? Где вы играете в теннис?",
     "retired": false
   },
@@ -40985,7 +40985,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kas jums patika/nepatika ceļojumā̄?",
+    "lv": "Kas jums patika/nepatika ceļojumā?",
     "ru": "Что вам понравилось/не понравилось в путешествии?",
     "retired": false
   },
@@ -41141,7 +41141,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kādas dāvanas jūs dāvināt citiem?\nKādas dāvanas jums patīk pašam?",
+    "lv": "Kādas dāvanas jūs dāvināt citiem?\nKādas dāvanas jums patīk pašam?",
     "ru": "Какие подарки вы дарите другим?\nКакие подарки нравятся вам самим?",
     "retired": false
   },
@@ -41153,7 +41153,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Ar kādu satiksmes līdzekli (transportu) jūs braucat uz darbu? \nKā jūs nokļūst ar jūsu darbavietā?",
+    "lv": "Ar kādu satiksmes līdzekli (transportu) jūs braucat uz darbu? \nKā jūs nokļūst ar jūsu darbavietā?",
     "ru": "На каком виде транспорта вы ездите на работу? \nКак вы добираетесь до места работы?",
     "retired": false
   },
@@ -41237,7 +41237,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kādu sabiedrisko transportu jūs izmantojat? \nUz kurieni visbiežāk braucat? \nCik ilgi jābrauc līdz...? \nVai Jūs braucat sabiedriskā transporta? Kāds veidi?\nCik maksā braukšanas biļete?",
+    "lv": "Kādu sabiedrisko transportu jūs izmantojat? \nUz kurieni visbiežāk braucat? \nCik ilgi jābrauc līdz...? \nVai Jūs braucat sabiedriskā transporta? Kāds veidi?\nCik maksā braukšanas biļete?",
     "ru": "Каким общественным транспортом вы пользуетесь? \nКуда вы чаще всего ездите? \nСколько времени нужно, чтобы доехать до. .. ? \nВы ездите на общественном транспорте? Какого рода?\nСколько стоит билет?",
     "retired": false
   },
@@ -41249,7 +41249,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Ko jūs domājat par sabiedrisko transportu savā pilsētā? Kāpēc? \nVai Jums patīk sabiedriskā transporta?",
+    "lv": "Ko jūs domājat par sabiedrisko transportu savā pilsētā? Kāpēc? \nVai Jums patīk sabiedriskā transporta?",
     "ru": "Что вы думаете об общественном транспорте в вашем городе? Почему? \nНравится ли вам общественный транспорт?",
     "retired": false
   },
@@ -43604,7 +43604,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vieniem liekas, ka putniem nav ko ēst, citiem patīk tos vērot, vēl citi grib saviem bērniem parādīt dažādus putnus.",
+    "lv": "Vieniem liekas, ka putniem nav ko ēst, citiem patīk tos vērot, vēl citi grib saviem bērniem parādīt dažādus putnus.",
     "ru": "Одним кажется, что птицам нечего есть, другим нравится за ними наблюдать, а третьи хотят показать своим детям разных птиц.",
     "retired": false,
     "src_num": 1
@@ -43617,7 +43617,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijā “modē” ir paštaisītās barotavas: no koka, piena pakām, plastmasas un stikla pudelēm, pat no konservu kārbām.",
+    "lv": "Latvijā “modē” ir paštaisītās barotavas: no koka, piena pakām, plastmasas un stikla pudelēm, pat no konservu kārbām.",
     "ru": "В Латвии в «моде» самодельные кормушки: из дерева, молочных пакетов, пластиковых и стеклянных бутылок, и даже из консервных банок.",
     "retired": false,
     "src_num": 1
@@ -43630,7 +43630,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Cilvēkam jāatceras: ja viņš sāk barot putnus, tas ir jādara regulāri katru dienu.",
+    "lv": "Cilvēkam jāatceras: ja viņš sāk barot putnus, tas ir jādara regulāri katru dienu.",
     "ru": "Важно помнить: если уж начал кормить птиц, делать это нужно регулярно, каждый день.",
     "retired": false,
     "src_num": 1
@@ -43643,7 +43643,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Putniem nedrīkst dot sālītu ēdienu un baltmaizi, vislabāk – dažādas sēklas, graudus, speķi.",
+    "lv": "Putniem nedrīkst dot sālītu ēdienu un baltmaizi, vislabāk – dažādas sēklas, graudus, speķi.",
     "ru": "Птицам нельзя давать солёную пищу и белый хлеб; лучше всего подходят различные семена, зерна и сало.",
     "retired": false,
     "src_num": 1
@@ -43656,7 +43656,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Labāk ir radīt vidi, lai putni gribētu uzturēties tuvāk cilvēku mājām, piemēram, stādīt augļu kokus un ogu krūmus, būvēt putnu būrus.",
+    "lv": "Labāk ir radīt vidi, lai putni gribētu uzturēties tuvāk cilvēku mājām, piemēram, stādīt augļu kokus un ogu krūmus, būvēt putnu būrus.",
     "ru": "Лучше создавать условия, чтобы птицы сами хотели держаться ближе к жилью: сажать плодовые деревья и ягодные кусты, строить скворечники.",
     "retired": false,
     "src_num": 1
@@ -48479,7 +48479,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kad pienāk ziema un kļūst auksti, cilvēki sāk barot putnus.",
+    "lv": "Kad pienāk ziema un kļūst auksti, cilvēki sāk barot putnus.",
     "ru": "Когда наступает зима и становится холодно, люди начинают кормить птиц.",
     "retired": false,
     "src_num": 1
@@ -48492,7 +48492,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ja tos baro ziemā, putni labprāt pie mājām dzīvos arī vasarā, kad gaisā būs daudz mušu un kukaiņu.",
+    "lv": "Ja tos baro ziemā, putni labprāt pie mājām dzīvos arī vasarā, kad gaisā būs daudz mušu un kukaiņu.",
     "ru": "Если кормить птиц зимой, они охотно будут жить рядом с домом и летом, когда в воздухе много мух и насекомых.",
     "retired": false,
     "src_num": 1
@@ -48505,7 +48505,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Mūsdienās var nopirkt gatavas barotavas, barības maisījumus, dažādus interjera priekšmetus putniem.",
+    "lv": "Mūsdienās var nopirkt gatavas barotavas, barības maisījumus, dažādus interjera priekšmetus putniem.",
     "ru": "Сегодня можно купить готовые кормушки, смеси корма и различные декоративные аксессуары для птиц.",
     "retired": false,
     "src_num": 1
@@ -48518,7 +48518,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Putnus barot ir jāsāk jau oktobrī, jo tad viņi sāk meklēt vietas, kur ziemā būs ēdiens.",
+    "lv": "Putnus barot ir jāsāk jau oktobrī, jo tad viņi sāk meklēt vietas, kur ziemā būs ēdiens.",
     "ru": "Начинать кормить птиц нужно уже в октябре — именно тогда они начинают искать места, где зимой можно будет найти еду.",
     "retired": false,
     "src_num": 1

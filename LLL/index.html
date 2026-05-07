@@ -272,17 +272,15 @@
       text-align: center;
     }
     .translate-wrap.show-text {
-      /* v50: первая строка RU стартует на той же высоте, что и LV (flex-start). */
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      /* v51: в потоке (как .phrase-col), чтобы LV и RU жили в одинаковой области. */
+      position: static;
+      width: 100%;
+      height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
-      padding: 36px 34px 84px;
+      padding: 6px 0 84px;
     }
     .translate-btn {
       cursor: pointer;
@@ -2282,25 +2280,52 @@ window.addEventListener('DOMContentLoaded', function () {
       var t = p.querySelector('.phrase') || p.querySelector('.translation-text');
       if (t) {
         fitTextToPanel(p, t);
-        entries.push(t);
+        entries.push({ panel: p, text: t });
       }
     });
     // v50: синхронизируем font-size между панелями — берём минимум.
     if (entries.length >= 2) {
       var minSize = Infinity;
-      entries.forEach(function(t){
-        var s = parseFloat(t.style.fontSize);
-        if (!s) s = parseFloat(getComputedStyle(t).fontSize) || 0;
+      entries.forEach(function(e){
+        var s = parseFloat(e.text.style.fontSize);
+        if (!s) s = parseFloat(getComputedStyle(e.text).fontSize) || 0;
         if (s && s < minSize) minSize = s;
       });
       if (minSize !== Infinity && minSize > 0) {
-        entries.forEach(function(t){
-          t.style.fontSize = minSize + 'px';
-          if (minSize < 24) t.style.lineHeight = '1.25';
-          else if (minSize < 32) t.style.lineHeight = '1.18';
-          else t.style.lineHeight = '1.14';
+        entries.forEach(function(e){
+          e.text.style.fontSize = minSize + 'px';
+          if (minSize < 24) e.text.style.lineHeight = '1.25';
+          else if (minSize < 32) e.text.style.lineHeight = '1.18';
+          else e.text.style.lineHeight = '1.14';
         });
       }
+    }
+    // v51: вертикальное выравнивание.
+    // Нижняя полоса (84px) — место под кнопку «Прослушать». В верхней зоне центрируем короткие фразы.
+    // Длинные (которые не влезают в верхнюю зону) — прижимаем к верху (flex-start).
+    // Решение «короткая/длинная» — одинаковое для обеих панелей (чтобы LV и RU выравнивались одинаково).
+    if (entries.length >= 1) {
+      // v51: «длинная» = высота фразы > половины верхней зоны. Тогда выравниваем flex-start обе,
+      // чтобы первые строки были на одной высоте (иначе разная высота LV/RU разъедет center).
+      // BTN_RESERVE вычисляем динамически: 84 если есть видимая audio-btn, иначе 0.
+      var anyLong = false;
+      entries.forEach(function(e){
+        var audioBtn = e.panel.querySelector('.audio-btn');
+        var reserve = (audioBtn && audioBtn.offsetParent) ? 84 : 0;
+        var panelH = e.panel.clientHeight;
+        var topZone = panelH - reserve;
+        var textH = e.text.getBoundingClientRect().height;
+        if (textH > topZone / 2) anyLong = true;
+      });
+      entries.forEach(function(e){
+        var container = e.text.closest('.phrase-col') || e.text.closest('.translate-wrap');
+        if (!container) return;
+        if (anyLong) {
+          container.style.justifyContent = 'flex-start';
+        } else {
+          container.style.justifyContent = 'center';
+        }
+      });
     }
   }
   window.fitAllPanels = fitAllPanels;
@@ -2929,7 +2954,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v50</div>
+  <div class="version-tag" aria-hidden="true">v51</div>
   <style>
     .version-tag {
       position: fixed;
