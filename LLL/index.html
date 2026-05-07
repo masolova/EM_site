@@ -2164,7 +2164,9 @@ window.addEventListener('DOMContentLoaded', function () {
     if (markLearned) found.learned = true;
     saveVocab();
     updateBadge();
-    renderVocab();
+    // v54: не перерисовываем словарь если он закрыт. Откроется — тогда и перерисуется.
+    var vo = document.getElementById('vocabOverlay');
+    if (vo && vo.classList.contains('open')) renderVocab();
   }
 
   // Синк иконки сердца на карточке.
@@ -2679,22 +2681,22 @@ window.addEventListener('DOMContentLoaded', function () {
       else if (btn.classList.contains('green')) stage = 3;
       srsButtons.forEach(function (b) { b.classList.remove('is-selected'); });
       btn.classList.add('is-selected');
-      // v53: МГНОВЕННО меняем фразу — ставим всё тяжёлое в idle после.
-      // Это радикально убирает восприятие тормозов: визуально новая фраза появляется в ближайшем кадре.
-      requestAnimationFrame(function(){ nextPhrase(); });
-      // Всё остальное — в idle после отрисовки новой фразы.
-      var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 50); };
-      ric(function(){
-        if (phraseId) {
-          try { setPhraseStage(phraseId, stage); } catch(e){}
-        }
-        if (stage === 3) {
-          try { ensureVocabEntry(true); } catch(e){}
-          try { showToast('Фраза перенесена в выученное'); } catch(e){}
-        }
-        try { renderVocab(); } catch(e){}
-        try { if (typeof updateLearnedProgress === 'function') updateLearnedProgress(); } catch(e){}
-      });
+      // v54: простая синхронная логика — как было до v53. setPhraseStage записывает в LS,
+      // push в Supabase идёт debounce'ом (200мс) — async, не блокирует. nextPhrase синхронно.
+      // НЕ перерисовываем словарь после каждого клика — это создавало сотни DOM-нод и забивало
+      // main thread, из-за чего перевод/словарь/тени тормозили.
+      if (phraseId) setPhraseStage(phraseId, stage);
+      if (stage === 3) {
+        ensureVocabEntry(true);
+        showToast('Фраза перенесена в выученное');
+      }
+      nextPhrase();
+      // Словарь перерисуем ТОЛЬКО если он сейчас открыт. Иначе — лень-рендер при следующем открытии.
+      var vo = document.getElementById('vocabOverlay');
+      if (vo && vo.classList.contains('open')) {
+        var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 200); };
+        ric(function(){ try { renderVocab(); } catch(e){} });
+      }
     });
   });
 
@@ -2887,11 +2889,17 @@ window.addEventListener('DOMContentLoaded', function () {
       try { stageProgress = JSON.parse(localStorage.getItem('lll2_stage_progress') || '{}'); } catch (e) {}
     }
     updateBadge();
+    // v54: renderVocab и buildHeatmap — только если соотв. оверлей открыт. Иначе — бессмысленно жрёт main thread.
     var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 100); };
     ric(function(){
-      try { renderVocab(); } catch(e){}
-      try { updateStreakSummary(); } catch(e){}
-      try { buildHeatmap(); } catch(e){}
+      try {
+        var vo = document.getElementById('vocabOverlay');
+        if (vo && vo.classList.contains('open')) renderVocab();
+      } catch(e){}
+      try {
+        var so = document.getElementById('streakOverlay');
+        if (so && so.classList.contains('open')) { updateStreakSummary(); buildHeatmap(); }
+      } catch(e){}
       try { if (typeof updateLearnedProgress === 'function') updateLearnedProgress(); } catch(e){}
     });
   });
@@ -2965,7 +2973,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v53</div>
+  <div class="version-tag" aria-hidden="true">v54</div>
   <style>
     .version-tag {
       position: fixed;
