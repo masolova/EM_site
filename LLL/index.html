@@ -355,33 +355,26 @@
     .srs-fill {
       width: 100%;
       height: 100%;
-      padding: 10px 12px 12px;
+      padding: 12px;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      align-items: stretch;
+      justify-content: center;
+      align-items: center;
       min-width: 0;
       min-height: 0;
     }
-    .srs-top {
-      display: flex;
-      justify-content: flex-end;
-      font-size: clamp(20px, 1.65vw, 28px);
-      line-height: 1;
-      font-weight: 800;
-      opacity: .92;
-      letter-spacing: -.03em;
-    }
+    /* v58: бадж баллов убран — оставил для обратной совместимости но скрываю */
+    .srs-top { display: none; }
     .srs-label {
-      flex: 1;
+      flex: 0 0 auto;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
       font-size: clamp(28px, 2.8vw, 46px);
-      line-height: .94;
+      line-height: 1;
       font-weight: 900;
-      letter-spacing: -.06em;
+      letter-spacing: -.04em;
       word-break: break-word;
       hyphens: auto;
       text-wrap: balance;
@@ -1260,28 +1253,35 @@
       .legacy-header .header-right { margin-right: 100px; }
 
       /* (3.2) Главная область — вертикальный поток; адаптивные отступы и гапы. */
-      /* v56: уменьшены paddings/gaps чтобы learned-progress влезала без скролла. */
+      /* v58: page занимает всю оставшуюся высоту после header'a (flex:1). Полоса прогресса прижата к низу. */
       .page {
-        padding: clamp(8px, 1.4vh, 14px) 14px clamp(10px, 2vh, 18px);
+        padding: clamp(8px, 1.4vh, 14px) 14px 0;
         gap: clamp(8px, 1.4vh, 14px);
         grid-template-rows: none;
         display: flex;
         flex-direction: column;
         min-height: 0;
-        height: 100dvh;
+        flex: 1 1 auto;
+        height: auto;
         overflow: hidden;
+      }
+      /* v58: app-shell flex-колонка на весь экран. */
+      body, .app, #app, main {
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
+        min-height: 0;
       }
       .labels { display: none; }
 
       .content {
         grid-template-columns: 1fr;
-        /* v56: равные блоки LV и RU на мобиле — 50/50 по высоте в доступном пространстве .content. */
         grid-template-rows: 1fr 1fr;
         gap: 10px;
-        flex: 1 1 0;
+        flex: 1 1 auto;
         min-height: 0;
-        /* v57: сжали до 42vh — освобождает место под крупные SRS-кнопки. */
-        max-height: min(42vh, 320px);
+        /* v58: отдаём больше высоты панелям освобождённому от padding-bottom */
+        max-height: min(46vh, 360px);
       }
       /* v56: в панели LV audio-btn скрыт на мобиле (используется круглая слева), большой padding-bottom больше не нужен. */
       .panel .phrase-col {
@@ -1317,35 +1317,44 @@
         overflow: hidden;
       }
       .panel > div { width: 100%; min-width: 0; }
+      /* v60: вертикальное центрирование фразы */
+      .panel > .phrase-col,
+      .panel > .translate-wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .panel > .phrase-col > .phrase-row { display: contents; }
+      .panel > .phrase-col { padding: 0; }
 
-      /* Сердечко «избранное» на карточке — чуть мельче */
-      .panel .card-fav-btn { top: 10px; right: 10px; width: 32px; height: 32px; }
+      /* v59: сердечко поднято выше (top:6), размер не меняется */
+      .panel .card-fav-btn { top: 6px; right: 10px; width: 32px; height: 32px; }
       .panel .card-fav-btn svg { width: 22px; height: 22px; }
 
-      /* v57: play-кнопка absolute в верхнем-левом углу панели (зеркально сердечку справа), */
-      /* фраза занимает ВСЮ ширину панели — не теряем колонку под audio-btn. */
+      /* v60: play-кнопка 44×44 absolute в правом-нижнем углу. Сердечко — верх-справа. */
       .phrase-row {
         display: contents;
       }
       .audio-btn-mobile {
         position: absolute;
-        top: 10px;
-        left: 10px;
+        bottom: 10px;
+        right: 10px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 32px;
-        height: 32px;
+        width: 44px;
+        height: 44px;
         border-radius: 50%;
         border: 0;
         background: var(--brand);
         color: #fff;
         cursor: pointer;
-        box-shadow: 0 4px 10px rgba(153, 27, 27, 0.22);
+        box-shadow: 0 6px 14px rgba(153, 27, 27, 0.28);
         transition: transform .14s ease, box-shadow .14s ease;
         z-index: 2;
       }
-      .audio-btn-mobile svg { width: 16px; height: 16px; }
+      .audio-btn-mobile svg { width: 20px; height: 20px; }
       .audio-btn-mobile:active { transform: scale(.94); }
       .audio-btn-mobile.is-playing { background: #7d1414; }
       .audio-btn-mobile:disabled, .audio-btn-mobile[disabled] {
@@ -1360,16 +1369,74 @@
       /* v56: блоки стали меньше (170хвм вместо 238) — базовый размер чуть меньше, чтобы длинные фразы не наезжали на сердечко/audio-btn. */
       .phrase {
         font-size: clamp(18px, 3vh, 24px);
-        line-height: 1.25;
+        line-height: 1.3;
         letter-spacing: -.02em;
         max-width: none;
         font-weight: 700;
         text-align: center;
-        /* v57: симметричный резерв под audio-btn (слева) и сердечко (справа) */
-        padding-left: 8px;
-        padding-right: 8px;
+        padding: 0;
       }
-      .panel.lv .phrase { padding-top: 4px; }
+      .panel:first-of-type .phrase,
+      .panel:nth-of-type(2) .translation-text,
+      .panel:nth-of-type(2) .phrase {
+        padding-bottom: 0;
+      }
+      .panel:first-of-type .phrase-col { padding-bottom: 0; }
+
+      /* v61: симметричные float-зоны вокруг кнопок.
+         Каждая реальная кнопка получает зеркальную невидимую float-зону на противоположной стороне,
+         чтобы line box оставалась симметричной относительно центра карточки и text-align:center
+         центрировал каждую строку относительно ПОЛНОЙ ширины. */
+
+      /* Heart top-right (LV-панель): 36×36 в начале текста — float left + float right одинаковые. */
+      .panel:first-of-type .phrase .float-heart-left,
+      .panel:first-of-type .phrase .float-heart-right {
+        width: 36px;
+        height: 36px;
+        shape-outside: inset(0);
+        pointer-events: none;
+      }
+      .panel:first-of-type .phrase .float-heart-left { float: left; }
+      .panel:first-of-type .phrase .float-heart-right { float: right; }
+
+      /* Play bottom-right (LV-панель): два пушера высотой = высота_текста - 50, потом две avoid-зоны 50×50 с clear. */
+      .panel:first-of-type .phrase .float-push-left {
+        float: left;
+        width: 0;
+        height: calc(100% - 50px);
+      }
+      .panel:first-of-type .phrase .float-push-right {
+        float: right;
+        width: 0;
+        height: calc(100% - 50px);
+      }
+      .panel:first-of-type .phrase .float-avoid-play-left {
+        float: left;
+        clear: left;
+        width: 50px;
+        height: 50px;
+        shape-outside: inset(0);
+        pointer-events: none;
+      }
+      .panel:first-of-type .phrase .float-avoid-play-right {
+        float: right;
+        clear: right;
+        width: 50px;
+        height: 50px;
+        shape-outside: inset(0);
+        pointer-events: none;
+      }
+      /* phrase-col занимает всю оставшуюся высоту панели (flex:1), чтобы push-spacers работали относительно ПОЛНОЙ высоты. */
+      .panel:first-of-type .phrase-col { display: block; flex: 1 1 auto; align-self: stretch; padding: 0; min-height: 0; }
+      .panel:first-of-type .phrase {
+        height: 100%;
+        padding-top: var(--phrase-pad-top, 0px);
+        padding-bottom: var(--phrase-pad-bot, 0px);
+        box-sizing: border-box;
+      }
+      /* RU панель — без float'ов, просто центрированный текст */
+      /* RU панель: text-align:center тоже */
+      .panel:nth-of-type(2) .translation-text { text-align: center; }
       /* (3.3) Длинные фразы — меньше размер, без жирного. ОДИН размер для LV и RU. */
       .panel.is-long .phrase,
       .panel.is-long .translation-text {
@@ -1428,21 +1495,23 @@
         border-radius: 14px;
         box-shadow: 0 4px 10px rgba(82, 46, 56, 0.08);
       }
-      .srs-fill { padding: 10px 10px 10px; }
-      .srs-top { font-size: 14px; }
+      .srs-fill { padding: 8px; }
+      /* v58: бадж скрыт на всех разрешениях */
+      .srs-top { display: none; }
       .srs-label {
-        font-size: 17px;
-        font-weight: 800;
-        letter-spacing: -.02em;
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: -.03em;
       }
-      /* v56: learned-progress внизу — компактнее. */
+      /* v58: learned-progress прижата к низу экрана (margin-top:auto), safe-area учтена. */
       .learned-progress {
         flex: 0 0 auto;
-        padding: 6px 0 0;
+        margin-top: auto;
+        padding: 6px 0 calc(6px + env(safe-area-inset-bottom, 0px));
         gap: 4px;
       }
       .learned-progress__label { font-size: 12px; }
-      .learned-progress__track { height: 6px; }
+      .learned-progress__track { height: 8px; }
 
       /* ──────────────────────────────────── */
       /* СЛОВАРЬ НА МОБИЛЕ                              */
@@ -2327,6 +2396,11 @@ window.addEventListener('DOMContentLoaded', function () {
     // Сброс inline-стилей и старт с CSS-дефолта
     textEl.style.fontSize = '';
     textEl.style.lineHeight = '';
+    // v61: сбрасываем динамические padding от предыдущего centerPhraseVertically, иначе contentAvail будет от предыдущей фразы.
+    if (textEl.classList && textEl.classList.contains('phrase')) {
+      textEl.style.setProperty('--phrase-pad-top', '0px');
+      textEl.style.setProperty('--phrase-pad-bot', '0px');
+    }
     var startSize = parseFloat(getComputedStyle(textEl).fontSize) || 36;
     var minSize = 11;
     var size = startSize;
@@ -2335,6 +2409,7 @@ window.addEventListener('DOMContentLoaded', function () {
     // которая лежит в том же wrap-блоке, но не всегда попадает в panel.scrollHeight при overflow:hidden.
     var wrap = panel.firstElementChild;
     var audioBtn = panel.querySelector('.audio-btn');
+    var audioBtnMobile = panel.querySelector('.audio-btn-mobile');
     // Сбрасываем предыдущее сжатие кнопки перед перерасчётом.
     if (audioBtn) {
       audioBtn.style.marginTop = '';
@@ -2354,6 +2429,26 @@ window.addEventListener('DOMContentLoaded', function () {
       if (audioBtn && audioBtn.offsetParent) {
         var bRect = audioBtn.getBoundingClientRect();
         if (rect.bottom > bRect.top - 8) return true;
+      }
+      // v61: внутреннее переполнение через Range по text-node — сравниваем высоту реальных строк с высотой content-area фразы (без padding).
+      // Используем Range потому что .phrase имеет height:100% и его scrollHeight не покажет реальный текст.
+      if (textEl.classList && textEl.classList.contains('phrase')) {
+        var tn = Array.from(textEl.childNodes).find(function(n){ return n.nodeType === 3 && n.textContent.trim().length > 0; });
+        if (tn) {
+          var rng = document.createRange();
+          rng.selectNodeContents(tn);
+          var rcs = Array.from(rng.getClientRects()).filter(function(r){ return r.height > 0; });
+          if (rcs.length > 0) {
+            var firstT = Math.min.apply(null, rcs.map(function(r){ return r.top; }));
+            var lastB = Math.max.apply(null, rcs.map(function(r){ return r.bottom; }));
+            var textH = lastB - firstT;
+            var csTE = getComputedStyle(textEl);
+            var contentAvail = textEl.clientHeight - parseFloat(csTE.paddingTop) - parseFloat(csTE.paddingBottom);
+            if (textH > contentAvail + 2) return true;
+          }
+        }
+      } else {
+        if (textEl.scrollHeight > textEl.clientHeight + 2) return true;
       }
       // Переполнение по ширине
       if (textEl.scrollWidth > textEl.clientWidth + 1) return true;
@@ -2385,6 +2480,36 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     }
   }
+  // v61: вертикальное центрирование фразы в LV-панели на мобиле через динамический padding-top.
+  // Нужно именно так, потому что flex justify-center игнорирует floats, а нам нужны float-зоны для обтекания кнопок.
+  function centerPhraseVertically() {
+    if (!window.matchMedia('(max-width: 600px)').matches) return;
+    var lvPanel = document.querySelector('.panel:first-of-type');
+    if (!lvPanel) return;
+    var phrase = lvPanel.querySelector('.phrase');
+    if (!phrase) return;
+    // Сбросим перед измерением — равные отступы по умолчанию
+    phrase.style.setProperty('--phrase-pad-top', '0px');
+    phrase.style.setProperty('--phrase-pad-bot', '0px');
+    // Считаем высоту реального текста через Range по text-node
+    var textNode = Array.from(phrase.childNodes).find(function(n){ return n.nodeType === 3 && n.textContent.trim().length > 0; });
+    if (!textNode) return;
+    var range = document.createRange();
+    range.selectNodeContents(textNode);
+    var rects = Array.from(range.getClientRects()).filter(function(r){ return r.height > 0; });
+    if (rects.length === 0) return;
+    var firstTop = Math.min.apply(null, rects.map(function(r){ return r.top; }));
+    var lastBottom = Math.max.apply(null, rects.map(function(r){ return r.bottom; }));
+    var textHeight = lastBottom - firstTop;
+    // Доступная высота — вся высота фразы (без padding'ов, мы их сбросили)
+    var available = phrase.clientHeight;
+    var extraSpace = available - textHeight;
+    var pad = Math.max(0, Math.floor(extraSpace / 2));
+    phrase.style.setProperty('--phrase-pad-top', pad + 'px');
+    phrase.style.setProperty('--phrase-pad-bot', pad + 'px');
+  }
+  window.centerPhraseVertically = centerPhraseVertically;
+
   function fitAllPanels() {
     var panels = document.querySelectorAll('.panel');
     var entries = [];
@@ -2433,6 +2558,8 @@ window.addEventListener('DOMContentLoaded', function () {
         ruWrap.style.justifyContent = '';
       }
     }
+    // v61: вертикальное центрирование LV-фразы на мобиле
+    if (typeof centerPhraseVertically === 'function') centerPhraseVertically();
   }
   window.fitAllPanels = fitAllPanels;
   function applyLengthClasses(item) {
@@ -2443,6 +2570,16 @@ window.addEventListener('DOMContentLoaded', function () {
   function renderPhrase() {
     const item = currentPhrase();
     phraseEl.textContent = normalizeTranslation(item.lv);
+    // v61: инжектим симметричные float-spans в начало .phrase (только на мобиле эти классы имеют размеры).
+    if (window.matchMedia('(max-width: 600px)').matches) {
+      var floatHTML = '<span class="float-heart-left" aria-hidden="true"></span>'
+        + '<span class="float-heart-right" aria-hidden="true"></span>'
+        + '<span class="float-push-left" aria-hidden="true"></span>'
+        + '<span class="float-push-right" aria-hidden="true"></span>'
+        + '<span class="float-avoid-play-left" aria-hidden="true"></span>'
+        + '<span class="float-avoid-play-right" aria-hidden="true"></span>';
+      phraseEl.insertAdjacentHTML('afterbegin', floatHTML);
+    }
     applyLengthClasses(item);
     translationOpen = false;
     renderTranslation();
@@ -3080,7 +3217,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v57</div>
+  <div class="version-tag" aria-hidden="true">v62</div>
   <style>
     .version-tag {
       position: fixed;
