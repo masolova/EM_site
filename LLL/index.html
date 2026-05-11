@@ -198,6 +198,7 @@
       font-size: clamp(30px, 2.7vw, 46px);
       line-height: 1.14;
       letter-spacing: -.03em;
+      width: 100%;
       max-width: 100%;
       margin: 0 auto;
       text-align: center;
@@ -307,6 +308,7 @@
     }
     .translation-text {
       display: none;
+      width: 100%;
       max-width: 100%;
       margin: 0 auto;
       text-align: center;
@@ -2423,16 +2425,18 @@ window.addEventListener('DOMContentLoaded', function () {
       var rect = textEl.getBoundingClientRect();
       var pRect = panel.getBoundingClientRect();
       // Верх/низ фразы выходит за панель (с запасом 4px)
-      if (rect.top < pRect.top + 4) return true;
-      if (rect.bottom > pRect.bottom - 4) return true;
+      if (rect.top < pRect.top + 4) { if (textEl.classList.contains('phrase')) console.log('OV top', rect.top, pRect.top); return true; }
+      if (rect.bottom > pRect.bottom - 4) { if (textEl.classList.contains('phrase')) console.log('OV bot', rect.bottom, pRect.bottom); return true; }
       // Наезд на кнопку «Прослушать» (запас 8px)
       if (audioBtn && audioBtn.offsetParent) {
         var bRect = audioBtn.getBoundingClientRect();
-        if (rect.bottom > bRect.top - 8) return true;
+        if (rect.bottom > bRect.top - 8) { if (textEl.classList.contains('phrase')) console.log('OV btn', rect.bottom, bRect.top); return true; }
       }
-      // v61: внутреннее переполнение через Range по text-node — сравниваем высоту реальных строк с высотой content-area фразы (без padding).
-      // Используем Range потому что .phrase имеет height:100% и его scrollHeight не покажет реальный текст.
-      if (textEl.classList && textEl.classList.contains('phrase')) {
+      // v61: внутреннее переполнение через Range по text-node.
+      // v65: ТОЛЬКО на мобиле — там .phrase имеет height:100%, и scrollHeight не покажет реальный текст.
+      // На десктопе .phrase высоты 1 line-height — Range врёт из-за font-metrics диакритик (textH > clientH на ~4-6px всегда).
+      var isMobileFit = window.matchMedia('(max-width: 600px)').matches;
+      if (isMobileFit && textEl.classList && textEl.classList.contains('phrase')) {
         var tn = Array.from(textEl.childNodes).find(function(n){ return n.nodeType === 3 && n.textContent.trim().length > 0; });
         if (tn) {
           var rng = document.createRange();
@@ -2448,14 +2452,17 @@ window.addEventListener('DOMContentLoaded', function () {
           }
         }
       } else {
-        if (textEl.scrollHeight > textEl.clientHeight + 2) return true;
+        // v65: tolerance 6px для латышских диакритик (я, ё, ї) — font-metrics выходят за line-height на ~4px
+        if (textEl.scrollHeight > textEl.clientHeight + 6) return true;
       }
       // Переполнение по ширине
       if (textEl.scrollWidth > textEl.clientWidth + 1) return true;
       return false;
     }
     while (iterations < 60) {
-      if (!isOverflow()) break;
+      var _ov = isOverflow();
+      if (textEl.classList.contains('phrase')) console.log('FIT iter', iterations, 'size', size, 'ov', _ov);
+      if (!_ov) break;
       if (size <= minSize) break;
       size = Math.max(minSize, size - 1);
       textEl.style.fontSize = size + 'px';
@@ -3217,7 +3224,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v62</div>
+  <div class="version-tag" aria-hidden="true">v65</div>
   <style>
     .version-tag {
       position: fixed;
