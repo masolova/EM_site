@@ -2374,7 +2374,13 @@ window.addEventListener('DOMContentLoaded', function () {
     saveVocab();
     updateBadge();
     syncCardFav();
-    renderVocab();
+    // v66: НЕ перерисовываем словарь если он закрыт — иначе главный поток блокируется на 1-2с
+    // на больших словарях, SRS-кнопки и сердце визуально «замирают» (нет тени/анимации :active).
+    var vo = document.getElementById('vocabOverlay');
+    if (vo && vo.classList.contains('open')) {
+      var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 200); };
+      ric(function(){ try { renderVocab(); } catch(e){} });
+    }
   }
   if (cardFavBtn) cardFavBtn.addEventListener('click', toggleCurrentFav);
   function renderTranslation() {
@@ -2425,12 +2431,12 @@ window.addEventListener('DOMContentLoaded', function () {
       var rect = textEl.getBoundingClientRect();
       var pRect = panel.getBoundingClientRect();
       // Верх/низ фразы выходит за панель (с запасом 4px)
-      if (rect.top < pRect.top + 4) { if (textEl.classList.contains('phrase')) console.log('OV top', rect.top, pRect.top); return true; }
-      if (rect.bottom > pRect.bottom - 4) { if (textEl.classList.contains('phrase')) console.log('OV bot', rect.bottom, pRect.bottom); return true; }
+      if (rect.top < pRect.top + 4) return true;
+      if (rect.bottom > pRect.bottom - 4) return true;
       // Наезд на кнопку «Прослушать» (запас 8px)
       if (audioBtn && audioBtn.offsetParent) {
         var bRect = audioBtn.getBoundingClientRect();
-        if (rect.bottom > bRect.top - 8) { if (textEl.classList.contains('phrase')) console.log('OV btn', rect.bottom, bRect.top); return true; }
+        if (rect.bottom > bRect.top - 8) return true;
       }
       // v61: внутреннее переполнение через Range по text-node.
       // v65: ТОЛЬКО на мобиле — там .phrase имеет height:100%, и scrollHeight не покажет реальный текст.
@@ -2460,9 +2466,7 @@ window.addEventListener('DOMContentLoaded', function () {
       return false;
     }
     while (iterations < 60) {
-      var _ov = isOverflow();
-      if (textEl.classList.contains('phrase')) console.log('FIT iter', iterations, 'size', size, 'ov', _ov);
-      if (!_ov) break;
+      if (!isOverflow()) break;
       if (size <= minSize) break;
       size = Math.max(minSize, size - 1);
       textEl.style.fontSize = size + 'px';
@@ -3224,7 +3228,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v65</div>
+  <div class="version-tag" aria-hidden="true">v66</div>
   <style>
     .version-tag {
       position: fixed;
