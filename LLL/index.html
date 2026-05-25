@@ -1256,6 +1256,8 @@
 
       /* (3.2) Главная область — вертикальный поток; адаптивные отступы и гапы. */
       /* v58: page занимает всю оставшуюся высоту после header'a (flex:1). Полоса прогресса прижата к низу. */
+      /* v67: убрал overflow:hidden — он обрезал .learned-progress на устройствах, где flex-children просили больше высоты, чем 100dvh.
+         Места на экране достаточно, прогресс-бар теперь виден. Верхние блоки (header/чипы/панели/SRS) не трогаем. */
       .page {
         padding: clamp(8px, 1.4vh, 14px) 14px 0;
         gap: clamp(8px, 1.4vh, 14px);
@@ -1265,7 +1267,7 @@
         min-height: 0;
         flex: 1 1 auto;
         height: auto;
-        overflow: hidden;
+        overflow: visible;
       }
       /* v58: app-shell flex-колонка на весь экран. */
       body, .app, #app, main {
@@ -1506,10 +1508,11 @@
         letter-spacing: -.03em;
       }
       /* v58: learned-progress прижата к низу экрана (margin-top:auto), safe-area учтена. */
+      /* v68: подняли полосу выше нижней панели Safari (адресная строка отнимает ~90px на iPhone). */
       .learned-progress {
         flex: 0 0 auto;
         margin-top: auto;
-        padding: 6px 0 calc(6px + env(safe-area-inset-bottom, 0px));
+        padding: 6px 0 calc(96px + env(safe-area-inset-bottom, 0px));
         gap: 4px;
       }
       .learned-progress__label { font-size: 12px; }
@@ -2804,6 +2807,9 @@ window.addEventListener('DOMContentLoaded', function () {
           : (dowLabel + ', ' + dateLabel + ' — ' + count + ' ' + phrasesLabel);
         cell.addEventListener('mouseenter', showHmTip);
         cell.addEventListener('mouseleave', hideHmTip);
+        // v67: на тач-устройствах показываем плашку по тапу. Тап по другой ячейке заменяет плашку,
+        // тап вне календаря или закрытие оверлея — прячет.
+        cell.addEventListener('click', showHmTip);
         // Кликом восстанавливаем ТОЛЬКО прошлые пустые дни (не сегодня, не будущее, не выполненные)
         if (!done && !isFuture && !isToday) {
           cell.classList.add('hm-recover');
@@ -3004,7 +3010,11 @@ window.addEventListener('DOMContentLoaded', function () {
   });
   vocabClose.addEventListener('click', function () { vocabOverlay.classList.remove('open'); });
   streakBtn.addEventListener('click', function () { streakOverlay.classList.add('open'); updateStreakSummary(); buildHeatmap(); });
-  streakClose.addEventListener('click', function () { streakOverlay.classList.remove('open'); });
+  streakClose.addEventListener('click', function () { streakOverlay.classList.remove('open'); hideHmTip(); });
+  // v67: тап вне ячейки внутри оверлея — прячем плашку (на тач-устройстве mouseleave не срабатывает).
+  streakOverlay.addEventListener('click', function (ev) {
+    if (!ev.target.closest('.hm-cell')) hideHmTip();
+  });
   vocabSearch.addEventListener('input', function (e) { vocabSearchQuery = e.target.value.trim().toLowerCase(); renderVocab(); });
   document.querySelectorAll('.vocab-filter-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
