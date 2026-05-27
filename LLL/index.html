@@ -1524,8 +1524,8 @@
         position: fixed;
         left: 0;
         right: 0;
-        /* v76-r2: измерено по скрину IMG_1788: полоса висела на 106pt НАД Safari URL-bar. Опускаем ровно на эту величину. */
-        bottom: -106px;
+        /* v76-r3: возвращаем bottom: 0. SRS-кнопки подняты выше через margin-bottom на .srs-zone — полоса встанет в освобождённый 73pt-зазор над URL-bar. */
+        bottom: 0;
         height: var(--learned-progress-h);
         padding: 4px 14px 4px;
         gap: 4px;
@@ -3602,7 +3602,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v76-r2</div>
+  <div class="version-tag" aria-hidden="true">v76-r3</div>
   <style>
     .version-tag {
       position: fixed;
