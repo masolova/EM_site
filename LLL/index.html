@@ -1263,8 +1263,8 @@
       /* v67: убрал overflow:hidden — он обрезал .learned-progress на устройствах, где flex-children просили больше высоты, чем 100dvh.
          Места на экране достаточно, прогресс-бар теперь виден. Верхние блоки (header/чипы/панели/SRS) не трогаем. */
       .page {
-        /* v75-r8: padding-bottom = высота полосы. Отодвигает SRS-кнопки выше полосы. */
-        padding: clamp(8px, 1.4vh, 14px) 14px var(--learned-progress-h);
+        /* v75-r9: padding-bottom = высота полосы + safe-area iPhone. */
+        padding: clamp(8px, 1.4vh, 14px) 14px calc(var(--learned-progress-h) + env(safe-area-inset-bottom, 0px));
         gap: clamp(8px, 1.4vh, 14px);
         grid-template-rows: none;
         display: flex;
@@ -1291,8 +1291,8 @@
         min-height: 0;
         /* v58: отдаём больше высоты панелям освобождённому от padding-bottom */
         /* v69: вернули панелям высоту — полоса прогресса теперь садится у самого края видимой зоны, а не съедает место. */
-        /* v75-r7: max-height не вычитает полосу — полоса уже зарезервирована в .page padding-bottom. */
-        max-height: min(58vh, 460px);
+        /* v75-r9: СОКРАЩАЕМ .content на ПОЛНУЮ высоту полосы + safe-area iPhone. 2 панели делят это пополам автоматически. */
+        max-height: calc(min(58vh, 460px) - var(--learned-progress-h) - env(safe-area-inset-bottom, 0px));
       }
       /* v56: в панели LV audio-btn скрыт на мобиле (используется круглая слева), большой padding-bottom больше не нужен. */
       .panel .phrase-col {
@@ -1516,15 +1516,16 @@
       }
       /* v58: learned-progress прижата к низу экрана (margin-top:auto), safe-area учтена. */
       /* v69: полоса опущена к самому краю видимой зоны. padding-bottom минимальный — без зазора. */
-      /* v75-r8: ПОЛОСА прижата к самому низу viewport (без safe-area-зазора в padding). Высота фиксирована в CSS-переменной. */
-      :root { --learned-progress-h: 44px; }
+      /* v75-r9: ПОЛОСА прижата к самому низу viewport. Высота реальная = 74px (покрывает overlap с кнопками + влияние safe-area). Каждый текстовый блок сокращается на 74/2 = 37px. */
+      :root { --learned-progress-h: 74px; }
       .learned-progress {
         position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
-        height: var(--learned-progress-h);
-        padding: 4px 14px 4px;
+        /* Высота самой полосы не включает safe-area, но padding-bottom растягивается на safe-area — тогда фон полосы прикрывает Home Indicator. */
+        height: calc(var(--learned-progress-h) + env(safe-area-inset-bottom, 0px));
+        padding: 4px 14px calc(4px + env(safe-area-inset-bottom, 0px));
         gap: 4px;
         background: #fafaf9;
         z-index: 50;
@@ -3599,7 +3600,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v75-r8</div>
+  <div class="version-tag" aria-hidden="true">v75-r10</div>
   <style>
     .version-tag {
       position: fixed;
