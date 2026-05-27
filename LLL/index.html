@@ -1524,8 +1524,8 @@
         position: fixed;
         left: 0;
         right: 0;
-        bottom: 0;
-        /* v75-r11: БЕЗ safe-area в самой полосе. Track сидит в самом низу viewport, без зазора снизу. */
+        /* v76-r2: измерено по скрину IMG_1788: полоса висела на 106pt НАД Safari URL-bar. Опускаем ровно на эту величину. */
+        bottom: -106px;
         height: var(--learned-progress-h);
         padding: 4px 14px 4px;
         gap: 4px;
@@ -3602,7 +3602,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v76</div>
+  <div class="version-tag" aria-hidden="true">v76-r2</div>
   <style>
     .version-tag {
       position: fixed;
