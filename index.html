@@ -1,178 +1,3622 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Елена Масолова</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Lena Learns Latvian</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=16">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%239B1B30'/%3E%3Crect y='12' width='32' height='8' fill='white'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=17">
+  <meta name="apple-mobile-web-app-title" content="LLL">
+  <meta name="theme-color" content="#9b1b30">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="alternate" type="application/rss+xml" title="Елена Масолова — блог (RSS)" href="/feed.xml">
-  <script defer src="assets/site.js"></script>
-  <script defer src="assets/subscribe.js"></script>
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
-  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="/assets/favicon/site.webmanifest">
-  <meta name="theme-color" content="#1a1a1a">
-  <link rel="prefetch" href="/games/connections/categories-bank.js" as="script">
-  <link rel="prefetch" href="/games/connections/categories-en.js" as="script">
-  <link rel="prefetch" href="/games/connections/" as="document">
+  <!-- v55: preload Manrope-700 latin-ext (латышский) и cyrillic (русский) — чтобы фразы сразу были жирными, без swap с system-ui -->
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE9_M-bnTfc7AGraJwA.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="https://fonts.gstatic.com/s/manrope/v20/xn7_YHE41ni1AdIRqAuZuw1Bx9mbZk4aE9_G-bnTfc7AGraJwA.woff2">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f4ede6;
+      --shell: #fbf7f2;
+      --shell-line: #e2d3ca;
+      --panel: #fffdfa;
+      --panel-line: #e4d7cf;
+      --text: #452a33;
+      --muted: #9a8586;
+      --brand: #7a3340;
+      --red: #c84444;
+      --orange: #dd7a33;
+      --yellowgreen: #96b83f;
+      --green: #2f9658;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0 auto;
+      font-family: Manrope, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #fbf6f1 0%, var(--bg) 60%, #efe6de 100%);
+      color: var(--text);
+      overflow: hidden;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    button { touch-action: manipulation; }
+    .shell {
+      width: min(1440px, calc(100vw - 40px));
+      height: min(900px, calc(100vh - 32px));
+      margin: 16px auto;
+      background: var(--shell);
+      border: 1px solid var(--shell-line);
+      border-radius: 28px;
+      display: grid;
+      grid-template-rows: 68px 1fr;
+      overflow: hidden;
+      box-shadow: 0 24px 60px rgba(82, 46, 56, 0.08);
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 28px;
+      background: #fffaf6;
+      border-bottom: 1px solid var(--shell-line);
+    }
+    .topbar-left,
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .menu-link {
+      cursor: pointer;
+      height: 40px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid #dccdc3;
+      background: #fffdfa;
+      color: #6b3440;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .menu-link:hover { background: #f8efe9; }
+    .menu-link {
+      cursor: pointer;
+      height: 40px;
+      padding: 0 16px;
+      border-radius: 999px;
+      border: 1px solid #dccdc3;
+      background: #fffdfa;
+      color: #6b3440;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      }
+    .menu-link:hover { background: #f8efe9; }
+    .icon-btn,
+    .brand-pill {
+      height: 40px;
+      border-radius: 999px;
+      border: 1px solid #dccdc3;
+      background: #fffdfa;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #6b3440;
+    }
+    .icon-btn {
+      cursor: pointer;
+      width: 40px;
+      padding: 0;
+    }
+    .brand-pill {
+      padding: 0 18px;
+      font-weight: 700;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      background: #f8efe9;
+    }
+    .page {
+      padding: 22px 34px 26px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 18px;
+      min-height: 0;
+    }
+    .labels {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding: 0 4px;
+    }
+    .labels div {
+      font-size: 12px;
+      line-height: 1;
+      color: var(--muted);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+    }
+    .content {
+      display: grid;
+      /* v52: minmax(0, 1fr) — жестко фиксируем 50/50, длинное слово не раздвигает левый трек. */
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 24px;
+      min-height: 0;
+    }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--panel-line);
+      border-radius: 24px;
+      padding: 30px 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      min-height: 0;
+      min-width: 0; /* v52: не раздувать grid трек под длинное слово */
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .panel .card-fav-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 36px;
+      height: 36px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      color: #cbc5c1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border-radius: 8px;
+      transition: color .14s ease, transform .12s ease;
+    }
+    .panel .card-fav-btn:hover { color: #a61d1d; }
+    .panel .card-fav-btn.active { color: #a61d1d; }
+    .panel .card-fav-btn:active { transform: scale(.92); }
+    .panel .card-fav-btn svg { width: 24px; height: 24px; display: block; }
+    .phrase {
+      font-family: Manrope, sans-serif;
+      /* v50: одинаковый вес и размер у LV и RU */
+      font-weight: 700;
+      color: var(--text);
+      font-size: clamp(30px, 2.7vw, 46px);
+      line-height: 1.14;
+      letter-spacing: -.03em;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      /* v52: длинные слова ломать, чтобы не раздвигать панель */
+      overflow-wrap: anywhere;
+    }
+    /* (3.3) Длинные фразы — 4 ступени. Размер карточки НЕ меняется, только шрифт. */
+    .panel.is-long .phrase,
+    .panel.is-long .translation-text {
+      font-size: clamp(28px, 2.4vw, 38px);
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
+    .panel.is-xlong .phrase,
+    .panel.is-xlong .translation-text {
+      font-size: clamp(22px, 1.9vw, 30px);
+      font-weight: 600;
+      line-height: 1.22;
+      letter-spacing: -.02em;
+    }
+    .panel.is-mega .phrase,
+    .panel.is-mega .translation-text {
+      font-size: clamp(16px, 1.4vw, 21px);
+      font-weight: 600;
+      line-height: 1.32;
+      letter-spacing: -.01em;
+    }
+    .audio-btn {
+      cursor: pointer;
+      /* v52: центрирование через inset+margin вместо left:50%+transform.
+         Из-за transition на transform раньше была видимая «поездка» кнопки влево при смене фразы. */
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 30px;
+      margin: 0 auto;
+      height: 54px;
+      padding: 0 22px 0 18px;
+      border-radius: 999px;
+      border: 1px solid #d9c3bf;
+      background: #fbf1ec;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      width: fit-content;
+      font-size: 16px;
+      font-weight: 700;
+      color: #6b3440;
+      box-shadow: 0 10px 20px rgba(82, 46, 56, 0.05);
+    }
+    .audio-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #ead6d2;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      color: var(--brand);
+    }
+    .phrase-col {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      /* v52: LV центрирована по высоте в верхней зоне (без нижней полосы 84px).
+         RU подравнивается в JS под верхнюю строку LV. */
+      justify-content: center;
+      align-items: center;
+      padding-top: 6px;
+      padding-bottom: 84px; /* запас под абсолютную audio-btn */
+    }
+    .translate-wrap {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 30px;
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-align: center;
+    }
+    .translate-wrap.show-text {
+      /* v52: в потоке; flex-start, но padding-top динамический —
+         выставляется в fitAllPanels так, чтобы верх RU совпал с верхом LV. */
+      position: static;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 6px 0 84px;
+    }
+    .translate-btn {
+      cursor: pointer;
+      height: 54px;
+      padding: 0 22px;
+      border-radius: 999px;
+      border: 1px solid #d9c3bf;
+      background: #fbf1ec;
+      color: #6b3440;
+      font-size: 16px;
+      font-weight: 700;
+      box-shadow: 0 10px 20px rgba(82, 46, 56, 0.05);
+    }
+    .translation-text {
+      display: none;
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      font-family: Manrope, sans-serif;
+      /* v50: одинаковый размер и вес как у .phrase (LV) */
+      font-size: clamp(30px, 2.7vw, 46px);
+      line-height: 1.14;
+      letter-spacing: -0.03em;
+      font-weight: 700;
+      color: var(--text);
+      overflow-wrap: anywhere;
+    }
+    .translate-wrap.show-text .translate-btn {
+      display: none;
+    }
+    .translate-wrap.show-text .translation-text {
+      display: block;
+    }
+    .srs-zone {
+      background: #faf3ed;
+      border: 1px solid var(--panel-line);
+      border-radius: 24px;
+      padding: 18px 18px 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      min-height: 186px;
+    }
+    .srs-btn {
+      cursor: pointer;
+      border: 0;
+      border-radius: 24px;
+      color: #fff;
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
+      min-width: 0;
+      min-height: 148px;
+      box-shadow: 0 14px 30px rgba(82, 46, 56, 0.08);
+      overflow: hidden;
+    }
+    .srs-btn.red { background: var(--red); }
+    .srs-btn.orange { background: var(--orange); }
+    .srs-btn.yellowgreen { background: var(--yellowgreen); }
+    .srs-btn.green { background: var(--green); }
+    .srs-fill {
+      width: 100%;
+      height: 100%;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-width: 0;
+      min-height: 0;
+    }
+    /* v58: бадж баллов убран — оставил для обратной совместимости но скрываю */
+    .srs-top { display: none; }
+    .srs-label {
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: clamp(28px, 2.8vw, 46px);
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -.04em;
+      word-break: break-word;
+      hyphens: auto;
+      text-wrap: balance;
+    }
+      .translate-btn.is-open { background: #f8efe9; }
+    .is-pressed { transform: scale(0.97); }
+    .srs-btn.is-selected {
+      outline: 4px solid rgba(255,255,255,0.72);
+      transform: translateY(-2px);
+      box-shadow: 0 18px 36px rgba(82, 46, 56, 0.16);
+    }
+    /* v47: убираем синюю браузерную обводку после клика на кнопках (остаём только для клавиатуры) */
+    .srs-btn:focus,
+    .audio-btn:focus,
+    .translate-btn:focus,
+    button:focus { outline: none; }
+    .srs-btn:focus-visible,
+    .audio-btn:focus-visible,
+    .translate-btn:focus-visible {
+      outline: 2px solid rgba(122, 51, 64, 0.4);
+      outline-offset: 2px;
+    }
+  
+
+    .legacy-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      border-bottom: 1px solid #e7e5e4;
+      background: #ffffff;
+      height: 58px;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .legacy-header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .legacy-header .logo-mark {
+      width: 32px;
+      height: 32px;
+      background: #991b1b;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(153, 27, 27, 0.18);
+    }
+    .legacy-header .logo-name {
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #1c1917;
+    }
+    .legacy-header .logo-name .red { color: #991b1b; }
+    .legacy-header .header-right {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .legacy-header .btn-icon,
+    .legacy-header .streak-btn {
+      cursor: pointer;
+    }
+    .legacy-header .btn-icon {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: none;
+      border-radius: 8px;
+      color: #57534e;
+      position: relative;
+      font-family: Manrope, system-ui, sans-serif;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease, color .16s ease;
+    }
+    .legacy-header .btn-icon:hover {
+      background: rgba(153,27,27,.07);
+      color: #1c1917;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(28, 25, 23, 0.10);
+    }
+    /* Кнопка «Войти» / аккаунта в шапке */
+    .legacy-header .auth-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid #e1ddd9;
+      background: #fff;
+      color: #5a4a44;
+      font-family: Manrope, system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      padding: 7px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background .15s, color .15s, border-color .15s;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .legacy-header .auth-btn:hover {
+      background: rgba(153,27,27,.06);
+      color: #991b1b;
+      border-color: rgba(153,27,27,.3);
+    }
+    .legacy-header .auth-btn--in {
+      background: #fff;
+      color: #3a9760;
+      border-color: rgba(58,151,96,.4);
+    }
+    .legacy-header .auth-btn--in:hover {
+      background: rgba(58,151,96,.08);
+      color: #2c7847;
+      border-color: rgba(58,151,96,.6);
+    }
+    .legacy-header .auth-btn-icon { display: block; flex-shrink: 0; }
+    .legacy-header .vocab-badge {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      min-width: 16px;
+      height: 16px;
+      background: #991b1b;
+      color: #fff;
+      font-size: 10px;
+      font-weight: 700;
+      border-radius: 99px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 0 4px;
+    }
+    /* (5) Бейдж с числом выключён — бессмысленный индикатор. */
+    .legacy-header .vocab-badge.show { display: none; }
+    .legacy-header .streak-btn {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      border: none;
+      background: none;
+      font-family: Manrope, system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      color: #57534e;
+      padding: 4px 8px;
+      border-radius: 8px;
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease, color .16s ease;
+    }
+    .legacy-header .streak-btn:hover {
+      background: rgba(153,27,27,.07);
+      color: #991b1b;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 20px rgba(28, 25, 23, 0.10);
+    }
+    .legacy-header .streak-btn svg { color: #991b1b; }
+    .legacy-header .streak-btn.active { color: #991b1b; }
+
+    .legacy-header .deck-segmented {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+      font-family: Manrope, system-ui, sans-serif;
+    }
+    .legacy-header .deck-segmented button {
+      border: 1px solid #e7e5e4;
+      background: #fff;
+      color: #57534e;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .1px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background .16s ease, color .16s ease, border-color .16s ease, box-shadow .16s ease, transform .12s ease;
+      white-space: nowrap;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .legacy-header .deck-segmented button:hover {
+      background: rgba(153,27,27,.06);
+      color: #991b1b;
+      border-color: rgba(153,27,27,.25);
+    }
+    .legacy-header .deck-segmented button.active {
+      background: #991b1b;
+      color: #fff;
+      border-color: #991b1b;
+      box-shadow: 0 1px 3px rgba(153,27,27,.25);
+    }
+    .legacy-header .deck-segmented button:active { transform: translateY(1px); }
+    @media (max-width: 720px) {
+      .legacy-header .deck-segmented button { padding: 5px 10px; font-size: 11px; }
+    }
+    /* Секретные чипы — видны только Лене */
+    .legacy-header .deck-segmented button.secret-deck,
+    .vocab-filter-btn.secret-deck { display: none; }
+    body.is-elena .legacy-header .deck-segmented button.secret-deck { display: inline-flex; }
+    body.is-elena .vocab-filter-btn.secret-deck { display: inline-flex; }
+
+    .translate-btn,
+    .srs-btn {
+      transition: transform .16s ease, box-shadow .16s ease, background .16s ease, border-color .16s ease, color .16s ease;
+      will-change: transform, box-shadow;
+    }
+    /* v52: у audio-btn transition без transform — иначе видна анимация «прыжка» при смене фразы. */
+    .audio-btn {
+      transition: box-shadow .16s ease, background .16s ease, border-color .16s ease, color .16s ease;
+    }
+    /* v72: hover только для устройств с курсором. На iOS Safari hover залипал после тапа,
+       кнопка оставалась сдвинутой вверх. На десктопе hover работает как раньше. */
+    @media (hover: hover) and (pointer: fine) {
+      .translate-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 30px rgba(82, 46, 56, 0.14);
+        border-color: rgba(122, 51, 64, 0.28);
+      }
+      .audio-btn:hover {
+        box-shadow: 0 16px 30px rgba(82, 46, 56, 0.14);
+        border-color: rgba(122, 51, 64, 0.28);
+      }
+      .srs-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 18px 34px rgba(82, 46, 56, 0.18);
+      }
+    }
+    .translate-btn:active,
+    .srs-btn:active,
+    .legacy-header .btn-icon:active,
+    .legacy-header .streak-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 6px 12px rgba(82, 46, 56, 0.10);
+    }
+    .audio-btn:active {
+      /* v52: без transform — центрирование через margin auto */
+      box-shadow: 0 6px 12px rgba(82, 46, 56, 0.10);
+    }
+
+
+    .vocab-overlay {
+      position: fixed;
+      inset: 0;
+      background: #fafaf9;
+      z-index: 50;
+      display: none;
+      flex-direction: column;
+      color: #1c1917;
+    }
+    .vocab-overlay.open { display: flex; }
+    .vocab-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      border-bottom: 1px solid #e7e5e4;
+      background: #ffffff;
+      height: 52px;
+      flex-shrink: 0;
+    }
+    .vocab-header-left, .vocab-header-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .vocab-overlay .icon-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 99px;
+      color: #57534e;
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+    .vocab-overlay .icon-btn:hover {
+      background: rgba(153,27,27,.07);
+      color: #1c1917;
+      transform: none;
+    }
+    .vocab-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: #1c1917;
+    }
+    .vocab-count-label {
+      font-size: 13px;
+      color: #a8a29e;
+    }
+    .vocab-search-wrap {
+      position: relative;
+      width: 240px;
+    }
+    .vocab-search {
+      width: 100%;
+      padding: 8px 12px 8px 38px;
+      border: 1px solid #b15454;
+      border-radius: 10px;
+      font-family: Manrope, system-ui, sans-serif;
+      font-size: 13px;
+      background: #ffffff;
+      color: #57534e;
+      outline: none;
+    }
+    /* (3) Нормальная лупа — SVG как background-image, под контролем размера. */
+    .vocab-search-wrap::before {
+      content: '';
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      width: 18px;
+      height: 18px;
+      transform: translateY(-50%);
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23a8a29e' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='11' cy='11' r='7'/><line x1='21' y1='21' x2='16.65' y2='16.65'/></svg>");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      pointer-events: none;
+    }
+    .vocab-filters {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-bottom: 1px solid #e7e5e4;
+      background: #ffffff;
+      flex-shrink: 0;
+      flex-wrap: wrap;
+    }
+    .vocab-filter-btn {
+      padding: 10px 18px;
+      border: 1px solid #dedad6;
+      background: #ffffff;
+      border-radius: 999px;
+      font-family: Manrope, system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: #57534e;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .vocab-filter-btn.active {
+      background: #a61d1d;
+      color: #fff;
+      border-color: #a61d1d;
+    }
+    .vocab-filter-btn.vocab-filter-heart {
+      padding: 8px 12px;
+      gap: 6px;
+      display: inline-flex;
+      align-items: center;
+      flex: 0 0 auto;
+    }
+    /* Сердечко в фильтре «Избранное» всегда залито красным. */
+    .vocab-filter-btn.vocab-filter-heart svg {
+      display: block;
+      stroke: #c14444;
+      fill: #c14444;
+    }
+    .vocab-filter-btn.vocab-filter-heart.active svg {
+      stroke: #ffffff;
+      fill: #ffffff;
+    }
+    /* Статистика выученного под SRS-кнопками */
+    .learned-progress {
+      width: 100%;
+      padding: 16px 0 16px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .learned-progress__label {
+      font-size: 15px;
+      color: #44403c;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: -0.01em;
+    }
+    .learned-progress__track {
+      width: 95%;
+      margin: 0;
+      height: 10px;
+      background: #e7e5e4;
+      border-radius: 99px;
+      overflow: hidden;
+      display: flex;
+    }
+    .learned-progress__seg {
+      height: 100%;
+      transition: width .35s ease;
+    }
+    .learned-progress__seg--o { background: #dd7a33; }
+    .learned-progress__seg--y { background: #96b83f; }
+    .learned-progress__seg--g { background: #2f9658; }
+    .filter-count {
+      font-weight: 500;
+      font-size: 11px;
+      opacity: .7;
+      margin-left: 2px;
+    }
+    .vocab-stage-stats {
+      margin-left: 10px;
+      padding-left: 12px;
+      border-left: 1px solid #ece7e1;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 14px;
+      row-gap: 6px;
+      min-height: 40px;
+      color: #8b8178;
+      font-family: Manrope, system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      font-variant-numeric: tabular-nums;
+    }
+    .vocab-stage-stat {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 4px;
+      white-space: nowrap;
+    }
+    .vocab-stage-stat__label {
+      color: #8b8178;
+      font-weight: 500;
+    }
+    .vocab-stage-stat__value {
+      color: #3f3a36;
+      font-weight: 600;
+    }
+    .vocab-list-wrap {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0 24px 24px;
+      background: #fafaf9;
+    }
+    .vocab-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 14px;
+      border-bottom: 1px solid #ebe7e4;
+    }
+    .vocab-item:last-child { border-bottom: none; }
+    .vocab-fav-btn {
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: #cbc5c1;
+      flex-shrink: 0;
+      padding: 0;
+      border-radius: 6px;
+      transition: color .14s ease;
+    }
+    .vocab-fav-btn:hover { color: #a61d1d; }
+    .vocab-fav-btn.active { color: #a61d1d; }
+    .vocab-fav-btn svg { width: 20px; height: 20px; display: block; }
+    .vocab-words {
+      min-width: 0;
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      flex-wrap: wrap;
+      flex: 1;
+    }
+    .vocab-lv {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1c1917;
+    }
+    .vocab-sep {
+      color: #b5adaa;
+      font-size: 15px;
+    }
+    .vocab-ru {
+      font-size: 14px;
+      color: #6b6662;
+    }
+    .vocab-action-btn {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: #c2bbb7;
+      flex-shrink: 0;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity .15s, color .15s;
+      font-size: 14px;
+      line-height: 1;
+    }
+    .vocab-item:hover .vocab-action-btn { opacity: .7; }
+    .vocab-action-btn.learned.active,
+    .vocab-action-btn.learned:hover { color: #16a34a; opacity: 1; }
+    .vocab-action-btn.del:hover { color: #a61d1d; opacity: 1; }
+    .vocab-empty-state {
+      padding: 80px 24px;
+      text-align: center;
+      color: #a8a29e;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .vocab-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 24px;
+      border-top: 1px solid #e7e5e4;
+      background: #ffffff;
+      font-size: 12px;
+      color: #a8a29e;
+      flex-shrink: 0;
+    }
+    .btn-export {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 6px 12px;
+      border: 1px solid #e1ddd9;
+      border-radius: 999px;
+      background: #ffffff;
+      font-family: Manrope, system-ui, sans-serif;
+      font-size: 12px;
+      color: #a8a29e;
+      cursor: pointer;
+      transition: all .15s;
+    }
+    .btn-export:hover {
+      color: #991b1b;
+      border-color: #991b1b;
+      background: rgba(153,27,27,.05);
+    }
+    .btn-export-header { flex-shrink: 0; }
+    .recover-banner {
+      background: rgba(153,27,27,.08);
+      border-bottom: 1px solid #e7d3d3;
+      padding: 10px 24px;
+      font-size: 13px;
+      color: #991b1b;
+      text-align: center;
+      font-weight: 500;
+      /* Резервируем место всегда, чтобы календарь не прыгал. Скрываем содержимое через visibility. */
+      visibility: hidden;
+      min-height: 38px;
+      box-sizing: border-box;
+    }
+    .recover-banner.is-visible { visibility: visible; }
+    .recover-banner__close {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 26px;
+      border: none;
+      background: transparent;
+      color: #991b1b;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    .recover-banner__close:hover { background: rgba(153,27,27,.12); }
+    .recover-banner { position: relative; }
+    .streak-body {
+      padding: 0;
+      overflow: hidden;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: #ffffff;
+    }
+    .streak-layout {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      align-items: stretch;
+      min-height: calc(100vh - 53px);
+      background: #fafaf9;
+    }
+    .streak-left {
+      padding: 34px 28px 24px 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .streak-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 18px;
+      background: #fafaf9;
+    }
+    .streak-big {
+      font-size: 128px;
+      font-weight: 800;
+      color: #111111;
+      line-height: .92;
+      text-align: center;
+      letter-spacing: -0.05em;
+    }
+    .streak-big small {
+      display: block;
+      font-size: 30px;
+      font-weight: 500;
+      color: #55504d;
+      margin-top: 16px;
+      letter-spacing: 0;
+    }
+    .streak-today {
+      font-size: 18px;
+      color: #a29b97;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .heatmap-months {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 42px;
+      gap: 5px;
+      font-size: 12px;
+      color: #aba3a0;
+      margin-bottom: 8px;
+      width: fit-content;
+    }
+    .heatmap {
+      display: grid;
+      grid-template-rows: repeat(7, 40px);
+      grid-auto-flow: column;
+      grid-auto-columns: 40px;
+      gap: 4px;
+      width: fit-content;
+      margin-bottom: 12px;
+    }
+    .hm-cell {
+      width: 40px;
+      height: 40px;
+      border-radius: 6px;
+      background: #efefef;
+      border: none;
+      cursor: default;
+      box-sizing: border-box;
+    }
+    .hm-empty { background: #ebedf0; }
+    /* GitHub-style 4 оттенка зелёного по интенсивности:
+       hm-1 = 1–4 открытий, hm-2 = 5–10, hm-3 = 11–15, hm-4 = 16+ */
+    .hm-1 { background: #9be9a8; }
+    .hm-2 { background: #40c463; }
+    .hm-3 { background: #30a14e; }
+    .hm-4 { background: #216e39; }
+    /* Старый класс «выполнено» — по умолчанию hm-2 (5+ открытий — день выполнен) */
+    .hm-done { background: #40c463; }
+    .hm-future { background: #ebedf0; opacity: .55; }
+    .hm-recover { cursor: pointer; }
+    .hm-recover:hover { outline: 2px solid #d7c1bf; }
+    .hm-cell:hover { outline: 2px solid #d7c1bf; outline-offset: 1px; }
+    .hm-tip {
+      position: fixed;
+      display: none;
+      z-index: 9999;
+      background: #1f1d1b;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 1.3;
+      padding: 10px 16px;
+      border-radius: 8px;
+      white-space: nowrap;
+      pointer-events: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,.22);
+    }
+    .heatmap-legend {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #aba3a0;
+      margin-top: 10px;
+    }
+    .heatmap-legend .hm-cell {
+      width: 20px;
+      height: 20px;
+      border-radius: 5px;
+    }
+    .streak-hint {
+      font-size: 12px;
+      color: #aba3a0;
+      margin-top: 8px;
+      max-width: 520px;
+      line-height: 1.35;
+    }
+    @media (max-width: 900px) {
+      .streak-layout { display: flex; flex-direction: column; }
+      .streak-left { border-right: 0; border-bottom: 0; border-top: 1px solid var(--shell-line); }
+    }
+    @media (max-width: 600px) {
+      .streak-layout {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+      }
+      /* Сверху: карта. Снизу: цифра + «сегодня» */
+      .streak-left { order: 1; padding: 16px 14px 8px; flex: 0 0 auto; align-items: stretch; }
+      .streak-right { order: 2; padding: 16px 16px 24px; flex: 1 1 auto; align-items: center; text-align: center; }
+
+      /* Большая цифра + компактный ряд с «сегодня» */
+      .streak-big { font-size: 88px; line-height: .9; }
+      .streak-big small { font-size: 18px; margin-top: 6px; font-weight: 600; }
+      .streak-today { font-size: 14px; margin-top: 14px; }
+      .streak-hint { font-size: 11px; max-width: none; }
+
+      /* Карта на всю ширину: ячейки растягиваются */
+      .heatmap, .heatmap-months {
+        width: 100%;
+        grid-auto-columns: minmax(0, 1fr);
+      }
+      .heatmap { grid-template-rows: repeat(7, minmax(0, 1fr)); aspect-ratio: var(--hm-aspect, 15 / 7); }
+      .hm-cell { width: auto; height: auto; border-radius: 4px; }
+      .heatmap-legend { font-size: 11px; gap: 6px; flex-wrap: wrap; }
+      .heatmap-legend .hm-cell { width: 14px; height: 14px; border-radius: 3px; }
+    }
+
+    /* Круглая кнопка динамика слева от фразы — видна только на мобиле */
+    .phrase-row { display: contents; }
+    .audio-btn-mobile { display: none; }
+
+    /* ────────────────────────────────────────────────────── */
+    /* МОБИЛЬНАЯ ВЕРСИЯ — ГЛАВНЫЙ ЭКРАН                                          */
+    /* ───────────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      html, body { overflow: visible; overflow-x: hidden; height: auto; }
+      body { background: var(--shell); }
+      .shell {
+        width: 100%;
+        max-width: 100%;
+        min-height: 100vh;
+        height: auto;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        grid-template-rows: none;
+        overflow: visible;
+      }
+
+      /* Компактный header */
+      .legacy-header {
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 14px 8px;
+        height: auto;
+        row-gap: 10px;
+      }
+      .legacy-header .logo-name { font-size: 16px; font-weight: 800; letter-spacing: -0.03em; }
+      /* (г) Декоративная иконка-«гамбургер» без функционала в лого — на мобиле скрываем. */
+      .legacy-header .logo-mark { display: none; }
+
+      /* Правая группа: streak + иконка словаря */
+      /* v56: min-width:0 чтобы родитель не растягивался по seg.scrollWidth. */
+      .legacy-header .header-right {
+        order: 2;
+        margin-left: auto;
+        gap: 4px;
+        min-width: 0;
+      }
+
+      /* Чипы колоды — отдельный ряд на всю ширину, горизонтальный скролл с fade-подсказкой справа */
+      /* v56: width:100% + min-width:0 чтобы seg сжимался под родителя и содержимое скроллилось внутри. */
+      .legacy-header .deck-segmented {
+        order: 3;
+        flex: 1 0 100%;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        gap: 6px;
+        /* Сдвигаем второй ряд вниз, чтобы «Войти» была над ним, а не над первым рядом. После логина этот отступ убирается — см. .auth-in . */
+        margin-top: 6px;
+        padding-bottom: 2px;
+        padding-right: 8px;
+        -webkit-overflow-scrolling: touch;
+        /* Fade справа — подсказка о горизонтальном скролле */
+        -webkit-mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 28px), transparent 100%);
+                mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 28px), transparent 100%);
+        scroll-snap-type: x proximity;
+      }
+      .legacy-header .deck-segmented::-webkit-scrollbar { display: none; }
+      .legacy-header .deck-segmented button { scroll-snap-align: start; }
+      /* Когда докрутили вправо — снимаем fade */
+      .legacy-header .deck-segmented.scroll-end {
+        -webkit-mask-image: none;
+                mask-image: none;
+        padding-right: 0;
+      }
+      .legacy-header .deck-segmented button {
+        flex: 0 0 auto;
+        padding: 10px 18px;
+        font-size: 14px;
+        min-height: 40px;
+        touch-action: manipulation;
+      }
+      /* Streak и словарь — поменьше */
+      .legacy-header .streak-btn { padding: 4px 6px; font-size: 13px; }
+      .legacy-header .btn-icon { width: 32px; height: 32px; }
+
+      /* На мобиле «Войти» — красная пилюля в ПРАВОМ ВЕРХНЕМ углу шапки (абсолютно поверх) */
+      .legacy-header .auth-btn-icon { display: none; }
+      .legacy-header .auth-btn-text { display: inline; }
+      .legacy-header .auth-btn {
+        position: absolute;
+        top: 4px;
+        right: 10px;
+        z-index: 4;
+        padding: 6px 14px;
+        min-height: 30px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: #991b1b;
+        border: 1px solid #991b1b;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+      }
+      /* После логина лишнее место сверху убираем — сжимаем второй ряд обратно к шапке. */
+      body.auth-in .legacy-header .deck-segmented { margin-top: 0; }
+      /* (д) Залогиненный вид — без пилюли, просто текст на уровне логотипа. */
+      .legacy-header .auth-btn--in {
+        top: 14px;            /* выравниваем по baseline с «Lena Learns Latvian» */
+        right: 14px;
+        background: transparent;
+        border-color: transparent;
+        color: #5b504c;
+        padding: 0;           /* нет капсулы — нет внутренних отступов */
+        min-height: 0;
+        gap: 6px;
+        font-weight: 500;
+        max-width: 160px;
+        box-shadow: none;
+        line-height: 1;
+      }
+      .legacy-header .auth-btn--in .auth-btn-name {
+        font-weight: 600;
+        color: #2d2424;
+        font-size: 13px;
+      }
+      .legacy-header .auth-btn--in .auth-btn-logout {
+        font-weight: 400;
+        color: #9c918b;
+        font-size: 12px;
+        margin-left: 4px;
+      }
+      /* Чтобы правая группа (стрик/словарь) не залезала под пилюлю — резервируем справа отступ */
+      .legacy-header .header-right { margin-right: 100px; }
+
+      /* (3.2) Главная область — вертикальный поток; адаптивные отступы и гапы. */
+      /* v58: page занимает всю оставшуюся высоту после header'a (flex:1). Полоса прогресса прижата к низу. */
+      /* v67: убрал overflow:hidden — он обрезал .learned-progress на устройствах, где flex-children просили больше высоты, чем 100dvh.
+         Места на экране достаточно, прогресс-бар теперь виден. Верхние блоки (header/чипы/панели/SRS) не трогаем. */
+      .page {
+        /* v75-r7: padding-bottom = ПОЛНАЯ высота полосы + safe-area. Отодвигает всё содержимое (панели + SRS) вверх. */
+        padding: clamp(8px, 1.4vh, 14px) 14px calc(var(--learned-progress-h) + env(safe-area-inset-bottom, 0px));
+        gap: clamp(8px, 1.4vh, 14px);
+        grid-template-rows: none;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        flex: 1 1 auto;
+        height: auto;
+        overflow: visible;
+      }
+      /* v58: app-shell flex-колонка на весь экран. */
+      body, .app, #app, main {
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
+        min-height: 0;
+      }
+      .labels { display: none; }
+
+      .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        flex: 1 1 auto;
+        min-height: 0;
+        /* v58: отдаём больше высоты панелям освобождённому от padding-bottom */
+        /* v69: вернули панелям высоту — полоса прогресса теперь садится у самого края видимой зоны, а не съедает место. */
+        /* v75-r7: max-height не вычитает полосу — полоса уже зарезервирована в .page padding-bottom. */
+        max-height: min(58vh, 460px);
+      }
+      /* v56: в панели LV audio-btn скрыт на мобиле (используется круглая слева), большой padding-bottom больше не нужен. */
+      .panel .phrase-col {
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        justify-content: center;
+      }
+      /* v56: без перевода — кнопка в центре панели. */
+      .panel .translate-wrap:not(.show-text) {
+        position: static;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      /* v56: с переводом — текст RU центрируем по высоте блока (как LV). */
+      .panel .translate-wrap.show-text {
+        padding-top: 0;
+        padding-bottom: 0;
+        justify-content: center;
+      }
+
+      /* (3.2) Mobile: панель жёстко фиксирована по высоте — всё влезает в экран, fit-to-box ужмёт шрифт. */
+      .panel {
+        padding: clamp(14px, 2.4vh, 24px) clamp(14px, 4vw, 22px);
+        border-radius: 20px;
+        height: 100%;
+        min-height: 0;
+        max-height: 100%;
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+      }
+      .panel > div { width: 100%; min-width: 0; }
+      /* v60: вертикальное центрирование фразы */
+      .panel > .phrase-col,
+      .panel > .translate-wrap {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .panel > .phrase-col > .phrase-row { display: contents; }
+      .panel > .phrase-col { padding: 0; }
+
+      /* v59: сердечко поднято выше (top:6), размер не меняется */
+      .panel .card-fav-btn { top: 6px; right: 10px; width: 32px; height: 32px; }
+      .panel .card-fav-btn svg { width: 22px; height: 22px; }
+
+      /* v60: play-кнопка 44×44 absolute в правом-нижнем углу. Сердечко — верх-справа. */
+      .phrase-row {
+        display: contents;
+      }
+      .audio-btn-mobile {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        border: 0;
+        background: var(--brand);
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 0 6px 14px rgba(153, 27, 27, 0.28);
+        transition: transform .14s ease, box-shadow .14s ease;
+        z-index: 2;
+      }
+      .audio-btn-mobile svg { width: 20px; height: 20px; }
+      .audio-btn-mobile:active { transform: scale(.94); }
+      .audio-btn-mobile.is-playing { background: #7d1414; }
+      .audio-btn-mobile:disabled, .audio-btn-mobile[disabled] {
+        opacity: 0.85;
+        cursor: default;
+      }
+
+      /* Скрываем старую кнопку «Прослушать» на мобиле — её роль взял динамик */
+      .audio-btn { display: none; }
+
+      /* (3.2) Адаптивный размер фразы: 17–23px в зависимости от высоты экрана. */
+      /* v56: блоки стали меньше (170хвм вместо 238) — базовый размер чуть меньше, чтобы длинные фразы не наезжали на сердечко/audio-btn. */
+      .phrase {
+        font-size: clamp(18px, 3vh, 24px);
+        line-height: 1.3;
+        letter-spacing: -.02em;
+        max-width: none;
+        font-weight: 700;
+        text-align: center;
+        padding: 0;
+      }
+      /* v74-fix: padding-bottom управляется v74_fitAndCenterPanel через переменную --phrase-pad-bot.
+         Раньше тут стояло "padding-bottom: 0" для всех — оно перебивало переменную и блокировало центрирование вверх. */
+      .panel:nth-of-type(2) .phrase {
+        padding-bottom: 0;
+      }
+      .panel:first-of-type .phrase-col { padding-bottom: 0; }
+
+      /* v61: симметричные float-зоны вокруг кнопок.
+         Каждая реальная кнопка получает зеркальную невидимую float-зону на противоположной стороне,
+         чтобы line box оставалась симметричной относительно центра карточки и text-align:center
+         центрировал каждую строку относительно ПОЛНОЙ ширины. */
+
+      /* Heart top-right (LV-панель): 36×36 в начале текста — float left + float right одинаковые. */
+      .panel:first-of-type .phrase .float-heart-left,
+      .panel:first-of-type .phrase .float-heart-right {
+        width: 36px;
+        height: 36px;
+        shape-outside: inset(0);
+        pointer-events: none;
+      }
+      .panel:first-of-type .phrase .float-heart-left { float: left; }
+      .panel:first-of-type .phrase .float-heart-right { float: right; }
+
+      /* Play bottom-right (LV-панель): два пушера высотой = высота_текста - 50, потом две avoid-зоны 50×50 с clear. */
+      .panel:first-of-type .phrase .float-push-left {
+        float: left;
+        width: 0;
+        height: calc(100% - 50px);
+      }
+      .panel:first-of-type .phrase .float-push-right {
+        float: right;
+        width: 0;
+        height: calc(100% - 50px);
+      }
+      .panel:first-of-type .phrase .float-avoid-play-left {
+        float: left;
+        clear: left;
+        width: 50px;
+        height: 50px;
+        shape-outside: inset(0);
+        pointer-events: none;
+      }
+      .panel:first-of-type .phrase .float-avoid-play-right {
+        float: right;
+        clear: right;
+        width: 50px;
+        height: 50px;
+        shape-outside: inset(0);
+        pointer-events: none;
+      }
+      /* phrase-col занимает всю оставшуюся высоту панели (flex:1), чтобы push-spacers работали относительно ПОЛНОЙ высоты. */
+      .panel:first-of-type .phrase-col { display: block; flex: 1 1 auto; align-self: stretch; padding: 0; min-height: 0; }
+      .panel:first-of-type .phrase {
+        height: 100%;
+        padding-top: var(--phrase-pad-top, 0px);
+        padding-bottom: var(--phrase-pad-bot, 0px);
+        box-sizing: border-box;
+      }
+      /* RU панель — без float'ов, просто центрированный текст */
+      /* RU панель: text-align:center тоже */
+      .panel:nth-of-type(2) .translation-text { text-align: center; }
+      /* (3.3) Длинные фразы — меньше размер, без жирного. ОДИН размер для LV и RU. */
+      .panel.is-long .phrase,
+      .panel.is-long .translation-text {
+        font-size: clamp(15px, 2vh, 18px);
+        font-weight: 500;
+        line-height: 1.3;
+      }
+      .panel.is-xlong .phrase,
+      .panel.is-xlong .translation-text {
+        font-size: clamp(13px, 1.7vh, 16px);
+        font-weight: 500;
+        line-height: 1.3;
+      }
+      .panel.is-mega .phrase,
+      .panel.is-mega .translation-text {
+        font-size: clamp(11px, 1.4vh, 13px);
+        font-weight: 500;
+        line-height: 1.32;
+      }
+
+      /* Перевод — тот же размер, что и латышский */
+      .translate-wrap { height: auto; }
+      .translate-btn {
+        height: clamp(44px, 6vh, 56px);
+        padding: 0 22px;
+        font-size: clamp(14px, 1.8vh, 17px);
+        width: 100%;
+        max-width: 280px;
+      }
+      .translation-text {
+        font-size: clamp(18px, 3vh, 24px);
+        line-height: 1.25;
+        letter-spacing: -.02em;
+        font-weight: 700;
+        max-width: none;
+        text-align: center;
+      }
+      /* Длинные тоже по центру (правило: обе карточки центрированы) */
+      .panel.is-long .translation-text,
+      .panel.is-xlong .translation-text,
+      .panel.is-mega .translation-text { text-align: center; }
+
+      /* Сетка оценок 2×2 — тоже адаптивная. */
+      /* v56: сжал SRS-кнопки чтобы learned-progress влезала без скролла. */
+      /* v57: SRS-кнопки крупнее (как в v55), место освобождено за счёт max-height панелей и paddings. */
+      .srs-zone {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        padding: 8px;
+        border-radius: 16px;
+        min-height: 0;
+        flex: 0 0 auto;
+      }
+      .srs-btn {
+        min-height: clamp(72px, 10.5vh, 100px);
+        border-radius: 14px;
+        box-shadow: 0 4px 10px rgba(82, 46, 56, 0.08);
+      }
+      .srs-fill { padding: 8px; }
+      /* v58: бадж скрыт на всех разрешениях */
+      .srs-top { display: none; }
+      .srs-label {
+        font-size: 22px;
+        font-weight: 900;
+        letter-spacing: -.03em;
+      }
+      /* v58: learned-progress прижата к низу экрана (margin-top:auto), safe-area учтена. */
+      /* v69: полоса опущена к самому краю видимой зоны. padding-bottom минимальный — без зазора. */
+      /* v75-r7: ПОЛОСА имеет ФИКСИРОВАННУЮ высоту в CSS-переменной — берем эту же величину, делим пополам и сокращаем каждый текстовый блок на ту же цифру. */
+      :root { --learned-progress-h: 64px; }
+      .learned-progress {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: calc(var(--learned-progress-h) + env(safe-area-inset-bottom, 0px));
+        padding: 6px 14px calc(4px + env(safe-area-inset-bottom, 0px));
+        gap: 4px;
+        background: #fafaf9;
+        z-index: 50;
+        margin: 0;
+        flex: none;
+        box-sizing: border-box;
+      }
+      .learned-progress__label { font-size: 12px; }
+      .learned-progress__track { height: 8px; }
+      /* v75-r7: полная высота полосы резервируется в .page (выше), на main padding-bottom НЕ нужен. */
+
+      /* ──────────────────────────────────── */
+      /* СЛОВАРЬ НА МОБИЛЕ                              */
+      /* ──────────────────────────────────── */
+      .vocab-overlay { background: #ffffff; }
+
+      .vocab-header {
+        flex-wrap: wrap;
+        padding: 10px 14px 8px;
+        height: auto;
+        row-gap: 8px;
+      }
+      .vocab-header-left { gap: 8px; flex: 1 1 auto; min-width: 0; }
+      .vocab-header-right {
+        order: 3;
+        flex: 1 0 100%;
+      }
+      .vocab-title { font-size: 17px; }
+      .vocab-count-label { font-size: 14px; }
+
+      /* Поиск — отдельный ряд, перемещён ПОСЛЕ фильтров (через JS), чтобы не вылезала клавиатура */
+      .vocab-search-wrap { width: 100%; }
+      .vocab-search-wrap.vocab-search-mobile-row {
+        padding: 0 14px 8px;
+        background: #fafaf9;
+      }
+      .vocab-search { font-size: 15px; padding: 10px 12px 10px 36px; }
+      .vocab-search-mobile-row::before { left: 26px; }
+
+      /* Фильтры: горизонтальный скролл с fade-подсказкой */
+      .vocab-filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        padding: 10px 14px;
+        gap: 6px;
+        -webkit-overflow-scrolling: touch;
+        -webkit-mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 24px), transparent 100%);
+                mask-image: linear-gradient(to right, #000 0, #000 calc(100% - 24px), transparent 100%);
+      }
+      .vocab-filters.scroll-end {
+        -webkit-mask-image: none;
+                mask-image: none;
+      }
+      .vocab-filters::-webkit-scrollbar { display: none; }
+      .vocab-filter-btn {
+        flex: 0 0 auto;
+        padding: 8px 14px;
+        font-size: 13px;
+      }
+      .vocab-filter-btn.vocab-filter-heart { padding: 7px 10px; }
+      /* Статистику по стадиям на мобиле прячем — перегружает */
+      .vocab-stage-stats { display: none; }
+
+      /* Список */
+      .vocab-list-wrap { padding: 0 14px 24px; }
+      /* Плотные строки на мобиле — меньше вертикального воздуха, разделители остаются */
+      .vocab-item {
+        padding: 8px 4px;
+        gap: 8px;
+        border-bottom: 1px solid #ebe7e4;
+      }
+      .vocab-words { gap: 4px; }
+      /* Русский и латышский — одинаковый размер (правило продукта) */
+      .vocab-lv { font-size: 17px; line-height: 1.25; }
+      .vocab-ru { font-size: 17px; line-height: 1.25; color: #44403c; }
+      .vocab-fav-btn { width: 36px; height: 36px; }
+      .vocab-fav-btn svg { width: 22px; height: 22px; }
+      /* На мобиле кнопки действий видны всегда */
+      .vocab-action-btn { opacity: .7; }
+
+      /* «Скачать» на мобиле прячем — экспорт попадёт в гамбургер-меню или настройки */
+      .btn-export-header { display: none; }
+      .vocab-list-wrap { padding-bottom: 24px; }
+    }
+
+  </style>
 </head>
 <body>
-  <div class="page">
+  <div class="shell">
+    <header class="header legacy-header">
+  <div class="logo">
+    <div class="logo-mark">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+        <rect x="2" y="3" width="12" height="2" rx="1" fill="white"/>
+        <rect x="2" y="7" width="9" height="2" rx="1" fill="white"/>
+        <rect x="2" y="11" width="11" height="2" rx="1" fill="white"/>
+      </svg>
+    </div>
+    <div class="logo-name"><span class="red">L</span>ena <span class="red">L</span>earns <span class="red">L</span>atvian</div>
+  </div>
+  <div class="header-right">
+    <div class="deck-segmented" id="deckSegmented" role="tablist" aria-label="Набор карточек">
+      <button type="button" class="active" data-deck="all" role="tab" aria-selected="true">Все</button>
+      <button type="button" data-deck="a2" role="tab" aria-selected="false">A2</button>
+      <button type="button" data-deck="b2" role="tab" aria-selected="false">B2</button>
+      <button type="button" data-deck="numbers" role="tab" aria-selected="false">Числа</button>
+      <button type="button" data-deck="questions" role="tab" aria-selected="false">Вопросы</button>
+      <button type="button" data-deck="runasana" class="secret-deck" role="tab" aria-selected="false">Runāšana</button>
+      <button type="button" data-deck="lena" class="secret-deck" role="tab" aria-selected="false">Карточки Лены</button>
+      <button type="button" data-deck="top" class="secret-deck" role="tab" aria-selected="false">Топ</button>
+      <button type="button" data-deck="otvety" class="secret-deck" role="tab" aria-selected="false">Ответы</button>
+      <button type="button" data-deck="teksty" class="secret-deck" role="tab" aria-selected="false">Тексты</button>
+    </div>
+    <button class="streak-btn" id="streakBtn" title="Стрик">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+      <span id="streakNum">0</span>
+    </button>
+    <button class="btn-icon" id="vocabToggle" title="Словарь">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+      <span class="vocab-badge" id="vocabBadge">0</span>
+    </button>
+  </div>
+</header>
 
-    <!-- Верхняя строка: имя + навигация (десктоп) / имя + бургер (мобайл) -->
-    <header class="top">
-      <a href="#" class="brand">Елена Масолова</a>
-      <div class="top-right">
-
-        <nav class="top-nav">
-
-          <a href="/articles/looking-for-eir/">Ищу EIR<span class="emo-d" aria-hidden="true"> 🦸‍♂️</span></a>
-          <a href="/articles/request-for-startups/">Ищу стартапы<span class="emo-d" aria-hidden="true"> 💎</span></a>
-          <a href="/games/connections/">Игра Connections</a>
-
-        </nav>
-
-        <div class="lang" data-lang>
-          <button type="button" class="lang__current" aria-haspopup="listbox" aria-expanded="false">
-            <span class="lang__flag" aria-hidden="true">🇷🇺</span>RU<span class="lang__chev" aria-hidden="true"></span>
-          </button>
-          <div class="lang__menu" role="listbox">
-            <a href="#" class="is-active" role="option"><span class="lang__flag" aria-hidden="true">🇷🇺</span>Русский</a>
-            <a href="/index-en.html" role="option"><span class="lang__flag" aria-hidden="true">🇬🇧</span>English</a>
-          </div>
-        </div>
-
-        <button class="top-burger" aria-label="Меню" type="button">
-        <span></span><span></span><span></span>
-      </button>
-
-      </div>
-    </header>
-
-    <!-- Хайлайты под шапкой для мобильных (на десктопе скрыты) -->
-    <nav class="hl-mobile" aria-label="Хайлайты">
-      <a href="/articles/looking-for-eir/">Ищу EIR<span class="emo-d" aria-hidden="true"> 🦸‍♂️</span></a>
-      <a href="/articles/request-for-startups/">Ищу стартапы<span class="emo-d" aria-hidden="true"> 💎</span></a>
-    </nav>
-
-    <!-- Биография -->
-    <section class="bio">
-      <div class="bio__photo">
-        <img src="assets/elena.jpg" alt="Елена Масолова">
-      </div>
-      <div class="bio__text">
-        <h1>Елена Масолова</h1>
-        <div class="bio__body">
-          <p>Предприниматель, 6&nbsp;экзитов (в&nbsp;т.ч. Groupon, Pixonic, Eduson).</p>
-          <p>11&nbsp;стартапов с&nbsp;выручкой $1+&nbsp;млн. (в&nbsp;т.ч. AddVenture&nbsp;II, Wallstr, BeautyBox).</p>
-          <p>Сейчас инвестирую в&nbsp;<a href="https://forza.capital" target="_blank" rel="noopener">Forza.Capital</a>.</p>
-          <p>
-            Норильск
-            <span class="arrow" aria-hidden="true">
-              <svg viewBox="0 0 22 12" fill="none" stroke="#1f1f1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M1 6 H20 M15 2 L20 6 L15 10"/>
-              </svg>
-            </span>
-            Москва
-            <span class="arrow" aria-hidden="true">
-              <svg viewBox="0 0 22 12" fill="none" stroke="#1f1f1e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M1 6 H20 M15 2 L20 6 L15 10"/>
-              </svg>
-            </span>
-            Кремниевая&nbsp;Долина.
-          </p>
-          <p>Читаю 180–200&nbsp;книг в&nbsp;год <span class="emo">📚</span> и&nbsp;играю в&nbsp;теннис <span class="emo">🎾</span>.</p>
-        </div>
-
-        <div class="bio__socials">
-          <a href="https://linkedin.com/in/masolova" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://x.com/masolova" target="_blank" rel="noopener">Twitter</a>
-          <a href="https://www.instagram.com/elena_masolova/" target="_blank" rel="noopener">Instagram</a>
-          <a href="https://www.goodreads.com/user/show/107770261-elena-masolova" target="_blank" rel="noopener">Goodreads</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Компактный CTA-подписки (показывается на мобильном) -->
-    <aside class="cta-strip" aria-label="Подписка">
-      <form class="cta-strip__form" action="https://buttondown.com/api/emails/embed-subscribe/elenamasolova" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/elenamasolova', 'popupwindow')">
-        <input type="hidden" name="tag" value="ru">
-        <input type="email" name="email" placeholder="Ваш email" required>
-        <button type="submit">Подписаться</button>
-      </form>
-      <div class="cta-strip__hint">Дайджест 1&nbsp;раз в&nbsp;месяц.</div>
-    </aside>
-
-    <!-- Основной блок: сайдбар + посты -->
-    <main class="main">
-
-                                                                              <aside class="tags" aria-label="Теги">
-        <div class="tags__head">
-          <h2 class="tags__title">Темы</h2>
-        </div>
-        <ul class="tags__list">
-          <li><a href="/tags/longread/"><span class="tag">Лонгрид</span><span class="count">4</span></a></li>
-          <li><a href="/tags/startup/"><span class="tag">Стартап</span><span class="count">4</span></a></li>
-          <li><a href="/tags/forza/"><span class="tag">Forza</span><span class="count">2</span></a></li>
-          <li><a href="/tags/silicon-valley/"><span class="tag">Кремниевая долина</span><span class="count">2</span></a></li>
-          <li><a href="/tags/top/"><span class="tag">Топ</span><span class="count">2</span></a></li>
-          <li><a href="/tags/ai/"><span class="tag">AI</span><span class="count">1</span></a></li>
-          <li><a href="/tags/brodsky/"><span class="tag">Бродский</span><span class="count">1</span></a></li>
-          <li><a href="/tags/gumilev/"><span class="tag">Гумилёв</span><span class="count">1</span></a></li>
-          <li><a href="/tags/design/"><span class="tag">Дизайн</span><span class="count">1</span></a></li>
-          <li><a href="/tags/drucker/"><span class="tag">Друкер</span><span class="count">1</span></a></li>
-          <li><a href="/tags/kant/"><span class="tag">Кант</span><span class="count">1</span></a></li>
-          <li><a href="/tags/kundera/"><span class="tag">Кундера</span><span class="count">1</span></a></li>
-          <li><a href="/tags/carroll/"><span class="tag">Кэрролл</span><span class="count">1</span></a></li>
-          <li><a href="/tags/latvia/"><span class="tag">Латвия</span><span class="count">1</span></a></li>
-          <li><a href="/tags/machiavelli/"><span class="tag">Макиавелли</span><span class="count">1</span></a></li>
-          <li><a href="/tags/norilsk/"><span class="tag">Норильск</span><span class="count">1</span></a></li>
-          <li><a href="/tags/olesha/"><span class="tag">Олеша</span><span class="count">1</span></a></li>
-          <li><a href="/tags/pelevin/"><span class="tag">Пелевин</span><span class="count">1</span></a></li>
-          <li><a href="/tags/twain/"><span class="tag">Твен</span><span class="count">1</span></a></li>
-          <li><a href="/tags/tolkien/"><span class="tag">Толкин</span><span class="count">1</span></a></li>
-        </ul>
-      </aside>
-
-      <section class="posts" aria-label="Посты">
-        <ul class="posts__list posts__list--arrow">
-          <!-- POSTS:START -->
-<li data-slug="exit-is-the-king" class="is-pinned"><a href="/articles/exit-is-the-king/"><span class="title">Exit is the King</span></a></li>
-          <li data-slug="not-a-day-without-a-line" class="is-pinned"><a href="/articles/not-a-day-without-a-line/"><span class="title">Ни дня без строчки (кода)</span></a></li>
-          <li data-slug="looking-for-eir"><a href="/articles/looking-for-eir/"><span class="title">Ищу EIR</span></a></li>
-          <li data-slug="request-for-startups"><a href="/articles/request-for-startups/"><span class="title">Request for Startups от Forza.Capital</span></a></li>
-          <li data-slug="money-printer-puzzle"><a href="/articles/money-printer-puzzle/"><span class="title">Загадка печатного станка</span></a></li>
-          <li data-slug="summer"><a href="/articles/summer/"><span class="title">А в этом году лето было?</span></a></li>
-          <li data-slug="lies-damn-lies-and-design"><a href="/articles/lies-damn-lies-and-design/"><span class="title">Ложь, наглая ложь и дизайн</span></a></li>
-          <!-- POSTS:END -->
-          
-        </ul>
+    <main class="page">
+      <section class="labels">
+        <div></div>
+        <div></div>
       </section>
 
+      <section class="content">
+        <article class="panel">
+          <div class="phrase-col">
+            <button type="button" class="card-fav-btn" id="cardFavBtn" aria-label="Добавить в избранное" title="Избранное">
+              <svg id="cardFavIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </button>
+            <div class="phrase-row">
+              <button type="button" class="audio-btn-mobile" id="audioBtnMobile" aria-label="Прослушать латышскую фразу">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="currentColor" stroke="currentColor"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+              </button>
+              <h1 class="phrase"> </h1>
+            </div>
+            <button type="button" class="audio-btn" aria-label="Прослушать латышскую фразу">
+              <span class="audio-icon">►</span>
+              <span>Прослушать</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="panel">
+          <div class="translate-wrap">
+            <button type="button" class="translate-btn">Показать перевод</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="srs-zone" aria-label="Оценка знания выражения">
+        <button type="button" class="srs-btn red" aria-label="Ужас-ужас, минус пять">
+          <span class="srs-fill">
+            <span class="srs-top">-5</span>
+            <span class="srs-label">Ужас-ужас</span>
+          </span>
+        </button>
+        <button type="button" class="srs-btn orange" aria-label="Ещё туплю, минус один">
+          <span class="srs-fill">
+            <span class="srs-top">-1</span>
+            <span class="srs-label">Ещё туплю</span>
+          </span>
+        </button>
+        <button type="button" class="srs-btn yellowgreen" aria-label="ОК, плюс один">
+          <span class="srs-fill">
+            <span class="srs-top">+1</span>
+            <span class="srs-label">ОК</span>
+          </span>
+        </button>
+        <button type="button" class="srs-btn green" aria-label="Выучено, плюс пять">
+          <span class="srs-fill">
+            <span class="srs-top">+5</span>
+            <span class="srs-label">Выучено!</span>
+          </span>
+        </button>
+      </section>
+      <section class="learned-progress" aria-label="Прогресс изучения">
+        <div class="learned-progress__label" id="learnedProgressLabel">Пока выучено 0% фраз. Поехали! 🚀</div>
+        <div class="learned-progress__track" aria-label="Прогресс по этапам">
+          <div class="learned-progress__seg learned-progress__seg--o" id="learnedProgressSegO" style="width:0%"></div>
+          <div class="learned-progress__seg learned-progress__seg--y" id="learnedProgressSegY" style="width:0%"></div>
+          <div class="learned-progress__seg learned-progress__seg--g" id="learnedProgressSegG" style="width:0%"></div>
+        </div>
+      </section>
     </main>
+  </div>
+  <script src="migrate_v43.js"></script>
+  <script src="phrases-3875.json.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="auth.js"></script>
+  <script>
 
-    <!-- Вариант C: большой CTA перед подвалом (десктоп) -->
-    <section class="cta-footer" aria-label="Подписка">
-      <h2 class="cta-footer__title">Новые статьи вам на&nbsp;почту</h2>
-      <p class="cta-footer__hint">Дайджест 1&nbsp;раз в&nbsp;месяц.</p>
-      <form class="cta-footer__form" action="https://buttondown.com/api/emails/embed-subscribe/elenamasolova" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.com/elenamasolova', 'popupwindow')">
-        <input type="hidden" name="tag" value="ru">
-        <input type="email" name="email" placeholder="Ваш email" required>
-        <button type="submit">Подписаться</button>
-      </form>
-    </section>
+const TRANSLATEWORKER = 'https://lll-translate.elena-masolova.workers.dev';
+let ttsAudio = null;
 
-    <footer class="foot">
-      <a class="foot__email" data-u="hello" data-d="masolova.com"></a>
-      <p>© Елена Масолова</p>
-    </footer>
+// (а) Блокировка pinch-zoom для iOS Safari (user-scalable=no игнорируется)
+(function blockPinchZoom() {
+  // Блокируем жест двумя пальцами (iOS-специфичное событие)
+  document.addEventListener('gesturestart', function (e) { e.preventDefault(); }, { passive: false });
+  document.addEventListener('gesturechange', function (e) { e.preventDefault(); }, { passive: false });
+  document.addEventListener('gestureend', function (e) { e.preventDefault(); }, { passive: false });
+  // Блокируем мультитач
+  document.addEventListener('touchstart', function (e) {
+    if (e.touches && e.touches.length > 1) e.preventDefault();
+  }, { passive: false });
+  document.addEventListener('touchmove', function (e) {
+    if (e.touches && e.touches.length > 1) e.preventDefault();
+  }, { passive: false });
+  // Блокируем double-tap zoom
+  let lastTouchEnd = 0;
+  document.addEventListener('touchend', function (e) {
+    const now = Date.now();
+    if (now - lastTouchEnd <= 350) e.preventDefault();
+    lastTouchEnd = now;
+  }, { passive: false });
+  document.addEventListener('dblclick', function (e) { e.preventDefault(); }, { passive: false });
+})();
+
+// Хелпер: правильное склонение «1 день / 2 дня / 5 дней»
+function pluralizeDays(n) {
+  const abs = Math.abs(n) % 100;
+  const n1 = abs % 10;
+  if (abs > 10 && abs < 20) return 'дней подряд';
+  if (n1 > 1 && n1 < 5) return 'дня подряд';
+  if (n1 === 1) return 'день подряд';
+  return 'дней подряд';
+}
+
+window.addEventListener('DOMContentLoaded', function () {
+  const audioButton = document.querySelector('.audio-btn');
+  const audioButtonMobile = document.getElementById('audioBtnMobile');
+  // На мобиле клик по кнопке-динамику запускает ту же логику, что и старая кнопка «Прослушать»
+  if (audioButtonMobile && audioButton) {
+    audioButtonMobile.addEventListener('click', function () {
+      audioButton.click();
+    });
+  }
+  const phraseEl = document.querySelector('.panel-lv .phrase') || document.querySelector('.phrase');
+  const translateWrap = document.querySelector('.translate-wrap');
+  const srsButtons = Array.from(document.querySelectorAll('.srs-btn'));
+  const iconButtons = Array.from(document.querySelectorAll('.icon-btn'));
+  const menuLinks = Array.from(document.querySelectorAll('.plain-link'));
+  const streakNum = document.getElementById('streakNum');
+  const vocabBadge = document.getElementById('vocabBadge');
+  const vocabToggle = document.getElementById('vocabToggle');
+  const vocabOverlay = document.getElementById('vocabOverlay');
+  const vocabClose = document.getElementById('vocabClose');
+  const vocabListWrap = document.getElementById('vocabListWrap');
+  const vocabEmpty = document.getElementById('vocabEmpty');
+  const vocabSearch = document.getElementById('vocabSearch');
+  const vocabCountLabel = document.getElementById('vocabCountLabel');
+  const vocabFooterStats = document.getElementById('vocabFooterStats');
+  const countAll = document.getElementById('countAll');
+  const countFav = document.getElementById('countFav');
+  const countLearned = document.getElementById('countLearned');
+  const countA2 = document.getElementById('countA2');
+  const countB2 = document.getElementById('countB2');
+  const countNumbers = document.getElementById('countNumbers');
+  const countQuestions = document.getElementById('countQuestions');
+  const countLena = document.getElementById('countLena');
+  const countRunasana = document.getElementById('countRunasana');
+  const countTop = document.getElementById('countTop');
+  const countOtvety = document.getElementById('countOtvety');
+  const countTeksty = document.getElementById('countTeksty');
+  const vocabExport = document.getElementById('vocabExport');
+  const streakBtn = document.getElementById('streakBtn');
+  const streakOverlay = document.getElementById('streakOverlay');
+  const streakClose = document.getElementById('streakClose');
+  const streakBig = document.getElementById('streakBig');
+  const streakToday = document.getElementById('streakToday');
+  const heatmap = document.getElementById('heatmap');
+  const heatmapMonths = document.getElementById('heatmapMonths');
+  const recoverBanner = document.getElementById('recoverBanner');
+  const toast = document.getElementById('toast');
+
+  if (!phraseEl || !translateWrap) return;
+
+  const DAILY_GOAL = 5;
+  const STORAGE_VOCAB = 'lll2_vocabulary';
+  const STORAGE_STREAK = 'lll2_streak';
+  const STORAGE_STAGE_PROGRESS = 'lll2_stage_progress';
+
+  const STORAGE_DECK_MODE = 'lll2_deck_mode';
+  // v39: чистка мусора и дублей, диапазоны пересобраны.
+  const DECK_RANGES = {
+    all:       null,
+    a2:        [1, 248],
+    b2:        [249, 1517],
+    numbers:   [1518, 1903],
+    questions: [1904, 2250],
+    lena:      [2251, 2847],     // секрет
+    runasana:  [2848, 3034],     // секрет
+    top:       [3035, 3195],     // секрет
+    otvety:    [3196, 3570],     // секрет
+    teksty:    [3571, 3792],     // секрет
+  };
+  // v37: ручные перемещения между колодами (по id). Все «Расскажите…» → Runāšana.
+  const DECK_OVERRIDES = {
+    runasana: new Set([2251, 2252, 2253, 2255, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4029, 4030, 4031, 4032, 4033, 4034, 4035, 4036, 4037, 4038, 4039, 4040, 4041, 4042, 4043, 4044, 4045, 4046, 4047, 4048, 4049, 4050, 4051, 4052, 4053, 4054, 4055, 4056, 4057, 4058, 4059, 4060, 4061, 4062, 4063, 4064, 4065, 4066, 4067, 4068, 4069, 4070, 4071, 4072, 4073, 4074, 4075, 4076, 4077, 4078, 4079, 4080, 4081, 4082, 4083]),
+  };
+  // ID, исключаемые из своих исходных диапазонов (т.к. перемещены в override)
+  const DECK_EXCLUDED = (function(){
+    var s = new Set();
+    Object.keys(DECK_OVERRIDES).forEach(function(k){ DECK_OVERRIDES[k].forEach(function(id){ s.add(id); }); });
+    return s;
+  })();
+  function deckOf(id) {
+    var n = Number(id);
+    if (!Number.isFinite(n)) return null;
+    // override приоритетнее
+    var keys = Object.keys(DECK_OVERRIDES);
+    for (var i=0;i<keys.length;i++) if (DECK_OVERRIDES[keys[i]].has(n)) return keys[i];
+    var rk = ['a2','b2','numbers','questions','lena','runasana','top','otvety','teksty'];
+    for (var j=0;j<rk.length;j++) {
+      var r = DECK_RANGES[rk[j]];
+      if (r && n>=r[0] && n<=r[1]) return rk[j];
+    }
+    return null;
+  }
+  function inDeck(id, deckKey) {
+    if (!deckKey) return true;
+    return deckOf(id) === deckKey;
+  }
+  // v75-r6: восстанавливаем deck из localStorage. При F5 внутри тега (например, Runāshanа) пользователь остаётся в этом теге, а не выкидывается во «Все».
+  let deckMode = 'all';
+  try {
+    const saved = localStorage.getItem(STORAGE_DECK_MODE);
+    if (saved && Object.prototype.hasOwnProperty.call(DECK_RANGES, saved)) deckMode = saved;
+  } catch(e) {}
+
+  // v39: секретные диапазоны — Лена, Runasana, Топ, Ответы, Тексты
+  function isSecretId(id) {
+    var n = Number(id);
+    if (!Number.isFinite(n)) return false;
+    if (n >= 2251 && n <= 3792) return true;
+    return false;
+  }
+  function isElenaUser() {
+    return document.body && document.body.classList && document.body.classList.contains('is-elena');
+  }
+
+  function buildDeck() {
+    if (!Array.isArray(PHRASES)) return [];
+    const elena = isElenaUser();
+    return PHRASES.filter(item => {
+      if (!item || typeof item.lv !== 'string' || !item.lv.trim()) return false;
+      if (deckMode && deckMode !== 'all') {
+        if (deckOf(item.id) !== deckMode) return false;
+      } else if (!elena) {
+        // Режим «Все» для не-Лены: исключаем секретные фразы
+        var dk = deckOf(item.id);
+        if (dk === 'lena' || dk === 'runasana' || dk === 'top' || dk === 'otvety' || dk === 'teksty') return false;
+      }
+      return true;
+    });
+  }
+
+  let deck = buildDeck();
+  if (!deck.length) deck = [{ lv: 'Dati nav ielādēti.', ru: 'Данные не загрузились.' }];
+
+  let currentIndex = 0;
+
+  const deckSegmented = document.getElementById('deckSegmented');
+  function syncDeckSegmented() {
+    if (!deckSegmented) return;
+    deckSegmented.querySelectorAll('button[data-deck]').forEach(function (btn) {
+      const isActive = btn.getAttribute('data-deck') === deckMode;
+      btn.classList.toggle('active', isActive);
+      btn.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+  }
+  syncDeckSegmented();
+  // Toggle scroll-end class когда пользователь докрутил чипы вправо — убираем fade
+  function updateDeckScrollEnd() {
+    if (!deckSegmented) return;
+    var max = deckSegmented.scrollWidth - deckSegmented.clientWidth;
+    if (max <= 2) {
+      // Нечего скроллить — фейд не нужен
+      deckSegmented.classList.add('scroll-end');
+    } else {
+      deckSegmented.classList.toggle('scroll-end', deckSegmented.scrollLeft >= max - 2);
+    }
+  }
+  if (deckSegmented) {
+    deckSegmented.addEventListener('scroll', updateDeckScrollEnd, { passive: true });
+    window.addEventListener('resize', updateDeckScrollEnd);
+    setTimeout(updateDeckScrollEnd, 0);
+  }
+  // При входе/выходе Лены — перестроить колоду и прогресс (влияет на «Все»)
+  document.addEventListener('lll:elena-changed', function () {
+    try {
+      // Если был выбран секретный чип, а Лена вышла — сбросить на «Все»
+      var elena = document.body.classList.contains('is-elena');
+      if (!elena && (deckMode === 'lena' || deckMode === 'runasana' || deckMode === 'top' || deckMode === 'otvety' || deckMode === 'teksty')) {
+        deckMode = 'all';
+        try { localStorage.setItem(STORAGE_DECK_MODE, deckMode); } catch(_) {}
+        if (typeof syncDeckSegmented === 'function') syncDeckSegmented();
+      }
+      // v55: запомнить текущую фразу ДО пересборки — не менять её без нужды
+      var _curId = (deck && deck[currentIndex] && deck[currentIndex].id != null) ? String(deck[currentIndex].id) : null;
+      // Инвалидируем кеш PHRASES-индекса т.к. «secret»-видимость меняется от elena (сброс уже висит в отдельном addEventListener)
+      deck = buildDeck();
+      if (!deck.length) deck = [{ lv: 'Dati nav ielādēti.', ru: 'Данные не загрузились.' }];
+      // Если текущая фраза всё ещё в новом deck — НЕ меняем её, лишь поправляем currentIndex
+      var _newIdx = _curId ? deck.findIndex(function(p){ return p && p.id != null && String(p.id) === _curId; }) : -1;
+      if (_newIdx >= 0) {
+        currentIndex = _newIdx;
+        if (typeof refillBatch === 'function') refillBatch(); // batch обновится, но фразу не переключаем
+      } else {
+        if (typeof refillBatch === 'function') { refillBatch(); srsNext(); } else { currentIndex = 0; }
+        if (typeof renderPhrase === 'function') renderPhrase();
+      }
+      // v55: не перерисовываем словарь если он закрыт
+      var _vo2 = document.getElementById('vocabOverlay');
+      if (_vo2 && _vo2.classList.contains('open') && typeof renderVocab === 'function') renderVocab();
+      if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
+    } catch(_) {}
+  });
+
+  if (deckSegmented) {
+    deckSegmented.addEventListener('click', function (ev) {
+      const btn = ev.target.closest('button[data-deck]');
+      if (!btn) return;
+      const next = btn.getAttribute('data-deck');
+      if (!next || next === deckMode || !Object.prototype.hasOwnProperty.call(DECK_RANGES, next)) return;
+      deckMode = next;
+      try { localStorage.setItem(STORAGE_DECK_MODE, deckMode); } catch(e) {}
+      syncDeckSegmented();
+      deck = buildDeck();
+      if (!deck.length) deck = [{ lv: 'Šajā kopā nav frāžu.', ru: 'В этом наборе нет фраз.' }];
+      if (typeof refillBatch === 'function') { refillBatch(); srsNext(); } else { currentIndex = 0; }
+      if (typeof renderPhrase === 'function') renderPhrase();
+      // v55: не перерисовываем словарь если он закрыт — главная причина тормозов клика по тегу
+      var _vo1 = document.getElementById('vocabOverlay');
+      if (_vo1 && _vo1.classList.contains('open') && typeof renderVocab === 'function') renderVocab();
+      if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
+    });
+  }
+  let translationOpen = false;
+  let vocabFilter = 'all';
+  let vocabSearchQuery = '';
+  let toastTimer = null;
+  let ttsAudio = null;
+
+  let vocabulary = [];
+  let streakState = { days: {}, recoverDate: null };
+  let stageProgress = {};
+  try { vocabulary = JSON.parse(localStorage.getItem(STORAGE_VOCAB) || '[]'); } catch(e) { vocabulary = []; }
+  try { streakState = Object.assign(streakState, JSON.parse(localStorage.getItem(STORAGE_STREAK) || '{}')); } catch(e) {}
+  // Сброс невалидного recoverDate при загрузке: если дата не сегодняшняя — окно восстановления закрыто
+  try {
+    if (streakState.recoverDate) {
+      var _tk = (function(){ var d = new Date(); var y=d.getFullYear(), m=String(d.getMonth()+1).padStart(2,'0'), dd=String(d.getDate()).padStart(2,'0'); return y+'-'+m+'-'+dd; })();
+      if (streakState.recoverDate !== _tk) {
+        streakState.recoverDate = null;
+        localStorage.setItem(STORAGE_STREAK, JSON.stringify(streakState));
+      }
+    }
+  } catch(e) {}
+  try { stageProgress = JSON.parse(localStorage.getItem(STORAGE_STAGE_PROGRESS) || '{}'); } catch(e) { stageProgress = {}; }
+
+  // ---- SRS (посессионный, Leitner-стиль) ----
+  // phraseState[id] = { stage: 0|1|2|3, due: <session#>, reps: <int> }
+  // Интервалы по сессиям: 0 -> в этой же; 1 -> +1; 2 -> +3; 3 -> [+7, +14, +30, +30...]
+  const STORAGE_PHRASE_STATE = 'lll2_phrase_state';
+  const STORAGE_SESSION_COUNT = 'lll2_session_count';
+  const STAGE3_STEPS = [7, 14, 30];
+  const BATCH_SIZE = 10;
+  const BATCH_QUOTAS = { stage0: 4, stage12: 5, stage3: 1 };
+
+  let phraseState = {};
+  try { phraseState = JSON.parse(localStorage.getItem(STORAGE_PHRASE_STATE) || '{}'); } catch(e) { phraseState = {}; }
+
+  let sessionCount = 0;
+  try { sessionCount = parseInt(localStorage.getItem(STORAGE_SESSION_COUNT) || '0', 10) || 0; } catch(e) { sessionCount = 0; }
+  // Каждая загрузка страницы = новая сессия.
+  sessionCount += 1;
+  try { localStorage.setItem(STORAGE_SESSION_COUNT, String(sessionCount)); } catch(e) {}
+
+  // v47: миграция stageProgress → phraseState теперь СТРОГО ОДИНОКРАТНАЯ.
+  // Раньше она выполнялась на каждой загрузке и воскрешала stage 3 из старого stage_progress.
+  (function migrateStageProgressOnce() {
+    if (localStorage.getItem('lll2_migrated_stageprog_v47') === 'true') return;
+    if (!stageProgress || typeof stageProgress !== 'object') {
+      localStorage.setItem('lll2_migrated_stageprog_v47', 'true');
+      return;
+    }
+    const keys = Object.keys(stageProgress);
+    let migrated = 0;
+    keys.forEach(function(id) {
+      if (phraseState[id]) return; // уже мигрирована
+      const v = stageProgress[id];
+      if (v === -1) { phraseState[id] = { stage: 1, due: sessionCount, reps: 0, updated_at: Date.now() }; migrated++; }
+      else if (v === 1) { phraseState[id] = { stage: 2, due: sessionCount, reps: 0, updated_at: Date.now() }; migrated++; }
+      else if (v === 5) { phraseState[id] = { stage: 3, due: sessionCount + STAGE3_STEPS[0], reps: 1, updated_at: Date.now() }; migrated++; }
+    });
+    if (migrated) savePhraseState();
+    localStorage.setItem('lll2_migrated_stageprog_v47', 'true');
+  })();
+
+  function savePhraseState() {
+    try { localStorage.setItem(STORAGE_PHRASE_STATE, JSON.stringify(phraseState)); } catch(e) {}
+  }
+  function getPhraseStage(id) {
+    const st = phraseState[String(id)];
+    return st ? st.stage : 0;
+  }
+  function getPhraseDue(id) {
+    const st = phraseState[String(id)];
+    return st ? st.due : 0;
+  }
+  function setPhraseStage(id, stage) {
+    // v52: batch — все setItem коалесцируются в один push.
+    var run = function() {
+      const key = String(id);
+      const prev = phraseState[key] || { stage: 0, due: 0, reps: 0 };
+      let due, reps = prev.reps || 0;
+      if (stage === 0) { due = sessionCount; reps = 0; }
+      else if (stage === 1) { due = sessionCount + 1; reps = 0; }
+      else if (stage === 2) { due = sessionCount + 3; reps = 0; }
+      else if (stage === 3) {
+        reps = (prev.stage === 3 ? reps : 0) + 1;
+        const stepIdx = Math.min(reps - 1, STAGE3_STEPS.length - 1);
+        due = sessionCount + STAGE3_STEPS[stepIdx];
+      }
+      phraseState[key] = { stage: stage, due: due, reps: reps, updated_at: Date.now() };
+      savePhraseState();
+      if (stage === 0) delete stageProgress[key];
+      else if (stage === 1) stageProgress[key] = -1;
+      else if (stage === 2) stageProgress[key] = 1;
+      else if (stage === 3) stageProgress[key] = 5;
+      saveStageProgress();
+      if (stage !== 3) {
+        var v = vocabulary.find(function(x){ return x && String(x.id) === key; });
+        if (v && v.learned) {
+          v.learned = false;
+          try { saveVocab(); } catch(e) {}
+        }
+      }
+    };
+    if (typeof window.lllBatch === 'function') window.lllBatch(run);
+    else run();
+  }
+
+  // Формирование партии. Возвращает массив фраз (объекты deck) длиной до BATCH_SIZE.
+  function buildBatch() {
+    const sess = sessionCount;
+    const buckets = { 0: [], 12: [], 3: [], future: [] };
+    // v55: предвычисляем Set выученных через словарь — иначе O(N*M) при больших vocabulary
+    const learnedVocabSet = new Set();
+    for (let i = 0; i < vocabulary.length; i++) {
+      const v = vocabulary[i];
+      if (v && v.learned && v.id != null) learnedVocabSet.add(String(v.id));
+    }
+    deck.forEach(function(p) {
+      if (!p || p.id == null) return;
+      // Пропустить выученные-через-словарь (lll2_vocabulary.learned=true) — они «откладываются»
+      const key = String(p.id);
+      if (learnedVocabSet.has(key)) return;
+      const st = phraseState[key];
+      const stage = st ? st.stage : 0;
+      const due = st ? st.due : 0;
+      if (due > sess) { buckets.future.push(p); return; }
+      if (stage === 0) buckets[0].push(p);
+      else if (stage === 1 || stage === 2) buckets[12].push(p);
+      else if (stage === 3) buckets[3].push(p);
+    });
+    function shuf(arr) { for (let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];} return arr; }
+    shuf(buckets[0]); shuf(buckets[12]); shuf(buckets[3]); shuf(buckets.future);
+    const slots = { 0: BATCH_QUOTAS.stage0, 12: BATCH_QUOTAS.stage12, 3: BATCH_QUOTAS.stage3 };
+    const picked = [];
+    function take(b, n) {
+      while (n > 0 && buckets[b].length) { picked.push(buckets[b].shift()); n--; }
+      return n;
+    }
+    let leftover = 0;
+    leftover += take(0,  slots[0]);
+    leftover += take(12, slots[12]);
+    leftover += take(3,  slots[3]);
+    // Перетекание недобора: 0 <- 12 <- 3 и обратно.
+    let remaining = BATCH_SIZE - picked.length;
+    while (remaining > 0 && (buckets[0].length || buckets[12].length || buckets[3].length || buckets.future.length)) {
+      if (buckets[0].length) picked.push(buckets[0].shift());
+      else if (buckets[12].length) picked.push(buckets[12].shift());
+      else if (buckets[3].length) picked.push(buckets[3].shift());
+      else if (buckets.future.length) picked.push(buckets.future.shift());
+      remaining--;
+    }
+    // Защита: если совсем пусто (например, все выученные) — возьмём что-нибудь из deck
+    if (!picked.length && deck.length) picked.push(deck[Math.floor(Math.random()*deck.length)]);
+    shuf(picked);
+    return picked;
+  }
+
+  let currentBatch = [];
+  let batchPos = 0;
+  function refillBatch() {
+    currentBatch = buildBatch();
+    batchPos = 0;
+  }
+  function srsNext() {
+    if (!currentBatch.length || batchPos >= currentBatch.length) refillBatch();
+    if (!currentBatch.length) return; // совсем пусто
+    const phrase = currentBatch[batchPos++];
+    // Найти индекс фразы в deck для совместимости с currentIndex/currentPhrase
+    const idx = deck.findIndex(function(p){ return p && p.id === phrase.id; });
+    currentIndex = idx >= 0 ? idx : 0;
+  }
+
+  translateWrap.innerHTML = '<button type="button" class="translate-btn">Показать перевод</button><div class="translation-text" aria-live="polite"></div>';
+  const translationButton = translateWrap.querySelector('.translate-btn');
+  const translationText = translateWrap.querySelector('.translation-text');
+
+  function normalizeTranslation(value) {
+    return typeof value === 'string' ? value.trim() : '';
+  }
+  function currentPhrase() { return deck[currentIndex] || deck[0]; }
+  function todayKey() { return new Date().toISOString().slice(0, 10); }
+  function saveVocab() { localStorage.setItem(STORAGE_VOCAB, JSON.stringify(vocabulary)); }
+  function saveStreak() { localStorage.setItem(STORAGE_STREAK, JSON.stringify(streakState)); }
+  function saveStageProgress() { localStorage.setItem(STORAGE_STAGE_PROGRESS, JSON.stringify(stageProgress)); }
+  // v72: toast выключен по требованию — сообщения типа «Фраза перенесена...» больше не показываются.
+  // Раньше этот div не имел CSS-позиция «оверлея» и рендерился inline под полосой прогресса, выталкивая экран вниз.
+  function showToast(msg) {
+    return;
+  }
+  function pluralize(n) {
+    const m10 = n % 10, m100 = n % 100;
+    if (m10 === 1 && m100 !== 11) return 'слово';
+    if (m10 >= 2 && m10 <= 4 && (m100 < 10 || m100 >= 20)) return 'слова';
+    return 'слов';
+  }
+  function updateBadge() {
+    const activeCount = vocabulary.filter(v => !v.learned).length;
+    vocabBadge.textContent = String(activeCount);
+    vocabBadge.classList.toggle('show', activeCount > 0);
+  }
+  // Set «выученных» — это все фразы на stage 3 (зелёная кнопка «Выучено!»).
+  // Источник истины — phraseState, не vocabulary.learned.
+  function getLearnedIds() {
+    const ids = new Set();
+    Object.keys(phraseState || {}).forEach(function(k){
+      if (k === '_v') return;
+      var st = phraseState[k];
+      if (st && st.stage === 3) ids.add(String(k));
+    });
+    return ids;
+  }
+  function getFavIds() {
+    const ids = new Set();
+    vocabulary.forEach(function(v){ if (v.fav && v.id != null) ids.add(String(v.id)); });
+    return ids;
+  }
+  // Выдаёт «виртуальные» элементы: все фразы текущего deck плюс предыдущее состояние из vocabulary.
+  function getDeckEntries() {
+    const favIds = getFavIds();
+    const learnedIds = getLearnedIds();
+    return deck.map(function(item){
+      const id = item && item.id;
+      return {
+        id: id,
+        lv: item.lv,
+        ru: item.ru,
+        fav: id != null && favIds.has(String(id)),
+        learned: id != null && learnedIds.has(String(id)),
+      };
+    });
+  }
+  // v55: кеш getRangeEntries на время одного renderVocab/buildHeatmap (renderVocab зовёт 9+ раз)
+  let _rangeEntriesCache = null;
+  // v55: кеш индекса PHRASES по rangeKey — строится 1 раз, инвалидируется при смене elena-режима
+  let _phraseRangeIndex = null;
+  function buildPhraseRangeIndex() {
+    if (!Array.isArray(PHRASES)) { _phraseRangeIndex = null; return; }
+    const idx = { all: [], a2: [], b2: [], numbers: [], questions: [], lena: [], runasana: [], top: [], otvety: [], teksty: [] };
+    const elena = isElenaUser();
+    for (let i = 0; i < PHRASES.length; i++) {
+      const item = PHRASES[i];
+      if (!item || typeof item.lv !== 'string' || !item.lv.trim()) continue;
+      const id = (typeof item.id === 'number') ? item.id : null;
+      const dk = id != null ? deckOf(id) : null;
+      if (dk && idx[dk]) idx[dk].push(item);
+      // 'all' — все видимые этой персоне (не-Елена не видит секретные)
+      if (!elena && id != null && isSecretId(id)) { /* skip */ } else { idx.all.push(item); }
+    }
+    _phraseRangeIndex = idx;
+  }
+  function invalidatePhraseRangeIndex() { _phraseRangeIndex = null; }
+  function invalidateRangeEntriesCache() { _rangeEntriesCache = null; }
+  document.addEventListener('lll:elena-changed', function(){ _phraseRangeIndex = null; });
+  // Все фразы из PHRASES в выбранном диапазоне (для vocab-фильтров a2/b2/lena в словаре — независимо от чипов в шапке).
+  function getRangeEntries(rangeKey) {
+    if (!Array.isArray(PHRASES)) return [];
+    if (_rangeEntriesCache && _rangeEntriesCache[rangeKey]) return _rangeEntriesCache[rangeKey];
+    if (!_phraseRangeIndex) buildPhraseRangeIndex();
+    const key = (rangeKey && _phraseRangeIndex[rangeKey]) ? rangeKey : 'all';
+    const source = _phraseRangeIndex[key] || [];
+    const favIds = (_rangeEntriesCache && _rangeEntriesCache._favIds) || getFavIds();
+    const learnedIds = (_rangeEntriesCache && _rangeEntriesCache._learnedIds) || getLearnedIds();
+    const result = source.map(function(item){
+      var id = item && item.id;
+      return {
+        id: id,
+        lv: item.lv,
+        ru: item.ru,
+        fav: id != null && favIds.has(String(id)),
+        learned: id != null && learnedIds.has(String(id)),
+      };
+    });
+    if (_rangeEntriesCache) {
+      _rangeEntriesCache[rangeKey] = result;
+      _rangeEntriesCache._favIds = favIds;
+      _rangeEntriesCache._learnedIds = learnedIds;
+    }
+    return result;
+  }
+  function getFilteredVocab() {
+    // Все фильтры в словаре работают НЕЗАВИСИМО от колоды в шапке.
+    let list;
+    if (vocabFilter === 'a2' || vocabFilter === 'b2' || vocabFilter === 'numbers' || vocabFilter === 'questions' || vocabFilter === 'lena' || vocabFilter === 'runasana' || vocabFilter === 'top' || vocabFilter === 'otvety' || vocabFilter === 'teksty') {
+      list = getRangeEntries(vocabFilter).filter(v => !v.learned);
+    } else if (vocabFilter === 'fav') {
+      list = getRangeEntries('all').filter(v => v.fav && !v.learned);
+    } else if (vocabFilter === 'learned') {
+      list = getRangeEntries('all').filter(v => v.learned);
+    } else {
+      // 'all' — все доступные пользователю фразы (3581 для Лены, 1991 для остальных)
+      list = getRangeEntries('all').filter(v => !v.learned);
+    }
+    if (vocabSearchQuery) {
+      const q = vocabSearchQuery.toLowerCase();
+      list = list.filter(v => (v.lv||'').toLowerCase().includes(q) || (v.ru||'').toLowerCase().includes(q));
+    }
+    return list;
+  }
+  function renderVocab() {
+    // v55: включаем кеш getRangeEntries на время этого вызова (~9+ вызовов по PHRASES экономятся)
+    _rangeEntriesCache = {};
+    try {
+    const filtered = getFilteredVocab();
+    // Счётчики словаря НЕ зависят от колоды в шапке
+    const allEntries = getRangeEntries('all');
+    const totalAll = allEntries.filter(v => !v.learned).length;
+    const totalFav = allEntries.filter(v => v.fav && !v.learned).length;
+    const totalLearned = allEntries.filter(v => v.learned).length;
+    // Стадии отражают текущий фильтр словаря (a2/b2/lena/all/fav).
+    var statRange = (vocabFilter === 'a2' || vocabFilter === 'b2' || vocabFilter === 'lena') ? vocabFilter : 'all';
+    var statBase = getRangeEntries(statRange);
+    if (vocabFilter === 'fav') statBase = statBase.filter(function(v){ return v.fav; });
+    var statIdSet = new Set(statBase.map(function(it){ return String(it && it.id); }));
+    const stageCounts = { '-5': 0, '-1': 0, '1': 0, '5': 0 };
+    Object.keys(stageProgress || {}).forEach(function(id) {
+      if (!statIdSet.has(String(id))) return;
+      var stage = String(stageProgress[id]);
+      if (Object.prototype.hasOwnProperty.call(stageCounts, stage)) stageCounts[stage] += 1;
+    });
+    // «Ужас-ужас» = всё остальное в выбранном фильтре.
+    stageCounts['-5'] = Math.max(0, statBase.length - stageCounts['-1'] - stageCounts['1'] - stageCounts['5']);
+    countAll.textContent = totalAll;
+    countFav.textContent = totalFav;
+    countLearned.textContent = totalLearned;
+    // Счётчики на чипах = ОБЩЕЕ количество фраз в категории (не «осталось»),
+    // чтобы цифры были стабильны и не зависели от learned-стейта.
+    if (countA2)        countA2.textContent        = getRangeEntries('a2').length;
+    if (countB2)        countB2.textContent        = getRangeEntries('b2').length;
+    if (countNumbers)   countNumbers.textContent   = getRangeEntries('numbers').length;
+    if (countQuestions) countQuestions.textContent = getRangeEntries('questions').length;
+    if (countLena)      countLena.textContent      = getRangeEntries('lena').length;
+    if (countRunasana)  countRunasana.textContent  = getRangeEntries('runasana').length;
+    if (countTop)       countTop.textContent       = getRangeEntries('top').length;
+    if (countOtvety)    countOtvety.textContent    = getRangeEntries('otvety').length;
+    if (countTeksty)    countTeksty.textContent    = getRangeEntries('teksty').length;
+    var displayCount = filtered.length;
+    vocabCountLabel.textContent = displayCount + ' ' + pluralize(displayCount);
+    if (vocabFooterStats) vocabFooterStats.textContent = 'Активных: ' + totalAll + ' · Выученных: ' + totalLearned;
+    vocabEmpty.style.display = filtered.length ? 'none' : 'block';
+    vocabListWrap.querySelectorAll('.vocab-item').forEach(el => el.remove());
+    if (!filtered.length) {
+      vocabEmpty.textContent = vocabSearchQuery ? 'Ничего не найдено.' : 'Пока словарь пуст.';
+      return;
+    }
+    var heartOutline = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+    var heartFilled  = '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>';
+    // v55: DocumentFragment + escape вместо querySelector после innerHTML
+    var frag = document.createDocumentFragment();
+    var esc = function(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); };
+    filtered.forEach(item => {
+      const row = document.createElement('div');
+      row.className = 'vocab-item';
+      row.dataset.id = item.id;
+      row.setAttribute('role', 'button');
+      row.setAttribute('tabindex', '0');
+      row.title = 'Открыть эту карточку';
+      row.innerHTML = '<button class="vocab-fav-btn ' + (item.fav ? 'active' : '') + '" data-action="fav" data-id="' + item.id + '" aria-label="' + (item.fav ? 'Убрать из избранного' : 'Добавить в избранное') + '">' + (item.fav ? heartFilled : heartOutline) + '</button>' +
+        '<div class="vocab-words"><span class="vocab-lv">' + esc(item.lv) + '</span><span class="vocab-ru">' + esc(item.ru) + '</span></div>';
+      frag.appendChild(row);
+    });
+    vocabListWrap.appendChild(frag);
+    } finally { _rangeEntriesCache = null; }
+  }
+  function ensureVocabEntry(markLearned) {
+    const item = currentPhrase();
+    const id = item && item.id;
+    const lv = normalizeTranslation(item.lv);
+    const ru = normalizeTranslation(item.ru);
+    let found = id != null
+      ? vocabulary.find(v => String(v.id) === String(id))
+      : vocabulary.find(v => (v.lv||'').toLowerCase() === lv.toLowerCase());
+    if (!found) {
+      found = { id: id, lv, ru, fav: false, learned: false };
+      vocabulary.push(found);
+    } else {
+      if (found.id == null && id != null) found.id = id;
+      found.lv = lv; found.ru = ru;
+    }
+    if (markLearned) found.learned = true;
+    saveVocab();
+    updateBadge();
+    // v54: не перерисовываем словарь если он закрыт. Откроется — тогда и перерисуется.
+    var vo = document.getElementById('vocabOverlay');
+    if (vo && vo.classList.contains('open')) renderVocab();
+  }
+
+  // Синк иконки сердца на карточке.
+  const cardFavBtn = document.getElementById('cardFavBtn');
+  const cardFavIcon = document.getElementById('cardFavIcon');
+  const HEART_OUTLINE_PATH = '<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>';
+  function isCurrentFavorite() {
+    const cur = currentPhrase();
+    const id = cur && cur.id;
+    if (id == null) return false;
+    const found = vocabulary.find(v => String(v.id) === String(id));
+    return !!(found && found.fav);
+  }
+  function syncCardFav() {
+    if (!cardFavBtn || !cardFavIcon) return;
+    const isFav = isCurrentFavorite();
+    cardFavBtn.classList.toggle('active', isFav);
+    cardFavBtn.setAttribute('aria-label', isFav ? 'Убрать из избранного' : 'Добавить в избранное');
+    cardFavIcon.setAttribute('fill', isFav ? 'currentColor' : 'none');
+    cardFavIcon.innerHTML = HEART_OUTLINE_PATH;
+  }
+  function toggleCurrentFav() {
+    const cur = currentPhrase();
+    const id = cur && cur.id;
+    if (id == null) return;
+    const lv = normalizeTranslation(cur.lv);
+    const ru = normalizeTranslation(cur.ru);
+    let found = vocabulary.find(v => String(v.id) === String(id));
+    if (!found) {
+      found = { id: id, lv, ru, fav: true, learned: false };
+      vocabulary.push(found);
+    } else {
+      found.fav = !found.fav;
+      if (found.id == null) found.id = id;
+    }
+    saveVocab();
+    updateBadge();
+    syncCardFav();
+    // v66: НЕ перерисовываем словарь если он закрыт — иначе главный поток блокируется на 1-2с
+    // на больших словарях, SRS-кнопки и сердце визуально «замирают» (нет тени/анимации :active).
+    var vo = document.getElementById('vocabOverlay');
+    if (vo && vo.classList.contains('open')) {
+      var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 200); };
+      ric(function(){ try { renderVocab(); } catch(e){} });
+    }
+  }
+  if (cardFavBtn) cardFavBtn.addEventListener('click', toggleCurrentFav);
+  function renderTranslation() {
+    const item = currentPhrase();
+    const translation = normalizeTranslation(item.ru);
+    if (translationOpen) {
+      translationText.textContent = translation || 'Перевод отсутствует';
+      translateWrap.classList.add('show-text');
+    } else {
+      translationButton.textContent = 'Показать перевод';
+      translationText.textContent = '';
+      translateWrap.classList.remove('show-text');
+    }
+    if (typeof requestAnimationFrame === 'function') requestAnimationFrame(fitAllPanels);
+    else setTimeout(fitAllPanels, 0);
+  }
+  // Fit-to-box: подбираем размер шрифта, чтобы текст влез без переполнения панели.
+  // Каждая панель (LV и RU) подбирается НЕЗАВИСИМО.
+  function fitTextToPanel(panel, textEl) {
+    if (!panel || !textEl || !textEl.textContent.trim()) return;
+    // Сброс inline-стилей и старт с CSS-дефолта
+    textEl.style.fontSize = '';
+    textEl.style.lineHeight = '';
+    // v61: сбрасываем динамические padding от предыдущего centerPhraseVertically, иначе contentAvail будет от предыдущей фразы.
+    if (textEl.classList && textEl.classList.contains('phrase')) {
+      textEl.style.setProperty('--phrase-pad-top', '0px');
+      textEl.style.setProperty('--phrase-pad-bot', '0px');
+    }
+    var startSize = parseFloat(getComputedStyle(textEl).fontSize) || 36;
+    var minSize = 11;
+    var size = startSize;
+    var iterations = 0;
+    // Берём всё содержимое панели (.panel > div) — это включает и кнопку «Прослушать»,
+    // которая лежит в том же wrap-блоке, но не всегда попадает в panel.scrollHeight при overflow:hidden.
+    var wrap = panel.firstElementChild;
+    var audioBtn = panel.querySelector('.audio-btn');
+    var audioBtnMobile = panel.querySelector('.audio-btn-mobile');
+    // Сбрасываем предыдущее сжатие кнопки перед перерасчётом.
+    if (audioBtn) {
+      audioBtn.style.marginTop = '';
+      audioBtn.style.height = '';
+      audioBtn.style.padding = '';
+      audioBtn.style.fontSize = '';
+    }
+    function isOverflow() {
+      // v49: мерим переполнение по верхней/нижней границе фразы vs панели и кнопки «Прослушать».
+      // Это надёжнее формул с padding’ами — работает даже при flex justify-content:center.
+      var rect = textEl.getBoundingClientRect();
+      var pRect = panel.getBoundingClientRect();
+      // Верх/низ фразы выходит за панель (с запасом 4px)
+      if (rect.top < pRect.top + 4) return true;
+      if (rect.bottom > pRect.bottom - 4) return true;
+      // Наезд на кнопку «Прослушать» (запас 8px)
+      if (audioBtn && audioBtn.offsetParent) {
+        var bRect = audioBtn.getBoundingClientRect();
+        if (rect.bottom > bRect.top - 8) return true;
+      }
+      // v61: внутреннее переполнение через Range по text-node.
+      // v65: ТОЛЬКО на мобиле — там .phrase имеет height:100%, и scrollHeight не покажет реальный текст.
+      // На десктопе .phrase высоты 1 line-height — Range врёт из-за font-metrics диакритик (textH > clientH на ~4-6px всегда).
+      var isMobileFit = window.matchMedia('(max-width: 600px)').matches;
+      if (isMobileFit && textEl.classList && textEl.classList.contains('phrase')) {
+        var tn = Array.from(textEl.childNodes).find(function(n){ return n.nodeType === 3 && n.textContent.trim().length > 0; });
+        if (tn) {
+          var rng = document.createRange();
+          rng.selectNodeContents(tn);
+          var rcs = Array.from(rng.getClientRects()).filter(function(r){ return r.height > 0; });
+          if (rcs.length > 0) {
+            var firstT = Math.min.apply(null, rcs.map(function(r){ return r.top; }));
+            var lastB = Math.max.apply(null, rcs.map(function(r){ return r.bottom; }));
+            var textH = lastB - firstT;
+            var csTE = getComputedStyle(textEl);
+            var contentAvail = textEl.clientHeight - parseFloat(csTE.paddingTop) - parseFloat(csTE.paddingBottom);
+            if (textH > contentAvail + 2) return true;
+          }
+        }
+      } else {
+        // v65: tolerance 6px для латышских диакритик (я, ё, ї) — font-metrics выходят за line-height на ~4px
+        if (textEl.scrollHeight > textEl.clientHeight + 6) return true;
+      }
+      // Переполнение по ширине
+      if (textEl.scrollWidth > textEl.clientWidth + 1) return true;
+      return false;
+    }
+    while (iterations < 60) {
+      if (!isOverflow()) break;
+      if (size <= minSize) break;
+      size = Math.max(minSize, size - 1);
+      textEl.style.fontSize = size + 'px';
+      if (size < 24) textEl.style.lineHeight = '1.25';
+      else if (size < 32) textEl.style.lineHeight = '1.18';
+      iterations++;
+    }
+    // Если дошли до min и всё ещё переполнение — сжимаем кнопку «Прослушать»,
+    // чтобы она не вылезала за рамку панели на очень низких экранах.
+    if (audioBtn && audioBtn.offsetParent && isOverflow()) {
+      audioBtn.style.marginTop = '6px';
+      audioBtn.style.height = '34px';
+      audioBtn.style.padding = '0 14px 0 12px';
+      audioBtn.style.fontSize = '13px';
+      // Ещё одна попытка сжать текст после сжатия кнопки.
+      var iter2 = 0;
+      while (iter2 < 30 && isOverflow() && size > minSize) {
+        size = Math.max(minSize, size - 1);
+        textEl.style.fontSize = size + 'px';
+        textEl.style.lineHeight = '1.25';
+        iter2++;
+      }
+    }
+  }
+  // v61: вертикальное центрирование фразы в LV-панели на мобиле через динамический padding-top.
+  // Нужно именно так, потому что flex justify-center игнорирует floats, а нам нужны float-зоны для обтекания кнопок.
+  function centerPhraseVertically() {
+    // v74: на мобиле центрирование делает v74_fitAndCenterPanel — этот функ больше не нужен на мобиле.
+    // На десктопе он изначально не работал (раньше return).
+    if (window.matchMedia('(max-width: 600px)').matches) return;
+    if (!window.matchMedia('(max-width: 600px)').matches) return;
+    var lvPanel = document.querySelector('.panel:first-of-type');
+    if (!lvPanel) return;
+    var phrase = lvPanel.querySelector('.phrase');
+    if (!phrase) return;
+    // Сбросим перед измерением — равные отступы по умолчанию
+    phrase.style.setProperty('--phrase-pad-top', '0px');
+    phrase.style.setProperty('--phrase-pad-bot', '0px');
+    // Считаем высоту реального текста через Range по text-node
+    var textNode = Array.from(phrase.childNodes).find(function(n){ return n.nodeType === 3 && n.textContent.trim().length > 0; });
+    if (!textNode) return;
+    var range = document.createRange();
+    range.selectNodeContents(textNode);
+    var rects = Array.from(range.getClientRects()).filter(function(r){ return r.height > 0; });
+    if (rects.length === 0) return;
+    var firstTop = Math.min.apply(null, rects.map(function(r){ return r.top; }));
+    var lastBottom = Math.max.apply(null, rects.map(function(r){ return r.bottom; }));
+    var textHeight = lastBottom - firstTop;
+    // Доступная высота — вся высота фразы (без padding'ов, мы их сбросили)
+    var available = phrase.clientHeight;
+    var extraSpace = available - textHeight;
+    var pad = Math.max(0, Math.floor(extraSpace / 2));
+    phrase.style.setProperty('--phrase-pad-top', pad + 'px');
+    phrase.style.setProperty('--phrase-pad-bot', pad + 'px');
+  }
+  window.centerPhraseVertically = centerPhraseVertically;
+
+  // v73: универсальный детектор переполнения для grow-фазы. Тот же подход, что и в fitTextToPanel,
+  // но без доступа к локальному audioBtn — мы ищем .audio-btn внутри панели здесь же.
+  function panelOverflows(panel, textEl) {
+    var rect = textEl.getBoundingClientRect();
+    var pRect = panel.getBoundingClientRect();
+    if (rect.top < pRect.top + 4) return true;
+    if (rect.bottom > pRect.bottom - 4) return true;
+    var audioBtn = panel.querySelector('.audio-btn');
+    if (audioBtn && audioBtn.offsetParent) {
+      var bRect = audioBtn.getBoundingClientRect();
+      if (rect.bottom > bRect.top - 8) return true;
+    }
+    var isMobileFit = window.matchMedia('(max-width: 600px)').matches;
+    if (isMobileFit && textEl.classList && textEl.classList.contains('phrase')) {
+      var tn = Array.from(textEl.childNodes).find(function(n){ return n.nodeType === 3 && n.textContent.trim().length > 0; });
+      if (tn) {
+        var rng = document.createRange();
+        rng.selectNodeContents(tn);
+        var rcs = Array.from(rng.getClientRects()).filter(function(r){ return r.height > 0; });
+        if (rcs.length > 0) {
+          var firstT = Math.min.apply(null, rcs.map(function(r){ return r.top; }));
+          var lastB = Math.max.apply(null, rcs.map(function(r){ return r.bottom; }));
+          var textH = lastB - firstT;
+          var csTE = getComputedStyle(textEl);
+          var contentAvail = textEl.clientHeight - parseFloat(csTE.paddingTop) - parseFloat(csTE.paddingBottom);
+          if (textH > contentAvail + 2) return true;
+        }
+      }
+    } else {
+      if (textEl.scrollHeight > textEl.clientHeight + 6) return true;
+    }
+    if (textEl.scrollWidth > textEl.clientWidth + 1) return true;
+    return false;
+  }
+
+  // v73: для одной панели/текста — найти максимальный размер шрифта, при котором текст ещё помещается.
+  // Стартуем с текущего вычисленного размера и пробуем расти до growCap. Возвращает оптимальный px.
+  function growTextToOptimum(panel, textEl, growCap) {
+    if (!panel || !textEl || !textEl.textContent.trim()) return 0;
+    var current = parseFloat(getComputedStyle(textEl).fontSize) || 18;
+    var size = current;
+    var iter = 0;
+    // пробуем +1px пока влезает
+    while (iter < 40 && size < growCap) {
+      var trial = size + 1;
+      textEl.style.fontSize = trial + 'px';
+      // line-height следует тем же правилам, что и в fitTextToPanel
+      if (trial < 24) textEl.style.lineHeight = '1.25';
+      else if (trial < 32) textEl.style.lineHeight = '1.18';
+      else textEl.style.lineHeight = '1.18';
+      if (panelOverflows(panel, textEl)) {
+        // откатываем
+        textEl.style.fontSize = size + 'px';
+        if (size < 24) textEl.style.lineHeight = '1.25';
+        else if (size < 32) textEl.style.lineHeight = '1.18';
+        else textEl.style.lineHeight = '1.18';
+        break;
+      }
+      size = trial;
+      iter++;
+    }
+    return size;
+  }
+
+  // v74: новая мобильная логика — простой подбор шрифта и центрирование по рабочей зоне.
+  // Применяется ТОЛЬКО если window.matchMedia('(max-width:600px)').matches.
+  // LV и RU подбираются НЕЗАВИСИМО (разная длина — разные размеры — это нормально).
+  // Центр считается по рабочей зоне панели за вычетом углов 50x50 (сердечко и плей).
+  function v74_measureTextRange(textEl) {
+    // v74-fix: в .phrase есть float-spanы (.float-heart-right, .float-avoid-play-right и др.) для обтекания кнопок.
+    // Нельзя мерить Range(textEl) полностью — он включит и эти пустые float-блоки.
+    // Собираю все text-nodeы (а не только первый) и мерю объединённый bounding box.
+    var allRects = [];
+    function collect(node) {
+      if (node.nodeType === 3) {
+        if (!node.textContent || !node.textContent.trim()) return;
+        var r = document.createRange();
+        r.selectNodeContents(node);
+        Array.from(r.getClientRects()).forEach(function(rc){
+          if (rc.height > 0 && rc.width > 0) allRects.push(rc);
+        });
+      } else if (node.nodeType === 1 && !node.classList.contains('float-heart-left') && !node.classList.contains('float-heart-right') && !node.classList.contains('float-push-left') && !node.classList.contains('float-push-right') && !node.classList.contains('float-avoid-play-left') && !node.classList.contains('float-avoid-play-right')) {
+        // рекурсивно в дети (но не в float-spanы)
+        for (var i = 0; i < node.childNodes.length; i++) collect(node.childNodes[i]);
+      }
+    }
+    for (var i = 0; i < textEl.childNodes.length; i++) collect(textEl.childNodes[i]);
+    if (allRects.length === 0) return null;
+    var top = Math.min.apply(null, allRects.map(function(r){ return r.top; }));
+    var bot = Math.max.apply(null, allRects.map(function(r){ return r.bottom; }));
+    return { top: top, bot: bot, height: bot - top, lines: allRects.length };
+  }
+  function v74_workZone(panel) {
+    var cs = getComputedStyle(panel);
+    var pr = panel.getBoundingClientRect();
+    var padT = parseFloat(cs.paddingTop)    || 0;
+    var padB = parseFloat(cs.paddingBottom) || 0;
+    var padL = parseFloat(cs.paddingLeft)   || 0;
+    var padR = parseFloat(cs.paddingRight)  || 0;
+    return {
+      top:    pr.top    + padT,
+      bot:    pr.bottom - padB,
+      left:   pr.left   + padL,
+      right:  pr.right  - padR,
+      cx:     (pr.top + padT + pr.bottom - padB) / 2
+    };
+  }
+  function v74_fitsInWorkZone(panel, textEl, workTop, workBot, isLV) {
+    // ширина: scrollWidth не должен переполнять clientWidth
+    if (textEl.scrollWidth > textEl.clientWidth + 1) return false;
+    var m = v74_measureTextRange(textEl);
+    if (!m) return true; // нечего мерить
+    var avail = workBot - workTop;
+    // запас 2px на font-metrics диакритики
+    if (m.height > avail - 2) return false;
+    return true;
+  }
+  function v74_fitAndCenterPanel(panel, textEl, isLV) {
+    if (!panel || !textEl || !textEl.textContent.trim()) return null;
+    // 1. Сброс inline-стилей
+    textEl.style.fontSize = '';
+    textEl.style.lineHeight = '';
+    if (isLV) {
+      textEl.style.setProperty('--phrase-pad-top', '0px');
+      textEl.style.setProperty('--phrase-pad-bot', '0px');
+    } else {
+      var wrap = textEl.closest('.translate-wrap');
+      if (wrap) wrap.style.paddingTop = '';
+    }
+    // 2. Рабочая зона панели (минус padding панели).
+    var z = v74_workZone(panel);
+    var workTop = z.top;
+    var workBot = z.bot;
+    var avail   = workBot - workTop;
+    // 3. Подбор размера шрифта бинарным поиском, шаг 0.5px, диапазон 14..32.
+    var lo = 14, hi = 32;
+    function tryFont(px) {
+      textEl.style.fontSize = px + 'px';
+      textEl.style.lineHeight = px < 24 ? '1.25' : '1.18';
+      // force reflow
+      void textEl.offsetHeight;
+      return v74_fitsInWorkZone(panel, textEl, workTop, workBot, isLV);
+    }
+    // если максимум помещается — берём его и не парим CPU
+    var best = lo;
+    if (tryFont(hi)) { best = hi; }
+    else {
+      // бинарный поиск с шагом 0.5
+      var loF = lo, hiF = hi;
+      // если даже минимум не помещается — оставляем минимум (текст может переполниться, fallback ниже)
+      if (!tryFont(loF)) { best = loF; }
+      else {
+        while (hiF - loF > 0.5) {
+          var mid = Math.round(((loF + hiF) / 2) * 2) / 2;
+          if (tryFont(mid)) { loF = mid; }
+          else              { hiF = mid; }
+        }
+        best = loF;
+      }
+    }
+    // финал — выставляем найденный размер
+    textEl.style.fontSize = best + 'px';
+    textEl.style.lineHeight = best < 24 ? '1.25' : '1.18';
+    void textEl.offsetHeight;
+    // 4. Центрирование по реальным границам текста (Range bounds).
+    // На LV-панели добавление padTop сжимает content-area и может поменять флоат-обтекание —
+    // я делаю итеративный проход: если после padTop текст переполняется, уменьшаю фонт на 0.5 и повторяю.
+    var m = v74_measureTextRange(textEl);
+    if (!m) return null;
+    // v74-fix: применять padTop И padBot независимо. delta может быть отрицательным —
+    // это значит текст УЖЕ ниже центра и нужно сдвинуть его вверх через padBot.
+    function applyCenter(textH, topNow, botNow) {
+      var targetCx = (workTop + workBot) / 2;
+      var currCx   = (topNow + botNow) / 2;
+      var delta    = targetCx - currCx;
+      var padTop = 0, padBot = 0;
+      if (delta > 0)      padTop = delta;   // сдвигаем вниз
+      else if (delta < 0) padBot = -delta;  // сдвигаем вверх
+      // fallback: если текст и так не влез — паддинг 0
+      if (textH >= avail - 1) { padTop = 0; padBot = 0; }
+      if (isLV) {
+        textEl.style.setProperty('--phrase-pad-top', padTop + 'px');
+        textEl.style.setProperty('--phrase-pad-bot', padBot + 'px');
+      } else {
+        var w = textEl.closest('.translate-wrap');
+        if (w) {
+          w.style.paddingTop    = padTop + 'px';
+          w.style.paddingBottom = padBot + 'px';
+        }
+      }
+      void textEl.offsetHeight;
+      return padTop + padBot;
+    }
+    applyCenter(m.height, m.top, m.bot);
+    // v74-fix2: итеративный центринг — после применения padTop/padBot текст может сместиться, повторяем до сходимости.
+    var centerIter = 0;
+    while (centerIter < 6) {
+      var mc0 = v74_measureTextRange(textEl);
+      if (!mc0) break;
+      var asym = Math.abs((mc0.top - workTop) - (workBot - mc0.bot));
+      if (asym <= 1.0) break;  // достаточная точность
+      applyCenter(mc0.height, mc0.top, mc0.bot);
+      centerIter++;
+    }
+    // После центрирования возможен перелив за workBot/workTop — в этом случае уменьшаем фонт и повторяем центринг.
+    var refitIter = 0;
+    while (refitIter < 12) {
+      var mc = v74_measureTextRange(textEl);
+      if (!mc) break;
+      if (mc.bot <= workBot + 0.5 && mc.top >= workTop - 0.5) break;
+      if (best <= lo + 0.001) {
+        if (isLV) {
+          textEl.style.setProperty('--phrase-pad-top', '0px');
+          textEl.style.setProperty('--phrase-pad-bot', '0px');
+        } else {
+          var w0 = textEl.closest('.translate-wrap'); if (w0) w0.style.paddingTop = '';
+        }
+        break;
+      }
+      best = Math.max(lo, best - 0.5);
+      textEl.style.fontSize = best + 'px';
+      textEl.style.lineHeight = best < 24 ? '1.25' : '1.18';
+      if (isLV) {
+        textEl.style.setProperty('--phrase-pad-top', '0px');
+        textEl.style.setProperty('--phrase-pad-bot', '0px');
+      } else {
+        var w1 = textEl.closest('.translate-wrap'); if (w1) { w1.style.paddingTop = '0px'; w1.style.paddingBottom = '0px'; }
+      }
+      void textEl.offsetHeight;
+      // итеративный центринг после нового размера
+      for (var k = 0; k < 6; k++) {
+        var mrk = v74_measureTextRange(textEl);
+        if (!mrk) break;
+        var asymK = Math.abs((mrk.top - workTop) - (workBot - mrk.bot));
+        if (asymK <= 1.0) break;
+        applyCenter(mrk.height, mrk.top, mrk.bot);
+      }
+      refitIter++;
+    }
+    // 5. Замер итоговой асимметрии — кладём в data-атрибут.
+    var m2 = v74_measureTextRange(textEl);
+    if (m2) {
+      var gapTop = m2.top - workTop;
+      var gapBot = workBot - m2.bot;
+      var asym   = Math.abs(gapTop - gapBot);
+      panel.dataset.v74Font   = best.toFixed(1);
+      panel.dataset.v74GapTop = gapTop.toFixed(1);
+      panel.dataset.v74GapBot = gapBot.toFixed(1);
+      panel.dataset.v74Asym   = asym.toFixed(1);
+      return { fontSize: best, gapTop: gapTop, gapBot: gapBot, asymmetry: asym };
+    }
+    return null;
+  }
+  window.v74_fitAndCenterPanel = v74_fitAndCenterPanel;
+
+  function fitAllPanels() {
+    // v74: на мобиле — простая независимая логика для LV и RU. Десктоп — старый код v73.
+    var isMobileFit = window.matchMedia('(max-width: 600px)').matches;
+    if (isMobileFit) {
+      var lvPanel = document.querySelector('.panel:first-of-type');
+      var ruPanel = document.querySelector('.panel:nth-of-type(2)');
+      var lvText  = lvPanel ? lvPanel.querySelector('.phrase') : null;
+      var ruWrap  = ruPanel ? ruPanel.querySelector('.translate-wrap') : null;
+      var ruText  = ruPanel ? ruPanel.querySelector('.translation-text') : null;
+      var ruShown = ruWrap && ruWrap.classList.contains('show-text');
+      if (lvPanel && lvText) v74_fitAndCenterPanel(lvPanel, lvText, true);
+      if (ruPanel && ruText && ruShown) {
+        v74_fitAndCenterPanel(ruPanel, ruText, false);
+      } else if (ruWrap) {
+        // RU не показан — сбрасываем inline-overrideы, чтобы кнопка «Показать перевод» центрировалась CSS-ом.
+        ruWrap.style.paddingTop = '';
+        ruWrap.style.justifyContent = '';
+      }
+      return;
+    }
+    // === ниже идёт оригинальная десктопная логика v73 — НЕ ТРОНУТА ===
+    var panels = document.querySelectorAll('.panel');
+    var entries = [];
+    panels.forEach(function(p) {
+      var t = p.querySelector('.phrase') || p.querySelector('.translation-text');
+      if (t) {
+        fitTextToPanel(p, t);
+        entries.push({ panel: p, text: t });
+      }
+    });
+    // v73: ЕДИНЫЙ размер шрифта для LV и RU внутри одной карточки.
+    // Шаг 1: для каждой панели находим её собственный оптимум — сначала fitTextToPanel ужимает,
+    // затем growTextToOptimum поднимает до максимально влезающего размера.
+    // Шаг 2: финальный размер = min(lvOpt, ruOpt) — гарантирует, что обе фразы влезут и выглядят одинаково.
+    // Это закрывает многократную жалобу Elena: «LV мелкий, RU крупный — почини».
+    var lvEntry = null, ruEntry = null;
+    entries.forEach(function(e){
+      if (e.text.classList.contains('phrase')) lvEntry = e;
+      else if (e.text.classList.contains('translation-text')) ruEntry = e;
+    });
+    // Применяем unified-font только когда обе панели присутствуют И RU показан (translate-wrap.show-text).
+    // Если RU скрыт (кнопка «Показать перевод» ещё видна) — оставляем как есть, чтобы не дёргать шрифт.
+    if (lvEntry && ruEntry) {
+      var ruWrap0 = ruEntry.text.closest('.translate-wrap');
+      var ruVisible = ruWrap0 && ruWrap0.classList.contains('show-text');
+      // Потолок роста — не выше 32px (соответствует диапазонам CSS базового размера и хорошо смотрится в карточке).
+      var GROW_CAP = 32;
+      var lvOpt = growTextToOptimum(lvEntry.panel, lvEntry.text, GROW_CAP);
+      var ruOpt = ruVisible ? growTextToOptimum(ruEntry.panel, ruEntry.text, GROW_CAP) : lvOpt;
+      var unified = Math.min(lvOpt, ruOpt);
+      // Если RU виден — выставляем обе панели в один общий размер.
+      // Если RU скрыт — LV получает свой собственный максимум.
+      if (unified > 0) {
+        lvEntry.text.style.fontSize = unified + 'px';
+        if (unified < 24) lvEntry.text.style.lineHeight = '1.25';
+        else if (unified < 32) lvEntry.text.style.lineHeight = '1.18';
+        else lvEntry.text.style.lineHeight = '1.18';
+        if (ruVisible) {
+          ruEntry.text.style.fontSize = unified + 'px';
+          if (unified < 24) ruEntry.text.style.lineHeight = '1.25';
+          else if (unified < 32) ruEntry.text.style.lineHeight = '1.18';
+          else ruEntry.text.style.lineHeight = '1.18';
+        }
+        // Защитный shrink-проход — на случай если выравнивание подняло LV выше его реального оптимума
+        // (теоретически возможно при странных краевых рендерах). fitTextToPanel ужмёт обратно.
+        if (panelOverflows(lvEntry.panel, lvEntry.text)) fitTextToPanel(lvEntry.panel, lvEntry.text);
+        if (ruVisible && panelOverflows(ruEntry.panel, ruEntry.text)) fitTextToPanel(ruEntry.panel, ruEntry.text);
+      }
+    }
+    if (lvEntry && ruEntry) {
+      var ruWrap = ruEntry.text.closest('.translate-wrap');
+      // v56: выравнивание верха RU по верху LV — только на десктопе (>600px). На мобиле оба блока центрируются.
+      var isMobile = window.matchMedia('(max-width: 600px)').matches;
+      if (ruWrap && ruWrap.classList.contains('show-text') && !isMobile) {
+        // Сначала сбросим override, чтобы получить базовый layout RU.
+        ruWrap.style.paddingTop = '';
+        ruWrap.style.justifyContent = 'flex-start';
+        // Даём браузеру просчитать.
+        void ruWrap.offsetHeight;
+        var lvPanelTop = lvEntry.panel.getBoundingClientRect().top;
+        var lvTextTop = lvEntry.text.getBoundingClientRect().top;
+        var ruPanelTop = ruEntry.panel.getBoundingClientRect().top;
+        var ruTextTop = ruEntry.text.getBoundingClientRect().top;
+        var ruCurrent = ruTextTop - ruPanelTop;
+        var ruWanted = lvTextTop - lvPanelTop;
+        var delta = ruWanted - ruCurrent;
+        var basePad = 6;
+        ruWrap.style.paddingTop = Math.max(0, basePad + delta) + 'px';
+      } else if (ruWrap && isMobile) {
+        // v56: на мобиле сбрасываем inline-overrideы чтобы сработали CSS-правила.
+        ruWrap.style.paddingTop = '';
+        ruWrap.style.justifyContent = '';
+      } else if (ruWrap) {
+        // v53 фикс: сбрасываем все inline-стили, иначе justifyContent='flex-start' остаётся
+        // после возврата show-text=false и кнопка «Показать перевод» уезжает влево.
+        ruWrap.style.paddingTop = '';
+        ruWrap.style.justifyContent = '';
+      }
+    }
+    // v61: вертикальное центрирование LV-фразы на мобиле
+    if (typeof centerPhraseVertically === 'function') centerPhraseVertically();
+  }
+  window.fitAllPanels = fitAllPanels;
+  function applyLengthClasses(item) {
+    // Старые классы больше не используем — всего подбор через fitTextToPanel в конце renderPhrase/renderTranslation.
+    const panels = document.querySelectorAll('.panel');
+    panels.forEach(p => p.classList.remove('is-long', 'is-xlong', 'is-mega'));
+  }
+  function renderPhrase() {
+    const item = currentPhrase();
+    phraseEl.textContent = normalizeTranslation(item.lv);
+    // v61: инжектим симметричные float-spans в начало .phrase (только на мобиле эти классы имеют размеры).
+    if (window.matchMedia('(max-width: 600px)').matches) {
+      var floatHTML = '<span class="float-heart-left" aria-hidden="true"></span>'
+        + '<span class="float-heart-right" aria-hidden="true"></span>'
+        + '<span class="float-push-left" aria-hidden="true"></span>'
+        + '<span class="float-push-right" aria-hidden="true"></span>'
+        + '<span class="float-avoid-play-left" aria-hidden="true"></span>'
+        + '<span class="float-avoid-play-right" aria-hidden="true"></span>';
+      phraseEl.insertAdjacentHTML('afterbegin', floatHTML);
+    }
+    applyLengthClasses(item);
+    translationOpen = false;
+    renderTranslation();
+    srsButtons.forEach(btn => btn.classList.remove('is-selected'));
+    if (typeof syncCardFav === 'function') syncCardFav();
+    updateLearnedProgress();
+    if (typeof requestAnimationFrame === 'function') requestAnimationFrame(fitAllPanels);
+    else setTimeout(fitAllPanels, 0);
+  }
+  // Пересчитать при resize и при загрузке фонтов
+  window.addEventListener('resize', function(){
+    if (typeof requestAnimationFrame === 'function') requestAnimationFrame(fitAllPanels);
+    else setTimeout(fitAllPanels, 0);
+  }, { passive: true });
+  if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(function(){ fitAllPanels(); });
+  }
+  function updateLearnedProgress() {
+    var label = document.getElementById('learnedProgressLabel');
+    var segO  = document.getElementById('learnedProgressSegO');
+    var segY  = document.getElementById('learnedProgressSegY');
+    var segG  = document.getElementById('learnedProgressSegG');
+    if (!label && !segO && !segY && !segG) return;
+    // Прогресс считается внутри выбранной колоды (Все/A2/B2/Карточки Лены/Топ/Ответы/Тексты)
+    // v75-fix: учитываем DECK_OVERRIDES через deckOf(), а не только диапазон
+    var elena = (typeof isElenaUser === 'function') ? isElenaUser() : false;
+    var hasDeck = deckMode && deckMode !== 'all' && (typeof DECK_RANGES !== 'undefined') && DECK_RANGES[deckMode];
+    var inRange = function(id) {
+      var n = Number(id);
+      if (!Number.isFinite(n)) return false;
+      if (hasDeck) return (typeof deckOf === 'function') ? (deckOf(n) === deckMode) : false;
+      // «Все» для не-Лены: секретные исключаем
+      if (!elena && typeof isSecretId === 'function' && isSecretId(n)) return false;
+      return true;
+    };
+    var total = 0;
+    if (Array.isArray(PHRASES)) {
+      for (var i = 0; i < PHRASES.length; i++) {
+        var p = PHRASES[i];
+        if (!p || typeof p.lv !== 'string' || !p.lv.trim()) continue;
+        if (!inRange(p.id)) continue;
+        total++;
+      }
+    }
+    // Считаем по stage: 1 = Ещё туплю, 2 = ОК, 3 = Выучено
+    var c1 = 0, c2 = 0, c3 = 0;
+    for (var key in phraseState) {
+      if (!Object.prototype.hasOwnProperty.call(phraseState, key)) continue;
+      if (!inRange(key)) continue;
+      var st = phraseState[key];
+      if (!st) continue;
+      if (st.stage === 1) c1++;
+      else if (st.stage === 2) c2++;
+      else if (st.stage === 3) c3++;
+    }
+    // На случай рассинхрона: «выучено» из vocabulary в диапазоне
+    var learnedInRange = 0;
+    var learnedSet = getLearnedIds();
+    learnedSet.forEach(function(id){ if (inRange(id)) learnedInRange++; });
+    if (learnedInRange > c3) c3 = learnedInRange;
+    var sum = c1 + c2 + c3;
+    var pct = total > 0 ? (sum * 100 / total) : 0;
+    if (label) {
+      if (sum === 0) {
+        label.textContent = 'Пока выучено 0% фраз. Поехали! 🚀';
+      } else {
+        // min 0,10%, дальше реальные цифры
+        var shownPct = pct < 0.1 ? 0.1 : pct;
+        var pctText = shownPct.toFixed(2).replace('.', ',');
+        label.textContent = 'Уже ' + pctText + '% фраз (' + sum + ' из ' + total + ')! Продолжай!';
+      }
+    }
+    if (total > 0) {
+      var pO = (c1 * 100 / total).toFixed(3);
+      var pY = (c2 * 100 / total).toFixed(3);
+      var pG = (c3 * 100 / total).toFixed(3);
+      if (segO) segO.style.width = pO + '%';
+      if (segY) segY.style.width = pY + '%';
+      if (segG) {
+        segG.style.width = pG + '%';
+        // Минимальная видимость для крошечных значений
+        segG.style.minWidth = (c3 > 0 ? '2px' : '0');
+      }
+      if (segO) segO.style.minWidth = (c1 > 0 ? '2px' : '0');
+      if (segY) segY.style.minWidth = (c2 > 0 ? '2px' : '0');
+    }
+  }
+  function nextPhrase() {
+    if (deck.length < 2) return renderPhrase();
+    srsNext();
+    renderPhrase();
+  }
+  function setPlayIcon(state) {
+    if (!audioButton) return;
+    if (state === 'pause') {
+      audioButton.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg><span>Стоп</span>';
+    } else {
+      audioButton.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"></polygon></svg><span>Прослушать</span>';
+    }
+  }
+  function getDayProgress(key) { return streakState.days[key]?.count || 0; }
+  function isDayDone(key) { return getDayProgress(key) >= DAILY_GOAL; }
+  function computeStreak() {
+    let count = 0;
+    const d = new Date();
+    while (true) {
+      const key = d.toISOString().slice(0,10);
+      if (isDayDone(key)) { count++; d.setDate(d.getDate() - 1); }
+      else break;
+    }
+    return count;
+  }
+  function updateStreakSummary() {
+    // Авто-сброс невалидного recoverDate (будущее, сегодня, уже выполнено)
+    if (streakState.recoverDate) {
+      var rd = streakState.recoverDate;
+      var tk = todayKey();
+      if (rd >= tk || isDayDone(rd)) {
+        streakState.recoverDate = null;
+        saveStreak();
+      }
+    }
+    const streak = computeStreak();
+    streakNum.textContent = String(streak);
+    streakBig.innerHTML = String(streak) + '<small>' + pluralizeDays(streak) + '</small>';
+    const activeKey = streakState.recoverDate || todayKey();
+    const progress = getDayProgress(activeKey);
+    const remaining = Math.max(0, DAILY_GOAL - progress);
+    streakToday.textContent = (streakState.recoverDate ? 'Восстановление: ' : 'Сегодня: ') + progress + '/' + DAILY_GOAL;
+    // Полоска восстановления: показываем только когда recoverDate есть
+    if (streakState.recoverDate) {
+      var msg = 'Откройте перевод 5 фраз, и пропущенный день восстановится.';
+      var html = '<span class="recover-banner__text">' + msg + '</span>'
+               + '<button type="button" class="recover-banner__close" id="recoverBannerClose" aria-label="Закрыть">×</button>';
+      if (recoverBanner.innerHTML !== html) recoverBanner.innerHTML = html;
+      if (!recoverBanner.classList.contains('is-visible')) recoverBanner.classList.add('is-visible');
+      var closeBtn = document.getElementById('recoverBannerClose');
+      if (closeBtn && !closeBtn.dataset.bound) {
+        closeBtn.dataset.bound = '1';
+        closeBtn.addEventListener('click', function (ev) {
+          ev.stopPropagation();
+          streakState.recoverDate = null;
+          saveStreak();
+          updateStreakSummary();
+          buildHeatmap();
+        });
+      }
+    } else {
+      if (recoverBanner.classList.contains('is-visible')) recoverBanner.classList.remove('is-visible');
+      recoverBanner.innerHTML = '';
+    }
+  }
+  function buildHeatmap() {
+    if (!heatmap || !heatmapMonths) return;
+    heatmap.innerHTML = '';
+    heatmapMonths.innerHTML = '';
+    const today = new Date();
+    const cols = 15;
+    const rows = 7;
+    // Первая строка — понедельник. dowMon: пн=0, вт=1, ..., вс=6
+    const dowMon = (today.getDay() + 6) % 7;
+    // Старт = понедельник такой недели, в которой today попадает в последнюю колонку
+    const start = new Date(today);
+    start.setDate(today.getDate() - ((cols - 1) * rows + dowMon));
+
+    const monthNames = ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'];
+    const monthFull = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+    const dowFull = ['воскресенье','понедельник','вторник','среда','четверг','пятница','суббота'];
+    const labels = Array(cols).fill('');
+    let prevMonth = -1;
+    for (let c = 0; c < cols; c++) {
+      const d = new Date(start);
+      d.setDate(start.getDate() + c * rows);
+      const month = d.getMonth();
+      if (month !== prevMonth) {
+        labels[c] = monthNames[month];
+        prevMonth = month;
+      }
+    }
+    labels.forEach(label => {
+      const div = document.createElement('div');
+      div.textContent = label;
+      heatmapMonths.appendChild(div);
+    });
+
+    const todayKeyStr = todayKey();
+    for (let c = 0; c < cols; c++) {
+      for (let r = 0; r < rows; r++) {
+        const index = c * rows + r;
+        const d = new Date(start);
+        d.setDate(start.getDate() + index);
+        const key = d.toISOString().slice(0, 10);
+        const cell = document.createElement('div');
+        const done = isDayDone(key);
+        const count = getDayProgress(key);
+        const isFuture = key > todayKeyStr;
+        const isToday = key === todayKeyStr;
+        // 4 уровня интенсивности GitHub-style
+        let lvl = 'hm-empty';
+        if (count >= 16) lvl = 'hm-4';
+        else if (count >= 11) lvl = 'hm-3';
+        else if (count >= 5) lvl = 'hm-2';
+        else if (count >= 1) lvl = 'hm-1';
+        cell.className = 'hm-cell ' + lvl;
+        if (isFuture) cell.classList.add('hm-future');
+        // Кастомный тултип: "понедельник, 28 апреля — 5 фраз"
+        const dowLabel = dowFull[d.getDay()];
+        const phrasesLabel = pluralizePhrases(count);
+        const dateLabel = d.getDate() + ' ' + monthFull[d.getMonth()];
+        cell.dataset.tip = isFuture
+          ? (dowLabel + ', ' + dateLabel)
+          : (dowLabel + ', ' + dateLabel + ' — ' + count + ' ' + phrasesLabel);
+        cell.addEventListener('mouseenter', showHmTip);
+        cell.addEventListener('mouseleave', hideHmTip);
+        // v67: на тач-устройствах показываем плашку по тапу. Тап по другой ячейке заменяет плашку,
+        // тап вне календаря или закрытие оверлея — прячет.
+        cell.addEventListener('click', showHmTip);
+        // Кликом восстанавливаем ТОЛЬКО прошлые пустые дни (не сегодня, не будущее, не выполненные)
+        if (!done && !isFuture && !isToday) {
+          cell.classList.add('hm-recover');
+          cell.addEventListener('click', function () {
+            streakState.recoverDate = key;
+            saveStreak();
+            updateStreakSummary();
+            buildHeatmap();
+          });
+        }
+        heatmap.appendChild(cell);
+      }
+    }
+  }
+
+  function pluralizePhrases(n) {
+    const nn = Math.abs(n) % 100;
+    const n1 = nn % 10;
+    if (nn > 10 && nn < 20) return 'фраз';
+    if (n1 > 1 && n1 < 5) return 'фразы';
+    if (n1 === 1) return 'фраза';
+    return 'фраз';
+  }
+
+  // Кастомный тултип хитмапа
+  let hmTipEl = null;
+  function ensureHmTip() {
+    if (hmTipEl) return hmTipEl;
+    hmTipEl = document.createElement('div');
+    hmTipEl.className = 'hm-tip';
+    document.body.appendChild(hmTipEl);
+    return hmTipEl;
+  }
+  function showHmTip(ev) {
+    const tip = ensureHmTip();
+    tip.textContent = ev.currentTarget.dataset.tip || '';
+    const r = ev.currentTarget.getBoundingClientRect();
+    tip.style.display = 'block';
+    // Позиционируем сверху по центру ячейки
+    const tipR = tip.getBoundingClientRect();
+    let left = r.left + r.width / 2 - tipR.width / 2;
+    left = Math.max(8, Math.min(left, window.innerWidth - tipR.width - 8));
+    const top = r.top - tipR.height - 8;
+    tip.style.left = left + 'px';
+    tip.style.top = (top < 4 ? r.bottom + 8 : top) + 'px';
+  }
+  function hideHmTip() {
+    if (hmTipEl) hmTipEl.style.display = 'none';
+  }
+  function recordTranslation() {
+    const key = streakState.recoverDate || todayKey();
+    const state = streakState.days[key] || { count: 0 };
+    // Снял cap, чтобы интенсивность хитмапа (4 уровня) отражала реальные открытия.
+    state.count = state.count + 1;
+    streakState.days[key] = state;
+    if (state.count >= DAILY_GOAL && streakState.recoverDate === key) {
+      streakState.recoverDate = null;
+      showToast('День восстановлен');
+    }
+    saveStreak();
+    updateStreakSummary();
+    buildHeatmap();
+  }
+
+  translationButton.addEventListener('click', function () {
+    translationOpen = true;
+    renderTranslation();
+    recordTranslation();
+  });
+
+  if (audioButton) {
+    // Флаг: блокируем повторный запуск, пока идёт fetch или играет аудио — иначе эхо.
+    let ttsBusy = false;
+    function setAudioBusy(busy) {
+      ttsBusy = busy;
+      if (audioButton) audioButton.disabled = busy;
+      if (audioButtonMobile) {
+        audioButtonMobile.disabled = busy;
+        audioButtonMobile.classList.toggle('is-playing', busy);
+      }
+    }
+    audioButton.addEventListener('click', async function () {
+      const text = phraseEl.textContent.trim();
+      if (!text) return;
+      // Если играет — останавливаем (toggle).
+      if (ttsAudio && !ttsAudio.paused) {
+        ttsAudio.pause();
+        ttsAudio.currentTime = 0;
+        setPlayIcon('play');
+        setAudioBusy(false);
+        return;
+      }
+      // Если уже загружаем — игнорируем клик.
+      if (ttsBusy) return;
+      setAudioBusy(true);
+      audioButton.classList.add('is-pressed');
+      setTimeout(function () { audioButton.classList.remove('is-pressed'); }, 150);
+      setPlayIcon('pause');
+      try {
+        const r = await fetch(TRANSLATEWORKER, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ action: 'tts', text, lang: 'lv-LV' })
+        });
+        const blob = await r.blob();
+        const url = URL.createObjectURL(blob);
+        ttsAudio = new Audio(url);
+        ttsAudio.addEventListener('ended', function () { setPlayIcon('play'); URL.revokeObjectURL(url); setAudioBusy(false); }, { once: true });
+        ttsAudio.addEventListener('error', function () { setPlayIcon('play'); URL.revokeObjectURL(url); setAudioBusy(false); }, { once: true });
+        await ttsAudio.play();
+      } catch (e) {
+        console.warn('TTS error', e);
+        setPlayIcon('play');
+        setAudioBusy(false);
+      }
+    });
+  }
+
+  srsButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var phrase = currentPhrase();
+      var phraseId = phrase && phrase.id ? String(phrase.id) : null;
+      // Новые стадии: 0=Ужас-ужас (красная), 1=Ещё туплю (оранж), 2=ОК (жёлто-зел), 3=Выучено (зел)
+      var stage = 0;
+      if (btn.classList.contains('orange')) stage = 1;
+      else if (btn.classList.contains('yellowgreen')) stage = 2;
+      else if (btn.classList.contains('green')) stage = 3;
+      srsButtons.forEach(function (b) { b.classList.remove('is-selected'); });
+      btn.classList.add('is-selected');
+      // v54: простая синхронная логика — как было до v53. setPhraseStage записывает в LS,
+      // push в Supabase идёт debounce'ом (200мс) — async, не блокирует. nextPhrase синхронно.
+      // НЕ перерисовываем словарь после каждого клика — это создавало сотни DOM-нод и забивало
+      // main thread, из-за чего перевод/словарь/тени тормозили.
+      if (phraseId) setPhraseStage(phraseId, stage);
+      if (stage === 3) {
+        ensureVocabEntry(true);
+        showToast('Фраза перенесена в выученное');
+      }
+      nextPhrase();
+      // Словарь перерисуем ТОЛЬКО если он сейчас открыт. Иначе — лень-рендер при следующем открытии.
+      var vo = document.getElementById('vocabOverlay');
+      if (vo && vo.classList.contains('open')) {
+        var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 200); };
+        ric(function(){ try { renderVocab(); } catch(e){} });
+      }
+    });
+  });
+
+  iconButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      btn.classList.add('is-pressed');
+      setTimeout(function () { btn.classList.remove('is-pressed'); }, 150);
+    });
+  });
+
+  menuLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      menuLinks.forEach(function (l) { l.classList.remove('active-link'); });
+      link.classList.add('active-link');
+    });
+  });
+
+  // На мобиле перемещаем поиск НИЖЕ фильтров, чтобы при открытии словаря не вылезала клавиатура.
+  function reorderVocabForViewport() {
+    const overlay = document.getElementById('vocabOverlay');
+    if (!overlay) return;
+    const header = overlay.querySelector('.vocab-header');
+    const headerRight = overlay.querySelector('.vocab-header-right');
+    const searchWrap = overlay.querySelector('.vocab-search-wrap');
+    const filters = overlay.querySelector('.vocab-filters');
+    const list = overlay.querySelector('.vocab-list-wrap');
+    if (!searchWrap || !filters || !list) return;
+    const isMobile = window.matchMedia('(max-width: 600px)').matches;
+    if (isMobile) {
+      // Выносим поиск из шапки и кладём между фильтрами и списком
+      if (searchWrap.parentElement === headerRight) {
+        overlay.insertBefore(searchWrap, list);
+        searchWrap.classList.add('vocab-search-mobile-row');
+      }
+    } else {
+      // Возвращаем в шапку
+      if (searchWrap.parentElement !== headerRight && headerRight) {
+        headerRight.insertBefore(searchWrap, headerRight.firstChild);
+        searchWrap.classList.remove('vocab-search-mobile-row');
+      }
+    }
+  }
+  window.addEventListener('resize', reorderVocabForViewport);
+  reorderVocabForViewport();
+
+  vocabToggle.addEventListener('click', function () {
+    reorderVocabForViewport();
+    vocabOverlay.classList.add('open');
+    // v52: рендер в следующий кадр — иначе оверлей появляется с задержкой 1-2 сек.
+    requestAnimationFrame(function(){ renderVocab(); });
+    if (vocabSearch && window.matchMedia('(min-width: 601px)').matches) vocabSearch.focus();
+  });
+  vocabClose.addEventListener('click', function () { vocabOverlay.classList.remove('open'); });
+  streakBtn.addEventListener('click', function () { streakOverlay.classList.add('open'); updateStreakSummary(); buildHeatmap(); });
+  streakClose.addEventListener('click', function () { streakOverlay.classList.remove('open'); hideHmTip(); });
+  // v75-r4/r5: auth.js кладёт свежие данные в localStorage и диспатчит lll:cloud-sync.
+  // Раньше этот событие в index.html никто не слушал — поэтому streakState (in-memory)
+  // оставался старым до перезагрузки. r5: безусловное перечитывание — не доверяем флагам detail.
+  function reloadStreakFromStorage() {
+    try {
+      var raw = localStorage.getItem(STORAGE_STREAK) || '{}';
+      var parsed = JSON.parse(raw);
+      streakState = Object.assign({ days: {}, recoverDate: null }, parsed);
+    } catch(e) { console.warn('[reload streak]', e); }
+    try { updateStreakSummary(); } catch(e) {}
+    try { buildHeatmap(); } catch(e) {}
+  }
+  function reloadPhraseStateFromStorage() {
+    try {
+      var ps = JSON.parse(localStorage.getItem(STORAGE_PHRASE_STATE) || '{}');
+      if (typeof phraseState !== 'undefined') {
+        Object.keys(phraseState).forEach(function(k){ delete phraseState[k]; });
+        Object.keys(ps).forEach(function(k){ phraseState[k] = ps[k]; });
+      }
+    } catch(e) {}
+    try { invalidatePhraseRangeIndex(); } catch(e) {}
+    try { updateLearnedProgress(); } catch(e) {}
+  }
+  window.addEventListener('lll:cloud-sync', function () {
+    // Безусловно — не смотрим на флаги в detail (они могут быть false из-за разного порядка ключей в JSON.stringify).
+    try { reloadStreakFromStorage(); } catch(e) {}
+    try { reloadPhraseStateFromStorage(); } catch(e) {}
+  });
+  // При возврате во вкладку и фокусе — тоже перечитываем на случай если auth.js получил данные, но не диспатчил событие.
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') {
+      // Даём auth.js время сделать pull, затем перечитываем
+      setTimeout(function() { reloadStreakFromStorage(); reloadPhraseStateFromStorage(); }, 1500);
+    }
+  });
+  window.addEventListener('focus', function () {
+    setTimeout(function() { reloadStreakFromStorage(); reloadPhraseStateFromStorage(); }, 1500);
+  });
+  // v67: тап вне ячейки внутри оверлея — прячем плашку (на тач-устройстве mouseleave не срабатывает).
+  streakOverlay.addEventListener('click', function (ev) {
+    if (!ev.target.closest('.hm-cell')) hideHmTip();
+  });
+  vocabSearch.addEventListener('input', function (e) { vocabSearchQuery = e.target.value.trim().toLowerCase(); renderVocab(); });
+  document.querySelectorAll('.vocab-filter-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.querySelectorAll('.vocab-filter-btn').forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      vocabFilter = btn.dataset.filter;
+      renderVocab();
+    });
+  });
+  // Scroll-end логика для vocab-фильтров (убираем fade-маску когда докрутили до конца)
+  (function() {
+    var vocabFiltersEl = document.querySelector('.vocab-filters');
+    if (!vocabFiltersEl) return;
+    function updateVocabFiltersScrollEnd() {
+      var max = vocabFiltersEl.scrollWidth - vocabFiltersEl.clientWidth;
+      if (max <= 2) vocabFiltersEl.classList.add('scroll-end');
+      else vocabFiltersEl.classList.toggle('scroll-end', vocabFiltersEl.scrollLeft >= max - 2);
+    }
+    vocabFiltersEl.addEventListener('scroll', updateVocabFiltersScrollEnd, { passive: true });
+    window.addEventListener('resize', updateVocabFiltersScrollEnd);
+    setTimeout(updateVocabFiltersScrollEnd, 0);
+    // Пересчитать при открытии словаря
+    var vt = document.getElementById('vocabToggle');
+    if (vt) vt.addEventListener('click', function() { setTimeout(updateVocabFiltersScrollEnd, 50); });
+  })();
+  // Переход на карточку по id фразы. Если id вне текущей колоды — переключаем колоду.
+  function goToPhraseId(id) {
+    if (id == null) return false;
+    var sId = String(id);
+    var phraseInPhrases = (Array.isArray(PHRASES) ? PHRASES : []).find(function(p){ return p && String(p.id) === sId; });
+    if (!phraseInPhrases) return false;
+    // Если фразы нет в текущей колоде — выбираем подходящую (по диапазону) или «Все».
+    var idx = deck.findIndex(function(p){ return p && String(p.id) === sId; });
+    if (idx < 0) {
+      var nId = Number(id);
+      var newMode = 'all';
+      if (Number.isFinite(nId)) {
+        // v75-fix: используем deckOf() чтобы учесть DECK_OVERRIDES
+        var dk = (typeof deckOf === 'function') ? deckOf(nId) : null;
+        if (dk && DECK_RANGES[dk]) newMode = dk;
+      }
+      // Если фраза секретная, а юзер не Лена — не переключаем.
+      if (isSecretId(id) && !isElenaUser()) return false;
+      if (newMode !== deckMode) {
+        deckMode = newMode;
+        try { localStorage.setItem(STORAGE_DECK_MODE, deckMode); } catch(_) {}
+        if (typeof syncDeckSegmented === 'function') syncDeckSegmented();
+        deck = buildDeck();
+      }
+      idx = deck.findIndex(function(p){ return p && String(p.id) === sId; });
+      if (idx < 0) return false;
+    }
+    currentIndex = idx;
+    if (typeof renderPhrase === 'function') renderPhrase();
+    if (typeof updateLearnedProgress === 'function') updateLearnedProgress();
+    return true;
+  }
+
+  vocabListWrap.addEventListener('click', function (e) {
+    const btn = e.target.closest('[data-action]');
+    if (btn) {
+      const id = btn.dataset.id;
+      if (!id) return;
+      const phrase = (Array.isArray(PHRASES) ? PHRASES : []).find(p => p && String(p.id) === String(id));
+      if (!phrase) return;
+      if (btn.dataset.action === 'fav') {
+        const lv = normalizeTranslation(phrase.lv);
+        const ru = normalizeTranslation(phrase.ru);
+        let found = vocabulary.find(v => String(v.id) === String(id));
+        if (!found) {
+          found = { id: phrase.id, lv, ru, fav: true, learned: false };
+          vocabulary.push(found);
+        } else {
+          found.fav = !found.fav;
+        }
+        saveVocab(); updateBadge(); renderVocab();
+        if (typeof syncCardFav === 'function') syncCardFav();
+      }
+      return;
+    }
+    // Клик по самой строке (не по сердечку) — переход на эту карточку.
+    const row = e.target.closest('.vocab-item');
+    if (!row || !row.dataset.id) return;
+    if (goToPhraseId(row.dataset.id)) {
+      vocabOverlay.classList.remove('open');
+    }
+  });
+  // Enter / Space на строке словаря — тоже открывает карточку.
+  vocabListWrap.addEventListener('keydown', function (e) {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const row = e.target.closest('.vocab-item');
+    if (!row || !row.dataset.id) return;
+    if (e.target.closest('[data-action]')) return;
+    e.preventDefault();
+    if (goToPhraseId(row.dataset.id)) {
+      vocabOverlay.classList.remove('open');
+    }
+  });
+  vocabExport.addEventListener('click', function () {
+    const rows = ['Latviešu,Перевод'].concat(vocabulary.map(v => '"' + v.lv.replace(/"/g,'""') + '","' + v.ru.replace(/"/g,'""') + '"'));
+    const csvText = '\ufeff' + rows.join('\n');
+    const blob = new Blob([csvText], { type: 'text/csv;charset=utf-8' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = 'my-vocabulary.csv'; a.click(); URL.revokeObjectURL(url);
+  });
+
+  updateBadge();
+  renderVocab();
+  updateStreakSummary();
+  buildHeatmap();
+  refillBatch();
+  srsNext();
+  renderPhrase();
+  setPlayIcon('play');
+
+  // Приход данных из облака (Realtime/pull) — перерисовываем без сброса текущей фразы.
+  // v52: отложенный renderVocab через idle — чтобы не блокировать клик SRS
+  // и не создавать впечатление «фраза сама поменялась» (перерисовка = воспринимается как смена).
+  window.addEventListener('lll:cloud-sync', function (ev) {
+    var d = (ev && ev.detail) || {};
+    if (d.vocab) {
+      try { vocabulary = JSON.parse(localStorage.getItem('lll2_vocabulary') || '[]'); } catch (e) {}
+    }
+    if (d.state) {
+      try { phraseState = JSON.parse(localStorage.getItem('lll2_phrase_state') || '{}'); } catch (e) {}
+    }
+    if (d.streak) {
+      try { streakState = JSON.parse(localStorage.getItem('lll2_streak') || '{"days":{},"recoverDate":null}'); } catch (e) {}
+    }
+    if (d.stage) {
+      try { stageProgress = JSON.parse(localStorage.getItem('lll2_stage_progress') || '{}'); } catch (e) {}
+    }
+    updateBadge();
+    // v56: streak-индикатор в шапке (#streakNum) обновляем ВСЕГДА после cloud-sync,
+    // иначе при первом заходе шапка показывает 0 пока пользователь не откроет оверлей.
+    try { updateStreakSummary(); } catch(e){}
+    // renderVocab и buildHeatmap — только если соотв. оверлей открыт.
+    var ric = window.requestIdleCallback || function(cb){ return setTimeout(cb, 100); };
+    ric(function(){
+      try {
+        var vo = document.getElementById('vocabOverlay');
+        if (vo && vo.classList.contains('open')) renderVocab();
+      } catch(e){}
+      try {
+        var so = document.getElementById('streakOverlay');
+        if (so && so.classList.contains('open')) { buildHeatmap(); }
+      } catch(e){}
+      try { if (typeof updateLearnedProgress === 'function') updateLearnedProgress(); } catch(e){}
+    });
+  });
+});
+</script>
+  <div class="vocab-overlay" id="vocabOverlay">
+    <div class="vocab-header">
+      <div class="vocab-header-left">
+        <button class="icon-btn" id="vocabClose" title="Закрыть">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+        <span class="vocab-title">Мой словарь</span>
+        <span class="vocab-count-label" id="vocabCountLabel">· 0 слов</span>
+      </div>
+      <div class="vocab-header-right">
+        <div class="vocab-search-wrap"><input class="vocab-search" id="vocabSearch" type="text" placeholder="Поиск по словарю"></div>
+        <button class="btn-export btn-export-header" id="vocabExport">Скачать</button>
+      </div>
+    </div>
+    <div class="vocab-filters">
+      <button class="vocab-filter-btn active" data-filter="all">Все <span class="filter-count" id="countAll">0</span></button>
+      <button class="vocab-filter-btn vocab-filter-heart" data-filter="fav" title="Избранное" aria-label="Избранное">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#c14444" stroke="#c14444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span class="filter-count" id="countFav">0</span>
+      </button>
+      <button class="vocab-filter-btn" data-filter="a2">A2 <span class="filter-count" id="countA2">0</span></button>
+      <button class="vocab-filter-btn" data-filter="b2">B2 <span class="filter-count" id="countB2">0</span></button>
+      <button class="vocab-filter-btn" data-filter="numbers">Числа <span class="filter-count" id="countNumbers">0</span></button>
+      <button class="vocab-filter-btn" data-filter="questions">Вопросы <span class="filter-count" id="countQuestions">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="runasana">Runāšana <span class="filter-count" id="countRunasana">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="lena">Карточки Лены <span class="filter-count" id="countLena">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="top">Топ <span class="filter-count" id="countTop">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="otvety">Ответы <span class="filter-count" id="countOtvety">0</span></button>
+      <button class="vocab-filter-btn secret-deck" data-filter="teksty">Тексты <span class="filter-count" id="countTeksty">0</span></button>
+      <button class="vocab-filter-btn" data-filter="learned">Выучено <span class="filter-count" id="countLearned">0</span></button>
+      <!-- v37: блок статистики по этапам убран — полоса фильтров не переполняется -->
+    </div>
+    <div class="vocab-list-wrap" id="vocabListWrap">
+      <div class="vocab-empty-state" id="vocabEmpty">Пока словарь пуст.</div>
+    </div>
 
   </div>
+
+  <div class="vocab-overlay" id="streakOverlay">
+    <div class="vocab-header">
+      <div class="vocab-header-left">
+        <span class="vocab-title">Стрик</span>
+      </div>
+      <div class="vocab-header-right">
+        <button class="icon-btn" id="streakClose" title="Закрыть">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    <div class="recover-banner" id="recoverBanner"></div>
+    <div class="streak-body">
+      <div class="streak-layout">
+        <div class="streak-left">
+          <div class="heatmap-months" id="heatmapMonths"></div>
+          <div class="heatmap" id="heatmap"></div>
+          <div class="heatmap-legend"><span>Меньше</span><span class="hm-cell hm-empty"></span><span class="hm-cell hm-1"></span><span class="hm-cell hm-2"></span><span class="hm-cell hm-3"></span><span class="hm-cell hm-4"></span><span>Больше</span></div>
+          <div class="streak-hint">Клик на пустой день = восстановить</div>
+        </div>
+        <div class="streak-right">
+          <div class="streak-big" id="streakBig">0<small>дней подряд</small></div>
+          <div class="streak-today" id="streakToday">Сегодня: 0 / 5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" style="display:none"></div>
+
+  <div class="version-tag" aria-hidden="true">v75-r7</div>
+  <style>
+    .version-tag {
+      position: fixed;
+      right: 6px;
+      bottom: 4px;
+      font-size: 10px;
+      color: #1f1f1f;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      pointer-events: none;
+      user-select: none;
+      opacity: 1;
+      z-index: 1;
+    }
+    @media (max-width: 600px) {
+      .version-tag { display: none; }
+    }
+  </style>
+
 </body>
 </html>
