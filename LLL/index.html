@@ -1290,7 +1290,8 @@
         min-height: 0;
         /* v58: отдаём больше высоты панелям освобождённому от padding-bottom */
         /* v69: вернули панелям высоту — полоса прогресса теперь садится у самого края видимой зоны, а не съедает место. */
-        max-height: min(58vh, 460px);
+        /* v75-r5: сокращаем .content на 34px (ровно на высоту полосы с текстом) — две панели внутри делят это пополам (по 17px каждая). */
+        max-height: calc(min(58vh, 460px) - 34px);
       }
       /* v56: в панели LV audio-btn скрыт на мобиле (используется круглая слева), большой padding-bottom больше не нужен. */
       .panel .phrase-col {
@@ -1529,8 +1530,8 @@
       }
       .learned-progress__label { font-size: 12px; }
       .learned-progress__track { height: 8px; }
-      /* v75-r4: резервируем место внизу под фиксированную полосу, чтобы SRS-кнопки не залезали под неё. */
-      body, .app, #app, main {
+      /* v75-r5: резервируем место внизу под фиксированную полосу. Прячем в main, чтобы отодвинуть SRS-кнопки вверх. */
+      main {
         padding-bottom: calc(34px + env(safe-area-inset-bottom, 0px));
       }
 
@@ -3335,35 +3336,43 @@ window.addEventListener('DOMContentLoaded', function () {
   vocabClose.addEventListener('click', function () { vocabOverlay.classList.remove('open'); });
   streakBtn.addEventListener('click', function () { streakOverlay.classList.add('open'); updateStreakSummary(); buildHeatmap(); });
   streakClose.addEventListener('click', function () { streakOverlay.classList.remove('open'); hideHmTip(); });
-  // v75-r4: auth.js кладёт свежий streаk в localStorage и диспатчит lll:cloud-sync.
-  // Раньше этот ivent в index.html никто не слушал — поэтому streakState (in-memory)
-  // оставался старым до перезагрузки страницы. Перечитываем и перерисовываем.
-  window.addEventListener('lll:cloud-sync', function (ev) {
+  // v75-r4/r5: auth.js кладёт свежие данные в localStorage и диспатчит lll:cloud-sync.
+  // Раньше этот событие в index.html никто не слушал — поэтому streakState (in-memory)
+  // оставался старым до перезагрузки. r5: безусловное перечитывание — не доверяем флагам detail.
+  function reloadStreakFromStorage() {
     try {
-      var detail = (ev && ev.detail) || {};
-      if (detail.streak) {
-        try {
-          var raw = localStorage.getItem(STORAGE_STREAK) || '{}';
-          var parsed = JSON.parse(raw);
-          streakState = Object.assign({ days: {}, recoverDate: null }, parsed);
-        } catch(e) { console.warn('[cloud-sync streak]', e); }
-        try { updateStreakSummary(); } catch(e) {}
-        try { buildHeatmap(); } catch(e) {}
+      var raw = localStorage.getItem(STORAGE_STREAK) || '{}';
+      var parsed = JSON.parse(raw);
+      streakState = Object.assign({ days: {}, recoverDate: null }, parsed);
+    } catch(e) { console.warn('[reload streak]', e); }
+    try { updateStreakSummary(); } catch(e) {}
+    try { buildHeatmap(); } catch(e) {}
+  }
+  function reloadPhraseStateFromStorage() {
+    try {
+      var ps = JSON.parse(localStorage.getItem(STORAGE_PHRASE_STATE) || '{}');
+      if (typeof phraseState !== 'undefined') {
+        Object.keys(phraseState).forEach(function(k){ delete phraseState[k]; });
+        Object.keys(ps).forEach(function(k){ phraseState[k] = ps[k]; });
       }
-      if (detail.state || detail.vocab) {
-        // Перевычитываем phrase_state в память и перерисовываем прогресс-бар и словарь
-        try {
-          var ps = JSON.parse(localStorage.getItem(STORAGE_PHRASE_STATE) || '{}');
-          if (typeof phraseState !== 'undefined') {
-            // очищаем и переписываем
-            Object.keys(phraseState).forEach(function(k){ delete phraseState[k]; });
-            Object.keys(ps).forEach(function(k){ phraseState[k] = ps[k]; });
-          }
-        } catch(e) {}
-        try { invalidatePhraseRangeIndex(); } catch(e) {}
-        try { updateLearnedProgress(); } catch(e) {}
-      }
-    } catch(e) { console.warn('[cloud-sync handler]', e); }
+    } catch(e) {}
+    try { invalidatePhraseRangeIndex(); } catch(e) {}
+    try { updateLearnedProgress(); } catch(e) {}
+  }
+  window.addEventListener('lll:cloud-sync', function () {
+    // Безусловно — не смотрим на флаги в detail (они могут быть false из-за разного порядка ключей в JSON.stringify).
+    try { reloadStreakFromStorage(); } catch(e) {}
+    try { reloadPhraseStateFromStorage(); } catch(e) {}
+  });
+  // При возврате во вкладку и фокусе — тоже перечитываем на случай если auth.js получил данные, но не диспатчил событие.
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'visible') {
+      // Даём auth.js время сделать pull, затем перечитываем
+      setTimeout(function() { reloadStreakFromStorage(); reloadPhraseStateFromStorage(); }, 1500);
+    }
+  });
+  window.addEventListener('focus', function () {
+    setTimeout(function() { reloadStreakFromStorage(); reloadPhraseStateFromStorage(); }, 1500);
   });
   // v67: тап вне ячейки внутри оверлея — прячем плашку (на тач-устройстве mouseleave не срабатывает).
   streakOverlay.addEventListener('click', function (ev) {
