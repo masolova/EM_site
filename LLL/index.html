@@ -591,8 +591,8 @@
     .audio-btn {
       transition: box-shadow .16s ease, background .16s ease, border-color .16s ease, color .16s ease;
     }
-    /* v70: hover-эффекты только для устройств с курсором (десктоп). На iOS Safari hover залипает после тапа —
-       кнопка оставалась в translateY(-3px). На десктопе hover работает как раньше. */
+    /* v72: hover только для устройств с курсором. На iOS Safari hover залипал после тапа,
+       кнопка оставалась сдвинутой вверх. На десктопе hover работает как раньше. */
     @media (hover: hover) and (pointer: fine) {
       .translate-btn:hover {
         transform: translateY(-2px);
@@ -1274,11 +1274,10 @@
         overflow: visible;
       }
       /* v58: app-shell flex-колонка на весь экран. */
-      /* v69: 100svh вместо 100dvh — учитывает нижнюю адресную панель iOS Safari, которая при первой загрузке видима и перекрывает низ. */
       body, .app, #app, main {
         display: flex;
         flex-direction: column;
-        height: 100svh;
+        height: 100dvh;
         min-height: 0;
       }
       .labels { display: none; }
@@ -1375,21 +1374,19 @@
       /* Скрываем старую кнопку «Прослушать» на мобиле — её роль взял динамик */
       .audio-btn { display: none; }
 
-      /* (3.2) Адаптивный размер фразы: фактический размер выбирает fitTextToPanel в диапазоне [min .. max]. */
-      /* v71: выровняли стартовый размер LV и RU. Раньше .phrase (LV) была ограничена 24px, а .translation-text (RU)
-         использовала базовые 30px — отсюда визуальный разрыв. Ставим общий старт = 32px, fitTextToPanel подберёт реальный. */
-      .phrase,
-      .translation-text {
-        font-size: 32px;
-        line-height: 1.22;
+      /* (3.2) Адаптивный размер фразы: 17–23px в зависимости от высоты экрана. */
+      /* v56: блоки стали меньше (170хвм вместо 238) — базовый размер чуть меньше, чтобы длинные фразы не наезжали на сердечко/audio-btn. */
+      .phrase {
+        font-size: clamp(18px, 3vh, 24px);
+        line-height: 1.3;
         letter-spacing: -.02em;
         max-width: none;
         font-weight: 700;
         text-align: center;
         padding: 0;
       }
-      .panel:first-of-type .phrase,
-      .panel:nth-of-type(2) .translation-text,
+      /* v74-fix: padding-bottom управляется v74_fitAndCenterPanel через переменную --phrase-pad-bot.
+         Раньше тут стояло "padding-bottom: 0" для всех — оно перебивало переменную и блокировало центрирование вверх. */
       .panel:nth-of-type(2) .phrase {
         padding-bottom: 0;
       }
@@ -1710,7 +1707,7 @@
     </main>
   </div>
   <script src="migrate_v43.js"></script>
-  <script src="phrases-3792.json.js"></script>
+  <script src="phrases-3875.json.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
   <script src="auth.js"></script>
   <script>
@@ -1821,7 +1818,7 @@ window.addEventListener('DOMContentLoaded', function () {
   };
   // v37: ручные перемещения между колодами (по id). Все «Расскажите…» → Runāšana.
   const DECK_OVERRIDES = {
-    runasana: new Set([2251, 2252, 2253, 2255]),
+    runasana: new Set([2251, 2252, 2253, 2255, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4029, 4030, 4031, 4032, 4033, 4034, 4035, 4036, 4037, 4038, 4039, 4040, 4041, 4042, 4043, 4044, 4045, 4046, 4047, 4048, 4049, 4050, 4051, 4052, 4053, 4054, 4055, 4056, 4057, 4058, 4059, 4060, 4061, 4062, 4063, 4064, 4065, 4066, 4067, 4068, 4069, 4070, 4071, 4072, 4073, 4074, 4075, 4076, 4077, 4078, 4079, 4080, 4081, 4082, 4083]),
   };
   // ID, исключаемые из своих исходных диапазонов (т.к. перемещены в override)
   const DECK_EXCLUDED = (function(){
@@ -2145,12 +2142,10 @@ window.addEventListener('DOMContentLoaded', function () {
   function saveVocab() { localStorage.setItem(STORAGE_VOCAB, JSON.stringify(vocabulary)); }
   function saveStreak() { localStorage.setItem(STORAGE_STREAK, JSON.stringify(streakState)); }
   function saveStageProgress() { localStorage.setItem(STORAGE_STAGE_PROGRESS, JSON.stringify(stageProgress)); }
+  // v72: toast выключен по требованию — сообщения типа «Фраза перенесена...» больше не показываются.
+  // Раньше этот div не имел CSS-позиция «оверлея» и рендерился inline под полосой прогресса, выталкивая экран вниз.
   function showToast(msg) {
-    if (!toast) return;
-    toast.textContent = msg;
-    toast.classList.add('show');
-    clearTimeout(toastTimer);
-    toastTimer = setTimeout(() => toast.classList.remove('show'), 2200);
+    return;
   }
   function pluralize(n) {
     const m10 = n % 10, m100 = n % 100;
@@ -2422,9 +2417,6 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     var startSize = parseFloat(getComputedStyle(textEl).fontSize) || 36;
     var minSize = 11;
-    // v71: единый потолок шрифта. На мобиле 32px (одно слово не будет раздуваться на всю карточку), на десктопе 46px.
-    var isMobileBase71 = window.matchMedia('(max-width: 600px)').matches;
-    var maxSize = isMobileBase71 ? 32 : 46;
     var size = startSize;
     var iterations = 0;
     // Берём всё содержимое панели (.panel > div) — это включает и кнопку «Прослушать»,
@@ -2479,31 +2471,6 @@ window.addEventListener('DOMContentLoaded', function () {
       if (textEl.scrollWidth > textEl.clientWidth + 1) return true;
       return false;
     }
-    // v71: двунаправленный подбор ТОЛЬКО НА МОБИЛЕ. Сначала пытаемся вырасти до maxSize шагом +1px, пока нет overflow.
-    // Это позволяет коротким фразам занимать всю карточку крупным шрифтом.
-    // Десктоп НЕ трогаем — там вёрстка работала корректно, рост может вызвать регрессию (разная высота LV и RU панелей, прыжки).
-    var isMobileFit71 = window.matchMedia('(max-width: 600px)').matches;
-    if (isMobileFit71 && !isOverflow() && size < maxSize) {
-      var growIter = 0;
-      while (growIter < 60 && size < maxSize) {
-        var trySize = size + 1;
-        textEl.style.fontSize = trySize + 'px';
-        if (trySize < 24) textEl.style.lineHeight = '1.25';
-        else if (trySize < 32) textEl.style.lineHeight = '1.18';
-        else textEl.style.lineHeight = '1.22';
-        if (isOverflow()) {
-          // вернёмся на шаг назад — это максимум, который влезает
-          textEl.style.fontSize = size + 'px';
-          if (size < 24) textEl.style.lineHeight = '1.25';
-          else if (size < 32) textEl.style.lineHeight = '1.18';
-          else textEl.style.lineHeight = '1.22';
-          break;
-        }
-        size = trySize;
-        growIter++;
-      }
-    }
-    // Дальше — старая логика сжатия: если всё ещё overflow (длинный текст), уменьшаем.
     while (iterations < 60) {
       if (!isOverflow()) break;
       if (size <= minSize) break;
@@ -2532,10 +2499,10 @@ window.addEventListener('DOMContentLoaded', function () {
   }
   // v61: вертикальное центрирование фразы в LV-панели на мобиле через динамический padding-top.
   // Нужно именно так, потому что flex justify-center игнорирует floats, а нам нужны float-зоны для обтекания кнопок.
-  // v71: двухпроходный метод. 1-й проход — грубый расчёт по line-box ректам.
-  // 2-й проход — измеряем реальный верх/низ глифов (через leading-compensation) и выравниваем
-  // асимметрию перекладывая разницу между padTop и padBot.
   function centerPhraseVertically() {
+    // v74: на мобиле центрирование делает v74_fitAndCenterPanel — этот функ больше не нужен на мобиле.
+    // На десктопе он изначально не работал (раньше return).
+    if (window.matchMedia('(max-width: 600px)').matches) return;
     if (!window.matchMedia('(max-width: 600px)').matches) return;
     var lvPanel = document.querySelector('.panel:first-of-type');
     if (!lvPanel) return;
@@ -2544,69 +2511,301 @@ window.addEventListener('DOMContentLoaded', function () {
     // Сбросим перед измерением — равные отступы по умолчанию
     phrase.style.setProperty('--phrase-pad-top', '0px');
     phrase.style.setProperty('--phrase-pad-bot', '0px');
+    // Считаем высоту реального текста через Range по text-node
     var textNode = Array.from(phrase.childNodes).find(function(n){ return n.nodeType === 3 && n.textContent.trim().length > 0; });
     if (!textNode) return;
-
-    // Помощник: измеряет line-box rects и leading.
-    function measure() {
-      var range = document.createRange();
-      range.selectNodeContents(textNode);
-      var rects = Array.from(range.getClientRects()).filter(function(r){ return r.height > 0; });
-      if (rects.length === 0) return null;
-      var firstTop = Math.min.apply(null, rects.map(function(r){ return r.top; }));
-      var lastBottom = Math.max.apply(null, rects.map(function(r){ return r.bottom; }));
-      var cs = window.getComputedStyle(phrase);
-      var fontPx = parseFloat(cs.fontSize) || 0;
-      var lhRaw = cs.lineHeight;
-      var lhPx = (lhRaw === 'normal') ? (fontPx * 1.2) : (parseFloat(lhRaw) || (fontPx * 1.2));
-      var leadingHalf = Math.max(0, (lhPx - fontPx) / 2);
-      var panelRect = phrase.getBoundingClientRect();
-      // Относительные координаты глифов внутри phrase.
-      var glyphTopRel = (firstTop + leadingHalf) - panelRect.top;
-      var glyphBotRel = (lastBottom - leadingHalf) - panelRect.top;
-      return {
-        glyphTopRel: glyphTopRel,
-        glyphBotRel: glyphBotRel,
-        available: phrase.clientHeight,
-        lhPx: lhPx,
-        fontPx: fontPx
-      };
-    }
-
-    var m1 = measure();
-    if (!m1) return;
-    var textH = m1.glyphBotRel - m1.glyphTopRel;
-    if (textH <= 0) return;
-    var extra = m1.available - textH;
-    if (extra < 0) extra = 0;
-    // Первая оценка: хотим чтобы glyphTopRel == extra/2.
-    // Дельта поправки = (extra/2) - m1.glyphTopRel. Добавляем это к верхнему padding.
-    var targetTop = extra / 2;
-    var padTop = Math.max(0, Math.round(targetTop - m1.glyphTopRel));
-    var padBot = Math.max(0, Math.round(extra - padTop));
-    phrase.style.setProperty('--phrase-pad-top', padTop + 'px');
-    phrase.style.setProperty('--phrase-pad-bot', padBot + 'px');
-
-    // 2-й проход: измеряем реальный результат. Если всё ещё асимметрично (из-за floats),
-    // дополнительно выравниваем.
-    var m2 = measure();
-    if (!m2) return;
-    var spaceTop = m2.glyphTopRel;
-    var spaceBot = m2.available - m2.glyphBotRel;
-    // Разница: если spaceTop > spaceBot, текст слишком низко — уменьшим padTop.
-    var diff = spaceTop - spaceBot;
-    if (Math.abs(diff) > 1) {
-      var shift = Math.round(diff / 2);
-      var newPadTop = Math.max(0, padTop - shift);
-      var newPadBot = Math.max(0, padBot + shift);
-      // Сумма padding остаётся extra (она постоянна).
-      phrase.style.setProperty('--phrase-pad-top', newPadTop + 'px');
-      phrase.style.setProperty('--phrase-pad-bot', newPadBot + 'px');
-    }
+    var range = document.createRange();
+    range.selectNodeContents(textNode);
+    var rects = Array.from(range.getClientRects()).filter(function(r){ return r.height > 0; });
+    if (rects.length === 0) return;
+    var firstTop = Math.min.apply(null, rects.map(function(r){ return r.top; }));
+    var lastBottom = Math.max.apply(null, rects.map(function(r){ return r.bottom; }));
+    var textHeight = lastBottom - firstTop;
+    // Доступная высота — вся высота фразы (без padding'ов, мы их сбросили)
+    var available = phrase.clientHeight;
+    var extraSpace = available - textHeight;
+    var pad = Math.max(0, Math.floor(extraSpace / 2));
+    phrase.style.setProperty('--phrase-pad-top', pad + 'px');
+    phrase.style.setProperty('--phrase-pad-bot', pad + 'px');
   }
   window.centerPhraseVertically = centerPhraseVertically;
 
+  // v73: универсальный детектор переполнения для grow-фазы. Тот же подход, что и в fitTextToPanel,
+  // но без доступа к локальному audioBtn — мы ищем .audio-btn внутри панели здесь же.
+  function panelOverflows(panel, textEl) {
+    var rect = textEl.getBoundingClientRect();
+    var pRect = panel.getBoundingClientRect();
+    if (rect.top < pRect.top + 4) return true;
+    if (rect.bottom > pRect.bottom - 4) return true;
+    var audioBtn = panel.querySelector('.audio-btn');
+    if (audioBtn && audioBtn.offsetParent) {
+      var bRect = audioBtn.getBoundingClientRect();
+      if (rect.bottom > bRect.top - 8) return true;
+    }
+    var isMobileFit = window.matchMedia('(max-width: 600px)').matches;
+    if (isMobileFit && textEl.classList && textEl.classList.contains('phrase')) {
+      var tn = Array.from(textEl.childNodes).find(function(n){ return n.nodeType === 3 && n.textContent.trim().length > 0; });
+      if (tn) {
+        var rng = document.createRange();
+        rng.selectNodeContents(tn);
+        var rcs = Array.from(rng.getClientRects()).filter(function(r){ return r.height > 0; });
+        if (rcs.length > 0) {
+          var firstT = Math.min.apply(null, rcs.map(function(r){ return r.top; }));
+          var lastB = Math.max.apply(null, rcs.map(function(r){ return r.bottom; }));
+          var textH = lastB - firstT;
+          var csTE = getComputedStyle(textEl);
+          var contentAvail = textEl.clientHeight - parseFloat(csTE.paddingTop) - parseFloat(csTE.paddingBottom);
+          if (textH > contentAvail + 2) return true;
+        }
+      }
+    } else {
+      if (textEl.scrollHeight > textEl.clientHeight + 6) return true;
+    }
+    if (textEl.scrollWidth > textEl.clientWidth + 1) return true;
+    return false;
+  }
+
+  // v73: для одной панели/текста — найти максимальный размер шрифта, при котором текст ещё помещается.
+  // Стартуем с текущего вычисленного размера и пробуем расти до growCap. Возвращает оптимальный px.
+  function growTextToOptimum(panel, textEl, growCap) {
+    if (!panel || !textEl || !textEl.textContent.trim()) return 0;
+    var current = parseFloat(getComputedStyle(textEl).fontSize) || 18;
+    var size = current;
+    var iter = 0;
+    // пробуем +1px пока влезает
+    while (iter < 40 && size < growCap) {
+      var trial = size + 1;
+      textEl.style.fontSize = trial + 'px';
+      // line-height следует тем же правилам, что и в fitTextToPanel
+      if (trial < 24) textEl.style.lineHeight = '1.25';
+      else if (trial < 32) textEl.style.lineHeight = '1.18';
+      else textEl.style.lineHeight = '1.18';
+      if (panelOverflows(panel, textEl)) {
+        // откатываем
+        textEl.style.fontSize = size + 'px';
+        if (size < 24) textEl.style.lineHeight = '1.25';
+        else if (size < 32) textEl.style.lineHeight = '1.18';
+        else textEl.style.lineHeight = '1.18';
+        break;
+      }
+      size = trial;
+      iter++;
+    }
+    return size;
+  }
+
+  // v74: новая мобильная логика — простой подбор шрифта и центрирование по рабочей зоне.
+  // Применяется ТОЛЬКО если window.matchMedia('(max-width:600px)').matches.
+  // LV и RU подбираются НЕЗАВИСИМО (разная длина — разные размеры — это нормально).
+  // Центр считается по рабочей зоне панели за вычетом углов 50x50 (сердечко и плей).
+  function v74_measureTextRange(textEl) {
+    // v74-fix: в .phrase есть float-spanы (.float-heart-right, .float-avoid-play-right и др.) для обтекания кнопок.
+    // Нельзя мерить Range(textEl) полностью — он включит и эти пустые float-блоки.
+    // Собираю все text-nodeы (а не только первый) и мерю объединённый bounding box.
+    var allRects = [];
+    function collect(node) {
+      if (node.nodeType === 3) {
+        if (!node.textContent || !node.textContent.trim()) return;
+        var r = document.createRange();
+        r.selectNodeContents(node);
+        Array.from(r.getClientRects()).forEach(function(rc){
+          if (rc.height > 0 && rc.width > 0) allRects.push(rc);
+        });
+      } else if (node.nodeType === 1 && !node.classList.contains('float-heart-left') && !node.classList.contains('float-heart-right') && !node.classList.contains('float-push-left') && !node.classList.contains('float-push-right') && !node.classList.contains('float-avoid-play-left') && !node.classList.contains('float-avoid-play-right')) {
+        // рекурсивно в дети (но не в float-spanы)
+        for (var i = 0; i < node.childNodes.length; i++) collect(node.childNodes[i]);
+      }
+    }
+    for (var i = 0; i < textEl.childNodes.length; i++) collect(textEl.childNodes[i]);
+    if (allRects.length === 0) return null;
+    var top = Math.min.apply(null, allRects.map(function(r){ return r.top; }));
+    var bot = Math.max.apply(null, allRects.map(function(r){ return r.bottom; }));
+    return { top: top, bot: bot, height: bot - top, lines: allRects.length };
+  }
+  function v74_workZone(panel) {
+    var cs = getComputedStyle(panel);
+    var pr = panel.getBoundingClientRect();
+    var padT = parseFloat(cs.paddingTop)    || 0;
+    var padB = parseFloat(cs.paddingBottom) || 0;
+    var padL = parseFloat(cs.paddingLeft)   || 0;
+    var padR = parseFloat(cs.paddingRight)  || 0;
+    return {
+      top:    pr.top    + padT,
+      bot:    pr.bottom - padB,
+      left:   pr.left   + padL,
+      right:  pr.right  - padR,
+      cx:     (pr.top + padT + pr.bottom - padB) / 2
+    };
+  }
+  function v74_fitsInWorkZone(panel, textEl, workTop, workBot, isLV) {
+    // ширина: scrollWidth не должен переполнять clientWidth
+    if (textEl.scrollWidth > textEl.clientWidth + 1) return false;
+    var m = v74_measureTextRange(textEl);
+    if (!m) return true; // нечего мерить
+    var avail = workBot - workTop;
+    // запас 2px на font-metrics диакритики
+    if (m.height > avail - 2) return false;
+    return true;
+  }
+  function v74_fitAndCenterPanel(panel, textEl, isLV) {
+    if (!panel || !textEl || !textEl.textContent.trim()) return null;
+    // 1. Сброс inline-стилей
+    textEl.style.fontSize = '';
+    textEl.style.lineHeight = '';
+    if (isLV) {
+      textEl.style.setProperty('--phrase-pad-top', '0px');
+      textEl.style.setProperty('--phrase-pad-bot', '0px');
+    } else {
+      var wrap = textEl.closest('.translate-wrap');
+      if (wrap) wrap.style.paddingTop = '';
+    }
+    // 2. Рабочая зона панели (минус padding панели).
+    var z = v74_workZone(panel);
+    var workTop = z.top;
+    var workBot = z.bot;
+    var avail   = workBot - workTop;
+    // 3. Подбор размера шрифта бинарным поиском, шаг 0.5px, диапазон 14..32.
+    var lo = 14, hi = 32;
+    function tryFont(px) {
+      textEl.style.fontSize = px + 'px';
+      textEl.style.lineHeight = px < 24 ? '1.25' : '1.18';
+      // force reflow
+      void textEl.offsetHeight;
+      return v74_fitsInWorkZone(panel, textEl, workTop, workBot, isLV);
+    }
+    // если максимум помещается — берём его и не парим CPU
+    var best = lo;
+    if (tryFont(hi)) { best = hi; }
+    else {
+      // бинарный поиск с шагом 0.5
+      var loF = lo, hiF = hi;
+      // если даже минимум не помещается — оставляем минимум (текст может переполниться, fallback ниже)
+      if (!tryFont(loF)) { best = loF; }
+      else {
+        while (hiF - loF > 0.5) {
+          var mid = Math.round(((loF + hiF) / 2) * 2) / 2;
+          if (tryFont(mid)) { loF = mid; }
+          else              { hiF = mid; }
+        }
+        best = loF;
+      }
+    }
+    // финал — выставляем найденный размер
+    textEl.style.fontSize = best + 'px';
+    textEl.style.lineHeight = best < 24 ? '1.25' : '1.18';
+    void textEl.offsetHeight;
+    // 4. Центрирование по реальным границам текста (Range bounds).
+    // На LV-панели добавление padTop сжимает content-area и может поменять флоат-обтекание —
+    // я делаю итеративный проход: если после padTop текст переполняется, уменьшаю фонт на 0.5 и повторяю.
+    var m = v74_measureTextRange(textEl);
+    if (!m) return null;
+    // v74-fix: применять padTop И padBot независимо. delta может быть отрицательным —
+    // это значит текст УЖЕ ниже центра и нужно сдвинуть его вверх через padBot.
+    function applyCenter(textH, topNow, botNow) {
+      var targetCx = (workTop + workBot) / 2;
+      var currCx   = (topNow + botNow) / 2;
+      var delta    = targetCx - currCx;
+      var padTop = 0, padBot = 0;
+      if (delta > 0)      padTop = delta;   // сдвигаем вниз
+      else if (delta < 0) padBot = -delta;  // сдвигаем вверх
+      // fallback: если текст и так не влез — паддинг 0
+      if (textH >= avail - 1) { padTop = 0; padBot = 0; }
+      if (isLV) {
+        textEl.style.setProperty('--phrase-pad-top', padTop + 'px');
+        textEl.style.setProperty('--phrase-pad-bot', padBot + 'px');
+      } else {
+        var w = textEl.closest('.translate-wrap');
+        if (w) {
+          w.style.paddingTop    = padTop + 'px';
+          w.style.paddingBottom = padBot + 'px';
+        }
+      }
+      void textEl.offsetHeight;
+      return padTop + padBot;
+    }
+    applyCenter(m.height, m.top, m.bot);
+    // v74-fix2: итеративный центринг — после применения padTop/padBot текст может сместиться, повторяем до сходимости.
+    var centerIter = 0;
+    while (centerIter < 6) {
+      var mc0 = v74_measureTextRange(textEl);
+      if (!mc0) break;
+      var asym = Math.abs((mc0.top - workTop) - (workBot - mc0.bot));
+      if (asym <= 1.0) break;  // достаточная точность
+      applyCenter(mc0.height, mc0.top, mc0.bot);
+      centerIter++;
+    }
+    // После центрирования возможен перелив за workBot/workTop — в этом случае уменьшаем фонт и повторяем центринг.
+    var refitIter = 0;
+    while (refitIter < 12) {
+      var mc = v74_measureTextRange(textEl);
+      if (!mc) break;
+      if (mc.bot <= workBot + 0.5 && mc.top >= workTop - 0.5) break;
+      if (best <= lo + 0.001) {
+        if (isLV) {
+          textEl.style.setProperty('--phrase-pad-top', '0px');
+          textEl.style.setProperty('--phrase-pad-bot', '0px');
+        } else {
+          var w0 = textEl.closest('.translate-wrap'); if (w0) w0.style.paddingTop = '';
+        }
+        break;
+      }
+      best = Math.max(lo, best - 0.5);
+      textEl.style.fontSize = best + 'px';
+      textEl.style.lineHeight = best < 24 ? '1.25' : '1.18';
+      if (isLV) {
+        textEl.style.setProperty('--phrase-pad-top', '0px');
+        textEl.style.setProperty('--phrase-pad-bot', '0px');
+      } else {
+        var w1 = textEl.closest('.translate-wrap'); if (w1) { w1.style.paddingTop = '0px'; w1.style.paddingBottom = '0px'; }
+      }
+      void textEl.offsetHeight;
+      // итеративный центринг после нового размера
+      for (var k = 0; k < 6; k++) {
+        var mrk = v74_measureTextRange(textEl);
+        if (!mrk) break;
+        var asymK = Math.abs((mrk.top - workTop) - (workBot - mrk.bot));
+        if (asymK <= 1.0) break;
+        applyCenter(mrk.height, mrk.top, mrk.bot);
+      }
+      refitIter++;
+    }
+    // 5. Замер итоговой асимметрии — кладём в data-атрибут.
+    var m2 = v74_measureTextRange(textEl);
+    if (m2) {
+      var gapTop = m2.top - workTop;
+      var gapBot = workBot - m2.bot;
+      var asym   = Math.abs(gapTop - gapBot);
+      panel.dataset.v74Font   = best.toFixed(1);
+      panel.dataset.v74GapTop = gapTop.toFixed(1);
+      panel.dataset.v74GapBot = gapBot.toFixed(1);
+      panel.dataset.v74Asym   = asym.toFixed(1);
+      return { fontSize: best, gapTop: gapTop, gapBot: gapBot, asymmetry: asym };
+    }
+    return null;
+  }
+  window.v74_fitAndCenterPanel = v74_fitAndCenterPanel;
+
   function fitAllPanels() {
+    // v74: на мобиле — простая независимая логика для LV и RU. Десктоп — старый код v73.
+    var isMobileFit = window.matchMedia('(max-width: 600px)').matches;
+    if (isMobileFit) {
+      var lvPanel = document.querySelector('.panel:first-of-type');
+      var ruPanel = document.querySelector('.panel:nth-of-type(2)');
+      var lvText  = lvPanel ? lvPanel.querySelector('.phrase') : null;
+      var ruWrap  = ruPanel ? ruPanel.querySelector('.translate-wrap') : null;
+      var ruText  = ruPanel ? ruPanel.querySelector('.translation-text') : null;
+      var ruShown = ruWrap && ruWrap.classList.contains('show-text');
+      if (lvPanel && lvText) v74_fitAndCenterPanel(lvPanel, lvText, true);
+      if (ruPanel && ruText && ruShown) {
+        v74_fitAndCenterPanel(ruPanel, ruText, false);
+      } else if (ruWrap) {
+        // RU не показан — сбрасываем inline-overrideы, чтобы кнопка «Показать перевод» центрировалась CSS-ом.
+        ruWrap.style.paddingTop = '';
+        ruWrap.style.justifyContent = '';
+      }
+      return;
+    }
+    // === ниже идёт оригинальная десктопная логика v73 — НЕ ТРОНУТА ===
     var panels = document.querySelectorAll('.panel');
     var entries = [];
     panels.forEach(function(p) {
@@ -2616,14 +2815,45 @@ window.addEventListener('DOMContentLoaded', function () {
         entries.push({ panel: p, text: t });
       }
     });
-    // v53: НЕ синхронизируем font-size между LV и RU. Каждая панель подгоняется независимо.
-    // Раньше брался минимум — из-за длинного RU LV ужималась («прыжок шрифта»).
-    // Теперь LV всегда сохраняет свой размер, RU подбирается под свой контент.
+    // v73: ЕДИНЫЙ размер шрифта для LV и RU внутри одной карточки.
+    // Шаг 1: для каждой панели находим её собственный оптимум — сначала fitTextToPanel ужимает,
+    // затем growTextToOptimum поднимает до максимально влезающего размера.
+    // Шаг 2: финальный размер = min(lvOpt, ruOpt) — гарантирует, что обе фразы влезут и выглядят одинаково.
+    // Это закрывает многократную жалобу Elena: «LV мелкий, RU крупный — почини».
     var lvEntry = null, ruEntry = null;
     entries.forEach(function(e){
       if (e.text.classList.contains('phrase')) lvEntry = e;
       else if (e.text.classList.contains('translation-text')) ruEntry = e;
     });
+    // Применяем unified-font только когда обе панели присутствуют И RU показан (translate-wrap.show-text).
+    // Если RU скрыт (кнопка «Показать перевод» ещё видна) — оставляем как есть, чтобы не дёргать шрифт.
+    if (lvEntry && ruEntry) {
+      var ruWrap0 = ruEntry.text.closest('.translate-wrap');
+      var ruVisible = ruWrap0 && ruWrap0.classList.contains('show-text');
+      // Потолок роста — не выше 32px (соответствует диапазонам CSS базового размера и хорошо смотрится в карточке).
+      var GROW_CAP = 32;
+      var lvOpt = growTextToOptimum(lvEntry.panel, lvEntry.text, GROW_CAP);
+      var ruOpt = ruVisible ? growTextToOptimum(ruEntry.panel, ruEntry.text, GROW_CAP) : lvOpt;
+      var unified = Math.min(lvOpt, ruOpt);
+      // Если RU виден — выставляем обе панели в один общий размер.
+      // Если RU скрыт — LV получает свой собственный максимум.
+      if (unified > 0) {
+        lvEntry.text.style.fontSize = unified + 'px';
+        if (unified < 24) lvEntry.text.style.lineHeight = '1.25';
+        else if (unified < 32) lvEntry.text.style.lineHeight = '1.18';
+        else lvEntry.text.style.lineHeight = '1.18';
+        if (ruVisible) {
+          ruEntry.text.style.fontSize = unified + 'px';
+          if (unified < 24) ruEntry.text.style.lineHeight = '1.25';
+          else if (unified < 32) ruEntry.text.style.lineHeight = '1.18';
+          else ruEntry.text.style.lineHeight = '1.18';
+        }
+        // Защитный shrink-проход — на случай если выравнивание подняло LV выше его реального оптимума
+        // (теоретически возможно при странных краевых рендерах). fitTextToPanel ужмёт обратно.
+        if (panelOverflows(lvEntry.panel, lvEntry.text)) fitTextToPanel(lvEntry.panel, lvEntry.text);
+        if (ruVisible && panelOverflows(ruEntry.panel, ruEntry.text)) fitTextToPanel(ruEntry.panel, ruEntry.text);
+      }
+    }
     if (lvEntry && ruEntry) {
       var ruWrap = ruEntry.text.closest('.translate-wrap');
       // v56: выравнивание верха RU по верху LV — только на десктопе (>600px). На мобиле оба блока центрируются.
@@ -3318,9 +3548,9 @@ window.addEventListener('DOMContentLoaded', function () {
     </div>
   </div>
 
-  <div class="toast" id="toast"></div>
+  <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v71</div>
+  <div class="version-tag" aria-hidden="true">v73</div>
   <style>
     .version-tag {
       position: fixed;
