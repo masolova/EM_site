@@ -2930,12 +2930,13 @@ window.addEventListener('DOMContentLoaded', function () {
     var segG  = document.getElementById('learnedProgressSegG');
     if (!label && !segO && !segY && !segG) return;
     // Прогресс считается внутри выбранной колоды (Все/A2/B2/Карточки Лены/Топ/Ответы/Тексты)
-    var range = (typeof DECK_RANGES !== 'undefined') ? DECK_RANGES[deckMode] : null;
+    // v75-fix: учитываем DECK_OVERRIDES через deckOf(), а не только диапазон
     var elena = (typeof isElenaUser === 'function') ? isElenaUser() : false;
+    var hasDeck = deckMode && deckMode !== 'all' && (typeof DECK_RANGES !== 'undefined') && DECK_RANGES[deckMode];
     var inRange = function(id) {
       var n = Number(id);
       if (!Number.isFinite(n)) return false;
-      if (range) return n >= range[0] && n <= range[1];
+      if (hasDeck) return (typeof deckOf === 'function') ? (deckOf(n) === deckMode) : false;
       // «Все» для не-Лены: секретные исключаем
       if (!elena && typeof isSecretId === 'function' && isSecretId(n)) return false;
       return true;
@@ -3364,11 +3365,9 @@ window.addEventListener('DOMContentLoaded', function () {
       var nId = Number(id);
       var newMode = 'all';
       if (Number.isFinite(nId)) {
-        var modes = Object.keys(DECK_RANGES).filter(function(k){ return DECK_RANGES[k]; });
-        for (var i = 0; i < modes.length; i++) {
-          var range = DECK_RANGES[modes[i]];
-          if (nId >= range[0] && nId <= range[1]) { newMode = modes[i]; break; }
-        }
+        // v75-fix: используем deckOf() чтобы учесть DECK_OVERRIDES
+        var dk = (typeof deckOf === 'function') ? deckOf(nId) : null;
+        if (dk && DECK_RANGES[dk]) newMode = dk;
       }
       // Если фраза секретная, а юзер не Лена — не переключаем.
       if (isSecretId(id) && !isElenaUser()) return false;
