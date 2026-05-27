@@ -1263,8 +1263,8 @@
       /* v67: убрал overflow:hidden — он обрезал .learned-progress на устройствах, где flex-children просили больше высоты, чем 100dvh.
          Места на экране достаточно, прогресс-бар теперь виден. Верхние блоки (header/чипы/панели/SRS) не трогаем. */
       .page {
-        /* v75-r9: padding-bottom = высота полосы + safe-area iPhone. */
-        padding: clamp(8px, 1.4vh, 14px) 14px calc(var(--learned-progress-h) + env(safe-area-inset-bottom, 0px));
+        /* v75-r12: padding-bottom убран — теперь .srs-zone имеет собственный margin-bottom равный высоте полосы. */
+        padding: clamp(8px, 1.4vh, 14px) 14px 0;
         gap: clamp(8px, 1.4vh, 14px);
         grid-template-rows: none;
         display: flex;
@@ -1500,6 +1500,8 @@
         border-radius: 16px;
         min-height: 0;
         flex: 0 0 auto;
+        /* v75-r12: жёсткий margin-bottom отодвигает SRS-зону выше полосы прогресса. flex не схлопывает margin внутри колонки. */
+        margin-bottom: calc(var(--learned-progress-h) + env(safe-area-inset-bottom, 0px));
       }
       .srs-btn {
         min-height: clamp(72px, 10.5vh, 100px);
@@ -1523,9 +1525,9 @@
         left: 0;
         right: 0;
         bottom: 0;
-        /* Высота самой полосы не включает safe-area, но padding-bottom растягивается на safe-area — тогда фон полосы прикрывает Home Indicator. */
-        height: calc(var(--learned-progress-h) + env(safe-area-inset-bottom, 0px));
-        padding: 4px 14px calc(4px + env(safe-area-inset-bottom, 0px));
+        /* v75-r11: БЕЗ safe-area в самой полосе. Track сидит в самом низу viewport, без зазора снизу. */
+        height: var(--learned-progress-h);
+        padding: 4px 14px 4px;
         gap: 4px;
         background: #fafaf9;
         z-index: 50;
@@ -3600,7 +3602,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v75-r10</div>
+  <div class="version-tag" aria-hidden="true">v76</div>
   <style>
     .version-tag {
       position: fixed;
