@@ -1514,14 +1514,25 @@
       }
       /* v58: learned-progress прижата к низу экрана (margin-top:auto), safe-area учтена. */
       /* v69: полоса опущена к самому краю видимой зоны. padding-bottom минимальный — без зазора. */
+      /* v75-r4: полоса прибита к низу viewport фиксированной позицией — всегда видна, не зависит от flex-переполнения. */
       .learned-progress {
-        flex: 0 0 auto;
-        margin-top: auto;
-        padding: 6px 0 calc(4px + env(safe-area-inset-bottom, 0px));
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 6px 14px calc(4px + env(safe-area-inset-bottom, 0px));
         gap: 4px;
+        background: #fafaf9;
+        z-index: 50;
+        margin: 0;
+        flex: none;
       }
       .learned-progress__label { font-size: 12px; }
       .learned-progress__track { height: 8px; }
+      /* v75-r4: резервируем место внизу под фиксированную полосу, чтобы SRS-кнопки не залезали под неё. */
+      body, .app, #app, main {
+        padding-bottom: calc(34px + env(safe-area-inset-bottom, 0px));
+      }
 
       /* ──────────────────────────────────── */
       /* СЛОВАРЬ НА МОБИЛЕ                              */
@@ -3324,6 +3335,36 @@ window.addEventListener('DOMContentLoaded', function () {
   vocabClose.addEventListener('click', function () { vocabOverlay.classList.remove('open'); });
   streakBtn.addEventListener('click', function () { streakOverlay.classList.add('open'); updateStreakSummary(); buildHeatmap(); });
   streakClose.addEventListener('click', function () { streakOverlay.classList.remove('open'); hideHmTip(); });
+  // v75-r4: auth.js кладёт свежий streаk в localStorage и диспатчит lll:cloud-sync.
+  // Раньше этот ivent в index.html никто не слушал — поэтому streakState (in-memory)
+  // оставался старым до перезагрузки страницы. Перечитываем и перерисовываем.
+  window.addEventListener('lll:cloud-sync', function (ev) {
+    try {
+      var detail = (ev && ev.detail) || {};
+      if (detail.streak) {
+        try {
+          var raw = localStorage.getItem(STORAGE_STREAK) || '{}';
+          var parsed = JSON.parse(raw);
+          streakState = Object.assign({ days: {}, recoverDate: null }, parsed);
+        } catch(e) { console.warn('[cloud-sync streak]', e); }
+        try { updateStreakSummary(); } catch(e) {}
+        try { buildHeatmap(); } catch(e) {}
+      }
+      if (detail.state || detail.vocab) {
+        // Перевычитываем phrase_state в память и перерисовываем прогресс-бар и словарь
+        try {
+          var ps = JSON.parse(localStorage.getItem(STORAGE_PHRASE_STATE) || '{}');
+          if (typeof phraseState !== 'undefined') {
+            // очищаем и переписываем
+            Object.keys(phraseState).forEach(function(k){ delete phraseState[k]; });
+            Object.keys(ps).forEach(function(k){ phraseState[k] = ps[k]; });
+          }
+        } catch(e) {}
+        try { invalidatePhraseRangeIndex(); } catch(e) {}
+        try { updateLearnedProgress(); } catch(e) {}
+      }
+    } catch(e) { console.warn('[cloud-sync handler]', e); }
+  });
   // v67: тап вне ячейки внутри оверлея — прячем плашку (на тач-устройстве mouseleave не срабатывает).
   streakOverlay.addEventListener('click', function (ev) {
     if (!ev.target.closest('.hm-cell')) hideHmTip();
