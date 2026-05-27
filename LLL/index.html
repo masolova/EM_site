@@ -591,18 +591,22 @@
     .audio-btn {
       transition: box-shadow .16s ease, background .16s ease, border-color .16s ease, color .16s ease;
     }
-    .translate-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 16px 30px rgba(82, 46, 56, 0.14);
-      border-color: rgba(122, 51, 64, 0.28);
-    }
-    .audio-btn:hover {
-      box-shadow: 0 16px 30px rgba(82, 46, 56, 0.14);
-      border-color: rgba(122, 51, 64, 0.28);
-    }
-    .srs-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 18px 34px rgba(82, 46, 56, 0.18);
+    /* v70: hover-эффекты только для устройств с курсором (десктоп). На iOS Safari hover залипает после тапа —
+       кнопка оставалась в translateY(-3px). На десктопе hover работает как раньше. */
+    @media (hover: hover) and (pointer: fine) {
+      .translate-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 16px 30px rgba(82, 46, 56, 0.14);
+        border-color: rgba(122, 51, 64, 0.28);
+      }
+      .audio-btn:hover {
+        box-shadow: 0 16px 30px rgba(82, 46, 56, 0.14);
+        border-color: rgba(122, 51, 64, 0.28);
+      }
+      .srs-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 18px 34px rgba(82, 46, 56, 0.18);
+      }
     }
     .translate-btn:active,
     .srs-btn:active,
@@ -1270,10 +1274,11 @@
         overflow: visible;
       }
       /* v58: app-shell flex-колонка на весь экран. */
+      /* v69: 100svh вместо 100dvh — учитывает нижнюю адресную панель iOS Safari, которая при первой загрузке видима и перекрывает низ. */
       body, .app, #app, main {
         display: flex;
         flex-direction: column;
-        height: 100dvh;
+        height: 100svh;
         min-height: 0;
       }
       .labels { display: none; }
@@ -1285,7 +1290,8 @@
         flex: 1 1 auto;
         min-height: 0;
         /* v58: отдаём больше высоты панелям освобождённому от padding-bottom */
-        max-height: min(46vh, 360px);
+        /* v69: вернули панелям высоту — полоса прогресса теперь садится у самого края видимой зоны, а не съедает место. */
+        max-height: min(58vh, 460px);
       }
       /* v56: в панели LV audio-btn скрыт на мобиле (используется круглая слева), большой padding-bottom больше не нужен. */
       .panel .phrase-col {
@@ -1369,11 +1375,13 @@
       /* Скрываем старую кнопку «Прослушать» на мобиле — её роль взял динамик */
       .audio-btn { display: none; }
 
-      /* (3.2) Адаптивный размер фразы: 17–23px в зависимости от высоты экрана. */
-      /* v56: блоки стали меньше (170хвм вместо 238) — базовый размер чуть меньше, чтобы длинные фразы не наезжали на сердечко/audio-btn. */
-      .phrase {
-        font-size: clamp(18px, 3vh, 24px);
-        line-height: 1.3;
+      /* (3.2) Адаптивный размер фразы: фактический размер выбирает fitTextToPanel в диапазоне [min .. max]. */
+      /* v71: выровняли стартовый размер LV и RU. Раньше .phrase (LV) была ограничена 24px, а .translation-text (RU)
+         использовала базовые 30px — отсюда визуальный разрыв. Ставим общий старт = 32px, fitTextToPanel подберёт реальный. */
+      .phrase,
+      .translation-text {
+        font-size: 32px;
+        line-height: 1.22;
         letter-spacing: -.02em;
         max-width: none;
         font-weight: 700;
@@ -1508,11 +1516,11 @@
         letter-spacing: -.03em;
       }
       /* v58: learned-progress прижата к низу экрана (margin-top:auto), safe-area учтена. */
-      /* v68: подняли полосу выше нижней панели Safari (адресная строка отнимает ~90px на iPhone). */
+      /* v69: полоса опущена к самому краю видимой зоны. padding-bottom минимальный — без зазора. */
       .learned-progress {
         flex: 0 0 auto;
         margin-top: auto;
-        padding: 6px 0 calc(96px + env(safe-area-inset-bottom, 0px));
+        padding: 6px 0 calc(4px + env(safe-area-inset-bottom, 0px));
         gap: 4px;
       }
       .learned-progress__label { font-size: 12px; }
@@ -2414,6 +2422,9 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     var startSize = parseFloat(getComputedStyle(textEl).fontSize) || 36;
     var minSize = 11;
+    // v71: единый потолок шрифта. На мобиле 32px (одно слово не будет раздуваться на всю карточку), на десктопе 46px.
+    var isMobileBase71 = window.matchMedia('(max-width: 600px)').matches;
+    var maxSize = isMobileBase71 ? 32 : 46;
     var size = startSize;
     var iterations = 0;
     // Берём всё содержимое панели (.panel > div) — это включает и кнопку «Прослушать»,
@@ -2468,6 +2479,31 @@ window.addEventListener('DOMContentLoaded', function () {
       if (textEl.scrollWidth > textEl.clientWidth + 1) return true;
       return false;
     }
+    // v71: двунаправленный подбор ТОЛЬКО НА МОБИЛЕ. Сначала пытаемся вырасти до maxSize шагом +1px, пока нет overflow.
+    // Это позволяет коротким фразам занимать всю карточку крупным шрифтом.
+    // Десктоп НЕ трогаем — там вёрстка работала корректно, рост может вызвать регрессию (разная высота LV и RU панелей, прыжки).
+    var isMobileFit71 = window.matchMedia('(max-width: 600px)').matches;
+    if (isMobileFit71 && !isOverflow() && size < maxSize) {
+      var growIter = 0;
+      while (growIter < 60 && size < maxSize) {
+        var trySize = size + 1;
+        textEl.style.fontSize = trySize + 'px';
+        if (trySize < 24) textEl.style.lineHeight = '1.25';
+        else if (trySize < 32) textEl.style.lineHeight = '1.18';
+        else textEl.style.lineHeight = '1.22';
+        if (isOverflow()) {
+          // вернёмся на шаг назад — это максимум, который влезает
+          textEl.style.fontSize = size + 'px';
+          if (size < 24) textEl.style.lineHeight = '1.25';
+          else if (size < 32) textEl.style.lineHeight = '1.18';
+          else textEl.style.lineHeight = '1.22';
+          break;
+        }
+        size = trySize;
+        growIter++;
+      }
+    }
+    // Дальше — старая логика сжатия: если всё ещё overflow (длинный текст), уменьшаем.
     while (iterations < 60) {
       if (!isOverflow()) break;
       if (size <= minSize) break;
@@ -2496,6 +2532,9 @@ window.addEventListener('DOMContentLoaded', function () {
   }
   // v61: вертикальное центрирование фразы в LV-панели на мобиле через динамический padding-top.
   // Нужно именно так, потому что flex justify-center игнорирует floats, а нам нужны float-зоны для обтекания кнопок.
+  // v71: двухпроходный метод. 1-й проход — грубый расчёт по line-box ректам.
+  // 2-й проход — измеряем реальный верх/низ глифов (через leading-compensation) и выравниваем
+  // асимметрию перекладывая разницу между padTop и padBot.
   function centerPhraseVertically() {
     if (!window.matchMedia('(max-width: 600px)').matches) return;
     var lvPanel = document.querySelector('.panel:first-of-type');
@@ -2505,22 +2544,65 @@ window.addEventListener('DOMContentLoaded', function () {
     // Сбросим перед измерением — равные отступы по умолчанию
     phrase.style.setProperty('--phrase-pad-top', '0px');
     phrase.style.setProperty('--phrase-pad-bot', '0px');
-    // Считаем высоту реального текста через Range по text-node
     var textNode = Array.from(phrase.childNodes).find(function(n){ return n.nodeType === 3 && n.textContent.trim().length > 0; });
     if (!textNode) return;
-    var range = document.createRange();
-    range.selectNodeContents(textNode);
-    var rects = Array.from(range.getClientRects()).filter(function(r){ return r.height > 0; });
-    if (rects.length === 0) return;
-    var firstTop = Math.min.apply(null, rects.map(function(r){ return r.top; }));
-    var lastBottom = Math.max.apply(null, rects.map(function(r){ return r.bottom; }));
-    var textHeight = lastBottom - firstTop;
-    // Доступная высота — вся высота фразы (без padding'ов, мы их сбросили)
-    var available = phrase.clientHeight;
-    var extraSpace = available - textHeight;
-    var pad = Math.max(0, Math.floor(extraSpace / 2));
-    phrase.style.setProperty('--phrase-pad-top', pad + 'px');
-    phrase.style.setProperty('--phrase-pad-bot', pad + 'px');
+
+    // Помощник: измеряет line-box rects и leading.
+    function measure() {
+      var range = document.createRange();
+      range.selectNodeContents(textNode);
+      var rects = Array.from(range.getClientRects()).filter(function(r){ return r.height > 0; });
+      if (rects.length === 0) return null;
+      var firstTop = Math.min.apply(null, rects.map(function(r){ return r.top; }));
+      var lastBottom = Math.max.apply(null, rects.map(function(r){ return r.bottom; }));
+      var cs = window.getComputedStyle(phrase);
+      var fontPx = parseFloat(cs.fontSize) || 0;
+      var lhRaw = cs.lineHeight;
+      var lhPx = (lhRaw === 'normal') ? (fontPx * 1.2) : (parseFloat(lhRaw) || (fontPx * 1.2));
+      var leadingHalf = Math.max(0, (lhPx - fontPx) / 2);
+      var panelRect = phrase.getBoundingClientRect();
+      // Относительные координаты глифов внутри phrase.
+      var glyphTopRel = (firstTop + leadingHalf) - panelRect.top;
+      var glyphBotRel = (lastBottom - leadingHalf) - panelRect.top;
+      return {
+        glyphTopRel: glyphTopRel,
+        glyphBotRel: glyphBotRel,
+        available: phrase.clientHeight,
+        lhPx: lhPx,
+        fontPx: fontPx
+      };
+    }
+
+    var m1 = measure();
+    if (!m1) return;
+    var textH = m1.glyphBotRel - m1.glyphTopRel;
+    if (textH <= 0) return;
+    var extra = m1.available - textH;
+    if (extra < 0) extra = 0;
+    // Первая оценка: хотим чтобы glyphTopRel == extra/2.
+    // Дельта поправки = (extra/2) - m1.glyphTopRel. Добавляем это к верхнему padding.
+    var targetTop = extra / 2;
+    var padTop = Math.max(0, Math.round(targetTop - m1.glyphTopRel));
+    var padBot = Math.max(0, Math.round(extra - padTop));
+    phrase.style.setProperty('--phrase-pad-top', padTop + 'px');
+    phrase.style.setProperty('--phrase-pad-bot', padBot + 'px');
+
+    // 2-й проход: измеряем реальный результат. Если всё ещё асимметрично (из-за floats),
+    // дополнительно выравниваем.
+    var m2 = measure();
+    if (!m2) return;
+    var spaceTop = m2.glyphTopRel;
+    var spaceBot = m2.available - m2.glyphBotRel;
+    // Разница: если spaceTop > spaceBot, текст слишком низко — уменьшим padTop.
+    var diff = spaceTop - spaceBot;
+    if (Math.abs(diff) > 1) {
+      var shift = Math.round(diff / 2);
+      var newPadTop = Math.max(0, padTop - shift);
+      var newPadBot = Math.max(0, padBot + shift);
+      // Сумма padding остаётся extra (она постоянна).
+      phrase.style.setProperty('--phrase-pad-top', newPadTop + 'px');
+      phrase.style.setProperty('--phrase-pad-bot', newPadBot + 'px');
+    }
   }
   window.centerPhraseVertically = centerPhraseVertically;
 
@@ -3238,7 +3320,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast"></div>
 
-  <div class="version-tag" aria-hidden="true">v66</div>
+  <div class="version-tag" aria-hidden="true">v71</div>
   <style>
     .version-tag {
       position: fixed;
