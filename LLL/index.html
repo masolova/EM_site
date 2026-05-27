@@ -1290,8 +1290,8 @@
         min-height: 0;
         /* v58: отдаём больше высоты панелям освобождённому от padding-bottom */
         /* v69: вернули панелям высоту — полоса прогресса теперь садится у самого края видимой зоны, а не съедает место. */
-        /* v75-r5: сокращаем .content на 34px (ровно на высоту полосы с текстом) — две панели внутри делят это пополам (по 17px каждая). */
-        max-height: calc(min(58vh, 460px) - 34px);
+        /* v75-r6: сокращаем .content на полную высоту полосы (38px + safe-area). 2 панели делят это пополам. */
+        max-height: calc(min(58vh, 460px) - 38px - env(safe-area-inset-bottom, 0px));
       }
       /* v56: в панели LV audio-btn скрыт на мобиле (используется круглая слева), большой padding-bottom больше не нужен. */
       .panel .phrase-col {
@@ -1530,9 +1530,9 @@
       }
       .learned-progress__label { font-size: 12px; }
       .learned-progress__track { height: 8px; }
-      /* v75-r5: резервируем место внизу под фиксированную полосу. Прячем в main, чтобы отодвинуть SRS-кнопки вверх. */
+      /* v75-r6: резервируем место внизу под фиксированную полосу. Реальная высота полосы: padding(6+4) + label(16) + gap(4) + track(8) + safe-area iPhone (~34) = ~72px. Раньше было 34px — это половина, поэтому кнопки крыло закрывало. */
       main {
-        padding-bottom: calc(34px + env(safe-area-inset-bottom, 0px));
+        padding-bottom: calc(38px + env(safe-area-inset-bottom, 0px));
       }
 
       /* ──────────────────────────────────── */
@@ -1855,12 +1855,11 @@ window.addEventListener('DOMContentLoaded', function () {
     if (!deckKey) return true;
     return deckOf(id) === deckKey;
   }
-  // (в) По умолчанию ВСЕГДА «Все», игнорируем сохранённый чип в localStorage.
-  // Само сохранение оставляем — на случай будущих изменений политики.
+  // v75-r6: восстанавливаем deck из localStorage. При F5 внутри тега (например, Runāshanа) пользователь остаётся в этом теге, а не выкидывается во «Все».
   let deckMode = 'all';
   try {
     const saved = localStorage.getItem(STORAGE_DECK_MODE);
-    if (false && saved && Object.prototype.hasOwnProperty.call(DECK_RANGES, saved)) deckMode = saved;
+    if (saved && Object.prototype.hasOwnProperty.call(DECK_RANGES, saved)) deckMode = saved;
   } catch(e) {}
 
   // v39: секретные диапазоны — Лена, Runasana, Топ, Ответы, Тексты
@@ -3599,7 +3598,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v75</div>
+  <div class="version-tag" aria-hidden="true">v75-r6</div>
   <style>
     .version-tag {
       position: fixed;
