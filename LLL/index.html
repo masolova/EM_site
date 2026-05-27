@@ -1263,8 +1263,8 @@
       /* v67: убрал overflow:hidden — он обрезал .learned-progress на устройствах, где flex-children просили больше высоты, чем 100dvh.
          Места на экране достаточно, прогресс-бар теперь виден. Верхние блоки (header/чипы/панели/SRS) не трогаем. */
       .page {
-        /* v75-r7: padding-bottom = ПОЛНАЯ высота полосы + safe-area. Отодвигает всё содержимое (панели + SRS) вверх. */
-        padding: clamp(8px, 1.4vh, 14px) 14px calc(var(--learned-progress-h) + env(safe-area-inset-bottom, 0px));
+        /* v75-r8: padding-bottom = высота полосы. Отодвигает SRS-кнопки выше полосы. */
+        padding: clamp(8px, 1.4vh, 14px) 14px var(--learned-progress-h);
         gap: clamp(8px, 1.4vh, 14px);
         grid-template-rows: none;
         display: flex;
@@ -1516,15 +1516,15 @@
       }
       /* v58: learned-progress прижата к низу экрана (margin-top:auto), safe-area учтена. */
       /* v69: полоса опущена к самому краю видимой зоны. padding-bottom минимальный — без зазора. */
-      /* v75-r7: ПОЛОСА имеет ФИКСИРОВАННУЮ высоту в CSS-переменной — берем эту же величину, делим пополам и сокращаем каждый текстовый блок на ту же цифру. */
-      :root { --learned-progress-h: 64px; }
+      /* v75-r8: ПОЛОСА прижата к самому низу viewport (без safe-area-зазора в padding). Высота фиксирована в CSS-переменной. */
+      :root { --learned-progress-h: 44px; }
       .learned-progress {
         position: fixed;
         left: 0;
         right: 0;
         bottom: 0;
-        height: calc(var(--learned-progress-h) + env(safe-area-inset-bottom, 0px));
-        padding: 6px 14px calc(4px + env(safe-area-inset-bottom, 0px));
+        height: var(--learned-progress-h);
+        padding: 4px 14px 4px;
         gap: 4px;
         background: #fafaf9;
         z-index: 50;
@@ -3599,7 +3599,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v75-r7</div>
+  <div class="version-tag" aria-hidden="true">v75-r8</div>
   <style>
     .version-tag {
       position: fixed;
