@@ -1317,8 +1317,9 @@
       }
 
       /* (3.2) Mobile: панель жёстко фиксирована по высоте — всё влезает в экран, fit-to-box ужмёт шрифт. */
+      /* v76-r6: вертикальный padding панели сокращён с 14 до 8 — освобождает ~12px высоты под текст, fit подбирает шрифт крупнее. */
       .panel {
-        padding: clamp(14px, 2.4vh, 24px) clamp(14px, 4vw, 22px);
+        padding: clamp(8px, 1.4vh, 14px) clamp(14px, 4vw, 22px);
         border-radius: 20px;
         height: 100%;
         min-height: 0;
@@ -1524,8 +1525,8 @@
         position: fixed;
         left: 0;
         right: 0;
-        /* v76-r3: возвращаем bottom: 0. SRS-кнопки подняты выше через margin-bottom на .srs-zone — полоса встанет в освобождённый 73pt-зазор над URL-bar. */
-        bottom: 0;
+        /* v76-r5: bottom:0 в iOS Safari относится к layout-viewport (статика для expanded URL-bar). В compact-режиме visible-area уезжает ниже layout-viewport на ~110px → полоса висит над URL-bar с огромным зазором. Фикс: позиционировать через top: 100dvh - height. dvh динамически отслеживает visible-area. */
+        top: calc(100dvh - var(--learned-progress-h));
         height: var(--learned-progress-h);
         padding: 4px 14px 4px;
         gap: 4px;
@@ -2681,9 +2682,11 @@ window.addEventListener('DOMContentLoaded', function () {
     var avail   = workBot - workTop;
     // 3. Подбор размера шрифта бинарным поиском, шаг 0.5px, диапазон 14..32.
     var lo = 14, hi = 32;
+    // v76-r6: для очень длинных фраз используем плотный line-height 1.18 ВО ВСЁМ диапазоне.
+    var isVeryLong = panel && panel.classList && panel.classList.contains('is-very-long');
     function tryFont(px) {
       textEl.style.fontSize = px + 'px';
-      textEl.style.lineHeight = px < 24 ? '1.25' : '1.18';
+      textEl.style.lineHeight = isVeryLong ? '1.18' : (px < 24 ? '1.25' : '1.18');
       // force reflow
       void textEl.offsetHeight;
       return v74_fitsInWorkZone(panel, textEl, workTop, workBot, isLV);
@@ -2707,7 +2710,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
     // финал — выставляем найденный размер
     textEl.style.fontSize = best + 'px';
-    textEl.style.lineHeight = best < 24 ? '1.25' : '1.18';
+    textEl.style.lineHeight = isVeryLong ? '1.18' : (best < 24 ? '1.25' : '1.18');
     void textEl.offsetHeight;
     // 4. Центрирование по реальным границам текста (Range bounds).
     // На LV-панели добавление padTop сжимает content-area и может поменять флоат-обтекание —
@@ -2906,7 +2909,13 @@ window.addEventListener('DOMContentLoaded', function () {
   function applyLengthClasses(item) {
     // Старые классы больше не используем — всего подбор через fitTextToPanel в конце renderPhrase/renderTranslation.
     const panels = document.querySelectorAll('.panel');
-    panels.forEach(p => p.classList.remove('is-long', 'is-xlong', 'is-mega'));
+    panels.forEach(p => p.classList.remove('is-long', 'is-xlong', 'is-mega', 'is-very-long'));
+    // v77: для очень длинных фраз (>100 символов LV) используем плотный line-height 1.18 вместо 1.25.
+    // Это освобождает ~7% вертикали на строку — fit подбирает шрифт на +2..3px крупнее.
+    var lvLen = (item && item.lv) ? String(item.lv).length : 0;
+    if (lvLen > 100) {
+      panels.forEach(p => p.classList.add('is-very-long'));
+    }
   }
   function renderPhrase() {
     const item = currentPhrase();
@@ -3602,7 +3611,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v76-r4</div>
+  <div class="version-tag" aria-hidden="true">v77</div>
   <style>
     .version-tag {
       position: fixed;
