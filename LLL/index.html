@@ -46,7 +46,7 @@
     button { touch-action: manipulation; }
     .shell {
       width: min(1440px, calc(100vw - 40px));
-      height: min(900px, calc(100vh - 32px));
+      height: min(900px, calc(100dvh - 32px));
       margin: 16px auto;
       background: var(--shell);
       border: 1px solid var(--shell-line);
@@ -973,7 +973,7 @@
       display: grid;
       grid-template-columns: 60% 40%;
       align-items: stretch;
-      min-height: calc(100vh - 53px);
+      min-height: calc(100dvh - 53px);
       background: #fafaf9;
     }
     .streak-left {
@@ -1133,7 +1133,7 @@
       .shell {
         width: 100%;
         max-width: 100%;
-        min-height: 100vh;
+        min-height: 100dvh;
         height: auto;
         margin: 0;
         border: 0;
@@ -1291,8 +1291,8 @@
         min-height: 0;
         /* v58: отдаём больше высоты панелям освобождённому от padding-bottom */
         /* v69: вернули панелям высоту — полоса прогресса теперь садится у самого края видимой зоны, а не съедает место. */
-        /* v75-r9: СОКРАЩАЕМ .content на ПОЛНУЮ высоту полосы + safe-area iPhone. 2 панели делят это пополам автоматически. */
-        max-height: calc(min(58vh, 460px) - var(--learned-progress-h) - env(safe-area-inset-bottom, 0px));
+        /* v76-r4: vh → dvh — динамический viewport (учитывает состояние Safari URL-bar). 2 панели делят это пополам автоматически. */
+        max-height: calc(min(58dvh, 460px) - var(--learned-progress-h) - env(safe-area-inset-bottom, 0px));
       }
       /* v56: в панели LV audio-btn скрыт на мобиле (используется круглая слева), большой padding-bottom больше не нужен. */
       .panel .phrase-col {
@@ -3602,7 +3602,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v76-r3</div>
+  <div class="version-tag" aria-hidden="true">v76-r4</div>
   <style>
     .version-tag {
       position: fixed;
