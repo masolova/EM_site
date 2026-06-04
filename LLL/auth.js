@@ -407,8 +407,11 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
     alert('Готово. Проверь почту — там будет ссылка для входа. После клика страница перезагрузится с твоим прогрессом.');
   }
 
-  // SHA-256 хэш email VIP-юзера. Сам email в коде не хранится.
-  const VIP_HASH = 'f528e3bba67c600b849d2a39f5f72846e036ef925772c1ccdf77195e08965645';
+  // SHA-256 хэши email VIP-юзеров. Сами email в коде не хранятся.
+  const VIP_HASHES = [
+    'f528e3bba67c600b849d2a39f5f72846e036ef925772c1ccdf77195e08965645', // elena.masolova@gmail.com
+    '23f1165e3e00d6f1448cd0fddfc2fedcf37aab0171cbbd88f716458c26531a25', // avtyltina@gmail.com
+  ];
   async function sha256Hex(str) {
     try {
       const buf = new TextEncoder().encode(str);
@@ -419,7 +422,7 @@ const SUPABASE_ANON_KEY = 'sb_publishable_1CrK38TDNj93GgWxjKDkdw_zvm19KUV';
   async function checkVip(email) {
     if (!email) return false;
     const h = await sha256Hex(email.trim().toLowerCase());
-    return h === VIP_HASH;
+    return VIP_HASHES.includes(h);
   }
 
   function updateAuthBtn() {
