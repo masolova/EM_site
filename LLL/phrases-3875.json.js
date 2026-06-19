@@ -3884,7 +3884,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Pagājušajos Jāņos mēs pinām vainagus un dziedājām līdz rītausmai.",
-    "ru": "На прошлых Иванах Купала мы плели венки и пели до рассвета.",
+    "ru": "На прошлых Янах (Иванах Купала) мы плели венки и пели до рассвета.",
     "retired": false,
     "exam": true,
     "exam_corpus": true,
@@ -24056,7 +24056,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Vakar mēs samaksājām 300 000 eiro par dzīvokli.",
+    "lv": "Vakar mēs samaksājām 300 000 (trīs simti tūkstoši) eiro par dzīvokli.",
     "ru": "Вчера мы заплатили 300 000 евро за квартиру.",
     "retired": false
   },
@@ -24068,7 +24068,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Mēs sāksim kursu 26. septembrī pulksten 18.30.",
+    "lv": "Mēs sāksim kursu 26. (divdesmit sestajā) septembrī pulksten 18.30 (astoņpadsmit trīsdesmit).",
     "ru": "Мы начнём курс 26 сентября в 18:30.",
     "retired": false
   },
@@ -24080,7 +24080,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Es pabeidzu darbu 2024. gadā.",
+    "lv": "Es pabeidzu darbu 2024. (divi tūkstoši divdesmit ceturtajā) gadā.",
     "ru": "Я закончил работу в 2024 году.",
     "retired": false
   },
@@ -24092,7 +24092,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Viņi mainīs adresi 2027. gadā.",
+    "lv": "Viņi mainīs adresi 2027. (divi tūkstoši divdesmit septītajā) gadā.",
     "ru": "Они сменят адрес в 2027 году.",
     "retired": false
   },
@@ -24104,7 +24104,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Viņa nopirka biļeti par 26 eiro un 50 centiem.",
+    "lv": "Viņa nopirka biļeti par 26 (divdesmit seši) eiro un 50 (piecdesmit) centiem.",
     "ru": "Она купила билет за 26 евро 50 центов.",
     "retired": false
   },
@@ -24116,7 +24116,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Mēs dzīvojam 26. namā pie stacijas.",
+    "lv": "Mēs dzīvojam 26. (divdesmit sestajā) namā pie stacijas.",
     "ru": "Мы живём в 26-м доме у станции.",
     "retired": false
   },
@@ -24128,7 +24128,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Es strādāju 2. stāvā līdz pulksten 17.00.",
+    "lv": "Es strādāju 2. (otrajā) stāvā līdz pulksten 17.00 (septiņpadsmit).",
     "ru": "Я работаю на 2-м этаже до 17:00.",
     "retired": false
   },
@@ -24140,7 +24140,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Mēs aizbrauksim 26. decembrī pēc pusdienām.",
+    "lv": "Mēs aizbrauksim 26. (divdesmit sestajā) decembrī pēc pusdienām.",
     "ru": "Мы уедем 26 декабря после обеда.",
     "retired": false
   },
@@ -24152,7 +24152,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Viņa saņēma atbildi 26. aprīlī vakarā.",
+    "lv": "Viņa saņēma atbildi 26. (divdesmit sestajā) aprīlī vakarā.",
     "ru": "Она получила ответ 26 апреля вечером.",
     "retired": false
   },
@@ -24164,7 +24164,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Mēs atradām 26. lapā vajadzīgo adresi.",
+    "lv": "Mēs atradām 26. (divdesmit sestajā) lapā vajadzīgo adresi.",
     "ru": "Мы нашли нужный адрес на 26-й странице.",
     "retired": false
   },
@@ -24176,7 +24176,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Mēs remontējam virtuvi par 26 000 eiro.",
+    "lv": "Mēs remontējam virtuvi par 26 000 (divdesmit seši tūkstoši) eiro.",
     "ru": "Мы ремонтируем кухню за 26 000 евро.",
     "retired": false
   },
@@ -24188,7 +24188,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Viņa mācās 3. kursā kopš 2025. gada.",
+    "lv": "Viņa mācās 3. (trešajā) kursā kopš 2025. (divi tūkstoši divdesmit piektā) gada.",
     "ru": "Она учится на 3-м курсе с 2025 года.",
     "retired": false
   },
@@ -24200,7 +24200,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Es pierakstīšos uz pārbaudi 26. augustā.",
+    "lv": "Es pierakstīšos uz pārbaudi 26. (divdesmit sestajā) augustā.",
     "ru": "Я запишусь на проверку 26 августа.",
     "retired": false
   },
@@ -24212,7 +24212,7 @@ const PHRASES = [
     "negative": true,
     "question": false,
     "has_number": true,
-    "lv": "Es neaizmirsu samaksāt 26 eiro par kursu.",
+    "lv": "Es neaizmirsu samaksāt 26 (divdesmit seši) eiro par kursu.",
     "ru": "Я не забыл заплатить 26 евро за курс.",
     "retired": false
   },
@@ -24224,7 +24224,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Viņa pārcels tikšanos uz 26. februāri.",
+    "lv": "Viņa pārcels tikšanos uz 26. (divdesmit sesto) februāri.",
     "ru": "Она перенесёт встречу на 26 февраля.",
     "retired": false
   },
@@ -24236,7 +24236,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Mana meita piedzima 2017. gadā.",
+    "lv": "Mana meita piedzima 2017. (divi tūkstoši septiņpadsmitajā) gadā.",
     "ru": "Моя дочь родилась в 2017 году.",
     "retired": false
   },
@@ -24248,7 +24248,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Sapulce notiks 17. oktobrī pulksten 9.15.",
+    "lv": "Sapulce notiks 17. (septiņpadsmitajā) oktobrī pulksten 9.15 (deviņi piecpadsmit).",
     "ru": "Собрание состоится 17 октября в 9:15.",
     "retired": false
   },
@@ -24260,7 +24260,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Es ierakstu cenu 26,40 eiro čekā.",
+    "lv": "Es ierakstu cenu 26 (divdesmit seši),40 (četrdesmit) eiro čekā.",
     "ru": "Я записываю цену 26,40 евро в чек.",
     "retired": false
   },
@@ -24272,7 +24272,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Uzņēmums sasniedza 12% izaugsmi 2026. gadā.",
+    "lv": "Uzņēmums sasniedza 12 (divpadsmit)% izaugsmi 2026. (divi tūkstoši divdesmit sestajā) gadā.",
     "ru": "Компания достигла роста 12% в 2026 году.",
     "retired": false
   },
@@ -27419,13 +27419,13 @@ const PHRASES = [
   },
   {
     "id": 1807,
-    "lv": "Mūsu kopējais budžets izrādījās par 247 eiro mazāks nekā plānots.",
+    "lv": "Mūsu kopējais budžets izrādījās par 247 (divi simti četrdesmit septiņi) eiro mazāks nekā plānots.",
     "ru": "Наш общий бюджет оказался на 247 евро меньше, чем планировалось.",
     "question": false
   },
   {
     "id": 1808,
-    "lv": "2019. gada martā mēs pārcēlāmies uz jauno dzīvokli netālu no parka.",
+    "lv": "2019. (divi tūkstoši deviņpadsmitā) gada martā mēs pārcēlāmies uz jauno dzīvokli netālu no parka.",
     "ru": "В марте 2019 года мы переехали в новую квартиру неподалёку от парка.",
     "question": false
   },
@@ -27443,55 +27443,55 @@ const PHRASES = [
   },
   {
     "id": 1811,
-    "lv": "Uzņēmums plāno uzsākt jaunās rūpnīcas būvniecību 2026. gada vasarā.",
+    "lv": "Uzņēmums plāno uzsākt jaunās rūpnīcas būvniecību 2026. (divi tūkstoši divdesmit sestā) gada vasarā.",
     "ru": "Компания планирует начать строительство нового завода летом 2026 года.",
     "question": false
   },
   {
     "id": 1812,
-    "lv": "Toreiz, 2008. gadā, neviens neticēja, ka krīze ievilksies tik ilgi.",
+    "lv": "Toreiz, 2008. (divi tūkstoši astotajā) gadā, neviens neticēja, ka krīze ievilksies tik ilgi.",
     "ru": "Тогда, в 2008 году, никто не верил, что кризис затянется так надолго.",
     "question": false
   },
   {
     "id": 1813,
-    "lv": "Komisija solīja izskatīt manu iesniegumu 21 darba dienas laikā.",
+    "lv": "Komisija solīja izskatīt manu iesniegumu 21 (divdesmit vienas) darba dienas laikā.",
     "ru": "Комиссия обещала рассмотреть моё заявление в течение 21 рабочего дня.",
     "question": false
   },
   {
     "id": 1814,
-    "lv": "Vadītājs nepieļāva ne mazāko kļūdu visā 47 minūšu garajā prezentācijā.",
+    "lv": "Vadītājs nepieļāva ne mazāko kļūdu visā 47 (četrdesmit septiņu) minūšu garajā prezentācijā.",
     "ru": "Руководитель не допустил ни малейшей ошибки за всю 47-минутную презентацию.",
     "question": false
   },
   {
     "id": 1815,
-    "lv": "Pēc avārijas slimnīcai 24 stundu laikā nepieciešami 38 litri donoru asiņu.",
+    "lv": "Pēc avārijas slimnīcai 24 (divdesmit četru) stundu laikā nepieciešami 38 (trīsdesmit astoņi) litri donoru asiņu.",
     "ru": "После аварии больнице в течение 24 часов необходимы 38 литров донорской крови.",
     "question": false
   },
   {
     "id": 1816,
-    "lv": "Projekta finansējums tika samazināts par 12 700 eiro pēc revīzijas.",
+    "lv": "Projekta finansējums tika samazināts par 12 700 (divpadsmit tūkstoši septiņi simti) eiro pēc revīzijas.",
     "ru": "Финансирование проекта было сокращено на 12 700 евро после аудита.",
     "question": false
   },
   {
     "id": 1817,
-    "lv": "Pašvaldība cer īstenot rekonstrukcijas plānu līdz 2027. gada beigām.",
+    "lv": "Pašvaldība cer īstenot rekonstrukcijas plānu līdz 2027. (divi tūkstoši divdesmit septītā) gada beigām.",
     "ru": "Самоуправление надеется реализовать план реконструкции к концу 2027 года.",
     "question": false
   },
   {
     "id": 1818,
-    "lv": "Romāna galvenais varonis pazūd 173. lappusē, atstājot lasītāju neziņā.",
+    "lv": "Romāna galvenais varonis pazūd 173. (simt septiņdesmit trešajā) lappusē, atstājot lasītāju neziņā.",
     "ru": "Главный герой романа исчезает на 173-й странице, оставляя читателя в неведении.",
     "question": false
   },
   {
     "id": 1819,
-    "lv": "Vectēvs mēdz stāstīt vienu un to pašu stāstu jau 25 gadus pēc kārtas.",
+    "lv": "Vectēvs mēdz stāstīt vienu un to pašu stāstu jau 25 (divdesmit pieci) gadus pēc kārtas.",
     "ru": "Дедушка имеет обыкновение рассказывать одну и ту же историю уже 25 лет подряд.",
     "question": false
   },
@@ -27503,13 +27503,13 @@ const PHRASES = [
   },
   {
     "id": 1821,
-    "lv": "Šie grozījumi skars aptuveni 23 000 mājsaimniecību visā valstī.",
+    "lv": "Šie grozījumi skars aptuveni 23 000 (divdesmit trīs tūkstoši) mājsaimniecību visā valstī.",
     "ru": "Эти поправки затронут около 23 000 домохозяйств по всей стране.",
     "question": false
   },
   {
     "id": 1822,
-    "lv": "Vecmāmiņa iedeva man veco gredzenu, kas ģimenē glabājies kopš 1937. gada.",
+    "lv": "Vecmāmiņa iedeva man veco gredzenu, kas ģimenē glabājies kopš 1937. (tūkstoš deviņi simti trīsdesmit septītā) gada.",
     "ru": "Бабушка дала мне старое кольцо, которое хранится в семье с 1937 года.",
     "question": false
   },
@@ -27527,67 +27527,67 @@ const PHRASES = [
   },
   {
     "id": 1825,
-    "lv": "Ziņu aģentūra vēstīja, ka cietušo skaits jau pārsniedzis 47 cilvēkus.",
+    "lv": "Ziņu aģentūra vēstīja, ka cietušo skaits jau pārsniedzis 47 (četrdesmit septiņi) cilvēkus.",
     "ru": "Информационное агентство сообщало, что число пострадавших уже превысило 47 человек.",
     "question": false
   },
   {
     "id": 1826,
-    "lv": "Tiesa lems par viņa likteni 27. novembrī plkst. 10.00.",
+    "lv": "Tiesa lems par viņa likteni 27. (divdesmit septītajā) novembrī plkst. 10.00 (desmit).",
     "ru": "Суд решит его судьбу 27 ноября в 10.00.",
     "question": false
   },
   {
     "id": 1827,
-    "lv": "Viņa noliecās uz mana pleca un klusi raudāja gandrīz 20 minūtes.",
+    "lv": "Viņa noliecās uz mana pleca un klusi raudāja gandrīz 20 (divdesmit) minūtes.",
     "ru": "Она склонилась мне на плечо и тихо плакала почти 20 минут.",
     "question": false
   },
   {
     "id": 1828,
-    "lv": "Manu vidusskolu absolvēja 87 skolēni, taču tikai puse iestājās augstskolā.",
+    "lv": "Manu vidusskolu absolvēja 87 (astoņdesmit septiņi) skolēni, taču tikai puse iestājās augstskolā.",
     "ru": "Мою среднюю школу окончили 87 учеников, но только половина поступила в вуз.",
     "question": false
   },
   {
     "id": 1829,
-    "lv": "Par satiksmes pārkāpumu viņam piesprieda sodu 145 eiro apmērā.",
+    "lv": "Par satiksmes pārkāpumu viņam piesprieda sodu 145 (simt četrdesmit pieci) eiro apmērā.",
     "ru": "За нарушение правил дорожного движения ему назначили штраф в размере 145 евро.",
     "question": false
   },
   {
     "id": 1830,
-    "lv": "Statistikas pārvalde publicēja skaitļus, kas liecina par 3,7 procentu pieaugumu.",
+    "lv": "Statistikas pārvalde publicēja skaitļus, kas liecina par 3 (trīs),7 (septiņi) procentu pieaugumu.",
     "ru": "Статистическое управление опубликовало цифры, свидетельствующие о росте на 3,7 процента.",
     "question": false
   },
   {
     "id": 1831,
-    "lv": "No ziemeļiem pūta auksts vējš, un temperatūra naktī nokritās līdz -18 grādiem.",
+    "lv": "No ziemeļiem pūta auksts vējš, un temperatūra naktī nokritās līdz -18 (astoņpadsmit) grādiem.",
     "ru": "С севера дул холодный ветер, и температура ночью опустилась до −18 градусов.",
     "question": false
   },
   {
     "id": 1832,
-    "lv": "Vietējais laikraksts ziņoja, ka valsts ziemeļos atvērs trīs jaunas slimnīcas līdz 2027. gadam.",
+    "lv": "Vietējais laikraksts ziņoja, ka valsts ziemeļos atvērs trīs jaunas slimnīcas līdz 2027. (divi tūkstoši divdesmit septītajam) gadam.",
     "ru": "Местная газета сообщила, что на севере страны до 2027 года откроют три новые больницы.",
     "question": false
   },
   {
     "id": 1833,
-    "lv": "Šī luga, kas sarakstīta 1923. gadā, joprojām pulcē pilnu zāli katru nedēļu.",
+    "lv": "Šī luga, kas sarakstīta 1923. (tūkstoš deviņi simti divdesmit trešajā) gadā, joprojām pulcē pilnu zāli katru nedēļu.",
     "ru": "Эта пьеса, написанная в 1923 году, до сих пор собирает полный зал каждую неделю.",
     "question": false
   },
   {
     "id": 1834,
-    "lv": "Uzņēmuma ieņēmumi pērn pieauga par 28 miljoniem eiro, neraugoties uz krīzi.",
+    "lv": "Uzņēmuma ieņēmumi pērn pieauga par 28 (divdesmit astoņi) miljoniem eiro, neraugoties uz krīzi.",
     "ru": "Доходы компании в прошлом году выросли на 28 миллионов евро, несмотря на кризис.",
     "question": false
   },
   {
     "id": 1835,
-    "lv": "Lūgums izlasīt līguma 7. panta otro apakšpunktu — tieši tur ir minēts soda apmērs.",
+    "lv": "Lūgums izlasīt līguma 7. (septītā) panta otro apakšpunktu — tieši tur ir minēts soda apmērs.",
     "ru": "Прошу прочитать второй подпункт статьи 7 договора — именно там указан размер штрафа.",
     "question": false
   },
@@ -27605,7 +27605,7 @@ const PHRASES = [
   },
   {
     "id": 1838,
-    "lv": "Bezdarbnieka pabalsts pagājušajā gadā tika palielināts par 47 eiro mēnesī.",
+    "lv": "Bezdarbnieka pabalsts pagājušajā gadā tika palielināts par 47 (četrdesmit septiņi) eiro mēnesī.",
     "ru": "Пособие по безработице в прошлом году было увеличено на 47 евро в месяц.",
     "question": false
   },
@@ -27617,13 +27617,13 @@ const PHRASES = [
   },
   {
     "id": 1840,
-    "lv": "Mans gala vērtējums bija 8,5, un tas mani patiesi pārsteidza.",
+    "lv": "Mans gala vērtējums bija 8 (astoņi),5 (pieci), un tas mani patiesi pārsteidza.",
     "ru": "Моя итоговая оценка была 8,5, и это меня действительно удивило.",
     "question": false
   },
   {
     "id": 1841,
-    "lv": "1812. gada kauja pie Borodinas joprojām tiek pētīta vēstures fakultātēs.",
+    "lv": "1812. (tūkstoš astoņi simti divpadsmitā) gada kauja pie Borodinas joprojām tiek pētīta vēstures fakultātēs.",
     "ru": "Бородинское сражение 1812 года до сих пор изучается на исторических факультетах.",
     "question": false
   },
@@ -27635,37 +27635,37 @@ const PHRASES = [
   },
   {
     "id": 1843,
-    "lv": "Iepirkumā piedalījās 11 uzņēmumi, taču uzvarēja tikai viens — vietējais būvnieks.",
+    "lv": "Iepirkumā piedalījās 11 (vienpadsmit) uzņēmumi, taču uzvarēja tikai viens — vietējais būvnieks.",
     "ru": "В тендере участвовало 11 компаний, но победила только одна — местный строитель.",
     "question": false
   },
   {
     "id": 1844,
-    "lv": "Nekustamā īpašuma cenas Rīgas centrā 2023. gadā pieauga par 12 procentiem.",
+    "lv": "Nekustamā īpašuma cenas Rīgas centrā 2023. (divi tūkstoši divdesmit trešajā) gadā pieauga par 12 (divpadsmit) procentiem.",
     "ru": "Цены на недвижимость в центре Риги в 2023 году выросли на 12 процентов.",
     "question": false
   },
   {
     "id": 1845,
-    "lv": "Tu esi pilnīgi traks, ja domā braukt ar velosipēdu 60 kilometrus pa lietu!",
+    "lv": "Tu esi pilnīgi traks, ja domā braukt ar velosipēdu 60 (sešdesmit) kilometrus pa lietu!",
     "ru": "Ты совсем сошёл с ума, если думаешь ехать на велосипеде 60 километров под дождём!",
     "question": false
   },
   {
     "id": 1846,
-    "lv": "Faktiski projektā piedalījās tikai 6 cilvēki, lai gan dokumentos bija minēti 23.",
+    "lv": "Faktiski projektā piedalījās tikai 6 (seši) cilvēki, lai gan dokumentos bija minēti 23. (divdesmit trīs)",
     "ru": "Фактически в проекте участвовали только 6 человек, хотя в документах было упомянуто 23.",
     "question": false
   },
   {
     "id": 1847,
-    "lv": "Man vienalga, kur mēs ēdīsim — galvenais, lai tas notiktu pirms pulksten 21:00.",
+    "lv": "Man vienalga, kur mēs ēdīsim — galvenais, lai tas notiktu pirms pulksten 21 (divdesmit viens):00. (nulle nulle)",
     "ru": "Мне всё равно, где мы будем есть — главное, чтобы это произошло до 21:00.",
     "question": false
   },
   {
     "id": 1848,
-    "lv": "Mūsu komanda finišēja ceturtajā vietā, atpaliekot no līderiem tikai par 13 sekundēm.",
+    "lv": "Mūsu komanda finišēja ceturtajā vietā, atpaliekot no līderiem tikai par 13 (trīspadsmit) sekundēm.",
     "ru": "Наша команда финишировала на четвёртом месте, отстав от лидеров всего на 13 секунд.",
     "question": false
   },
@@ -27677,31 +27677,31 @@ const PHRASES = [
   },
   {
     "id": 1850,
-    "lv": "Lēmums tika pieņemts vakar, proti, 16. novembrī plkst. 17:30.",
+    "lv": "Lēmums tika pieņemts vakar, proti, 16. (sešpadsmitajā) novembrī plkst. 17 (septiņpadsmit):30. (trīsdesmit)",
     "ru": "Решение было принято вчера, а именно 16 ноября в 17:30.",
     "question": false
   },
   {
     "id": 1851,
-    "lv": "Saulrieta aina ar garām ēnām uz lauka bija tik skaista, ka mēs apstājāmies vairāk nekā 25 minūtes.",
+    "lv": "Saulrieta aina ar garām ēnām uz lauka bija tik skaista, ka mēs apstājāmies vairāk nekā 25 (divdesmit piecas) minūtes.",
     "ru": "Закатный пейзаж с длинными тенями на поле был так красив, что мы остановились более чем на 25 минут.",
     "question": false
   },
   {
     "id": 1852,
-    "lv": "Pludmalē valsts ziemeļos smiltis bija tik aukstas, ka kājas sāpēja jau pēc 30 sekundēm.",
+    "lv": "Pludmalē valsts ziemeļos smiltis bija tik aukstas, ka kājas sāpēja jau pēc 30 (trīsdesmit) sekundēm.",
     "ru": "На пляже на севере страны песок был такой холодный, что ноги заболели уже через 30 секунд.",
     "question": false
   },
   {
     "id": 1853,
-    "lv": "Tas puisis, ar kuru es iepazinos vidusskolā 2018. gadā, tagad strādā Berlīnē.",
+    "lv": "Tas puisis, ar kuru es iepazinos vidusskolā 2018. (divi tūkstoši astoņpadsmitajā) gadā, tagad strādā Berlīnē.",
     "ru": "Тот парень, с которым я познакомилась в средней школе в 2018 году, сейчас работает в Берлине.",
     "question": false
   },
   {
     "id": 1854,
-    "lv": "Līguma 5. apakšpunkts paredz, ka izpildei jānotiek 30 dienu laikā.",
+    "lv": "Līguma 5. (piektais) apakšpunkts paredz, ka izpildei jānotiek 30 (trīsdesmit) dienu laikā.",
     "ru": "Пункт 5 договора предусматривает, что исполнение должно произойти в течение 30 дней.",
     "question": false
   },
@@ -27713,7 +27713,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Šī koncertzāle var uzņemt 178 klausītājus.",
+    "lv": "Šī koncertzāle var uzņemt 178 (simt septiņdesmit astoņi) klausītājus.",
     "ru": "Этот концертный зал вмещает 178 слушателей.",
     "retired": false
   },
@@ -27725,7 +27725,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Es nostaigāju 234 metrus pa pludmali.",
+    "lv": "Es nostaigāju 234 (divi simti trīsdesmit četri) metrus pa pludmali.",
     "ru": "Я прошёл 234 метра по пляжу.",
     "retired": false
   },
@@ -27737,7 +27737,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Romānā ir 312 lappuses.",
+    "lv": "Romānā ir 312 (trīs simti divpadsmit) lappuses.",
     "ru": "В романе 312 страниц.",
     "retired": false
   },
@@ -27749,7 +27749,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Mēs pārdevām 356 biļetes uz izrādi.",
+    "lv": "Mēs pārdevām 356 (trīs simti piecdesmit sešas) biļetes uz izrādi.",
     "ru": "Мы продали 356 билетов на спектакль.",
     "retired": false
   },
@@ -27761,7 +27761,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Viņa nopirka 389 grami šokolādes.",
+    "lv": "Viņa nopirka 389 (trīs simti astoņdesmit deviņi) grami šokolādes.",
     "ru": "Она купила 389 граммов шоколада.",
     "retired": false
   },
@@ -27773,7 +27773,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Maratonā piedalījās 412 skrējēji.",
+    "lv": "Maratonā piedalījās 412 (četri simti divpadsmit) skrējēji.",
     "ru": "В марафоне участвовали 412 бегунов.",
     "retired": false
   },
@@ -27785,7 +27785,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Es nobraucu 567 kilometrus ar velosipēdu.",
+    "lv": "Es nobraucu 567 (pieci simti sešdesmit septiņi) kilometrus ar velosipēdu.",
     "ru": "Я проехал 567 километров на велосипеде.",
     "retired": false
   },
@@ -27797,7 +27797,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Stadionā ieradās 689 skatītāji.",
+    "lv": "Stadionā ieradās 689 (seši simti astoņdesmit deviņi) skatītāji.",
     "ru": "На стадион пришли 689 зрителей.",
     "retired": false
   },
@@ -27809,7 +27809,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Bibliotēkā iegādājās 723 jaunas grāmatas.",
+    "lv": "Bibliotēkā iegādājās 723 (septiņi simti divdesmit trīs) jaunas grāmatas.",
     "ru": "В библиотеку приобрели 723 новые книги.",
     "retired": false
   },
@@ -27821,7 +27821,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Šī biļete uz lidmašīnu maksā 756 eiro.",
+    "lv": "Šī biļete uz lidmašīnu maksā 756 (septiņi simti piecdesmit seši) eiro.",
     "ru": "Этот билет на самолёт стоит 756 евро.",
     "retired": false
   },
@@ -27833,7 +27833,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Es uzrakstīju 845 vārdus referātā.",
+    "lv": "Es uzrakstīju 845 (astoņi simti četrdesmit pieci) vārdus referātā.",
     "ru": "Я написал 845 слов в реферате.",
     "retired": false
   },
@@ -27845,7 +27845,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Festivālā piedalījās 912 mākslinieki.",
+    "lv": "Festivālā piedalījās 912 (deviņi simti divpadsmit) mākslinieki.",
     "ru": "В фестивале участвовали 912 артистов.",
     "retired": false
   },
@@ -27857,7 +27857,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Viesnīca uzņēma 978 viesus vasarā.",
+    "lv": "Viesnīca uzņēma 978 (deviņi simti septiņdesmit astoņi) viesus vasarā.",
     "ru": "Отель принял 978 гостей летом.",
     "retired": false
   },
@@ -27869,7 +27869,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Volfgangs Mocarts dzimis 27. janvārī 1756. gadā.",
+    "lv": "Volfgangs Mocarts dzimis 27. (divdesmit septītajā) janvārī 1756. (tūkstoš septiņi simti piecdesmit sestajā) gadā.",
     "ru": "Вольфганг Моцарт родился 27 января 1756 года.",
     "retired": false
   },
@@ -27881,7 +27881,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Deivids Bouvijs dzimis 8. janvārī.",
+    "lv": "Deivids Bouvijs dzimis 8. (astotajā) janvārī.",
     "ru": "Дэвид Боуи родился 8 января.",
     "retired": false
   },
@@ -27893,7 +27893,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Čārlzs Darvins dzimis 12. februārī 1809. gadā.",
+    "lv": "Čārlzs Darvins dzimis 12. (divpadsmitajā) februārī 1809. (tūkstoš astoņi simti devītajā) gadā.",
     "ru": "Чарльз Дарвин родился 12 февраля 1809 года.",
     "retired": false
   },
@@ -27905,7 +27905,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Kristiāno Ronaldu dzimšanas diena ir 5. februārī.",
+    "lv": "Kristiāno Ronaldu dzimšanas diena ir 5. (piektajā) februārī.",
     "ru": "День рождения Криштиану Роналду — 5 февраля.",
     "retired": false
   },
@@ -27917,7 +27917,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Alberts Einšteins dzimis 14. martā 1879. gadā.",
+    "lv": "Alberts Einšteins dzimis 14. (četrpadsmitajā) martā 1879. (tūkstoš astoņi simti septiņdesmit devītajā) gadā.",
     "ru": "Альберт Эйнштейн родился 14 марта 1879 года.",
     "retired": false
   },
@@ -27929,7 +27929,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Jurijs Gagarins dzimis 9. martā.",
+    "lv": "Jurijs Gagarins dzimis 9. (devītajā) martā.",
     "ru": "Юрий Гагарин родился 9 марта.",
     "retired": false
   },
@@ -27941,7 +27941,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Viljams Šekspīrs dzimis 23. aprīlī 1564. gadā.",
+    "lv": "Viljams Šekspīrs dzimis 23. (divdesmit trešajā) aprīlī 1564. (tūkstoš pieci simti sešdesmit ceturtajā) gadā.",
     "ru": "Уильям Шекспир родился 23 апреля 1564 года.",
     "retired": false
   },
@@ -27953,7 +27953,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Leonardo da Vinči dzimis 15. aprīlī 1452. gadā.",
+    "lv": "Leonardo da Vinči dzimis 15. (piecpadsmitajā) aprīlī 1452. (tūkstoš četri simti piecdesmit otrajā) gadā.",
     "ru": "Леонардо да Винчи родился 15 апреля 1452 года.",
     "retired": false
   },
@@ -27965,7 +27965,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Salvadors Dalī dzimis 11. maijā.",
+    "lv": "Salvadors Dalī dzimis 11. (vienpadsmitajā) maijā.",
     "ru": "Сальвадор Дали родился 11 мая.",
     "retired": false
   },
@@ -27977,7 +27977,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Marks Cukerbergs dzimis 14. maijā 1984. gadā.",
+    "lv": "Marks Cukerbergs dzimis 14. (četrpadsmitajā) maijā 1984. (tūkstoš deviņi simti astoņdesmit ceturtajā) gadā.",
     "ru": "Марк Цукерберг родился 14 мая 1984 года.",
     "retired": false
   },
@@ -27989,7 +27989,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Lionels Mesi dzimis 24. jūnijā 1987. gadā.",
+    "lv": "Lionels Mesi dzimis 24. (divdesmit ceturtajā) jūnijā 1987. (tūkstoš deviņi simti astoņdesmit septītajā) gadā.",
     "ru": "Лионель Месси родился 24 июня 1987 года.",
     "retired": false
   },
@@ -28001,7 +28001,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Īlons Masks dzimis 28. jūnijā.",
+    "lv": "Īlons Masks dzimis 28. (divdesmit astotajā) jūnijā.",
     "ru": "Илон Маск родился 28 июня.",
     "retired": false
   },
@@ -28013,7 +28013,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Džoanna Roulinga dzimusi 31. jūlijā 1965. gadā.",
+    "lv": "Džoanna Roulinga dzimusi 31. (trīsdesmit pirmajā) jūlijā 1965. (tūkstoš deviņi simti sešdesmit piektajā) gadā.",
     "ru": "Джоан Роулинг родилась 31 июля 1965 года.",
     "retired": false
   },
@@ -28025,7 +28025,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Ernests Hemingvejs dzimis 21. jūlijā.",
+    "lv": "Ernests Hemingvejs dzimis 21. (divdesmit pirmajā) jūlijā.",
     "ru": "Эрнест Хемингуэй родился 21 июля.",
     "retired": false
   },
@@ -28037,7 +28037,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Baraks Obama dzimis 4. augustā 1961. gadā.",
+    "lv": "Baraks Obama dzimis 4. (ceturtajā) augustā 1961. (tūkstoš deviņi simti sešdesmit pirmajā) gadā.",
     "ru": "Барак Обама родился 4 августа 1961 года.",
     "retired": false
   },
@@ -28049,7 +28049,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Maikls Džeksons dzimis 29. augustā.",
+    "lv": "Maikls Džeksons dzimis 29. (divdesmit devītajā) augustā.",
     "ru": "Майкл Джексон родился 29 августа.",
     "retired": false
   },
@@ -28061,7 +28061,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Bijonse dzimusi 4. septembrī 1981. gadā.",
+    "lv": "Bijonse dzimusi 4. (ceturtajā) septembrī 1981. (tūkstoš deviņi simti astoņdesmit pirmajā) gadā.",
     "ru": "Бейонсе родилась 4 сентября 1981 года.",
     "retired": false
   },
@@ -28073,7 +28073,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Fredijs Merkūrijs dzimis 5. septembrī.",
+    "lv": "Fredijs Merkūrijs dzimis 5. (piektajā) septembrī.",
     "ru": "Фредди Меркьюри родился 5 сентября.",
     "retired": false
   },
@@ -28085,7 +28085,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Džons Lenons dzimis 9. oktobrī 1940. gadā.",
+    "lv": "Džons Lenons dzimis 9. (devītajā) oktobrī 1940. (tūkstoš deviņi simti četrdesmitajā) gadā.",
     "ru": "Джон Леннон родился 9 октября 1940 года.",
     "retired": false
   },
@@ -28097,7 +28097,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Pablo Pikaso dzimis 25. oktobrī.",
+    "lv": "Pablo Pikaso dzimis 25. (divdesmit piektajā) oktobrī.",
     "ru": "Пабло Пикассо родился 25 октября.",
     "retired": false
   },
@@ -28109,7 +28109,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Albērs Kamī dzimis 7. novembrī 1913. gadā.",
+    "lv": "Albērs Kamī dzimis 7. (septītajā) novembrī 1913. (tūkstoš deviņi simti trīspadsmitajā) gadā.",
     "ru": "Альбер Камю родился 7 ноября 1913 года.",
     "retired": false
   },
@@ -28121,7 +28121,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Leonardo Dikaprio dzimis 11. novembrī 1974. gadā.",
+    "lv": "Leonardo Dikaprio dzimis 11. (vienpadsmitajā) novembrī 1974. (tūkstoš deviņi simti septiņdesmit ceturtajā) gadā.",
     "ru": "Леонардо ДиКаприо родился 11 ноября 1974 года.",
     "retired": false
   },
@@ -28133,7 +28133,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Stīvens Spīlbergs dzimis 18. decembrī 1946. gadā.",
+    "lv": "Stīvens Spīlbergs dzimis 18. (astoņpadsmitajā) decembrī 1946. (tūkstoš deviņi simti četrdesmit sestajā) gadā.",
     "ru": "Стивен Спилберг родился 18 декабря 1946 года.",
     "retired": false
   },
@@ -28145,7 +28145,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Ludvigs van Bēthovens dzimis 17. decembrī.",
+    "lv": "Ludvigs van Bēthovens dzimis 17. (septiņpadsmitajā) decembrī.",
     "ru": "Людвиг ван Бетховен родился 17 декабря.",
     "retired": false
   },
@@ -28157,7 +28157,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Skaitlis pī ir aptuveni 3,1415.",
+    "lv": "Skaitlis pī ir aptuveni 3 (trīs),1415. (tūkstoš četri simti piecpadsmit)",
     "ru": "Число пи приблизительно равно 3,1415.",
     "retired": false
   },
@@ -28169,7 +28169,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Skaitlis e ir vienāds ar 2,71828.",
+    "lv": "Skaitlis e ir vienāds ar 2 (divi),71828. (septiņdesmit viens tūkstotis astoņi simti divdesmit astoņi)",
     "ru": "Число e равно 2,71828.",
     "retired": false
   },
@@ -28193,7 +28193,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Es nopirku 2,5 kg banānu tirgū.",
+    "lv": "Es nopirku 2 (divi),5 (pieci) kg banānu tirgū.",
     "ru": "Я купил 2,5 кг бананов на рынке.",
     "retired": false
   },
@@ -28205,7 +28205,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Viņa ir 1,75 metrus gara.",
+    "lv": "Viņa ir 1 (viens),75 (septiņdesmit pieci) metrus gara.",
     "ru": "Она ростом 1,75 метра.",
     "retired": false
   },
@@ -28217,7 +28217,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Bērnam ir 37,5 grādu temperatūra.",
+    "lv": "Bērnam ir 37 (trīsdesmit septiņi),5 (pieci) grādu temperatūra.",
     "ru": "У ребёнка температура 37,5 градуса.",
     "retired": false
   },
@@ -28229,7 +28229,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Automašīna brauc 100 km/h pa šoseju.",
+    "lv": "Automašīna brauc 100 (simt) km/h pa šoseju.",
     "ru": "Автомобиль едет 100 км/ч по шоссе.",
     "retired": false
   },
@@ -28241,7 +28241,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Mans dēls ir 180 cm garš.",
+    "lv": "Mans dēls ir 180 (simt astoņdesmit) cm garš.",
     "ru": "Мой сын ростом 180 см.",
     "retired": false
   },
@@ -28253,7 +28253,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": true,
-    "lv": "Šodien ārā ir 25 grādi siltuma.",
+    "lv": "Šodien ārā ir 25 (divdesmit pieci) grādi siltuma.",
     "ru": "Сегодня на улице 25 градусов тепла.",
     "retired": false
   },
@@ -32130,7 +32130,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Pastāstiet mums, kā jūs gatavojat savu iecienīto ēdienu.",
-    "ru": "Расскажите нам, как вы готовите свое любимое блюдо.",
+    "ru": "Расскажите нам, как вы готовите своё любимое блюдо.",
     "retired": false
   },
   {
@@ -32370,7 +32370,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Laiks ir silts visu gadu.",
-    "ru": "Климат теплый круглый год.",
+    "ru": "Климат тёплый круглый год.",
     "retired": false
   },
   {
@@ -32718,7 +32718,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Bet savādāk man patīk gandrīz viss – siltais Kalifornijas klimats, svaigi augļi, iespēja aizbraukt līdz Klusajam okeānam, tūkstošiem interesantu cilvēku apkārt.",
-    "ru": "Но в остальном мне нравится почти все — теплый климат Калифорнии, свежие фрукты, возможность съездить к Тихому океану, тысячи интересных людей вокруг.",
+    "ru": "Но в остальном мне нравится почти все — тёплый климат Калифорнии, свежие фрукты, возможность съездить к Тихому океану, тысячи интересных людей вокруг.",
     "retired": false
   },
   {
@@ -33114,7 +33114,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Ir jāspēj analizēt lielus informācijas apjomus, ātri ienirt jaunā tēmā, un, pats galvenais, ir jābūt loģiskam un racionālam, nevis emocionālam.",
-    "ru": "Нужно уметь анализировать большие объемы информации, быстро вникать в новую тему, и, самое главное, нужно быть логичным и рациональным, а не эмоциональным.",
+    "ru": "Нужно уметь анализировать большие объёмы информации, быстро вникать в новую тему, и, самое главное, нужно быть логичным и рациональным, а не эмоциональным.",
     "retired": false
   },
   {
@@ -33341,7 +33341,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Mans darba laiks ir nenormēts.",
+    "lv": "Mans darba laiks ir nenormēts.",
     "ru": "Мой рабочий день ненормированный.",
     "retired": false
   },
@@ -33630,7 +33630,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Man nav tantes vai māsīcas.",
-    "ru": "У меня нет тети или двоюродной сестры.",
+    "ru": "У меня нет тёти или двоюродной сестры.",
     "retired": false
   },
   {
@@ -34398,7 +34398,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Manuprāt, daudz kas ir atkarīgs no bērna skolotājiem un no tā, vai viņi spēj ieinteresēt savā priekšmetā.",
-    "ru": "На мой взгляд, многое зависит от учителей ребенка и от того, способны ли они заинтересовать своим предметом.",
+    "ru": "На мой взгляд, многое зависит от учителей ребёнка и от того, способны ли они заинтересовать своим предметом.",
     "retired": false
   },
   {
@@ -34758,7 +34758,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Mans firmas ēdiens ir laša salāti.",
-    "ru": "Мое фирменное блюдо — салат с лососем.",
+    "ru": "Моё фирменное блюдо — салат с лососем.",
     "retired": false
   },
   {
@@ -34806,7 +34806,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Šis ēdiens ir ļoti viegls un ātri pagatavojams.",
-    "ru": "Это блюдо очень легкое и быстро готовится.",
+    "ru": "Это блюдо очень лёгкое и быстро готовится.",
     "retired": false
   },
   {
@@ -35082,7 +35082,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Īstā latviešu rupjmaize gatavota pēc senām tradīcijām - tas ir kaut kas īpašs.",
-    "ru": "Настоящий латвийский черный хлеб готовят по старинным традициям — это нечто особенное.",
+    "ru": "Настоящий латвийский чёрный хлеб готовят по старинным традициям — это нечто особенное.",
     "retired": false
   },
   {
@@ -35994,7 +35994,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Brīvo laiku saulainā vasaras dienā es braucu ar Kluso okeānu un pastaigājos pa siltām smiltīm.",
-    "ru": "В свободное время в солнечный летний день я езжу к Тихому океану и гуляю по теплому песку.",
+    "ru": "В свободное время в солнечный летний день я езжу к Тихому океану и гуляю по тёплому песку.",
     "retired": false
   },
   {
@@ -36090,7 +36090,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Mēs labprāt braucam ar Kluso okeānu un pastaigājamies pa siltām smiltīm.",
-    "ru": "Мы с удовольствием ездим на Тихий океан и гуляем по теплому песку.",
+    "ru": "Мы с удовольствием ездим на Тихий океан и гуляем по тёплому песку.",
     "retired": false
   },
   {
@@ -36342,7 +36342,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Labs variants ir braukt ar Kluso okeānu un pastaigāt pa siltām smiltīm.",
-    "ru": "Хороший вариант — поехать к Тихому океану и прогуляться по теплому песку.",
+    "ru": "Хороший вариант — поехать к Тихому океану и прогуляться по тёплому песку.",
     "retired": false
   },
   {
@@ -36558,7 +36558,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Man šķiet, ka profesionālais sports ir saistīts ar augstu risku sportistu veselībai, var iegūt smagas traumas.",
-    "ru": "Мне кажется, что профессиональный спорт сопряжен с высоким риском для здоровья спортсменов, можно получить тяжелые травмы.",
+    "ru": "Мне кажется, что профессиональный спорт сопряжен с высоким риском для здоровья спортсменов, можно получить тяжёлые травмы.",
     "retired": false
   },
   {
@@ -36618,7 +36618,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Tad es domāju par sporta karjeru, bet koncentrējos uz studijām, jo mani akadēmiskie panākumi bija lielāki, īpaši ekonomikā.",
-    "ru": "Тогда я думала о спортивной карьере, но сосредоточилась на учебе, так как мои академические успехи были выше, особенно в экономике.",
+    "ru": "Тогда я думала о спортивной карьере, но сосредоточилась на учёбе, так как мои академические успехи были выше, особенно в экономике.",
     "retired": false
   },
   {
@@ -36690,7 +36690,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Kalifornijā var spēlēt tenisu ārā visu gadu, jo klimats ir silts.",
-    "ru": "В Калифорнии можно играть в теннис на улице круглый год, потому что климат теплый.",
+    "ru": "В Калифорнии можно играть в теннис на улице круглый год, потому что климат тёплый.",
     "retired": false
   },
   {
@@ -36966,7 +36966,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Naktī var pasēdēt pie ugunskura un izbaudīt zvaigznes.",
-    "ru": "Ночью можно посидеть у костра и полюбоваться звездами.",
+    "ru": "Ночью можно посидеть у костра и полюбоваться звёздами.",
     "retired": false
   },
   {
@@ -37158,7 +37158,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Vasarā laiks ir silts vai pat karsts, brīžiem līst, bet tas veldzē un par to visi priecājas.",
-    "ru": "Летом погода теплая или даже жаркая, временами идет дождь, но он приносит прохладу, и все этому радуются.",
+    "ru": "Летом погода тёплая или даже жаркая, временами идет дождь, но он приносит прохладу, и все этому радуются.",
     "retired": false
   },
   {
@@ -38034,7 +38034,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Dāvanu vēl neesmu izvēlējusies, bet droši vien uzdāvināšu ko saistītu ar adīšanu, jo tas ir manas mammas hobijs.",
-    "ru": "Подарок я еще не выбрала, но, скорее всего, подарю что-нибудь, связанное с вязанием, ведь это хобби моей мамы.",
+    "ru": "Подарок я ещё не выбрала, но, скорее всего, подарю что-нибудь, связанное с вязанием, ведь это хобби моей мамы.",
     "retired": false
   },
   {
@@ -38130,7 +38130,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Mēs ar draugiem ceļojam ar mašīnu vai lidmašīnu.",
-    "ru": "Мы с друзьями путешествуем на машине или самолете.",
+    "ru": "Мы с друзьями путешествуем на машине или самолёте.",
     "retired": false
   },
   {
@@ -38142,7 +38142,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Es nebaidos lidot ar lidmašīnu.",
-    "ru": "Я не боюсь летать на самолете.",
+    "ru": "Я не боюсь летать на самолёте.",
     "retired": false
   },
   {
@@ -38154,7 +38154,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Atvaļinājumā mēs lidojam ar lidmašīnu uz ārzemēm.",
-    "ru": "В отпуск мы летим на самолете за границу.",
+    "ru": "В отпуск мы летим на самолёте за границу.",
     "retired": false
   },
   {
@@ -38586,7 +38586,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Visdrošākais transporta veids ir lidmašīna.",
-    "ru": "Самый безопасный вид транспорта — это самолет.",
+    "ru": "Самый безопасный вид транспорта — это самолёт.",
     "retired": false
   },
   {
@@ -38598,7 +38598,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Statistika, kurā ņemts vērā pasažieru skaits un attālumi, liecina, ka visdrošākais transporta veids ir lidmašīna.",
-    "ru": "Статистика, в которой учитывается количество пассажиров и расстояния, показывает, что самый безопасный вид транспорта — это самолет.",
+    "ru": "Статистика, в которой учитывается количество пассажиров и расстояния, показывает, что самый безопасный вид транспорта — это самолёт.",
     "retired": false
   },
   {
@@ -38814,7 +38814,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Tas ir ļoti grūts darbs, jo nepieciešams daudz staigāt karstumā un aukstumā.",
-    "ru": "Это очень тяжелая работа, так как приходится много ходить в жару и в холод.",
+    "ru": "Это очень тяжёлая работа, так как приходится много ходить в жару и в холод.",
     "retired": false
   },
   {
@@ -39042,7 +39042,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Ja simptomi ir smagi vai nepāriet vairākas dienas, tad pierakstos klīnikā vai saucu ārstu uz mājām.",
-    "ru": "Если симптомы тяжелые или не проходят в течение нескольких дней, я записываюсь в поликлинику или вызываю врача на дом.",
+    "ru": "Если симптомы тяжёлые или не проходят в течение нескольких дней, я записываюсь в поликлинику или вызываю врача на дом.",
     "retired": false
   },
   {
@@ -39054,7 +39054,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Es aprakstu ārstam savu veselības stāvokli (kas sāp, kāda ir ķermeņa temperatūra un citas problēmas) un viņš izraksta zāles.",
-    "ru": "Я описываю врачу свое самочувствие (что болит, какая температура и другие проблемы), и он выписывает лекарства.",
+    "ru": "Я описываю врачу своё самочувствие (что болит, какая температура и другие проблемы), и он выписывает лекарства.",
     "retired": false
   },
   {
@@ -40697,7 +40697,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kā jūs vērtējat produktu izvēli veikalos un tirgū?",
+    "lv": "Kā jūs vērtējat produktu izvēli veikalos un tirgū?",
     "ru": "Как вы оцениваете выбор продуктов в магазинах и на рынке?",
     "retired": false
   },
@@ -40758,7 +40758,7 @@ const PHRASES = [
     "question": true,
     "has_number": false,
     "lv": "Kuras preces var uzskatīt par Latvijas zīmolu? Pamatojiet savu viedokli!",
-    "ru": "Какие товары можно считать латвийскими брендами? Обоснуйте свое мнение!",
+    "ru": "Какие товары можно считать латвийскими брендами? Обоснуйте своё мнение!",
     "retired": false
   },
   {
@@ -40985,7 +40985,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Vai jūs interesējaties par sportu? Par kādu sporta veidu jūs interesējaties visbiežāk?",
+    "lv": "Vai jūs interesējaties par sportu? Par kādu sporta veidu jūs interesējaties visbiežāk?",
     "ru": "Интересуетесь ли вы спортом? Каким видом спорта вы интересуетесь чаще всего?",
     "retired": false
   },
@@ -41033,7 +41033,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Vai jūs lietojat internetu?",
+    "lv": "Vai jūs lietojat internetu?",
     "ru": "Пользуетесь ли вы интернетом?",
     "retired": false
   },
@@ -41094,7 +41094,7 @@ const PHRASES = [
     "question": true,
     "has_number": false,
     "lv": "Kas vēl jūsu ģimenē apmeklē interneta portālus?",
-    "ru": "Кто еще из вашей семьи посещает интернет-порталы?",
+    "ru": "Кто ещё из вашей семьи посещает интернет-порталы?",
     "retired": false
   },
   {
@@ -41286,7 +41286,7 @@ const PHRASES = [
     "question": true,
     "has_number": false,
     "lv": "Kā jūs kopā ar ģimene atpūšaties?",
-    "ru": "Как вы отдыхаете вместе с семьей?",
+    "ru": "Как вы отдыхаете вместе с семьёй?",
     "retired": false
   },
   {
@@ -41381,7 +41381,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Kādu atvaļinājumu\\atpūsties tu ieteiktu saviem draugiem un kāpēc?",
+    "lv": "Kādu atvaļinājumu (atpūsties) tu ieteiktu saviem draugiem un kāpēc?",
     "ru": "Какой отдых ты бы порекомендовал своим друзьям и почему?",
     "retired": false
   },
@@ -41430,7 +41430,7 @@ const PHRASES = [
     "question": true,
     "has_number": false,
     "lv": "Kāda ir tava attieksme pret sportu?",
-    "ru": "Каково твое отношение к спорту?",
+    "ru": "Каково твоё отношение к спорту?",
     "retired": false
   },
   {
@@ -41658,7 +41658,7 @@ const PHRASES = [
     "question": true,
     "has_number": false,
     "lv": "Ko vēl vēlētos iestādīt dārzā?",
-    "ru": "Что еще хотелось бы посадить в саду?",
+    "ru": "Что ещё хотелось бы посадить в саду?",
     "retired": false
   },
   {
@@ -41801,7 +41801,7 @@ const PHRASES = [
     "negative": false,
     "question": true,
     "has_number": false,
-    "lv": "Ar ko kopā jūs pavadāt savu atvaļinājumu / atpūtu?",
+    "lv": "Ar ko kopā jūs pavadāt savu atvaļinājumu (atpūtu)?",
     "ru": "С кем вы проводите свой отпуск / отдых?",
     "retired": false
   },
@@ -41898,7 +41898,7 @@ const PHRASES = [
     "question": true,
     "has_number": false,
     "lv": "Kā jūs plānojat savu ceļojumu?",
-    "ru": "Как вы планируете свое путешествие?",
+    "ru": "Как вы планируете своё путешествие?",
     "retired": false
   },
   {
@@ -42510,7 +42510,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Varbūt tikai jaunākā bērnu paaudze mūsdienās nezina, kas ir Vinnijs Pūks.",
-    "ru": "Пожалуй, только самые маленькие дети сегодня могут не знать, кто такой Винни-Пух.",
+    "ru": "Пожалуй, только самое младшее поколение детей сегодня не знает, кто такой Винни-Пух.",
     "retired": false,
     "src_num": 9
   },
@@ -42535,8 +42535,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pasaule plīša lācīti iepazina no angļu rakstnieka Alana Aleksandra Milna grāmatām.",
-    "ru": "Мир познакомился с плюшевым медвежонком благодаря книгам английского писателя Алана Александра Милна.",
+    "lv": "Pasaule plīša lācīti iepazina no angļu rakstnieka Alana Aleksandra Milna grāmatām.",
+    "ru": "Мир узнал плюшевого медвежонка из книг английского писателя Алана Александра Милна.",
     "retired": false,
     "src_num": 9
   },
@@ -42548,7 +42548,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pirmā grāmata par Vinniju Pūku tika publicēta 1926. gadā –  „Vinnijs Pūks”, pēc diviem gadiem tika izdota grāmata „Jaunā māja Pūka Priedītēs”.",
+    "lv": "Pirmā grāmata par Vinniju Pūku tika publicēta 1926. (tūkstoš deviņi simti divdesmit sestajā) gadā – „Vinnijs Pūks”, pēc diviem gadiem tika izdota grāmata „Jaunā māja Pūka Priedītēs”.",
     "ru": "Первая книга о Винни-Пухе вышла в 1926 году — «Винни-Пух», а спустя два года — «Дом на Пуховой опушке».",
     "retired": false,
     "src_num": 9
@@ -42575,7 +42575,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Tomēr šos zīmējumus popularitātes ziņā pārspēj Disneja filmas par lācīti, Kristoferu Robinu un citiem Lielā meža iedzīvotājiem.",
-    "ru": "Однако по популярности эти рисунки уступают диснеевским мультфильмам о медвежонке, Кристофере Робине и других обитателях Большого леса.",
+    "ru": "Однако эти рисунки по популярности превосходят фильмы Диснея о медвежонке, Кристофере Робине и других обитателях Большого леса.",
     "retired": false,
     "src_num": 9
   },
@@ -42587,7 +42587,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Savukārt tie, kas uzauguši bijušajā Padomju Savienībā, ar nostalģiju atceras studijā „Sojuzmultfiļm” uzņemtās filmas par Pūku.",
+    "lv": "Savukārt tie, kas uzauguši bijušajā Padomju Savienībā, ar nostalģiju atceras studijā „Sojuzmultfiļm” uzņemtās filmas par Pūku.",
     "ru": "А те, кто вырос в бывшем Советском Союзе, с ностальгией вспоминают мультфильмы о Пухе, снятые студией «Союзмультфильм».",
     "retired": false,
     "src_num": 9
@@ -42627,7 +42627,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Savukārt rotaļlieta ieguva vārdu no Kanādas melnās lācenes Vinnijas, kuru zēns bieži apciemoja Londonas zoodārzā.",
-    "ru": "Имя игрушечному медвежонку дала настоящая канадская медведица по кличке Винни, которую мальчик часто навещал в Лондонском зоопарке.",
+    "ru": "А игрушка получила имя от канадской чёрной медведицы Винни, которую мальчик часто навещал в Лондонском зоопарке.",
     "retired": false,
     "src_num": 9
   },
@@ -42639,7 +42639,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1930. gadā A. Milns par 1000 dolāriem pārdeva tiesības uz grāmatas tēlu komerciālu izmantošanu amerikāņu producentam Stīvenam Šlēzingeram.",
+    "lv": "1930. (tūkstoš deviņi simti trīsdesmitajā) gadā A. Milns par 1000 (tūkstoš) dolāriem pārdeva tiesības uz grāmatas tēlu komerciālu izmantošanu amerikāņu producentam Stīvenam Šlēzingeram.",
     "ru": "В 1930 году А. Милн продал права на коммерческое использование персонажей книги американскому продюсеру Стивену Шлезингеру за 1000 долларов.",
     "retired": false,
     "src_num": 9
@@ -42665,7 +42665,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Volts Disnejs radīja vairākas filmas pēc grāmatas motīviem un viena no tām 1968. gadā pat ieguva kinoakadēmijas balvu – „Oskaru” – kā labākā animācijas filma.",
+    "lv": "Volts Disnejs radīja vairākas filmas pēc grāmatas motīviem un viena no tām 1968. (tūkstoš deviņi simti sešdesmit astotajā) gadā pat ieguva kinoakadēmijas balvu – „Oskaru” – kā labākā animācijas filma.",
     "ru": "Уолт Дисней снял несколько фильмов по мотивам книги, и один из них в 1968 году получил премию киноакадемии — «Оскар» — как лучший анимационный фильм.",
     "retired": false,
     "src_num": 9
@@ -42678,7 +42678,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "2006. gadā Holivudas Zvaigžņu alejā atklāja Vinnijam Pūkam veltītu zvaigzni.",
+    "lv": "2006. (divi tūkstoši sestajā) gadā Holivudas Zvaigžņu alejā atklāja Vinnijam Pūkam veltītu zvaigzni.",
     "ru": "В 2006 году на Голливудской аллее славы появилась звезда в честь Винни-Пуха.",
     "retired": false,
     "src_num": 9
@@ -42691,7 +42691,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ķīnas leģenda vēsta, ka 2737. gadā pirms mūsu ēras imperators un zinātnieks Čens Nungs nejauši atklāja tējas īpašības, kad vējš iepūta tējas krūma lapas katlā ar verdošu ūdeni.",
+    "lv": "Ķīnas leģenda vēsta, ka 2737. (divi tūkstoši septiņi simti trīsdesmit septītajā) gadā pirms mūsu ēras imperators un zinātnieks Čens Nungs nejauši atklāja tējas īpašības, kad vējš iepūta tējas krūma lapas katlā ar verdošu ūdeni.",
     "ru": "Согласно китайской легенде, в 2737 году до нашей эры император и учёный Шэнь Нун случайно открыл свойства чая, когда ветер занёс листья чайного куста в котёл с кипящей водой.",
     "retired": false,
     "src_num": 20
@@ -42704,7 +42704,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "17. gadsimta sākumā ar portugāļu un holandiešu tirgotājiem tēja nokļuva Eiropā.",
+    "lv": "17. (septiņpadsmitā) gadsimta sākumā ar portugāļu un holandiešu tirgotājiem tēja nokļuva Eiropā.",
     "ru": "В начале XVII века чай попал в Европу благодаря португальским и голландским торговцам.",
     "retired": false,
     "src_num": 20
@@ -42796,7 +42796,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Pērkot zaļo tēju, uzmanība jāpievērš tējas izskatam un daļiņu lielumam.",
-    "ru": "При покупке зелёного чая стоит обращать внимание на его внешний вид и размер чаинок.",
+    "ru": "При покупке зелёного чая нужно обращать внимание на внешний вид чая и размер частиц.",
     "retired": false,
     "src_num": 20
   },
@@ -42808,7 +42808,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Augstas kvalitātes tējas daļiņas nedrīkst būt garākas par 1,5 cm, bet arī ne īsākas par 0,5 cm, jo tādā gadījumā tās ir salauzītas vecas un ne pārāk kvalitatīvas tējas lapas.",
+    "lv": "Augstas kvalitātes tējas daļiņas nedrīkst būt garākas par 1 (viens),5 (pieci) cm, bet arī ne īsākas par 0 (nulle),5 (pieci) cm, jo tādā gadījumā tās ir salauzītas vecas un ne pārāk kvalitatīvas tējas lapas.",
     "ru": "Чаинки хорошего качества не должны быть длиннее 1,5 см, но и не короче 0,5 см — иначе это обломки старых листьев невысокого качества.",
     "retired": false,
     "src_num": 20
@@ -42873,8 +42873,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Nedrīkst aizmirst, ka pēc 5 – 6 mēnešiem tēja noveco un zaudē virkni savu teicamo īpašību.",
-    "ru": "Важно помнить, что через 5–6 месяцев чай стареет и теряет многие свои ценные свойства.",
+    "lv": "Nedrīkst aizmirst, ka pēc 5 (pieci) – 6 (seši) mēnešiem tēja noveco un zaudē virkni savu teicamo īpašību.",
+    "ru": "Нельзя забывать, что через 5–6 месяцев чай стареет и теряет ряд своих превосходных свойств.",
     "retired": false,
     "src_num": 20
   },
@@ -42899,7 +42899,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Gustavs Ērenpreiss pirmos velosipēdus izgatavoja 1922. gadā, bet divus gadus vēlāk viņa ražotne pārcēlās uz telpām, ko līdz Pirmajam pasaules karam bija izmantojusi leģendārā \"Leitnera velosipēdu fabrika\".",
+    "lv": "Gustavs Ērenpreiss pirmos velosipēdus izgatavoja 1922. (tūkstoš deviņi simti divdesmit otrajā) gadā, bet divus gadus vēlāk viņa ražotne pārcēlās uz telpām, ko līdz Pirmajam pasaules karam bija izmantojusi leģendārā \"Leitnera velosipēdu fabrika\".",
     "ru": "Густав Эренпрейс изготовил первые велосипеды в 1922 году, а двумя годами позже его мастерская переехала в помещения, которые до Первой мировой войны занимала легендарная «Велосипедная фабрика Лейтнера».",
     "retired": false,
     "src_num": 21
@@ -42925,7 +42925,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Diemžēl pēc padomju okupācijas to nacionalizēja un pārdēvēja par \"Sarkano zvaigzni\", bet pats \"Ērenpreiss\" bija spiests emigrēt.",
+    "lv": "Diemžēl pēc padomju okupācijas to nacionalizēja un pārdēvēja par \"Sarkano zvaigzni\", bet pats \"Ērenpreiss\" bija spiests emigrēt.",
     "ru": "К сожалению, после советской оккупации завод национализировали и переименовали в «Красную звезду», а сам Эренпрейс был вынужден эмигрировать.",
     "retired": false,
     "src_num": 21
@@ -42951,7 +42951,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "2006. gadā Gustava Ērenpreisa brāļa mazdēls Toms Ērenpreiss atvēra veco velosipēdu restaurācijas darbnīcu, vēl pēc pāris gadiem atjaunoja seno zīmolu un pēc vairāk nekā pusgadsimta pārtraukuma atsāka \"Ērenpreisa\" velosipēdu ražošanu.",
+    "lv": "2006. (divi tūkstoši sestajā) gadā Gustava Ērenpreisa brāļa mazdēls Toms Ērenpreiss atvēra veco velosipēdu restaurācijas darbnīcu, vēl pēc pāris gadiem atjaunoja seno zīmolu un pēc vairāk nekā pusgadsimta pārtraukuma atsāka \"Ērenpreisa\" velosipēdu ražošanu.",
     "ru": "В 2006 году внучатый племянник Густава Эренпрейса Томс Эренпрейс открыл мастерскую по реставрации старых велосипедов, а ещё через несколько лет возродил исторический бренд и после более чем полувекового перерыва возобновил производство велосипедов «Эренпрейс».",
     "retired": false,
     "src_num": 21
@@ -42965,7 +42965,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Tātad \"Ērenpreiss\" ripo atkal!",
-    "ru": "Итак, «Эренпрейс» снова в деле!",
+    "ru": "Итак, «Эренпрейс» снова катит! (игра слов: ripo — «катится», как велосипед).",
     "retired": false,
     "src_num": 21
   },
@@ -42990,8 +42990,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pasaulē ir vairāk nekā 7500 ābolu šķirņu, kas ar laiku pielāgotas dažādām vajadzībām – ēšanai svaigā veidā, pārstrādāšanai ievārījumos, kompotos, sulu un sidru pagatavošanai.",
-    "ru": "В мире насчитывается более 7500 сортов яблок, выведенных для разных целей — употребления в свежем виде, переработки в варенье, компоты, а также для приготовления сока и сидра.",
+    "lv": "Pasaulē ir vairāk nekā 7500 (septiņi tūkstoši pieci simti) ābolu šķirņu, kas ar laiku pielāgotas dažādām vajadzībām – ēšanai svaigā veidā, pārstrādāšanai ievārījumos, kompotos, sulu un sidru pagatavošanai.",
+    "ru": "В мире насчитывается более 7500 сортов яблок, со временем приспособленных к разным нуждам — употребления в свежем виде, переработки в варенье, компоты, для приготовления сока и сидра.",
     "retired": false,
     "src_num": 23
   },
@@ -43056,7 +43056,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Ik dienu jāapēd aptuveni divi saujas izmēra augļi, un tieši āboli ir vieni no tiem augļiem, kas ir pieejami visu cauru gadu.",
-    "ru": "В день рекомендуется съедать около двух фруктов размером с горсть, и яблоки — как раз из тех фруктов, которые доступны круглый год.",
+    "ru": "Каждый день нужно съедать примерно два фрукта размером с горсть, и яблоки — как раз из тех фруктов, которые доступны круглый год.",
     "retired": false,
     "src_num": 23
   },
@@ -43068,7 +43068,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tie var lieliski remdēt izsalkumu starp ēdienreizēm. Taču vērts atcerēties, ka viens vidēja izmēra ābols satur aptuveni 100 kaloriju un gandrīz 20g augļu cukuru, tādēļ tos nebūtu ieteicams ēst bez mēra.",
+    "lv": "Tie var lieliski remdēt izsalkumu starp ēdienreizēm. Taču vērts atcerēties, ka viens vidēja izmēra ābols satur aptuveni 100 (simt) kaloriju un gandrīz 20g augļu cukuru, tādēļ tos nebūtu ieteicams ēst bez mēra.",
     "ru": "Они отлично утоляют голод между приёмами пищи. Однако стоит помнить, что одно яблоко среднего размера содержит около 100 калорий и почти 20 г фруктового сахара, поэтому злоупотреблять ими не стоит.",
     "retired": false,
     "src_num": 23
@@ -43107,7 +43107,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tas izveidots arhitekta Konstantīna Pēkšēna dzīvoklī, kurš atrodas viņa projektētajā namā Alberta ielā 12.",
+    "lv": "Tas izveidots arhitekta Konstantīna Pēkšēna dzīvoklī, kurš atrodas viņa projektētajā namā Alberta ielā 12. (divpadsmitajā)",
     "ru": "Он расположен в квартире архитектора Константина Пекшена, которая находится в построенном по его проекту доме на улице Альберта, 12.",
     "retired": false,
     "src_num": 25
@@ -43120,7 +43120,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "K. Pēkšēns bija viens no pirmajiem latviešu profesionālajiem arhitektiem, pēc kura projektiem Rīgā uzceltas aptuveni 250 ēkas.",
+    "lv": "K. Pēkšēns bija viens no pirmajiem latviešu profesionālajiem arhitektiem, pēc kura projektiem Rīgā uzceltas aptuveni 250 (divi simti piecdesmit) ēkas.",
     "ru": "К. Пекшен был одним из первых латвийских профессиональных архитекторов, по проектам которого в Риге возведено около 250 зданий.",
     "retired": false,
     "src_num": 25
@@ -43133,7 +43133,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Jūgendstils ir mākslas (īpaši arhitektūras un dizaina) stils, kas radās 19. gadsimta 90. gadu otrajā pusē Eiropā, bet par visaptverošu parādību kļuva laikā no 20. gadsimta sākuma līdz Pirmajam pasaules karam.",
+    "lv": "Jūgendstils ir mākslas (īpaši arhitektūras un dizaina) stils, kas radās 19. (deviņpadsmitā) gadsimta 90. (deviņdesmito) gadu otrajā pusē Eiropā, bet par visaptverošu parādību kļuva laikā no 20. (divdesmitā) gadsimta sākuma līdz Pirmajam pasaules karam.",
     "ru": "Модерн — это стиль в искусстве (прежде всего в архитектуре и дизайне), зародившийся во второй половине 1890-х годов в Европе и ставший повсеместным явлением с начала XX века до Первой мировой войны.",
     "retired": false,
     "src_num": 25
@@ -43198,7 +43198,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "208 kvadrātmetrus plašo mājokli ar sešām dzīvojamām telpām iekārtoja pēc arhitektes Liesmas Markovas projekta, izmantojot autentiskus jūgendstila interjera priekšmetus.",
+    "lv": "208 (divi simti astoņi) kvadrātmetrus plašo mājokli ar sešām dzīvojamām telpām iekārtoja pēc arhitektes Liesmas Markovas projekta, izmantojot autentiskus jūgendstila interjera priekšmetus.",
     "ru": "Квартиру площадью 208 квадратных метров с шестью жилыми комнатами обустроили по проекту архитектора Лиесмы Марковой, используя подлинные предметы интерьера эпохи модерна.",
     "retired": false,
     "src_num": 25
@@ -43211,7 +43211,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Citronkoks ir mūžzaļš citrusaugs, kura dzimtene ir Dienvidaustrumāzija vai Indijas ziemeļi.",
+    "lv": "Citronkoks ir mūžzaļš citrusaugs, kura dzimtene ir Dienvidaustrumāzija vai Indijas ziemeļi.",
     "ru": "Лимонное дерево — вечнозелёное цитрусовое растение родом из Юго-Восточной Азии или севера Индии.",
     "retired": false,
     "src_num": 32
@@ -43224,7 +43224,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Citroni ir zināmi jau vairāk nekā 2000 gadu.",
+    "lv": "Citroni ir zināmi jau vairāk nekā 2000 (divi tūkstoši) gadu.",
     "ru": "Лимоны известны человечеству уже более 2000 лет.",
     "retired": false,
     "src_num": 32
@@ -43250,7 +43250,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Citrona garša ir skāba - šis auglis satur 8% citronskābes.",
+    "lv": "Citrona garša ir skāba - šis auglis satur 8 (astoņi)% citronskābes.",
     "ru": "Вкус лимона кислый — этот плод содержит 8% лимонной кислоты.",
     "retired": false,
     "src_num": 32
@@ -43316,7 +43316,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Citrons pastiprina ēdiena aromātu, padarot maltīti vēl garšīgāku; tas novērš salātu mērces eļļainību un noder pat kopā ar svaigiem augļiem, piemēram, bumbieriem.",
-    "ru": "Лимон усиливает аромат блюда, делая его ещё вкуснее; он убирает ощущение жирности в салатных заправках и хорошо сочетается даже со свежими фруктами, например с грушами.",
+    "ru": "Лимон усиливает аромат блюда, делая трапезу ещё вкуснее; он устраняет жирность салатной заправки и годится даже вместе со свежими фруктами, например с грушами.",
     "retired": false,
     "src_num": 32
   },
@@ -43329,7 +43329,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Aukstā laikā gribas sevi palutināt ar kādu siltu dzērienu.",
-    "ru": "В холодную погоду так и тянет побаловать себя чем-нибудь тёплым.",
+    "ru": "В холодную погоду хочется побаловать себя каким-нибудь тёплым напитком.",
     "retired": false,
     "src_num": 32
   },
@@ -43368,7 +43368,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Galvenais – to pārmērīgi nepārsaldināt ar sīrupiem un cukuru, citādi dzēriens no veselību veicinoša pārvērtīsies par veselību graujošu.",
-    "ru": "Главное — не переусердствовать с сиропами и сахаром, иначе напиток из полезного для здоровья превратится во вредный.",
+    "ru": "Главное — не переслащивать его сиропами и сахаром, иначе напиток из полезного для здоровья превратится в разрушающий здоровье.",
     "retired": false,
     "src_num": 32
   },
@@ -43407,7 +43407,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Joprojām maizi cep pašu mājās, savu kukulīti piedāvā izcept ceptuvēs, lauku sētās un muzejos.",
-    "ru": "До сих пор хлеб пекут дома, а в пекарнях, сельских усадьбах и музеях предлагают испечь свой собственный каравай.",
+    "ru": "До сих пор хлеб пекут у себя дома, а в пекарнях, сельских усадьбах и музеях предлагают испечь свою буханочку.",
     "retired": false,
     "src_num": 46
   },
@@ -43420,7 +43420,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Rudzu maize latvietim simbolizē mājas un, uzturoties ilgāk prom no Latvijas, daudzi ilgojas tieši pēc rupjmaizes garšas.",
-    "ru": "Для латыша ржаной хлеб символизирует родной дом, и те, кто подолгу живёт вдали от Латвии, нередко скучают именно по вкусу тёмного хлеба.",
+    "ru": "Для латыша ржаной хлеб символизирует дом, и, находясь подольше вдали от Латвии, многие тоскуют именно по вкусу чёрного хлеба.",
     "retired": false,
     "src_num": 46
   },
@@ -43433,7 +43433,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Rudzu maizi sauc arī par rupjmaizi vai klona maizi.",
-    "ru": "Ржаной хлеб называют также грубым хлебом или клоновым хлебом.",
+    "ru": "Ржаной хлеб называют также грубым хлебом или подовым хлебом.",
     "retired": false,
     "src_num": 46
   },
@@ -43445,8 +43445,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tīru rudzu maizi Latvijas teritorijā sāka ēst 19. gadsimtā, līdz tam, īpaši neražas un kara laikā, miltiem piejauca pelavas, sūnas, koku mizas, zāģu skaidas.",
-    "ru": "Чистый ржаной хлеб на территории Латвии начали есть в XIX веке, а до этого, особенно в годы неурожая и войн, в муку добавляли мякину, мох, древесную кору и опилки.",
+    "lv": "Tīru rudzu maizi Latvijas teritorijā sāka ēst 19. (deviņpadsmitajā) gadsimtā, līdz tam, īpaši neražas un kara laikā, miltiem piejauca pelavas, sūnas, koku mizas, zāģu skaidas.",
+    "ru": "Чистый ржаной хлеб на территории Латвии начали есть в XIX веке, до этого, особенно в неурожай и в войну, в муку подмешивали мякину, мох, древесную кору, опилки.",
     "retired": false,
     "src_num": 46
   },
@@ -43472,7 +43472,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Ar maizes cepšanu saistīti dažādi ticējumi, piemēram, maizi cepot, kukulīti vajag noglaudīt gludu, lai būtu saticība.",
-    "ru": "С выпечкой хлеба связаны различные поверья: например, когда печёшь хлеб, нужно разгладить буханку, чтобы в семье царило согласие.",
+    "ru": "С выпечкой хлеба связаны различные поверья: например, когда печёшь хлеб, буханочку нужно разгладить, чтобы было согласие.",
     "retired": false,
     "src_num": 46
   },
@@ -43485,7 +43485,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Maize kā spilgts un simbolisks tēls izmantota latviešu literatūrā un mākslā.",
-    "ru": "Хлеб как яркий и символичный образ занял своё место в латышской литературе и искусстве.",
+    "ru": "Хлеб как яркий и символический образ использован в латышской литературе и искусстве.",
     "retired": false,
     "src_num": 46
   },
@@ -43510,7 +43510,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Maizes kukulītis redzams arī uz tēlnieka Teodora Zaļkalna (1876−1972) 1922. gadā iecerētās un 2008. gadā nokaltās zelta monētas, kas 2010. gadā tika atzīta par pasaules gada monētu (World Coin).",
+    "lv": "Maizes kukulītis redzams arī uz tēlnieka Teodora Zaļkalna (1876 (tūkstoš astoņi simti septiņdesmit seši)−1972 (tūkstoš deviņi simti septiņdesmit divi)) 1922. (tūkstoš deviņi simti divdesmit otrajā) gadā iecerētās un 2008. (divi tūkstoši astotajā) gadā nokaltās zelta monētas, kas 2010. (divi tūkstoši desmitajā) gadā tika atzīta par pasaules gada monētu (World Coin).",
     "ru": "Буханка хлеба изображена и на золотой монете, задуманной скульптором Теодором Залькалнсом (1876–1972) в 1922 году и отчеканенной в 2008 году; в 2010 году она была признана монетой года в мире (World Coin).",
     "retired": false,
     "src_num": 46
@@ -43523,7 +43523,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas Etnogrāfiskajā brīvdabas muzejā tiek svinēti  Maizes svētki ar maizes cepšanu.",
+    "lv": "Latvijas Etnogrāfiskajā brīvdabas muzejā tiek svinēti Maizes svētki ar maizes cepšanu.",
     "ru": "В Латвийском этнографическом музее под открытым небом проводится Праздник хлеба с традиционной выпечкой.",
     "retired": false,
     "src_num": 46
@@ -43549,8 +43549,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Lai gan pirmo divritenim līdzīgo braucamrīku esot uzskicējis renesanses mākslinieks Leonardo da Vinči Itālijā, par velosipēda tēvu tiek uzskatīts franču grāfs de Sivraks, kurš 1690. gadā no koka izgatavoja divriteni.",
-    "ru": "Хотя первый набросок двухколёсного транспортного средства, по имеющимся сведениям, сделал художник эпохи Возрождения Леонардо да Винчи, отцом велосипеда считается французский граф де Сиврак, который в 1690 году смастерил двухколёсный экипаж из дерева.",
+    "lv": "Lai gan pirmo divritenim līdzīgo braucamrīku esot uzskicējis renesanses mākslinieks Leonardo da Vinči Itālijā, par velosipēda tēvu tiek uzskatīts franču grāfs de Sivraks, kurš 1690. (tūkstoš seši simti deviņdesmitajā) gadā no koka izgatavoja divriteni.",
+    "ru": "Хотя первое похожее на велосипед средство передвижения, как считается, набросал художник эпохи Возрождения Леонардо да Винчи в Италии, отцом велосипеда считается французский граф де Сиврак, который в 1690 году смастерил из дерева двухколёсный экипаж.",
     "retired": false,
     "src_num": 47
   },
@@ -43575,7 +43575,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Velosipēds, pie kura esam pieraduši tagad, esot izgudrots Vācijā 1817. gadā.",
+    "lv": "Velosipēds, pie kura esam pieraduši tagad, esot izgudrots Vācijā 1817. (tūkstoš astoņi simti septiņpadsmitajā) gadā.",
     "ru": "Велосипед в привычном нам виде был, по имеющимся данным, изобретён в Германии в 1817 году.",
     "retired": false,
     "src_num": 47
@@ -43601,7 +43601,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1879. gadā anglis Henrijs Dž.Losons demonstrēja pirmo velosipēdu ar ķēdi.",
+    "lv": "1879. (tūkstoš astoņi simti septiņdesmit devītajā) gadā anglis Henrijs Dž.Losons demonstrēja pirmo velosipēdu ar ķēdi.",
     "ru": "В 1879 году англичанин Генри Дж. Лоусон продемонстрировал первый велосипед с цепной передачей.",
     "retired": false,
     "src_num": 47
@@ -43627,7 +43627,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Mūsdienās divriteņu skaits pasaulē ir apmēram 2 miljardi, kas ir divas reizes vairāk nekā automašīnu.",
+    "lv": "Mūsdienās divriteņu skaits pasaulē ir apmēram 2 (divi) miljardi, kas ir divas reizes vairāk nekā automašīnu.",
     "ru": "Сегодня в мире насчитывается около 2 миллиардов велосипедов — вдвое больше, чем автомобилей.",
     "retired": false,
     "src_num": 47
@@ -43640,7 +43640,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "No šī skaita aptuveni 400 miljoni atrodas Ķīnā.",
+    "lv": "No šī skaita aptuveni 400 (četri simti) miljoni atrodas Ķīnā.",
     "ru": "Из этого числа около 400 миллионов приходится на Китай.",
     "retired": false,
     "src_num": 47
@@ -43654,7 +43654,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Aizvien vairāk un vairāk cilvēku visā pasaulē atzīst, ka divriteņi var būt daudz noderīgāki nekā automašīnas.",
-    "ru": "Всё больше людей по всему миру признают, что велосипед зачастую куда практичнее автомобиля.",
+    "ru": "Всё больше и больше людей по всему миру признают, что велосипеды могут быть намного полезнее автомобилей.",
     "retired": false,
     "src_num": 47
   },
@@ -43692,7 +43692,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vecāķi ir Rīgas pilsētas apkaime Ziemeļu rajonā.",
+    "lv": "Vecāķi ir Rīgas pilsētas apkaime Ziemeļu rajonā.",
     "ru": "Вецаки — район города Риги на севере.",
     "retired": false,
     "src_num": 50
@@ -43705,7 +43705,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Oficiāli Vecāķi kā atsevišķs ciems Mangaļu pagastā pastāvēja līdz pat 1949. gadam,  pēc tam tika iekļauti Rīgas teritorijā.",
+    "lv": "Oficiāli Vecāķi kā atsevišķs ciems Mangaļu pagastā pastāvēja līdz pat 1949. (tūkstoš deviņi simti četrdesmit devītajam) gadam, pēc tam tika iekļauti Rīgas teritorijā.",
     "ru": "Официально Вецаки как самостоятельный посёлок в составе Мангальской волости существовали вплоть до 1949 года, после чего были включены в состав Риги.",
     "retired": false,
     "src_num": 50
@@ -43718,7 +43718,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vecāķi kā arī Rītabuļļi un Daugavgrīva ir vienīgās Rīgas jūras līča pludmales Rīgas pilsētā.",
+    "lv": "Vecāķi kā arī Rītabuļļi un Daugavgrīva ir vienīgās Rīgas jūras līča pludmales Rīgas pilsētā.",
     "ru": "Вецаки, а также Ритабулли и Даугавгрива — единственные пляжи Рижского залива, находящиеся в черте города.",
     "retired": false,
     "src_num": 50
@@ -43745,7 +43745,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Agrāk vieta, kurā Daugava ietecējusi jūrā veidoja „S” veida līkumu – āķi.",
-    "ru": "Прежде в месте, где Даугава впадает в море, река делала S-образный изгиб — «крючок» (āķis по-латышски).",
+    "ru": "Прежде место, где Даугава впадала в море, образовывало S-образный изгиб — крючок (āķis).",
     "retired": false,
     "src_num": 50
   },
@@ -43784,7 +43784,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Nonākot Vecāķos, iespējams pamanīt senās jūrmalas iezīmes.",
-    "ru": "Оказавшись в Вецаки, можно заметить черты старого курортного местечка.",
+    "ru": "Оказавшись в Вецаки, можно заметить черты старого взморья.",
     "retired": false,
     "src_num": 50
   },
@@ -43796,7 +43796,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1898. gadā pēc rūpnieka un mecenāta Augusta Dombrovska iniciatīvas te sāka celt vasarnīcas.",
+    "lv": "1898. (tūkstoš astoņi simti deviņdesmit astotajā) gadā pēc rūpnieka un mecenāta Augusta Dombrovska iniciatīvas te sāka celt vasarnīcas.",
     "ru": "В 1898 году по инициативе промышленника и мецената Августа Домбровскиса здесь начали строить дачи.",
     "retired": false,
     "src_num": 50
@@ -43809,7 +43809,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tad arī Vecāķi sāka iegūt kūrorta statusu un te tika celtas Jūrmalai tik raksturīgās koka ēkas.",
+    "lv": "Tad arī Vecāķi sāka iegūt kūrorta statusu un te tika celtas Jūrmalai tik raksturīgās koka ēkas.",
     "ru": "Тогда же Вецаки начали приобретать статус курорта, и здесь стали возводить деревянные здания, столь характерные для Юрмалы.",
     "retired": false,
     "src_num": 50
@@ -43822,7 +43822,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Līdz 1914.gadam te jau bija ap 100 vasarnīcu.",
+    "lv": "Līdz 1914. (tūkstoš deviņi simti četrpadsmitajam) gadam te jau bija ap 100 (simt) vasarnīcu.",
     "ru": "К 1914 году здесь насчитывалось уже около 100 дач.",
     "retired": false,
     "src_num": 50
@@ -43848,8 +43848,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Līdz pat 30. gadu vidum ātrākais un ērtākais transports līdz Vecāķiem bijis kuģītis.",
-    "ru": "Вплоть до середины 1930-х годов самым быстрым и удобным транспортом до Вецаки был небольшой пароход.",
+    "lv": "Līdz pat 30. (trīsdesmito) gadu vidum ātrākais un ērtākais transports līdz Vecāķiem bijis kuģītis.",
+    "ru": "Вплоть до середины 30-х годов самым быстрым и удобным транспортом до Вецаки был кораблик.",
     "retired": false,
     "src_num": 50
   },
@@ -43861,7 +43861,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tikai kad 1933. gadā tika atklāta dzelzceļa līnija no Rīgas uz Rūjienu, kūrorts atkal uzplauka",
+    "lv": "Tikai kad 1933. (tūkstoš deviņi simti trīsdesmit trešajā) gadā tika atklāta dzelzceļa līnija no Rīgas uz Rūjienu, kūrorts atkal uzplauka",
     "ru": "Лишь когда в 1933 году была открыта железнодорожная линия из Риги в Руйиену, курорт снова расцвёл.",
     "retired": false,
     "src_num": 50
@@ -43952,7 +43952,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kaltēšanai izmantojamas nojumes, bēniņi, šķūņi — vietas, kur ir laba gaisa cirkulācija.",
+    "lv": "Kaltēšanai izmantojamas nojumes, bēniņi, šķūņi — vietas, kur ir laba gaisa cirkulācija.",
     "ru": "Для сушки подходят навесы, чердаки, сараи — места с хорошей циркуляцией воздуха.",
     "retired": false,
     "src_num": 56
@@ -43965,7 +43965,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Augus, kuri satur ēteriskās eļļas, — piparmētras, melisu, mārsilu — nebūtu vēlams žāvēt augstākā temperatūrā par 40 grādiem, citādi ēteriskās eļļas izgaist, zūd drogas labums.",
+    "lv": "Augus, kuri satur ēteriskās eļļas, — piparmētras, melisu, mārsilu — nebūtu vēlams žāvēt augstākā temperatūrā par 40 (četrdesmit) grādiem, citādi ēteriskās eļļas izgaist, zūd drogas labums.",
     "ru": "Растения, содержащие эфирные масла, — мяту, мелиссу, полынь — не рекомендуется сушить при температуре выше 40 градусов, иначе эфирные масла улетучатся и трава потеряет свои полезные свойства.",
     "retired": false,
     "src_num": 56
@@ -44095,7 +44095,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tā 1357. gadā bija pirmā aptieka Livonijā.",
+    "lv": "Tā 1357. (tūkstoš trīs simti piecdesmit septītajā) gadā bija pirmā aptieka Livonijā.",
     "ru": "В 1357 году она стала первой аптекой в Ливонии.",
     "retired": false,
     "src_num": "old_аптека"
@@ -44135,7 +44135,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Vēlāk šeit arī vārīja ziepes, leja sveces, reizēm pat gatavoja šaujampulveri.",
-    "ru": "Позднее здесь же варили мыло, отливали свечи, а порой даже изготавливали порох.",
+    "ru": "Позднее здесь также варили мыло, отливали свечи, иногда даже изготавливали порох.",
     "retired": false,
     "src_num": "old_аптека"
   },
@@ -44174,7 +44174,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Tas bija iemesls, kāpēc vairāki slimnieki sāka sūdzēties pilsētas rātei.",
-    "ru": "Именно поэтому некоторые больные начали жаловаться в городской совет.",
+    "ru": "Именно поэтому несколько больных начали жаловаться в городскую ратушу.",
     "retired": false,
     "src_num": "old_аптека"
   },
@@ -44187,7 +44187,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Aptiekas sāka līdzināties izpriecu, spēļu un uzdzīves namiem.",
-    "ru": "Аптеки стали всё больше напоминать увеселительные заведения, игорные дома и места для кутежей.",
+    "ru": "Аптеки начали напоминать увеселительные, игорные дома и дома кутежей.",
     "retired": false,
     "src_num": "old_аптека"
   },
@@ -44200,7 +44200,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Aptiekās nereti bija garas rindas pēc zālēm, dažs labs gaidot esot nomiris.",
-    "ru": "В аптеках нередко выстраивались длинные очереди за лекарствами, и, по слухам, некоторые не дожидались своей очереди.",
+    "ru": "В аптеках нередко были длинные очереди за лекарствами, и кое-кто, по слухам, умер в ожидании.",
     "retired": false,
     "src_num": "old_аптека"
   },
@@ -44212,7 +44212,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1600. gadā Rīgas rāte aizliedza turēt pie aptiekām vīna pagrabus.",
+    "lv": "1600. (tūkstoš sešsimtajā) gadā Rīgas rāte aizliedza turēt pie aptiekām vīna pagrabus.",
     "ru": "В 1600 году рижский городской совет запретил держать при аптеках винные погреба.",
     "retired": false,
     "src_num": "old_аптека"
@@ -44278,7 +44278,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Ievērojamākie pilsētnieki sīpolu izmantošanu uzturā uzskatīja par nepieklājīgu sīpolu asās un noturīgās smaržas dēļ.",
-    "ru": "Знатные горожане считали употребление лука в пищу неприличным из-за его резкого и стойкого запаха.",
+    "ru": "Самые видные горожане считали употребление лука в пищу неприличным из-за резкого и стойкого запаха лука.",
     "retired": false,
     "src_num": "old_лук"
   },
@@ -44422,7 +44422,7 @@ const PHRASES = [
     "has_number": false,
     "lv": "maigāki Turklāt tieši Лук – один из древнейших корнеплодов.",
     "ru": "мягче. К тому же именно. Лук — один из древнейших корнеплодов.",
-    "retired": false,
+    "retired": true,
     "src_num": "old_лук"
   },
   {
@@ -44447,7 +44447,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Šodien tam ir pagrūti noticēt, bet vietā, kur plaukst Ziedoņdārza skaistie apstādījumi, kādreiz valdīja krietni prozaiskāka atmosfēra - tur bija izvietotas artilērijas noliktavas un kazarmas.",
-    "ru": "Сегодня в это трудно поверить, но там, где сейчас красуются зелёные насаждения Зиедоньдарзса, когда-то царила куда более прозаичная обстановка — здесь располагались артиллерийские склады и казармы.",
+    "ru": "Сегодня в это трудновато поверить, но там, где цветут красивые насаждения Зиедоньдарзса, когда-то царила куда более прозаичная обстановка — там размещались артиллерийские склады и казармы.",
     "retired": false,
     "src_num": "old_сад"
   },
@@ -44459,7 +44459,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ideja šeit iekārtot parku radās 20. gs.",
+    "lv": "Ideja šeit iekārtot parku radās 20. (divdesmitajā) gs.",
     "ru": "Идея разбить здесь парк возникла в XX веке.",
     "retired": false,
     "src_num": "old_сад"
@@ -44472,7 +44472,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "30. gadu vidū – par to jāpateicas apkārtnes iedzīvotājiem, kuri ar lūgumu vērsās pie pilsētas vadības.",
+    "lv": "30. (trīsdesmito) gadu vidū – par to jāpateicas apkārtnes iedzīvotājiem, kuri ar lūgumu vērsās pie pilsētas vadības.",
     "ru": "В середине 1930-х годов — и за это нужно поблагодарить местных жителей, которые обратились с просьбой к городским властям.",
     "retired": false,
     "src_num": "old_сад"
@@ -44486,7 +44486,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Pēc parka izveides apkārtnes kvartālu iedzīvotājiem tagad brīvdienās vairs nenācās mērot krietnos attālumus līdz Mežaparkam vai Vecāķiem – viņi varēja atpūsties turpat netālu no mājām, bet bērni varēja peldēties parka atklātajā baseinā.",
-    "ru": "После создания парка жителям окрестных кварталов больше не нужно было в выходные тащиться в Межапарк или Вецаки — они могли отдыхать совсем рядом с домом, а дети — купаться в открытом бассейне парка.",
+    "ru": "После создания парка жителям окрестных кварталов в выходные больше не приходилось преодолевать немалые расстояния до Межапарка или Вецаки — они могли отдыхать тут же рядом с домом, а дети — купаться в открытом бассейне парка.",
     "retired": false,
     "src_num": "old_сад"
   },
@@ -44525,7 +44525,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Ar viņa gādību parks plauka un ziedēja, tāpēc arī šāds nosaukums – Ziedoņdārzs.",
-    "ru": "Под его заботливым руководством парк расцветал, отсюда и название — Зиедоньдарзс (Цветущий сад).",
+    "ru": "Его заботами парк расцветал и цвёл, потому и такое название — Зиедоньдарзс.",
     "retired": false,
     "src_num": "old_сад"
   },
@@ -44537,7 +44537,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1981. gadā pilsēta godināja Aleksandra Čaka piemiņu, uzstādot viņam pieminekli Ziedoņdārzā.",
+    "lv": "1981. (tūkstoš deviņi simti astoņdesmit pirmajā) gadā pilsēta godināja Aleksandra Čaka piemiņu, uzstādot viņam pieminekli Ziedoņdārzā.",
     "ru": "В 1981 году город увековечил память Александра Чака, установив ему памятник в Зиедоньдарзсе.",
     "retired": false,
     "src_num": "old_сад"
@@ -44576,7 +44576,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "2015. gada 1. jūnijā Ziedoņdārzs pēc vērienīgas rekonstrukcijas no jauna vēra savus vārtus.",
+    "lv": "2015. (divi tūkstoši piecpadsmitā) gada 1. (pirmajā) jūnijā Ziedoņdārzs pēc vērienīgas rekonstrukcijas no jauna vēra savus vārtus.",
     "ru": "1 июня 2015 года Зиедоньдарзс вновь открыл свои ворота после масштабной реконструкции.",
     "retired": false
   },
@@ -44600,7 +44600,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vieniem liekas, ka putniem nav ko ēst, citiem patīk tos vērot, vēl citi grib saviem bērniem parādīt dažādus putnus.",
+    "lv": "Vieniem liekas, ka putniem nav ko ēst, citiem patīk tos vērot, vēl citi grib saviem bērniem parādīt dažādus putnus.",
     "ru": "Одним кажется, что птицам нечего есть, другим нравится за ними наблюдать, а третьи хотят показать своим детям разных птиц.",
     "retired": false,
     "src_num": 1
@@ -44613,7 +44613,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijā “modē” ir paštaisītās barotavas: no koka, piena pakām, plastmasas un stikla pudelēm, pat no konservu kārbām.",
+    "lv": "Latvijā “modē” ir paštaisītās barotavas: no koka, piena pakām, plastmasas un stikla pudelēm, pat no konservu kārbām.",
     "ru": "В Латвии в «моде» самодельные кормушки: из дерева, молочных пакетов, пластиковых и стеклянных бутылок, и даже из консервных банок.",
     "retired": false,
     "src_num": 1
@@ -44626,8 +44626,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Cilvēkam jāatceras: ja viņš sāk barot putnus, tas ir jādara regulāri katru dienu.",
-    "ru": "Важно помнить: если уж начал кормить птиц, делать это нужно регулярно, каждый день.",
+    "lv": "Cilvēkam jāatceras: ja viņš sāk barot putnus, tas ir jādara regulāri katru dienu.",
+    "ru": "Человеку нужно помнить: если он начинает кормить птиц, это нужно делать регулярно, каждый день.",
     "retired": false,
     "src_num": 1
   },
@@ -44639,7 +44639,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Putniem nedrīkst dot sālītu ēdienu un baltmaizi, vislabāk – dažādas sēklas, graudus, speķi.",
+    "lv": "Putniem nedrīkst dot sālītu ēdienu un baltmaizi, vislabāk – dažādas sēklas, graudus, speķi.",
     "ru": "Птицам нельзя давать солёную пищу и белый хлеб; лучше всего подходят различные семена, зерна и сало.",
     "retired": false,
     "src_num": 1
@@ -44652,8 +44652,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Labāk ir radīt vidi, lai putni gribētu uzturēties tuvāk cilvēku mājām, piemēram, stādīt augļu kokus un ogu krūmus, būvēt putnu būrus.",
-    "ru": "Лучше создавать условия, чтобы птицы сами хотели держаться ближе к жилью: сажать плодовые деревья и ягодные кусты, строить скворечники.",
+    "lv": "Labāk ir radīt vidi, lai putni gribētu uzturēties tuvāk cilvēku mājām, piemēram, stādīt augļu kokus un ogu krūmus, būvēt putnu būrus.",
+    "ru": "Лучше создавать среду, чтобы птицы хотели держаться ближе к домам людей, например сажать плодовые деревья и ягодные кусты, строить птичьи домики.",
     "retired": false,
     "src_num": 1
   },
@@ -44731,7 +44731,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Ingvera piens, kuru gatavo no piena, medus un rīvēta ingvera un dzer karstu, mīkstina klepu un silda ķermeni.",
-    "ru": "Имбирное молоко — напиток из молока, мёда и тёртого имбиря — пьют горячим: оно смягчает кашель и согревает тело.",
+    "ru": "Имбирное молоко, которое готовят из молока, мёда и тёртого имбиря и пьют горячим, смягчает кашель и согревает тело.",
     "retired": false,
     "src_num": 2
   },
@@ -44783,7 +44783,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Mēdz teikt, ka bērzu un kļavu sulas var dzert, cik tik lien.",
-    "ru": "Говорят, что берёзовый и кленовый сок можно пить сколько угодно.",
+    "ru": "Принято говорить, что берёзовый и кленовый сок можно пить, сколько влезет.",
     "retired": false,
     "src_num": 3
   },
@@ -44795,7 +44795,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tomēr viedokļi ir dažādi, jo pārāk liela šķidruma uzņemšana organismā nemaz nav vēlama un lieki noslogo nieres.",
+    "lv": "Tomēr viedokļi ir dažādi, jo pārāk liela šķidruma uzņemšana organismā nemaz nav vēlama un lieki noslogo nieres.",
     "ru": "Однако мнения расходятся: чрезмерное употребление жидкости вовсе не полезно и создаёт лишнюю нагрузку на почки.",
     "retired": false,
     "src_num": 3
@@ -44808,7 +44808,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tāpēc cilvēkiem, kas pieraduši dzert mazāk, pietiks arī ar divām glāzēm dienā.",
+    "lv": "Tāpēc cilvēkiem, kas pieraduši dzert mazāk, pietiks arī ar divām glāzēm dienā.",
     "ru": "Поэтому тем, кто привык пить немного, вполне хватит двух стаканов в день.",
     "retired": false,
     "src_num": 3
@@ -44821,8 +44821,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kopumā sulu tecināšanas laikā vajadzētu izdzert sešus litrus sulas.",
-    "ru": "В целом за сезон сокодвижения рекомендуется выпить около шести литров сока.",
+    "lv": "Kopumā sulu tecināšanas laikā vajadzētu izdzert sešus litrus sulas.",
+    "ru": "В целом за время сбора сока следует выпить шесть литров сока.",
     "retired": false,
     "src_num": 3
   },
@@ -44847,7 +44847,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kamēr sulas ir svaigas, tās var izmantot ūdens vietā, gatavojot tēju, kafiju, zupu vai marinējot gaļu.",
+    "lv": "Kamēr sulas ir svaigas, tās var izmantot ūdens vietā, gatavojot tēju, kafiju, zupu vai marinējot gaļu.",
     "ru": "Пока сок свежий, его можно использовать вместо воды при заваривании чая, приготовлении кофе, супа или маринада для мяса.",
     "retired": false,
     "src_num": 3
@@ -44874,7 +44874,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Pērkot bērzu sulas tirgū vai veikalā, jāpaļaujas uz tirgotāja godīgumu, jo nav pazīmes, pēc kurām atšķirt viltojumu.",
-    "ru": "При покупке берёзового сока на рынке или в магазине приходится полагаться на честность продавца, ведь внешних признаков, по которым можно отличить подделку, не существует.",
+    "ru": "При покупке берёзового сока на рынке или в магазине нужно полагаться на честность продавца, ведь нет признаков, по которым отличить подделку.",
     "retired": false,
     "src_num": 3
   },
@@ -44886,8 +44886,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ja vasarā pērk skābētu sulu, tad gan jāskatās, lai sula būtu viegli duļķaina, tad tā būs īsta.",
-    "ru": "Если летом покупаете квашеный сок, обратите внимание: настоящий должен быть слегка мутноватым.",
+    "lv": "Ja vasarā pērk skābētu sulu, tad gan jāskatās, lai sula būtu viegli duļķaina, tad tā būs īsta.",
+    "ru": "Если летом покупаете квашеный сок, то надо смотреть, чтобы сок был слегка мутноватым, тогда он будет настоящим.",
     "retired": false,
     "src_num": 3
   },
@@ -44899,7 +44899,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tā iepazīstina apmeklētājus ar Baltijas dzintaru, rādot tā dabīgās formas, izmēru un krāsu toņu daudzveidību.",
+    "lv": "Tā iepazīstina apmeklētājus ar Baltijas dzintaru, rādot tā dabīgās formas, izmēru un krāsu toņu daudzveidību.",
     "ru": "Она знакомит посетителей с балтийским янтарём, демонстрируя всё разнообразие его природных форм, размеров и оттенков.",
     "retired": false,
     "src_num": 4
@@ -44925,7 +44925,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Izstādes apmeklētājiem ir iespēja iepazīt dabīgā dzintara izmantojumu dažādās jomās – gan rotaslietās, gan medicīnā, gan parfimērijā un citur.",
+    "lv": "Izstādes apmeklētājiem ir iespēja iepazīt dabīgā dzintara izmantojumu dažādās jomās – gan rotaslietās, gan medicīnā, gan parfimērijā un citur.",
     "ru": "Посетители выставки могут узнать о применении природного янтаря в самых разных областях — в ювелирном деле, медицине, парфюмерии и не только.",
     "retired": false,
     "src_num": 4
@@ -44964,7 +44964,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ekspozīcija Dabas muzejā būs aplūkojama līdz šī gada 31. decembrim.",
+    "lv": "Ekspozīcija Dabas muzejā būs aplūkojama līdz šī gada 31. (trīsdesmit pirmajam) decembrim.",
     "ru": "Экспозицию в Музее природы можно будет посетить до 31 декабря этого года.",
     "retired": false,
     "src_num": 4
@@ -44977,7 +44977,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Aglonas maizes muzejā ir aplūkojami vairāki simti lietu un priekšmetu, kas ir saistīti ar graudu apstrādi un maizes cepšanu.",
+    "lv": "Aglonas maizes muzejā ir aplūkojami vairāki simti lietu un priekšmetu, kas ir saistīti ar graudu apstrādi un maizes cepšanu.",
     "ru": "В Аглонском музее хлеба можно увидеть несколько сотен предметов, связанных с переработкой зерна и хлебопечением.",
     "retired": false,
     "src_num": 5
@@ -45029,7 +45029,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Blakus muzejam vienā ēkā atrodas ceptuve, caur stikla sienu muzeja apmeklētāji var vērot maizes cepšanu.",
+    "lv": "Blakus muzejam vienā ēkā atrodas ceptuve, caur stikla sienu muzeja apmeklētāji var vērot maizes cepšanu.",
     "ru": "В том же здании рядом с музеем находится пекарня: через стеклянную стену посетители могут наблюдать за выпечкой хлеба.",
     "retired": false,
     "src_num": 5
@@ -45042,7 +45042,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pēc muzeja apskates paša veidoto kukulīti,  jau izceptu, var paņemt līdzi.",
+    "lv": "Pēc muzeja apskates paša veidoto kukulīti, jau izceptu, var paņemt līdzi.",
     "ru": "После осмотра музея свою испечённую буханочку можно забрать с собой.",
     "retired": false,
     "src_num": 5
@@ -45081,7 +45081,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Daudzi uzskata, ka miegā mūsu ķermenis un prāts ir gluži kā izslēgts, tomēr tā nav.",
+    "lv": "Daudzi uzskata, ka miegā mūsu ķermenis un prāts ir gluži kā izslēgts, tomēr tā nav.",
     "ru": "Многие думают, что во сне наше тело и разум как будто отключаются, однако это не так.",
     "retired": false,
     "src_num": 6
@@ -45094,7 +45094,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Miegs ir gluži kā īsa brīvdiena mūsu ķermenim – organisms atpūšas, atjauno bojātās šūnas un uzkrāj enerģijas rezerves.",
+    "lv": "Miegs ir gluži kā īsa brīvdiena mūsu ķermenim – organisms atpūšas, atjauno bojātās šūnas un uzkrāj enerģijas rezerves.",
     "ru": "Сон — это своего рода небольшой отпуск для нашего тела: организм отдыхает, восстанавливает повреждённые клетки и пополняет запасы энергии.",
     "retired": false,
     "src_num": 6
@@ -45133,7 +45133,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Savukārt divas vai pat trīs nomodā pavadītas dienas cilvēka organismam nodara būtiskus traucējumus – strauji paātrinās asinsrite un paaugstinās asinsspiediens, emocijas kļūst nekontrolējamas, zūd motivācija.",
+    "lv": "Savukārt divas vai pat trīs nomodā pavadītas dienas cilvēka organismam nodara būtiskus traucējumus – strauji paātrinās asinsrite un paaugstinās asinsspiediens, emocijas kļūst nekontrolējamas, zūd motivācija.",
     "ru": "А вот двое или даже трое суток без сна наносят организму серьёзный вред: резко ускоряется кровообращение, повышается артериальное давление, эмоции выходят из-под контроля, пропадает мотивация.",
     "retired": false,
     "src_num": 6
@@ -45146,7 +45146,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Izrādās, ka prāts tiešām var būt pusaizmidzis laikā, kad pats cilvēks ir fiziski nomodā.",
+    "lv": "Izrādās, ka prāts tiešām var būt pusaizmidzis laikā, kad pats cilvēks ir fiziski nomodā.",
     "ru": "Оказывается, мозг действительно может быть наполовину спящим, пока сам человек физически бодрствует.",
     "retired": false,
     "src_num": 6
@@ -45160,7 +45160,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Tas ir tāpēc, ka ir iztērētas visas enerģijas rezerves un prāts gluži kā viedtālrunis pamazām slēdzas ārā un signalizē par to, ka ātrāk jādodas gulēt.",
-    "ru": "Это происходит потому, что все запасы энергии истощены, и мозг, как смартфон с разрядившейся батарейкой, постепенно отключается, сигнализируя о том, что пора ложиться спать.",
+    "ru": "Это потому, что истрачены все запасы энергии, и разум, словно смартфон, постепенно выключается и сигнализирует о том, что пора поскорее ложиться спать.",
     "retired": false,
     "src_num": 6
   },
@@ -45172,7 +45172,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Sākumskolas vecuma bērniem ir ieteicams gulēt 9 līdz 11 stundas.",
+    "lv": "Sākumskolas vecuma bērniem ir ieteicams gulēt 9 (deviņas) līdz 11 (vienpadsmit) stundas.",
     "ru": "Детям младшего школьного возраста рекомендуется спать от 9 до 11 часов.",
     "retired": false,
     "src_num": 6
@@ -45198,8 +45198,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Salaspils dzelzceļa stacijai tieši pretī atrodas Nacionālā botāniskā dārza ieeja, tāpēc ieteicams sākt savu  Salaspils apmeklējumu šeit.",
-    "ru": "Прямо напротив железнодорожной станции Саласпилса находится вход в Национальный ботанический сад — с него и рекомендуется начать прогулку по городу.",
+    "lv": "Salaspils dzelzceļa stacijai tieši pretī atrodas Nacionālā botāniskā dārza ieeja, tāpēc ieteicams sākt savu Salaspils apmeklējumu šeit.",
+    "ru": "Прямо напротив железнодорожной станции Саласпилса находится вход в Национальный ботанический сад, поэтому посещение Саласпилса рекомендуется начать именно отсюда.",
     "retired": false,
     "src_num": 7
   },
@@ -45211,7 +45211,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Oranžērijā mitinās arī mazi dzīvnieciņi, kas noteikti patiks visiem bērniem.",
+    "lv": "Oranžērijā mitinās arī mazi dzīvnieciņi, kas noteikti patiks visiem bērniem.",
     "ru": "В оранжерее обитают маленькие животные — они непременно понравятся всем детям.",
     "retired": false,
     "src_num": 7
@@ -45224,7 +45224,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Botāniskā dārza teritorijā pieejams arī rotaļu laukums – pašiem mazākajiem, bet celiņi un taciņas būs īpaši piemērotas visāda veida riteņbraukšanai vai braukšanai skrituļslidām lielākiem bērniem.",
+    "lv": "Botāniskā dārza teritorijā pieejams arī rotaļu laukums – pašiem mazākajiem, bet celiņi un taciņas būs īpaši piemērotas visāda veida riteņbraukšanai vai braukšanai skrituļslidām lielākiem bērniem.",
     "ru": "На территории ботанического сада есть детская площадка для самых маленьких, а дорожки и тропинки отлично подходят для езды на велосипеде или роликах для детей постарше.",
     "retired": false,
     "src_num": 7
@@ -45237,7 +45237,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Botāniskā dārza teritorijā atrodas arī zirgu stallis, kas piedāvā izjādes ar zirgiem un ponijiem gan bērniem, gan pieaugušajiem.",
+    "lv": "Botāniskā dārza teritorijā atrodas arī zirgu stallis, kas piedāvā izjādes ar zirgiem un ponijiem gan bērniem, gan pieaugušajiem.",
     "ru": "На территории сада есть конюшня, предлагающая верховые прогулки на лошадях и пони как для детей, так и для взрослых.",
     "retired": false,
     "src_num": 7
@@ -45250,7 +45250,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ja bērni vēlas kārtīgi izskrieties, spēlēties un pavadīt laiku aktīvi, varat apmeklēt moderno un dažādu aktivitāšu pilno sporta un rotaļu laukumu Daugavas krastā pie Svētā Jura baznīcas drupām.",
+    "lv": "Ja bērni vēlas kārtīgi izskrieties, spēlēties un pavadīt laiku aktīvi, varat apmeklēt moderno un dažādu aktivitāšu pilno sporta un rotaļu laukumu Daugavas krastā pie Svētā Jura baznīcas drupām.",
     "ru": "Если дети хотят вволю побегать, поиграть и провести время активно, можно отправиться на современную спортивно-игровую площадку на берегу Даугавы у руин церкви Святого Юрия.",
     "retired": false,
     "src_num": 7
@@ -45276,7 +45276,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Te skatāmi eksponāti par Latvijas lielāko upi Daugavu un Salaspils novada kultūrvēsturi.",
+    "lv": "Te skatāmi eksponāti par Latvijas lielāko upi Daugavu un Salaspils novada kultūrvēsturi.",
     "ru": "Здесь представлены экспонаты, посвящённые крупнейшей реке Латвии — Даугаве — и культурно-историческому наследию Саласпилсского края.",
     "retired": false,
     "src_num": 7
@@ -45289,8 +45289,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ja gadījies ārā nosalt un šķiet, ka esam saaukstējušies,  pirmais, ko meklējam, ir karsta tēja ar medu.",
-    "ru": "Если замёрзли на улице и чувствуете, что начинаете заболевать, первое, за чем тянется рука, — это горячий чай с мёдом.",
+    "lv": "Ja gadījies ārā nosalt un šķiet, ka esam saaukstējušies, pirmais, ko meklējam, ir karsta tēja ar medu.",
+    "ru": "Если случилось замёрзнуть на улице и кажется, что мы простудились, первое, что мы ищем, — это горячий чай с мёдом.",
     "retired": false,
     "src_num": 8
   },
@@ -45302,7 +45302,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tas stiprina imūnsistēmu,  tāpēc to var  lietot profilaktiskos nolūkos.",
+    "lv": "Tas stiprina imūnsistēmu, tāpēc to var lietot profilaktiskos nolūkos.",
     "ru": "Он укрепляет иммунную систему, поэтому его можно употреблять в профилактических целях.",
     "retired": false,
     "src_num": 8
@@ -45341,7 +45341,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Dienā nav vēlams apēst vairāk par 25 g medus – tās ir 2 līdz 3 tējkarotes.",
+    "lv": "Dienā nav vēlams apēst vairāk par 25 (divdesmit pieci) g medus – tās ir 2 (divas) līdz 3 (trīs) tējkarotes.",
     "ru": "В день не рекомендуется съедать более 25 г мёда — это 2–3 чайные ложки.",
     "retired": false,
     "src_num": 8
@@ -45367,7 +45367,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tā radās Rīgas pilsētas kanāls ar tiltiņiem, skaisti sakoptām malām un atpūtas zonām.",
+    "lv": "Tā radās Rīgas pilsētas kanāls ar tiltiņiem, skaisti sakoptām malām un atpūtas zonām.",
     "ru": "Так появился Городской канал Риги с мостиками, ухоженными берегами и зонами отдыха.",
     "retired": false,
     "src_num": 10
@@ -45381,7 +45381,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Bastejkalns, kas uzcelts bijušā Smilšu bastiona vietā, ir pilsētas kanāla īpašais greznums.",
-    "ru": "Бастейный холм, разбитый на месте бывшего Песчаного бастиона, — настоящее украшение городского канала.",
+    "ru": "Бастейный холм, насыпанный на месте бывшего Песчаного бастиона, — особое украшение городского канала.",
     "retired": false,
     "src_num": 10
   },
@@ -45406,7 +45406,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Viņš gribēja saglabāt aizsardzības būvju, kas daudzus gadsimtus aizsargāja pilsētu, piemiņu, un dot pilsētas iedzīvotājiem iespēju priecēt acis, skatoties uz pilsētu no aizsardzības vaļņa augstuma.",
+    "lv": "Viņš gribēja saglabāt aizsardzības būvju, kas daudzus gadsimtus aizsargāja pilsētu, piemiņu, un dot pilsētas iedzīvotājiem iespēju priecēt acis, skatoties uz pilsētu no aizsardzības vaļņa augstuma.",
     "ru": "Он хотел увековечить память об оборонительных сооружениях, защищавших город на протяжении многих веков, и дать горожанам возможность любоваться городом с высоты крепостного вала.",
     "retired": false,
     "src_num": 10
@@ -45419,7 +45419,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Heninga ideja par kalna veidošanu bija ne tikai oriģināla, bet arī praktiska – smiltis, kas bija palikušas pēc vaļņu nojaukšanas, nekur tālu nevajadzēja vest, tās izmantoja apmēram 15 metru augsta mākslīga kalna uzbēršanai.",
+    "lv": "Heninga ideja par kalna veidošanu bija ne tikai oriģināla, bet arī praktiska – smiltis, kas bija palikušas pēc vaļņu nojaukšanas, nekur tālu nevajadzēja vest, tās izmantoja apmēram 15 (piecpadsmit) metru augsta mākslīga kalna uzbēršanai.",
     "ru": "Идея Хенинга создать холм была не только оригинальной, но и практичной — песок, оставшийся после сноса валов, никуда далеко везти не пришлось: из него насыпали искусственный холм высотой около 15 метров.",
     "retired": false,
     "src_num": 10
@@ -45471,7 +45471,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kāds pilsētas viesis 1605. gadā aprakstīja vietējo iedzīvotāju mājokļos novēroto: viņi izrotājuši baltegles ar āboliem, konfektēm, cukurgraudiem, riekstiem un papīra ziediem.",
+    "lv": "Kāds pilsētas viesis 1605. (tūkstoš seši simti piektajā) gadā aprakstīja vietējo iedzīvotāju mājokļos novēroto: viņi izrotājuši baltegles ar āboliem, konfektēm, cukurgraudiem, riekstiem un papīra ziediem.",
     "ru": "Один из гостей города в 1605 году описал увиденное в домах местных жителей: они украшали пихты яблоками, конфетами, сахарными шариками, орехами и бумажными цветами.",
     "retired": false,
     "src_num": 11
@@ -45536,7 +45536,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1510. gadā ievērojamais baznīcas reformators Mārtiņš Luters, kurš tolaik esot dzīvojis Latvijā, gājis pa piesnigušu mežu netālu no Rīgas un vērojis, kā mēness un zvaigžņu gaismā mirdz egļu skujas.",
+    "lv": "1510. (tūkstoš pieci simti desmitajā) gadā ievērojamais baznīcas reformators Mārtiņš Luters, kurš tolaik esot dzīvojis Latvijā, gājis pa piesnigušu mežu netālu no Rīgas un vērojis, kā mēness un zvaigžņu gaismā mirdz egļu skujas.",
     "ru": "В 1510 году выдающийся церковный реформатор Мартин Лютер, который якобы тогда жил в Латвии, шёл через заснеженный лес неподалёку от Риги и любовался тем, как при свете луны и звёзд искрятся еловые иголки.",
     "retired": false,
     "src_num": 11
@@ -45562,7 +45562,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tomēr, papētot Lutera biogrāfiju, kļūst skaidrs, ka šis stāsts nav patiess, jo 1510.gadā Mārtiņš Luters dzīvoja Vācijā un bija mūks.",
+    "lv": "Tomēr, papētot Lutera biogrāfiju, kļūst skaidrs, ka šis stāsts nav patiess, jo 1510. (tūkstoš pieci simti desmitajā) gadā Mārtiņš Luters dzīvoja Vācijā un bija mūks.",
     "ru": "Однако, изучив биографию Лютера, становится ясно, что эта история не соответствует действительности: в 1510 году Мартин Лютер жил в Германии и был монахом.",
     "retired": false,
     "src_num": 11
@@ -45575,7 +45575,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas pilsētās tradīcija uz Ziemassvētkiem rotāt eglīti ieviesās 19. gadsimtā, pārmantojot to no Latvijā mītošajiem vāciešiem, bet laukos – tikai 20.gadsimta 20.gados.",
+    "lv": "Latvijas pilsētās tradīcija uz Ziemassvētkiem rotāt eglīti ieviesās 19. (deviņpadsmitajā) gadsimtā, pārmantojot to no Latvijā mītošajiem vāciešiem, bet laukos – tikai 20. (divdesmitā) gadsimta 20. (divdesmitajos) gados.",
     "ru": "В латвийских городах традиция наряжать рождественскую ёлку утвердилась в XIX веке — её переняли от живших в Латвии немцев, а в сельской местности — лишь в 1920-е годы.",
     "retired": false,
     "src_num": 11
@@ -45588,7 +45588,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Raksturīga siera sastāvdaļa ir ķimenes, tāpēc to dažkārt sauc arī par ķimeņu sieru.",
+    "lv": "Raksturīga siera sastāvdaļa ir ķimenes, tāpēc to dažkārt sauc arī par ķimeņu sieru.",
     "ru": "Неотъемлемый ингредиент этого сыра — тмин, поэтому его иногда называют тминным сыром.",
     "retired": false,
     "src_num": 12
@@ -45601,7 +45601,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Jāņu siera recepte ir bijusi iekļauta jau pirmajā latviski iespiestajā oriģinālajā pavārgrāmatā, kas izdota 1796. gadā.",
+    "lv": "Jāņu siera recepte ir bijusi iekļauta jau pirmajā latviski iespiestajā oriģinālajā pavārgrāmatā, kas izdota 1796. (tūkstoš septiņi simti deviņdesmit sestajā) gadā.",
     "ru": "Рецепт Янова сыра вошёл ещё в первую оригинальную поваренную книгу, изданную на латышском языке в 1796 году.",
     "retired": false,
     "src_num": 12
@@ -45666,7 +45666,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tomēr jāatceras, ka Jāņu siera gatavošana, tāpat kā maizes cepšana, ir rituāls, kas prasa īpašu intuīciju un attieksmi.",
+    "lv": "Tomēr jāatceras, ka Jāņu siera gatavošana, tāpat kā maizes cepšana, ir rituāls, kas prasa īpašu intuīciju un attieksmi.",
     "ru": "Однако стоит помнить, что приготовление Янова сыра, как и выпечка хлеба, — это ритуал, требующий особого чутья и отношения к делу.",
     "retired": false,
     "src_num": 12
@@ -45679,8 +45679,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Saldējuma pirmsākumi meklējami 4. gadsimtā pirms mūsu ēras Persijā, kur ļaudis baudīja ar ledu sajauktu augļu sīrupu desertu.",
-    "ru": "История мороженого уходит корнями в IV век до нашей эры — в Персию, где люди лакомились десертом из фруктового сиропа, смешанного со льдом.",
+    "lv": "Saldējuma pirmsākumi meklējami 4. (ceturtajā) gadsimtā pirms mūsu ēras Persijā, kur ļaudis baudīja ar ledu sajauktu augļu sīrupu desertu.",
+    "ru": "Истоки мороженого следует искать в IV веке до нашей эры в Персии, где люди наслаждались десертом из фруктового сиропа, смешанного со льдом.",
     "retired": false,
     "src_num": 13
   },
@@ -45692,7 +45692,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Uz Eiropu šo recepti atveda itāļu ceļotājs Marko Polo.",
+    "lv": "Uz Eiropu šo recepti atveda itāļu ceļotājs Marko Polo.",
     "ru": "В Европу этот рецепт привёз итальянский путешественник Марко Поло.",
     "retired": false,
     "src_num": 13
@@ -45705,7 +45705,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Saldējuma rūpnieciska ražošana attīstījās tikai 20. gadsimtā, kad šis gardums kļuva pieejams plašam ļaužu lokam.",
+    "lv": "Saldējuma rūpnieciska ražošana attīstījās tikai 20. (divdesmitajā) gadsimtā, kad šis gardums kļuva pieejams plašam ļaužu lokam.",
     "ru": "Промышленное производство мороженого наладилось лишь в XX веке, когда это лакомство стало доступно широкому кругу людей.",
     "retired": false,
     "src_num": 13
@@ -45718,7 +45718,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "20. gadsimta trīsdesmitajos gados Latvijā bija gan saldējuma ražošanas uzņēmumi, gan daudz privāto ražotāju, kas gatavoja saldējumu mājās.",
+    "lv": "20. (divdesmitā) gadsimta trīsdesmitajos gados Latvijā bija gan saldējuma ražošanas uzņēmumi, gan daudz privāto ražotāju, kas gatavoja saldējumu mājās.",
     "ru": "В 1930-е годы в Латвии действовали как предприятия по производству мороженого, так и множество частников, делавших его дома.",
     "retired": false,
     "src_num": 13
@@ -45731,7 +45731,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Lai palielinātu saražotā saldējuma apjomu, 1971. gadā Rīgā uzbūvēja saldējuma fabriku.",
+    "lv": "Lai palielinātu saražotā saldējuma apjomu, 1971. (tūkstoš deviņi simti septiņdesmit pirmajā) gadā Rīgā uzbūvēja saldējuma fabriku.",
     "ru": "Чтобы увеличить объёмы выпуска, в 1971 году в Риге была построена фабрика мороженого.",
     "retired": false,
     "src_num": 13
@@ -45744,7 +45744,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Mūsdienās grūti saskaitīt, cik atšķirīgu šķirņu saldējumu varam nogaršot un cik daudzi uzņēmumi Latvijā ražo saldējumu.",
+    "lv": "Mūsdienās grūti saskaitīt, cik atšķirīgu šķirņu saldējumu varam nogaršot un cik daudzi uzņēmumi Latvijā ražo saldējumu.",
     "ru": "Сегодня трудно сосчитать, сколько разновидностей мороженого можно попробовать и сколько компаний в Латвии его производит.",
     "retired": false,
     "src_num": 13
@@ -45809,8 +45809,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Nav noslēpums, ka ziedu kompozīcijas izmantojam  gan dzīves priecīgos, gan bēdīgos brīžos.",
-    "ru": "Ни для кого не секрет, что цветочные композиции сопровождают нас как в радостные, так и в печальные моменты жизни.",
+    "lv": "Nav noslēpums, ka ziedu kompozīcijas izmantojam gan dzīves priecīgos, gan bēdīgos brīžos.",
+    "ru": "Ни для кого не секрет, что цветочные композиции мы используем как в радостные, так и в печальные моменты жизни.",
     "retired": false,
     "src_num": 14
   },
@@ -45835,7 +45835,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "19. gadsimta sākumā Rīgā bija tikai viens publiskais dārzs – Ķeizardārzs, kuru šodien  sauc par Viesturdārzu.",
+    "lv": "19. (deviņpadsmitā) gadsimta sākumā Rīgā bija tikai viens publiskais dārzs – Ķeizardārzs, kuru šodien sauc par Viesturdārzu.",
     "ru": "В начале XIX века в Риге был лишь один общественный сад — Кайзергартен, который сегодня называется Виестурдарзс.",
     "retired": false,
     "src_num": 15
@@ -45874,7 +45874,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tādēļ 1814. gadā pēc Filipo Pauluči iniciatīvas tika izveidota apstādījumu komiteja, kuras pienākumos ietilpa arī jaunu parku veidošana.",
+    "lv": "Tādēļ 1814. (tūkstoš astoņi simti četrpadsmitajā) gadā pēc Filipo Pauluči iniciatīvas tika izveidota apstādījumu komiteja, kuras pienākumos ietilpa arī jaunu parku veidošana.",
     "ru": "Поэтому в 1814 году по инициативе Филиппо Паулуччи был создан комитет по озеленению, в обязанности которого входило в том числе создание новых парков.",
     "retired": false,
     "src_num": 15
@@ -45887,7 +45887,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Jaunam parkam noskatīja zemesgabalu aiz vecpilsētas nocietinājumu mūra, un pazīstamā Rīgas tirgotāja atraitne Anna Vērmane parka ierīkošanai ziedoja tam laikam ļoti lielu naudas summu – 10 tūkstošus rubļu.",
+    "lv": "Jaunam parkam noskatīja zemesgabalu aiz vecpilsētas nocietinājumu mūra, un pazīstamā Rīgas tirgotāja atraitne Anna Vērmane parka ierīkošanai ziedoja tam laikam ļoti lielu naudas summu – 10 (desmit) tūkstošus rubļu.",
     "ru": "Под новый парк был выбран участок за крепостными стенами Старого города, и вдова известного рижского купца Анна Вёрман пожертвовала на его устройство огромную по тем временам сумму — 10 тысяч рублей.",
     "retired": false,
     "src_num": 15
@@ -45900,7 +45900,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Parku atklāja 1817. gadā.",
+    "lv": "Parku atklāja 1817. (tūkstoš astoņi simti septiņpadsmitajā) gadā.",
     "ru": "Парк был открыт в 1817 году.",
     "retired": false,
     "src_num": 15
@@ -45926,7 +45926,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Starptautisko polārlāču dienu atzīmē 27. februārī pēc organizācijas, kas cīnās par polārlāču saglabāšanu, ierosinājuma.",
+    "lv": "Starptautisko polārlāču dienu atzīmē 27. (divdesmit septītajā) februārī pēc organizācijas, kas cīnās par polārlāču saglabāšanu, ierosinājuma.",
     "ru": "Международный день белого медведя отмечается 27 февраля по инициативе организации, занимающейся сохранением этого вида.",
     "retired": false,
     "src_num": 16
@@ -45939,7 +45939,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pašlaik pasaulē ir tikai 20 līdz 25 tūkstoši polārlāču.",
+    "lv": "Pašlaik pasaulē ir tikai 20 (divdesmit) līdz 25 (divdesmit pieci) tūkstoši polārlāču.",
     "ru": "В настоящее время в мире насчитывается всего от 20 до 25 тысяч белых медведей.",
     "retired": false,
     "src_num": 16
@@ -45952,7 +45952,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pieauguši polārlāču tēviņi sasniedz vidēji divarpus līdz trīs metru  garumu un to masa var būt starp 300 un 800 kg.",
+    "lv": "Pieauguši polārlāču tēviņi sasniedz vidēji divarpus līdz trīs metru garumu un to masa var būt starp 300 (trīs simti) un 800 (astoņi simti) kg.",
     "ru": "Взрослые самцы белого медведя достигают в среднем двух с половиной — трёх метров в длину, а их вес может составлять от 300 до 800 кг.",
     "retired": false,
     "src_num": 16
@@ -45965,7 +45965,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Lāči ir arī ļoti labi peldētāji – tie  ir redzēti okeānā 320 km attālumā no ledus vai zemes.",
+    "lv": "Lāči ir arī ļoti labi peldētāji – tie ir redzēti okeānā 320 (trīs simti divdesmit) km attālumā no ledus vai zemes.",
     "ru": "Медведи также отлично плавают — их замечали в открытом океане в 320 км от льда или суши.",
     "retired": false,
     "src_num": 16
@@ -45991,7 +45991,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Polārlāci no aukstuma pasargā ne tikai baltais, biezais kažoks, bet arī tauku slānis, kas sasniedz 10 cm biezumu.",
+    "lv": "Polārlāci no aukstuma pasargā ne tikai baltais, biezais kažoks, bet arī tauku slānis, kas sasniedz 10 (desmit) cm biezumu.",
     "ru": "От холода белого медведя защищает не только густой белый мех, но и слой жира толщиной до 10 сантиметров.",
     "retired": false,
     "src_num": 16
@@ -46004,7 +46004,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Visas šīs piecas valstis 1973. gadā ir vienojušās par polārlāču aizsardzību, izpēti un sadarbību šajās jomās.",
+    "lv": "Visas šīs piecas valstis 1973. (tūkstoš deviņi simti septiņdesmit trešajā) gadā ir vienojušās par polārlāču aizsardzību, izpēti un sadarbību šajās jomās.",
     "ru": "Все эти пять государств в 1973 году заключили соглашение об охране белых медведей, их изучении и сотрудничестве в этих областях.",
     "retired": false,
     "src_num": 16
@@ -46017,7 +46017,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Muzejs dibināts 1989. gadā pēc Latvijas Antīko automobiļu kluba iniciatīvas un atrodas Rīgas austrumu daļā Mežciemā, pie Biķernieku mototrases.",
+    "lv": "Muzejs dibināts 1989. (tūkstoš deviņi simti astoņdesmit devītajā) gadā pēc Latvijas Antīko automobiļu kluba iniciatīvas un atrodas Rīgas austrumu daļā Mežciemā, pie Biķernieku mototrases.",
     "ru": "Музей основан в 1989 году по инициативе Клуба антикварных автомобилей Латвии и находится в восточной части Риги, в районе Межциемс, рядом с мотодромом Биķерниеки.",
     "retired": false,
     "src_num": 17
@@ -46043,7 +46043,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Muzejā apskatāma pastāvīgā ekspozīcija, kas veltīta seno automašīnu, motociklu un velosipēdu vēsturei Latvijā un pasaulē, aptverot laika posmu no 19. gadsimta beigām līdz 20. gadsimta nogalei.",
+    "lv": "Muzejā apskatāma pastāvīgā ekspozīcija, kas veltīta seno automašīnu, motociklu un velosipēdu vēsturei Latvijā un pasaulē, aptverot laika posmu no 19. (deviņpadsmitā) gadsimta beigām līdz 20. (divdesmitā) gadsimta nogalei.",
     "ru": "В музее представлена постоянная экспозиция, посвящённая истории старинных автомобилей, мотоциклов и велосипедов в Латвии и мире, охватывающая период с конца XIX до конца XX века.",
     "retired": false,
     "src_num": 17
@@ -46082,7 +46082,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Te apmeklētāji var piedalīties arī tematiskajās ekskursijās  par seno automobiļu restaurāciju, autovēsturi, tehniski radošajās darbnīcās un ekskursijā ar atjautības uzdevumiem un spēlēm, tās muzeja darbinieki vada, ģērbušies autentiskos retro stila tērpos.",
+    "lv": "Te apmeklētāji var piedalīties arī tematiskajās ekskursijās par seno automobiļu restaurāciju, autovēsturi, tehniski radošajās darbnīcās un ekskursijā ar atjautības uzdevumiem un spēlēm, tās muzeja darbinieki vada, ģērbušies autentiskos retro stila tērpos.",
     "ru": "Посетители могут также участвовать в тематических экскурсиях по реставрации старинных автомобилей и истории автомобилестроения, в творческих технических мастерских, а также в экскурсиях с заданиями на смекалку и играми — их проводят сотрудники музея в подлинных костюмах в стиле ретро.",
     "retired": false,
     "src_num": 17
@@ -46095,7 +46095,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Muzeja apmeklētāji vai vienkārši garāmbraucēji muzeja kafejnīcā var nobaudīt īpašos dienas ēdienus un pusdienu piedāvājumu, kā arī pasūtīt ēdienus no restorāna ēdienkartes.",
+    "lv": "Muzeja apmeklētāji vai vienkārši garāmbraucēji muzeja kafejnīcā var nobaudīt īpašos dienas ēdienus un pusdienu piedāvājumu, kā arī pasūtīt ēdienus no restorāna ēdienkartes.",
     "ru": "Посетители музея или случайные прохожие могут в музейном кафе попробовать специальные блюда дня и бизнес-ланч, а также заказать блюда из ресторанного меню.",
     "retired": false,
     "src_num": 17
@@ -46173,7 +46173,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijā pat ir izveidota biedrība Rīgas Šprotes, kurā apvienojušies seši zivju pārstrādes uzņēmumi, kas ražo konservus „Rīgas šprotes eļļā”.",
+    "lv": "Latvijā pat ir izveidota biedrība Rīgas Šprotes, kurā apvienojušies seši zivju pārstrādes uzņēmumi, kas ražo konservus „Rīgas šprotes eļļā”.",
     "ru": "В Латвии даже создана ассоциация «Рижские шпроты», объединяющая шесть рыбоперерабатывающих предприятий, которые выпускают консервы «Рижские шпроты в масле».",
     "retired": false,
     "src_num": 18
@@ -46212,7 +46212,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ventspils ielas, parkus, skvērus, pagalmus rotā ziedu skulptūras, kas veidotas no dažādu šķirņu puķēm. Tur ir ziedu pulkstenis un milzīga puķu govs, kas sagaida pilsētas viesus, kuri iebrauc pilsētā.",
+    "lv": "Ventspils ielas, parkus, skvērus, pagalmus rotā ziedu skulptūras, kas veidotas no dažādu šķirņu puķēm. Tur ir ziedu pulkstenis un milzīga puķu govs, kas sagaida pilsētas viesus, kuri iebrauc pilsētā.",
     "ru": "Улицы, парки, скверы и дворы Вентспилса украшены цветочными скульптурами из разных сортов цветов. Здесь есть цветочные часы и огромная корова из цветов, встречающая гостей города.",
     "retired": false,
     "src_num": 19
@@ -46239,7 +46239,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Pēc aktīvas atpūtas Ūdens piedzīvojumu parkā var doties braucienā ar mazbānīti vai kuģīti „Hercogs Jēkabs”.",
-    "ru": "После активного отдыха в аквапарке можно прокатиться на детской железной дороге или на кораблике «Герцог Якоб».",
+    "ru": "После активного отдыха в Парке водных приключений можно прокатиться на узкоколейке или кораблике «Герцог Якоб».",
     "retired": false,
     "src_num": 19
   },
@@ -46264,7 +46264,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ventspils ir slavena ar tajā notiekošajiem vērienīgajiem koncertiem, svētkiem un citiem kultūras un izklaides pasākumiem, kuri pulcē tūkstošiem cilvēku.",
+    "lv": "Ventspils ir slavena ar tajā notiekošajiem vērienīgajiem koncertiem, svētkiem un citiem kultūras un izklaides pasākumiem, kuri pulcē tūkstošiem cilvēku.",
     "ru": "Вентспилс славится масштабными концертами, праздниками и другими культурными и развлекательными мероприятиями, которые собирают тысячи людей.",
     "retired": false,
     "src_num": 19
@@ -46277,8 +46277,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Jūlija otrajā nedēļas nogalē pilsēta ar vērienu atzīmē Jūras svētkus, savukārt pirmajā augusta nedēļas nogalē  pulcējas tuvi un tāli viesi uz ikgadējiem Pilsētas svētkiem.",
-    "ru": "Во второй уик-энд июля город с размахом отмечает Праздник моря, а в первые выходные августа гости со всей страны собираются на ежегодный День города.",
+    "lv": "Jūlija otrajā nedēļas nogalē pilsēta ar vērienu atzīmē Jūras svētkus, savukārt pirmajā augusta nedēļas nogalē pulcējas tuvi un tāli viesi uz ikgadējiem Pilsētas svētkiem.",
+    "ru": "Во вторые выходные июля город с размахом отмечает Праздник моря, а в первые выходные августа близкие и далёкие гости собираются на ежегодный Праздник города.",
     "retired": false,
     "src_num": 19
   },
@@ -46290,7 +46290,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pāvilosta ir viena no Kurzemes burvīgajām vietām, kas atrodas vidū starp divām ostas pilsētām – Ventspili un Liepāju, ap 240 km no Rīgas.",
+    "lv": "Pāvilosta ir viena no Kurzemes burvīgajām vietām, kas atrodas vidū starp divām ostas pilsētām – Ventspili un Liepāju, ap 240 (divi simti četrdesmit) km no Rīgas.",
     "ru": "Павилоста — одно из очаровательных мест Курземе, расположенное примерно на полпути между двумя портовыми городами — Вентспилсом и Лиепаей, примерно в 240 км от Риги.",
     "retired": false,
     "src_num": 22
@@ -46304,7 +46304,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Pāvilosta ir īstā vieta Latvijā, kur baudīt vasaru, jo pēc meteoroloģiskajiem novērojumiem te ir visvairāk saulainu dienu gadā.",
-    "ru": "Павилоста — настоящий латвийский рай для летнего отдыха: по метеонаблюдениям здесь больше всего солнечных дней в году.",
+    "ru": "Павилоста — настоящее место в Латвии, где можно насладиться летом, ведь по метеонаблюдениям здесь больше всего солнечных дней в году.",
     "retired": false,
     "src_num": 22
   },
@@ -46342,7 +46342,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Daudzu tūristu iecienīts ir izbrauciens pa Sakas upi un Baltijas jūru.",
+    "lv": "Daudzu tūristu iecienīts ir izbrauciens pa Sakas upi un Baltijas jūru.",
     "ru": "Большой популярностью у туристов пользуется прогулка по реке Сака и Балтийскому морю.",
     "retired": false,
     "src_num": 22
@@ -46356,7 +46356,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "No vienas puses, Pāvilosta šķiet miera un klusuma paradīze, taču patiesībā tajā notiek rosība, jo pilsētā katru vasaru ierodas lieli un mazi, lai mācītos sērfot un burāt.",
-    "ru": "С одной стороны, Павилоста кажется тихим райским уголком, но на самом деле жизнь здесь кипит: каждое лето сюда приезжают взрослые и дети, чтобы научиться серфингу и парусному спорту.",
+    "ru": "С одной стороны, Павилоста кажется раем покоя и тишины, но на самом деле здесь царит оживление, ведь каждое лето в город приезжают и большие, и маленькие, чтобы учиться серфингу и парусу.",
     "retired": false,
     "src_num": 22
   },
@@ -46368,7 +46368,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Jau gadu desmitus vislielākā aktivitāte Pāvilostā ir jūlija otrās nedēļas nogalē, kad te ierodas cilvēki no dažādām Latvijas vietām, lai piedalītos iecienītajos Zvejnieku svētkos.",
+    "lv": "Jau gadu desmitus vislielākā aktivitāte Pāvilostā ir jūlija otrās nedēļas nogalē, kad te ierodas cilvēki no dažādām Latvijas vietām, lai piedalītos iecienītajos Zvejnieku svētkos.",
     "ru": "Уже несколько десятилетий самое оживлённое время в Павилосте — вторые выходные июля, когда сюда съезжаются люди со всей Латвии, чтобы принять участие в любимом Празднике рыбаков.",
     "retired": false,
     "src_num": 22
@@ -46381,7 +46381,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tāpat jūlijā te ik gadu notiek smilšu skulptūru festivāls „Zelta smilšu grauds”.",
+    "lv": "Tāpat jūlijā te ik gadu notiek smilšu skulptūru festivāls „Zelta smilšu grauds”.",
     "ru": "Также в июле здесь ежегодно проходит фестиваль песчаных скульптур «Золотая песчинка».",
     "retired": false,
     "src_num": 22
@@ -46394,7 +46394,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas Etnogrāfiskais brīvdabas muzejs dibināts 1924. gadā, bet šeit pārvestas, atkal uzstādītas un iekārtotas senās celtnes atvērtas 1932. gada vasarā.",
+    "lv": "Latvijas Etnogrāfiskais brīvdabas muzejs dibināts 1924. (tūkstoš deviņi simti divdesmit ceturtajā) gadā, bet šeit pārvestas, atkal uzstādītas un iekārtotas senās celtnes atvērtas 1932. (tūkstoš deviņi simti trīsdesmit otrā) gada vasarā.",
     "ru": "Латвийский этнографический музей под открытым небом основан в 1924 году, а перевезённые, восстановленные и обустроенные здесь старинные постройки были открыты летом 1932 года.",
     "retired": false,
     "src_num": 24
@@ -46407,7 +46407,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Šodien 87 ha platībā izvietotas Latvijas kultūrvēsturiskajiem apgabaliem (Kurzemei, Zemgalei, Vidzemei un Latgalei) raksturīgas zemnieku sētas, amatnieku darbnīcas, vējdzirnavas, kalves, podnieku un darvas cepļi.",
+    "lv": "Šodien 87 (astoņdesmit septiņi) ha platībā izvietotas Latvijas kultūrvēsturiskajiem apgabaliem (Kurzemei, Zemgalei, Vidzemei un Latgalei) raksturīgas zemnieku sētas, amatnieku darbnīcas, vējdzirnavas, kalves, podnieku un darvas cepļi.",
     "ru": "Сегодня на площади 87 гектаров размещены крестьянские усадьбы, мастерские ремесленников, ветряные мельницы, кузницы, гончарные и дегтярные печи, характерные для историко-культурных регионов Латвии (Курземе, Земгале, Видземе и Латгале).",
     "retired": false,
     "src_num": 24
@@ -46459,7 +46459,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Lielākais un nozīmīgākais ikgadējais pasākums ir amatniecības gadatirgus Latvijā, kas jau vairāk nekā 45 gadus jūnijā priecē tā apmeklētājus.",
+    "lv": "Lielākais un nozīmīgākais ikgadējais pasākums ir amatniecības gadatirgus Latvijā, kas jau vairāk nekā 45 (četrdesmit pieci) gadus jūnijā priecē tā apmeklētājus.",
     "ru": "Крупнейшим и самым значимым ежегодным событием является ярмарка ремёсел Латвии, которая вот уже более 45 лет радует своих посетителей каждый июнь.",
     "retired": false,
     "src_num": 24
@@ -46472,7 +46472,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "20. gadsimta sākumā nebija nekas neparasts, ka cilvēks dalījās ar dzērienu, lietojot vienus un tos pašus traukus.",
+    "lv": "20. (divdesmitā) gadsimta sākumā nebija nekas neparasts, ka cilvēks dalījās ar dzērienu, lietojot vienus un tos pašus traukus.",
     "ru": "В начале XX века было вполне обычным делом, когда люди пили из одной посуды.",
     "retired": false,
     "src_num": 26
@@ -46498,7 +46498,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kā risinājums radās ideja par vienreizlietojamām papīra glāzītēm, un jau ap 1909. gadu Amerikas Savienotajās Valstīs papīra glāzītes sāka izmantot vilcienos un pēc tam arī slimnīcās un skolās.",
+    "lv": "Kā risinājums radās ideja par vienreizlietojamām papīra glāzītēm, un jau ap 1909. (tūkstoš deviņi simti devīto) gadu Amerikas Savienotajās Valstīs papīra glāzītes sāka izmantot vilcienos un pēc tam arī slimnīcās un skolās.",
     "ru": "В качестве решения возникла идея одноразовых бумажных стаканчиков, и уже около 1909 года в США их начали использовать в поездах, а затем и в больницах и школах.",
     "retired": false,
     "src_num": 26
@@ -46511,7 +46511,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Atšķirīga situācija gan bija kādreizējā Padomju Savienībā, arī Rīgā, kur vēl līdz 20. gadsimta 80. gadiem no vienas glāzes pēc tās izskalošanas pie gāzētā ūdens automātiem dzēra daudzi cilvēki.",
+    "lv": "Atšķirīga situācija gan bija kādreizējā Padomju Savienībā, arī Rīgā, kur vēl līdz 20. (divdesmitā) gadsimta 80. (astoņdesmitajiem) gadiem no vienas glāzes pēc tās izskalošanas pie gāzētā ūdens automātiem dzēra daudzi cilvēki.",
     "ru": "Иначе обстояло дело в бывшем Советском Союзе, в том числе в Риге, где вплоть до 1980-х годов многие люди пили из одного стакана у автоматов с газированной водой — после его ополаскивания.",
     "retired": false,
     "src_num": 26
@@ -46550,7 +46550,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Līdz tam bija ēdienu, alus, vīna un sulas automāti, taču karsto dzērienu tirdzniecība automātos attīstījās vēlāk.",
+    "lv": "Līdz tam bija ēdienu, alus, vīna un sulas automāti, taču karsto dzērienu tirdzniecība automātos attīstījās vēlāk.",
     "ru": "До этого существовали автоматы с едой, пивом, вином и соком, однако торговля горячими напитками через автоматы начала развиваться позже.",
     "retired": false,
     "src_num": 26
@@ -46563,7 +46563,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1967. gadā Filadelfijas iedzīvotājs Alans Franks patentēja krūzes vai glāzes plastmasas vāciņu ar caurumu, kas deva iespēju dzert kafiju vai tēju, neizšļakstot to.",
+    "lv": "1967. (tūkstoš deviņi simti sešdesmit septītajā) gadā Filadelfijas iedzīvotājs Alans Franks patentēja krūzes vai glāzes plastmasas vāciņu ar caurumu, kas deva iespēju dzert kafiju vai tēju, neizšļakstot to.",
     "ru": "В 1967 году житель Филадельфии Алан Франк запатентовал пластиковую крышку с отверстием для кружки или стакана, позволявшую пить кофе или чай, не расплёскивая их.",
     "retired": false,
     "src_num": 26
@@ -46589,7 +46589,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Iespējams, to ietekmēja uzņēmums „Starbucks”, kas 80. gadu beigās ieviesa kupolveida vāciņus.",
+    "lv": "Iespējams, to ietekmēja uzņēmums „Starbucks”, kas 80. (astoņdesmito) gadu beigās ieviesa kupolveida vāciņus.",
     "ru": "Возможно, на это повлияла компания Starbucks, которая в конце 1980-х ввела в обиход куполообразные крышки.",
     "retired": false,
     "src_num": 26
@@ -46602,7 +46602,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Šajā parkā atrodami vairāk nekā 500 kultūras un vēstures pieminekļu – pilskalni, mūra pilis, baznīcas, muižas, ūdensdzirnavas, vējdzirnavas un daudz citu objektu.",
+    "lv": "Šajā parkā atrodami vairāk nekā 500 (pieci simti) kultūras un vēstures pieminekļu – pilskalni, mūra pilis, baznīcas, muižas, ūdensdzirnavas, vējdzirnavas un daudz citu objektu.",
     "ru": "На территории парка находится более 500 памятников культуры и истории — городища, каменные замки, церкви, усадьбы, водяные и ветряные мельницы и множество других объектов.",
     "retired": false,
     "src_num": 27
@@ -46628,7 +46628,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vislabāk laivu braucienā doties no maija līdz oktobrim, taču pieredzējušie apgalvo, ka ar laivu var braukt arī aukstākā laikā, galvenais, lai upe nav aizsalusi.",
+    "lv": "Vislabāk laivu braucienā doties no maija līdz oktobrim, taču pieredzējušie apgalvo, ka ar laivu var braukt arī aukstākā laikā, galvenais, lai upe nav aizsalusi.",
     "ru": "Лучшее время для лодочных прогулок — с мая по октябрь, хотя опытные туристы утверждают, что кататься на лодке можно и в холодное время года, главное — чтобы река не замёрзла.",
     "retired": false,
     "src_num": 27
@@ -46641,7 +46641,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tagad Gaujas Nacionālo parku ir iespējams iepazīt arī bezmaksas tiešsaistes tūrēs „Facebook Live” pasākumā, baudot elpu aizraujošus skatus un iepazīstot vietējo kultūru.",
+    "lv": "Tagad Gaujas Nacionālo parku ir iespējams iepazīt arī bezmaksas tiešsaistes tūrēs „Facebook Live” pasākumā, baudot elpu aizraujošus skatus un iepazīstot vietējo kultūru.",
     "ru": "Теперь познакомиться с Гауйским национальным парком можно и на бесплатных онлайн-турах в прямом эфире Facebook, наслаждаясь захватывающими видами и узнавая местную культуру.",
     "retired": false,
     "src_num": 27
@@ -46668,7 +46668,7 @@ const PHRASES = [
     "question": true,
     "has_number": false,
     "lv": "Vai zinājāt, ka Dobeli dēvē arī par ceriņu lielpilsētu?",
-    "ru": "Знаете ли вы, что Добеле называют ещё и сиреневой столицей?",
+    "ru": "Знали ли вы, что Добеле называют ещё и сиреневым большим городом?",
     "retired": false,
     "src_num": 28
   },
@@ -46693,7 +46693,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "19. gadsimta otrajā pusē mācītājs un etnogrāfs Augusts Bīlenšteins mācītājmuižā izveidoja parku, kas bija ievērojams ar daudzām retām augu sugām, tai skaitā ceriņiem.",
+    "lv": "19. (deviņpadsmitā) gadsimta otrajā pusē mācītājs un etnogrāfs Augusts Bīlenšteins mācītājmuižā izveidoja parku, kas bija ievērojams ar daudzām retām augu sugām, tai skaitā ceriņiem.",
     "ru": "Во второй половине XIX века пастор и этнограф Август Биленштейн разбил парк при пасторате, который был известен множеством редких видов растений, в том числе сиренью.",
     "retired": false,
     "src_num": 28
@@ -46706,7 +46706,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ievērojamais dārznieks un selekcionārs Pēteris Upītis 1957. gadā sāka ierīkot dārzu saulainās Dobeles pievārtē.",
+    "lv": "Ievērojamais dārznieks un selekcionārs Pēteris Upītis 1957. (tūkstoš deviņi simti piecdesmit septītajā) gadā sāka ierīkot dārzu saulainās Dobeles pievārtē.",
     "ru": "Выдающийся садовод и селекционер Петерис Упитис в 1957 году начал закладывать сад на солнечных окраинах Добеле.",
     "retired": false,
     "src_num": 28
@@ -46746,7 +46746,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "„Garšīgs” pasākums ir saldo ķiršu degustācija un novākšana jūlija sākumā, Ābolu festivāls oktobra sākumā.",
-    "ru": "«Вкусными» событиями считаются дегустация и сбор черешни в начале июля, а также Фестиваль яблок в начале октября.",
+    "ru": "«Вкусное» мероприятие — дегустация и сбор черешни в начале июля, Фестиваль яблок в начале октября.",
     "retired": false,
     "src_num": 28
   },
@@ -46771,8 +46771,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Dienu pirms Jāņiem sauc par Zāļu dienu, tās vakaru sauc par Jāņu vakaru, nakti par Jāņu nakti un nākamā diena ir paši Jāņi.",
-    "ru": "День накануне называется Днём трав, его вечер — Яновым вечером, ночь — Яновой ночью, а следующий день — это собственно сам Янов день.",
+    "lv": "Dienu pirms Jāņiem sauc par Zāļu dienu, tās vakaru sauc par Jāņu vakaru, nakti par Jāņu nakti un nākamā diena ir paši Jāņi.",
+    "ru": "День перед Янами называют Днём трав, его вечер называют Яновым вечером, ночь — Яновой ночью, а следующий день — это и есть сами Яни.",
     "retired": false,
     "src_num": 29
   },
@@ -46836,7 +46836,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Jāņa dienā dzēra alu un ēda Jāņu sieru, lai nākamajā vasarā augtu mieži un govis dotu vairāk piena.",
+    "lv": "Jāņa dienā dzēra alu un ēda Jāņu sieru, lai nākamajā vasarā augtu mieži un govis dotu vairāk piena.",
     "ru": "В Янов день пили пиво и ели янов сыр — чтобы на следующий год уродился ячмень и коровы давали больше молока.",
     "retired": false,
     "src_num": 29
@@ -46901,7 +46901,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Plašajā ražotnē top dzirkstošais dzēriens „Birzī”: bērzu sulas ar piecām dažādām garšām.",
+    "lv": "Plašajā ražotnē top dzirkstošais dzēriens „Birzī”: bērzu sulas ar piecām dažādām garšām.",
     "ru": "На большом производстве выпускается игристый напиток «Бирзи» — берёзовый сок пяти разных вкусов.",
     "retired": false,
     "src_num": 30
@@ -46927,7 +46927,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tajā paredzēts iestādīt aptuveni 32 dažādas bērzu, kļavu un valriekstu sugas, no kurām pavasarī iegūstama pārtikā lietojama sula.",
+    "lv": "Tajā paredzēts iestādīt aptuveni 32 (divdesmit divas) dažādas bērzu, kļavu un valriekstu sugas, no kurām pavasarī iegūstama pārtikā lietojama sula.",
     "ru": "Там планируется высадить около 32 различных видов берёз, клёнов и грецких орехов, из которых весной можно получать съедобный сок.",
     "retired": false,
     "src_num": 30
@@ -46940,7 +46940,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "„Šie valrieksti sasniedz 18–20 metru augstumu.",
+    "lv": "„Šie valrieksti sasniedz 18 (astoņpadsmit)–20 (divdesmit) metru augstumu.",
     "ru": "«Эти орехи достигают 18–20 метров в высоту.",
     "retired": false,
     "src_num": 30
@@ -46979,7 +46979,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Iepazīties ar parku un koku šķirnēm ir iespējams jau tagad, bet klātienē vērot un piedalīties sulu tecināšanas procesā varēs tikai pēc aptuveni 12 gadiem.",
+    "lv": "Iepazīties ar parku un koku šķirnēm ir iespējams jau tagad, bet klātienē vērot un piedalīties sulu tecināšanas procesā varēs tikai pēc aptuveni 12 (divpadsmit) gadiem.",
     "ru": "Познакомиться с парком и сортами деревьев можно уже сейчас, однако лично наблюдать за сбором сока и участвовать в нём получится лишь примерно через 12 лет.",
     "retired": false,
     "src_num": 30
@@ -47018,8 +47018,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tā ir vieta, kur var redzēt divu „jūru” –  atklātās Baltijas jūras un Rīgas līča – viļņu sastapšanos.",
-    "ru": "Здесь можно наблюдать, как встречаются волны двух «морей» — открытой Балтики и Рижского залива.",
+    "lv": "Tā ir vieta, kur var redzēt divu „jūru” – atklātās Baltijas jūras un Rīgas līča – viļņu sastapšanos.",
+    "ru": "Это место, где можно увидеть встречу волн двух «морей» — открытого Балтийского моря и Рижского залива.",
     "retired": false,
     "src_num": 31
   },
@@ -47031,7 +47031,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vētras laikā šie viļņi, kas triecas cits citam pretī, var sasniegt 7 metru augstumu.",
+    "lv": "Vētras laikā šie viļņi, kas triecas cits citam pretī, var sasniegt 7 (septiņi) metru augstumu.",
     "ru": "Во время шторма сталкивающиеся волны могут достигать 7 метров в высоту.",
     "retired": false,
     "src_num": 31
@@ -47044,7 +47044,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Sauszemes raga turpinājums iestiepjas 6 kilometrus jūrā, 0,5 līdz 3 metru dziļumā, tādēļ te ir viena no bīstamākajām kuģošanas vietām Baltijas jūrā.",
+    "lv": "Sauszemes raga turpinājums iestiepjas 6 (seši) kilometrus jūrā, 0 (nulle),5 (pieci) līdz 3 (trīs) metru dziļumā, tādēļ te ir viena no bīstamākajām kuģošanas vietām Baltijas jūrā.",
     "ru": "Подводное продолжение мыса уходит в море на 6 километров при глубине от 0,5 до 3 метров, поэтому это одно из самых опасных для судоходства мест на Балтике.",
     "retired": false,
     "src_num": 31
@@ -47057,7 +47057,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Sēkļa galā atrodas Kolkas bāka, kura uz mākslīgas salas tika uzcelta 1884.gadā.",
+    "lv": "Sēkļa galā atrodas Kolkas bāka, kura uz mākslīgas salas tika uzcelta 1884. (tūkstoš astoņi simti astoņdesmit ceturtajā) gadā.",
     "ru": "На оконечности мели стоит Колкский маяк, возведённый на искусственном острове в 1884 году.",
     "retired": false,
     "src_num": 31
@@ -47083,7 +47083,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Dabas tūristiem Kolkasrags zināms kā putnu vērošanas vieta, jo šeit ir intensīvākais putnu migrācijas ceļš Latvijas teritorijā.",
+    "lv": "Dabas tūristiem Kolkasrags zināms kā putnu vērošanas vieta, jo šeit ir intensīvākais putnu migrācijas ceļš Latvijas teritorijā.",
     "ru": "Среди любителей природного туризма Колкасрагс известен как место для наблюдения за птицами, поскольку здесь проходит наиболее интенсивный миграционный маршрут птиц на территории Латвии.",
     "retired": false,
     "src_num": 31
@@ -47096,7 +47096,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Dažās aprīļa dienās ik stundu to pārlido 30 līdz 50 tūkstoši putnu.",
+    "lv": "Dažās aprīļa dienās ik stundu to pārlido 30 (trīsdesmit) līdz 50 (piecdesmit) tūkstoši putnu.",
     "ru": "В отдельные апрельские дни над мысом каждый час пролетают от 30 до 50 тысяч птиц.",
     "retired": false,
     "src_num": 31
@@ -47148,7 +47148,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pastaigu takas ierīkotas aptuveni 4 – 5 km garumā, ar atšķirīgām grūtības pakāpēm.",
+    "lv": "Pastaigu takas ierīkotas aptuveni 4 (četri) – 5 (pieci) km garumā, ar atšķirīgām grūtības pakāpēm.",
     "ru": "Прогулочные тропы протяжённостью около 4–5 км проложены с разным уровнем сложности.",
     "retired": false,
     "src_num": 33
@@ -47174,7 +47174,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Taku apmeklējumam vidēji nepieciešamas 2 līdz 3 stundas.",
+    "lv": "Taku apmeklējumam vidēji nepieciešamas 2 (divas) līdz 3 (trīs) stundas.",
     "ru": "На прохождение троп в среднем уходит от 2 до 3 часов.",
     "retired": false,
     "src_num": 33
@@ -47188,7 +47188,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Laika gaitā sekojuši vēl daudzi citi dažādu apstākļu dēļ pamesti, ievainoti vai pieradināti dzīvnieku mazuļi.",
-    "ru": "Со временем здесь появились и многие другие детёныши животных — брошенные, раненые или ручные — по самым разным причинам.",
+    "ru": "Со временем за ними последовали и многие другие детёныши животных — брошенные, раненые или прирученные по разным причинам.",
     "retired": false,
     "src_num": 33
   },
@@ -47200,7 +47200,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Līgatnes iemītniekiem katram ir savs vārds – te mitinās, piemēram, lācene Ilzīte, mežakuilis Ansis, vāveres Tomiņa un Čita, lapsu puiši Lapsis un Henrijs, alņu māte Mirga, meža pūces Aktrise un Rūķītis un daudzi citi dzīvnieki.",
+    "lv": "Līgatnes iemītniekiem katram ir savs vārds – te mitinās, piemēram, lācene Ilzīte, mežakuilis Ansis, vāveres Tomiņa un Čita, lapsu puiši Lapsis un Henrijs, alņu māte Mirga, meža pūces Aktrise un Rūķītis un daudzi citi dzīvnieki.",
     "ru": "У каждого из лигатненских обитателей есть своё имя — здесь живут, например, медведица Илзите, кабан Янсис, белки Томиня и Чита, лисята Лапсис и Хенрийс, лосиха Мирга, неясыти Актриса и Рукитис, а также многие другие животные.",
     "retired": false,
     "src_num": 33
@@ -47291,7 +47291,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Sievietes vēl ilgu laiku sacensībās piedalījās, ģērbušās kleitās līdz ceļgaliem un kurpēs ar nelielu papēdīti.",
+    "lv": "Sievietes vēl ilgu laiku sacensībās piedalījās, ģērbušās kleitās līdz ceļgaliem un kurpēs ar nelielu papēdīti.",
     "ru": "Ещё долгое время женщины выступали на соревнованиях в платьях до колен и туфлях на небольшом каблуке.",
     "retired": false,
     "src_num": 34
@@ -47343,7 +47343,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Mūsdienās ar ozola zariem ir rotāts Latvijas Republikas ģerbonis, naudas zīmes, firmu un organizāciju emblēmas.",
+    "lv": "Mūsdienās ar ozola zariem ir rotāts Latvijas Republikas ģerbonis, naudas zīmes, firmu un organizāciju emblēmas.",
     "ru": "Сегодня дубовые ветви украшают герб Латвийской Республики, денежные знаки, эмблемы компаний и организаций.",
     "retired": false,
     "src_num": 35
@@ -47369,7 +47369,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vēl arvien ozola zaru vītnes ir rotājums ne tikai vasaras saulgriežos, bet arī ģimenes godos, valsts svētkos, Dziesmu svētkos, atklājot un iesvētot jaunas ēkas, tiltus un pieminekļus.",
+    "lv": "Vēl arvien ozola zaru vītnes ir rotājums ne tikai vasaras saulgriežos, bet arī ģimenes godos, valsts svētkos, Dziesmu svētkos, atklājot un iesvētot jaunas ēkas, tiltus un pieminekļus.",
     "ru": "Венки из дубовых ветвей по-прежнему служат украшением не только на летнем солнцестоянии, но и на семейных торжествах, государственных праздниках, Празднике песни, при открытии и освящении новых зданий, мостов и памятников.",
     "retired": false,
     "src_num": 35
@@ -47382,7 +47382,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Par dižozolu sauc ozolu ar apkārtmēru virs 4 metriem.",
+    "lv": "Par dižozolu sauc ozolu ar apkārtmēru virs 4 (četri) metriem.",
     "ru": "Дубом-великаном называют дерево с обхватом ствола более 4 метров.",
     "retired": false,
     "src_num": 35
@@ -47395,7 +47395,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas lielākie dižozoli pārsniedz 9 metru apkārtmēru.",
+    "lv": "Latvijas lielākie dižozoli pārsniedz 9 (deviņi) metru apkārtmēru.",
     "ru": "Самые крупные латвийские дубы-великаны превышают 9 метров в обхвате.",
     "retired": false,
     "src_num": 35
@@ -47421,7 +47421,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pirmo reizi Dziesmu svētki notika 1873. gadā, un šī tradīcija turpinās līdz pat mūsdienām.",
+    "lv": "Pirmo reizi Dziesmu svētki notika 1873. (tūkstoš astoņi simti septiņdesmit trešajā) gadā, un šī tradīcija turpinās līdz pat mūsdienām.",
     "ru": "Первый Праздник песни состоялся в 1873 году, и эта традиция продолжается по сей день.",
     "retired": false,
     "src_num": 36
@@ -47447,7 +47447,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Par koru kariem sauc koru konkursu, kurš notiek Dziesmu un deju svētku laikā.",
+    "lv": "Par koru kariem sauc koru konkursu, kurš notiek Dziesmu un deju svētku laikā.",
     "ru": "Хоровыми битвами называют хоровой конкурс, который проводится в рамках Праздника песни и танца.",
     "retired": false,
     "src_num": 36
@@ -47486,7 +47486,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas dziesmu svētku tradīcijas, tāpat kā Igaunijas un Lietuvas dziesmu svētku tradīcijas, kopš 2003. gadā ir iekļautas UNESCO cilvēces nemateriālā kultūras mantojuma sarakstā.",
+    "lv": "Latvijas dziesmu svētku tradīcijas, tāpat kā Igaunijas un Lietuvas dziesmu svētku tradīcijas, kopš 2003. (divi tūkstoši trešajā) gadā ir iekļautas UNESCO cilvēces nemateriālā kultūras mantojuma sarakstā.",
     "ru": "Традиции латвийского Праздника песни, как и аналогичные традиции Эстонии и Литвы, с 2003 года включены в список нематериального культурного наследия человечества ЮНЕСКО.",
     "retired": false,
     "src_num": 36
@@ -47499,7 +47499,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "2005. gadā tika pieņemts Dziesmu un deju svētku likums.",
+    "lv": "2005. (divi tūkstoši piektajā) gadā tika pieņemts Dziesmu un deju svētku likums.",
     "ru": "В 2005 году был принят Закон о празднике песни и танца.",
     "retired": false,
     "src_num": 36
@@ -47655,7 +47655,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tā 1695. gadā Rīgas rātskungs Jirgens Helms blakus Rātslaukumam uzbūvēja ēku, ko tagad zinām kā Mencendorfa namu.",
+    "lv": "Tā 1695. (tūkstoš seši simti deviņdesmit piektajā) gadā Rīgas rātskungs Jirgens Helms blakus Rātslaukumam uzbūvēja ēku, ko tagad zinām kā Mencendorfa namu.",
     "ru": "Так, в 1695 году рижский ратман Юрген Хельм возвёл рядом с Ратушной площадью здание, которое мы сегодня знаем как дом Менцендорфа.",
     "retired": false,
     "src_num": 38
@@ -47681,7 +47681,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Mencendorfu dzimtas īpašumā nams bija no 1900.–1939. gadam.",
+    "lv": "Mencendorfu dzimtas īpašumā nams bija no 1900. (tūkstoš deviņsimtajā)–1939. (tūkstoš deviņi simti trīsdesmit devītajam) gadam.",
     "ru": "Дом находился в собственности семьи Менцендорфов с 1900 по 1939 год.",
     "retired": false,
     "src_num": 38
@@ -47707,7 +47707,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pēc šo darbu pabeigšanas 1992. gada 18. maijā ēkā sāka darboties Rīgas Vēstures un kuģniecības muzeja filiāle – rīdzinieku sadzīves kultūras muzejs.",
+    "lv": "Pēc šo darbu pabeigšanas 1992. (tūkstoš deviņi simti deviņdesmit otrā) gada 18. (astoņpadsmitajā) maijā ēkā sāka darboties Rīgas Vēstures un kuģniecības muzeja filiāle – rīdzinieku sadzīves kultūras muzejs.",
     "ru": "По завершении работ 18 мая 1992 года в здании открылся филиал Рижского музея истории и мореходства — музей быта и культуры рижан.",
     "retired": false,
     "src_num": 38
@@ -47733,7 +47733,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tā aizsākta apmēram 15.gadsimtā Livonijā (pašreizējās Latvijas un Igaunijas teritorijā) un 16.gadsimtā Ziemeļvācijā.",
+    "lv": "Tā aizsākta apmēram 15. (piecpadsmitajā) gadsimtā Livonijā (pašreizējās Latvijas un Igaunijas teritorijā) un 16. (sešpadsmitajā) gadsimtā Ziemeļvācijā.",
     "ru": "Она зародилась приблизительно в XV веке в Ливонии (на территории нынешних Латвии и Эстонии) и в XVI веке в Северной Германии.",
     "retired": false,
     "src_num": 39
@@ -47760,7 +47760,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Daudzas pilsētas pretendē uz šo godu – gan Rīga, gan Tallina, kur egļu rotāšanu sākušas Melngalvju brālības, gan Strasbūra un vēl citas.",
-    "ru": "На это звание претендуют сразу несколько городов — Рига, Таллин, где традицию украшать ёлки ввели братства Черноголовых, Страсбург и другие.",
+    "ru": "На эту честь претендуют многие города — и Рига, и Таллин, где украшать ёлки начали братства Черноголовых, и Страсбург, и другие.",
     "retired": false,
     "src_num": 39
   },
@@ -47837,7 +47837,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tā ir parastā jeb Eiropas egle, kas ir otra vērtīgākā mūsu mežu skuju koku suga.",
+    "lv": "Tā ir parastā jeb Eiropas egle, kas ir otra vērtīgākā mūsu mežu skuju koku suga.",
     "ru": "Это обыкновенная, или европейская, ель — второй по ценности хвойный вид в латвийских лесах.",
     "retired": false,
     "src_num": 39
@@ -47863,7 +47863,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Drīkst cirst vietās zem elektrolīnijām, grāvju malās un ne resnāku kā 12 cm pie zemes.",
+    "lv": "Drīkst cirst vietās zem elektrolīnijām, grāvju malās un ne resnāku kā 12 (divpadsmit) cm pie zemes.",
     "ru": "Рубить разрешается под линиями электропередач, по краям канав, причём ствол дерева не должен превышать 12 см в диаметре у основания.",
     "retired": false,
     "src_num": 39
@@ -47876,7 +47876,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Nav gan īsti zināms, vai šo konfekšu receptes oriģināls ir latviešu, jo līdzīgas konfektes atrodamas arī citās Eiropas zemēs, taču daudzi saldumu mīļotāji ir atzinuši, ka citur ražotās „Gotiņas” nav tik garšīgas kā Latvijas produkts.",
+    "lv": "Nav gan īsti zināms, vai šo konfekšu receptes oriģināls ir latviešu, jo līdzīgas konfektes atrodamas arī citās Eiropas zemēs, taču daudzi saldumu mīļotāji ir atzinuši, ka citur ražotās „Gotiņas” nav tik garšīgas kā Latvijas produkts.",
     "ru": "Правда, точно неизвестно, является ли рецепт этих конфет исконно латвийским, ведь похожие сладости встречаются и в других европейских странах. Однако многие любители сладкого признают, что «Готиня», сделанная в других местах, не такая вкусная, как латвийская.",
     "retired": false,
     "src_num": 40
@@ -47889,7 +47889,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Māksla slēpjas vārīšanas procesā, kas ietekmē konfekšu kvalitāti un garšas nianses.",
+    "lv": "Māksla slēpjas vārīšanas procesā, kas ietekmē konfekšu kvalitāti un garšas nianses.",
     "ru": "Всё мастерство заключается в процессе варки, который определяет качество и вкусовые тонкости конфет.",
     "retired": false,
     "src_num": 40
@@ -47902,7 +47902,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vārīšana notiek augstā temperatūrā.",
+    "lv": "Vārīšana notiek augstā temperatūrā.",
     "ru": "Варка происходит при высокой температуре.",
     "retired": false,
     "src_num": 40
@@ -47928,7 +47928,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pēc tam tinējas masu ar asu nazi sagriež slejās, izgriež konfekšu formas un ietin tās papīriņos.",
+    "lv": "Pēc tam tinējas masu ar asu nazi sagriež slejās, izgriež konfekšu formas un ietin tās papīriņos.",
     "ru": "Затем работницы острым ножом нарезают массу полосками, вырезают форму конфет и заворачивают их в обёртки.",
     "retired": false,
     "src_num": 40
@@ -47941,7 +47941,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas konfektes no citiem ražojumiem atšķir tas, ka „Gotiņas” no piena\nieliešanas katlā līdz iepakošanai ir tikai un vienīgi roku darbs.",
+    "lv": "Latvijas konfektes no citiem ražojumiem atšķir tas, ka „Gotiņas” no piena\nieliešanas katlā līdz iepakošanai ir tikai un vienīgi roku darbs.",
     "ru": "Латвийские конфеты отличаются от других продуктов тем, что «Готиня» — от заливки молока в котёл до упаковки — является исключительно ручным трудом.",
     "retired": false,
     "src_num": 40
@@ -47993,8 +47993,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Diezin vai atradīsies daudz rīdzinieku, kuri bērnībā kaut reizi nebūs apmeklējuši šo jauko vietu priežu mežā pie Ķīšezera.” \nMūsdienās zoodārzs var lepoties ar pavisam jaunām un mūsdienīgām mītnēm – Žirafu māju, Tropu māju, Lauku sētu, Tīģeru mītni u.c.",
-    "ru": "Вряд ли найдётся много рижан, которые ни разу в детстве не побывали в этом чудесном месте в сосновом лесу у озера Кишэзерс».\nСегодня зоопарк может похвастаться совершенно новыми и современными вольерами — Домом жирафов, Тропическим домом, Деревенским двором, Тигриным вольером и другими.",
+    "lv": "Diezin vai atradīsies daudz rīdzinieku, kuri bērnībā kaut reizi nebūs apmeklējuši šo jauko vietu priežu mežā pie Ķīšezera.” \nMūsdienās zoodārzs var lepoties ar pavisam jaunām un mūsdienīgām mītnēm – Žirafu māju, Tropu māju, Lauku sētu, Tīģeru mītni u.c.",
+    "ru": "Вряд ли найдётся много рижан, которые в детстве ни разу не побывали в этом чудесном месте в сосновом бору у озера Кишэзерс».",
     "retired": false,
     "src_num": 41
   },
@@ -48006,7 +48006,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vairāk nekā 90 šeit apskatāmo sugu iekļautas Pasaules Sarkanajā grāmatā.",
+    "lv": "Vairāk nekā 90 (deviņdesmit) šeit apskatāmo sugu iekļautas Pasaules Sarkanajā grāmatā.",
     "ru": "Более 90 видов, представленных здесь, занесены в Международную Красную книгу.",
     "retired": false,
     "src_num": 41
@@ -48019,7 +48019,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Zoodārzs piedalās 32 Eiropas apdraudēto sugu vairošanas programmās.",
+    "lv": "Zoodārzs piedalās 32 (divdesmit divās) Eiropas apdraudēto sugu vairošanas programmās.",
     "ru": "Зоопарк участвует в 32 европейских программах по разведению видов, находящихся под угрозой исчезновения.",
     "retired": false,
     "src_num": 41
@@ -48032,7 +48032,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latgale ir kultūrvēsturisks novads Latvijas austrumdaļā.",
+    "lv": "Latgale ir kultūrvēsturisks novads Latvijas austrumdaļā.",
     "ru": "Латгалия — культурно-исторический регион на востоке Латвии.",
     "retired": false,
     "src_num": 42
@@ -48045,7 +48045,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Atšķirībā no pārējās Latvijas, kur dominējošā konfesija ir luterisms, Latgalē dominējošā ir Romas katoļu baznīca.",
+    "lv": "Atšķirībā no pārējās Latvijas, kur dominējošā konfesija ir luterisms, Latgalē dominējošā ir Romas katoļu baznīca.",
     "ru": "В отличие от остальной Латвии, где господствует лютеранство, в Латгалии преобладает Римско-католическая церковь.",
     "retired": false,
     "src_num": 42
@@ -48058,7 +48058,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Aglonas bazilika ir viens no lielākajiem Baltijas katolicisma centriem, kas katru gadu pulcē daudzus tūkstošus svētceļnieku.",
+    "lv": "Aglonas bazilika ir viens no lielākajiem Baltijas katolicisma centriem, kas katru gadu pulcē daudzus tūkstošus svētceļnieku.",
     "ru": "Аглонская базилика — один из крупнейших католических центров Прибалтики, ежегодно собирающий десятки тысяч паломников.",
     "retired": false,
     "src_num": 42
@@ -48084,7 +48084,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latgales kultūras tradīcijas – valoda,  tautasdziesmas, dejas, amatniecība veido nozīmīgu Latvijas kultūras daļu.",
+    "lv": "Latgales kultūras tradīcijas – valoda, tautasdziesmas, dejas, amatniecība veido nozīmīgu Latvijas kultūras daļu.",
     "ru": "Культурные традиции Латгалии — язык, народные песни, танцы, ремёсла — составляют важную часть культуры Латвии.",
     "retired": false,
     "src_num": 42
@@ -48136,7 +48136,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Šobrīd Āgenskalnā ir apskatāms Pārdaugavas senākais 18.–19. gs. vienlaidus apbūves rajons ar seno ielu tīklu – Nometņu, Slokas, Eduarda Smiļģa un Talsu ielu.",
+    "lv": "Šobrīd Āgenskalnā ir apskatāms Pārdaugavas senākais 18. (astoņpadsmitajā)–19. (deviņpadsmitajā) gs. vienlaidus apbūves rajons ar seno ielu tīklu – Nometņu, Slokas, Eduarda Smiļģa un Talsu ielu.",
     "ru": "Сейчас в Агенскалнсе можно увидеть старейший в Задвинье квартал сплошной застройки XVIII–XIX веков с исторической сетью улиц — Нометню, Слокас, Эдуарда Смилгя и Талсу.",
     "retired": false,
     "src_num": 43
@@ -48149,7 +48149,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "20. gadsimta sākumā par Āgenskalna sabierdisko centru sāka veidoties tagadējais Āgenskalna tirgus rajons, kas kādreiz atradās pašā priekšpilsētas nomalē.",
+    "lv": "20. (divdesmitā) gadsimta sākumā par Āgenskalna sabierdisko centru sāka veidoties tagadējais Āgenskalna tirgus rajons, kas kādreiz atradās pašā priekšpilsētas nomalē.",
     "ru": "В начале XX века вокруг общественного центра Агенскалнса начал формироваться нынешний район Агенскалнского рынка, который когда-то находился на самой окраине предместья.",
     "retired": false,
     "src_num": 43
@@ -48162,7 +48162,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Nometņu ielā redzama vislielākā apbūves dažādība – gan 19. gadsimtā celtās daudzas koka ēkas, gan 20. gadsimta sākumā būvēti mūra daudzdzīvokļu nami.",
+    "lv": "Nometņu ielā redzama vislielākā apbūves dažādība – gan 19. (deviņpadsmitajā) gadsimtā celtās daudzas koka ēkas, gan 20. (divdesmitā) gadsimta sākumā būvēti mūra daudzdzīvokļu nami.",
     "ru": "На улице Нометню наблюдается наибольшее разнообразие застройки: здесь соседствуют многочисленные деревянные дома XIX века и кирпичные многоквартирные здания начала XX века.",
     "retired": false,
     "src_num": 43
@@ -48175,7 +48175,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pirmā un vienīgā mūra ēka visā Āgenskalna tirgus rajonā bija Mārupes ielā 1.",
+    "lv": "Pirmā un vienīgā mūra ēka visā Āgenskalna tirgus rajonā bija Mārupes ielā 1. (pirmais)",
     "ru": "Первым и единственным каменным зданием во всём районе Агенскалнского рынка был дом по улице Марупес, 1.",
     "retired": false,
     "src_num": 43
@@ -48188,7 +48188,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Āgenskalnā tika realizēti daži jauni projekti, piemēram, Nometņu ielā 32/3 un Daugavgrīvas ielā 31, kā neliela senā Āgenskalna oāze ir saglabājusies apbūve gar Nometņu ielu.",
+    "lv": "Āgenskalnā tika realizēti daži jauni projekti, piemēram, Nometņu ielā 32 (trīsdesmit divi)/3 (trīs) un Daugavgrīvas ielā 31 (trīsdesmit viens), kā neliela senā Āgenskalna oāze ir saglabājusies apbūve gar Nometņu ielu.",
     "ru": "В Агенскалнсе были реализованы несколько новых проектов — например, на улице Нометню, 32/3, и улице Даугавгривас, 31. Как небольшой оазис старого Агенскалнса сохранилась застройка вдоль улицы Нометню.",
     "retired": false,
     "src_num": 43
@@ -48202,7 +48202,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Te labi jutīsies gan dabas, gan vēstures, gan vienkārši romantiskas atpūtas mīļotāji.",
-    "ru": "Здесь хорошо будет и любителям природы, и ценителям истории, и тем, кто просто ищет романтического отдыха.",
+    "ru": "Здесь хорошо будет и любителям природы, и любителям истории, и любителям просто романтического отдыха.",
     "retired": false,
     "src_num": 44
   },
@@ -48227,7 +48227,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Malās ir nelielas vienstāvu mājiņas ar sarkaniem dakstiņu  jumtiem.",
+    "lv": "Malās ir nelielas vienstāvu mājiņas ar sarkaniem dakstiņu jumtiem.",
     "ru": "По сторонам стоят небольшие одноэтажные домики с красными черепичными крышами.",
     "retired": false,
     "src_num": 44
@@ -48240,7 +48240,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Arī pils vēsture jau mērāma vairāk nekā 800 gadu garumā.",
+    "lv": "Arī pils vēsture jau mērāma vairāk nekā 800 (astoņi simti) gadu garumā.",
     "ru": "История замка насчитывает уже более 800 лет.",
     "retired": false,
     "src_num": 44
@@ -48266,7 +48266,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ja apmeklēsit Cēsis vasarā, jums ir liela iespēja apmeklēt kādu no daudzajiem pasākumiem, kas regulāri notiek  parkā – koncerti, festivāli, teātra un operas izrādes.",
+    "lv": "Ja apmeklēsit Cēsis vasarā, jums ir liela iespēja apmeklēt kādu no daudzajiem pasākumiem, kas regulāri notiek parkā – koncerti, festivāli, teātra un operas izrādes.",
     "ru": "Если приедете в Цесис летом, у вас будет хорошая возможность попасть на одно из многочисленных мероприятий, которые регулярно проходят в парке: концерты, фестивали, театральные и оперные постановки.",
     "retired": false,
     "src_num": 44
@@ -48305,7 +48305,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "20.gadsimta 30.gados uz pulksteņa parādījās pirmais uzraksts „Riegert” par godu Teodora Rigerta šokolādes fabrikai.",
+    "lv": "20. (divdesmitā) gadsimta 30. (trīsdesmitajos) gados uz pulksteņa parādījās pirmais uzraksts „Riegert” par godu Teodora Rigerta šokolādes fabrikai.",
     "ru": "В 1930-х годах на часах появилась первая надпись «Riegert» — в честь шоколадной фабрики Теодора Ригерта.",
     "retired": false,
     "src_num": 45
@@ -48318,7 +48318,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1936. gadā fabrika mainīja nosaukumu un kļuva par „Laimu”.",
+    "lv": "1936. (tūkstoš deviņi simti trīsdesmit sestajā) gadā fabrika mainīja nosaukumu un kļuva par „Laimu”.",
     "ru": "В 1936 году фабрика сменила название и стала называться «Лайма».",
     "retired": false,
     "src_num": 45
@@ -48344,7 +48344,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pēckara gados pulksteni izmantoja kā informācijas stendu, bet uzraksti uz tā vairākkārt mainījās.",
+    "lv": "Pēckara gados pulksteni izmantoja kā informācijas stendu, bet uzraksti uz tā vairākkārt mainījās.",
     "ru": "В послевоенные годы часы использовались как информационный стенд, а надписи на них неоднократно менялись.",
     "retired": false,
     "src_num": 45
@@ -48357,7 +48357,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pulksteni atjaunoja pēc 1936. gada parauga, ierīkoja apgaismojumu un jaunu, Šveicē izgatavotu pulksteņa mehānismu.",
+    "lv": "Pulksteni atjaunoja pēc 1936. (tūkstoš deviņi simti trīsdesmit sestā) gada parauga, ierīkoja apgaismojumu un jaunu, Šveicē izgatavotu pulksteņa mehānismu.",
     "ru": "Часы восстановили по образцу 1936 года, установили освещение и новый механизм швейцарского производства.",
     "retired": false,
     "src_num": 45
@@ -48370,7 +48370,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tagad „Laimas” pulksteni uzskata par precīzāko pilsētā – divreiz  diennaktī laiku precizē no satelīta, bet pulksteņa mehānismam ir mūža garantija.",
+    "lv": "Tagad „Laimas” pulksteni uzskata par precīzāko pilsētā – divreiz diennaktī laiku precizē no satelīta, bet pulksteņa mehānismam ir mūža garantija.",
     "ru": "Сегодня часы «Лайма» считаются самыми точными в городе: дважды в сутки время синхронизируется со спутником, а на механизм часов предоставляется пожизненная гарантия.",
     "retired": false,
     "src_num": 45
@@ -48383,7 +48383,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Laukums pie Laimas pulksteņa ir viena no populārākajām tikšanās vietām gan rīdzinieku, gan pilsētas viesu vidū.",
+    "lv": "Laukums pie Laimas pulksteņa ir viena no populārākajām tikšanās vietām gan rīdzinieku, gan pilsētas viesu vidū.",
     "ru": "Площадь у часов «Лайма» — одно из самых популярных мест для встреч как среди рижан, так и среди гостей города.",
     "retired": false,
     "src_num": 45
@@ -48396,7 +48396,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Sklandrausis jeb dižrausis ir tradicionāls lībiešu ēdiens, kas vēlāk aizgūts Kurzemes latviešu virtuvē.",
+    "lv": "Sklandrausis jeb dižrausis ir tradicionāls lībiešu ēdiens, kas vēlāk aizgūts Kurzemes latviešu virtuvē.",
     "ru": "Скландраусис, или дижраусис, — традиционное ливское блюдо, впоследствии вошедшее в кухню курземских латышей.",
     "retired": false,
     "src_num": 48
@@ -48422,7 +48422,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tam ir kārtains kartupeļu un  burkānu pildījums un pa virsu tas ir apbērts ar ķimenēm.",
+    "lv": "Tam ir kārtains kartupeļu un burkānu pildījums un pa virsu tas ir apbērts ar ķimenēm.",
     "ru": "Начинка у него слоёная — из картофеля и моркови, а сверху пирог посыпан тмином.",
     "retired": false,
     "src_num": 48
@@ -48435,7 +48435,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pēc tam, kad 16. gadsimtā Kurzemes hercogistē ieveda un sāka audzēt burkānus, bet pēc 17. gadsimta – arī kartupeļus, plāceņus papildināja burkānu kartupeļu pildījums.",
+    "lv": "Pēc tam, kad 16. (sešpadsmitajā) gadsimtā Kurzemes hercogistē ieveda un sāka audzēt burkānus, bet pēc 17. (septiņpadsmitā) gadsimta – arī kartupeļus, plāceņus papildināja burkānu kartupeļu pildījums.",
     "ru": "Позднее, когда в XVI веке в Курляндском герцогстве начали выращивать морковь, а после XVII века — и картофель, лепёшку стали дополнять морковно-картофельной начинкой.",
     "retired": false,
     "src_num": 48
@@ -48461,7 +48461,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Saulgriežu mielastā sklandrausis simbolizē saules enerģiju.",
+    "lv": "Saulgriežu mielastā sklandrausis simbolizē saules enerģiju.",
     "ru": "На праздничном столе в дни солнцестояния скландраусис символизирует солнечную энергию.",
     "retired": false,
     "src_num": 48
@@ -48487,7 +48487,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ēdot izteikti jūtama maizes izstrādājuma garša, ko dod mīklas pamatne, bet garšu buķetē dominē burkānu garša.",
+    "lv": "Ēdot izteikti jūtama maizes izstrādājuma garša, ko dod mīklas pamatne, bet garšu buķetē dominē burkānu garša.",
     "ru": "При еде отчётливо чувствуется хлебный вкус теста, однако в общем вкусовом букете преобладает морковная нота.",
     "retired": false,
     "src_num": 48
@@ -48500,7 +48500,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Sklandrausis bija pirmais no Eiropas Savienības reģistrā „Produkti ar garantētām tradicionālām īpatnībām” iekļautajiem Latvijas pārtikas produktiem.",
+    "lv": "Sklandrausis bija pirmais no Eiropas Savienības reģistrā „Produkti ar garantētām tradicionālām īpatnībām” iekļautajiem Latvijas pārtikas produktiem.",
     "ru": "Скландраусис стал первым латвийским продуктом питания, внесённым в реестр Евросоюза «Продукты с гарантированными традиционными особенностями».",
     "retired": false,
     "src_num": 48
@@ -48552,7 +48552,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "No idejas līdz pastmarkas drukāšanai gan ir diezgan ilgs laiks,  jo vismaz pusgadu pirms drukāšanas marka ir jāapstiprina speciālajā komisijā.",
+    "lv": "No idejas līdz pastmarkas drukāšanai gan ir diezgan ilgs laiks, jo vismaz pusgadu pirms drukāšanas marka ir jāapstiprina speciālajā komisijā.",
     "ru": "От идеи до печати марки проходит немало времени: марку необходимо утвердить в специальной комиссии не менее чем за полгода до начала печати.",
     "retired": false,
     "src_num": 49
@@ -48617,7 +48617,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Piemēram, 90. gadu sākumā izdeva pastmarkas ar vērtību Latvijas rubļos, kas tagad vairs nav derīgas.",
+    "lv": "Piemēram, 90. (deviņdesmito) gadu sākumā izdeva pastmarkas ar vērtību Latvijas rubļos, kas tagad vairs nav derīgas.",
     "ru": "Например, в начале 1990-х годов выпускались марки с номиналом в латвийских рублях, которые сегодня уже недействительны.",
     "retired": false,
     "src_num": 49
@@ -48644,7 +48644,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Lai vērstu lielāku uzmanību dabas aizsardzībai, pasaules valstīm ieteica izvēlēties savas valsts „nacionālo putnu”.",
-    "ru": "Чтобы привлечь больше внимания к охране природы, странам мира было рекомендовано выбрать своего «национального птица».",
+    "ru": "Чтобы привлечь больше внимания к охране природы, странам мира рекомендовали выбрать «национальную птицу» своей страны.",
     "retired": false,
     "src_num": 51
   },
@@ -48669,7 +48669,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas ornitologi 1965. gadā nolēma par Latvijas nacionālo putnu atzīt balto cielavu ar domu, ka ikviens ir redzējis cielaviņu, šo mazo, bet tik dzīvīgo un darbīgo putniņu, jo tas vienmēr uzturas atklātās teritorijās – lauku sētās, ciemos un pat lielās pilsētās.",
+    "lv": "Latvijas ornitologi 1965. (tūkstoš deviņi simti sešdesmit piektajā) gadā nolēma par Latvijas nacionālo putnu atzīt balto cielavu ar domu, ka ikviens ir redzējis cielaviņu, šo mazo, bet tik dzīvīgo un darbīgo putniņu, jo tas vienmēr uzturas atklātās teritorijās – lauku sētās, ciemos un pat lielās pilsētās.",
     "ru": "В 1965 году латвийские орнитологи решили признать белую трясогузку национальной птицей Латвии — исходя из того, что эту маленькую, но такую живую и деятельную птичку видел каждый: она всегда держится на открытых местах — в деревенских усадьбах, сёлах и даже в крупных городах.",
     "retired": false,
     "src_num": 51
@@ -48695,7 +48695,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tautasdziesmās jau apdziedāts cielaviņas slaidais augumiņš un graciozās kustības, tā raksturoja jaunu meitu labās īpašības – čaklumu, skaistu stāju un citas.",
+    "lv": "Tautasdziesmās jau apdziedāts cielaviņas slaidais augumiņš un graciozās kustības, tā raksturoja jaunu meitu labās īpašības – čaklumu, skaistu stāju un citas.",
     "ru": "В народных песнях воспевались стройная фигурка трясогузки и её грациозные движения — птица олицетворяла лучшие качества девушки: трудолюбие, красивую осанку и многое другое.",
     "retired": false,
     "src_num": 51
@@ -48708,7 +48708,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Oficiālie Latvijas simboli ir karogs, himna un ģerbonis.",
+    "lv": "Oficiālie Latvijas simboli ir karogs, himna un ģerbonis.",
     "ru": "Официальными символами Латвии являются флаг, гимн и герб.",
     "retired": false,
     "src_num": 52
@@ -48721,7 +48721,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pīpene ir Latvijas nacionālais zieds, liepa un ozols — Latvijas nacionālie koki, dzintars — nacionālais minerāls, Daugava— Latvijas likteņa simbols.",
+    "lv": "Pīpene ir Latvijas nacionālais zieds, liepa un ozols — Latvijas nacionālie koki, dzintars — nacionālais minerāls, Daugava— Latvijas likteņa simbols.",
     "ru": "Нивяник — национальный цветок Латвии, липа и дуб — национальные деревья, янтарь — национальный минерал, а Даугава — символ судьбы Латвии.",
     "retired": false,
     "src_num": 52
@@ -48734,7 +48734,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "No lauksaimniecības viedokļa divpunktu mārīte ir pazīstama kā derīgs kukainis, kurš pasargā augus no kaitēkļiem.",
+    "lv": "No lauksaimniecības viedokļa divpunktu mārīte ir pazīstama kā derīgs kukainis, kurš pasargā augus no kaitēkļiem.",
     "ru": "С точки зрения сельского хозяйства двуточечная божья коровка известна как полезное насекомое, защищающее растения от вредителей.",
     "retired": false,
     "src_num": 52
@@ -48760,7 +48760,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Domājams, ka kukaiņa latviskais nosaukums aizgūts no latviešu dievības Māras vārda, kas sevī iemieso zemes spēku.",
+    "lv": "Domājams, ka kukaiņa latviskais nosaukums aizgūts no latviešu dievības Māras vārda, kas sevī iemieso zemes spēku.",
     "ru": "Предполагается, что латышское название насекомого происходит от имени богини Мары, воплощающей силу земли.",
     "retired": false,
     "src_num": 52
@@ -48773,7 +48773,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Par Latvijas nacionālo kukaini divpunktu mārīti 1991. gadā noteica Latvijas Entomoloģijas biedrība.",
+    "lv": "Par Latvijas nacionālo kukaini divpunktu mārīti 1991. (tūkstoš deviņi simti deviņdesmit pirmajā) gadā noteica Latvijas Entomoloģijas biedrība.",
     "ru": "Двуточечная божья коровка была объявлена национальным насекомым Латвии в 1991 году по решению Латвийского энтомологического общества.",
     "retired": false,
     "src_num": 52
@@ -48851,7 +48851,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Suns ir lielisks draugs arī ģimenēs ar bērniem, jo reti kurš bērns nav sapņojis par suni, kas būtu gan uzticams draugs, gan arī rotaļu biedrs. Būdami gudri un viegli apmācāmi, suņi ir lieliski pavadoņi invalīdiem, kā arī  nedzirdīgiem un neredzīgiem cilvēkiem.",
+    "lv": "Suns ir lielisks draugs arī ģimenēs ar bērniem, jo reti kurš bērns nav sapņojis par suni, kas būtu gan uzticams draugs, gan arī rotaļu biedrs. Būdami gudri un viegli apmācāmi, suņi ir lieliski pavadoņi invalīdiem, kā arī nedzirdīgiem un neredzīgiem cilvēkiem.",
     "ru": "Собака — прекрасный друг и в семьях с детьми: едва ли найдётся ребёнок, который не мечтал бы о собаке — верном друге и товарище по играм. Умные и легко поддающиеся дрессировке, собаки служат незаменимыми помощниками для людей с инвалидностью, а также для глухих и слепых.",
     "retired": false,
     "src_num": 53
@@ -48903,7 +48903,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1992. gadā, kad tapa atjaunotā lata monētu un banknošu dizains, mākslinieki piedāvāja uz monētām kalt zīmes, kas saistītas ar mežu, ūdeni, zemi, tradīcijām, tātad – Latvijas bagātībām.",
+    "lv": "1992. (tūkstoš deviņi simti deviņdesmit otrajā) gadā, kad tapa atjaunotā lata monētu un banknošu dizains, mākslinieki piedāvāja uz monētām kalt zīmes, kas saistītas ar mežu, ūdeni, zemi, tradīcijām, tātad – Latvijas bagātībām.",
     "ru": "В 1992 году, когда разрабатывался дизайн возрождённых латовых монет и банкнот, художники предложили чеканить на монетах символы, связанные с лесом, водой, землёй и традициями — то есть с богатствами Латвии.",
     "retired": false,
     "src_num": 54
@@ -48916,7 +48916,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Uz 50 santīmu monētas bija priedes stāds, uz viena lata monētas – lasis, bet uz divlatnieka – gotiņa.",
+    "lv": "Uz 50 (piecdesmit) santīmu monētas bija priedes stāds, uz viena lata monētas – lasis, bet uz divlatnieka – gotiņa.",
     "ru": "На монете в 50 сантимов было изображено молодое сосновое дерево, на монете в один лат — лосось, а на монете в два лата — корова.",
     "retired": false,
     "src_num": 54
@@ -48968,7 +48968,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "2014. gadā Latvija pievienojās eirozonai.",
+    "lv": "2014. (divi tūkstoši četrpadsmitajā) gadā Latvija pievienojās eirozonai.",
     "ru": "В 2014 году Латвия вступила в зону евро.",
     "retired": false,
     "src_num": 54
@@ -48981,7 +48981,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas eiro monētu reversa dizains tika izvēlēts tautas ideju konkursā jau 2004. gadā.",
+    "lv": "Latvijas eiro monētu reversa dizains tika izvēlēts tautas ideju konkursā jau 2004. (divi tūkstoši ceturtajā) gadā.",
     "ru": "Дизайн реверса латвийских евромонет был выбран по итогам народного конкурса идей ещё в 2004 году.",
     "retired": false,
     "src_num": 54
@@ -48995,7 +48995,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Latvijas Republiku un brīvību simbolizē tautumeitas profils jeb Milda.",
-    "ru": "Латвийскую Республику и свободу символизирует профиль девушки в народном костюме — Милда.",
+    "ru": "Латвийскую Республику и свободу символизирует профиль народной девы, или Милда.",
     "retired": false,
     "src_num": 54
   },
@@ -49046,7 +49046,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Daudz darba ievērojamais latvietis veica jūrniecības popularizēšanai un tās nozīmes apzināšanai.",
+    "lv": "Daudz darba ievērojamais latvietis veica jūrniecības popularizēšanai un tās nozīmes apzināšanai.",
     "ru": "Этот выдающийся латыш много сделал для популяризации морского дела и осознания его значимости.",
     "retired": false,
     "src_num": 55
@@ -49137,7 +49137,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Fabrika tika nodibināta 1926. gadā, jau pēc gada tā kļuva par valsts uzņēmumu.",
+    "lv": "Fabrika tika nodibināta 1926. (tūkstoš deviņi simti divdesmit sestajā) gadā, jau pēc gada tā kļuva par valsts uzņēmumu.",
     "ru": "Завод был основан в 1926 году, а уже через год стал государственным предприятием.",
     "retired": false,
     "src_num": 57
@@ -49228,7 +49228,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijā no maija līdz augustam pērkona negaiss ir novērots diezgan bieži – vidēji 17 reizes, bet maksimālais skaits bija virs 40.",
+    "lv": "Latvijā no maija līdz augustam pērkona negaiss ir novērots diezgan bieži – vidēji 17 (septiņpadsmit) reizes, bet maksimālais skaits bija virs 40. (četrdesmit)",
     "ru": "В Латвии с мая по август грозы наблюдаются довольно часто — в среднем 17 раз, а максимальное число превышало 40.",
     "retired": false,
     "src_num": 58
@@ -49281,7 +49281,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Tam piemīt kāda nezināma burvība, kas liek cilvēkiem novērtēt dabas varenību un spēku.",
-    "ru": "В ней есть какое-то необъяснимое волшебство, которое заставляет людей ощутить величие и мощь природы.",
+    "ru": "Ей присуще некое неведомое волшебство, которое заставляет людей оценить величие и мощь природы.",
     "retired": false,
     "src_num": 58
   },
@@ -49293,7 +49293,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pirmo saldējuma recepti izgatavoja un atveda no Ķīnas.",
+    "lv": "Pirmo saldējuma recepti izgatavoja un atveda no Ķīnas.",
     "ru": "Первый рецепт мороженого появился и был привезён из Китая.",
     "retired": false,
     "src_num": 59
@@ -49306,7 +49306,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Zviedrijas karalis Kārlis XII maksāja savam saldējuma meistaram 1500 kronu gadā.",
+    "lv": "Zviedrijas karalis Kārlis XII maksāja savam saldējuma meistaram 1500 (tūkstoš pieci simti) kronu gadā.",
     "ru": "Шведский король Карл XII платил своему мастеру по мороженому 1500 крон в год.",
     "retired": false,
     "src_num": 59
@@ -49345,7 +49345,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Izrādās, ka tie ir angļi.",
+    "lv": "Izrādās, ka tie ir angļi.",
     "ru": "Оказывается, это англичане.",
     "retired": false,
     "src_num": 59
@@ -49358,7 +49358,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Viņi gada laikā saldējumam iztērē gandrīz divus miljonus eiro.",
+    "lv": "Viņi gada laikā saldējumam iztērē gandrīz divus miljonus eiro.",
     "ru": "За год они тратят на мороженое почти два миллиона евро.",
     "retired": false,
     "src_num": 59
@@ -49436,7 +49436,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tikai 18. gadsimtā lelles kļuva par bērnu rotaļlietām un sāka ražot pārdošanai.",
+    "lv": "Tikai 18. (astoņpadsmitajā) gadsimtā lelles kļuva par bērnu rotaļlietām un sāka ražot pārdošanai.",
     "ru": "Лишь в XVIII веке куклы превратились в детские игрушки и начали производиться на продажу.",
     "retired": false,
     "src_num": 60
@@ -49462,7 +49462,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Līdz 20.gs. 30. gadiem izgatavotās lelles uzskata par antīkām, tās ir muzeju un kolekcionāru lepnums.",
+    "lv": "Līdz 20. (divdesmitajā) gs. 30. (trīsdesmitajiem) gadiem izgatavotās lelles uzskata par antīkām, tās ir muzeju un kolekcionāru lepnums.",
     "ru": "Куклы, изготовленные до 1930-х годов, считаются антикварными — они являются гордостью музеев и коллекционеров.",
     "retired": false,
     "src_num": 60
@@ -49488,7 +49488,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ja tos baro ziemā, putni labprāt pie mājām dzīvos arī vasarā, kad gaisā būs daudz mušu un kukaiņu.",
+    "lv": "Ja tos baro ziemā, putni labprāt pie mājām dzīvos arī vasarā, kad gaisā būs daudz mušu un kukaiņu.",
     "ru": "Если кормить птиц зимой, они охотно будут жить рядом с домом и летом, когда в воздухе много мух и насекомых.",
     "retired": false,
     "src_num": 1
@@ -49527,7 +49527,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ornitologi uzskata, ka nav pareizi barot putnus citos gadalaikos.",
+    "lv": "Ornitologi uzskata, ka nav pareizi barot putnus citos gadalaikos.",
     "ru": "Орнитологи считают, что кормить птиц в другие времена года неправильно.",
     "retired": false,
     "src_num": 1
@@ -49541,7 +49541,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Tā dzimtene ir Azijas dienvidos.",
-    "ru": "Его родина — юг Азии.",
+    "ru": "Его родина — на юге Азии.",
     "retired": false,
     "src_num": 2
   },
@@ -49580,7 +49580,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Tam ir balti vai rožaini pumpuri un dzelteni ziedi, tāpēc augu izmanto dekoratīvos stādījumos.",
-    "ru": "Его белые или розоватые бутоны и жёлтые цветы делают его привлекательным декоративным растением.",
+    "ru": "У него белые или розоватые бутоны и жёлтые цветы, поэтому растение используют в декоративных посадках.",
     "retired": false,
     "src_num": 2
   },
@@ -49593,7 +49593,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Eiropa ingvera sakni izmanto kulinārijā.",
-    "ru": "В Европе корень имбиря широко используют в кулинарии.",
+    "ru": "В Европе корень имбиря используют в кулинарии.",
     "retired": false,
     "src_num": 2
   },
@@ -49632,7 +49632,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Starp citu, bērza sulu var arī sasaldēt un karstā vasaras dienā atlaidināt un dzert kā svaigu!",
-    "ru": "Кстати, берёзовый сок можно заморозить, а жарким летним днём разморозить и пить — словно только что собранный!",
+    "ru": "Кстати, берёзовый сок можно также заморозить, а жарким летним днём разморозить и пить как свежий!",
     "retired": false,
     "src_num": 3
   },
@@ -49644,7 +49644,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "17. janvārī Latvijas Dabas muzejā atklāja izstādi „Dzintars laiku lokos”.",
+    "lv": "17. (septiņpadsmitajā) janvārī Latvijas Dabas muzejā atklāja izstādi „Dzintars laiku lokos”.",
     "ru": "17 января в Латвийском музее природы открылась выставка «Янтарь сквозь века».",
     "retired": false,
     "src_num": 4
@@ -49657,7 +49657,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "2005. gadā Aglonā sāka darboties Maizes muzejs – privāts muzejs, kas iepazīstina ar labības audzēšanu un maizes tapšanu.",
+    "lv": "2005. (divi tūkstoši piektajā) gadā Aglonā sāka darboties Maizes muzejs – privāts muzejs, kas iepazīstina ar labības audzēšanu un maizes tapšanu.",
     "ru": "В 2005 году в Аглоне открылся Музей хлеба — частный музей, посвящённый выращиванию зерна и выпечке хлеба.",
     "retired": false,
     "src_num": 5
@@ -49710,7 +49710,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Bieži ir dzirdēts apzīmējums – pusaizmidzis.",
-    "ru": "Все слышали выражение «наполовину спящий».",
+    "ru": "Часто доводилось слышать выражение «полусонный/наполовину уснувший».",
     "retired": false,
     "src_num": 6
   },
@@ -49749,7 +49749,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Netālu no Rīgas, Salaspilī, jūs gaida dažādas interesantas aktivitātes, ko apmeklēt kopā ar ģimeni un draugiem.",
-    "ru": "Недалеко от Риги, в Саласпилсе, вас ждут самые разные интересные занятия — отличное место для семейного или дружеского отдыха.",
+    "ru": "Недалеко от Риги, в Саласпилсе, вас ждут разные интересные мероприятия, которые можно посетить вместе с семьёй и друзьями.",
     "retired": false,
     "src_num": 7
   },
@@ -49762,7 +49762,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Salaspils Tūrisma centra ieteikums – brauciet uz Salaspili ar vilcienu!",
-    "ru": "Рекомендация Туристического центра Саласпилса: добирайтесь на электричке!",
+    "ru": "Рекомендация Туристического центра Саласпилса — поезжайте в Саласпилс на поезде!",
     "retired": false,
     "src_num": 7
   },
@@ -49774,7 +49774,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Botāniskajā dārzā, kura platība ir 129 hektāri, var apskatīt ne tikai augus.",
+    "lv": "Botāniskajā dārzā, kura platība ir 129 (simt divdesmit deviņi) hektāri, var apskatīt ne tikai augus.",
     "ru": "В ботаническом саду площадью 129 гектаров можно увидеть не только растения.",
     "retired": false,
     "src_num": 7
@@ -49787,7 +49787,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Uztura speciālisti saka, ka medus tiešām  ir viens no produktiem, kas palīdz dažādu veselības problēmu novēršanā.",
+    "lv": "Uztura speciālisti saka, ka medus tiešām ir viens no produktiem, kas palīdz dažādu veselības problēmu novēršanā.",
     "ru": "Диетологи утверждают, что мёд действительно является одним из продуктов, помогающих справляться с различными проблемами со здоровьем.",
     "retired": false,
     "src_num": 8
@@ -49800,7 +49800,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tas  palīdz arī cīņā ar bezmiegu.",
+    "lv": "Tas palīdz arī cīņā ar bezmiegu.",
     "ru": "Он также помогает при бессоннице.",
     "retired": false,
     "src_num": 8
@@ -49826,7 +49826,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Medus satur nedaudz vitamīnu, minerālvielu, augu fermentu, organisko skābju, toties daudz cukura – 100 gramos medus ir 82 grami cukura.",
+    "lv": "Medus satur nedaudz vitamīnu, minerālvielu, augu fermentu, organisko skābju, toties daudz cukura – 100 (simt) gramos medus ir 82 (astoņdesmit divi) grami cukura.",
     "ru": "Мёд содержит небольшое количество витаминов, минералов, растительных ферментов и органических кислот, зато очень много сахара — в 100 граммах мёда содержится 82 грамма сахара.",
     "retired": false,
     "src_num": 8
@@ -49839,7 +49839,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "19. gadsimta vidū pēc viduslaiku Rīgas aizsargvaļņu nojaukšanas brīvo teritoriju vajadzēja ar kaut ko aizpildīt.",
+    "lv": "19. (deviņpadsmitā) gadsimta vidū pēc viduslaiku Rīgas aizsargvaļņu nojaukšanas brīvo teritoriju vajadzēja ar kaut ko aizpildīt.",
     "ru": "В середине XIX века, после сноса средневековых оборонительных валов Риги, освободившееся пространство нужно было чем-то заполнить.",
     "retired": false,
     "src_num": 10
@@ -49917,7 +49917,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pirmās liecības, ka Ziemassvētkos rotāta eglīte, saglabājušās no 1476.gada.",
+    "lv": "Pirmās liecības, ka Ziemassvētkos rotāta eglīte, saglabājušās no 1476. (tūkstoš četri simti septiņdesmit sestā) gada.",
     "ru": "Первые свидетельства о том, что на Рождество украшали ёлку, датируются 1476 годом.",
     "retired": false,
     "src_num": 11
@@ -49943,7 +49943,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Jāņu siers ir nenogatavināts latviešu skābpiena siers, ko tradicionāli gatavo uz Jāņiem.",
+    "lv": "Jāņu siers ir nenogatavināts latviešu skābpiena siers, ko tradicionāli gatavo uz Jāņiem.",
     "ru": "Янов сыр — это свежий латвийский кисломолочный сыр, который традиционно готовят к празднику Лиго.",
     "retired": false,
     "src_num": 12
@@ -49957,7 +49957,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Zīmīga un simboliska ir Jāņu siera apaļā forma.",
-    "ru": "Круглая форма Янова сыра глубоко символична и полна смысла.",
+    "ru": "Круглая форма Янова сыра знаменательна и символична.",
     "retired": false,
     "src_num": 12
   },
@@ -49969,7 +49969,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Šobrīd Jāņu sieru drīkst ražot un pārdot seši Latvijas uzņēmumi.",
+    "lv": "Šobrīd Jāņu sieru drīkst ražot un pārdot seši Latvijas uzņēmumi.",
     "ru": "На сегодняшний день производить и продавать Янов сыр имеют право шесть латвийских предприятий.",
     "retired": false,
     "src_num": 12
@@ -50008,7 +50008,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Saldējuma rūpnieciska ražošana Latvijā sākās 1912. gadā, kad dibināja vienu no pirmajiem piena pārstrādes uzņēmumiem.",
+    "lv": "Saldējuma rūpnieciska ražošana Latvijā sākās 1912. (tūkstoš deviņi simti divpadsmitajā) gadā, kad dibināja vienu no pirmajiem piena pārstrādes uzņēmumiem.",
     "ru": "Промышленное производство мороженого в Латвии началось в 1912 году, когда было основано одно из первых предприятий по переработке молока.",
     "retired": false,
     "src_num": 13
@@ -50151,7 +50151,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Polārlācim ir ļoti laba oža, tas spēj saost  roni no pusotra kilometra  attāluma un līdz  vienam metram zem sniega.",
+    "lv": "Polārlācim ir ļoti laba oža, tas spēj saost roni no pusotra kilometra attāluma un līdz vienam metram zem sniega.",
     "ru": "У белого медведя превосходное обоняние: он способен учуять тюленя с расстояния полутора километров и на глубине до одного метра под снегом.",
     "retired": false,
     "src_num": 16
@@ -50164,7 +50164,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Polārlāči dzīvo Grenlandē (Dānija), Svalbārā Norvēģijā, Aļaskā (ASV), kā arī  Kanādas un Krievijas pašos ziemeļos.",
+    "lv": "Polārlāči dzīvo Grenlandē (Dānija), Svalbārā Norvēģijā, Aļaskā (ASV), kā arī Kanādas un Krievijas pašos ziemeļos.",
     "ru": "Белые медведи обитают в Гренландии (Дания), на Шпицбергене (Норвегия), на Аляске (США), а также на крайнем севере Канады и России.",
     "retired": false,
     "src_num": 16
@@ -50190,7 +50190,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Rīgas Motormuzejs ir muzejs Rīgā un ir lielākais seno spēkratu muzejs Baltijas valstīs.",
+    "lv": "Rīgas Motormuzejs ir muzejs Rīgā un ir lielākais seno spēkratu muzejs Baltijas valstīs.",
     "ru": "Рижский мотормузей — это музей в Риге, крупнейший музей старинных автомобилей в странах Балтии.",
     "retired": false,
     "src_num": 17
@@ -50281,7 +50281,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Svarīgi arī, lai zivis nav ķertas vasarā, jo tad konservi būs rūgtāki.",
+    "lv": "Svarīgi arī, lai zivis nav ķertas vasarā, jo tad konservi būs rūgtāki.",
     "ru": "Важно также, чтобы рыба не была выловлена летом — иначе консервы получатся горьковатыми.",
     "retired": false,
     "src_num": 18
@@ -50307,7 +50307,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Šprotu ražošana ir tradicionāla tautsaimniecības joma, un Latvijā šprotu ražošanu  atbalsta.",
+    "lv": "Šprotu ražošana ir tradicionāla tautsaimniecības joma, un Latvijā šprotu ražošanu atbalsta.",
     "ru": "Производство шпрот — традиционная отрасль латвийской экономики, которую государство поддерживает.",
     "retired": false,
     "src_num": 18
@@ -50373,7 +50373,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Pāvilosta paslēpusies labu gabalu no šosejas pašā jūras krastā.",
-    "ru": "Павилоста укрылась в стороне от шоссе, прямо на берегу моря.",
+    "ru": "Павилоста спряталась на изрядном расстоянии от шоссе, прямо на берегу моря.",
     "retired": false,
     "src_num": 22
   },
@@ -50398,7 +50398,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vietām upes dziļums sasniedz 11 m.",
+    "lv": "Vietām upes dziļums sasniedz 11 (vienpadsmit) m.",
     "ru": "В отдельных местах глубина реки достигает 11 метров.",
     "retired": false,
     "src_num": 22
@@ -50411,7 +50411,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tā ir platākā pelēkā kāpa Latvijā, kas virzienā no jūras uz sauszemi sniedzas ap 800 m platumā.",
+    "lv": "Tā ir platākā pelēkā kāpa Latvijā, kas virzienā no jūras uz sauszemi sniedzas ap 800 (astoņi simti) m platumā.",
     "ru": "Это самая широкая серая дюна в Латвии — от моря вглубь суши она тянется примерно на 800 метров.",
     "retired": false,
     "src_num": 22
@@ -50438,7 +50438,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Ierodoties te, jūs nokļūstat it kā citā realitātē.",
-    "ru": "Попадая сюда, оказываешься словно в другом измерении.",
+    "ru": "Прибывая сюда, вы попадаете словно в другую реальность.",
     "retired": false,
     "src_num": 24
   },
@@ -50503,7 +50503,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Kaut arī papīra glāzītes bija, tomēr problēmas radās, ja kāds vēlējās baudīt tikko pagatavotu karsto kafiju, tēju vai kakao – tādā gadījumā tā bija jāgatavo un jādzer mājās vai kafejnīcā.",
-    "ru": "Хотя бумажные стаканчики уже существовали, проблема возникала, если хотелось выпить свежезаваренный горячий кофе, чай или какао — для этого нужно было оставаться дома или идти в кафе.",
+    "ru": "Хотя бумажные стаканчики были, проблема возникала, если кто-то хотел насладиться только что приготовленным горячим кофе, чаем или какао — в таком случае его нужно было готовить и пить дома или в кафе.",
     "retired": false,
     "src_num": 26
   },
@@ -50515,7 +50515,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "50. un 60. gados parādījās veikali, kur varēja iegādāties karstus dzērienus līdzņemšanai.",
+    "lv": "50. (piecdesmitajos) un 60. (sešdesmitajos) gados parādījās veikali, kur varēja iegādāties karstus dzērienus līdzņemšanai.",
     "ru": "В 1950–60-х годах появились заведения, где можно было купить горячие напитки навынос.",
     "retired": false,
     "src_num": 26
@@ -50554,7 +50554,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Gaujas Nacionālais parks tika izveidots 1973. gadā un patlaban aizņem vairāk nekā 90000 ha plašu teritoriju.",
+    "lv": "Gaujas Nacionālais parks tika izveidots 1973. (tūkstoš deviņi simti septiņdesmit trešajā) gadā un patlaban aizņem vairāk nekā 90000 (deviņdesmit tūkstoši) ha plašu teritoriju.",
     "ru": "Гауйский национальный парк был создан в 1973 году и сегодня занимает территорию площадью более 90 000 гектаров.",
     "retired": false,
     "src_num": 27
@@ -50580,7 +50580,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Gauju var apskatīt arī braucot ar laivu.",
+    "lv": "Gauju var apskatīt arī braucot ar laivu.",
     "ru": "По Гауе также можно прокатиться на лодке.",
     "retired": false,
     "src_num": 27
@@ -50619,7 +50619,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Jāņi ir latviešu gadskārtas svētki, ko svin vasaras saulgriežu laikā, kad ir visīsākā nakts un visgarākā diena.",
+    "lv": "Jāņi ir latviešu gadskārtas svētki, ko svin vasaras saulgriežu laikā, kad ir visīsākā nakts un visgarākā diena.",
     "ru": "Янов день — латышский народный праздник, который отмечают в период летнего солнцестояния, когда ночь самая короткая, а день — самый длинный.",
     "retired": false,
     "src_num": 29
@@ -50632,7 +50632,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Valsts noteiktā Jāņu diena ir 24. jūnijā,  kas ir dažas dienas vēlāk par vasaras saulgriežiem.",
+    "lv": "Valsts noteiktā Jāņu diena ir 24. (divdesmit ceturtajā) jūnijā, kas ir dažas dienas vēlāk par vasaras saulgriežiem.",
     "ru": "Официально установленная дата Янова дня — 24 июня, что на несколько дней позже астрономического летнего солнцестояния.",
     "retired": false,
     "src_num": 29
@@ -50711,7 +50711,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Iesākumā izveidota Cukura aleja no simts Ziemeļamerikas cukura kļavām.",
-    "ru": "Для начала была заложена Сахарная аллея из ста североамериканских сахарных клёнов.",
+    "ru": "Вначале была создана Сахарная аллея из ста североамериканских сахарных клёнов.",
     "retired": false,
     "src_num": 30
   },
@@ -50762,7 +50762,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kopš 1985.gada šī bāka darbojas automātiski.",
+    "lv": "Kopš 1985. (tūkstoš deviņi simti astoņdesmit piektā) gada šī bāka darbojas automātiski.",
     "ru": "С 1985 года маяк работает в автоматическом режиме.",
     "retired": false,
     "src_num": 31
@@ -50801,7 +50801,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Līgatnes dabas takas izveidotas 1975. gadā, mežainā, gravām bagātā apvidū.",
+    "lv": "Līgatnes dabas takas izveidotas 1975. (tūkstoš deviņi simti septiņdesmit piektajā) gadā, mežainā, gravām bagātā apvidū.",
     "ru": "Лигатненские природные тропы были созданы в 1975 году в лесистой местности, богатой оврагами.",
     "retired": false,
     "src_num": 33
@@ -50827,7 +50827,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ideja par to, ka olimpiskajās spēlēs nacionālo komandu sportistiem vajadzīgi vienoti formastērpi, radās 20. gs. sākumā.",
+    "lv": "Ideja par to, ka olimpiskajās spēlēs nacionālo komandu sportistiem vajadzīgi vienoti formastērpi, radās 20. (divdesmitā) gs. sākumā.",
     "ru": "Идея о том, что спортсмены национальных сборных на Олимпийских играх должны выступать в единой форме, возникла в начале XX века.",
     "retired": false,
     "src_num": 34
@@ -50840,7 +50840,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kopš 1900. gada sacensībās aktīvi sāka piedalīties sievietes.",
+    "lv": "Kopš 1900. (tūkstoš deviņsimtā) gada sacensībās aktīvi sāka piedalīties sievietes.",
     "ru": "С 1900 года женщины стали активно участвовать в соревнованиях.",
     "retired": false,
     "src_num": 34
@@ -50879,7 +50879,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Par ozola simbolisko nozīmi latviešu kultūrā liecina arī tādi salīdzinājumi kā „vīrs kā ozols”, „stalts kā ozols”, „stiprs kā ozols”.",
+    "lv": "Par ozola simbolisko nozīmi latviešu kultūrā liecina arī tādi salīdzinājumi kā „vīrs kā ozols”, „stalts kā ozols”, „stiprs kā ozols”.",
     "ru": "О символической роли дуба в латышской культуре свидетельствуют такие сравнения, как «муж — что дуб», «статный, как дуб», «крепкий, как дуб».",
     "retired": false,
     "src_num": 35
@@ -50892,7 +50892,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Ozola lapa Latvijā ir īpaši aizsargājamo dabas teritoriju simbols.",
+    "lv": "Ozola lapa Latvijā ir īpaši aizsargājamo dabas teritoriju simbols.",
     "ru": "Дубовый лист в Латвии является символом особо охраняемых природных территорий.",
     "retired": false,
     "src_num": 35
@@ -50931,7 +50931,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kaives dižozols, kas atrodas Tukuma novada Sēmes pagastā, kā arī koks, kas atrodas Garkalnes novadā ar 10,2 m apkārtmēru,  ir resnākais ozols Baltijā un Ziemeļeiropā.",
+    "lv": "Kaives dižozols, kas atrodas Tukuma novada Sēmes pagastā, kā arī koks, kas atrodas Garkalnes novadā ar 10 (desmit),2 (divi) m apkārtmēru, ir resnākais ozols Baltijā un Ziemeļeiropā.",
     "ru": "Кайвский дуб-великан, расположенный в Сэмской волости Тукумского края, а также дерево в Гаркалнском крае с обхватом 10,2 м — самые толстые дубы в Прибалтике и Северной Европе.",
     "retired": false,
     "src_num": 35
@@ -50944,7 +50944,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Vispārējie latviešu Dziesmu un Deju svētki ir tradicionāls notikums Latvijas kultūrā, tie ir latviešu nacionālās identitātes sastāvdaļa.",
+    "lv": "Vispārējie latviešu Dziesmu un Deju svētki ir tradicionāls notikums Latvijas kultūrā, tie ir latviešu nacionālās identitātes sastāvdaļa.",
     "ru": "Всеобщий латышский праздник песни и танца — традиционное событие в культурной жизни Латвии и неотъемлемая часть латышской национальной идентичности.",
     "retired": false,
     "src_num": 36
@@ -50957,7 +50957,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Parasti svētki notiek reizi piecos gados Rīgā.",
+    "lv": "Parasti svētki notiek reizi piecos gados Rīgā.",
     "ru": "Как правило, праздник проводится раз в пять лет в Риге.",
     "retired": false,
     "src_num": 36
@@ -50970,7 +50970,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Dziesmu un Deju svētkos piedalās aptuveni 30 000 – 40 000 dalībnieku, tostarp kori, deju kolektīvi, pūtēju orķestri, folkloras grupas, tautas mūzikas ansambļi un daudzi citi.",
+    "lv": "Dziesmu un Deju svētkos piedalās aptuveni 30 000 (trīsdesmit tūkstoši) – 40 000 (četrdesmit tūkstoši) dalībnieku, tostarp kori, deju kolektīvi, pūtēju orķestri, folkloras grupas, tautas mūzikas ansambļi un daudzi citi.",
     "ru": "В Празднике песни и танца участвуют около 30 000 – 40 000 человек: хоры, танцевальные коллективы, духовые оркестры, фольклорные группы, ансамбли народной музыки и многие другие.",
     "retired": false,
     "src_num": 36
@@ -51139,7 +51139,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Miķeļdienu svinēja rudenī, 29. septembrī,  kad laukos ir novākta raža.",
+    "lv": "Miķeļdienu svinēja rudenī, 29. (divdesmit devītajā) septembrī, kad laukos ir novākta raža.",
     "ru": "Михайлов день отмечали осенью, 29 сентября, когда урожай с полей уже был убран.",
     "retired": false,
     "src_num": 37
@@ -51230,7 +51230,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "No nama uzbūvēšanas brīža līdz pat 20. gadsimta 30. gadu nogalei tas bija\ndzīvojamais nams, kas piederēja dažādiem īpašniekiem un rentniekiem.",
+    "lv": "No nama uzbūvēšanas brīža līdz pat 20. (divdesmitā) gadsimta 30. (trīsdesmito) gadu nogalei tas bija\ndzīvojamais nams, kas piederēja dažādiem īpašniekiem un rentniekiem.",
     "ru": "С момента постройки и вплоть до конца 1930-х годов это был жилой дом, принадлежавший разным владельцам и арендаторам.",
     "retired": false,
     "src_num": 38
@@ -51269,7 +51269,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pēc Otrā pasaules kara laikā no 1947. līdz 1981. gadam ēkā bija iekārtoti\nkomunālie dzīvokļi.",
+    "lv": "Pēc Otrā pasaules kara laikā no 1947. (tūkstoš deviņi simti četrdesmit septītajā) līdz 1981. (tūkstoš deviņi simti astoņdesmit pirmajam) gadam ēkā bija iekārtoti\nkomunālie dzīvokļi.",
     "ru": "После Второй мировой войны, с 1947 по 1981 год, в здании располагались коммунальные квартиры.",
     "retired": false,
     "src_num": 38
@@ -51282,7 +51282,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1981. gadā sākās rekonstrukcijas un restaurācijas darbi, kas ilga vairāk nekā 10 gadu.",
+    "lv": "1981. (tūkstoš deviņi simti astoņdesmit pirmajā) gadā sākās rekonstrukcijas un restaurācijas darbi, kas ilga vairāk nekā 10 (desmit) gadu.",
     "ru": "В 1981 году начались работы по реконструкции и реставрации, которые растянулись более чем на 10 лет.",
     "retired": false,
     "src_num": 38
@@ -51295,7 +51295,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Līdz pat 1992. gadam arhitekta Pētera Blūma vadībā notika ēkas rekonstrukcija un restaurācija.",
+    "lv": "Līdz pat 1992. (tūkstoš deviņi simti deviņdesmit otrajam) gadam arhitekta Pētera Blūma vadībā notika ēkas rekonstrukcija un restaurācija.",
     "ru": "Вплоть до 1992 года под руководством архитектора Петериса Блумса проходила реконструкция и реставрация здания.",
     "retired": false,
     "src_num": 38
@@ -51308,7 +51308,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tas iepazīstina apmeklētājus ar turīgo rīdzinieku sadzīves tradīcijām un interjeru, kāds bija rīdzinieku mājās 17.–18. gadsimtā.",
+    "lv": "Tas iepazīstina apmeklētājus ar turīgo rīdzinieku sadzīves tradīcijām un interjeru, kāds bija rīdzinieku mājās 17. (septiņpadsmitajā)–18. (astoņpadsmitajā) gadsimtā.",
     "ru": "Он знакомит посетителей с бытовыми традициями и интерьерами зажиточных рижан XVII–XVIII веков.",
     "retired": false,
     "src_num": 38
@@ -51373,7 +51373,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Egles aizņem 19,4% no Latvijas mežu kopplatības.",
+    "lv": "Egles aizņem 19 (deviņpadsmit),4 (četri)% no Latvijas mežu kopplatības.",
     "ru": "Ель занимает 19,4% общей площади лесов Латвии.",
     "retired": false,
     "src_num": 39
@@ -51399,7 +51399,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "„Gotiņas” var vārīt no svaigā, iebiezinātā vai sausā pilnpiena.",
+    "lv": "„Gotiņas” var vārīt no svaigā, iebiezinātā vai sausā pilnpiena.",
     "ru": "«Готиню» можно варить из свежего, сгущённого или сухого цельного молока.",
     "retired": false,
     "src_num": 40
@@ -51412,7 +51412,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "2012. gada septembrī apaļo 100 gadu jubileju svinēja Rīgas Zooloģiskais dārzs.",
+    "lv": "2012. (divi tūkstoši divpadsmitā) gada septembrī apaļo 100 (simt) gadu jubileju svinēja Rīgas Zooloģiskais dārzs.",
     "ru": "В сентябре 2012 года Рижский зоопарк отметил круглую дату — 100-летний юбилей.",
     "retired": false,
     "src_num": 41
@@ -51425,7 +51425,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Monētu rotāja 1912. gadā būvētie Rīgas Zooloģiskā dārza ieejas vārti un dzīvnieku attēli.",
+    "lv": "Monētu rotāja 1912. (tūkstoš deviņi simti divpadsmitajā) gadā būvētie Rīgas Zooloģiskā dārza ieejas vārti un dzīvnieku attēli.",
     "ru": "Монету украшали ворота Рижского зоопарка, построенные в 1912 году, и изображения животных.",
     "retired": false,
     "src_num": 41
@@ -51464,7 +51464,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Patlaban kolekcijā ir 420 sugu 3 200 dzīvnieku, par kuriem rūpējas čakli, zinoši un savu darbu mīloši darbinieki.",
+    "lv": "Patlaban kolekcijā ir 420 (četri simti divdesmit) sugu 3 200 (trīs tūkstoši divi simti) dzīvnieku, par kuriem rūpējas čakli, zinoši un savu darbu mīloši darbinieki.",
     "ru": "Сейчас в коллекции насчитывается 3200 животных 420 видов, о которых заботятся трудолюбивые, знающие своё дело и любящие его сотрудники.",
     "retired": false,
     "src_num": 41
@@ -51542,7 +51542,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latgales podniecībai raksturīgas divas attīstības līnijas – praktiskā un dekoratīvā; pēdējā ir jaunāka un īstu attīstību ieguvusi tikai kopš 1930. gadiem.",
+    "lv": "Latgales podniecībai raksturīgas divas attīstības līnijas – praktiskā un dekoratīvā; pēdējā ir jaunāka un īstu attīstību ieguvusi tikai kopš 1930. (tūkstoš deviņi simti trīsdesmitajiem) gadiem.",
     "ru": "Для латгальского гончарства характерны два направления развития — практическое и декоративное; последнее является более молодым и по-настоящему расцвело лишь с 1930-х годов.",
     "retired": false,
     "src_num": 42
@@ -51568,8 +51568,8 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Cēsis ir tik mājīga un jauka pilsēta, ka ciemošanās tajā līdzinās mīļas latviešu vecmāmiņas apciemošanai.",
-    "ru": "Цесис — такой уютный и приятный городок, что побывать в нём — всё равно что навестить любимую латышскую бабушку.",
+    "lv": "Cēsis ir tik mājīga un jauka pilsēta, ka ciemošanās tajā līdzinās mīļas latviešu vecmāmiņas apciemošanai.",
+    "ru": "Цесис — такой уютный и приятный город, что гостить в нём — всё равно что навестить милую латышскую бабушку.",
     "retired": false,
     "src_num": 44
   },
@@ -51608,7 +51608,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Ja vēlaties atpūsties no lielpilsētas, jums jādodas pastaigās pa mazajām, klusajām Cēsu vecpilsētas ieliņām.",
-    "ru": "Если хочется отдохнуть от городской суеты, стоит прогуляться по тихим узким улочкам старого Цесиса.",
+    "ru": "Если хотите отдохнуть от большого города, вам стоит прогуляться по маленьким тихим улочкам старого города Цесиса.",
     "retired": false,
     "src_num": 44
   },
@@ -51621,7 +51621,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Turpat slēpjas unikāli, klusi pagalmiņi.",
-    "ru": "Там же прячутся уютные тихие дворики.",
+    "ru": "Там же прячутся уникальные тихие дворики.",
     "retired": false,
     "src_num": 44
   },
@@ -51685,7 +51685,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tas tika uzstādīts 1924. gadā pēc Rīgas arhitekta Artūra Medlingera projekta.",
+    "lv": "Tas tika uzstādīts 1924. (tūkstoš deviņi simti divdesmit ceturtajā) gadā pēc Rīgas arhitekta Artūra Medlingera projekta.",
     "ru": "Они были установлены в 1924 году по проекту рижского архитектора Артура Медлингера.",
     "retired": false,
     "src_num": 45
@@ -51698,7 +51698,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1960. gados pulkstenis atkal mainīja savu nosaukumu – tagad to sāka saukt par „Miera” pulksteni; uzraksts uz tā bija latviešu, angļu, vācu un krievu valodā.",
+    "lv": "1960. (tūkstoš deviņi simti sešdesmitajos) gados pulkstenis atkal mainīja savu nosaukumu – tagad to sāka saukt par „Miera” pulksteni; uzraksts uz tā bija latviešu, angļu, vācu un krievu valodā.",
     "ru": "В 1960-х годах часы снова переименовали — теперь их стали называть часами «Мира»; надпись на них была сделана на латышском, английском, немецком и русском языках.",
     "retired": false,
     "src_num": 45
@@ -51711,7 +51711,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tikai 1999. gadā pēc pilnīgas rekonstukcijas pulkstenim atdeva „laimīgo” nosaukumu „Laima”.",
+    "lv": "Tikai 1999. (tūkstoš deviņi simti deviņdesmit devītajā) gadā pēc pilnīgas rekonstukcijas pulkstenim atdeva „laimīgo” nosaukumu „Laima”.",
     "ru": "Лишь в 1999 году, после полной реконструкции, часам вернули «счастливое» название «Лайма».",
     "retired": false,
     "src_num": 45
@@ -51725,7 +51725,7 @@ const PHRASES = [
     "question": false,
     "has_number": false,
     "lv": "Sklandrauša priekštecis bijis ugunskura oglēs cepts neraudzētas rudzu mīklas plācenis.",
-    "ru": "Предшественником скландраусиса был лепёшка из пресного ржаного теста, испечённая в углях костра.",
+    "ru": "Предшественником скландраусиса была лепёшка из пресного ржаного теста, испечённая в углях костра.",
     "retired": false,
     "src_num": 48
   },
@@ -51750,7 +51750,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Formas un krāsas ziņā tas ir viens no skaistākajiem latviešu ēdieniem.",
+    "lv": "Formas un krāsas ziņā tas ir viens no skaistākajiem latviešu ēdieniem.",
     "ru": "По форме и цвету это одно из красивейших блюд латышской кухни.",
     "retired": false,
     "src_num": 48
@@ -51802,7 +51802,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "„Latvijas Pasts” katru gadu izdod aptuveni 20–25 pastmarkas.",
+    "lv": "„Latvijas Pasts” katru gadu izdod aptuveni 20 (divdesmit)–25 (divdesmit piecas) pastmarkas.",
     "ru": "«Latvijas Pasts» ежегодно выпускает около 20–25 почтовых марок.",
     "retired": false,
     "src_num": 49
@@ -51815,7 +51815,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tokijā 1960. gadā notika Starptautiskās putnu aizsardzības padomes konference.",
+    "lv": "Tokijā 1960. (tūkstoš deviņi simti sešdesmitajā) gadā notika Starptautiskās putnu aizsardzības padomes konference.",
     "ru": "В 1960 году в Токио состоялась конференция Международного совета по охране птиц.",
     "retired": false,
     "src_num": 51
@@ -51867,7 +51867,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas nacionālie simboli ir zīmes, kas pārstāv un raksturo Latviju un tās tautu.",
+    "lv": "Latvijas nacionālie simboli ir zīmes, kas pārstāv un raksturo Latviju un tās tautu.",
     "ru": "Национальные символы Латвии — это знаки, представляющие и характеризующие страну и её народ.",
     "retired": false,
     "src_num": 52
@@ -51893,7 +51893,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas nacionālais putns ir baltā cielava, to 1960. gadā apstiprināja Starptautiskā putnu aizsardzības padome.",
+    "lv": "Latvijas nacionālais putns ir baltā cielava, to 1960. (tūkstoš deviņi simti sešdesmitajā) gadā apstiprināja Starptautiskā putnu aizsardzības padome.",
     "ru": "Национальная птица Латвии — белая трясогузка; этот статус был подтверждён Международным советом по охране птиц в 1960 году.",
     "retired": false,
     "src_num": 52
@@ -51906,7 +51906,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Latvijas Entomoloģijas biedrība 1991. gadā par Latvijas nacionālo  kukaini  noteica  divpunktu mārīti.",
+    "lv": "Latvijas Entomoloģijas biedrība 1991. (tūkstoš deviņi simti deviņdesmit pirmajā) gadā par Latvijas nacionālo kukaini noteica divpunktu mārīti.",
     "ru": "В 1991 году Латвийское энтомологическое общество признало двуточечную божью коровку национальным насекомым Латвии.",
     "retired": false,
     "src_num": 52
@@ -51919,7 +51919,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Brīvības piemineklis ticis atzīts par Latvijas neatkarības simbolu, savukārt Jāņi – par tradicionālajiem svētkiem ar nacionālā simbola nozīmi.",
+    "lv": "Brīvības piemineklis ticis atzīts par Latvijas neatkarības simbolu, savukārt Jāņi – par tradicionālajiem svētkiem ar nacionālā simbola nozīmi.",
     "ru": "Памятник Свободы признан символом независимости Латвии, а праздник Янов день — традиционным праздником, имеющим значение национального символа.",
     "retired": false,
     "src_num": 52
@@ -51932,7 +51932,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Divpunktu mārīte ir mārīšu dzimtas kukainis (vabole).",
+    "lv": "Divpunktu mārīte ir mārīšu dzimtas kukainis (vabole).",
     "ru": "Двуточечная божья коровка — это жук из семейства коровок.",
     "retired": false,
     "src_num": 52
@@ -51945,7 +51945,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Tā ir viena no visbiežāk sastopamajām mārīšu dzimtas vabolēm Latvijā.",
+    "lv": "Tā ir viena no visbiežāk sastopamajām mārīšu dzimtas vabolēm Latvijā.",
     "ru": "Это один из самых распространённых видов коровок в Латвии.",
     "retired": false,
     "src_num": 52
@@ -51984,7 +51984,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Kā veiksmes simbols 2010. gada decembrī kolekciju papildināja monēta ar laimes pakavu.",
+    "lv": "Kā veiksmes simbols 2010. (divi tūkstoši desmitā) gada decembrī kolekciju papildināja monēta ar laimes pakavu.",
     "ru": "В декабре 2010 года коллекцию пополнила монета с подковой — символом удачи.",
     "retired": false,
     "src_num": 54
@@ -52062,7 +52062,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "1935. gadā cukurfabrika saražoja 500 tonnas cukura diennaktī.",
+    "lv": "1935. (tūkstoš deviņi simti trīsdesmit piektajā) gadā cukurfabrika saražoja 500 (pieci simti) tonnas cukura diennaktī.",
     "ru": "В 1935 году сахарный завод производил 500 тонн сахара в сутки.",
     "retired": false,
     "src_num": 57
@@ -52244,7 +52244,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Saldējums ir veselīgs, jo tajā ir daudz vitamīnu.",
+    "lv": "Saldējums ir veselīgs, jo tajā ir daudz vitamīnu.",
     "ru": "Мороженое полезно, поскольку содержит много витаминов.",
     "retired": false,
     "src_num": 59
@@ -52296,7 +52296,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "19. gadsimtā rotaļlietu vēsturē notika pavērsiens – Londonā sākās papīra leļļu ražošana.",
+    "lv": "19. (deviņpadsmitajā) gadsimtā rotaļlietu vēsturē notika pavērsiens – Londonā sākās papīra leļļu ražošana.",
     "ru": "В XIX веке в истории игрушек произошёл переворот — в Лондоне началось производство бумажных кукол.",
     "retired": false,
     "src_num": 60
@@ -52348,7 +52348,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Šodien populāra ir leļļu kolekcionēšana un muzeju atvēršana.",
+    "lv": "Šodien populāra ir leļļu kolekcionēšana un muzeju atvēršana.",
     "ru": "Сегодня популярны коллекционирование кукол и открытие кукольных музеев.",
     "retired": false,
     "src_num": 60
