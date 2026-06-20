@@ -203,21 +203,6 @@
       /* v52: длинные слова ломать, чтобы не раздвигать панель */
       overflow-wrap: anywhere;
     }
-    /* v79-fix (BUG 2): на десктопе сердце (.card-fav-btn) абсолютно позиционировано в правом
-       верхнем углу LV-панели (top:16px; right:16px; 36×36), но текст .phrase центрирован на всю
-       ширину и не резервирует под него место — длинные фразы налезали на сердце.
-       Резервируем верхний правый угол float-спейсером, чтобы первые строки обтекали сердце.
-       Только на десктопе (на мобиле есть свои float-heart-* спаны). */
-    @media (min-width: 601px) {
-      .panel:first-of-type .phrase::before {
-        content: "";
-        float: right;
-        width: 30px;   /* сердце вылезает ~18px в контент-бокс + запас */
-        height: 42px;  /* перекрывает вертикаль сердца на первой строке */
-        shape-outside: inset(0);
-        pointer-events: none;
-      }
-    }
     /* (3.3) Длинные фразы — 4 ступени. Размер карточки НЕ меняется, только шрифт. */
     .panel.is-long .phrase,
     .panel.is-long .translation-text {
@@ -3226,19 +3211,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
   translationButton.addEventListener('click', function () {
     translationOpen = true;
-    // v79-fix-perf: первый клик сессии может совпасть с pull из Supabase (auth.js):
-    // парсинг 19кБ JSON в main thread + Realtime echo блокируют UI на ~3с.
-    // Обновляем UI синхронно первым кадром, всю статистику/синхронизацию откладываем.
-    translateWrap.classList.add('show-text');
-    var item = currentPhrase();
-    var translation = normalizeTranslation(item.ru);
-    translationText.textContent = translation || 'Перевод отсутствует';
-    // Сразу отдаём кадр браузеру, статистику/фит в следующем tick'е.
-    var defer = window.requestIdleCallback || function(cb){ return setTimeout(cb, 0); };
-    defer(function(){
-      try { if (typeof fitAllPanels === 'function') fitAllPanels(); } catch(e){}
-      try { recordTranslation(); } catch(e){ console.warn(e); }
-    });
+    renderTranslation();
+    recordTranslation();
   });
 
   if (audioButton) {
@@ -3635,7 +3609,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v80</div>
+  <div class="version-tag" aria-hidden="true">v81</div>
   <style>
     .version-tag {
       position: fixed;
