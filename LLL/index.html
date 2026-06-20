@@ -3229,19 +3229,8 @@ window.addEventListener('DOMContentLoaded', function () {
 
   translationButton.addEventListener('click', function () {
     translationOpen = true;
-    // v79-fix-perf: первый клик сессии может совпасть с pull из Supabase (auth.js):
-    // парсинг 19кБ JSON в main thread + Realtime echo блокируют UI на ~3с.
-    // Обновляем UI синхронно первым кадром, всю статистику/синхронизацию откладываем.
-    translateWrap.classList.add('show-text');
-    var item = currentPhrase();
-    var translation = normalizeTranslation(item.ru);
-    translationText.textContent = translation || 'Перевод отсутствует';
-    // Сразу отдаём кадр браузеру, статистику/фит в следующем tick'е.
-    var defer = window.requestIdleCallback || function(cb){ return setTimeout(cb, 0); };
-    defer(function(){
-      try { if (typeof fitAllPanels === 'function') fitAllPanels(); } catch(e){}
-      try { recordTranslation(); } catch(e){ console.warn(e); }
-    });
+    renderTranslation();
+    recordTranslation();
   });
 
   if (audioButton) {
@@ -3639,7 +3628,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
   <div class="toast" id="toast" style="display:none"></div>
 
-  <div class="version-tag" aria-hidden="true">v82</div>
+  <div class="version-tag" aria-hidden="true">v83</div>
   <style>
     .version-tag {
       position: fixed;
