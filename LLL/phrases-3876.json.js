@@ -41877,7 +41877,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Nedrīkst aizmirst, ka pēc 5 (pieci) – 6 (seši) mēnešiem tēja noveco un zaudē virkni savu teicamo īpašību.",
+    "lv": "Nedrīkst aizmirst, ka pēc 5-6 (pieci-seši) mēnešiem tēja noveco un zaudē virkni savu teicamo īpašību.",
     "ru": "Нельзя забывать, что через 5-6 (пять-шесть) месяцев чай стареет и теряет ряд своих превосходных свойств.",
     "retired": false,
     "src_num": 20
@@ -44345,7 +44345,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Dienā nav vēlams apēst vairāk par 25 (divdesmit pieci) g medus – tās ir 2 (divas) līdz 3 (trīs) tējkarotes.",
+    "lv": "Dienā nav vēlams apēst vairāk par 25 (divdesmit pieci) g medus – tās ir 2-3 (divas-trīs) tējkarotes.",
     "ru": "В день не рекомендуется съедать более 25 г мёда — это 2-3 (две-три) чайные ложки.",
     "retired": false,
     "src_num": 8
@@ -45944,7 +45944,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "„Šie valrieksti sasniedz 18 (astoņpadsmit)–20 (divdesmit) metru augstumu.",
+    "lv": "„Šie valrieksti sasniedz 18-20 (astoņpadsmit-divdesmit) metru augstumu.",
     "ru": "«Эти орехи достигают 18-20 (восемнадцать-двадцать) метров в высоту.",
     "retired": false,
     "src_num": 30
@@ -46152,7 +46152,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "Pastaigu takas ierīkotas aptuveni 4 (četri) – 5 (pieci) km garumā, ar atšķirīgām grūtības pakāpēm.",
+    "lv": "Pastaigu takas ierīkotas aptuveni 4-5 (četri-pieci) km garumā, ar atšķirīgām grūtības pakāpēm.",
     "ru": "Прогулочные тропы протяжённостью около 4-5 (четыре-пять) км проложены с разным уровнем сложности.",
     "retired": false,
     "src_num": 33
@@ -50806,7 +50806,7 @@ const PHRASES = [
     "negative": false,
     "question": false,
     "has_number": false,
-    "lv": "„Latvijas Pasts” katru gadu izdod aptuveni 20 (divdesmit)–25 (divdesmit piecas) pastmarkas.",
+    "lv": "„Latvijas Pasts” katru gadu izdod aptuveni 20-25 (divdesmit-divdesmit piecas) pastmarkas.",
     "ru": "«Latvijas Pasts» ежегодно выпускает около 20-25 (двадцать-двадцать пять) почтовых марок.",
     "retired": false,
     "src_num": 49
