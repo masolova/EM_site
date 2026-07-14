@@ -3846,7 +3846,7 @@ const CATEGORIES_EN = [
         "d": "China's historic lander on the Moon's far side — never done before"
       },
       {
-        "w": "Parker Solar",
+        "w": "Parker Solar Probe",
         "d": "Fastest human-made object — diving through the Sun's outer corona"
       },
       {
@@ -5690,8 +5690,8 @@ const CATEGORIES_EN = [
         "d": "Legendary secret society said to guard world's most dangerous knowledge"
       },
       {
-        "w": "Doris Lessing Effect",
-        "d": "Replaced by: The Patomskiy Crater — Siberian limestone mound of unknown origin, found 1949"
+        "w": "Taos Hum",
+        "d": "Low-frequency hum reported in New Mexico; source remains disputed"
       },
       {
         "w": "Patomskiy Crater",

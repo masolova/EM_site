@@ -116,7 +116,7 @@ body.grid-15 .row,body.grid-20 .row{flex:none;height:var(--row-h)}
   white-space:normal;
   overflow:hidden;
   word-break:normal;
-  overflow-wrap:break-word;
+  overflow-wrap:normal;
   hyphens:none;
   user-select:none;
   transition:background 0.2s, outline 0.15s;
@@ -261,7 +261,7 @@ const I18N = {
     gameLabel: 'Игра', groups: 'Группы',
     vocab: '★ Словарь', historyBtn: '📊', gotoBtn: 'Игра #…',
     giveUp: 'Сдаюсь', newGame: 'Новая игра',
-    statusDefault: 'Неправильная пара: −1 балл + слова → словарь ★',
+    statusDefault: 'Неправильная пара: −1 очко. Оба слова добавлены в словарь ★',
     allGroupsDone: 'Все {n} групп собраны!',
     gaveUp: 'Сдались.',
     score: 'Очки',
@@ -477,6 +477,15 @@ function adaptiveFont(text){
   return singleSize + 'px';
 }
 
+function addSoftHyphens(text){
+  return text.replace(/[А-Яа-яЁё]{14,}/g, word => {
+    if(word.includes('\u00ad')) return word;
+    const parts = [];
+    for(let i = 0; i < word.length; i += 6) parts.push(word.slice(i, i + 6));
+    return parts.join('\u00ad');
+  });
+}
+
 /* ══════════════════════════════════════════════════
    GAME STATE
    ══════════════════════════════════════════════════ */
@@ -504,7 +513,7 @@ function renderTile(el){
   const isBookmarked = el.classList.contains('bookmarked');
   if(size <= 1){
     const word = words[0] || el.dataset.word || '';
-    el.textContent = word;
+    el.textContent = addSoftHyphens(word);
     el.style.fontSize = adaptiveFont(word);
     el.classList.remove('merged','complete');
   } else {
@@ -1367,7 +1376,7 @@ window.addEventListener('DOMContentLoaded', () => {
   <button id="btn-new" class="btn btn-primary" style="display:none">Новая игра</button>
 </div>
 <div class="stage" id="stage"></div>
-<div class="statusbar" id="status">Неправильная пара: −1 балл + слова → словарь ★</div>
+<div class="statusbar" id="status">Неправильная пара: −1 очко. Оба слова добавлены в словарь ★</div>
 </div></div>
 </div>
 </body>
