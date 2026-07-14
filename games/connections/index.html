@@ -6,17 +6,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 <title>Connections</title>
 <style>
-:root{--bg:#e9e9e9;--panel:#c7e3ea;--tile:#f4f4f4;--stroke:#7e7e7e;--text:#111;--blue:#0d6efd;--red:#d61b1b;--grid-size:10}
+:root{--bg:#e9e9e9;--panel:#c7e3ea;--tile:#f4f4f4;--stroke:#7e7e7e;--text:#111;--blue:#0d6efd;--red:#d61b1b;--grid-size:10;--status-h:24px}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{height:100%;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
 /* For grid=10: no scroll (original behavior) */
 body.grid-10{overflow:hidden}
-body.grid-10 .stage{height:calc(100vh - 34px)}
+body.grid-10 .stage{height:calc(100vh - 34px - var(--status-h))}
 /* For grid=15,20: vertical scroll only, 10 tiles per row, same tile size as 10x10 */
 body.grid-15,body.grid-20{overflow-x:hidden;overflow-y:auto}
 body.grid-15 .stage,body.grid-20 .stage{height:auto}
 /* Fixed row height: always 1/10 of stage height so tiles don't stretch when rows disappear */
-:root{--row-h:calc((100vh - 34px - 40px) / 10)}
+:root{--row-h:calc((100vh - 34px - 40px - var(--status-h)) / 10)}
 /* Narrow desktop window: shrink up to a minimum, then horizontal scroll. */
 /* Min viewport for full-fit grid: 1080px. Below that, horizontal scroll kicks in with min-width:1000px (10 tiles ~100px). */
 @media(min-width:601px) and (max-width:1080px){
@@ -25,7 +25,7 @@ body.grid-15 .stage,body.grid-20 .stage{height:auto}
   .scroll-wrap{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;height:100vh;width:100vw}
   body.grid-15 .scroll-wrap,body.grid-20 .scroll-wrap{overflow-y:auto}
   .scroll-inner{min-width:1000px}
-  :root{--row-h:calc((100vh - 34px - 40px) / 10)}
+  :root{--row-h:calc((100vh - 34px - 40px - var(--status-h)) / 10)}
 }
 @media(max-width:600px){
   html,body{height:auto;overflow:hidden}
@@ -155,7 +155,7 @@ body.grid-15 .row,body.grid-20 .row{flex:none;height:var(--row-h)}
 .merge-preview{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;word-break:break-word;hyphens:auto;max-height:2.2em;font-size:inherit}
 .merge-num{font-weight:700;color:var(--red);font-size:15px;margin-top:1px}
 
-.statusbar{padding:2px 10px;font-size:13px;line-height:1.3;color:#555;flex-shrink:0;display:flex;align-items:center;gap:12px}
+.statusbar{height:var(--status-h);padding:2px 10px;font-size:13px;line-height:1.3;color:#555;flex-shrink:0;display:flex;align-items:center;gap:12px}
 .statusbar .result{font-weight:700}
 
 /* Overlay panels (history, vocab) */
@@ -261,7 +261,7 @@ const I18N = {
     gameLabel: 'Игра', groups: 'Группы',
     vocab: '★ Словарь', historyBtn: '📊', gotoBtn: 'Игра #…',
     giveUp: 'Сдаюсь', newGame: 'Новая игра',
-    statusDefault: 'Неправильная пара: −1 очко. Оба слова добавлены в словарь ★',
+    statusDefault: 'Неправильная пара: −1 очко. Оба слова попадут в словарь ★',
     allGroupsDone: 'Все {n} групп собраны!',
     gaveUp: 'Сдались.',
     score: 'Очки',
@@ -298,7 +298,7 @@ const I18N = {
     gameLabel: 'Game', groups: 'Groups',
     vocab: '★ Glossary', historyBtn: '📊', gotoBtn: 'Game #…',
     giveUp: 'Give up', newGame: 'New game',
-    statusDefault: 'Wrong pair: −1 point + words go to glossary ★',
+    statusDefault: 'Wrong pair: −1 point. Both words go to glossary ★',
     allGroupsDone: 'All {n} groups found!',
     gaveUp: 'Gave up.',
     score: 'Score',
@@ -436,18 +436,21 @@ function generateGame(gameNum){
   const shuffledCats = shuffleWithSeed(bank, rng);
   const picked = shuffledCats.slice(0, GRID);
   const categories = picked.map((cat, i) => {
-    const words = cat.words.map(e => typeof e === 'string' ? e : e.w);
-    const shuffledWords = shuffleWithSeed(words, rng);
+    const entries = cat.words.map(e => typeof e === 'string' ? {w:e, d:''} : {w:e.w, d:e.d || ''});
+    const shuffledEntries = shuffleWithSeed(entries, rng).slice(0, GRID);
+    const defs = {};
+    shuffledEntries.forEach(e => { defs[e.w] = e.d || ''; });
     return {
       id: 'c' + i,
       name: cat.name,
-      words: shuffledWords.slice(0, GRID)
+      words: shuffledEntries.map(e => e.w),
+      defs
     };
   });
   const allTiles = [];
   categories.forEach(cat => {
     cat.words.forEach(word => {
-      allTiles.push({word, catId: cat.id, catName: cat.name});
+      allTiles.push({word, def: cat.defs[word] || '', catId: cat.id, catName: cat.name});
     });
   });
   const shuffledTiles = shuffleWithSeed(allTiles, rng);
@@ -506,6 +509,10 @@ function updateStats(){
 function getWords(el){try{return JSON.parse(el.dataset.words||'[]')}catch(e){return []}}
 function setWords(el, arr){el.dataset.words = JSON.stringify(arr);}
 function escapeHtml(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function tileDef(word, catId){
+  const cat = game && game.categories ? game.categories.find(c => c.id === catId) : null;
+  return (cat && cat.defs && cat.defs[word]) || DEFS[word] || '';
+}
 
 function renderTile(el){
   const size = Number(el.dataset.size||1);
@@ -697,8 +704,9 @@ function showRevealPanel(){
       const isBookmarked = vocabSet.has(word);
       const starCls = isBookmarked ? 'rw-star active' : 'rw-star';
       html += '<div class="reveal-word" style="border-color:'+rc.border+'">';
-      html += '<span class="'+starCls+'" data-word="'+escapeHtml(word)+'" data-cat="'+escapeHtml(cat.name)+'">★</span>';
-      html += '<span class="rw-text" title="'+(DEFS[word] ? escapeHtml(DEFS[word]) : '')+'">'+escapeHtml(word)+'</span>';
+      const def = (cat.defs && cat.defs[word]) || DEFS[word] || '';
+      html += '<span class="'+starCls+'" data-word="'+escapeHtml(word)+'" data-cat="'+escapeHtml(cat.name)+'" data-def="'+escapeHtml(def)+'">★</span>';
+      html += '<span class="rw-text" title="'+escapeHtml(def)+'">'+escapeHtml(word)+'</span>';
       html += '</div>';
     });
     html += '</div></div>';
@@ -722,7 +730,7 @@ function showRevealPanel(){
       v.splice(idx, 1);
       star.classList.remove('active');
     } else {
-      v.push({word, category: catName, def: DEFS[word] || '', gameNum: game.gameNum, date: new Date().toLocaleDateString('ru-RU')});
+      v.push({word, category: catName, def: star.dataset.def || DEFS[word] || '', gameNum: game.gameNum, date: new Date().toLocaleDateString('ru-RU')});
       star.classList.add('active');
     }
     saveVocab(v);
@@ -757,14 +765,15 @@ function revealAll(){
       btn.className = 'tile';
       btn.dataset.word = t.word;
       btn.dataset.cat = t.catId;
+      btn.dataset.def = t.def || tileDef(t.word, t.catId);
       btn.dataset.size = '1';
-      btn.textContent = t.word;
+      btn.textContent = addSoftHyphens(t.word);
       btn.style.fontSize = adaptiveFont(t.word);
       btn.disabled = true;
       const catIdx = parseInt(t.catId.replace('c',''), 10);
       btn.classList.add('reveal-' + catIdx);
       const cat = game.categories.find(cc => cc.id === t.catId);
-      const def = DEFS[t.word];
+      const def = btn.dataset.def;
       if(cat) btn.title = def ? (cat.name + ': ' + def) : cat.name;
       row.appendChild(btn);
     }
@@ -854,7 +863,7 @@ function autoBookmarkError(tile1, tile2){
     const catId = el.dataset.cat;
     const cat = game.categories.find(c => c.id === catId);
     const catName = cat ? cat.name : '';
-    vocab.push({word, category: catName, def: DEFS[word] || '', gameNum: game.gameNum, date: new Date().toLocaleDateString('ru-RU')});
+    vocab.push({word, category: catName, def: tileDef(word, catId), gameNum: game.gameNum, date: new Date().toLocaleDateString('ru-RU')});
     vocabSet.add(word);
     el.classList.add('bookmarked');
   });
@@ -875,7 +884,7 @@ function toggleBookmark(el){
     vocab.splice(existIdx, 1);
     el.classList.remove('bookmarked');
   } else {
-    vocab.push({word, category: catName, def: DEFS[word] || '', gameNum: game.gameNum, date: new Date().toLocaleDateString('ru-RU')});
+    vocab.push({word, category: catName, def: tileDef(word, catId), gameNum: game.gameNum, date: new Date().toLocaleDateString('ru-RU')});
     el.classList.add('bookmarked');
   }
   saveVocab(vocab);
@@ -1013,6 +1022,7 @@ function buildGrid(){
       btn.className = 'tile';
       btn.dataset.word = t.word;
       btn.dataset.cat = t.catId;
+      btn.dataset.def = t.def || tileDef(t.word, t.catId);
       btn.dataset.size = '1';
       btn.textContent = t.word;
       setWords(btn, [t.word]);
@@ -1376,7 +1386,7 @@ window.addEventListener('DOMContentLoaded', () => {
   <button id="btn-new" class="btn btn-primary" style="display:none">Новая игра</button>
 </div>
 <div class="stage" id="stage"></div>
-<div class="statusbar" id="status">Неправильная пара: −1 очко. Оба слова добавлены в словарь ★</div>
+<div class="statusbar" id="status">Неправильная пара: −1 очко. Оба слова попадут в словарь ★</div>
 </div></div>
 </div>
 </body>
