@@ -122,6 +122,7 @@ body.grid-15 .row,body.grid-20 .row{flex:none;height:var(--row-h)}
   transition:background 0.2s, outline 0.15s;
   position:relative;
 }
+.tile.fit-break{overflow-wrap:anywhere;hyphens:manual}
 .tile.selected{outline:2px solid var(--blue);outline-offset:1px;background:#fffbe6}
 .tile.merged{font-weight:700}
 .tile.complete{background:#d0e4f7;border-color:#6aa9df;color:#1a3a5c;cursor:default}
@@ -240,8 +241,8 @@ body.grid-15 .row,body.grid-20 .row{flex:none;height:var(--row-h)}
 </style>
 
 <!-- Categories bank will be loaded from external file -->
-<script src="categories-bank.js"></script>
-<script src="categories-en.js"></script>
+<script src="categories-bank.js?v=006"></script>
+<script src="categories-en.js?v=006"></script>
 
 <script>
 /* ══════════════════════════════════════════════════
@@ -489,6 +490,38 @@ function addSoftHyphens(text){
   });
 }
 
+function fitsTileBox(el){
+  return el.scrollWidth <= el.clientWidth + 1 && el.scrollHeight <= el.clientHeight + 1;
+}
+
+function fitDesktopTile(el){
+  if(window.innerWidth <= 600) return;
+  if(!el || el.classList.contains('removed')) return;
+
+  el.classList.remove('fit-break');
+  const startSize = parseFloat(el.style.fontSize) || parseFloat(getComputedStyle(el).fontSize) || 16;
+  const minSize = 7;
+  el.style.fontSize = startSize + 'px';
+  if(fitsTileBox(el)) return;
+
+  for(let size = startSize - 0.5; size >= minSize; size -= 0.5){
+    el.style.fontSize = size + 'px';
+    if(fitsTileBox(el)) return;
+  }
+
+  el.classList.add('fit-break');
+  for(let size = Math.min(startSize, 12); size >= minSize; size -= 0.5){
+    el.style.fontSize = size + 'px';
+    if(fitsTileBox(el)) return;
+  }
+  el.style.fontSize = minSize + 'px';
+}
+
+function fitDesktopTiles(root){
+  if(window.innerWidth <= 600) return;
+  (root || document).querySelectorAll('.tile').forEach(fitDesktopTile);
+}
+
 /* ══════════════════════════════════════════════════
    GAME STATE
    ══════════════════════════════════════════════════ */
@@ -574,6 +607,7 @@ function reflowGrid(){
       }
     }
   });
+  fitDesktopTiles(stage);
 }
 
 function mergeInto(target, other){
@@ -755,7 +789,7 @@ function revealAll(){
   const totalTiles = game.tiles.length;
   const totalRows = Math.ceil(totalTiles / COLS);
   let idx = 0;
-  for(let r = 0; r < totalRows; r++){
+	  for(let r = 0; r < totalRows; r++){
     const row = document.createElement('div');
     row.className = 'row';
     row.style.display = '';
@@ -777,9 +811,10 @@ function revealAll(){
       if(cat) btn.title = def ? (cat.name + ': ' + def) : cat.name;
       row.appendChild(btn);
     }
-    stage.appendChild(row);
-  }
-  /* Mark bookmarked words */
+	    stage.appendChild(row);
+	  }
+	  fitDesktopTiles(stage);
+	  /* Mark bookmarked words */
   const vocab = getVocab();
   const vocabWords = new Set(vocab.map(v => v.word));
   stage.querySelectorAll('.tile').forEach(btn => {
@@ -1032,9 +1067,10 @@ function buildGrid(){
       setupTileBookmark(btn);
       row.appendChild(btn);
     }
-    stage.appendChild(row);
-  }
-}
+	    stage.appendChild(row);
+	  }
+	  fitDesktopTiles(stage);
+	}
 
 /* ══════════════════════════════════════════════════
    START / NEW GAME
@@ -1291,10 +1327,11 @@ window.addEventListener('DOMContentLoaded', () => {
         applyGridCSS();
         if(game) buildGrid();
       } else {
-        document.querySelectorAll('.tile').forEach(btn => {
-          const w = btn.dataset.word || btn.textContent;
-          if(w) btn.style.fontSize = adaptiveFont(w);
-        });
+	        document.querySelectorAll('.tile').forEach(btn => {
+	          const w = btn.dataset.word || btn.textContent;
+	          if(w) btn.style.fontSize = adaptiveFont(w);
+	          fitDesktopTile(btn);
+	        });
       }
     }, 150);
   });
