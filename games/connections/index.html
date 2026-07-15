@@ -38,6 +38,7 @@ body.grid-15 .stage,body.grid-20 .stage{height:auto}
 .sel-container{background:#fff;border-radius:12px;padding:36px 44px;max-width:620px;width:100%;box-shadow:0 4px 24px rgba(0,0,0,0.1);position:relative}
 .sel-container h1{text-align:center;font-size:28px;font-weight:800;margin-bottom:4px}
 .sel-container .subtitle{text-align:center;color:#888;font-size:14px;margin-bottom:24px}
+.app-version{position:absolute;right:14px;bottom:10px;color:#aaa;font-size:11px;font-weight:500;line-height:1}
 .sel-section{margin-bottom:20px}
 .sel-label{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:#999;margin-bottom:10px}
 .sel-row{display:flex;gap:8px;margin-bottom:8px;flex-wrap:wrap}
@@ -241,8 +242,8 @@ body.grid-15 .row,body.grid-20 .row{flex:none;height:var(--row-h)}
 </style>
 
 <!-- Categories bank will be loaded from external file -->
-<script src="categories-bank.js?v=006"></script>
-<script src="categories-en.js?v=006"></script>
+<script src="categories-bank.js?v=63"></script>
+<script src="categories-en.js?v=63"></script>
 
 <script>
 /* ══════════════════════════════════════════════════
@@ -1403,6 +1404,7 @@ window.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <button class="start-btn" onclick="launchGame()">Начать игру</button>
+  <div class="app-version">v63</div>
 </div>
 </div>
 
