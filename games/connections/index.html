@@ -242,8 +242,8 @@ body.grid-15 .row,body.grid-20 .row{flex:none;height:var(--row-h)}
 </style>
 
 <!-- Categories bank will be loaded from external file -->
-<script src="categories-bank.js?v=63"></script>
-<script src="categories-en.js?v=63"></script>
+<script src="categories-bank.js?v=65"></script>
+<script src="categories-en.js?v=65"></script>
 
 <script>
 /* ══════════════════════════════════════════════════
@@ -405,31 +405,20 @@ const DEFS = {};
    GENERATE GAME from bank + game number
    ══════════════════════════════════════════════════ */
 function getFilteredBank(){
-  let bank = getBank();
-  // Difficulty filter: easy = only easy, medium = easy+medium, hard = all
-  // Fallback: if not enough categories for GRID, widen difficulty
-  const diffLevels = ['easy','medium','hard'];
-  let diffIdx = chosenDifficulty === 'easy' ? 0 : chosenDifficulty === 'medium' ? 1 : 2;
-  while(diffIdx < 2){
-    let filtered;
-    if(diffIdx === 0) filtered = bank.filter(cat => cat.tags && cat.tags.difficulty === 'easy');
-    else if(diffIdx === 1) filtered = bank.filter(cat => cat.tags && (cat.tags.difficulty === 'easy' || cat.tags.difficulty === 'medium'));
-    else filtered = bank;
-    if(filtered.length >= GRID){ bank = filtered; break; }
-    diffIdx++;
-  }
-  if(diffIdx === 2){ /* hard = all, no filter */ }
-  else if(diffIdx === 1) bank = bank.filter(cat => cat.tags && (cat.tags.difficulty === 'easy' || cat.tags.difficulty === 'medium'));
-  else if(diffIdx === 0) bank = bank.filter(cat => cat.tags && cat.tags.difficulty === 'easy');
-  // Theme filter
-  if(chosenTheme === 'all') return bank;
-  // System A: geek/human, System B: history/tech/culture (supports both direct and granular b-tags)
   const superB = {history:'history',tech:'tech',culture:'culture',hist:'history',geo:'history',phil:'history',sci:'tech',math:'tech',med:'tech',sport:'tech',biz:'tech',art:'culture',lit:'culture',music:'culture',lang:'culture',nature:'culture',myth:'culture',psych:'culture',movies:'culture',tv:'culture',pop:'culture',games:'culture',internet:'culture',stories:'culture',books:'culture',mythology:'culture',architecture:'culture',business:'tech',politics:'history',adventure:'tech',space:'tech',geography:'history',geek:'tech'};
-  return bank.filter(cat => {
+  const matchesTheme = cat => {
+    if(chosenTheme === 'all') return true;
     if(!cat.tags) return true;
     if(chosenTheme === 'geek' || chosenTheme === 'human') return cat.tags.a === chosenTheme;
     return superB[cat.tags.b] === chosenTheme;
-  });
+  };
+  const bank = getBank().filter(matchesTheme);
+  const primary = bank.filter(cat => cat.tags && cat.tags.difficulty === chosenDifficulty);
+  if(primary.length >= GRID) return primary;
+  const fallbackByDifficulty = {easy:'medium', medium:'easy', hard:'medium'};
+  const fallbackDifficulty = fallbackByDifficulty[chosenDifficulty];
+  const fallback = bank.filter(cat => cat.tags && cat.tags.difficulty === fallbackDifficulty);
+  return [...primary, ...fallback];
 }
 
 function generateGame(gameNum){
@@ -1170,11 +1159,7 @@ function backToMenu(){
 function updateThemeCounts(){
   // Apply difficulty filter first
   let bank = getBank();
-  if(chosenDifficulty === 'easy'){
-    bank = bank.filter(cat => cat.tags && cat.tags.difficulty === 'easy');
-  } else if(chosenDifficulty === 'medium'){
-    bank = bank.filter(cat => cat.tags && (cat.tags.difficulty === 'easy' || cat.tags.difficulty === 'medium'));
-  }
+  bank = bank.filter(cat => cat.tags && cat.tags.difficulty === chosenDifficulty);
   const superB = {history:'history',tech:'tech',culture:'culture',hist:'history',geo:'history',phil:'history',sci:'tech',math:'tech',med:'tech',sport:'tech',biz:'tech',art:'culture',lit:'culture',music:'culture',lang:'culture',nature:'culture',myth:'culture',psych:'culture',movies:'culture',tv:'culture',pop:'culture',games:'culture',internet:'culture',stories:'culture',books:'culture',mythology:'culture',architecture:'culture',business:'tech',politics:'history',adventure:'tech',space:'tech',geography:'history',geek:'tech'};
   const counts = {all:0,geek:0,human:0,history:0,tech:0,culture:0};
   bank.forEach(cat => {
@@ -1404,7 +1389,7 @@ window.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <button class="start-btn" onclick="launchGame()">Начать игру</button>
-  <div class="app-version">v63</div>
+  <div class="app-version">v65</div>
 </div>
 </div>
 
