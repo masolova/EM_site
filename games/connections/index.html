@@ -242,8 +242,8 @@ body.grid-15 .row,body.grid-20 .row{flex:none;height:var(--row-h)}
 </style>
 
 <!-- Categories bank will be loaded from external file -->
-<script src="categories-bank.js?v=74"></script>
-<script src="categories-en.js?v=74"></script>
+<script src="categories-bank.js?v=76"></script>
+<script src="categories-en.js?v=76"></script>
 
 <script>
 /* ══════════════════════════════════════════════════
@@ -387,60 +387,6 @@ function shuffleWithSeed(arr, rng){
   return a;
 }
 
-const TEST_GAME_TOPICS = {
-  730020: [
-    "Инженерия",
-    "Великие открытия и изобретения",
-    "Пилотируемая космонавтика",
-    "Космические аппараты и миссии",
-    "Необычные животные",
-    "90-е в России",
-    "Африка: природа, страны и политика",
-    "Катастрофы и гуманитарные кризисы",
-    "Монахи и монашеские ордена разных стран",
-    "Мода: вещи, силуэты и подиум",
-    "Прикладная медицина",
-    "Образование и методы обучения",
-    "Мошенники и аферы",
-    "Древняя Греция: цивилизация",
-    "Древний Рим: цивилизация",
-    "Первооткрыватели и путешественники",
-    "Колонии и деколонизация",
-    "Ренессанс: люди и идеи",
-    "Просвещение: идеи и круги",
-    "Спортивные скандалы и спорные эпизоды"
-  ],
-  730021: [
-    "Архитектурные стили и направления",
-    "Архитектурные шедевры мира",
-    "Архитектура: детали и элементы",
-    "История видеоигр: платформы и жанры",
-    "Культовые компьютерные игры",
-    "Лингвисты и филологи",
-    "Интернациональные заимствования",
-    "Астрофизические объекты и явления",
-    "Космическая фантастика: термины и образы",
-    "Космические мегаструктуры и гипотетическая инженерия",
-    "Технологические компании и декакорны",
-    "Стартапы-единороги до 10 млрд",
-    "Парфюмерия: ароматы и термины",
-    "Латинские выражения и термины",
-    "Логика, аргументация и когнитивные ошибки",
-    "Риторические и литературные приёмы",
-    "Политические фигуры, диссиденты и громкие убийства",
-    "Культовое кино и научная фантастика",
-    "Почвы, минералы и горные породы",
-    "Монгольская империя и Золотая Орда: устройство"
-  ]
-};
-
-function getTestGameBank(gameNum){
-  if(LANG !== 'ru') return null;
-  const names = TEST_GAME_TOPICS[Number(gameNum)];
-  if(!names) return null;
-  const byName = new Map(CATEGORIES_BANK.map(cat => [cat.name, cat]));
-  return names.map(name => byName.get(name)).filter(Boolean);
-}
 
 /* ══════════════════════════════════════════════════
    DEFINITIONS LOOKUP (built into bank)
@@ -478,9 +424,8 @@ function getFilteredBank(){
 
 function generateGame(gameNum){
   const rng = mulberry32(gameNum * 2654435761);
-  const testBank = getTestGameBank(gameNum);
-  const bank = testBank || getFilteredBank();
-  const shuffledCats = testBank ? bank : shuffleWithSeed(bank, rng);
+  const bank = getFilteredBank();
+  const shuffledCats = shuffleWithSeed(bank, rng);
   const picked = shuffledCats.slice(0, GRID);
   const categories = picked.map((cat, i) => {
     const entries = cat.words.map(e => typeof e === 'string' ? {w:e, d:''} : {w:e.w, d:e.d || ''});
@@ -1445,7 +1390,7 @@ window.addEventListener('DOMContentLoaded', () => {
     </div>
   </div>
   <button class="start-btn" onclick="launchGame()">Начать игру</button>
-  <div class="app-version">v74</div>
+  <div class="app-version">v76</div>
 </div>
 </div>
 

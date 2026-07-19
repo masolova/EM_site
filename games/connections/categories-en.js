@@ -12652,8 +12652,8 @@ const CATEGORIES_EN = [
         "d": "Malaysian coconut rice with sambal, anchovies, peanuts, and egg — national dish."
       },
       {
-        "w": "Nasi lemak",
-        "d": "Coconut-rice breakfast dish from Malaysia, often served with sambal"
+        "w": "Kaya Toast",
+        "d": "Singaporean and Malaysian toast with coconut jam, butter, soft eggs, and coffee."
       },
       {
         "w": "Miso Soup",
