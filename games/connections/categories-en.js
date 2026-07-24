@@ -624,8 +624,8 @@ const CATEGORIES_EN = [
         "d": "Canadian fries drowned in gravy and squeaky cheese curds"
       },
       {
-        "w": "Pad Thai",
-        "d": "Thailand's stir-fried noodle dish with peanuts and lime"
+        "w": "Takoyaki",
+        "d": "Japanese octopus balls cooked in round molds and sold hot"
       },
       {
         "w": "Falafel",
@@ -912,8 +912,8 @@ const CATEGORIES_EN = [
         "d": "Six NBA titles, two three-peats — the GOAT debate starts here"
       },
       {
-        "w": "Jackie Joyner-Kersee",
-        "d": "American heptathlon and long-jump legend, among the greatest Olympians"
+        "w": "Sachin Tendulkar",
+        "d": "Indian cricket icon whose batting records made him a global sports figure"
       },
       {
         "w": "Pelé",
@@ -928,12 +928,12 @@ const CATEGORIES_EN = [
         "d": "The Greatest — float like a butterfly, sting like a bee"
       },
       {
-        "w": "Lionel Messi",
-        "d": "Eight Ballon d'Or awards and a World Cup to complete the legend"
+        "w": "Don Bradman",
+        "d": "Australian cricketer with the most famous batting average in the sport"
       },
       {
-        "w": "Roger Federer",
-        "d": "Tennis's elegant master — 20 Slams and never broke a racket"
+        "w": "Tom Brady",
+        "d": "American football quarterback with seven Super Bowl titles"
       },
       {
         "w": "Michael Phelps",
@@ -948,28 +948,28 @@ const CATEGORIES_EN = [
         "d": "15 majors and a comeback from career-ending injury that stunned sport"
       },
       {
-        "w": "Cristiano Ronaldo",
-        "d": "Five Ballon d'Ors and a work ethic that is almost inhuman"
+        "w": "Kelly Slater",
+        "d": "American surfer with a record number of world titles"
       },
       {
-        "w": "Serena Williams",
-        "d": "Tennis champion who dominated Grand Slam singles for more than two decades"
+        "w": "Hakuho",
+        "d": "Sumo yokozuna with record tournament wins"
       },
       {
         "w": "LeBron James",
         "d": "King James — four titles, four teams, still competing past 40"
       },
       {
-        "w": "Usain Bolt",
-        "d": "Jamaican sprinter and Olympic legend, world-record holder in the 100m and 200m"
+        "w": "Tony Hawk",
+        "d": "Skateboarding icon who turned vert tricks into global pop culture"
       },
       {
-        "w": "Ayrton Senna",
-        "d": "Formula One genius and eternal rain-master who died too soon"
+        "w": "Mikaela Shiffrin",
+        "d": "American alpine skier, multiple Olympic champion and record World Cup winner"
       },
       {
-        "w": "Jesse Owens",
-        "d": "Four gold medals at 1936 Berlin Olympics humiliated Nazi ideology"
+        "w": "Dan Carter",
+        "d": "New Zealand rugby fly-half and one of the sport’s greats"
       },
       {
         "w": "Babe Ruth",
@@ -980,16 +980,16 @@ const CATEGORIES_EN = [
         "d": "Hand of God, Goal of the Century — football's flawed genius"
       },
       {
-        "w": "Steffi Graf",
-        "d": "Only player to win all four Slams and an Olympic gold in one year"
+        "w": "Birgit Fischer",
+        "d": "German canoeist with Olympic medals across six Games"
       },
       {
         "w": "Kobe Bryant",
         "d": "Black Mamba — five titles, Mamba Mentality, unforgettable legacy"
       },
       {
-        "w": "Carl Lewis",
-        "d": "Nine Olympic golds in sprinting and long jump across three Games"
+        "w": "Lindsey Vonn",
+        "d": "American alpine skier and one of the great downhill racers"
       },
       {
         "w": "Nadia Comaneci",
@@ -1016,16 +1016,16 @@ const CATEGORIES_EN = [
         "d": "18 major titles — the Golden Bear nobody has yet surpassed"
       },
       {
-        "w": "Martina Navratilova",
-        "d": "18 Grand Slam singles titles and the most dominant serve-and-volley"
+        "w": "Oscar Schmidt",
+        "d": "Brazilian basketball scorer famous internationally without playing in the NBA"
       },
       {
-        "w": "Eliud Kipchoge",
-        "d": "Marathon runner who first broke the two-hour barrier in history"
+        "w": "Marta",
+        "d": "Brazilian footballer regarded as one of the greatest women’s players"
       },
       {
-        "w": "Sebastian Vettel",
-        "d": "Four consecutive F1 world championships with Red Bull Racing"
+        "w": "Manny Pacquiao",
+        "d": "Filipino boxing champion across multiple weight divisions and global sports icon"
       },
       {
         "w": "Shaquille O'Neal",
@@ -1106,8 +1106,8 @@ const CATEGORIES_EN = [
         "d": "Plane crash survivors on a mysterious island full of secrets"
       },
       {
-        "w": "Westworld",
-        "d": "AI cowboys in a theme park awakening to their own consciousness"
+        "w": "The X-Files",
+        "d": "Paranormal FBI series that made conspiracy mythology mainstream TV"
       },
       {
         "w": "Twin Peaks",
@@ -1580,8 +1580,8 @@ const CATEGORIES_EN = [
         "d": "Mongol conqueror who created the largest land empire ever"
       },
       {
-        "w": "George Washington",
-        "d": "America's first president who refused to become a king"
+        "w": "Lee Kuan Yew",
+        "d": "Singapore’s founding prime minister and long-serving state builder"
       },
       {
         "w": "Xi Jinping",
@@ -1608,8 +1608,8 @@ const CATEGORIES_EN = [
         "d": "India's first prime minister who guided a billion people to independence"
       },
       {
-        "w": "Abraham Lincoln",
-        "d": "Honest Abe — split rails and a fractured nation back together"
+        "w": "Charles de Gaulle",
+        "d": "French leader of Free France and founder of the Fifth Republic"
       },
       {
         "w": "Martin Luther King Jr.",
@@ -1644,8 +1644,8 @@ const CATEGORIES_EN = [
         "d": "Russian revolutionary who turned Marx's ideas into a global movement"
       },
       {
-        "w": "Angela Davis",
-        "d": "Civil rights activist and radical philosopher who changed American debate"
+        "w": "Winston Churchill",
+        "d": "British prime minister during World War II"
       }
     ]
   },
@@ -1670,8 +1670,8 @@ const CATEGORIES_EN = [
         "d": "Inca mountain citadel hidden in Peruvian Andes for centuries"
       },
       {
-        "w": "Great Wall",
-        "d": "China's 13,000-mile fortification — visible ambition, not from space"
+        "w": "Moenjodaro",
+        "d": "Indus Valley city with planned streets and brick architecture"
       },
       {
         "w": "Parthenon",
@@ -1690,8 +1690,8 @@ const CATEGORIES_EN = [
         "d": "Jordan's rose-red city carved directly into sandstone cliffs"
       },
       {
-        "w": "Angkor Wat",
-        "d": "Cambodia's vast 12th-century Hindu temple — largest religious complex ever"
+        "w": "Hampi",
+        "d": "Ruined capital of Vijayanagara with temples and boulder landscapes"
       },
       {
         "w": "Chichén Itzá",
@@ -1714,8 +1714,8 @@ const CATEGORIES_EN = [
         "d": "Roman city frozen in time by Vesuvius's volcanic ash in 79 AD"
       },
       {
-        "w": "Alhambra",
-        "d": "Granada's stunning Moorish palace with intricate tilework and gardens"
+        "w": "Ajanta Caves",
+        "d": "Indian rock-cut Buddhist cave complex with murals and monasteries"
       },
       {
         "w": "Baalbek",
@@ -1726,8 +1726,8 @@ const CATEGORIES_EN = [
         "d": "Ancient world's tallest man-made structure guiding ships for centuries"
       },
       {
-        "w": "Borobudur",
-        "d": "Indonesia's 9th-century Buddhist temple — world's largest Buddhist monument"
+        "w": "Brihadeeswarar Temple",
+        "d": "Great Chola temple at Thanjavur with a massive vimana"
       },
       {
         "w": "Tikal",
@@ -1828,8 +1828,8 @@ const CATEGORIES_EN = [
         "d": "Cowboy toy who fears being replaced — loyalty is his superpower"
       },
       {
-        "w": "Wall-E",
-        "d": "Lonely trash-compacting robot who saves humanity with a plant"
+        "w": "Merida",
+        "d": "Pixar princess from Brave, an archer who refuses an arranged marriage"
       },
       {
         "w": "Moana",
@@ -2894,8 +2894,8 @@ const CATEGORIES_EN = [
         "d": "Egypt's chaotic megacity beside the Nile and the pyramids"
       },
       {
-        "w": "Buenos Aires",
-        "d": "Argentina's passionate capital where tango was born"
+        "w": "Brussels",
+        "d": "Belgian capital and major European Union center"
       },
       {
         "w": "Ottawa",
@@ -2914,8 +2914,8 @@ const CATEGORIES_EN = [
         "d": "Australia's capital built as a compromise between Sydney and Melbourne"
       },
       {
-        "w": "Brasília",
-        "d": "Brazil's futuristic capital carved from jungle in just four years"
+        "w": "Prague",
+        "d": "Czech capital known for its castle and historic center"
       },
       {
         "w": "Seoul",
@@ -2926,8 +2926,8 @@ const CATEGORIES_EN = [
         "d": "Kenya's capital — East Africa's business hub with giraffes at the airport"
       },
       {
-        "w": "Bangkok",
-        "d": "Thailand's chaotic capital of temples, street food, and tuk-tuks"
+        "w": "Copenhagen",
+        "d": "Danish capital on the Øresund, known for canals and design"
       },
       {
         "w": "Ankara",
@@ -2970,8 +2970,8 @@ const CATEGORIES_EN = [
         "d": "New Zealand's wind-lashed harbour capital between two dramatic islands"
       },
       {
-        "w": "Singapore",
-        "d": "City-state capital and country simultaneously — clean, efficient, strict"
+        "w": "Budapest",
+        "d": "Hungarian capital formed from Buda and Pest on the Danube"
       },
       {
         "w": "Kyoto",
@@ -3636,8 +3636,8 @@ const CATEGORIES_EN = [
         "d": "Infrared space telescope showing galaxies from the universe's first moments"
       },
       {
-        "w": "Sputnik",
-        "d": "First satellite ever — Soviet beep heard round the world in 1957"
+        "w": "Sputnik 1",
+        "d": "First artificial satellite, launched by the Soviet Union in 1957"
       },
       {
         "w": "Perseverance",
@@ -4114,8 +4114,8 @@ const CATEGORIES_EN = [
         "d": "I.M. Pei's glass pyramid entrance — modern geometry meets classical palace"
       },
       {
-        "w": "Empire State",
-        "d": "New York's Art Deco icon finished in just 410 days during the Depression"
+        "w": "Torre Velasca",
+        "d": "Milan tower whose top-heavy form became a postwar architectural landmark"
       },
       {
         "w": "Millau Viaduct",
@@ -4142,8 +4142,8 @@ const CATEGORIES_EN = [
         "d": "Jordan's rose-red facade carved straight into a sandstone cliff face"
       },
       {
-        "w": "Forbidden City",
-        "d": "Beijing's 9,999-room imperial palace — no one counted all the rooms"
+        "w": "Lloyd’s Building",
+        "d": "London high-tech building with services exposed on the outside"
       },
       {
         "w": "Uffizi Gallery",
@@ -5630,8 +5630,8 @@ const CATEGORIES_EN = [
         "d": "Australia's deadliest spider bites through fingernails — kills in hours"
       },
       {
-        "w": "Tsetse Fly",
-        "d": "Tiny African fly carrying sleeping sickness — kills hundreds of thousands"
+        "w": "Portuguese man o’ war",
+        "d": "Floating siphonophore with painful venomous tentacles"
       },
       {
         "w": "Bullet Ant",
@@ -5850,7 +5850,7 @@ const CATEGORIES_EN = [
     ]
   },
   {
-    "name": "nobel prize winners",
+    "name": "Nobel Prize institutions & rituals",
     "tags": {
       "a": "human",
       "b": "hist",
@@ -5858,144 +5858,144 @@ const CATEGORIES_EN = [
     },
     "words": [
       {
-        "w": "Einstein",
-        "d": "Theory of relativity + Nobel = the face of genius itself"
+        "w": "Nobel Foundation",
+        "d": "Organization that manages Alfred Nobel’s will and the prize finances"
       },
       {
-        "w": "Marie Curie",
-        "d": "Won two Nobels in two sciences — still a record nobody's matched"
+        "w": "Nobel Committee",
+        "d": "Body that prepares and evaluates nominations for a Nobel field"
       },
       {
-        "w": "Camus",
-        "d": "Won Literature at 44 — French-Algerian existentialist, died in a car crash"
+        "w": "Swedish Academy",
+        "d": "Institution that selects the Nobel Prize in Literature"
       },
       {
-        "w": "Malala",
-        "d": "Youngest Nobel laureate; shot by Taliban for defending girls' education"
+        "w": "Royal Swedish Academy of Sciences",
+        "d": "Institution that awards the Nobel Prizes in Physics and Chemistry"
       },
       {
-        "w": "MLK",
-        "d": "Civil rights giant who dreamed big and won the Peace Prize in 1964"
+        "w": "Karolinska Institute",
+        "d": "Institution whose assembly awards the Nobel Prize in Physiology or Medicine"
       },
       {
-        "w": "Hemingway",
-        "d": "Old Man and the Sea author who won Literature in 1954"
+        "w": "Norwegian Nobel Committee",
+        "d": "Committee appointed by Norway’s parliament to award the Peace Prize"
       },
       {
-        "w": "Mother Teresa",
-        "d": "Calcutta's saint of the poor; 1979 Peace Prize winner"
+        "w": "Stockholm Concert Hall",
+        "d": "Main Stockholm venue for the Nobel Prize award ceremony"
       },
       {
-        "w": "Bob Dylan",
-        "d": "First rock musician to win Literature — he took a while to say thanks"
+        "w": "Oslo City Hall",
+        "d": "Venue where the Nobel Peace Prize is awarded"
       },
       {
-        "w": "Pauling",
-        "d": "Only person to win two solo Nobels — Chemistry and Peace, no shared prizes"
+        "w": "Nobel banquet",
+        "d": "Formal dinner held in Stockholm after the award ceremony"
       },
       {
-        "w": "Aung San Suu Kyi",
-        "d": "Myanmar democracy icon who won in 1991 while under house arrest"
+        "w": "Nobel lecture",
+        "d": "Public lecture traditionally given by each laureate"
       },
       {
-        "w": "Gorbachev",
-        "d": "Soviet leader who ended the Cold War and won the 1990 Peace Prize"
+        "w": "Nobel medal",
+        "d": "Gold medal presented to each laureate"
       },
       {
-        "w": "Toni Morrison",
-        "d": "Beloved author won Literature in 1993 — first Black woman to do so"
+        "w": "Nobel diploma",
+        "d": "Custom diploma presented with the medal and prize money"
       },
       {
-        "w": "Harold Pinter",
-        "d": "Playwright's ominous silences earned the 2005 Literature Prize"
+        "w": "prize citation",
+        "d": "Short official wording explaining why the award was given"
       },
       {
-        "w": "Feynman",
-        "d": "Bongo-playing physicist decoded quantum electrodynamics and made it fun"
+        "w": "nomination secrecy",
+        "d": "Rule keeping Nobel nomination records closed for decades"
       },
       {
-        "w": "Elie Wiesel",
-        "d": "Holocaust survivor whose memoir Night became testimony — Peace 1986"
+        "w": "fifty-year rule",
+        "d": "Period after which Nobel nomination archives may be opened"
       },
       {
-        "w": "Solzhenitsyn",
-        "d": "Gulag Archipelago author won in 1970 — USSR blocked him from collecting"
+        "w": "Alfred Nobel’s will",
+        "d": "Document that created the prizes from Nobel’s estate"
       },
       {
-        "w": "Rutherford",
-        "d": "Split the atom and won Chemistry in 1908 — before that was terrifying"
+        "w": "Nobel Week",
+        "d": "December program of lectures, ceremonies and events around the awards"
       },
       {
-        "w": "Albert Schweitzer",
-        "d": "Philosopher, musician, and jungle doctor — Peace Prize 1952"
+        "w": "Nobel Prize Museum",
+        "d": "Stockholm museum devoted to the prizes and laureates"
       },
       {
-        "w": "Andrei Sakharov",
-        "d": "Built the H-bomb then became its fiercest critic — Peace Prize 1975"
+        "w": "Peace Prize ceremony",
+        "d": "Separate ceremony held in Oslo for the Nobel Peace Prize"
       },
       {
-        "w": "Alexander Fleming",
-        "d": "Discovered penicillin by accident — and won Medicine in 1945"
+        "w": "economics prize",
+        "d": "Prize in economic sciences established by Sweden’s central bank"
       },
       {
-        "w": "Naipaul",
-        "d": "V.S. Naipaul won Literature in 2001 — brilliant writer, difficult man"
+        "w": "laureate diploma art",
+        "d": "Artwork specially commissioned for Nobel diplomas"
       },
       {
-        "w": "Wangari Maathai",
-        "d": "Kenyan activist planted 30 million trees and won Peace Prize in 2004"
+        "w": "Nobel Prize Concert",
+        "d": "Concert held in Stockholm during Nobel Week"
       },
       {
-        "w": "Ivan Pavlov",
-        "d": "Trained dogs to drool on command — won Medicine in 1904, you know why"
+        "w": "Nobel symposium",
+        "d": "Scholarly meeting associated with the Nobel institutions"
       },
       {
-        "w": "Kissinger",
-        "d": "Won the Peace Prize in 1973 — still one of the most debated choices"
+        "w": "Nobel diploma calligraphy",
+        "d": "Handwritten or designed text prepared for laureate diplomas"
       },
       {
-        "w": "Watson & Crick",
-        "d": "Decoded the double helix — Medicine prize 1962, controversy included"
+        "w": "Nobel medal portrait",
+        "d": "Medal design featuring Alfred Nobel’s profile"
       },
       {
-        "w": "Nelson Mandela",
-        "d": "27 years imprisoned; Nobel Peace Prize 1993 for ending apartheid peacefully"
+        "w": "Nobel prize amount",
+        "d": "Cash award whose value changes with the foundation’s finances"
       },
       {
-        "w": "Gabriel Garcia Marquez",
-        "d": "Magic realism master; Nobel Literature 1982 for One Hundred Years of Solitude"
+        "w": "Nobel announcement",
+        "d": "Public reveal of a year’s laureates by the awarding institution"
       },
       {
-        "w": "Niels Bohr",
-        "d": "Quantum atom model pioneer; Nobel Physics 1922; helped shape the atomic age"
+        "w": "Nobel press conference",
+        "d": "Media event held around laureate announcements"
       },
       {
-        "w": "Amartya Sen",
-        "d": "Bengali economist; Nobel 1998 for work on famine and human development theory"
+        "w": "Nobel archive",
+        "d": "Historical records of nominations, deliberations and prize documents"
       },
       {
-        "w": "Doris Lessing",
-        "d": "Nobel Literature 2007; feminist epic The Golden Notebook changed women's fiction"
+        "w": "Nobel guest list",
+        "d": "Strictly managed invitation list for ceremony and banquet guests"
       },
       {
-        "w": "Werner Heisenberg",
-        "d": "Uncertainty Principle physicist; Nobel 1932; crucial to quantum mechanics foundation"
+        "w": "Nobel diploma folder",
+        "d": "Presentation case used for the laureate diploma"
       },
       {
-        "w": "Lech Walesa",
-        "d": "Solidarity trade-union leader; Nobel Peace 1983; helped bring down communism"
+        "w": "Nobel banquet menu",
+        "d": "Dinner menu designed for the Stockholm banquet"
       },
       {
-        "w": "Seamus Heaney",
-        "d": "Irish poet; Nobel Literature 1995; greatest Irish poet since Yeats"
+        "w": "Nobel laureate medalist",
+        "d": "Engraver or designer involved in creating Nobel medal art"
       },
       {
-        "w": "Malala Yousafzai",
-        "d": "Youngest Nobel laureate; shot by Taliban at 15, fought on for girls' education"
+        "w": "Nobel Foundation statutes",
+        "d": "Rules that govern the administration of the prizes"
       },
       {
-        "w": "Peter Higgs",
-        "d": "Nobel Physics 2013 for predicting the Higgs boson; confirmed by CERN five decades later"
+        "w": "Nobel Peace Center",
+        "d": "Oslo center presenting the history of the Peace Prize"
       }
     ]
   },
@@ -6762,8 +6762,8 @@ const CATEGORIES_EN = [
         "d": "2,500-year-old war simulation still played by millions worldwide"
       },
       {
-        "w": "Monopoly",
-        "d": "Friendship-destroying property game that takes 4 hours and ends in arguments"
+        "w": "Clue",
+        "d": "Deduction board game about solving a mansion murder"
       },
       {
         "w": "Poker",
@@ -6802,8 +6802,8 @@ const CATEGORIES_EN = [
         "d": "Was it Colonel Mustard in the library with the candlestick?"
       },
       {
-        "w": "Battleship",
-        "d": "Grid-based naval war — B7 — hit or miss and total silence"
+        "w": "Mancala",
+        "d": "Ancient family of sowing games played with pits and seeds"
       },
       {
         "w": "Trivial Pursuit",
@@ -6858,8 +6858,8 @@ const CATEGORIES_EN = [
         "d": "Describe a word without using the five most obvious words for it"
       },
       {
-        "w": "Carcassonne",
-        "d": "Medieval tile-laying game where you cunningly steal opponents' cities and farms"
+        "w": "The Resistance",
+        "d": "Social deduction game about spies and hidden teams"
       },
       {
         "w": "7 Wonders",
@@ -7430,8 +7430,8 @@ const CATEGORIES_EN = [
         "d": "A Dyson sphere repurposed as a death ray — focus starlight to sterilize planets"
       },
       {
-        "w": "Gravitational Lens",
-        "d": "Use a star's gravity to focus distant light — a passive, cosmic-scale telescope"
+        "w": "Orbital Mirror",
+        "d": "Proposed space reflector for directing sunlight from orbit"
       },
       {
         "w": "Dyson Bubble",
@@ -7928,8 +7928,8 @@ const CATEGORIES_EN = [
         "d": "Supercontinent that existed 300 million years ago before breaking into today's landmasses"
       },
       {
-        "w": "Stratigraphy",
-        "d": "Reading rock layers like pages of history; deeper equals older; key geology tool"
+        "w": "Orogeny",
+        "d": "Mountain-building process caused by tectonic forces"
       },
       {
         "w": "Unconformity",
@@ -8062,8 +8062,8 @@ const CATEGORIES_EN = [
         "d": "Eagle Nebula gas columns where new stars are born; Hubble's most iconic image"
       },
       {
-        "w": "Andromeda Galaxy",
-        "d": "Nearest major galaxy; will collide with Milky Way in 4.5 billion years"
+        "w": "Sombrero Galaxy",
+        "d": "Bright spiral galaxy famous for its dust-lane “hat” shape"
       },
       {
         "w": "Halley's Comet",
@@ -8074,24 +8074,24 @@ const CATEGORIES_EN = [
         "d": "Remnant of 1054 supernova; Chinese astronomers recorded it; pulsar at its heart"
       },
       {
-        "w": "Orion Nebula",
-        "d": "Stellar nursery 1,344 light-years away; visible to naked eye as fuzzy sword star"
+        "w": "Horsehead Nebula",
+        "d": "Dark nebula in Orion shaped like a horse’s head"
       },
       {
-        "w": "Cosmic Microwave Background",
-        "d": "Afterglow of the Big Bang; faint radiation permeating the entire observable universe"
+        "w": "Boötes Void",
+        "d": "Enormous region of space containing unusually few galaxies"
       },
       {
         "w": "Gamma-Ray Burst",
         "d": "Most energetic explosions in universe; outshine entire galaxies for seconds"
       },
       {
-        "w": "Magnetar",
-        "d": "Neutron star with insanely powerful magnetic field; strongest known in the universe"
+        "w": "Hoag’s Object",
+        "d": "Rare ring galaxy with a nearly perfect circular outer ring"
       },
       {
-        "w": "Quasar",
-        "d": "Supermassive black hole actively feeding; brightest persistent objects in the cosmos"
+        "w": "Einstein Cross",
+        "d": "Gravitationally lensed quasar appearing as four images around a galaxy"
       },
       {
         "w": "Dark Matter Web",
@@ -8508,12 +8508,12 @@ const CATEGORIES_EN = [
         "d": "Left factorial !p is never divisible by prime p — checked far, still unproven"
       },
       {
-        "w": "Dark Matter",
-        "d": "85% of universe's mass is invisible stuff we can detect but cannot see or explain"
+        "w": "Beal Conjecture",
+        "d": "Number theory problem about powers sharing prime factors"
       },
       {
-        "w": "Dark Energy",
-        "d": "Mystery force accelerating cosmic expansion; constitutes 68% of the universe's energy"
+        "w": "Hadamard Matrix Conjecture",
+        "d": "Open problem about square matrices with orthogonal ±1 rows"
       },
       {
         "w": "Quantum Gravity",
@@ -8808,8 +8808,8 @@ const CATEGORIES_EN = [
         "d": "Seligman, 1967 — shocked dogs stopped trying to escape even when they could"
       },
       {
-        "w": "Turing Test",
-        "d": "Alan Turing's 1950 test for machine intelligence; still debated in the AI era"
+        "w": "Asch conformity",
+        "d": "Experiment showing how group pressure changes obvious judgments"
       },
       {
         "w": "Tyndall Heat Rays",
@@ -9190,8 +9190,8 @@ const CATEGORIES_EN = [
         "d": "Mysterious Iberian civilization possibly linked to the legend of Atlantis."
       },
       {
-        "w": "Great Zimbabwe",
-        "d": "Enigmatic stone-walled civilization that controlled southern African gold trade."
+        "w": "Muisca Confederation",
+        "d": "Andean highland polity known for goldwork and the El Dorado legend"
       },
       {
         "w": "Nabataeans",
@@ -9356,8 +9356,8 @@ const CATEGORIES_EN = [
         "d": "\"Old Style\" serif considered the first great English typeface, c. 1722."
       },
       {
-        "w": "Trajan",
-        "d": "All-caps Roman serif carved from Trajan's Column — Hollywood's go-to movie poster font."
+        "w": "Avenir",
+        "d": "Geometric sans-serif by Adrian Frutiger, designed as a future-facing typeface"
       },
       {
         "w": "Optima",
@@ -9720,8 +9720,8 @@ const CATEGORIES_EN = [
         "d": "Greek triremes crushed the Persian fleet in a narrow strait — Europe was saved."
       },
       {
-        "w": "Battle of the Bulge",
-        "d": "Hitler's last desperate offensive in the Ardennes was stopped by freezing GIs."
+        "w": "Battle of Kursk",
+        "d": "Massive Eastern Front tank battle in 1943"
       },
       {
         "w": "Lepanto",
@@ -9740,8 +9740,8 @@ const CATEGORIES_EN = [
         "d": "Napoleon's greatest tactical masterpiece — three emperors met, only one left victorious."
       },
       {
-        "w": "Wounded Knee",
-        "d": "US 7th Cavalry massacred 300 Lakota Sioux, final act of the Indian Wars."
+        "w": "Battle of Lepanto",
+        "d": "1571 naval battle between the Holy League and the Ottoman fleet"
       },
       {
         "w": "Iwo Jima",
@@ -10050,152 +10050,152 @@ const CATEGORIES_EN = [
     ]
   },
   {
-    "name": "ancient scripts",
+    "name": "undeciphered & ancient inscriptions",
     "tags": {
       "a": "human",
-      "b": "geek",
+      "b": "culture",
       "difficulty": "hard"
     },
     "words": [
       {
-        "w": "Cuneiform",
-        "d": "Sumerian wedge-shaped impressions on clay tablets — world's oldest writing system."
-      },
-      {
-        "w": "Hieroglyphs",
-        "d": "Ancient Egyptian picture-symbols carved on temple walls and deciphered via the Rosetta Stone."
-      },
-      {
-        "w": "Linear B",
-        "d": "Mycenaean Greek syllabary deciphered in 1952 — the earliest form of written Greek."
-      },
-      {
-        "w": "Phoenician",
-        "d": "Ancient alphabet that became the ancestor of Greek, Latin, and Arabic scripts."
-      },
-      {
         "w": "Rongorongo",
-        "d": "Undeciphered wooden tablet script from Easter Island — still a complete mystery."
+        "d": "Mysterious glyphic tradition from Rapa Nui"
       },
       {
-        "w": "Ogham",
-        "d": "Irish alphabet carved in notches along stone edges, used in early medieval Ireland."
-      },
-      {
-        "w": "Runic",
-        "d": "Germanic alphabet carved in stone and bone, with both alphabetic and magical uses."
-      },
-      {
-        "w": "Demotic",
-        "d": "Simplified Egyptian cursive script used for everyday documents for 1,000 years."
-      },
-      {
-        "w": "Maya Glyphs",
-        "d": "Complex logosyllabic script decoded in the 20th century, recording epic royal histories."
-      },
-      {
-        "w": "Proto-Sinaitic",
-        "d": "Semitic script from Sinai desert — possibly the ancestor of all alphabets."
+        "w": "Indus script",
+        "d": "Undeciphered symbols from the Indus Valley civilization"
       },
       {
         "w": "Linear A",
-        "d": "Minoan script from Crete, older than Linear B — completely undeciphered to this day."
+        "d": "Undeciphered Aegean script used on Bronze Age Crete"
       },
       {
-        "w": "Indus Script",
-        "d": "Mysterious 4,500-year-old seal inscriptions from the Indus Valley — still unread."
+        "w": "Proto-Elamite",
+        "d": "Early writing system from ancient Iran, still only partly understood"
       },
       {
-        "w": "Nabataean",
-        "d": "Arabic ancestor script of the Nabataeans, evolved into modern Arabic writing."
+        "w": "Cretan hieroglyphs",
+        "d": "Bronze Age Cretan script predating Linear B"
       },
       {
-        "w": "Ugaritic",
-        "d": "Early Semitic cuneiform alphabet, ancestor of Phoenician, discovered in Syria in 1929."
+        "w": "Cypro-Minoan",
+        "d": "Undeciphered syllabic script from Bronze Age Cyprus"
       },
       {
-        "w": "Etruscan",
-        "d": "Script of the Etruscans — we can read it but mostly can't understand the language."
-      },
-      {
-        "w": "Brahmi",
-        "d": "Ancient Indian script that is the ancestor of all South and Southeast Asian scripts."
-      },
-      {
-        "w": "Glagolitic",
-        "d": "First script created for Slavic language, invented by Saints Cyril and Methodius."
-      },
-      {
-        "w": "Kharosthi",
-        "d": "Right-to-left script of ancient Gandhara, used on the Silk Road for centuries."
-      },
-      {
-        "w": "Coptic",
-        "d": "Last stage of ancient Egyptian written in Greek letters — still used in Coptic liturgy."
-      },
-      {
-        "w": "Meroitic",
-        "d": "Undeciphered script of the Nubian Kushite kingdom — letters known, words unknown."
-      },
-      {
-        "w": "Paleo-Hebrew",
-        "d": "Ancient form of Hebrew alphabet predating the square Aramaic script still used today."
-      },
-      {
-        "w": "Avestan",
-        "d": "Sacred script invented specifically to preserve Zoroastrian hymns in perfect phonetic detail."
+        "w": "Byblos syllabary",
+        "d": "Undeciphered inscriptional system from ancient Byblos"
       },
       {
         "w": "Phaistos Disc",
-        "d": "Fired clay disc from Minoan Crete stamped with 241 mysterious symbols, undeciphered."
+        "d": "Famous stamped Cretan object whose signs remain debated"
       },
       {
-        "w": "Tifinagh",
-        "d": "Ancient Berber script still written by Tuareg people of the Sahara today."
+        "w": "Dispilio Tablet",
+        "d": "Neolithic wooden tablet with controversial incised signs"
       },
       {
-        "w": "Sinhala",
-        "d": "Curvilinear script of Sri Lanka, descended from Brahmi, used for over 2,000 years."
+        "w": "Vinča signs",
+        "d": "Neolithic symbols from southeastern Europe"
       },
       {
-        "w": "Byblos Syllabary",
-        "d": "Bronze Age Phoenician syllabic script from Lebanon, only 10 inscriptions survive."
+        "w": "Jiahu symbols",
+        "d": "Early markings on tortoise shells from Neolithic China"
       },
       {
-        "w": "Oracle Bone Script",
-        "d": "Earliest Chinese writing, carved on turtle shells for royal divination 3,300 years ago."
+        "w": "Tărtăria tablets",
+        "d": "Clay tablets with disputed early signs from Transylvania"
       },
       {
-        "w": "Old Persian",
-        "d": "Royal cuneiform script of the Achaemenid Empire, used in monumental inscriptions."
+        "w": "Wadi el-Hol inscriptions",
+        "d": "Early alphabetic inscriptions found in Egypt"
       },
       {
-        "w": "Hieratic",
-        "d": "Cursive priestly Egyptian script used alongside hieroglyphs for papyrus documents."
+        "w": "Cascajal Block",
+        "d": "Stone block with possible Olmec writing"
       },
       {
-        "w": "Elder Futhark",
-        "d": "Oldest complete runic alphabet of 24 characters used by Germanic peoples 200–700 AD."
+        "w": "Epi-Olmec script",
+        "d": "Mesoamerican script known from inscriptions such as La Mojarra"
       },
       {
-        "w": "Ge'ez",
-        "d": "Semitic script of ancient Axum, still the liturgical script of Ethiopian Christianity."
+        "w": "Zapotec inscriptions",
+        "d": "Early Mesoamerican writing from Oaxaca"
       },
       {
-        "w": "Tangut",
-        "d": "Complex logographic script of the Western Xia kingdom in China — 6,000 characters."
+        "w": "Isthmian script",
+        "d": "Mesoamerican script also called La Mojarra script"
       },
       {
-        "w": "Khitan Script",
-        "d": "Two-script system of the Khitan Liao dynasty in China, mostly undeciphered."
+        "w": "Khitan large script",
+        "d": "Script created for the Khitan Liao dynasty"
       },
       {
-        "w": "Naxi Dongba",
-        "d": "World's only living pictographic script, used by the Naxi people of Yunnan province."
+        "w": "Khitan small script",
+        "d": "Khitan script partly deciphered from inscriptions"
       },
       {
-        "w": "Vai Syllabary",
-        "d": "West African syllabic script invented spontaneously around 1830 — still in use."
+        "w": "Jurchen script",
+        "d": "Writing system of the Jurchen Jin dynasty"
+      },
+      {
+        "w": "Tangut script",
+        "d": "Complex script of the Western Xia state"
+      },
+      {
+        "w": "Old Uyghur script",
+        "d": "Script used across Central Asia and adapted by later peoples"
+      },
+      {
+        "w": "Sogdian script",
+        "d": "Aramaic-derived script used by Sogdian merchants"
+      },
+      {
+        "w": "Nabataean script",
+        "d": "Aramaic-derived script ancestral to Arabic writing"
+      },
+      {
+        "w": "Meroitic script",
+        "d": "Script of the kingdom of Kush, partly understood"
+      },
+      {
+        "w": "Old Persian cuneiform",
+        "d": "Royal inscription script of Achaemenid Persia"
+      },
+      {
+        "w": "Ugaritic alphabet",
+        "d": "Cuneiform alphabet used in ancient Ugarit"
+      },
+      {
+        "w": "Avestan script",
+        "d": "Script created to write the Zoroastrian Avesta"
+      },
+      {
+        "w": "Kharosthi",
+        "d": "Ancient script used in Gandhara and northwestern South Asia"
+      },
+      {
+        "w": "Lycian script",
+        "d": "Anatolian alphabet known from Lycian inscriptions"
+      },
+      {
+        "w": "Lydian script",
+        "d": "Anatolian alphabet used in ancient Lydia"
+      },
+      {
+        "w": "Paleo-Hebrew",
+        "d": "Ancient script used for early Hebrew inscriptions"
+      },
+      {
+        "w": "South Arabian script",
+        "d": "Ancient script family from Arabia and the Horn of Africa"
+      },
+      {
+        "w": "Old Turkic runes",
+        "d": "Runiform script used in early Turkic inscriptions"
+      },
+      {
+        "w": "Brahmi inscriptions",
+        "d": "Early South Asian inscriptions that helped reconstruct Brahmi writing"
       }
     ]
   },
@@ -10500,152 +10500,152 @@ const CATEGORIES_EN = [
     ]
   },
   {
-    "name": "assassination attempts that changed history",
+    "name": "failed assassination attempts",
     "tags": {
       "a": "human",
-      "b": "culture",
+      "b": "history",
       "difficulty": "hard"
     },
     "words": [
       {
-        "w": "Franz Ferdinand",
-        "d": "Archduke's murder in Sarajevo 1914 triggered the cascade of alliances into WWI."
+        "w": "Reagan shooting",
+        "d": "1981 attempt that wounded U.S. president Ronald Reagan"
       },
       {
-        "w": "Abraham Lincoln",
-        "d": "Shot by John Wilkes Booth at Ford's Theatre, died the next morning in 1865."
+        "w": "John Paul II shooting",
+        "d": "1981 attempt on the pope in St. Peter’s Square"
       },
       {
-        "w": "Julius Caesar",
-        "d": "Stabbed 23 times by senators on the Ides of March — Et tu, Brute?"
+        "w": "Theodore Roosevelt shooting",
+        "d": "1912 campaign shooting after which Roosevelt still gave a speech"
       },
       {
-        "w": "Yitzhak Rabin",
-        "d": "Israeli PM killed in 1995 by a nationalist — derailed the Oslo peace process."
+        "w": "Andrew Jackson attempt",
+        "d": "1835 attempt where both pistols misfired near the Capitol"
       },
       {
-        "w": "Mahatma Gandhi",
-        "d": "Architect of Indian independence shot three times by a Hindu nationalist in 1948."
+        "w": "Harry Truman attempt",
+        "d": "1950 attack on Blair House by Puerto Rican nationalists"
       },
       {
-        "w": "Martin Luther King",
-        "d": "Civil rights leader shot on a Memphis motel balcony in April 1968."
+        "w": "Ford Sacramento attempt",
+        "d": "1975 attempt on Gerald Ford by Lynette Fromme"
       },
       {
-        "w": "Rasputin",
-        "d": "Romanov mystic poisoned, shot, beaten, and drowned — refused to die easily in 1916."
+        "w": "Ford San Francisco attempt",
+        "d": "1975 attempt on Gerald Ford by Sara Jane Moore"
       },
       {
-        "w": "Indira Gandhi",
-        "d": "Indian PM assassinated by her own Sikh bodyguards following the Golden Temple siege."
+        "w": "Petit-Clamart plot",
+        "d": "1962 OAS ambush attempt against Charles de Gaulle"
       },
       {
-        "w": "Trotsky",
-        "d": "Bolshevik revolutionary killed in Mexican exile by Stalin's agent with an ice axe."
+        "w": "Brighton hotel bombing",
+        "d": "IRA bombing that narrowly missed Margaret Thatcher"
       },
       {
-        "w": "Anwar Sadat",
-        "d": "Egyptian president who made peace with Israel was shot by soldiers during a parade."
+        "w": "Lenin shooting",
+        "d": "1918 attack that seriously wounded Vladimir Lenin"
       },
       {
-        "w": "RFK",
-        "d": "Robert Kennedy shot in a California hotel moments after winning the 1968 primary."
+        "w": "Malala Yousafzai shooting",
+        "d": "Taliban attack after which the education activist survived"
       },
       {
-        "w": "Malcolm X",
-        "d": "Black nationalist leader shot by Nation of Islam members at a Manhattan rally."
+        "w": "Salman Rushdie attack",
+        "d": "2022 stabbing attack survived by the novelist"
       },
       {
-        "w": "Benazir Bhutto",
-        "d": "Pakistan's first female PM killed by a suicide bomb at a rally in 2007."
+        "w": "Navalny poisoning",
+        "d": "2020 poisoning attempt against Russian opposition leader Alexei Navalny"
       },
       {
-        "w": "Park Chung-hee",
-        "d": "South Korean dictator shot by his own intelligence chief during a dinner in 1979."
+        "w": "Skripal poisoning",
+        "d": "2018 nerve-agent attack survived by Sergei and Yulia Skripal"
       },
       {
-        "w": "Patrice Lumumba",
-        "d": "Congo's first PM executed with Western backing — symbol of Cold War betrayal."
+        "w": "Yushchenko poisoning",
+        "d": "Dioxin poisoning during Ukraine’s 2004 presidential campaign"
       },
       {
-        "w": "Georgi Markov",
-        "d": "Bulgarian dissident assassinated with a ricin-tipped umbrella on Waterloo Bridge."
+        "w": "July 20 plot",
+        "d": "1944 bomb plot against Adolf Hitler led by army officers"
       },
       {
-        "w": "Louis Mountbatten",
-        "d": "Queen's cousin killed by an IRA bomb on his fishing boat in Ireland, 1979."
+        "w": "Bürgerbräukeller bomb",
+        "d": "1939 Munich bomb attempt against Hitler by Georg Elser"
       },
       {
-        "w": "Benigno Aquino",
-        "d": "Philippine opposition leader shot on the airport tarmac returning from US exile."
+        "w": "Smolensk plane plot",
+        "d": "1943 failed bomb attempt against Hitler’s aircraft"
       },
       {
-        "w": "Inejiro Asanuma",
-        "d": "Japanese socialist leader stabbed on live TV by an ultranationalist in 1960."
+        "w": "Castro assassination plots",
+        "d": "Repeated CIA-linked plans to kill Fidel Castro"
       },
       {
-        "w": "Alexander II",
-        "d": "Russian tsar who freed the serfs was blown up by a bomb in St. Petersburg."
+        "w": "Oxford attempt on Victoria",
+        "d": "1840 shooting attempt by Edward Oxford against Queen Victoria"
       },
       {
-        "w": "Reinhard Heydrich",
-        "d": "Architect of the Holocaust mortally wounded by Czech paratroopers in Prague."
+        "w": "Pate assault on Victoria",
+        "d": "1850 attack in which Robert Pate struck Queen Victoria"
       },
       {
-        "w": "Olof Palme",
-        "d": "Swedish PM shot walking home from the cinema — murder unsolved for 34 years."
+        "w": "Bean attempt on Victoria",
+        "d": "1842 pistol attempt by John Francis and John William Bean"
       },
       {
-        "w": "James Garfield",
-        "d": "US president shot in 1881 — doctors' unhygienic probing of the wound actually killed him."
+        "w": "Hödel attempt on Wilhelm I",
+        "d": "1878 shooting attempt against the German emperor"
       },
       {
-        "w": "Aldo Moro",
-        "d": "Italian PM kidnapped and murdered by Red Brigades, shaking Western democracy in 1978."
+        "w": "Nobiling attempt on Wilhelm I",
+        "d": "1878 shotgun attack that wounded the German emperor"
       },
       {
-        "w": "Archduke Maximilian",
-        "d": "Habsburg emperor of Mexico captured and shot by Juárez's republican forces in 1867."
+        "w": "infernal machine plot",
+        "d": "1800 explosive attempt against Napoleon Bonaparte in Paris"
       },
       {
-        "w": "JFK",
-        "d": "John F. Kennedy shot in Dallas motorcade in 1963 — most debated murder in history."
+        "w": "Schönbrunn attempt",
+        "d": "1809 failed knife attempt against Napoleon"
       },
       {
-        "w": "Archduke Francis Ferdinand",
-        "d": "Second attempt on June 28 succeeded when Gavrilo Princip found him stopped near a deli."
+        "w": "Violet Gibson shooting",
+        "d": "1926 shooting attempt against Benito Mussolini"
       },
       {
-        "w": "Thomas Becket",
-        "d": "Archbishop of Canterbury murdered in his cathedral by knights loyal to Henry II."
+        "w": "Lucetti bomb attack",
+        "d": "1926 anarchist bomb attempt against Mussolini"
       },
       {
-        "w": "Narendar Modi",
-        "d": "Multiple plots against India's PM foiled by Indian security agencies in recent years."
+        "w": "Zamboni shooting",
+        "d": "1926 failed shooting attempt against Mussolini in Bologna"
       },
       {
-        "w": "Park Geun-hye",
-        "d": "South Korean president survived multiple threats before her eventual political downfall."
+        "w": "Karakozov attempt",
+        "d": "1866 failed shooting attempt against Alexander II"
       },
       {
-        "w": "Mahmoud Abbas",
-        "d": "Palestinian Authority president reportedly targeted in multiple foiled assassination plots."
+        "w": "Soloviev attempt",
+        "d": "1879 failed shooting attempt against Alexander II"
       },
       {
-        "w": "Alexander Hamilton",
-        "d": "Founding Father shot in a duel by political rival Aaron Burr in 1804."
+        "w": "Alfonso XIII wedding bombing",
+        "d": "1906 bombing attempt on the Spanish king’s wedding procession"
       },
       {
-        "w": "Robert Ford",
-        "d": "Shot Jesse James in the back for reward money — America's most famous betrayal."
+        "w": "Pahlavi 1949 attempt",
+        "d": "Shooting attempt against Mohammad Reza Pahlavi at Tehran University"
       },
       {
-        "w": "Sophie Choubar",
-        "d": "Duchess of Hohenberg, killed alongside Franz Ferdinand — often forgotten victim of 1914."
+        "w": "Manshiya attempt",
+        "d": "1954 shooting attempt against Gamal Abdel Nasser in Alexandria"
       },
       {
-        "w": "Shaka Zulu",
-        "d": "Founder of the Zulu Kingdom stabbed by his own half-brothers in 1828."
+        "w": "George Wallace shooting",
+        "d": "1972 campaign shooting that paralyzed the U.S. presidential candidate"
       }
     ]
   },
@@ -10824,8 +10824,8 @@ const CATEGORIES_EN = [
         "d": "Superintelligent AI optimizes for its own goals — humans become an obstacle."
       },
       {
-        "w": "Nuclear Winter",
-        "d": "Soot from nuclear explosions blocks sunlight, freezing crops worldwide for years."
+        "w": "Runaway Greenhouse",
+        "d": "Planetary warming feedback that can make a world uninhabitable"
       },
       {
         "w": "Methane Clathrate Release",
@@ -11124,8 +11124,8 @@ const CATEGORIES_EN = [
         "d": "Fat Man and Little Boy instantly killed 200,000 people and ended WWII in the Pacific."
       },
       {
-        "w": "Trebuchet",
-        "d": "Medieval counterweight siege engine that could hurl 200kg rocks over 300 meters."
+        "w": "Longbow",
+        "d": "Powerful medieval bow central to English battlefield victories"
       },
       {
         "w": "Greek Fire",
@@ -11208,8 +11208,8 @@ const CATEGORIES_EN = [
         "d": "Shoulder-fired missiles made expensive tanks vulnerable to infantry — changing land warfare."
       },
       {
-        "w": "Catapult",
-        "d": "Ancient tension-powered siege engine that terrorized city defenders for millennia."
+        "w": "Composite bow",
+        "d": "Layered bow technology that transformed mounted warfare"
       },
       {
         "w": "Explosive Shell",
@@ -11274,8 +11274,8 @@ const CATEGORIES_EN = [
         "d": "Ugandan dictator who gave himself titles including 'Conqueror of the British Empire.'"
       },
       {
-        "w": "Caligula",
-        "d": "Roman emperor allegedly made his horse a senator — history's benchmark for unhinged rulers."
+        "w": "Alfredo Stroessner",
+        "d": "Paraguayan dictator whose long rule became a byword for personalist authoritarianism"
       },
       {
         "w": "Nero",
@@ -12016,8 +12016,8 @@ const CATEGORIES_EN = [
         "d": "Baseball's unicorn — elite pitcher AND home run slugger, $700M contract with Dodgers."
       },
       {
-        "w": "Max Verstappen",
-        "d": "Red Bull's dominant Dutch driver, three consecutive F1 world championships."
+        "w": "Aitana Bonmatí",
+        "d": "Spanish footballer, Ballon d Or winner and central figure in Barcelona and Spain"
       },
       {
         "w": "Steph Curry",
@@ -12028,16 +12028,16 @@ const CATEGORIES_EN = [
         "d": "Norwegian goal machine who broke the Premier League scoring record in his first season."
       },
       {
-        "w": "Iga Świątek",
-        "d": "Polish tennis queen dominating clay courts, multiple French Open titles."
+        "w": "A'ja Wilson",
+        "d": "American basketball star and dominant WNBA forward"
       },
       {
         "w": "Patrick Mahomes",
         "d": "Kansas City Chiefs QB with two Super Bowl MVPs and a sidearm throw defying physics."
       },
       {
-        "w": "Carlos Alcaraz",
-        "d": "Spanish teenage prodigy who won Wimbledon and the US Open before turning 21."
+        "w": "Ilia Topuria",
+        "d": "Georgian-Spanish mixed martial artist and UFC champion"
       },
       {
         "w": "Giannis",
@@ -12088,8 +12088,8 @@ const CATEGORIES_EN = [
         "d": "World and Olympic 100m champion who brought charisma back to track and field."
       },
       {
-        "w": "Naomi Osaka",
-        "d": "Four-time Grand Slam champion who sparked mental health conversations in sport."
+        "w": "Alexia Putellas",
+        "d": "Spanish footballer and multiple Ballon d Or Féminin winner"
       },
       {
         "w": "Virat Kohli",
@@ -12108,8 +12108,8 @@ const CATEGORIES_EN = [
         "d": "Serbia's Joker — three-time NBA MVP who makes center position look like performance art."
       },
       {
-        "w": "Novak Djokovic",
-        "d": "Serbia's tennis titan with 24 Grand Slam titles — the GOAT debate's third side."
+        "w": "Rory McIlroy",
+        "d": "Northern Irish golfer and major champion"
       },
       {
         "w": "Simone Biles",
@@ -12120,8 +12120,8 @@ const CATEGORIES_EN = [
         "d": "French swimming prodigy who won four individual gold medals at the Paris Olympics."
       },
       {
-        "w": "Jannik Sinner",
-        "d": "Italian tennis No. 1 who won the Australian Open and US Open in 2024."
+        "w": "Chloe Kim",
+        "d": "American snowboarder and Olympic halfpipe champion"
       },
       {
         "w": "Armand Duplantis",
@@ -12234,8 +12234,8 @@ const CATEGORIES_EN = [
         "d": "The Matrix's rogue program who multiplied endlessly and loathed humanity's smell."
       },
       {
-        "w": "T-1000",
-        "d": "Terminator 2's liquid metal shape-shifter — the most terrifying movie machine ever made."
+        "w": "Hans Gruber",
+        "d": "Die Hard villain whose charm made him a classic action antagonist"
       },
       {
         "w": "Bane",
@@ -13150,8 +13150,8 @@ const CATEGORIES_EN = [
         "d": "Carthaginian general who crossed the Alps with elephants to attack Rome."
       },
       {
-        "w": "Constantine",
-        "d": "Roman emperor who legalized Christianity and moved the capital to Byzantium."
+        "w": "Hittite Empire",
+        "d": "Bronze Age Anatolian power remembered for chariots and treaties"
       },
       {
         "w": "Tamerlane",
@@ -13186,16 +13186,16 @@ const CATEGORIES_EN = [
         "d": "Persian king who built the Royal Road and organized history's first postal system."
       },
       {
-        "w": "Justinian",
-        "d": "Byzantine emperor who codified Roman law and built Hagia Sophia."
+        "w": "Neo-Babylonian Empire",
+        "d": "Mesopotamian empire of Nebuchadnezzar II and Babylon’s revival"
       },
       {
-        "w": "Augustus",
-        "d": "First Roman emperor — found Rome in brick, left it in marble."
+        "w": "Olmec civilization",
+        "d": "Early Mesoamerican civilization known for colossal heads"
       },
       {
-        "w": "Marcus Aurelius",
-        "d": "Philosopher-emperor whose Meditations is the ultimate Stoic self-help book."
+        "w": "Silla Kingdom",
+        "d": "Korean kingdom that helped unify much of the peninsula"
       }
     ]
   },
@@ -13224,8 +13224,8 @@ const CATEGORIES_EN = [
         "d": "Short curved sword perfect for fighting in tight ship corridors."
       },
       {
-        "w": "Galleon",
-        "d": "Massive Spanish treasure ship — the ultimate pirate target."
+        "w": "Letter of marque",
+        "d": "Government license that turned private ships into legal privateers"
       },
       {
         "w": "Parrot",
@@ -14026,8 +14026,8 @@ const CATEGORIES_EN = [
         "d": "Con man who repeatedly claimed to sell New York landmarks"
       },
       {
-        "w": "South Sea Bubble",
-        "d": "Eighteenth-century investment mania around the South Sea Company"
+        "w": "Bre-X scandal",
+        "d": "Mining fraud built on fake gold samples in Indonesia"
       },
       {
         "w": "Tulip mania",
@@ -14152,8 +14152,8 @@ const CATEGORIES_EN = [
         "d": "Florentine historian and statesman of Renaissance Italy"
       },
       {
-        "w": "Christine de Pizan",
-        "d": "Writer who defended womens learning and moral worth before the Renaissance peak"
+        "w": "Marsilio Ficino",
+        "d": "Florentine philosopher who translated Plato and shaped Renaissance Platonism"
       },
       {
         "w": "Aldus Manutius",
@@ -14290,20 +14290,20 @@ const CATEGORIES_EN = [
         "d": "Scottish philosopher of empiricism, skepticism and human nature"
       },
       {
-        "w": "Adam Smith",
-        "d": "Scottish moral philosopher and economist of market society"
+        "w": "The Wealth of Nations",
+        "d": "Smith’s book that became a key Enlightenment text on commerce"
       },
       {
-        "w": "Mary Wollstonecraft",
-        "d": "Author of a foundational defense of womens rights and education"
+        "w": "Baron d’Holbach",
+        "d": "Enlightenment philosopher and materialist linked to Paris salon culture"
       },
       {
         "w": "Emilie du Chatelet",
         "d": "Mathematician and translator of Newton into French"
       },
       {
-        "w": "Benjamin Franklin",
-        "d": "Printer, scientist and diplomat of the Atlantic Enlightenment"
+        "w": "American Philosophical Society",
+        "d": "Learned society tied to Enlightenment science and civic exchange"
       },
       {
         "w": "Thomas Paine",
@@ -14366,12 +14366,12 @@ const CATEGORIES_EN = [
         "d": "Belief in a creator understood through reason rather than revelation"
       },
       {
-        "w": "Empiricism",
-        "d": "View that knowledge depends on experience and observation"
+        "w": "public sphere",
+        "d": "Space of print, debate and institutions where public opinion formed"
       },
       {
-        "w": "Rationalism",
-        "d": "View that reason can discover important truths about the world"
+        "w": "deism",
+        "d": "Belief in a creator known by reason rather than revelation"
       },
       {
         "w": "Progress",
@@ -16142,8 +16142,8 @@ const CATEGORIES_EN = [
         "d": "Settlement allowing rulers in the empire to choose Lutheranism or Catholicism"
       },
       {
-        "w": "Peace of Westphalia",
-        "d": "Treaties ending the Thirty Years War and reshaping European politics"
+        "w": "Peace of Augsburg",
+        "d": "1555 settlement allowing rulers to choose Lutheranism or Catholicism"
       },
       {
         "w": "Anabaptists",
@@ -17686,16 +17686,16 @@ const CATEGORIES_EN = [
         "d": "Primary record of observations made during excavation"
       },
       {
-        "w": "Radiocarbon dating",
-        "d": "Dating method based on radioactive carbon decay"
+        "w": "Harris matrix",
+        "d": "Diagram showing stratigraphic relationships on an archaeological site"
       },
       {
         "w": "Thermoluminescence",
         "d": "Dating method for heated minerals and ceramics"
       },
       {
-        "w": "Typology",
-        "d": "Classification of artifacts by form, style or function"
+        "w": "flotation",
+        "d": "Archaeological technique for recovering small plant remains from soil"
       },
       {
         "w": "Archaeological context",
@@ -19698,8 +19698,8 @@ const CATEGORIES_EN = [
         "d": "Art Deco statue of Christ overlooking Rio de Janeiro"
       },
       {
-        "w": "Statue of Liberty",
-        "d": "New York Harbor monument symbolizing liberty and immigration"
+        "w": "Genghis Khan Statue",
+        "d": "Huge equestrian statue complex outside Ulaanbaatar"
       },
       {
         "w": "Great Sphinx of Giza",
@@ -19710,16 +19710,16 @@ const CATEGORIES_EN = [
         "d": "Large stone ancestor figures carved on Easter Island"
       },
       {
-        "w": "Terracotta Army",
-        "d": "Thousands of clay soldiers buried with Qin Shi Huang"
+        "w": "Lion of Lucerne",
+        "d": "Swiss rock relief memorial to guards killed in the French Revolution"
       },
       {
         "w": "Motherland Calls",
         "d": "Huge Volgograd monument of a woman raising a sword"
       },
       {
-        "w": "Mount Rushmore",
-        "d": "South Dakota mountain carving of four U.S. presidents"
+        "w": "Tian Tan Buddha",
+        "d": "Large bronze seated Buddha on Lantau Island in Hong Kong"
       },
       {
         "w": "Manneken Pis",
@@ -19742,8 +19742,8 @@ const CATEGORIES_EN = [
         "d": "Berlin neoclassical gate turned national symbol"
       },
       {
-        "w": "Gateway Arch",
-        "d": "St. Louis stainless-steel arch memorializing westward expansion"
+        "w": "Merlion",
+        "d": "Singapore waterfront statue combining a lion head and fish body"
       },
       {
         "w": "Crazy Horse Memorial",
@@ -19762,12 +19762,12 @@ const CATEGORIES_EN = [
         "d": "Iwo Jima flag-raising monument near Washington, D.C."
       },
       {
-        "w": "Lincoln Memorial",
-        "d": "Washington monument with a seated statue of Abraham Lincoln"
+        "w": "Victoria Memorial Kolkata",
+        "d": "Marble imperial memorial and museum in Kolkata"
       },
       {
-        "w": "Jefferson Memorial",
-        "d": "Washington rotunda honoring Thomas Jefferson"
+        "w": "Monument to the Great Fire",
+        "d": "London column commemorating the fire of 1666"
       },
       {
         "w": "Mao Zedong Mausoleum",
@@ -19826,12 +19826,12 @@ const CATEGORIES_EN = [
         "d": "Kyiv stainless-steel statue holding sword and shield"
       },
       {
-        "w": "Korean War Veterans Memorial",
-        "d": "Washington memorial with stainless-steel soldiers on patrol"
+        "w": "Befreiungshalle",
+        "d": "Bavarian monument commemorating victories over Napoleon"
       },
       {
-        "w": "Vietnam Veterans Memorial",
-        "d": "Washington wall listing names of U.S. war dead"
+        "w": "Heroes’ Square Budapest",
+        "d": "Budapest square and monument honoring Hungarian leaders"
       }
     ]
   },
@@ -20804,8 +20804,8 @@ const CATEGORIES_EN = [
         "d": "Rejected U.S. plan proposing false-flag pretexts against Cuba"
       },
       {
-        "w": "Drop Shot",
-        "d": "U.S. war plan for possible conflict with the Soviet Union"
+        "w": "Operation Drop Shot",
+        "d": "Early Cold War U.S. contingency plan for war with the USSR"
       },
       {
         "w": "COINTELPRO",
@@ -21230,12 +21230,12 @@ const CATEGORIES_EN = [
         "d": "Citizen-soldier infantryman with spear and shield"
       },
       {
-        "w": "Phalanx",
-        "d": "Dense infantry formation with overlapping shields"
+        "w": "Hoplite panoply",
+        "d": "Full equipment of a Greek hoplite soldier"
       },
       {
-        "w": "Trireme",
-        "d": "Greek warship rowed by three banks of oars"
+        "w": "Kleroterion",
+        "d": "Athenian allotment machine used for selecting citizens by lot"
       },
       {
         "w": "Delian League",
@@ -21420,16 +21420,16 @@ const CATEGORIES_EN = [
         "d": "Former slave with limited but real social opportunities"
       },
       {
-        "w": "Legion",
-        "d": "Main Roman military unit of heavy infantry"
+        "w": "Roman citizenship",
+        "d": "Legal status that structured rights and identity in Rome"
       },
       {
         "w": "Centurion",
         "d": "Professional officer commanding a century"
       },
       {
-        "w": "Cohort",
-        "d": "Tactical subdivision of a Roman legion"
+        "w": "cursus honorum",
+        "d": "Sequence of public offices in a Roman political career"
       },
       {
         "w": "Auxilia",
@@ -21972,8 +21972,8 @@ const CATEGORIES_EN = [
         "d": "Joseon ruler credited with creating Hangul"
       },
       {
-        "w": "Hangul",
-        "d": "Korean alphabet designed in the fifteenth century"
+        "w": "Hunminjeongeum",
+        "d": "Original name of the document introducing the Korean alphabet"
       },
       {
         "w": "Yi Sun-sin",
@@ -22876,8 +22876,8 @@ const CATEGORIES_EN = [
         "d": "Pearl River Delta megacity and manufacturing hub"
       },
       {
-        "w": "Shenzhen",
-        "d": "Chinese tech megacity grown from a special economic zone"
+        "w": "Kinshasa",
+        "d": "Fast-growing megacity and capital of the Democratic Republic of the Congo"
       },
       {
         "w": "Tianjin",
@@ -22944,24 +22944,24 @@ const CATEGORIES_EN = [
         "d": "Egyptian Mediterranean city founded by Alexander the Great"
       },
       {
-        "w": "Yangon",
-        "d": "Myanmar’s largest city and former capital"
+        "w": "Karachi",
+        "d": "Huge Pakistani port city on the Arabian Sea"
       },
       {
         "w": "Jakarta",
         "d": "Indonesian megacity facing flooding and subsidence"
       },
       {
-        "w": "Lima",
-        "d": "Peruvian coastal capital and Andean-Pacific metropolis"
+        "w": "Lagos",
+        "d": "Nigeria’s largest city and one of Africa’s biggest urban areas"
       },
       {
         "w": "Abidjan",
         "d": "Ivorian economic capital and one of West Africa’s largest cities"
       },
       {
-        "w": "Bogotá",
-        "d": "High-altitude Colombian capital and huge Andean city"
+        "w": "Tehran",
+        "d": "Iranian capital and major West Asian metropolis"
       },
       {
         "w": "Ahmedabad",
@@ -23686,8 +23686,8 @@ const CATEGORIES_EN = [
         "d": "Author of To Kill a Mockingbird"
       },
       {
-        "w": "Svetlana Alexievich",
-        "d": "Belarusian Nobel laureate known for documentary oral histories"
+        "w": "Clarice Lispector",
+        "d": "Brazilian modernist writer known for intense interior prose"
       },
       {
         "w": "Teffi",
@@ -24964,8 +24964,8 @@ const CATEGORIES_EN = [
         "d": "Rocky Mountain town and national park in Alberta"
       },
       {
-        "w": "Inuit",
-        "d": "Indigenous peoples of Arctic Canada and Greenland"
+        "w": "Inukshuk",
+        "d": "Stone landmark figure associated with northern Canada"
       },
       {
         "w": "Quebec",
@@ -25016,8 +25016,8 @@ const CATEGORIES_EN = [
         "d": "Sport officially recognized as Canada’s summer national game"
       },
       {
-        "w": "First Nations",
-        "d": "Indigenous peoples of Canada excluding Inuit and Métis"
+        "w": "Haida Gwaii",
+        "d": "Archipelago off British Columbia with major Haida cultural heritage"
       },
       {
         "w": "Nunavut",
@@ -25682,6 +25682,15034 @@ const CATEGORIES_EN = [
       {
         "w": "ECOWAS",
         "d": "Economic Community of West African States"
+      }
+    ]
+  },
+  {
+    "name": "architectural styles & movements",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Gothic Revival",
+        "d": "Nineteenth-century revival of pointed arches, tracery and medieval church forms"
+      },
+      {
+        "w": "Romanesque architecture",
+        "d": "Medieval style with thick walls, round arches and massive stone forms"
+      },
+      {
+        "w": "Renaissance architecture",
+        "d": "Classical symmetry, domes and proportion revived in fifteenth-century Italy"
+      },
+      {
+        "w": "Neo-Rationalism",
+        "d": "Late twentieth-century architectural movement reviving rational order and urban typology"
+      },
+      {
+        "w": "Palladianism",
+        "d": "Classical style inspired by Andrea Palladio and his villa proportions"
+      },
+      {
+        "w": "Neoclassicism",
+        "d": "Eighteenth-century return to antique columns, pediments and strict symmetry"
+      },
+      {
+        "w": "Empire style",
+        "d": "Napoleonic neoclassical style with imperial symbols and monumental interiors"
+      },
+      {
+        "w": "Eclecticism",
+        "d": "Nineteenth-century approach mixing historical styles in one building"
+      },
+      {
+        "w": "Beaux-Arts",
+        "d": "Grand academic style with axial planning, sculpture and ceremonial facades"
+      },
+      {
+        "w": "Art Nouveau",
+        "d": "Decorative turn-of-the-century style with flowing lines and plant motifs"
+      },
+      {
+        "w": "Jugendstil",
+        "d": "German and Baltic branch of Art Nouveau, common in Riga facades"
+      },
+      {
+        "w": "Modernisme",
+        "d": "Catalan Art Nouveau associated with Gaudi and Barcelona architecture"
+      },
+      {
+        "w": "Art Deco",
+        "d": "Geometric interwar style using stepped forms, sunbursts and luxury materials"
+      },
+      {
+        "w": "Bauhaus",
+        "d": "Modernist school linking architecture, design, craft and industrial production"
+      },
+      {
+        "w": "International Style",
+        "d": "Modernist language of glass, steel, flat roofs and functional plans"
+      },
+      {
+        "w": "Functionalism",
+        "d": "Modernist principle that building form should follow practical use"
+      },
+      {
+        "w": "Constructivism",
+        "d": "Avant-garde Soviet style of dynamic forms and industrial materials"
+      },
+      {
+        "w": "Stalinist Empire",
+        "d": "Monumental Soviet classicism with towers, columns and ceremonial scale"
+      },
+      {
+        "w": "Brutalism",
+        "d": "Postwar style using raw concrete, heavy volumes and exposed structure"
+      },
+      {
+        "w": "Metabolism",
+        "d": "Japanese movement imagining buildings as expandable urban organisms"
+      },
+      {
+        "w": "High-tech architecture",
+        "d": "Style exposing pipes, trusses and engineering systems as visual language"
+      },
+      {
+        "w": "Deconstructivism",
+        "d": "Late twentieth-century style of fractured forms and unstable geometry"
+      },
+      {
+        "w": "Postmodern architecture",
+        "d": "Playful reaction to modernism using quotation, irony and historical references"
+      },
+      {
+        "w": "Critical regionalism",
+        "d": "Modern architecture adapted to local climate, craft and landscape"
+      },
+      {
+        "w": "Parametricism",
+        "d": "Algorithmic design style associated with smooth continuous digital forms"
+      },
+      {
+        "w": "Organic architecture",
+        "d": "Architecture shaped around site, materials and natural continuity"
+      },
+      {
+        "w": "Prairie School",
+        "d": "American style of low horizontal houses associated with Frank Lloyd Wright"
+      },
+      {
+        "w": "Chicago School",
+        "d": "Early skyscraper movement using steel frames and large windows"
+      },
+      {
+        "w": "Streamline Moderne",
+        "d": "Late Art Deco style with aerodynamic curves and nautical details"
+      },
+      {
+        "w": "Googie",
+        "d": "Space-age roadside style of sharp angles, neon and futuristic roofs"
+      },
+      {
+        "w": "Moorish Revival",
+        "d": "Historicist style borrowing arches, tiles and ornament from Islamic Spain"
+      },
+      {
+        "w": "Russian Revival",
+        "d": "Nineteenth-century style drawing on medieval Russian churches and ornament"
+      },
+      {
+        "w": "Nordic Classicism",
+        "d": "Restrained Scandinavian classicism between national romanticism and modernism"
+      },
+      {
+        "w": "Blobitecture",
+        "d": "Digital architecture using rounded, blob-like continuous forms"
+      },
+      {
+        "w": "Neo-futurism",
+        "d": "Contemporary style of dynamic forms, technology and futuristic silhouettes"
+      },
+      {
+        "w": "Vernacular architecture",
+        "d": "Local building tradition shaped by climate, materials and everyday use"
+      }
+    ]
+  },
+  {
+    "name": "historical dynasties",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Rurikids",
+        "d": "Medieval ruling dynasty of Rus principalities before the Romanovs"
+      },
+      {
+        "w": "Romanovs",
+        "d": "Russian imperial dynasty that ruled from 1613 to 1917"
+      },
+      {
+        "w": "Habsburgs",
+        "d": "European dynasty tied to Austria, Spain and the Holy Roman Empire"
+      },
+      {
+        "w": "Bourbons",
+        "d": "Royal house of France and Spain, restored after Napoleon in France"
+      },
+      {
+        "w": "Tudors",
+        "d": "English dynasty of Henry VIII and Elizabeth I"
+      },
+      {
+        "w": "Stuarts",
+        "d": "Scottish and English dynasty linked to the Civil War and Restoration"
+      },
+      {
+        "w": "Plantagenets",
+        "d": "Medieval English dynasty from Henry II to Richard III"
+      },
+      {
+        "w": "Capetians",
+        "d": "French royal dynasty whose branches ruled much of Europe"
+      },
+      {
+        "w": "Valois",
+        "d": "French royal house that ruled during the Hundred Years War and Renaissance"
+      },
+      {
+        "w": "Merovingians",
+        "d": "Early Frankish dynasty before the Carolingians"
+      },
+      {
+        "w": "Carolingians",
+        "d": "Frankish dynasty of Charlemagne and early medieval empire"
+      },
+      {
+        "w": "Ottomans",
+        "d": "Turkish dynasty that ruled the Ottoman Empire for six centuries"
+      },
+      {
+        "w": "Mughals",
+        "d": "Indo-Islamic dynasty of Akbar, Shah Jahan and the Taj Mahal"
+      },
+      {
+        "w": "Qing dynasty",
+        "d": "Manchu dynasty, last imperial ruling house of China"
+      },
+      {
+        "w": "Liao dynasty",
+        "d": "Khitan dynasty that ruled parts of northern China and Inner Asia"
+      },
+      {
+        "w": "Tang dynasty",
+        "d": "Chinese dynasty remembered for cosmopolitan culture and poetry"
+      },
+      {
+        "w": "Yamato dynasty",
+        "d": "Japanese imperial line, traditionally traced back to early Yamato rulers"
+      },
+      {
+        "w": "Ptolemies",
+        "d": "Macedonian dynasty ruling Egypt after Alexander the Great"
+      },
+      {
+        "w": "Seljuks",
+        "d": "Turkic dynasty that shaped medieval Iran, Anatolia and the Crusades"
+      },
+      {
+        "w": "Abbasids",
+        "d": "Caliphal dynasty of Baghdad and the Islamic Golden Age"
+      },
+      {
+        "w": "Umayyads",
+        "d": "Early caliphal dynasty ruling from Damascus and later Cordoba"
+      },
+      {
+        "w": "Sassanids",
+        "d": "Last pre-Islamic Persian dynasty and rival of Rome and Byzantium"
+      },
+      {
+        "w": "Achaemenids",
+        "d": "Ancient Persian dynasty of Cyrus, Darius and Xerxes"
+      },
+      {
+        "w": "Hohenzollerns",
+        "d": "Prussian and German imperial house of Brandenburg and Berlin"
+      },
+      {
+        "w": "Wittelsbachs",
+        "d": "Bavarian dynasty that also held the Palatinate and other thrones"
+      },
+      {
+        "w": "Medici",
+        "d": "Florentine banking family that became dukes, patrons and popes"
+      },
+      {
+        "w": "Borgia",
+        "d": "Renaissance family linked to papal power and Italian politics"
+      },
+      {
+        "w": "Chinggisids",
+        "d": "Descendants of Genghis Khan ruling Mongol and Turkic successor states"
+      },
+      {
+        "w": "Ilkhanids",
+        "d": "Mongol dynasty ruling Persia and surrounding lands after the conquests"
+      },
+      {
+        "w": "Windsors",
+        "d": "Modern British royal house renamed during the First World War"
+      },
+      {
+        "w": "Piasts",
+        "d": "First historical ruling dynasty of Poland"
+      },
+      {
+        "w": "Jagiellons",
+        "d": "Dynasty ruling Poland, Lithuania, Hungary and Bohemia in late medieval Europe"
+      },
+      {
+        "w": "Safavids",
+        "d": "Iranian dynasty that made Twelver Shiism central to Persia"
+      },
+      {
+        "w": "Palaiologoi",
+        "d": "Last Byzantine imperial dynasty before the fall of Constantinople"
+      },
+      {
+        "w": "Alawites",
+        "d": "Moroccan royal dynasty ruling since the seventeenth century"
+      }
+    ]
+  },
+  {
+    "name": "forms of government",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "monarchy",
+        "d": "State ruled by a monarch, usually a king, queen or emperor"
+      },
+      {
+        "w": "republic",
+        "d": "State where sovereignty is not vested in a hereditary monarch"
+      },
+      {
+        "w": "democracy",
+        "d": "System in which citizens choose rulers or decide policy directly"
+      },
+      {
+        "w": "autocracy",
+        "d": "Rule concentrated in the hands of one person"
+      },
+      {
+        "w": "oligarchy",
+        "d": "Rule by a small elite group"
+      },
+      {
+        "w": "tyranny",
+        "d": "Arbitrary or oppressive rule by a single ruler"
+      },
+      {
+        "w": "aristocracy",
+        "d": "Rule by a hereditary or recognized noble elite"
+      },
+      {
+        "w": "theocracy",
+        "d": "Government where religious authority and political rule are fused"
+      },
+      {
+        "w": "plutocracy",
+        "d": "Rule by the wealthy or in the interests of wealth"
+      },
+      {
+        "w": "meritocracy",
+        "d": "System claiming advancement by ability and achievement"
+      },
+      {
+        "w": "technocracy",
+        "d": "Rule by technical experts and specialists"
+      },
+      {
+        "w": "ochlocracy",
+        "d": "Mob rule, a classical term for democracy gone disorderly"
+      },
+      {
+        "w": "anarchy",
+        "d": "Absence of centralized government or formal state authority"
+      },
+      {
+        "w": "dictatorship",
+        "d": "Government by an unrestricted ruler or ruling clique"
+      },
+      {
+        "w": "totalitarianism",
+        "d": "System seeking total control over politics, society and private life"
+      },
+      {
+        "w": "authoritarianism",
+        "d": "System limiting political freedoms while keeping power centralized"
+      },
+      {
+        "w": "parliamentary republic",
+        "d": "Republic where government depends on parliamentary confidence"
+      },
+      {
+        "w": "presidential republic",
+        "d": "Republic with a separately elected executive president"
+      },
+      {
+        "w": "constitutional monarchy",
+        "d": "Monarchy limited by a constitution and usually parliament"
+      },
+      {
+        "w": "absolute monarchy",
+        "d": "Monarchy where the ruler holds supreme state power"
+      },
+      {
+        "w": "federation",
+        "d": "State formed from units sharing powers with a central government"
+      },
+      {
+        "w": "confederation",
+        "d": "Loose union of states retaining strong independent authority"
+      },
+      {
+        "w": "unitary state",
+        "d": "State where central government holds primary sovereign power"
+      },
+      {
+        "w": "military junta",
+        "d": "Government controlled by a committee of military leaders"
+      },
+      {
+        "w": "kleptocracy",
+        "d": "Government organized around theft of public resources"
+      },
+      {
+        "w": "gerontocracy",
+        "d": "Rule by elders or an unusually old political elite"
+      },
+      {
+        "w": "kakistocracy",
+        "d": "Government by the worst or least qualified people"
+      },
+      {
+        "w": "corporatocracy",
+        "d": "Rule dominated by corporate interests and major companies"
+      },
+      {
+        "w": "netocracy",
+        "d": "Theory of rule by networked elites controlling information flows"
+      },
+      {
+        "w": "partocracy",
+        "d": "System where political parties dominate state institutions"
+      },
+      {
+        "w": "demarchy",
+        "d": "Democratic system using random selection or sortition"
+      },
+      {
+        "w": "epistocracy",
+        "d": "Proposed rule by citizens with tested political knowledge"
+      },
+      {
+        "w": "noocracy",
+        "d": "Rule by reason, intellect or an intellectual elite"
+      },
+      {
+        "w": "tellurocracy",
+        "d": "Geopolitical idea of power based on control of land"
+      },
+      {
+        "w": "thalassocracy",
+        "d": "State power based on control of seas and maritime trade"
+      }
+    ]
+  },
+  {
+    "name": "cosmonauts & astronauts",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Yuri Gagarin",
+        "d": "First human in space, aboard Vostok 1 in 1961"
+      },
+      {
+        "w": "Neil Armstrong",
+        "d": "Apollo 11 commander and first person to walk on the Moon"
+      },
+      {
+        "w": "Valentina Tereshkova",
+        "d": "First woman in space, flying Vostok 6 in 1963"
+      },
+      {
+        "w": "Alexei Leonov",
+        "d": "First person to perform a spacewalk"
+      },
+      {
+        "w": "Buzz Aldrin",
+        "d": "Apollo 11 lunar module pilot and second person on the Moon"
+      },
+      {
+        "w": "John Glenn",
+        "d": "First American to orbit Earth"
+      },
+      {
+        "w": "Gherman Titov",
+        "d": "Vostok 2 cosmonaut and first person to spend a full day in orbit"
+      },
+      {
+        "w": "Sally Ride",
+        "d": "First American woman in space"
+      },
+      {
+        "w": "Alan Shepard",
+        "d": "First American in space and later Apollo 14 moonwalker"
+      },
+      {
+        "w": "Valeri Polyakov",
+        "d": "Cosmonaut who set the record for the longest single spaceflight"
+      },
+      {
+        "w": "Andriyan Nikolayev",
+        "d": "Soviet cosmonaut known for long-duration Vostok and Soyuz flights"
+      },
+      {
+        "w": "Konstantin Feoktistov",
+        "d": "Voskhod 1 engineer and the first civilian spacefarer"
+      },
+      {
+        "w": "Jim Lovell",
+        "d": "Apollo 13 commander and veteran of Gemini and Apollo missions"
+      },
+      {
+        "w": "Pete Conrad",
+        "d": "Apollo 12 commander and third person to walk on the Moon"
+      },
+      {
+        "w": "Yuri Romanenko",
+        "d": "Soviet cosmonaut associated with long Salyut and Mir missions"
+      },
+      {
+        "w": "Sergei Krikalev",
+        "d": "Cosmonaut who spent time on Mir, Shuttle missions and the ISS"
+      },
+      {
+        "w": "Chris Hadfield",
+        "d": "Canadian astronaut known for commanding the ISS"
+      },
+      {
+        "w": "Ronald McNair",
+        "d": "NASA astronaut and physicist who died in the Challenger disaster"
+      },
+      {
+        "w": "Toyohiro Akiyama",
+        "d": "Japanese journalist who flew to Mir in 1990"
+      },
+      {
+        "w": "Shannon Lucid",
+        "d": "NASA astronaut who set major duration records aboard Mir"
+      },
+      {
+        "w": "Ed White",
+        "d": "First American to perform a spacewalk"
+      },
+      {
+        "w": "William Anders",
+        "d": "Apollo 8 astronaut who photographed Earthrise"
+      },
+      {
+        "w": "Pavel Popovich",
+        "d": "Soviet cosmonaut of Vostok and Soyuz missions"
+      },
+      {
+        "w": "Alexander Volkov",
+        "d": "Soviet and Russian cosmonaut who flew to Mir"
+      },
+      {
+        "w": "Peggy Whitson",
+        "d": "NASA astronaut and former record holder for American cumulative time in space"
+      },
+      {
+        "w": "Michael Collins",
+        "d": "Apollo 11 command module pilot orbiting while Armstrong and Aldrin landed"
+      },
+      {
+        "w": "Alan Bean",
+        "d": "Apollo 12 moonwalker who later became a space artist"
+      },
+      {
+        "w": "Franklin Chang-Diaz",
+        "d": "Costa Rican American astronaut and veteran of seven Shuttle flights"
+      },
+      {
+        "w": "Gennady Padalka",
+        "d": "Cosmonaut who held the world record for cumulative time in space"
+      },
+      {
+        "w": "Luca Parmitano",
+        "d": "Italian astronaut and first Italian commander of the ISS"
+      },
+      {
+        "w": "Toktar Aubakirov",
+        "d": "First Kazakh cosmonaut, flying to Mir in 1991"
+      },
+      {
+        "w": "Ulf Merbold",
+        "d": "West German physicist and ESA astronaut on Spacelab and Mir missions"
+      },
+      {
+        "w": "Jerry Linenger",
+        "d": "NASA astronaut who lived aboard Mir during the 1997 fire"
+      },
+      {
+        "w": "Yi So-yeon",
+        "d": "First Korean astronaut, flying to the ISS in 2008"
+      },
+      {
+        "w": "Ken Mattingly",
+        "d": "Apollo astronaut removed from Apollo 13 and later command module pilot on Apollo 16"
+      },
+      {
+        "w": "Vladimir Dzhanibekov",
+        "d": "Soviet cosmonaut linked to Salyut missions and the Dzhanibekov effect"
+      },
+      {
+        "w": "Anna Kikina",
+        "d": "Russian cosmonaut who flew on Crew Dragon to the ISS"
+      },
+      {
+        "w": "Konstantin Borisov",
+        "d": "Russian cosmonaut who flew on Crew-7 to the ISS"
+      },
+      {
+        "w": "Oleg Kononenko",
+        "d": "Russian cosmonaut with record cumulative time in space"
+      },
+      {
+        "w": "Yang Liwei",
+        "d": "First Chinese astronaut in space aboard Shenzhou 5"
+      },
+      {
+        "w": "Samantha Cristoforetti",
+        "d": "Italian ESA astronaut and former ISS commander"
+      }
+    ]
+  },
+  {
+    "name": "Formula One champions & legends",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Michael Schumacher",
+        "d": "Seven-time Formula One world champion, dominant with Ferrari"
+      },
+      {
+        "w": "Lewis Hamilton",
+        "d": "Seven-time Formula One world champion and record Grand Prix winner"
+      },
+      {
+        "w": "Ayrton Senna",
+        "d": "Three-time champion famous for qualifying speed and wet-weather brilliance"
+      },
+      {
+        "w": "Alain Prost",
+        "d": "Four-time champion nicknamed the Professor"
+      },
+      {
+        "w": "Sebastian Vettel",
+        "d": "Four-time champion with Red Bull in the early 2010s"
+      },
+      {
+        "w": "Niki Lauda",
+        "d": "Three-time champion who returned after his 1976 crash"
+      },
+      {
+        "w": "Jackie Stewart",
+        "d": "Three-time champion and major safety campaigner"
+      },
+      {
+        "w": "Juan Manuel Fangio",
+        "d": "Five-time champion of the 1950s"
+      },
+      {
+        "w": "Max Verstappen",
+        "d": "Red Bull champion who dominated the early 2020s"
+      },
+      {
+        "w": "Jim Clark",
+        "d": "Two-time champion remembered for precision and natural speed"
+      },
+      {
+        "w": "Mika Häkkinen",
+        "d": "Two-time McLaren champion and Schumacher rival"
+      },
+      {
+        "w": "Jenson Button",
+        "d": "2009 champion with Brawn GP"
+      },
+      {
+        "w": "Nigel Mansell",
+        "d": "1992 champion known for aggressive driving and Williams dominance"
+      },
+      {
+        "w": "Jack Brabham",
+        "d": "Three-time champion and only driver to win in a car bearing his name"
+      },
+      {
+        "w": "Nelson Piquet",
+        "d": "Three-time Brazilian world champion"
+      },
+      {
+        "w": "John Surtees",
+        "d": "Only world champion on both motorcycles and in Formula One"
+      },
+      {
+        "w": "Emerson Fittipaldi",
+        "d": "Brazilian champion with Lotus and McLaren"
+      },
+      {
+        "w": "Jody Scheckter",
+        "d": "1979 champion and Ferrari title winner"
+      },
+      {
+        "w": "Jacques Villeneuve",
+        "d": "1997 world champion with Williams"
+      },
+      {
+        "w": "Fernando Alonso",
+        "d": "Two-time champion who ended Schumacher’s Ferrari streak"
+      },
+      {
+        "w": "Nico Rosberg",
+        "d": "2016 champion who retired immediately after winning the title"
+      },
+      {
+        "w": "Kimi Räikkönen",
+        "d": "2007 Ferrari champion nicknamed the Iceman"
+      },
+      {
+        "w": "Jochen Rindt",
+        "d": "Only posthumous Formula One world champion"
+      },
+      {
+        "w": "Mario Andretti",
+        "d": "1978 champion and rare star across multiple racing disciplines"
+      },
+      {
+        "w": "Alberto Ascari",
+        "d": "Two-time Ferrari champion in the early 1950s"
+      },
+      {
+        "w": "Mike Hawthorn",
+        "d": "First British Formula One world champion"
+      },
+      {
+        "w": "Denny Hulme",
+        "d": "1967 champion from New Zealand"
+      },
+      {
+        "w": "Keke Rosberg",
+        "d": "1982 champion and father of Nico Rosberg"
+      },
+      {
+        "w": "Damon Hill",
+        "d": "1996 champion and son of Graham Hill"
+      },
+      {
+        "w": "Graham Hill",
+        "d": "Two-time champion and only Triple Crown winner by the classic definition"
+      },
+      {
+        "w": "Giuseppe Farina",
+        "d": "First Formula One world champion in 1950"
+      },
+      {
+        "w": "Carlos Reutemann",
+        "d": "Argentine Grand Prix winner and near-champion of 1981"
+      },
+      {
+        "w": "Juan Pablo Montoya",
+        "d": "Colombian Grand Prix winner known for Williams and McLaren"
+      },
+      {
+        "w": "Gilles Villeneuve",
+        "d": "Ferrari legend celebrated for car control and dramatic racing"
+      },
+      {
+        "w": "Phil Hill",
+        "d": "First American-born Formula One world champion"
+      }
+    ]
+  },
+  {
+    "name": "Grand Slam tennis champions",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Roger Federer",
+        "d": "Swiss Grand Slam champion known for Wimbledon dominance and elegant all-court play"
+      },
+      {
+        "w": "Rafael Nadal",
+        "d": "Spanish Grand Slam champion and record icon of Roland Garros"
+      },
+      {
+        "w": "Novak Djokovic",
+        "d": "Serbian Grand Slam champion with a record total of major singles titles"
+      },
+      {
+        "w": "Serena Williams",
+        "d": "American Grand Slam champion and dominant figure of modern women’s tennis"
+      },
+      {
+        "w": "Martina Navratilova",
+        "d": "Czech-American Grand Slam champion famous for serve-and-volley tennis"
+      },
+      {
+        "w": "Andre Agassi",
+        "d": "American player who completed the career Grand Slam"
+      },
+      {
+        "w": "Pete Sampras",
+        "d": "American Grand Slam champion especially dominant at Wimbledon and the U.S. Open"
+      },
+      {
+        "w": "Maureen Connolly",
+        "d": "American who won the calendar-year Grand Slam in 1953"
+      },
+      {
+        "w": "Stefan Edberg",
+        "d": "Swedish Grand Slam champion known for attacking net play"
+      },
+      {
+        "w": "Björn Borg",
+        "d": "Swedish champion who ruled Roland Garros and Wimbledon in the 1970s"
+      },
+      {
+        "w": "John McEnroe",
+        "d": "American Grand Slam champion with legendary volleys and temper"
+      },
+      {
+        "w": "Jimmy Connors",
+        "d": "American Grand Slam champion and long-time No. 1"
+      },
+      {
+        "w": "Boris Becker",
+        "d": "German Grand Slam champion who won Wimbledon as a teenager"
+      },
+      {
+        "w": "Mats Wilander",
+        "d": "Swedish Grand Slam champion and 1988 year-end No. 1"
+      },
+      {
+        "w": "Jim Courier",
+        "d": "American Grand Slam champion at Roland Garros and the Australian Open"
+      },
+      {
+        "w": "Martina Hingis",
+        "d": "Swiss Grand Slam champion and teenage world No. 1"
+      },
+      {
+        "w": "Andy Murray",
+        "d": "British Grand Slam champion and two-time Olympic singles champion"
+      },
+      {
+        "w": "Marat Safin",
+        "d": "Russian Grand Slam champion at the U.S. Open and Australian Open"
+      },
+      {
+        "w": "Lleyton Hewitt",
+        "d": "Australian Grand Slam champion and youngest ATP world No. 1"
+      },
+      {
+        "w": "Victoria Azarenka",
+        "d": "Belarusian Australian Open champion and former world No. 1"
+      },
+      {
+        "w": "Angelique Kerber",
+        "d": "German Grand Slam champion who won three different majors"
+      },
+      {
+        "w": "Naomi Osaka",
+        "d": "Japanese Grand Slam champion known for hard-court major titles"
+      },
+      {
+        "w": "Carlos Alcaraz",
+        "d": "Spanish Grand Slam champion and youngest ATP No. 1"
+      },
+      {
+        "w": "Iga Świątek",
+        "d": "Polish Grand Slam champion and dominant clay-court player"
+      },
+      {
+        "w": "Daniil Medvedev",
+        "d": "Russian Grand Slam champion who won the 2021 U.S. Open"
+      },
+      {
+        "w": "Rod Laver",
+        "d": "Australian who twice completed a calendar-year Grand Slam"
+      },
+      {
+        "w": "Roy Emerson",
+        "d": "Australian Grand Slam champion with a huge amateur-era major total"
+      },
+      {
+        "w": "Fred Perry",
+        "d": "British Grand Slam champion whose name also became a clothing brand"
+      },
+      {
+        "w": "Goran Ivanišević",
+        "d": "Croatian Wimbledon champion who won as a wild card"
+      },
+      {
+        "w": "Jennifer Capriati",
+        "d": "American Grand Slam champion and Olympic gold medalist"
+      },
+      {
+        "w": "Coco Gauff",
+        "d": "American Grand Slam champion who won the 2023 U.S. Open"
+      },
+      {
+        "w": "Chris Evert",
+        "d": "American Grand Slam champion famous for consistency and clay-court success"
+      },
+      {
+        "w": "Steffi Graf",
+        "d": "German Grand Slam champion who won the Golden Slam in 1988"
+      },
+      {
+        "w": "Ivan Lendl",
+        "d": "Czech-American Grand Slam champion and baseline-era great"
+      },
+      {
+        "w": "Dominic Thiem",
+        "d": "Austrian Grand Slam champion who won the 2020 U.S. Open"
+      }
+    ]
+  },
+  {
+    "name": "Ballon d'Or winners",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Lionel Messi",
+        "d": "Argentine forward with the record number of Ballon d Or awards"
+      },
+      {
+        "w": "Cristiano Ronaldo",
+        "d": "Portuguese forward and multiple Ballon d Or winner"
+      },
+      {
+        "w": "Michel Platini",
+        "d": "French midfielder who won three consecutive Ballons d Or"
+      },
+      {
+        "w": "Johan Cruyff",
+        "d": "Dutch Total Football icon and three-time Ballon d Or winner"
+      },
+      {
+        "w": "Franz Beckenbauer",
+        "d": "German sweeper and two-time Ballon d Or winner"
+      },
+      {
+        "w": "Karim Benzema",
+        "d": "French striker who won the Ballon d Or after Real Madrid’s 2022 season"
+      },
+      {
+        "w": "Zinedine Zidane",
+        "d": "French playmaker and 1998 Ballon d Or winner"
+      },
+      {
+        "w": "Kaká",
+        "d": "Brazilian attacking midfielder and 2007 Ballon d Or winner"
+      },
+      {
+        "w": "Ronaldinho",
+        "d": "Brazilian forward and 2005 Ballon d Or winner"
+      },
+      {
+        "w": "Andriy Shevchenko",
+        "d": "Ukrainian striker and 2004 Ballon d Or winner"
+      },
+      {
+        "w": "Rivaldo",
+        "d": "Brazilian forward and 1999 Ballon d Or winner"
+      },
+      {
+        "w": "Marco van Basten",
+        "d": "Dutch striker and three-time Ballon d Or winner"
+      },
+      {
+        "w": "Lothar Matthäus",
+        "d": "German midfielder and 1990 Ballon d Or winner"
+      },
+      {
+        "w": "Luís Figo",
+        "d": "Portuguese winger and 2000 Ballon d Or winner"
+      },
+      {
+        "w": "Michael Owen",
+        "d": "English striker and 2001 Ballon d Or winner"
+      },
+      {
+        "w": "Pavel Nedvěd",
+        "d": "Czech midfielder and 2003 Ballon d Or winner"
+      },
+      {
+        "w": "Roberto Baggio",
+        "d": "Italian forward and 1993 Ballon d Or winner"
+      },
+      {
+        "w": "Luka Modrić",
+        "d": "Croatian midfielder and 2018 Ballon d Or winner"
+      },
+      {
+        "w": "Stanley Matthews",
+        "d": "English winger and first Ballon d Or winner in 1956"
+      },
+      {
+        "w": "Alfredo Di Stéfano",
+        "d": "Real Madrid legend and two-time Ballon d Or winner"
+      },
+      {
+        "w": "Raymond Kopa",
+        "d": "French playmaker and 1958 Ballon d Or winner"
+      },
+      {
+        "w": "Luis Suárez Miramontes",
+        "d": "Spanish midfielder and 1960 Ballon d Or winner"
+      },
+      {
+        "w": "Omar Sívori",
+        "d": "Argentine-Italian forward and 1961 Ballon d Or winner"
+      },
+      {
+        "w": "Josef Masopust",
+        "d": "Czechoslovak midfielder and 1962 Ballon d Or winner"
+      },
+      {
+        "w": "Lev Yashin",
+        "d": "Soviet goalkeeper and only goalkeeper to win the Ballon d Or"
+      },
+      {
+        "w": "Denis Law",
+        "d": "Scottish forward and 1964 Ballon d Or winner"
+      },
+      {
+        "w": "Eusébio",
+        "d": "Portuguese striker and 1965 Ballon d Or winner"
+      },
+      {
+        "w": "Bobby Charlton",
+        "d": "English midfielder and 1966 Ballon d Or winner"
+      },
+      {
+        "w": "Flórián Albert",
+        "d": "Hungarian forward and 1967 Ballon d Or winner"
+      },
+      {
+        "w": "George Best",
+        "d": "Northern Irish winger and 1968 Ballon d Or winner"
+      },
+      {
+        "w": "Gianni Rivera",
+        "d": "Italian playmaker and 1969 Ballon d Or winner"
+      },
+      {
+        "w": "Gerd Müller",
+        "d": "German striker and 1970 Ballon d Or winner"
+      },
+      {
+        "w": "Oleg Blokhin",
+        "d": "Soviet forward and 1975 Ballon d Or winner"
+      },
+      {
+        "w": "Ruud Gullit",
+        "d": "Dutch captain and 1987 Ballon d Or winner"
+      },
+      {
+        "w": "Fabio Cannavaro",
+        "d": "Italian defender and 2006 Ballon d Or winner"
+      }
+    ]
+  },
+  {
+    "name": "Roman emperors",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Augustus Caesar",
+        "d": "First Roman emperor and founder of the Principate"
+      },
+      {
+        "w": "Nero Claudius Caesar",
+        "d": "Julio-Claudian emperor remembered for fire, spectacle and persecution stories"
+      },
+      {
+        "w": "Trajan",
+        "d": "Emperor under whom the Roman Empire reached its greatest territorial extent"
+      },
+      {
+        "w": "Hadrian",
+        "d": "Emperor associated with Hadrian’s Wall and consolidation of frontiers"
+      },
+      {
+        "w": "Marcus Aurelius",
+        "d": "Stoic emperor and author of the Meditations"
+      },
+      {
+        "w": "Diocletian",
+        "d": "Emperor who reorganized the empire and launched the Tetrarchy"
+      },
+      {
+        "w": "Constantine I",
+        "d": "Emperor who legalized Christianity and founded Constantinople"
+      },
+      {
+        "w": "Caligula",
+        "d": "Julio-Claudian emperor remembered for cruelty and extravagance"
+      },
+      {
+        "w": "Vespasian",
+        "d": "Flavian emperor who began construction of the Colosseum"
+      },
+      {
+        "w": "Julian the Apostate",
+        "d": "Emperor who tried to restore pagan religion in the fourth century"
+      },
+      {
+        "w": "Tiberius",
+        "d": "Second Roman emperor and successor of Augustus"
+      },
+      {
+        "w": "Claudius",
+        "d": "Emperor who conquered Britain and expanded the bureaucracy"
+      },
+      {
+        "w": "Domitian",
+        "d": "Flavian emperor known for authoritarian rule and building projects"
+      },
+      {
+        "w": "Nerva",
+        "d": "First of the Five Good Emperors"
+      },
+      {
+        "w": "Antoninus Pius",
+        "d": "Long-reigning emperor associated with stability and legal reform"
+      },
+      {
+        "w": "Septimius Severus",
+        "d": "Founder of the Severan dynasty and African-born emperor"
+      },
+      {
+        "w": "Caracalla",
+        "d": "Emperor who granted Roman citizenship widely through the Constitutio Antoniniana"
+      },
+      {
+        "w": "Elagabalus",
+        "d": "Severan emperor notorious for religious controversy and court scandal"
+      },
+      {
+        "w": "Decius",
+        "d": "Third-century emperor known for empire-wide Christian persecution"
+      },
+      {
+        "w": "Aurelian",
+        "d": "Emperor who reunited the empire during the third-century crisis"
+      },
+      {
+        "w": "Gallienus",
+        "d": "Emperor who ruled during severe military and political fragmentation"
+      },
+      {
+        "w": "Galba",
+        "d": "First emperor in the Year of the Four Emperors"
+      },
+      {
+        "w": "Maximinus Thrax",
+        "d": "Soldier-emperor whose reign helped open the third-century crisis"
+      },
+      {
+        "w": "Theodosius I",
+        "d": "Emperor who made Nicene Christianity dominant and divided rule between his sons"
+      },
+      {
+        "w": "Romulus Augustulus",
+        "d": "Last western Roman emperor in traditional chronology"
+      },
+      {
+        "w": "Commodus",
+        "d": "Emperor whose reign followed Marcus Aurelius and became a symbol of decline"
+      },
+      {
+        "w": "Otho",
+        "d": "Short-lived emperor during the Year of the Four Emperors"
+      },
+      {
+        "w": "Vitellius",
+        "d": "Short-lived emperor defeated by Vespasian’s forces"
+      },
+      {
+        "w": "Pertinax",
+        "d": "Emperor briefly ruling after the assassination of Commodus"
+      },
+      {
+        "w": "Valentinian I",
+        "d": "Fourth-century emperor who ruled the western empire"
+      },
+      {
+        "w": "Justinian I",
+        "d": "Eastern Roman emperor of the Corpus Juris Civilis and Hagia Sophia"
+      },
+      {
+        "w": "Probus",
+        "d": "Third-century emperor known for military campaigns and frontier restoration"
+      },
+      {
+        "w": "Maximian",
+        "d": "Co-emperor with Diocletian in the Tetrarchy"
+      },
+      {
+        "w": "Constantine II",
+        "d": "Son of Constantine I and ruler over parts of the western empire"
+      },
+      {
+        "w": "Honorius",
+        "d": "Western emperor during the sack of Rome in 410"
+      }
+    ]
+  },
+  {
+    "name": "U.S. presidents",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "George Washington",
+        "d": "First president of the United States"
+      },
+      {
+        "w": "Abraham Lincoln",
+        "d": "Civil War president who issued the Emancipation Proclamation"
+      },
+      {
+        "w": "Franklin D. Roosevelt",
+        "d": "New Deal president who led the U.S. through most of World War II"
+      },
+      {
+        "w": "John F. Kennedy",
+        "d": "President associated with the Cuban Missile Crisis and Apollo challenge"
+      },
+      {
+        "w": "Ronald Reagan",
+        "d": "President linked to conservative revival and late Cold War politics"
+      },
+      {
+        "w": "Thomas Jefferson",
+        "d": "Author of the Declaration of Independence and third president"
+      },
+      {
+        "w": "Woodrow Wilson",
+        "d": "World War I president and advocate of the League of Nations"
+      },
+      {
+        "w": "Harry S. Truman",
+        "d": "President at the end of World War II and start of the Cold War"
+      },
+      {
+        "w": "Dwight D. Eisenhower",
+        "d": "General turned president during the 1950s"
+      },
+      {
+        "w": "Richard Nixon",
+        "d": "President who resigned during the Watergate scandal"
+      },
+      {
+        "w": "Andrew Jackson",
+        "d": "Populist seventh president and founder figure of Jacksonian democracy"
+      },
+      {
+        "w": "James Madison",
+        "d": "Fourth president and key author of the Constitution"
+      },
+      {
+        "w": "James Monroe",
+        "d": "President associated with the Monroe Doctrine"
+      },
+      {
+        "w": "Ulysses S. Grant",
+        "d": "Union general who became eighteenth president"
+      },
+      {
+        "w": "William Howard Taft",
+        "d": "President who later served as Chief Justice"
+      },
+      {
+        "w": "Herbert Hoover",
+        "d": "President at the beginning of the Great Depression"
+      },
+      {
+        "w": "Bill Clinton",
+        "d": "1990s president impeached but acquitted by the Senate"
+      },
+      {
+        "w": "George H. W. Bush",
+        "d": "President during the Gulf War and end of the Cold War"
+      },
+      {
+        "w": "Joe Biden",
+        "d": "Forty-sixth president of the United States"
+      },
+      {
+        "w": "Donald Trump",
+        "d": "Forty-fifth president and later reelected to the office"
+      },
+      {
+        "w": "James K. Polk",
+        "d": "President associated with territorial expansion and the Mexican-American War"
+      },
+      {
+        "w": "James A. Garfield",
+        "d": "President assassinated in 1881 after a short term"
+      },
+      {
+        "w": "Warren G. Harding",
+        "d": "1920s president whose administration was marked by scandal"
+      },
+      {
+        "w": "Calvin Coolidge",
+        "d": "President associated with limited government and the Roaring Twenties"
+      },
+      {
+        "w": "James Buchanan",
+        "d": "President immediately before the Civil War"
+      },
+      {
+        "w": "Barack Obama",
+        "d": "First Black president of the United States"
+      },
+      {
+        "w": "Gerald Ford",
+        "d": "President who pardoned Richard Nixon"
+      },
+      {
+        "w": "Jimmy Carter",
+        "d": "President associated with Camp David and later humanitarian work"
+      },
+      {
+        "w": "Lyndon B. Johnson",
+        "d": "President of the Great Society and Vietnam escalation"
+      },
+      {
+        "w": "John Tyler",
+        "d": "First vice president to become president after a death in office"
+      },
+      {
+        "w": "Franklin Pierce",
+        "d": "Antebellum president associated with the Kansas-Nebraska era"
+      },
+      {
+        "w": "William McKinley",
+        "d": "President during the Spanish-American War and assassinated in 1901"
+      },
+      {
+        "w": "Benjamin Harrison",
+        "d": "Twenty-third president and grandson of William Henry Harrison"
+      },
+      {
+        "w": "John Adams",
+        "d": "Second president and leading figure of the American Revolution"
+      },
+      {
+        "w": "Rutherford B. Hayes",
+        "d": "President elected after the disputed election of 1876"
+      }
+    ]
+  },
+  {
+    "name": "Olympic track & field champions",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Usain Bolt",
+        "d": "Jamaican sprinter with Olympic golds in the 100m and 200m"
+      },
+      {
+        "w": "Carl Lewis",
+        "d": "American sprinter and long jumper with nine Olympic gold medals"
+      },
+      {
+        "w": "Jesse Owens",
+        "d": "American sprinter and long jumper who won four golds in Berlin 1936"
+      },
+      {
+        "w": "Sergey Bubka",
+        "d": "Ukrainian pole vaulter and Olympic champion"
+      },
+      {
+        "w": "Michael Johnson",
+        "d": "American sprinter and Olympic champion in the 200m and 400m"
+      },
+      {
+        "w": "Maurice Greene",
+        "d": "American sprinter and Olympic 100m champion in 2000"
+      },
+      {
+        "w": "Florence Griffith-Joyner",
+        "d": "American sprint champion still associated with world records"
+      },
+      {
+        "w": "Sebastian Coe",
+        "d": "British middle-distance runner and Olympic 1500m champion"
+      },
+      {
+        "w": "Wilma Rudolph",
+        "d": "American sprinter who won three golds at the 1960 Olympics"
+      },
+      {
+        "w": "Steve Ovett",
+        "d": "British middle-distance runner and Olympic 800m champion"
+      },
+      {
+        "w": "Edwin Moses",
+        "d": "American hurdler and two-time Olympic 400m hurdles champion"
+      },
+      {
+        "w": "Fanny Blankers-Koen",
+        "d": "Dutch athlete who won four golds at the 1948 Olympics"
+      },
+      {
+        "w": "Eliud Kipchoge",
+        "d": "Kenyan marathon champion and two-time Olympic gold medalist"
+      },
+      {
+        "w": "Haile Gebrselassie",
+        "d": "Ethiopian distance runner and two-time Olympic 10,000m champion"
+      },
+      {
+        "w": "Donovan Bailey",
+        "d": "Canadian sprinter and 1996 Olympic 100m champion"
+      },
+      {
+        "w": "Paavo Nurmi",
+        "d": "Finnish distance runner and nine-time Olympic gold medalist"
+      },
+      {
+        "w": "Emil Zátopek",
+        "d": "Czech runner who won 5,000m, 10,000m and marathon gold in 1952"
+      },
+      {
+        "w": "Valeriy Borzov",
+        "d": "Soviet sprinter and double Olympic champion in 1972"
+      },
+      {
+        "w": "Al Oerter",
+        "d": "American discus thrower who won four straight Olympic golds"
+      },
+      {
+        "w": "Tatyana Lebedeva",
+        "d": "Russian jumper and Olympic long jump champion"
+      },
+      {
+        "w": "Meseret Defar",
+        "d": "Ethiopian distance runner and Olympic 5,000m champion"
+      },
+      {
+        "w": "Marie-José Pérec",
+        "d": "French sprinter and triple Olympic gold medalist"
+      },
+      {
+        "w": "Javier Sotomayor",
+        "d": "Cuban high jumper and Olympic champion"
+      },
+      {
+        "w": "Jan Železný",
+        "d": "Czech javelin thrower and three-time Olympic champion"
+      },
+      {
+        "w": "Cathy Freeman",
+        "d": "Australian 400m Olympic champion of Sydney 2000"
+      },
+      {
+        "w": "Jackie Joyner-Kersee",
+        "d": "American heptathlon and long jump Olympic champion"
+      },
+      {
+        "w": "Bob Beamon",
+        "d": "American long jumper whose 1968 Olympic record became legendary"
+      },
+      {
+        "w": "Dick Fosbury",
+        "d": "Olympic high jump champion who popularized the Fosbury flop"
+      },
+      {
+        "w": "Kipchoge Keino",
+        "d": "Kenyan middle-distance runner and Olympic champion"
+      },
+      {
+        "w": "Kenenisa Bekele",
+        "d": "Ethiopian distance runner and multiple Olympic gold medalist"
+      },
+      {
+        "w": "Hicham El Guerrouj",
+        "d": "Moroccan middle-distance runner and double Olympic champion in 2004"
+      },
+      {
+        "w": "Robert Korzeniowski",
+        "d": "Polish race walker and four-time Olympic champion"
+      },
+      {
+        "w": "Tirunesh Dibaba",
+        "d": "Ethiopian distance runner and Olympic champion"
+      },
+      {
+        "w": "Yelena Isinbayeva",
+        "d": "Russian pole vaulter and two-time Olympic champion"
+      },
+      {
+        "w": "Daley Thompson",
+        "d": "British decathlete and two-time Olympic champion"
+      }
+    ]
+  },
+  {
+    "name": "straits & canals",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Strait of Malacca",
+        "d": "Narrow sea lane between the Malay Peninsula and Sumatra"
+      },
+      {
+        "w": "Strait of Hormuz",
+        "d": "Persian Gulf choke point vital for oil shipping"
+      },
+      {
+        "w": "Suez Canal",
+        "d": "Artificial waterway linking the Mediterranean and Red Sea"
+      },
+      {
+        "w": "Panama Canal",
+        "d": "Canal crossing Central America between the Atlantic and Pacific"
+      },
+      {
+        "w": "Drake Passage",
+        "d": "Stormy passage between Cape Horn and Antarctica"
+      },
+      {
+        "w": "Pillars of Hercules",
+        "d": "Ancient name for the gateway at the Strait of Gibraltar"
+      },
+      {
+        "w": "Dardanelles",
+        "d": "Turkish strait connecting the Aegean Sea with the Sea of Marmara"
+      },
+      {
+        "w": "Bering Strait",
+        "d": "Waterway between Alaska and Chukotka"
+      },
+      {
+        "w": "Strait of Messina",
+        "d": "Narrow passage between Sicily and Calabria"
+      },
+      {
+        "w": "Kattegat",
+        "d": "Sea area between Denmark and Sweden leading toward the Baltic"
+      },
+      {
+        "w": "Taiwan Strait",
+        "d": "Politically sensitive waterway between Taiwan and mainland China"
+      },
+      {
+        "w": "English Channel",
+        "d": "Sea passage between southern England and northern France"
+      },
+      {
+        "w": "Corinth Canal",
+        "d": "Greek canal cutting across the Isthmus of Corinth"
+      },
+      {
+        "w": "Cook Strait",
+        "d": "Waterway separating New Zealand’s North and South Islands"
+      },
+      {
+        "w": "Bab el-Mandeb",
+        "d": "Red Sea choke point between Yemen and the Horn of Africa"
+      },
+      {
+        "w": "Straits of Florida",
+        "d": "Passage between Florida, Cuba and the Bahamas"
+      },
+      {
+        "w": "Kiel Canal",
+        "d": "German canal connecting the North Sea and the Baltic"
+      },
+      {
+        "w": "Lombok Strait",
+        "d": "Indonesian passage between Bali and Lombok"
+      },
+      {
+        "w": "Strait of Dover",
+        "d": "Narrowest part of the English Channel"
+      },
+      {
+        "w": "Sunda Strait",
+        "d": "Indonesian strait between Java and Sumatra"
+      },
+      {
+        "w": "Bosporus",
+        "d": "Istanbul strait linking the Black Sea and the Sea of Marmara"
+      },
+      {
+        "w": "Tsugaru Strait",
+        "d": "Japanese strait between Honshu and Hokkaido"
+      },
+      {
+        "w": "North Channel",
+        "d": "Waterway between northeastern Ireland and southwestern Scotland"
+      },
+      {
+        "w": "Yucatan Channel",
+        "d": "Passage between Mexico’s Yucatan Peninsula and Cuba"
+      },
+      {
+        "w": "La Pérouse Strait",
+        "d": "Strait between Sakhalin and Hokkaido"
+      },
+      {
+        "w": "Mozambique Channel",
+        "d": "Wide channel between Mozambique and Madagascar"
+      },
+      {
+        "w": "Davis Strait",
+        "d": "Waterway between Greenland and Baffin Island"
+      },
+      {
+        "w": "Torres Strait",
+        "d": "Passage between Australia and New Guinea"
+      },
+      {
+        "w": "Hudson Strait",
+        "d": "Canadian waterway connecting Hudson Bay to the Atlantic"
+      },
+      {
+        "w": "Flores Strait",
+        "d": "Indonesian passage in the Lesser Sunda Islands"
+      },
+      {
+        "w": "Makassar Strait",
+        "d": "Indonesian sea lane between Borneo and Sulawesi"
+      },
+      {
+        "w": "Strait of Gibraltar",
+        "d": "Gateway between the Atlantic Ocean and the Mediterranean"
+      },
+      {
+        "w": "Strait of Otranto",
+        "d": "Passage between Italy and Albania into the Adriatic"
+      },
+      {
+        "w": "Skagerrak",
+        "d": "Sea passage between Norway, Denmark and Sweden"
+      },
+      {
+        "w": "Palk Strait",
+        "d": "Shallow passage between India and Sri Lanka"
+      }
+    ]
+  },
+  {
+    "name": "international loanwords",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "sputnik",
+        "d": "Russian word that became international after the first artificial satellite"
+      },
+      {
+        "w": "kamikaze",
+        "d": "Japanese word used internationally for suicidal attack tactics"
+      },
+      {
+        "w": "tsunami",
+        "d": "Japanese word for a large sea wave caused by seismic activity"
+      },
+      {
+        "w": "schadenfreude",
+        "d": "German word for pleasure at someone else’s misfortune"
+      },
+      {
+        "w": "perestroika",
+        "d": "Russian word for Gorbachev-era restructuring"
+      },
+      {
+        "w": "apartheid",
+        "d": "Afrikaans word for South Africa’s racial segregation system"
+      },
+      {
+        "w": "zeitgeist",
+        "d": "German word for the spirit or mood of an age"
+      },
+      {
+        "w": "bungalow",
+        "d": "Word from South Asia for a low house style"
+      },
+      {
+        "w": "bazaar",
+        "d": "Persian-rooted word for a market"
+      },
+      {
+        "w": "blitzkrieg",
+        "d": "German word for lightning war"
+      },
+      {
+        "w": "boomerang",
+        "d": "Word from Australian Aboriginal languages for the returning throwing stick"
+      },
+      {
+        "w": "chic",
+        "d": "French loanword for stylish elegance"
+      },
+      {
+        "w": "guru",
+        "d": "Sanskrit-rooted word for a spiritual teacher or expert"
+      },
+      {
+        "w": "hooligan",
+        "d": "English word that became international for a violent troublemaker"
+      },
+      {
+        "w": "intelligentsia",
+        "d": "Russian and Polish-rooted word for the educated intellectual class"
+      },
+      {
+        "w": "kiosk",
+        "d": "Turkish and Persian-rooted word for a small booth or pavilion"
+      },
+      {
+        "w": "ombudsman",
+        "d": "Swedish word for an official handling complaints"
+      },
+      {
+        "w": "glasnost",
+        "d": "Russian word for openness, widely used during Gorbachev-era reforms"
+      },
+      {
+        "w": "sauna",
+        "d": "Finnish word for a hot bathing room"
+      },
+      {
+        "w": "shaman",
+        "d": "Tungusic-rooted word for a ritual specialist or spirit mediator"
+      },
+      {
+        "w": "karma",
+        "d": "Sanskrit-rooted word for action and its consequences"
+      },
+      {
+        "w": "charisma",
+        "d": "Greek-rooted word for compelling personal authority"
+      },
+      {
+        "w": "sabotage",
+        "d": "French loanword for deliberate disruption"
+      },
+      {
+        "w": "totem",
+        "d": "Algonquian-rooted word for a clan emblem or sacred object"
+      },
+      {
+        "w": "algorithm",
+        "d": "Word ultimately from the name of al-Khwarizmi"
+      },
+      {
+        "w": "jaguar",
+        "d": "Tupi-Guarani-rooted word for the big cat"
+      },
+      {
+        "w": "canoe",
+        "d": "Caribbean Indigenous-rooted word for a small boat"
+      },
+      {
+        "w": "kaftan",
+        "d": "Persian and Turkish-rooted word for a long robe"
+      },
+      {
+        "w": "emoji",
+        "d": "Japanese-origin word for pictographic digital symbols used worldwide"
+      },
+      {
+        "w": "know-how",
+        "d": "English phrase used internationally for practical expertise"
+      },
+      {
+        "w": "paparazzi",
+        "d": "Italian word from Fellini’s Paparazzo, now used for intrusive photographers"
+      },
+      {
+        "w": "karaoke",
+        "d": "Japanese word for singing along to recorded accompaniment"
+      },
+      {
+        "w": "pajama",
+        "d": "South Asian-rooted word for loose trousers and sleepwear"
+      },
+      {
+        "w": "shampoo",
+        "d": "Hindi-rooted word that entered English through colonial contact"
+      },
+      {
+        "w": "algebra",
+        "d": "Arabic-rooted word from al-jabr, associated with mathematical restoration"
+      }
+    ]
+  },
+  {
+    "name": "feminists & suffragists",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Angela Davis",
+        "d": "Feminist thinker and activist associated with abolitionist politics"
+      },
+      {
+        "w": "Betty Friedan",
+        "d": "American author of The Feminine Mystique"
+      },
+      {
+        "w": "Gloria Steinem",
+        "d": "American feminist journalist and cofounder of Ms. magazine"
+      },
+      {
+        "w": "Emmeline Pankhurst",
+        "d": "British suffragette leader of the Women’s Social and Political Union"
+      },
+      {
+        "w": "Mary Wollstonecraft",
+        "d": "Author of A Vindication of the Rights of Woman"
+      },
+      {
+        "w": "bell hooks",
+        "d": "American theorist of feminism, race, class and love"
+      },
+      {
+        "w": "Sojourner Truth",
+        "d": "Abolitionist and women’s rights speaker known for Ain’t I a Woman"
+      },
+      {
+        "w": "Kate Millett",
+        "d": "Author of Sexual Politics and key second-wave feminist critic"
+      },
+      {
+        "w": "Judith Butler",
+        "d": "Philosopher associated with gender performativity"
+      },
+      {
+        "w": "Susan B. Anthony",
+        "d": "American suffrage organizer and voting-rights campaigner"
+      },
+      {
+        "w": "Emily Davison",
+        "d": "British suffragette who died after stepping onto the Epsom Derby track"
+      },
+      {
+        "w": "Kate Sheppard",
+        "d": "Leader of the New Zealand women’s suffrage movement"
+      },
+      {
+        "w": "Lucy Stone",
+        "d": "American abolitionist and women’s rights organizer"
+      },
+      {
+        "w": "Gayle Rubin",
+        "d": "Anthropologist known for feminist and sexuality studies"
+      },
+      {
+        "w": "Sheila Rowbotham",
+        "d": "British socialist feminist historian"
+      },
+      {
+        "w": "Karen Horney",
+        "d": "Psychoanalyst whose work challenged Freudian views of women"
+      },
+      {
+        "w": "Flora Tristan",
+        "d": "French-Peruvian socialist and early feminist writer"
+      },
+      {
+        "w": "Christine de Pizan",
+        "d": "Medieval author who defended women in The Book of the City of Ladies"
+      },
+      {
+        "w": "Kimberlé Crenshaw",
+        "d": "Legal scholar who coined and developed intersectionality"
+      },
+      {
+        "w": "Patricia Hill Collins",
+        "d": "Sociologist known for Black feminist thought"
+      },
+      {
+        "w": "Charlotte Perkins Gilman",
+        "d": "Author of The Yellow Wallpaper and feminist social critic"
+      },
+      {
+        "w": "Simone Weil",
+        "d": "French philosopher and activist often read in feminist intellectual history"
+      },
+      {
+        "w": "Margaret Sanger",
+        "d": "Birth-control activist and founder of organizations that became Planned Parenthood"
+      },
+      {
+        "w": "Nadia Murad",
+        "d": "Yazidi human-rights activist and Nobel Peace Prize laureate"
+      },
+      {
+        "w": "Sylvia Pankhurst",
+        "d": "British suffragette and socialist activist"
+      },
+      {
+        "w": "Louise Otto-Peters",
+        "d": "German writer and pioneer of the women’s movement"
+      },
+      {
+        "w": "Ida B. Wells",
+        "d": "Anti-lynching journalist and suffrage activist"
+      },
+      {
+        "w": "Clara Zetkin",
+        "d": "Socialist feminist associated with International Women’s Day"
+      },
+      {
+        "w": "Beatrice Webb",
+        "d": "Fabian social reformer and cofounder of the London School of Economics"
+      },
+      {
+        "w": "Alexandra Kollontai",
+        "d": "Bolshevik feminist and one of the first women diplomats"
+      },
+      {
+        "w": "Olympe de Gouges",
+        "d": "French revolutionary author of the Declaration of the Rights of Woman"
+      },
+      {
+        "w": "Lucretia Mott",
+        "d": "American abolitionist and women’s rights advocate"
+      },
+      {
+        "w": "Elizabeth Cady Stanton",
+        "d": "Organizer of the Seneca Falls Convention"
+      },
+      {
+        "w": "Harriet Taylor Mill",
+        "d": "Philosopher and collaborator on early liberal feminist arguments"
+      },
+      {
+        "w": "Alice Paul",
+        "d": "American suffragist who led the National Woman’s Party"
+      }
+    ]
+  },
+  {
+    "name": "women scientists",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Rosalind Franklin",
+        "d": "Chemist whose X-ray images were crucial to understanding DNA structure"
+      },
+      {
+        "w": "Emmy Noether",
+        "d": "Mathematician whose theorem links symmetries and conservation laws"
+      },
+      {
+        "w": "Barbara McClintock",
+        "d": "Geneticist who discovered transposable elements"
+      },
+      {
+        "w": "Dorothy Hodgkin",
+        "d": "Crystallographer who solved structures of biomolecules including insulin"
+      },
+      {
+        "w": "Lise Meitner",
+        "d": "Physicist who helped explain nuclear fission"
+      },
+      {
+        "w": "Hedy Lamarr",
+        "d": "Actor and inventor linked to frequency-hopping communication ideas"
+      },
+      {
+        "w": "Mae Jemison",
+        "d": "Physician and astronaut, first Black woman in space"
+      },
+      {
+        "w": "Ada Lovelace",
+        "d": "Mathematician remembered for early computing notes on Babbage’s engine"
+      },
+      {
+        "w": "Vera Rubin",
+        "d": "Astronomer whose galaxy rotation work supported dark matter evidence"
+      },
+      {
+        "w": "Tu Youyou",
+        "d": "Pharmacologist who discovered artemisinin as an antimalarial treatment"
+      },
+      {
+        "w": "Marie Skłodowska-Curie",
+        "d": "Physicist and chemist who won Nobel Prizes in two sciences"
+      },
+      {
+        "w": "Jane Goodall",
+        "d": "Primatologist famous for long-term chimpanzee research"
+      },
+      {
+        "w": "Elizabeth Blackwell",
+        "d": "First woman to receive a medical degree in the United States"
+      },
+      {
+        "w": "Dian Fossey",
+        "d": "Primatologist known for mountain gorilla research"
+      },
+      {
+        "w": "Margaret Hamilton",
+        "d": "Software engineer who led Apollo flight software work"
+      },
+      {
+        "w": "Chien-Shiung Wu",
+        "d": "Physicist whose experiment disproved parity conservation in weak interactions"
+      },
+      {
+        "w": "Rita Levi-Montalcini",
+        "d": "Neurobiologist who discovered nerve growth factor"
+      },
+      {
+        "w": "Ruth Patrick",
+        "d": "Limnologist who developed methods for studying freshwater ecosystems"
+      },
+      {
+        "w": "Françoise Barré-Sinoussi",
+        "d": "Virologist who helped identify HIV"
+      },
+      {
+        "w": "Cecilia Payne-Gaposchkin",
+        "d": "Astronomer who showed stars are mostly hydrogen and helium"
+      },
+      {
+        "w": "Nettie Stevens",
+        "d": "Geneticist who identified the chromosomal basis of sex determination"
+      },
+      {
+        "w": "Gertrude Elion",
+        "d": "Pharmacologist who helped develop major antiviral and cancer drugs"
+      },
+      {
+        "w": "Irène Joliot-Curie",
+        "d": "Chemist and physicist who shared the Nobel for artificial radioactivity"
+      },
+      {
+        "w": "Grace Hopper",
+        "d": "Computer scientist and pioneer of compilers and COBOL"
+      },
+      {
+        "w": "Maria Montessori",
+        "d": "Physician and educator who created the Montessori method"
+      },
+      {
+        "w": "Sofia Kovalevskaya",
+        "d": "Mathematician and first major woman professor in northern Europe"
+      },
+      {
+        "w": "Katherine Johnson",
+        "d": "NASA mathematician whose calculations supported Mercury and Apollo flights"
+      },
+      {
+        "w": "Margaret Burbidge",
+        "d": "Astrophysicist involved in explaining stellar nucleosynthesis"
+      },
+      {
+        "w": "Patricia Bath",
+        "d": "Ophthalmologist and inventor of a laser cataract treatment device"
+      },
+      {
+        "w": "Barbara Liskov",
+        "d": "Computer scientist known for data abstraction and the Liskov substitution principle"
+      },
+      {
+        "w": "Huda Zoghbi",
+        "d": "Neuroscientist known for work on Rett syndrome"
+      },
+      {
+        "w": "Florence Nightingale",
+        "d": "Statistician and nursing reformer who transformed hospital practice"
+      },
+      {
+        "w": "Jocelyn Bell Burnell",
+        "d": "Astronomer who discovered the first radio pulsars"
+      },
+      {
+        "w": "Rachel Carson",
+        "d": "Marine biologist and author whose work shaped environmental science"
+      },
+      {
+        "w": "Mary Anning",
+        "d": "Fossil collector whose discoveries transformed paleontology"
+      }
+    ]
+  },
+  {
+    "name": "U.S. buildings & monuments",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Empire State Building",
+        "d": "New York skyscraper and Art Deco landmark"
+      },
+      {
+        "w": "Statue of Liberty",
+        "d": "Harbor monument in New York symbolizing liberty and immigration"
+      },
+      {
+        "w": "Mount Rushmore",
+        "d": "South Dakota mountain carving of four U.S. presidents"
+      },
+      {
+        "w": "The Pentagon",
+        "d": "Headquarters building of the U.S. Department of Defense"
+      },
+      {
+        "w": "Lincoln Memorial",
+        "d": "Washington memorial with a seated statue of Abraham Lincoln"
+      },
+      {
+        "w": "U.S. Capitol",
+        "d": "Seat of the U.S. Congress in Washington"
+      },
+      {
+        "w": "Flatiron Building",
+        "d": "Triangular New York landmark at Fifth Avenue and Broadway"
+      },
+      {
+        "w": "Washington Monument",
+        "d": "Tall obelisk honoring George Washington"
+      },
+      {
+        "w": "White House",
+        "d": "Official residence and workplace of the U.S. president"
+      },
+      {
+        "w": "Brooklyn Bridge",
+        "d": "Iconic suspension bridge linking Manhattan and Brooklyn"
+      },
+      {
+        "w": "Willis Tower",
+        "d": "Chicago skyscraper formerly known as the Sears Tower"
+      },
+      {
+        "w": "Vietnam Veterans Memorial",
+        "d": "Black granite wall memorial on the National Mall"
+      },
+      {
+        "w": "One World Trade Center",
+        "d": "Skyscraper built at the rebuilt World Trade Center site"
+      },
+      {
+        "w": "Transamerica Pyramid",
+        "d": "San Francisco skyscraper with a sharp pyramidal profile"
+      },
+      {
+        "w": "Rockefeller Center",
+        "d": "New York complex associated with Art Deco, broadcasting and skating"
+      },
+      {
+        "w": "Fort Sumter",
+        "d": "Charleston Harbor fort where the Civil War began"
+      },
+      {
+        "w": "Jefferson Memorial",
+        "d": "Classical memorial to Thomas Jefferson in Washington"
+      },
+      {
+        "w": "National Mall",
+        "d": "Washington civic axis lined with museums and monuments"
+      },
+      {
+        "w": "Bixby Creek Bridge",
+        "d": "Concrete arch bridge on the Big Sur coast"
+      },
+      {
+        "w": "Gateway Arch",
+        "d": "St. Louis monument symbolizing westward expansion"
+      },
+      {
+        "w": "Nebraska State Capitol",
+        "d": "Tall state capitol building in Lincoln, Nebraska"
+      },
+      {
+        "w": "Hoover Dam",
+        "d": "Massive concrete dam on the Colorado River"
+      },
+      {
+        "w": "Martin Luther King Jr. Memorial",
+        "d": "Washington memorial centered on the Stone of Hope"
+      },
+      {
+        "w": "Korean War Veterans Memorial",
+        "d": "Washington memorial with soldier statues and a reflective wall"
+      },
+      {
+        "w": "Chrysler Building",
+        "d": "New York Art Deco skyscraper with a stainless-steel crown"
+      },
+      {
+        "w": "Metropolitan Museum of Art",
+        "d": "Major New York museum on Fifth Avenue"
+      },
+      {
+        "w": "National September 11 Memorial",
+        "d": "Memorial pools marking the Twin Towers footprints"
+      },
+      {
+        "w": "Smithsonian Castle",
+        "d": "Red sandstone building on the National Mall"
+      },
+      {
+        "w": "Mount Vernon",
+        "d": "George Washington’s plantation house in Virginia"
+      },
+      {
+        "w": "Las Vegas Strip",
+        "d": "Nevada resort corridor known for casinos and themed architecture"
+      },
+      {
+        "w": "Hearst Castle",
+        "d": "California estate designed for publisher William Randolph Hearst"
+      },
+      {
+        "w": "Kennedy Space Center",
+        "d": "Florida launch complex and visitor landmark"
+      },
+      {
+        "w": "Supreme Court Building",
+        "d": "Washington building housing the U.S. Supreme Court"
+      },
+      {
+        "w": "Independence Hall",
+        "d": "Philadelphia building where the Declaration and Constitution were debated"
+      },
+      {
+        "w": "National Archives Building",
+        "d": "Washington building holding the Declaration, Constitution and Bill of Rights"
+      }
+    ]
+  },
+  {
+    "name": "U.S. battles",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Lexington and Concord",
+        "d": "Opening battles of the American Revolutionary War in 1775"
+      },
+      {
+        "w": "Battle of Gettysburg",
+        "d": "Civil War turning point fought in Pennsylvania in 1863"
+      },
+      {
+        "w": "Attack on Pearl Harbor",
+        "d": "Japanese attack that brought the United States into World War II"
+      },
+      {
+        "w": "Battle of Midway",
+        "d": "Pacific naval battle that shifted momentum against Japan"
+      },
+      {
+        "w": "First Battle of Bull Run",
+        "d": "First major land battle of the American Civil War"
+      },
+      {
+        "w": "Siege of Yorktown",
+        "d": "Revolutionary War siege that forced Cornwallis to surrender"
+      },
+      {
+        "w": "Battle of the Alamo",
+        "d": "Texas Revolution siege remembered as a last stand"
+      },
+      {
+        "w": "Normandy landings",
+        "d": "Allied D-Day invasion in which U.S. forces landed at Omaha and Utah"
+      },
+      {
+        "w": "Battle of Iwo Jima",
+        "d": "Pacific battle remembered for the flag raising on Mount Suribachi"
+      },
+      {
+        "w": "Battle of Antietam",
+        "d": "Bloodiest single day in American military history"
+      },
+      {
+        "w": "Battles of Saratoga",
+        "d": "Revolutionary War victory that helped secure French support"
+      },
+      {
+        "w": "Battle of Bunker Hill",
+        "d": "Early Revolutionary War battle fought mostly on Breed’s Hill"
+      },
+      {
+        "w": "Battle of Trenton",
+        "d": "Washington’s surprise attack after crossing the Delaware"
+      },
+      {
+        "w": "Battle of Chancellorsville",
+        "d": "Confederate victory where Stonewall Jackson was mortally wounded"
+      },
+      {
+        "w": "Battle of Shiloh",
+        "d": "Major Civil War battle in Tennessee in 1862"
+      },
+      {
+        "w": "Siege of Vicksburg",
+        "d": "Union victory that secured control of the Mississippi River"
+      },
+      {
+        "w": "Battle of the Bulge",
+        "d": "German Ardennes offensive against Allied forces in 1944"
+      },
+      {
+        "w": "Battle of Huế",
+        "d": "Major urban battle during the Tet Offensive"
+      },
+      {
+        "w": "Buna-Gona campaign",
+        "d": "Allied campaign in New Guinea against Japanese positions"
+      },
+      {
+        "w": "Battle of Chickamauga",
+        "d": "Major Confederate victory in the Western Theater"
+      },
+      {
+        "w": "Battle of Monmouth",
+        "d": "Revolutionary War battle fought in New Jersey in 1778"
+      },
+      {
+        "w": "Battle of Tarawa",
+        "d": "Pacific amphibious assault with heavy Marine casualties"
+      },
+      {
+        "w": "Battle of Bataan",
+        "d": "Philippines campaign followed by the Bataan Death March"
+      },
+      {
+        "w": "Battle of Inchon",
+        "d": "Korean War amphibious landing planned by MacArthur"
+      },
+      {
+        "w": "Wounded Knee",
+        "d": "1890 massacre of Lakota people by U.S. cavalry"
+      },
+      {
+        "w": "Battle of Fallujah",
+        "d": "Major urban battle of the Iraq War"
+      },
+      {
+        "w": "Battle of Chosin Reservoir",
+        "d": "Korean War battle in freezing conditions against Chinese forces"
+      },
+      {
+        "w": "Siege of Khe Sanh",
+        "d": "Vietnam War siege of a U.S. Marine combat base"
+      },
+      {
+        "w": "Battle of New Orleans",
+        "d": "War of 1812 battle won by Andrew Jackson after the peace treaty"
+      },
+      {
+        "w": "Battle of San Juan Hill",
+        "d": "Spanish-American War battle linked to the Rough Riders"
+      },
+      {
+        "w": "Battle of Manila",
+        "d": "World War II battle that devastated Manila in 1945"
+      },
+      {
+        "w": "Battle of Long Island",
+        "d": "Major British victory early in the Revolutionary War"
+      },
+      {
+        "w": "Battle of Little Bighorn",
+        "d": "1876 battle where Custer’s force was defeated"
+      },
+      {
+        "w": "Second Battle of Bull Run",
+        "d": "Confederate victory in Virginia in 1862"
+      },
+      {
+        "w": "Guadalcanal campaign",
+        "d": "First major Allied offensive against Japan in the Pacific"
+      }
+    ]
+  },
+  {
+    "name": "Indigenous peoples of North America",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Navajo",
+        "d": "Southwestern people also known as Diné"
+      },
+      {
+        "w": "Cherokee",
+        "d": "Southeastern Indigenous nation with a written syllabary created by Sequoyah"
+      },
+      {
+        "w": "Muscogee Creek",
+        "d": "Southeastern confederacy historically called Creek"
+      },
+      {
+        "w": "Apache",
+        "d": "Southwestern peoples known for resistance leaders such as Geronimo"
+      },
+      {
+        "w": "Comanche",
+        "d": "Plains people known for mounted power in the southern plains"
+      },
+      {
+        "w": "Haudenosaunee",
+        "d": "Iroquois Confederacy of nations in the northeastern woodlands"
+      },
+      {
+        "w": "Huron-Wendat",
+        "d": "Iroquoian-speaking people around the Great Lakes and St. Lawrence"
+      },
+      {
+        "w": "Seminole",
+        "d": "People of Florida and Oklahoma formed from several southeastern groups"
+      },
+      {
+        "w": "Cheyenne",
+        "d": "Plains people historically divided into northern and southern groups"
+      },
+      {
+        "w": "Pueblo peoples",
+        "d": "Southwestern peoples known for adobe village architecture"
+      },
+      {
+        "w": "Lakota",
+        "d": "Western branch of the Sioux peoples of the Great Plains"
+      },
+      {
+        "w": "Ojibwe",
+        "d": "Anishinaabe people around the Great Lakes and Canadian Shield"
+      },
+      {
+        "w": "Hopi",
+        "d": "Pueblo people of northeastern Arizona"
+      },
+      {
+        "w": "Nez Perce",
+        "d": "Plateau people associated with Chief Joseph"
+      },
+      {
+        "w": "Crow Nation",
+        "d": "Plains nation of the northern Rockies"
+      },
+      {
+        "w": "Pawnee",
+        "d": "Caddoan-speaking people historically on the central plains"
+      },
+      {
+        "w": "Algonquin",
+        "d": "Algonquian-speaking people of the Ottawa River region"
+      },
+      {
+        "w": "Tlingit",
+        "d": "Northwest Coast people of Alaska and British Columbia"
+      },
+      {
+        "w": "Haida",
+        "d": "Northwest Coast people of Haida Gwaii and southeastern Alaska"
+      },
+      {
+        "w": "Mohawk",
+        "d": "Easternmost nation of the Haudenosaunee Confederacy"
+      },
+      {
+        "w": "Blackfoot Confederacy",
+        "d": "Plains confederacy including Siksika, Kainai and Piikani"
+      },
+      {
+        "w": "Lenape",
+        "d": "Indigenous people of the Delaware Valley"
+      },
+      {
+        "w": "Shoshone",
+        "d": "Great Basin and Plains people with several regional branches"
+      },
+      {
+        "w": "Arapaho",
+        "d": "Plains people historically allied with the Cheyenne"
+      },
+      {
+        "w": "Tsimshian",
+        "d": "Northwest Coast people of British Columbia and Alaska"
+      },
+      {
+        "w": "Inuit",
+        "d": "Arctic Indigenous peoples across Alaska, Canada and Greenland"
+      },
+      {
+        "w": "Chumash",
+        "d": "Coastal people of southern California"
+      },
+      {
+        "w": "Kwakwaka’wakw",
+        "d": "Northwest Coast people known for potlatch traditions"
+      },
+      {
+        "w": "Coast Salish",
+        "d": "Group of peoples around the Salish Sea"
+      },
+      {
+        "w": "Zuni",
+        "d": "Pueblo people of western New Mexico"
+      },
+      {
+        "w": "Oglala Lakota",
+        "d": "Lakota band associated with Pine Ridge"
+      },
+      {
+        "w": "Miami Tribe",
+        "d": "Algonquian-speaking people from the Great Lakes region"
+      },
+      {
+        "w": "Chippewa",
+        "d": "Another common English name for Ojibwe communities"
+      },
+      {
+        "w": "Cree",
+        "d": "Large Algonquian-speaking people across Canada and the northern plains"
+      },
+      {
+        "w": "Yakama",
+        "d": "Plateau people of the Pacific Northwest"
+      }
+    ]
+  },
+  {
+    "name": "American universities",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Harvard University",
+        "d": "Oldest U.S. university, based in Cambridge, Massachusetts"
+      },
+      {
+        "w": "Stanford University",
+        "d": "California university closely tied to Silicon Valley"
+      },
+      {
+        "w": "Princeton University",
+        "d": "Ivy League university in New Jersey"
+      },
+      {
+        "w": "Yale University",
+        "d": "Ivy League university in New Haven, Connecticut"
+      },
+      {
+        "w": "Caltech",
+        "d": "California institute famous for physics, engineering and astronomy"
+      },
+      {
+        "w": "UC Berkeley",
+        "d": "Public research university and flagship of the University of California system"
+      },
+      {
+        "w": "MIT",
+        "d": "Massachusetts Institute of Technology, known for engineering and science"
+      },
+      {
+        "w": "Columbia University",
+        "d": "Ivy League university in New York City"
+      },
+      {
+        "w": "Dartmouth College",
+        "d": "Ivy League college in New Hampshire"
+      },
+      {
+        "w": "Cornell University",
+        "d": "Ivy League university in Ithaca, New York"
+      },
+      {
+        "w": "University of Chicago",
+        "d": "Research university known for economics and the Chicago schools"
+      },
+      {
+        "w": "University of Pennsylvania",
+        "d": "Ivy League university founded by Benjamin Franklin"
+      },
+      {
+        "w": "Brown University",
+        "d": "Ivy League university known for its open curriculum"
+      },
+      {
+        "w": "Johns Hopkins University",
+        "d": "Research university famous for medicine and public health"
+      },
+      {
+        "w": "Duke University",
+        "d": "North Carolina university known for research and basketball"
+      },
+      {
+        "w": "Vanderbilt University",
+        "d": "Private research university in Nashville"
+      },
+      {
+        "w": "Northwestern University",
+        "d": "Chicago-area university known for journalism, business and research"
+      },
+      {
+        "w": "Georgetown University",
+        "d": "Washington university with a strong foreign-service tradition"
+      },
+      {
+        "w": "University of Notre Dame",
+        "d": "Indiana Catholic university known for football and research"
+      },
+      {
+        "w": "Carnegie Mellon University",
+        "d": "Pittsburgh university known for computer science and robotics"
+      },
+      {
+        "w": "University of Michigan",
+        "d": "Large public research university in Ann Arbor"
+      },
+      {
+        "w": "University of Virginia",
+        "d": "Public university founded by Thomas Jefferson"
+      },
+      {
+        "w": "UCLA",
+        "d": "University of California campus in Los Angeles"
+      },
+      {
+        "w": "University of Texas",
+        "d": "Major public university system associated with Austin’s flagship campus"
+      },
+      {
+        "w": "Emory University",
+        "d": "Private research university in Atlanta"
+      },
+      {
+        "w": "Tufts University",
+        "d": "Massachusetts university known for international relations and medicine"
+      },
+      {
+        "w": "University of Washington",
+        "d": "Seattle public research university"
+      },
+      {
+        "w": "Pomona College",
+        "d": "Liberal arts college in Claremont, California"
+      },
+      {
+        "w": "Williams College",
+        "d": "Massachusetts liberal arts college"
+      },
+      {
+        "w": "Oberlin College",
+        "d": "Ohio liberal arts college with a historic conservatory"
+      },
+      {
+        "w": "Swarthmore College",
+        "d": "Pennsylvania liberal arts college founded by Quakers"
+      },
+      {
+        "w": "CUNY",
+        "d": "City University of New York system"
+      },
+      {
+        "w": "Howard University",
+        "d": "Historically Black university in Washington, D.C."
+      },
+      {
+        "w": "Reed College",
+        "d": "Oregon liberal arts college known for rigorous humanities"
+      },
+      {
+        "w": "Bates College",
+        "d": "Maine liberal arts college"
+      }
+    ]
+  },
+  {
+    "name": "business terms & strategy",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "unit economics",
+        "d": "Revenue and cost logic for one customer, order or unit"
+      },
+      {
+        "w": "product-market fit",
+        "d": "State when a product clearly satisfies a real market need"
+      },
+      {
+        "w": "cohort analysis",
+        "d": "Tracking behavior of users grouped by start date or shared trait"
+      },
+      {
+        "w": "runway",
+        "d": "Time a company can operate before running out of cash"
+      },
+      {
+        "w": "burn rate",
+        "d": "Speed at which a startup spends its cash reserves"
+      },
+      {
+        "w": "churn",
+        "d": "Share of customers or revenue lost over a period"
+      },
+      {
+        "w": "LTV",
+        "d": "Lifetime value expected from one customer"
+      },
+      {
+        "w": "CAC",
+        "d": "Customer acquisition cost"
+      },
+      {
+        "w": "Series A",
+        "d": "Early venture round after seed financing"
+      },
+      {
+        "w": "pivot",
+        "d": "Major change in product, market or strategy"
+      },
+      {
+        "w": "EBITDA",
+        "d": "Earnings before interest, taxes, depreciation and amortization"
+      },
+      {
+        "w": "NPS",
+        "d": "Net Promoter Score, a customer loyalty metric"
+      },
+      {
+        "w": "OKR",
+        "d": "Objectives and key results, a goal-setting system"
+      },
+      {
+        "w": "bootstrapping",
+        "d": "Building a company mostly without outside capital"
+      },
+      {
+        "w": "synergy",
+        "d": "Claimed extra value from combining units, teams or companies"
+      },
+      {
+        "w": "due diligence",
+        "d": "Investigation before an investment, acquisition or deal"
+      },
+      {
+        "w": "traction",
+        "d": "Evidence that customers are adopting a product"
+      },
+      {
+        "w": "SPAC",
+        "d": "Blank-check company used to take another company public"
+      },
+      {
+        "w": "buyout",
+        "d": "Acquisition that gives the buyer control of a company"
+      },
+      {
+        "w": "ROI",
+        "d": "Return on investment"
+      },
+      {
+        "w": "minimum viable product",
+        "d": "Smallest product version that can test a real assumption"
+      },
+      {
+        "w": "vertical growth",
+        "d": "Growth by deepening control in one market or value chain"
+      },
+      {
+        "w": "mezzanine debt",
+        "d": "Hybrid financing between senior debt and equity"
+      },
+      {
+        "w": "TAM",
+        "d": "Total addressable market"
+      },
+      {
+        "w": "ARR",
+        "d": "Annual recurring revenue"
+      },
+      {
+        "w": "go-to-market",
+        "d": "Plan for reaching customers and selling a product"
+      },
+      {
+        "w": "network effect",
+        "d": "Value increase when more users join a service"
+      },
+      {
+        "w": "blue ocean strategy",
+        "d": "Strategy of creating uncontested market space"
+      },
+      {
+        "w": "subscription economy",
+        "d": "Business model built around recurring customer payments"
+      },
+      {
+        "w": "two-sided platform",
+        "d": "Platform connecting two interdependent user groups"
+      },
+      {
+        "w": "predatory pricing",
+        "d": "Pricing below cost to weaken competitors"
+      },
+      {
+        "w": "freemium",
+        "d": "Free basic product with paid premium features"
+      },
+      {
+        "w": "vertical integration",
+        "d": "Control of multiple stages of a supply chain"
+      },
+      {
+        "w": "hyper-personalization",
+        "d": "Highly individualized marketing or product experience"
+      },
+      {
+        "w": "loyalty program",
+        "d": "System rewarding repeat customers"
+      }
+    ]
+  },
+  {
+    "name": "anti-doping terms & substances",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "WADA",
+        "d": "World Anti-Doping Agency"
+      },
+      {
+        "w": "USADA",
+        "d": "United States Anti-Doping Agency"
+      },
+      {
+        "w": "RUSADA",
+        "d": "Russian Anti-Doping Agency"
+      },
+      {
+        "w": "prohibited list",
+        "d": "Annual list of banned substances and methods"
+      },
+      {
+        "w": "anabolic steroids",
+        "d": "Synthetic substances used to promote muscle growth and recovery"
+      },
+      {
+        "w": "EPO",
+        "d": "Erythropoietin, used illicitly to raise red blood cell production"
+      },
+      {
+        "w": "stanozolol",
+        "d": "Anabolic steroid found in several major doping cases"
+      },
+      {
+        "w": "nandrolone",
+        "d": "Anabolic steroid banned in sport"
+      },
+      {
+        "w": "clenbuterol",
+        "d": "Beta-2 agonist associated with performance and contamination cases"
+      },
+      {
+        "w": "turinabol",
+        "d": "Oral anabolic steroid linked to state-run doping programs"
+      },
+      {
+        "w": "trimetazidine",
+        "d": "Heart medication banned in sport as a metabolic modulator"
+      },
+      {
+        "w": "meldonium",
+        "d": "Metabolic drug banned by WADA from 2016"
+      },
+      {
+        "w": "furosemide",
+        "d": "Diuretic that can be used as a masking agent"
+      },
+      {
+        "w": "blood doping",
+        "d": "Increasing red blood cell capacity to improve endurance"
+      },
+      {
+        "w": "biological passport",
+        "d": "Longitudinal athlete profile used to detect abnormal biomarkers"
+      },
+      {
+        "w": "therapeutic use exemption",
+        "d": "Permission to use a banned substance for a legitimate medical need"
+      },
+      {
+        "w": "A sample",
+        "d": "First sample analyzed in a doping test"
+      },
+      {
+        "w": "B sample",
+        "d": "Second sample used to confirm an adverse result"
+      },
+      {
+        "w": "sample retesting",
+        "d": "Reanalysis of stored samples with newer detection methods"
+      },
+      {
+        "w": "registered testing pool",
+        "d": "Group of athletes subject to detailed whereabouts rules"
+      },
+      {
+        "w": "whereabouts system",
+        "d": "Reporting system so testers can locate athletes out of competition"
+      },
+      {
+        "w": "whereabouts failure",
+        "d": "Missed test or filing failure under anti-doping rules"
+      },
+      {
+        "w": "microdosing",
+        "d": "Using tiny doses to reduce detection risk"
+      },
+      {
+        "w": "hematocrit",
+        "d": "Share of blood volume made up by red blood cells"
+      },
+      {
+        "w": "synthetic testosterone",
+        "d": "Laboratory-produced testosterone banned without exemption"
+      },
+      {
+        "w": "masking agent",
+        "d": "Substance used to hide another prohibited substance"
+      },
+      {
+        "w": "diuretic",
+        "d": "Drug increasing urine output and sometimes used to mask doping"
+      },
+      {
+        "w": "growth hormone",
+        "d": "Hormone banned when used for performance enhancement"
+      },
+      {
+        "w": "beta-2 agonist",
+        "d": "Drug class restricted because of possible performance effects"
+      },
+      {
+        "w": "chain of custody",
+        "d": "Documented handling path of a doping-control sample"
+      },
+      {
+        "w": "isotope-ratio MS",
+        "d": "Mass spectrometry method used to detect synthetic steroids"
+      },
+      {
+        "w": "adverse analytical finding",
+        "d": "Laboratory result indicating a prohibited substance or method"
+      },
+      {
+        "w": "strict liability",
+        "d": "Rule that athletes are responsible for what is found in their samples"
+      },
+      {
+        "w": "out-of-competition testing",
+        "d": "Testing conducted outside event periods"
+      },
+      {
+        "w": "doping control officer",
+        "d": "Official who collects or supervises anti-doping samples"
+      }
+    ]
+  },
+  {
+    "name": "siege weapons & military machines",
+    "tags": {
+      "a": "geek",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "ballista",
+        "d": "Ancient torsion engine that launched bolts or stones"
+      },
+      {
+        "w": "catapult",
+        "d": "Mechanical launcher used to throw projectiles at fortifications"
+      },
+      {
+        "w": "trebuchet",
+        "d": "Counterweight siege engine for hurling heavy stones"
+      },
+      {
+        "w": "onager",
+        "d": "Roman torsion catapult named after the wild ass kick"
+      },
+      {
+        "w": "arcuballista",
+        "d": "Large crossbow-like artillery weapon of the Roman world"
+      },
+      {
+        "w": "mangonel",
+        "d": "Medieval stone-throwing siege engine"
+      },
+      {
+        "w": "bombard",
+        "d": "Early large cannon used against walls"
+      },
+      {
+        "w": "culverin",
+        "d": "Long early cannon firing solid shot"
+      },
+      {
+        "w": "mortar",
+        "d": "Short artillery piece firing shells on a high arc"
+      },
+      {
+        "w": "petard",
+        "d": "Small explosive charge used to break gates or walls"
+      },
+      {
+        "w": "mantlet",
+        "d": "Movable shield protecting attackers near a wall"
+      },
+      {
+        "w": "siege ladder",
+        "d": "Ladder used to scale walls during an assault"
+      },
+      {
+        "w": "approach trench",
+        "d": "Trench dug toward a besieged fortification"
+      },
+      {
+        "w": "sap",
+        "d": "Forward trench or tunnel dug by besiegers"
+      },
+      {
+        "w": "mine gallery",
+        "d": "Tunnel dug under walls to collapse or breach them"
+      },
+      {
+        "w": "sambuca",
+        "d": "Ancient bridge-like siege ladder used from ships"
+      },
+      {
+        "w": "tortoise shelter",
+        "d": "Covered mobile protection for troops approaching walls"
+      },
+      {
+        "w": "battering ram",
+        "d": "Heavy beam used to smash gates or walls"
+      },
+      {
+        "w": "Greek fire siphon",
+        "d": "Byzantine device for projecting incendiary liquid"
+      },
+      {
+        "w": "siege tower",
+        "d": "Mobile tower giving attackers height against walls"
+      },
+      {
+        "w": "heated shot",
+        "d": "Cannonballs heated before firing to ignite targets"
+      },
+      {
+        "w": "incendiary arrows",
+        "d": "Arrows prepared to set structures or materials on fire"
+      },
+      {
+        "w": "shrapnel shell",
+        "d": "Shell designed to scatter fragments over troops"
+      },
+      {
+        "w": "hand grenade",
+        "d": "Small explosive weapon thrown by hand"
+      },
+      {
+        "w": "howitzer",
+        "d": "Artillery piece firing shells at high angles"
+      },
+      {
+        "w": "falconet",
+        "d": "Light cannon used from the late medieval and early modern period"
+      },
+      {
+        "w": "arquebus",
+        "d": "Early shoulder firearm with a matchlock mechanism"
+      },
+      {
+        "w": "musket",
+        "d": "Early long gun that replaced many arquebuses"
+      },
+      {
+        "w": "Congreve rocket",
+        "d": "British military rocket used in the Napoleonic era"
+      },
+      {
+        "w": "counter-mine gallery",
+        "d": "Tunnel dug to intercept enemy mines"
+      },
+      {
+        "w": "scorpion",
+        "d": "Roman torsion bolt-shooter smaller than a ballista"
+      },
+      {
+        "w": "Dardanelles Gun",
+        "d": "Huge Ottoman cannon cast in the fifteenth century"
+      },
+      {
+        "w": "siege hook",
+        "d": "Hooked device for pulling down defenses or scaling walls"
+      },
+      {
+        "w": "pavise",
+        "d": "Large shield used to protect crossbowmen and siege crews"
+      },
+      {
+        "w": "covered way",
+        "d": "Protected route allowing troops to approach or move around defenses"
+      }
+    ]
+  },
+  {
+    "name": "elite troops across history",
+    "tags": {
+      "a": "geek",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Janissaries",
+        "d": "Elite infantry corps of the Ottoman Empire"
+      },
+      {
+        "w": "Mamluks",
+        "d": "Military slave elite that ruled Egypt and fought as cavalry"
+      },
+      {
+        "w": "samurai",
+        "d": "Warrior class of premodern Japan"
+      },
+      {
+        "w": "Spartiates",
+        "d": "Full citizen-warriors of Sparta"
+      },
+      {
+        "w": "Varangian Guard",
+        "d": "Byzantine imperial guard of Norse and later Anglo-Saxon warriors"
+      },
+      {
+        "w": "Praetorian Guard",
+        "d": "Elite Roman guard that protected and sometimes made emperors"
+      },
+      {
+        "w": "berserkers",
+        "d": "Norse warrior figures associated with furious battle trance"
+      },
+      {
+        "w": "ninja",
+        "d": "Japanese covert agents linked to espionage and sabotage"
+      },
+      {
+        "w": "Gurkhas",
+        "d": "Nepalese soldiers famous in British and Indian service"
+      },
+      {
+        "w": "Qarmatians",
+        "d": "Militant Ismaili movement that controlled parts of eastern Arabia"
+      },
+      {
+        "w": "Zouaves",
+        "d": "Light infantry units originally formed in French North Africa"
+      },
+      {
+        "w": "musketeers",
+        "d": "Early modern soldiers armed with muskets, later royal guard image"
+      },
+      {
+        "w": "housecarls",
+        "d": "Household warriors of Anglo-Saxon and Scandinavian rulers"
+      },
+      {
+        "w": "Knights Templar",
+        "d": "Medieval military order founded during the Crusades"
+      },
+      {
+        "w": "Knights Hospitaller",
+        "d": "Crusading military order that later ruled Rhodes and Malta"
+      },
+      {
+        "w": "Hashashin",
+        "d": "Nizari Ismaili group famous for targeted political killings"
+      },
+      {
+        "w": "Māori warriors",
+        "d": "Warriors of Māori societies with distinctive weapons and tactics"
+      },
+      {
+        "w": "Nubian archers",
+        "d": "Archers famed in ancient Egyptian and Near Eastern warfare"
+      },
+      {
+        "w": "Immortals",
+        "d": "Elite Persian guard described by Greek sources"
+      },
+      {
+        "w": "Agrianians",
+        "d": "Elite light infantry used by Alexander the Great"
+      },
+      {
+        "w": "Numidian cavalry",
+        "d": "North African light cavalry famous in Punic and Roman wars"
+      },
+      {
+        "w": "uhlans",
+        "d": "Lance-armed cavalry of Polish and later European armies"
+      },
+      {
+        "w": "Rajputs",
+        "d": "Warrior lineages of northern and western India"
+      },
+      {
+        "w": "Maratha cavalry",
+        "d": "Mobile forces central to Maratha power in India"
+      },
+      {
+        "w": "Akali Nihangs",
+        "d": "Sikh warrior order known for blue robes and martial tradition"
+      },
+      {
+        "w": "legionary dictator corps",
+        "d": "Roman emergency command tradition represented through military authority"
+      },
+      {
+        "w": "azaps",
+        "d": "Irregular infantry used by the Ottoman military"
+      },
+      {
+        "w": "delibaş",
+        "d": "Ottoman light cavalry noted for shock tactics and flamboyant dress"
+      },
+      {
+        "w": "Spanish tercios",
+        "d": "Early modern infantry formations combining pikes and firearms"
+      },
+      {
+        "w": "French Foreign Legion",
+        "d": "Elite French military corps recruiting foreign volunteers"
+      },
+      {
+        "w": "Napoleon’s Imperial Guard",
+        "d": "Elite troops of Napoleon’s Grande Armée"
+      },
+      {
+        "w": "Swiss mercenaries",
+        "d": "Late medieval and early modern infantry hired across Europe"
+      },
+      {
+        "w": "Varangian guardsmen",
+        "d": "Individual warriors serving in the Byzantine Varangian Guard"
+      },
+      {
+        "w": "Nihang Sikhs",
+        "d": "Traditional Sikh warrior order associated with martial discipline"
+      },
+      {
+        "w": "Akela’s guard",
+        "d": "Literary-style label for elite loyal guards, kept as a hard clue"
+      }
+    ]
+  },
+  {
+    "name": "ship types across eras",
+    "tags": {
+      "a": "geek",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "trireme",
+        "d": "Ancient warship rowed by three banks of oars"
+      },
+      {
+        "w": "drakkar",
+        "d": "Long Viking ship with a dragon-headed image"
+      },
+      {
+        "w": "cog",
+        "d": "Medieval northern European merchant ship"
+      },
+      {
+        "w": "caravel",
+        "d": "Small ocean-going sailing ship used in Portuguese exploration"
+      },
+      {
+        "w": "carrack",
+        "d": "Large late medieval ocean-going sailing ship"
+      },
+      {
+        "w": "galleon",
+        "d": "Large multi-deck sailing ship of the early modern period"
+      },
+      {
+        "w": "junk",
+        "d": "Chinese sailing ship type with battened sails"
+      },
+      {
+        "w": "dhow",
+        "d": "Arab and Indian Ocean sailing vessel with lateen sails"
+      },
+      {
+        "w": "felucca",
+        "d": "Small lateen-sailed boat common on the Nile and Mediterranean"
+      },
+      {
+        "w": "brigantine",
+        "d": "Two-masted sailing vessel with square sails on the foremast"
+      },
+      {
+        "w": "frigate",
+        "d": "Fast warship type used from sail navies to modern fleets"
+      },
+      {
+        "w": "battleship",
+        "d": "Large armored warship built around heavy guns"
+      },
+      {
+        "w": "ladya",
+        "d": "Slavic river and sea boat used in medieval trade and warfare"
+      },
+      {
+        "w": "chaika",
+        "d": "Cossack boat used on Black Sea raids"
+      },
+      {
+        "w": "bireme",
+        "d": "Ancient galley with two banks of oars"
+      },
+      {
+        "w": "liburna",
+        "d": "Light Roman warship type adapted from Illyrian models"
+      },
+      {
+        "w": "galley",
+        "d": "Oared warship used across the Mediterranean for centuries"
+      },
+      {
+        "w": "pao",
+        "d": "Traditional Chinese boat type used in regional waters"
+      },
+      {
+        "w": "prahu",
+        "d": "Austronesian sailing vessel type with outrigger variants"
+      },
+      {
+        "w": "corvette",
+        "d": "Small warship used for escort and patrol duties"
+      },
+      {
+        "w": "snekkja",
+        "d": "Viking longship type smaller than the largest warships"
+      },
+      {
+        "w": "navis oneraria",
+        "d": "Roman merchant cargo ship"
+      },
+      {
+        "w": "galleass",
+        "d": "Hybrid between galley and sailing warship"
+      },
+      {
+        "w": "schnigge",
+        "d": "Medieval northern European ship related to the cog tradition"
+      },
+      {
+        "w": "trimaran",
+        "d": "Multihull vessel with one main hull and two outriggers"
+      },
+      {
+        "w": "bussa",
+        "d": "Large medieval cargo ship in northern European waters"
+      },
+      {
+        "w": "catamaran",
+        "d": "Vessel with two parallel hulls"
+      },
+      {
+        "w": "monoxylon",
+        "d": "Boat hollowed from a single tree trunk"
+      },
+      {
+        "w": "pinnace",
+        "d": "Light sailing vessel used as tender, scout or merchant craft"
+      },
+      {
+        "w": "fluyt",
+        "d": "Dutch cargo ship optimized for trade efficiency"
+      },
+      {
+        "w": "xebec",
+        "d": "Mediterranean sailing vessel often associated with corsairs"
+      },
+      {
+        "w": "tartane",
+        "d": "Small Mediterranean sailing vessel with lateen rig"
+      },
+      {
+        "w": "clipper",
+        "d": "Fast nineteenth-century sailing ship built for speed"
+      },
+      {
+        "w": "koch",
+        "d": "Pomor Arctic sailing vessel with ice-resistant features"
+      },
+      {
+        "w": "dromon",
+        "d": "Byzantine war galley often associated with Greek fire"
+      }
+    ]
+  },
+  {
+    "name": "lost cities & ancient capitals",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Babylon",
+        "d": "Ancient Mesopotamian capital on the Euphrates"
+      },
+      {
+        "w": "Nineveh",
+        "d": "Assyrian capital near modern Mosul"
+      },
+      {
+        "w": "Tenochtitlan",
+        "d": "Aztec capital built on an island in Lake Texcoco"
+      },
+      {
+        "w": "Angkor",
+        "d": "Khmer capital region centered on vast temple and hydraulic complexes"
+      },
+      {
+        "w": "Bagan",
+        "d": "Ancient Burmese capital famous for thousands of temples"
+      },
+      {
+        "w": "Timbuktu",
+        "d": "Malian city known for Islamic scholarship and manuscript culture"
+      },
+      {
+        "w": "Mohenjo-daro",
+        "d": "Indus Valley city with planned streets and drainage"
+      },
+      {
+        "w": "Palenque",
+        "d": "Maya city-state in present-day Chiapas"
+      },
+      {
+        "w": "Cusco",
+        "d": "Inca capital in the Andes"
+      },
+      {
+        "w": "Meroë",
+        "d": "Kushite capital with pyramids in present-day Sudan"
+      },
+      {
+        "w": "Harappa",
+        "d": "Indus Valley urban center in present-day Pakistan"
+      },
+      {
+        "w": "Ebla",
+        "d": "Bronze Age Syrian city known from palace archives"
+      },
+      {
+        "w": "Ur",
+        "d": "Sumerian city with a famous ziggurat"
+      },
+      {
+        "w": "Tula",
+        "d": "Toltec capital in central Mexico"
+      },
+      {
+        "w": "Chan Chan",
+        "d": "Chimú capital built of adobe near the Peruvian coast"
+      },
+      {
+        "w": "Syracuse",
+        "d": "Ancient Greek city in Sicily and major Mediterranean power"
+      },
+      {
+        "w": "Akragas",
+        "d": "Greek city in Sicily, later Agrigento"
+      },
+      {
+        "w": "Leptis Magna",
+        "d": "Roman city in North Africa with monumental ruins"
+      },
+      {
+        "w": "Great Zimbabwe",
+        "d": "Stone-built medieval city in southern Africa"
+      },
+      {
+        "w": "Susa",
+        "d": "Ancient Elamite and Persian capital"
+      },
+      {
+        "w": "Amarna",
+        "d": "Short-lived Egyptian capital founded by Akhenaten"
+      },
+      {
+        "w": "Ctesiphon",
+        "d": "Parthian and Sasanian capital near the Tigris"
+      },
+      {
+        "w": "Itil",
+        "d": "Khazar capital on the lower Volga"
+      },
+      {
+        "w": "Pataliputra",
+        "d": "Ancient Indian capital of the Maurya and Gupta empires"
+      },
+      {
+        "w": "Ani",
+        "d": "Medieval Armenian capital known as the city of a thousand churches"
+      },
+      {
+        "w": "Ugarit",
+        "d": "Bronze Age city whose tablets preserve an early alphabetic script"
+      },
+      {
+        "w": "Hattusa",
+        "d": "Hittite capital with walls, gates and archives"
+      },
+      {
+        "w": "Taxila",
+        "d": "Ancient city and learning center in Gandhara"
+      },
+      {
+        "w": "Cahokia",
+        "d": "Mississippian urban center near modern St. Louis"
+      },
+      {
+        "w": "Nan Madol",
+        "d": "Micronesian ceremonial city built on artificial islets"
+      },
+      {
+        "w": "Derinkuyu",
+        "d": "Underground city in Cappadocia"
+      },
+      {
+        "w": "Merv",
+        "d": "Central Asian oasis city on the Silk Road"
+      },
+      {
+        "w": "Copán",
+        "d": "Maya city known for sculpture and hieroglyphic stairway"
+      },
+      {
+        "w": "Ephesus",
+        "d": "Ancient city in Asia Minor with major Greek and Roman remains"
+      },
+      {
+        "w": "Samarra",
+        "d": "Abbasid capital known for its spiral minaret and planned layout"
+      }
+    ]
+  },
+  {
+    "name": "fortresses & fortifications",
+    "tags": {
+      "a": "geek",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Masada",
+        "d": "Desert fortress overlooking the Dead Sea"
+      },
+      {
+        "w": "Alcázar of Segovia",
+        "d": "Spanish castle-palace with a dramatic prow-like form"
+      },
+      {
+        "w": "Kronborg",
+        "d": "Danish fortress known as Hamlet’s Elsinore"
+      },
+      {
+        "w": "Krak des Chevaliers",
+        "d": "Crusader castle in Syria, one of the great medieval fortresses"
+      },
+      {
+        "w": "Carcassonne",
+        "d": "Fortified medieval city in southern France"
+      },
+      {
+        "w": "Red Fort",
+        "d": "Mughal fortress-palace in Delhi"
+      },
+      {
+        "w": "Alhambra",
+        "d": "Nasrid palace-fortress complex in Granada"
+      },
+      {
+        "w": "Mont-Saint-Michel",
+        "d": "Tidal island abbey with fortified medieval defenses"
+      },
+      {
+        "w": "Hadrian’s Wall",
+        "d": "Roman frontier wall across northern Britain"
+      },
+      {
+        "w": "Sacsayhuamán",
+        "d": "Inca fortress complex above Cusco"
+      },
+      {
+        "w": "fort",
+        "d": "Permanent military defensive work"
+      },
+      {
+        "w": "citadel",
+        "d": "Fortified core or stronghold of a city"
+      },
+      {
+        "w": "palisade",
+        "d": "Defensive fence of stakes or timber"
+      },
+      {
+        "w": "bastion",
+        "d": "Angular projection allowing flanking fire"
+      },
+      {
+        "w": "ravelin",
+        "d": "Detached triangular work in front of a fortification"
+      },
+      {
+        "w": "redoubt",
+        "d": "Small enclosed defensive work"
+      },
+      {
+        "w": "caponier",
+        "d": "Covered passage or firing position in a ditch"
+      },
+      {
+        "w": "barbican",
+        "d": "Outer defensive gateway or fortified outwork"
+      },
+      {
+        "w": "keep",
+        "d": "Strong central tower of a medieval castle"
+      },
+      {
+        "w": "Alamo Mission",
+        "d": "Fortified mission in San Antonio associated with the Texas Revolution"
+      },
+      {
+        "w": "Naryn-Kala",
+        "d": "Citadel of Derbent in Dagestan"
+      },
+      {
+        "w": "Belgrade Fortress",
+        "d": "Strategic fortress at the confluence of the Sava and Danube"
+      },
+      {
+        "w": "Himeji Castle",
+        "d": "Japanese castle known as the White Heron Castle"
+      },
+      {
+        "w": "Bahla Fort",
+        "d": "Omani fortress and UNESCO World Heritage Site"
+      },
+      {
+        "w": "Harlech Castle",
+        "d": "Edwardian castle in Wales built above the Irish Sea"
+      },
+      {
+        "w": "Bam Citadel",
+        "d": "Large adobe citadel in Iran"
+      },
+      {
+        "w": "Edinburgh Castle",
+        "d": "Fortress on Castle Rock above Edinburgh"
+      },
+      {
+        "w": "Golconda Fort",
+        "d": "Fortress near Hyderabad associated with diamond trade"
+      },
+      {
+        "w": "Derbent Fortress",
+        "d": "Caspian defensive complex controlling a narrow passage"
+      },
+      {
+        "w": "Kenilworth Castle",
+        "d": "English castle associated with royal politics and Elizabethan display"
+      },
+      {
+        "w": "Valletta fortifications",
+        "d": "Defensive system built by the Knights of Malta"
+      },
+      {
+        "w": "White Tower",
+        "d": "Central keep of the Tower of London"
+      },
+      {
+        "w": "Malbork Castle",
+        "d": "Huge Teutonic Order brick castle in Poland"
+      },
+      {
+        "w": "Mehrangarh Fort",
+        "d": "Massive hill fort above Jodhpur in Rajasthan"
+      },
+      {
+        "w": "Castel del Monte",
+        "d": "Octagonal fortress-like castle in Apulia"
+      }
+    ]
+  },
+  {
+    "name": "political theories & regime concepts",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "world-systems theory",
+        "d": "Approach dividing the global economy into core, periphery and semi-periphery"
+      },
+      {
+        "w": "neocolonialism",
+        "d": "Indirect control of poorer states through economic or political pressure"
+      },
+      {
+        "w": "Pan-Africanism",
+        "d": "Movement for solidarity and political unity among African peoples"
+      },
+      {
+        "w": "sovereign democracy",
+        "d": "Russian political formula claiming democracy without external standards"
+      },
+      {
+        "w": "anarcho-syndicalism",
+        "d": "Theory seeking worker self-management through revolutionary unions"
+      },
+      {
+        "w": "timocracy",
+        "d": "Classical term for rule by honor or property-qualified citizens"
+      },
+      {
+        "w": "agnatic seniority",
+        "d": "Succession system prioritizing the oldest male dynastic line"
+      },
+      {
+        "w": "ergatocracy",
+        "d": "Rule by workers or a worker class"
+      },
+      {
+        "w": "ethnocracy",
+        "d": "Regime where one ethnic group dominates state power"
+      },
+      {
+        "w": "telocracy",
+        "d": "Order organized around explicit collective goals rather than inherited rules"
+      },
+      {
+        "w": "hauntology",
+        "d": "Theory of political and cultural life haunted by unrealized futures"
+      },
+      {
+        "w": "precarization",
+        "d": "Spread of insecure work and unstable social status"
+      },
+      {
+        "w": "post-democracy",
+        "d": "Condition where democratic forms remain but real choice narrows"
+      },
+      {
+        "w": "velayat-e faqih",
+        "d": "Iranian doctrine of guardianship by the Islamic jurist"
+      },
+      {
+        "w": "hybrid regime",
+        "d": "System combining democratic procedures with authoritarian control"
+      },
+      {
+        "w": "electoral authoritarianism",
+        "d": "Authoritarian rule using elections that are not genuinely free"
+      },
+      {
+        "w": "state involution",
+        "d": "Political decay where institutions become more extractive and less effective"
+      },
+      {
+        "w": "black knight",
+        "d": "External patron helping an authoritarian regime resist pressure"
+      },
+      {
+        "w": "new institutionalism",
+        "d": "Approach explaining politics through formal and informal institutions"
+      },
+      {
+        "w": "elitism",
+        "d": "Theory that organized elites dominate political decision-making"
+      },
+      {
+        "w": "pluralism",
+        "d": "Theory of politics as competition among many groups and interests"
+      },
+      {
+        "w": "corporatism",
+        "d": "System organizing representation through officially recognized social groups"
+      },
+      {
+        "w": "deliberative democracy",
+        "d": "Theory emphasizing reasoned public discussion before decisions"
+      },
+      {
+        "w": "polyarchy",
+        "d": "Robert Dahl’s term for real-world competitive democracy"
+      },
+      {
+        "w": "Bonapartism",
+        "d": "Personalist rule claiming popular legitimacy above parties and classes"
+      },
+      {
+        "w": "Pan-Slavism",
+        "d": "Movement for cultural or political unity of Slavic peoples"
+      },
+      {
+        "w": "irredentism",
+        "d": "Claim to territory outside a state based on ethnic or historical arguments"
+      },
+      {
+        "w": "delegative democracy",
+        "d": "System where elected executives claim broad unchecked authority"
+      },
+      {
+        "w": "core-periphery",
+        "d": "Model describing unequal relations between dominant centers and dependent margins"
+      },
+      {
+        "w": "coloniality",
+        "d": "Persistence of colonial power patterns after formal colonialism ends"
+      },
+      {
+        "w": "dependency theory",
+        "d": "Theory explaining underdevelopment through unequal global economic relations"
+      },
+      {
+        "w": "clientelism",
+        "d": "Political exchange of favors, jobs or goods for support"
+      },
+      {
+        "w": "patrimonialism",
+        "d": "Rule where public authority is treated as personal property"
+      },
+      {
+        "w": "consociationalism",
+        "d": "Power-sharing model for deeply divided societies"
+      },
+      {
+        "w": "majoritarianism",
+        "d": "Political principle prioritizing rule by electoral or parliamentary majority"
+      }
+    ]
+  },
+  {
+    "name": "esports terms & tournaments",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "LAN tournament",
+        "d": "Offline event where players compete on a local network"
+      },
+      {
+        "w": "bootcamp",
+        "d": "Intensive team practice period before an event"
+      },
+      {
+        "w": "meta",
+        "d": "Current dominant strategy, picks or style of play"
+      },
+      {
+        "w": "power ranking",
+        "d": "Ordered estimate of team strength before or during a season"
+      },
+      {
+        "w": "seeding",
+        "d": "Placement of teams in a bracket based on ranking or qualification"
+      },
+      {
+        "w": "highlight",
+        "d": "Clip of a spectacular play or decisive moment"
+      },
+      {
+        "w": "clutch",
+        "d": "Winning a round or fight from a difficult position"
+      },
+      {
+        "w": "ace",
+        "d": "Player eliminating an entire opposing team in a round"
+      },
+      {
+        "w": "frag",
+        "d": "Kill or elimination in a shooter"
+      },
+      {
+        "w": "Elo rating",
+        "d": "Ranking system adapted from chess for competitive games"
+      },
+      {
+        "w": "lower bracket",
+        "d": "Tournament bracket path where one more loss eliminates a team"
+      },
+      {
+        "w": "pick-ban",
+        "d": "Draft stage where teams select and block characters or maps"
+      },
+      {
+        "w": "best-of-five",
+        "d": "Match format where the first side to win three maps or games advances"
+      },
+      {
+        "w": "comeback",
+        "d": "Recovery from a losing position to win"
+      },
+      {
+        "w": "tilt",
+        "d": "Emotional frustration that harms decision-making"
+      },
+      {
+        "w": "scrim",
+        "d": "Practice match between teams"
+      },
+      {
+        "w": "troll pick",
+        "d": "Deliberately odd or provocative selection"
+      },
+      {
+        "w": "The International",
+        "d": "Major Dota 2 world championship"
+      },
+      {
+        "w": "Major",
+        "d": "Top-tier tournament category in several esports scenes"
+      },
+      {
+        "w": "ESL",
+        "d": "Large esports organizer running leagues and tournaments"
+      },
+      {
+        "w": "flex pick",
+        "d": "Character or role choice that can be moved between positions"
+      },
+      {
+        "w": "warding",
+        "d": "Placing vision tools to reveal parts of the map"
+      },
+      {
+        "w": "gank",
+        "d": "Coordinated surprise attack on an opponent"
+      },
+      {
+        "w": "farming",
+        "d": "Collecting resources or experience efficiently"
+      },
+      {
+        "w": "carry",
+        "d": "Role expected to deal decisive damage later in the game"
+      },
+      {
+        "w": "hard carry",
+        "d": "Carry whose power peaks especially late"
+      },
+      {
+        "w": "stream sniping",
+        "d": "Using an opponent’s live stream for unfair information"
+      },
+      {
+        "w": "online qualifier",
+        "d": "Remote tournament stage granting entry to a larger event"
+      },
+      {
+        "w": "DreamHack",
+        "d": "Gaming festival and esports tournament brand"
+      },
+      {
+        "w": "BLAST Premier",
+        "d": "Counter-Strike tournament circuit"
+      },
+      {
+        "w": "roster",
+        "d": "Official lineup of players on a team"
+      },
+      {
+        "w": "trade",
+        "d": "Player transfer or exchange between teams"
+      },
+      {
+        "w": "map pool",
+        "d": "Set of maps available for tournament play"
+      },
+      {
+        "w": "ping",
+        "d": "Network latency affecting responsiveness"
+      },
+      {
+        "w": "map veto",
+        "d": "Pre-match process of banning and selecting maps"
+      }
+    ]
+  },
+  {
+    "name": "post-apocalyptic fiction",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "wasteland",
+        "d": "Ruined landscape after collapse or catastrophe"
+      },
+      {
+        "w": "fallout shelter",
+        "d": "Bunker designed for protection after nuclear attack"
+      },
+      {
+        "w": "radiation sickness",
+        "d": "Illness from high exposure to ionizing radiation"
+      },
+      {
+        "w": "mutant",
+        "d": "Changed creature or human shaped by radiation or experiments"
+      },
+      {
+        "w": "survivalist",
+        "d": "Person preparing to live through societal breakdown"
+      },
+      {
+        "w": "raider",
+        "d": "Violent scavenger in a collapsed world"
+      },
+      {
+        "w": "Fallout Vault",
+        "d": "Underground shelter system from the Fallout universe"
+      },
+      {
+        "w": "Metro 2033",
+        "d": "Post-nuclear story set in the Moscow Metro"
+      },
+      {
+        "w": "exclusion zone",
+        "d": "Restricted contaminated area after disaster"
+      },
+      {
+        "w": "stalker",
+        "d": "Explorer of forbidden zones in post-disaster fiction"
+      },
+      {
+        "w": "artifact anomaly",
+        "d": "Strange object or phenomenon found in a dangerous zone"
+      },
+      {
+        "w": "On the Beach",
+        "d": "Novel about the last survivors after nuclear war"
+      },
+      {
+        "w": "The Book of Eli",
+        "d": "Film about a wanderer carrying a sacred book after collapse"
+      },
+      {
+        "w": "28 Days Later",
+        "d": "Film where rage infection empties Britain"
+      },
+      {
+        "w": "The Walking Dead",
+        "d": "Zombie-apocalypse comic and television franchise"
+      },
+      {
+        "w": "I Am Legend",
+        "d": "Story of the last human-like survivor among infected beings"
+      },
+      {
+        "w": "day zero",
+        "d": "Moment when collapse begins or resources run out"
+      },
+      {
+        "w": "black rain",
+        "d": "Radioactive rain image common in nuclear aftermath stories"
+      },
+      {
+        "w": "Yellowstone supereruption",
+        "d": "Catastrophic eruption scenario often used in collapse fiction"
+      },
+      {
+        "w": "Last of Us cordyceps",
+        "d": "Fungal pandemic premise of The Last of Us"
+      },
+      {
+        "w": "EMP strike",
+        "d": "Electromagnetic pulse disabling electronics and infrastructure"
+      },
+      {
+        "w": "barter economy",
+        "d": "Exchange system replacing money after collapse"
+      },
+      {
+        "w": "survivor clan",
+        "d": "Small group organized for protection after state failure"
+      },
+      {
+        "w": "Geiger counter",
+        "d": "Radiation detector common in nuclear wasteland stories"
+      },
+      {
+        "w": "water purifier",
+        "d": "Crucial survival technology in contaminated settings"
+      },
+      {
+        "w": "scavenger convoy",
+        "d": "Mobile group searching ruins for supplies"
+      },
+      {
+        "w": "seed vault",
+        "d": "Store of plant seeds imagined as a recovery resource"
+      },
+      {
+        "w": "doomsday bunker",
+        "d": "Private or state shelter for catastrophe survival"
+      },
+      {
+        "w": "ashfall",
+        "d": "Layer of volcanic or nuclear ash covering the landscape"
+      },
+      {
+        "w": "marauder camp",
+        "d": "Settlement of raiders or violent survivors"
+      },
+      {
+        "w": "quarantine zone",
+        "d": "Controlled area separating infected or contaminated populations"
+      },
+      {
+        "w": "ration card",
+        "d": "Document controlling scarce food distribution"
+      },
+      {
+        "w": "ham radio",
+        "d": "Low-tech communication tool after infrastructure collapse"
+      },
+      {
+        "w": "community tribunal",
+        "d": "Local justice body in a rebuilt survivor settlement"
+      },
+      {
+        "w": "resource zero",
+        "d": "Point at which a vital resource is completely exhausted"
+      }
+    ]
+  },
+  {
+    "name": "robots & AI in fiction",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "HAL 9000",
+        "d": "Ship computer from 2001: A Space Odyssey"
+      },
+      {
+        "w": "SHODAN",
+        "d": "Hostile artificial intelligence from System Shock"
+      },
+      {
+        "w": "android",
+        "d": "Human-like artificial being"
+      },
+      {
+        "w": "gynoid",
+        "d": "Female-coded humanoid robot"
+      },
+      {
+        "w": "Three Laws of Robotics",
+        "d": "Asimov’s fictional rules for robot behavior"
+      },
+      {
+        "w": "singularity",
+        "d": "Speculative point when machine intelligence transforms civilization"
+      },
+      {
+        "w": "Turing test",
+        "d": "Test of whether machine conversation can pass as human"
+      },
+      {
+        "w": "Ghost in the Shell",
+        "d": "Cyberpunk franchise about bodies, networks and identity"
+      },
+      {
+        "w": "Westworld hosts",
+        "d": "Artificial people in the Westworld story world"
+      },
+      {
+        "w": "R.U.R.",
+        "d": "Čapek play that introduced the word robot"
+      },
+      {
+        "w": "VIKI",
+        "d": "Central AI antagonist in the film I, Robot"
+      },
+      {
+        "w": "Data",
+        "d": "Android officer from Star Trek: The Next Generation"
+      },
+      {
+        "w": "transhumanism",
+        "d": "Idea of enhancing humans through technology"
+      },
+      {
+        "w": "AI consciousness",
+        "d": "Fictional question of whether machines can be subjects"
+      },
+      {
+        "w": "neural net",
+        "d": "Machine-learning model often used as shorthand for AI"
+      },
+      {
+        "w": "uncanny valley",
+        "d": "Discomfort caused by almost-human artificial figures"
+      },
+      {
+        "w": "hive mind",
+        "d": "Collective intelligence shared across many beings or machines"
+      },
+      {
+        "w": "Borg Collective",
+        "d": "Assimilating cybernetic hive from Star Trek"
+      },
+      {
+        "w": "T-1000",
+        "d": "Liquid-metal Terminator from Judgment Day"
+      },
+      {
+        "w": "AI uprising",
+        "d": "Scenario where machines rebel against humans"
+      },
+      {
+        "w": "Turing box",
+        "d": "Fictional containment idea for testing or trapping an AI"
+      },
+      {
+        "w": "AI virus",
+        "d": "Malicious code or intelligence spreading through systems"
+      },
+      {
+        "w": "GLaDOS",
+        "d": "Sarcastic AI antagonist from Portal"
+      },
+      {
+        "w": "geth",
+        "d": "Networked synthetic species from Mass Effect"
+      },
+      {
+        "w": "synthetic protocols",
+        "d": "Rules or codes governing artificial beings in fiction"
+      },
+      {
+        "w": "WALL-E",
+        "d": "Trash-compacting robot from Pixar’s post-Earth future"
+      },
+      {
+        "w": "Bishop",
+        "d": "Synthetic crew member in Aliens"
+      },
+      {
+        "w": "Ava",
+        "d": "Humanoid AI from Ex Machina"
+      },
+      {
+        "w": "Optimus Prime",
+        "d": "Autobot leader from Transformers"
+      },
+      {
+        "w": "Skynet",
+        "d": "Military AI system that triggers Judgment Day"
+      },
+      {
+        "w": "cyborg",
+        "d": "Being combining organic body and machine components"
+      },
+      {
+        "w": "I, Robot",
+        "d": "Asimov title and later film associated with robot ethics"
+      },
+      {
+        "w": "Ex Machina",
+        "d": "Film about testing and manipulating humanoid AI"
+      },
+      {
+        "w": "droid",
+        "d": "General fictional term for a robot, especially in space opera"
+      },
+      {
+        "w": "replicant",
+        "d": "Bioengineered human-like being from Blade Runner"
+      }
+    ]
+  },
+  {
+    "name": "China: cities & landmarks",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Oriental Pearl Tower",
+        "d": "Shanghai tower and Pudong skyline landmark"
+      },
+      {
+        "w": "Forbidden City",
+        "d": "Imperial palace complex in central Beijing"
+      },
+      {
+        "w": "Terracotta Army",
+        "d": "Buried army of figures near the tomb of Qin Shi Huang"
+      },
+      {
+        "w": "The Bund",
+        "d": "Historic Shanghai waterfront along the Huangpu"
+      },
+      {
+        "w": "Pudong",
+        "d": "Shanghai district known for skyscrapers and finance"
+      },
+      {
+        "w": "Temple of Heaven",
+        "d": "Beijing imperial ritual complex for ceremonies to Heaven"
+      },
+      {
+        "w": "Tiananmen",
+        "d": "Beijing square and gate at the heart of modern political symbolism"
+      },
+      {
+        "w": "Potala Palace",
+        "d": "Landmark palace complex in Lhasa"
+      },
+      {
+        "w": "West Lake",
+        "d": "Famous scenic lake in Hangzhou"
+      },
+      {
+        "w": "Guilin karst",
+        "d": "Limestone landscape of hills and rivers in Guangxi"
+      },
+      {
+        "w": "Huangpu River",
+        "d": "River running through central Shanghai"
+      },
+      {
+        "w": "Shenzhen",
+        "d": "Special economic zone that became a megacity"
+      },
+      {
+        "w": "Jiuzhaigou",
+        "d": "Sichuan national park with colorful lakes and waterfalls"
+      },
+      {
+        "w": "Hangzhou",
+        "d": "City associated with West Lake, commerce and Song history"
+      },
+      {
+        "w": "Weihai",
+        "d": "Coastal city in Shandong facing the Yellow Sea"
+      },
+      {
+        "w": "Xi’an",
+        "d": "Ancient capital near the Terracotta Army"
+      },
+      {
+        "w": "Lhasa",
+        "d": "Tibetan city centered on the Potala Palace and Jokhang Temple"
+      },
+      {
+        "w": "Macau",
+        "d": "Former Portuguese colony and casino hub on the Pearl River Delta"
+      },
+      {
+        "w": "Hong Kong",
+        "d": "Harbor metropolis and former British colony"
+      },
+      {
+        "w": "Kowloon",
+        "d": "Dense urban area across the harbor from Hong Kong Island"
+      },
+      {
+        "w": "Longmen Grottoes",
+        "d": "Buddhist cave sculpture site near Luoyang"
+      },
+      {
+        "w": "Nanjing",
+        "d": "Former capital on the Yangtze with Ming and Republican history"
+      },
+      {
+        "w": "Suzhou gardens",
+        "d": "Classical garden tradition of Jiangnan literati culture"
+      },
+      {
+        "w": "Tibet",
+        "d": "High plateau region with distinct Buddhist culture and politics"
+      },
+      {
+        "w": "Xinjiang",
+        "d": "Northwestern region on Central Asian routes"
+      },
+      {
+        "w": "Yunnan",
+        "d": "Southwestern province known for ethnic diversity and landscapes"
+      },
+      {
+        "w": "Huang He",
+        "d": "Chinese name of the Yellow River"
+      },
+      {
+        "w": "Chang Jiang",
+        "d": "Chinese name of the Yangtze River"
+      },
+      {
+        "w": "Three Gorges",
+        "d": "Yangtze region reshaped by the huge dam project"
+      },
+      {
+        "w": "Wulong Karst",
+        "d": "Karst landscape in Chongqing with natural bridges"
+      },
+      {
+        "w": "Huangshan",
+        "d": "Mountain landscape famous for granite peaks and pines"
+      },
+      {
+        "w": "Changsha",
+        "d": "Hunan capital linked to Mao’s early life and modern industry"
+      },
+      {
+        "w": "Qingdao",
+        "d": "Shandong port city with German colonial architecture and beer"
+      },
+      {
+        "w": "Great Wall",
+        "d": "Famous defensive wall system across northern China"
+      },
+      {
+        "w": "Dunhuang",
+        "d": "Oasis city known for the Mogao Caves"
+      }
+    ]
+  },
+  {
+    "name": "Southeast Asia",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Angkor Wat",
+        "d": "Khmer temple complex in Cambodia"
+      },
+      {
+        "w": "Borobudur",
+        "d": "Massive Buddhist temple monument in Java"
+      },
+      {
+        "w": "pad thai",
+        "d": "Thai stir-fried noodle dish"
+      },
+      {
+        "w": "phở",
+        "d": "Vietnamese noodle soup with broth, herbs and meat"
+      },
+      {
+        "w": "durian",
+        "d": "Strong-smelling tropical fruit famous across the region"
+      },
+      {
+        "w": "wayang",
+        "d": "Indonesian shadow-puppet theater tradition"
+      },
+      {
+        "w": "batik",
+        "d": "Wax-resist textile technique associated with Indonesia"
+      },
+      {
+        "w": "gamelan",
+        "d": "Indonesian ensemble of metallophones, gongs and drums"
+      },
+      {
+        "w": "jeepney",
+        "d": "Colorful Philippine public transport vehicle adapted from military jeeps"
+      },
+      {
+        "w": "Songkran",
+        "d": "Thai New Year water festival"
+      },
+      {
+        "w": "Loy Krathong",
+        "d": "Thai festival of floating decorated baskets"
+      },
+      {
+        "w": "naga",
+        "d": "Serpent figure in mainland Southeast Asian myth and temple art"
+      },
+      {
+        "w": "Balinese dance",
+        "d": "Highly stylized dance tradition from Bali"
+      },
+      {
+        "w": "Chao Phraya",
+        "d": "Major river flowing through Bangkok"
+      },
+      {
+        "w": "satay",
+        "d": "Skewered grilled meat served with peanut sauce"
+      },
+      {
+        "w": "rice terraces",
+        "d": "Stepped wet-rice landscapes in upland regions"
+      },
+      {
+        "w": "longhouse",
+        "d": "Communal dwelling type found among several Borneo peoples"
+      },
+      {
+        "w": "Ayutthaya",
+        "d": "Former Siamese capital north of Bangkok"
+      },
+      {
+        "w": "Khmer language",
+        "d": "Official language of Cambodia"
+      },
+      {
+        "w": "Bali",
+        "d": "Indonesian island famous for Hindu culture and tourism"
+      },
+      {
+        "w": "Hanoi",
+        "d": "Capital of Vietnam"
+      },
+      {
+        "w": "Bangkok",
+        "d": "Capital of Thailand and Chao Phraya metropolis"
+      },
+      {
+        "w": "Singapore",
+        "d": "City-state at the end of the Malay Peninsula"
+      },
+      {
+        "w": "Vientiane",
+        "d": "Capital of Laos on the Mekong"
+      },
+      {
+        "w": "mangroves",
+        "d": "Coastal forests adapted to brackish tropical waters"
+      },
+      {
+        "w": "Borneo",
+        "d": "Large island divided among Indonesia, Malaysia and Brunei"
+      },
+      {
+        "w": "nam pla",
+        "d": "Thai fish sauce used as a key seasoning"
+      },
+      {
+        "w": "rambutan",
+        "d": "Hairy red tropical fruit"
+      },
+      {
+        "w": "pagoda",
+        "d": "Tiered religious tower common in Buddhist architecture"
+      },
+      {
+        "w": "wat",
+        "d": "Temple or monastery in Thailand, Laos and Cambodia"
+      },
+      {
+        "w": "Luzon",
+        "d": "Largest island of the Philippines"
+      },
+      {
+        "w": "kris",
+        "d": "Wavy-bladed dagger from the Malay-Indonesian world"
+      },
+      {
+        "w": "Langkawi",
+        "d": "Malaysian island archipelago and resort area"
+      },
+      {
+        "w": "Yangon",
+        "d": "Former capital and largest city of Myanmar"
+      },
+      {
+        "w": "Mekong Delta",
+        "d": "Vietnamese river delta central to rice cultivation"
+      }
+    ]
+  },
+  {
+    "name": "nature of Africa",
+    "tags": {
+      "a": "human",
+      "b": "nature",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Sahara",
+        "d": "World’s largest hot desert"
+      },
+      {
+        "w": "Sahel",
+        "d": "Semi-arid belt south of the Sahara"
+      },
+      {
+        "w": "savanna",
+        "d": "Grassland ecosystem with scattered trees"
+      },
+      {
+        "w": "Serengeti",
+        "d": "Tanzanian ecosystem known for wildebeest migration"
+      },
+      {
+        "w": "Maasai Mara",
+        "d": "Kenyan reserve adjoining the Serengeti ecosystem"
+      },
+      {
+        "w": "Ngorongoro",
+        "d": "Tanzanian volcanic caldera rich in wildlife"
+      },
+      {
+        "w": "Kilimanjaro",
+        "d": "Highest mountain in Africa"
+      },
+      {
+        "w": "Rwenzori",
+        "d": "Mountain range on the Uganda-Congo border"
+      },
+      {
+        "w": "Great Rift Valley",
+        "d": "Huge tectonic valley system running through eastern Africa"
+      },
+      {
+        "w": "Ethiopian Highlands",
+        "d": "High plateau region of the Horn of Africa"
+      },
+      {
+        "w": "Okavango Delta",
+        "d": "Inland delta in Botswana"
+      },
+      {
+        "w": "Kalahari",
+        "d": "Dry savanna and desert region of southern Africa"
+      },
+      {
+        "w": "Namib",
+        "d": "Coastal desert of Namibia"
+      },
+      {
+        "w": "Sossusvlei",
+        "d": "Salt and clay pan surrounded by red Namib dunes"
+      },
+      {
+        "w": "Congo Basin",
+        "d": "Vast rainforest basin of central Africa"
+      },
+      {
+        "w": "Victoria Falls",
+        "d": "Large waterfall on the border of Zambia and Zimbabwe"
+      },
+      {
+        "w": "Lake Victoria",
+        "d": "Largest lake in Africa by area"
+      },
+      {
+        "w": "Lake Tanganyika",
+        "d": "Deep African Great Lake"
+      },
+      {
+        "w": "Lake Malawi",
+        "d": "African Great Lake also known as Lake Nyasa"
+      },
+      {
+        "w": "Lake Turkana",
+        "d": "Large desert lake in northern Kenya"
+      },
+      {
+        "w": "Lake Chad",
+        "d": "Shrinking lake of the Sahel"
+      },
+      {
+        "w": "Atlas Mountains",
+        "d": "Mountain range across northwestern Africa"
+      },
+      {
+        "w": "Drakensberg",
+        "d": "Mountain escarpment in southern Africa"
+      },
+      {
+        "w": "Cape Floristic Region",
+        "d": "Biodiversity hotspot at Africa’s southern tip"
+      },
+      {
+        "w": "fynbos",
+        "d": "Shrubland vegetation of the Cape region"
+      },
+      {
+        "w": "miombo woodland",
+        "d": "Tropical woodland belt of south-central Africa"
+      },
+      {
+        "w": "Guinean forests",
+        "d": "West African tropical forest region"
+      },
+      {
+        "w": "Madagascar baobabs",
+        "d": "Iconic baobab trees of Madagascar landscapes"
+      },
+      {
+        "w": "Madagascar lemurs",
+        "d": "Primate group largely endemic to Madagascar"
+      },
+      {
+        "w": "Big Five",
+        "d": "Safari term for lion, leopard, elephant, rhino and buffalo"
+      },
+      {
+        "w": "wildebeest migration",
+        "d": "Seasonal mass movement across Serengeti and Maasai Mara"
+      },
+      {
+        "w": "tsetse fly",
+        "d": "Blood-feeding insect that transmits sleeping sickness"
+      },
+      {
+        "w": "termite mounds",
+        "d": "Large structures built by termite colonies"
+      },
+      {
+        "w": "African baobab",
+        "d": "Massive trunked tree of dry African landscapes"
+      },
+      {
+        "w": "welwitschia",
+        "d": "Long-lived desert plant of Namibia and Angola"
+      }
+    ]
+  },
+  {
+    "name": "South America",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Huayna Picchu",
+        "d": "Peak rising above Machu Picchu"
+      },
+      {
+        "w": "pampas",
+        "d": "Grassland plains of Argentina, Uruguay and southern Brazil"
+      },
+      {
+        "w": "gaucho",
+        "d": "Horseman of the South American plains"
+      },
+      {
+        "w": "candomblé",
+        "d": "Afro-Brazilian religion with roots in Yoruba and other traditions"
+      },
+      {
+        "w": "favela",
+        "d": "Brazilian informal urban neighborhood"
+      },
+      {
+        "w": "carnival",
+        "d": "Major festival culture especially associated with Brazil"
+      },
+      {
+        "w": "Ipanema",
+        "d": "Rio de Janeiro beach neighborhood"
+      },
+      {
+        "w": "Copacabana",
+        "d": "Famous beach district in Rio de Janeiro"
+      },
+      {
+        "w": "mate",
+        "d": "Caffeinated infusion popular in the Southern Cone"
+      },
+      {
+        "w": "churrasco",
+        "d": "South American barbecue tradition"
+      },
+      {
+        "w": "Quechua",
+        "d": "Indigenous language family of the Andes"
+      },
+      {
+        "w": "machete",
+        "d": "Broad cutting blade common in tropical agriculture"
+      },
+      {
+        "w": "Andean condor",
+        "d": "Large vulture symbolic of the Andes"
+      },
+      {
+        "w": "Patagonia",
+        "d": "Southern region shared by Argentina and Chile"
+      },
+      {
+        "w": "Lake Titicaca",
+        "d": "High Andean lake between Peru and Bolivia"
+      },
+      {
+        "w": "Galápagos Islands",
+        "d": "Ecuadorian islands central to Darwin’s evolutionary thinking"
+      },
+      {
+        "w": "Orinoco llanos",
+        "d": "Tropical plains around the Orinoco basin"
+      },
+      {
+        "w": "llanos",
+        "d": "Seasonally flooded plains of Venezuela and Colombia"
+      },
+      {
+        "w": "selva",
+        "d": "Spanish word used for tropical rainforest"
+      },
+      {
+        "w": "Mapuche",
+        "d": "Indigenous people of Chile and Argentina with a long resistance history"
+      },
+      {
+        "w": "Pantanal",
+        "d": "Huge tropical wetland mostly in Brazil"
+      },
+      {
+        "w": "Andes",
+        "d": "Long mountain chain along western South America"
+      },
+      {
+        "w": "Buenos Aires",
+        "d": "Argentine capital on the Río de la Plata"
+      },
+      {
+        "w": "Iguazú Falls",
+        "d": "Huge waterfall system on the Argentina-Brazil border"
+      },
+      {
+        "w": "chicha",
+        "d": "Fermented maize drink with Andean roots"
+      },
+      {
+        "w": "Bogotá",
+        "d": "Capital of Colombia on a high Andean plateau"
+      },
+      {
+        "w": "Lima",
+        "d": "Capital of Peru on the Pacific coast"
+      },
+      {
+        "w": "piranha",
+        "d": "South American freshwater fish with a fearsome reputation"
+      },
+      {
+        "w": "ceviche",
+        "d": "Citrus-cured seafood dish associated with Peru"
+      },
+      {
+        "w": "Oruro Carnival",
+        "d": "Bolivian festival with masked dances and processions"
+      },
+      {
+        "w": "Amazon rainforest",
+        "d": "Vast tropical rainforest across northern South America"
+      },
+      {
+        "w": "Brasília",
+        "d": "Modernist planned capital of Brazil"
+      },
+      {
+        "w": "Bolivian Copacabana",
+        "d": "Town on Lake Titicaca, distinct from Rio’s beach"
+      },
+      {
+        "w": "Atacama Desert",
+        "d": "Extremely dry desert in northern Chile"
+      },
+      {
+        "w": "Aconcagua",
+        "d": "Highest mountain in the Americas"
+      }
+    ]
+  },
+  {
+    "name": "crewed spaceflight infrastructure",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "International Space Station",
+        "d": "Modular orbital station jointly operated by multiple space agencies"
+      },
+      {
+        "w": "Mir station",
+        "d": "Soviet and Russian modular space station before the ISS"
+      },
+      {
+        "w": "Salyut 7",
+        "d": "Soviet space station launched in 1982"
+      },
+      {
+        "w": "Skylab",
+        "d": "First U.S. space station"
+      },
+      {
+        "w": "Zarya module",
+        "d": "First launched module of the ISS"
+      },
+      {
+        "w": "Zvezda module",
+        "d": "ISS service module providing living quarters and propulsion support"
+      },
+      {
+        "w": "Nauka module",
+        "d": "Russian multipurpose laboratory module on the ISS"
+      },
+      {
+        "w": "Cupola module",
+        "d": "ISS observation module with large windows"
+      },
+      {
+        "w": "Quest airlock",
+        "d": "U.S. airlock module for ISS spacewalks"
+      },
+      {
+        "w": "Canadarm2",
+        "d": "Robotic arm used on the ISS"
+      },
+      {
+        "w": "European Robotic Arm",
+        "d": "ESA-built robotic arm mounted on the Russian segment"
+      },
+      {
+        "w": "Kurs system",
+        "d": "Automated rendezvous and docking system"
+      },
+      {
+        "w": "Igla system",
+        "d": "Earlier Soviet automated docking system"
+      },
+      {
+        "w": "APAS",
+        "d": "Androgynous docking system used by Shuttle-Mir and ISS hardware"
+      },
+      {
+        "w": "launch escape system",
+        "d": "Safety system that pulls a crew capsule away during launch failure"
+      },
+      {
+        "w": "Soyuz MS",
+        "d": "Modern crewed Soyuz spacecraft series"
+      },
+      {
+        "w": "Crew Dragon capsule",
+        "d": "SpaceX crew spacecraft used for ISS missions"
+      },
+      {
+        "w": "Shenzhou spacecraft",
+        "d": "Chinese crewed spacecraft series"
+      },
+      {
+        "w": "Eagle lunar module",
+        "d": "Apollo 11 lunar lander"
+      },
+      {
+        "w": "Gateway station",
+        "d": "Planned lunar-orbit station for Artemis missions"
+      },
+      {
+        "w": "Orlan spacesuit",
+        "d": "Russian suit used for spacewalks"
+      },
+      {
+        "w": "Sokol spacesuit",
+        "d": "Russian pressure suit worn during launch and landing"
+      },
+      {
+        "w": "A7L spacesuit",
+        "d": "Apollo-era spacesuit used on the Moon"
+      },
+      {
+        "w": "EMU spacesuit",
+        "d": "NASA extravehicular mobility unit used for spacewalks"
+      },
+      {
+        "w": "EVA",
+        "d": "Extravehicular activity, or spacewalk"
+      },
+      {
+        "w": "airlock depressurization",
+        "d": "Procedure preparing a crew member to exit into vacuum"
+      },
+      {
+        "w": "docking",
+        "d": "Joining two spacecraft in orbit"
+      },
+      {
+        "w": "descent module",
+        "d": "Crew capsule section that returns through the atmosphere"
+      },
+      {
+        "w": "orbital module",
+        "d": "Habitable Soyuz section separated before reentry"
+      },
+      {
+        "w": "service module",
+        "d": "Spacecraft section carrying propulsion and support systems"
+      },
+      {
+        "w": "TsF-18 centrifuge",
+        "d": "Russian centrifuge used for cosmonaut training"
+      },
+      {
+        "w": "neutral buoyancy lab",
+        "d": "Pool facility for practicing spacewalk tasks"
+      },
+      {
+        "w": "dry immersion",
+        "d": "Ground experiment simulating some effects of weightlessness"
+      },
+      {
+        "w": "barochamber",
+        "d": "Pressure chamber used in aerospace medicine and training"
+      },
+      {
+        "w": "Coriolis chair",
+        "d": "Rotating chair used to train vestibular adaptation"
+      }
+    ]
+  },
+  {
+    "name": "peace treaties & accords",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Treaty of Versailles",
+        "d": "1919 treaty ending war between Germany and the Allies"
+      },
+      {
+        "w": "Peace of Westphalia",
+        "d": "1648 settlements ending the Thirty Years’ War"
+      },
+      {
+        "w": "Treaty of Brest-Litovsk",
+        "d": "1918 treaty taking Russia out of World War I"
+      },
+      {
+        "w": "Oslo Accords",
+        "d": "Israeli-Palestinian agreements of the 1990s"
+      },
+      {
+        "w": "Treaty of Portsmouth",
+        "d": "1905 treaty ending the Russo-Japanese War"
+      },
+      {
+        "w": "Treaty of Paris 1783",
+        "d": "Treaty recognizing U.S. independence"
+      },
+      {
+        "w": "Treaty of Trianon",
+        "d": "1920 treaty redrawing Hungary after World War I"
+      },
+      {
+        "w": "Treaty of Utrecht",
+        "d": "1713 settlement ending the War of the Spanish Succession"
+      },
+      {
+        "w": "Dayton Agreement",
+        "d": "1995 agreement ending the Bosnian War"
+      },
+      {
+        "w": "Treaty of Nystad",
+        "d": "1721 treaty ending the Great Northern War"
+      },
+      {
+        "w": "Camp David Accords",
+        "d": "1978 framework for peace between Egypt and Israel"
+      },
+      {
+        "w": "Treaty of Beijing",
+        "d": "Nineteenth-century treaties expanding foreign privileges in China"
+      },
+      {
+        "w": "Peace of Addis Ababa",
+        "d": "Agreement ending the first Sudanese civil war in 1972"
+      },
+      {
+        "w": "Treaty of Ryswick",
+        "d": "1697 settlement ending the Nine Years’ War"
+      },
+      {
+        "w": "Treaty of Hanover",
+        "d": "1725 alliance treaty involving Britain, France and Prussia"
+      },
+      {
+        "w": "Treaties of Tilsit",
+        "d": "1807 agreements between Napoleon, Russia and Prussia"
+      },
+      {
+        "w": "Treaty of Paris 1856",
+        "d": "Treaty ending the Crimean War"
+      },
+      {
+        "w": "Munich Agreement",
+        "d": "1938 agreement over the Sudetenland"
+      },
+      {
+        "w": "Treaty of Guadalupe Hidalgo",
+        "d": "1848 treaty ending the Mexican-American War"
+      },
+      {
+        "w": "Treaty of Lausanne",
+        "d": "1923 treaty defining modern Turkey’s borders"
+      },
+      {
+        "w": "Torrijos-Carter Treaties",
+        "d": "Agreements transferring control of the Panama Canal to Panama"
+      },
+      {
+        "w": "Peace of Prague",
+        "d": "1635 treaty in the Thirty Years’ War"
+      },
+      {
+        "w": "Treaty of Shimonoseki",
+        "d": "1895 treaty ending the First Sino-Japanese War"
+      },
+      {
+        "w": "Treaty of Karlowitz",
+        "d": "1699 treaty marking Ottoman losses in Central Europe"
+      },
+      {
+        "w": "Helsinki Accords",
+        "d": "1975 agreements on security, borders and human rights"
+      },
+      {
+        "w": "Minsk agreements",
+        "d": "Ceasefire agreements concerning the war in eastern Ukraine"
+      },
+      {
+        "w": "Treaty of Strasbourg",
+        "d": "Agreement name used for several European settlements and conventions"
+      },
+      {
+        "w": "Molotov-Ribbentrop Pact",
+        "d": "1939 Nazi-Soviet non-aggression pact with secret protocols"
+      },
+      {
+        "w": "Armistice of Compiègne",
+        "d": "Armistice ending fighting on the Western Front in 1918"
+      },
+      {
+        "w": "Geneva Conventions",
+        "d": "Treaties setting rules for humanitarian conduct in war"
+      },
+      {
+        "w": "Washington Naval Treaty",
+        "d": "1922 treaty limiting major naval armaments"
+      },
+      {
+        "w": "Paris Agreement",
+        "d": "2015 international climate agreement"
+      },
+      {
+        "w": "Belovezha Accords",
+        "d": "1991 agreement declaring the end of the Soviet Union"
+      },
+      {
+        "w": "Good Friday Agreement",
+        "d": "1998 agreement central to the Northern Ireland peace process"
+      },
+      {
+        "w": "Treaty of Ghent",
+        "d": "1814 treaty ending the War of 1812"
+      }
+    ]
+  },
+  {
+    "name": "international tribunals & famous trials",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Nuremberg trials",
+        "d": "Postwar trials of major Nazi leaders"
+      },
+      {
+        "w": "Tokyo Trials",
+        "d": "International Military Tribunal for the Far East"
+      },
+      {
+        "w": "International Criminal Court",
+        "d": "Permanent court for genocide, war crimes and crimes against humanity"
+      },
+      {
+        "w": "ICTY",
+        "d": "Tribunal for crimes in the former Yugoslavia"
+      },
+      {
+        "w": "ICTR",
+        "d": "Tribunal for the Rwandan genocide"
+      },
+      {
+        "w": "Eichmann trial",
+        "d": "Jerusalem trial of Adolf Eichmann in 1961"
+      },
+      {
+        "w": "Milošević trial",
+        "d": "Hague trial of the former Serbian and Yugoslav leader"
+      },
+      {
+        "w": "Saddam Hussein trial",
+        "d": "Iraqi trial after the fall of the Baathist regime"
+      },
+      {
+        "w": "Leipzig war crimes trials",
+        "d": "Post-World War I German trials of alleged war criminals"
+      },
+      {
+        "w": "Khmer Rouge Tribunal",
+        "d": "Cambodian court process for Khmer Rouge crimes"
+      },
+      {
+        "w": "Special Court for Sierra Leone",
+        "d": "Hybrid tribunal for atrocities during Sierra Leone’s civil war"
+      },
+      {
+        "w": "Special Tribunal for Lebanon",
+        "d": "Tribunal concerning the assassination of Rafic Hariri"
+      },
+      {
+        "w": "Charles Taylor trial",
+        "d": "Trial of Liberia’s former president before the Sierra Leone court"
+      },
+      {
+        "w": "Dreyfus affair",
+        "d": "French political and judicial scandal around Alfred Dreyfus"
+      },
+      {
+        "w": "Rosenberg trial",
+        "d": "Cold War espionage trial of Julius and Ethel Rosenberg"
+      },
+      {
+        "w": "Moscow Trials",
+        "d": "Stalinist show trials during the Great Purge"
+      },
+      {
+        "w": "Sacco and Vanzetti",
+        "d": "Controversial U.S. trial and execution of two Italian anarchists"
+      },
+      {
+        "w": "Pinochet case",
+        "d": "Legal case over arrest and extradition of Augusto Pinochet"
+      },
+      {
+        "w": "Mladić trial",
+        "d": "ICTY trial of Bosnian Serb commander Ratko Mladić"
+      },
+      {
+        "w": "Hague Tribunal",
+        "d": "Common shorthand for international courts seated in The Hague"
+      },
+      {
+        "w": "Istanbul trials",
+        "d": "Ottoman postwar trials over Armenian genocide-era crimes"
+      },
+      {
+        "w": "Rwanda Tribunal",
+        "d": "Another common name for the ICTR"
+      },
+      {
+        "w": "Ceaușescu trial",
+        "d": "Rapid trial and execution of Romania’s dictator in 1989"
+      },
+      {
+        "w": "Karadžić trial",
+        "d": "ICTY trial of Bosnian Serb leader Radovan Karadžić"
+      },
+      {
+        "w": "Extraordinary Chambers in Cambodia",
+        "d": "Official hybrid court for senior Khmer Rouge figures"
+      },
+      {
+        "w": "Göring trial",
+        "d": "Trial of Hermann Göring as a leading Nuremberg defendant"
+      },
+      {
+        "w": "Demjanjuk case",
+        "d": "Long-running trials over alleged Nazi camp service"
+      },
+      {
+        "w": "East Timor tribunal",
+        "d": "Processes concerning crimes around East Timor’s independence violence"
+      },
+      {
+        "w": "Lockerbie trial",
+        "d": "Trial over the bombing of Pan Am Flight 103"
+      },
+      {
+        "w": "Trial of the Juntas",
+        "d": "Argentine trial of military junta leaders"
+      },
+      {
+        "w": "Russell Tribunal",
+        "d": "People’s tribunal model first convened over the Vietnam War"
+      },
+      {
+        "w": "Permanent Peoples’ Tribunal",
+        "d": "Civil-society tribunal continuing the Russell Tribunal tradition"
+      },
+      {
+        "w": "Hiss case",
+        "d": "U.S. perjury case tied to Cold War espionage accusations"
+      },
+      {
+        "w": "Lubanga case",
+        "d": "First ICC conviction, concerning child soldiers in Congo"
+      },
+      {
+        "w": "Habré trial",
+        "d": "Trial of Chad’s former ruler Hissène Habré in Senegal"
+      }
+    ]
+  },
+  {
+    "name": "political parties & movements",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "NSDAP",
+        "d": "National Socialist German Workers’ Party"
+      },
+      {
+        "w": "Bolsheviks",
+        "d": "Lenin’s faction that took power in Russia in 1917"
+      },
+      {
+        "w": "Fasci Italiani",
+        "d": "Italian fascist movement networks before Mussolini’s party-state"
+      },
+      {
+        "w": "Muslim Brotherhood",
+        "d": "Islamist movement founded in Egypt in 1928"
+      },
+      {
+        "w": "Irish Republican Army",
+        "d": "Republican paramilitary movement seeking Irish unity"
+      },
+      {
+        "w": "Taliban",
+        "d": "Afghan Islamist movement and ruling force"
+      },
+      {
+        "w": "Whigs",
+        "d": "British and American political party name from different eras"
+      },
+      {
+        "w": "Narodnaya Volya",
+        "d": "Russian revolutionary organization that assassinated Alexander II"
+      },
+      {
+        "w": "Peronism",
+        "d": "Argentine political movement rooted in Juan Perón’s legacy"
+      },
+      {
+        "w": "Baath Party",
+        "d": "Arab nationalist party associated with Syria and Iraq"
+      },
+      {
+        "w": "Kadets",
+        "d": "Constitutional Democratic Party in late imperial Russia"
+      },
+      {
+        "w": "Jacobins",
+        "d": "Radical political club of the French Revolution"
+      },
+      {
+        "w": "Red Brigades",
+        "d": "Italian far-left militant organization"
+      },
+      {
+        "w": "Chartists",
+        "d": "British working-class movement for parliamentary reform"
+      },
+      {
+        "w": "Ku Klux Klan",
+        "d": "White supremacist movement in the United States"
+      },
+      {
+        "w": "Shining Path",
+        "d": "Maoist insurgent movement in Peru"
+      },
+      {
+        "w": "Indian National Congress",
+        "d": "Major Indian party and independence movement organization"
+      },
+      {
+        "w": "FARC",
+        "d": "Colombian guerrilla movement turned political party"
+      },
+      {
+        "w": "Zionism",
+        "d": "Movement for Jewish national self-determination"
+      },
+      {
+        "w": "Pan-Germanism",
+        "d": "Movement for unity or dominance of German-speaking peoples"
+      },
+      {
+        "w": "New Deal coalition",
+        "d": "U.S. Democratic electoral coalition built around Roosevelt’s reforms"
+      },
+      {
+        "w": "Greens",
+        "d": "Green parties focused on ecology and social issues"
+      },
+      {
+        "w": "Labour Party",
+        "d": "Major center-left party name, especially in Britain"
+      },
+      {
+        "w": "suffragists",
+        "d": "Movement activists campaigning for women’s voting rights"
+      },
+      {
+        "w": "Girondins",
+        "d": "Moderate republican faction of the French Revolution"
+      },
+      {
+        "w": "Mensheviks",
+        "d": "Russian socialist faction opposed to Bolshevik centralism"
+      },
+      {
+        "w": "Popular Front",
+        "d": "Broad left coalition against fascism in the 1930s"
+      },
+      {
+        "w": "Poujadism",
+        "d": "French anti-tax populist movement of the 1950s"
+      },
+      {
+        "w": "Israeli Labor Party",
+        "d": "Major Zionist social-democratic party in Israel"
+      },
+      {
+        "w": "Hezbollah",
+        "d": "Lebanese Shiite political and armed movement"
+      },
+      {
+        "w": "Hamas",
+        "d": "Palestinian Islamist political and militant movement"
+      },
+      {
+        "w": "Social Democrats",
+        "d": "Center-left party family rooted in labor movements"
+      },
+      {
+        "w": "annexationists",
+        "d": "Political actors advocating incorporation of territory"
+      },
+      {
+        "w": "nationalists",
+        "d": "Movements prioritizing national identity and sovereignty"
+      },
+      {
+        "w": "Green Wave",
+        "d": "Iranian protest movement after the 2009 election"
+      }
+    ]
+  },
+  {
+    "name": "territorial disputes",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Kashmir dispute",
+        "d": "Conflict over Kashmir involving India, Pakistan and China"
+      },
+      {
+        "w": "Taiwan status",
+        "d": "Dispute over Taiwan’s sovereignty and international position"
+      },
+      {
+        "w": "South Ossetia",
+        "d": "Breakaway region internationally recognized as part of Georgia"
+      },
+      {
+        "w": "Abkhazia",
+        "d": "Breakaway Black Sea region claimed by Georgia"
+      },
+      {
+        "w": "Falkland Islands dispute",
+        "d": "Sovereignty dispute between Britain and Argentina"
+      },
+      {
+        "w": "Nagorno-Karabakh",
+        "d": "Armenian-Azerbaijani conflict over the Karabakh region"
+      },
+      {
+        "w": "Spratly Islands",
+        "d": "Disputed South China Sea islands claimed by several states"
+      },
+      {
+        "w": "Senkaku Islands",
+        "d": "East China Sea islands disputed by Japan, China and Taiwan"
+      },
+      {
+        "w": "Crimea dispute",
+        "d": "Dispute after Russia’s 2014 annexation of Crimea"
+      },
+      {
+        "w": "Western Sahara",
+        "d": "Territory contested between Morocco and the Polisario Front"
+      },
+      {
+        "w": "Transnistria",
+        "d": "Breakaway region of Moldova along the Dniester"
+      },
+      {
+        "w": "Gibraltar dispute",
+        "d": "Sovereignty dispute between Britain and Spain"
+      },
+      {
+        "w": "Northern Cyprus",
+        "d": "De facto state recognized only by Turkey"
+      },
+      {
+        "w": "Kuril Islands dispute",
+        "d": "Russia-Japan dispute over the southern Kurils"
+      },
+      {
+        "w": "Kosovo status",
+        "d": "Dispute over Kosovo’s independence and recognition"
+      },
+      {
+        "w": "Jerusalem status",
+        "d": "Dispute over sovereignty and capital claims in Jerusalem"
+      },
+      {
+        "w": "Arctic claims",
+        "d": "Overlapping sovereignty and seabed claims in the Arctic"
+      },
+      {
+        "w": "Antarctic claims",
+        "d": "Overlapping territorial claims frozen by the Antarctic Treaty system"
+      },
+      {
+        "w": "Donbas",
+        "d": "Eastern Ukrainian region central to the Russia-Ukraine war"
+      },
+      {
+        "w": "Paracel Islands",
+        "d": "South China Sea island group contested by China, Vietnam and Taiwan"
+      },
+      {
+        "w": "East Jerusalem",
+        "d": "Part of Jerusalem captured by Israel in 1967 and claimed by Palestinians"
+      },
+      {
+        "w": "Gulf of Sidra",
+        "d": "Maritime dispute historically asserted by Libya"
+      },
+      {
+        "w": "Golan Heights",
+        "d": "Syrian territory occupied and annexed by Israel"
+      },
+      {
+        "w": "Svalbard status",
+        "d": "Norwegian sovereignty with treaty-based international rights"
+      },
+      {
+        "w": "Chagos Archipelago",
+        "d": "Indian Ocean islands disputed between Britain and Mauritius"
+      },
+      {
+        "w": "Eastern Mediterranean gas fields",
+        "d": "Energy-linked maritime disputes among regional states"
+      },
+      {
+        "w": "South China Sea",
+        "d": "Maritime dispute involving China and several Southeast Asian states"
+      },
+      {
+        "w": "Korean Demarcation Line",
+        "d": "Military boundary between North and South Korea"
+      },
+      {
+        "w": "India-China border dispute",
+        "d": "Himalayan border dispute including several sectors"
+      },
+      {
+        "w": "Aksai Chin",
+        "d": "High-altitude region controlled by China and claimed by India"
+      },
+      {
+        "w": "Liancourt Rocks",
+        "d": "Islets disputed between South Korea and Japan"
+      },
+      {
+        "w": "Ceuta and Melilla",
+        "d": "Spanish enclaves in North Africa claimed by Morocco"
+      },
+      {
+        "w": "Abyei",
+        "d": "Disputed area between Sudan and South Sudan"
+      },
+      {
+        "w": "Halaib Triangle",
+        "d": "Red Sea border dispute between Egypt and Sudan"
+      },
+      {
+        "w": "Essequibo",
+        "d": "Region administered by Guyana and claimed by Venezuela"
+      }
+    ]
+  },
+  {
+    "name": "economic crises & depressions",
+    "tags": {
+      "a": "geek",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Great Depression",
+        "d": "Global economic depression beginning in 1929"
+      },
+      {
+        "w": "Black Tuesday",
+        "d": "Wall Street crash day in October 1929"
+      },
+      {
+        "w": "Weimar hyperinflation",
+        "d": "German hyperinflation crisis of the early 1920s"
+      },
+      {
+        "w": "Asian financial crisis",
+        "d": "1997 crisis that began in Thailand and spread across Asia"
+      },
+      {
+        "w": "2008 financial crisis",
+        "d": "Global crisis triggered by credit, housing and banking failures"
+      },
+      {
+        "w": "Argentine default",
+        "d": "Major sovereign default and crisis around 2001"
+      },
+      {
+        "w": "1973 oil shock",
+        "d": "Oil price shock after the OPEC embargo"
+      },
+      {
+        "w": "Dutch tulip mania",
+        "d": "Seventeenth-century speculative bubble in tulip bulbs"
+      },
+      {
+        "w": "Greek debt crisis",
+        "d": "Eurozone sovereign debt crisis centered on Greece"
+      },
+      {
+        "w": "South Sea Bubble",
+        "d": "British speculative bubble and crash of 1720"
+      },
+      {
+        "w": "Japan’s Lost Decade",
+        "d": "Long stagnation after Japan’s asset bubble burst"
+      },
+      {
+        "w": "Panic of 1873",
+        "d": "Financial crisis that triggered a long depression"
+      },
+      {
+        "w": "1970s stagflation",
+        "d": "Combination of high inflation and stagnant growth"
+      },
+      {
+        "w": "Zimbabwe hyperinflation",
+        "d": "Extreme inflation crisis in 2000s Zimbabwe"
+      },
+      {
+        "w": "savings and loan crisis",
+        "d": "U.S. thrift-institution crisis of the 1980s and early 1990s"
+      },
+      {
+        "w": "Tequila Crisis",
+        "d": "Mexican peso crisis of 1994"
+      },
+      {
+        "w": "Lehman Brothers collapse",
+        "d": "Bankruptcy that intensified the 2008 financial crisis"
+      },
+      {
+        "w": "eurozone crisis",
+        "d": "Debt and banking crisis across euro-area states"
+      },
+      {
+        "w": "dot-com bubble",
+        "d": "Late-1990s internet stock bubble and crash"
+      },
+      {
+        "w": "Russian default 1998",
+        "d": "Russian debt default and ruble crisis"
+      },
+      {
+        "w": "Panic of 1907",
+        "d": "U.S. banking panic that helped lead to the Federal Reserve"
+      },
+      {
+        "w": "Venezuelan crisis",
+        "d": "Economic collapse marked by shortages and hyperinflation"
+      },
+      {
+        "w": "subprime mortgage crisis",
+        "d": "Crisis rooted in risky housing loans and securitization"
+      },
+      {
+        "w": "Black Wednesday",
+        "d": "1992 sterling crisis when Britain left the ERM"
+      },
+      {
+        "w": "Panic of 1929",
+        "d": "Market panic around the Wall Street crash"
+      },
+      {
+        "w": "Black Monday 1987",
+        "d": "Global stock-market crash in October 1987"
+      },
+      {
+        "w": "Hungarian hyperinflation",
+        "d": "Postwar inflation crisis that produced the pengő collapse"
+      },
+      {
+        "w": "LTCM crisis",
+        "d": "1998 hedge fund collapse requiring a rescue coordination"
+      },
+      {
+        "w": "Icelandic financial crisis",
+        "d": "2008 collapse of Iceland’s oversized banking sector"
+      },
+      {
+        "w": "1979 oil shock",
+        "d": "Oil shock linked to the Iranian Revolution"
+      },
+      {
+        "w": "sovereign debt crisis",
+        "d": "Crisis in which a state struggles to service debt"
+      },
+      {
+        "w": "railway mania",
+        "d": "British speculative railway bubble of the 1840s"
+      },
+      {
+        "w": "Credit-Anstalt crisis",
+        "d": "1931 Austrian bank failure that deepened the Depression"
+      },
+      {
+        "w": "Nordic banking crisis",
+        "d": "Early-1990s banking crisis in Nordic countries"
+      },
+      {
+        "w": "COVID-19 recession",
+        "d": "Global downturn caused by pandemic restrictions and shocks"
+      }
+    ]
+  },
+  {
+    "name": "authoritarian regimes of the 20th century",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Fascist Italy",
+        "d": "Mussolini’s one-party dictatorship"
+      },
+      {
+        "w": "Nazi Germany",
+        "d": "Hitler’s totalitarian regime from 1933 to 1945"
+      },
+      {
+        "w": "Khmer Rouge Cambodia",
+        "d": "Pol Pot’s radical communist regime"
+      },
+      {
+        "w": "Francoist Spain",
+        "d": "Authoritarian regime of Francisco Franco"
+      },
+      {
+        "w": "Idi Amin’s Uganda",
+        "d": "Military dictatorship in Uganda during the 1970s"
+      },
+      {
+        "w": "Ceaușescu’s Romania",
+        "d": "Romanian communist dictatorship ending in 1989"
+      },
+      {
+        "w": "Mobutu’s Zaire",
+        "d": "Personalist dictatorship in the Congo renamed Zaire"
+      },
+      {
+        "w": "Kim Il-sung’s North Korea",
+        "d": "Foundational North Korean dictatorship and personality cult"
+      },
+      {
+        "w": "Batista’s Cuba",
+        "d": "Cuban authoritarian regime overthrown in 1959"
+      },
+      {
+        "w": "Pinochet’s Chile",
+        "d": "Military dictatorship after the 1973 coup"
+      },
+      {
+        "w": "Somoza Nicaragua",
+        "d": "Family dictatorship overthrown by the Sandinistas"
+      },
+      {
+        "w": "Estado Novo Portugal",
+        "d": "Authoritarian corporatist regime of Salazar and successors"
+      },
+      {
+        "w": "Greek junta",
+        "d": "Military dictatorship in Greece from 1967 to 1974"
+      },
+      {
+        "w": "Baathist Iraq",
+        "d": "Authoritarian party-state associated with Saddam Hussein"
+      },
+      {
+        "w": "Bashir’s Sudan",
+        "d": "Authoritarian regime of Omar al-Bashir"
+      },
+      {
+        "w": "Duvalier Haiti",
+        "d": "Dictatorship of Papa Doc and Baby Doc Duvalier"
+      },
+      {
+        "w": "Derg Ethiopia",
+        "d": "Marxist military regime under Mengistu Haile Mariam"
+      },
+      {
+        "w": "Suharto’s Indonesia",
+        "d": "New Order authoritarian regime in Indonesia"
+      },
+      {
+        "w": "Marcos Philippines",
+        "d": "Authoritarian rule under Ferdinand Marcos"
+      },
+      {
+        "w": "Lukashenko Belarus",
+        "d": "Personalist authoritarian regime in Belarus"
+      },
+      {
+        "w": "Hoxha’s Albania",
+        "d": "Isolationist communist dictatorship in Albania"
+      },
+      {
+        "w": "Stroessner Paraguay",
+        "d": "Long military-party dictatorship in Paraguay"
+      },
+      {
+        "w": "Bokassa’s Central Africa",
+        "d": "Personalist dictatorship and self-declared empire"
+      },
+      {
+        "w": "Stalinist USSR",
+        "d": "Soviet totalitarian system under Joseph Stalin"
+      },
+      {
+        "w": "Maoist China",
+        "d": "Chinese communist regime under Mao Zedong"
+      },
+      {
+        "w": "Turkish military junta",
+        "d": "Military rule after coups in twentieth-century Turkey"
+      },
+      {
+        "w": "Videla Argentina",
+        "d": "Argentine military dictatorship of the Dirty War era"
+      },
+      {
+        "w": "Assad Syria",
+        "d": "Authoritarian Baathist regime built by the Assad family"
+      },
+      {
+        "w": "Ben Ali Tunisia",
+        "d": "Authoritarian regime overthrown in the Arab Spring"
+      },
+      {
+        "w": "North Korea",
+        "d": "Dynastic totalitarian state on the Korean Peninsula"
+      },
+      {
+        "w": "Castro Cuba",
+        "d": "Communist one-party system under Fidel Castro"
+      },
+      {
+        "w": "Trujillo Dominican Republic",
+        "d": "Rafael Trujillo’s long and violent dictatorship"
+      },
+      {
+        "w": "Gaddafi Libya",
+        "d": "Authoritarian regime built around Muammar Gaddafi"
+      },
+      {
+        "w": "Habré Chad",
+        "d": "Dictatorship later prosecuted for mass atrocities"
+      },
+      {
+        "w": "Niyazov Turkmenistan",
+        "d": "Post-Soviet personality-cult dictatorship"
+      }
+    ]
+  },
+  {
+    "name": "scientific publishing platforms",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "OSF",
+        "d": "Open Science Framework for projects, preregistrations and shared research materials"
+      },
+      {
+        "w": "SSRN",
+        "d": "Preprint and working-paper platform strong in social sciences"
+      },
+      {
+        "w": "HAL",
+        "d": "French open archive for scholarly documents"
+      },
+      {
+        "w": "figshare",
+        "d": "Repository for research data, figures and supplementary materials"
+      },
+      {
+        "w": "bioRxiv",
+        "d": "Preprint server for biology"
+      },
+      {
+        "w": "Academia.edu",
+        "d": "Academic networking site for sharing papers and profiles"
+      },
+      {
+        "w": "medRxiv",
+        "d": "Preprint server for health sciences and clinical research"
+      },
+      {
+        "w": "arXiv",
+        "d": "Preprint server for physics, math, computer science and related fields"
+      },
+      {
+        "w": "Zenodo",
+        "d": "Open research repository operated with CERN support"
+      },
+      {
+        "w": "ResearchGate",
+        "d": "Academic social network for papers, questions and researcher profiles"
+      },
+      {
+        "w": "PubMed",
+        "d": "Search platform for biomedical literature"
+      },
+      {
+        "w": "Google Scholar",
+        "d": "Search engine indexing scholarly literature across disciplines"
+      },
+      {
+        "w": "Scopus",
+        "d": "Abstract and citation database from Elsevier"
+      },
+      {
+        "w": "Web of Science",
+        "d": "Citation database used for bibliometrics and journal indexing"
+      },
+      {
+        "w": "JSTOR",
+        "d": "Digital library of academic journals, books and primary sources"
+      },
+      {
+        "w": "DOAJ",
+        "d": "Directory of Open Access Journals"
+      },
+      {
+        "w": "Semantic Scholar",
+        "d": "AI-assisted scholarly search engine"
+      },
+      {
+        "w": "Crossref",
+        "d": "DOI registration agency connecting scholarly metadata"
+      },
+      {
+        "w": "ORCID",
+        "d": "Persistent researcher identifier system"
+      },
+      {
+        "w": "Dimensions",
+        "d": "Research database linking publications, grants, patents and citations"
+      },
+      {
+        "w": "IEEE Xplore",
+        "d": "Digital library for IEEE engineering and computing literature"
+      },
+      {
+        "w": "SpringerLink",
+        "d": "Springer Nature platform for journals, books and proceedings"
+      },
+      {
+        "w": "ScienceDirect",
+        "d": "Elsevier platform for journals and books"
+      },
+      {
+        "w": "CORE",
+        "d": "Aggregator of open-access research outputs"
+      },
+      {
+        "w": "BASE",
+        "d": "Bielefeld Academic Search Engine for scholarly web resources"
+      },
+      {
+        "w": "Europe PMC",
+        "d": "Repository and search platform for life-science literature"
+      },
+      {
+        "w": "ChemRxiv",
+        "d": "Preprint server for chemistry"
+      },
+      {
+        "w": "DBLP",
+        "d": "Bibliography platform for computer science"
+      },
+      {
+        "w": "PhilPapers",
+        "d": "Index and archive for philosophy research"
+      },
+      {
+        "w": "CyberLeninka",
+        "d": "Open-access scholarly library focused on Russian-language research"
+      },
+      {
+        "w": "DataCite",
+        "d": "DOI provider for research data and nontraditional outputs"
+      },
+      {
+        "w": "OpenAlex",
+        "d": "Open catalog of scholarly works, authors and institutions"
+      },
+      {
+        "w": "The Lens",
+        "d": "Search platform linking scholarly literature and patents"
+      },
+      {
+        "w": "PsyArXiv",
+        "d": "Preprint server for psychology"
+      },
+      {
+        "w": "SocArXiv",
+        "d": "Preprint server for social sciences"
+      }
+    ]
+  },
+  {
+    "name": "research designs & study types",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "laboratory test",
+        "d": "Controlled test conducted in a lab setting"
+      },
+      {
+        "w": "cohort study",
+        "d": "Study following a group sharing an exposure or starting condition"
+      },
+      {
+        "w": "case-control study",
+        "d": "Study comparing people with an outcome to similar controls"
+      },
+      {
+        "w": "field study",
+        "d": "Research conducted in real-world conditions"
+      },
+      {
+        "w": "double-blind RCT",
+        "d": "Randomized trial where participants and researchers do not know assignments"
+      },
+      {
+        "w": "crossover design",
+        "d": "Study where participants receive multiple interventions in sequence"
+      },
+      {
+        "w": "in vivo experiment",
+        "d": "Experiment conducted in a living organism"
+      },
+      {
+        "w": "randomized controlled trial",
+        "d": "Experiment assigning participants randomly to intervention or control"
+      },
+      {
+        "w": "in vitro experiment",
+        "d": "Experiment conducted outside a living organism, often in glassware"
+      },
+      {
+        "w": "in silico experiment",
+        "d": "Study performed through computer simulation or computation"
+      },
+      {
+        "w": "meta-analysis",
+        "d": "Statistical synthesis of results from multiple studies"
+      },
+      {
+        "w": "systematic review",
+        "d": "Structured review using predefined search and inclusion criteria"
+      },
+      {
+        "w": "single-blind control",
+        "d": "Design where one side is unaware of assignment"
+      },
+      {
+        "w": "prospective cohort",
+        "d": "Study following participants forward from baseline"
+      },
+      {
+        "w": "retrospective analysis",
+        "d": "Study using existing records or past data"
+      },
+      {
+        "w": "cross-sectional study",
+        "d": "Study measuring a population at one point in time"
+      },
+      {
+        "w": "longitudinal study",
+        "d": "Study observing the same subjects over time"
+      },
+      {
+        "w": "ecological study",
+        "d": "Study analyzing groups or populations rather than individuals"
+      },
+      {
+        "w": "quasi-experiment",
+        "d": "Intervention study without full random assignment"
+      },
+      {
+        "w": "natural experiment",
+        "d": "Study using external events as if they assigned exposure"
+      },
+      {
+        "w": "case series",
+        "d": "Description of multiple similar cases without a control group"
+      },
+      {
+        "w": "case report",
+        "d": "Detailed report on a single case"
+      },
+      {
+        "w": "pilot study",
+        "d": "Small preliminary study testing feasibility"
+      },
+      {
+        "w": "pragmatic trial",
+        "d": "Trial designed to test effectiveness in real practice"
+      },
+      {
+        "w": "cluster randomized trial",
+        "d": "Trial randomizing groups rather than individuals"
+      },
+      {
+        "w": "equivalence study",
+        "d": "Study testing whether treatments are sufficiently similar"
+      },
+      {
+        "w": "pharmacoepidemiological study",
+        "d": "Population study of drug use, effects and safety"
+      },
+      {
+        "w": "ethnographic study",
+        "d": "Qualitative study based on cultural observation and fieldwork"
+      },
+      {
+        "w": "observational study",
+        "d": "Study where researchers observe without assigning intervention"
+      },
+      {
+        "w": "interventional study",
+        "d": "Study where researchers actively assign an intervention"
+      },
+      {
+        "w": "Delphi method",
+        "d": "Structured expert-consensus process using repeated rounds"
+      },
+      {
+        "w": "meta-regression",
+        "d": "Analysis examining how study-level variables affect results"
+      },
+      {
+        "w": "action research",
+        "d": "Research combined with practical change in the studied setting"
+      },
+      {
+        "w": "preregistered study",
+        "d": "Study whose design and analysis plan are registered in advance"
+      },
+      {
+        "w": "phenomenological study",
+        "d": "Qualitative study of lived experience and meaning"
+      }
+    ]
+  },
+  {
+    "name": "philosophical schools",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Stoicism",
+        "d": "Hellenistic school emphasizing virtue, reason and control of passions"
+      },
+      {
+        "w": "Epicureanism",
+        "d": "Hellenistic school seeking tranquility through modest pleasure"
+      },
+      {
+        "w": "Platonism",
+        "d": "Philosophical tradition rooted in Plato’s theory of forms"
+      },
+      {
+        "w": "Aristotelianism",
+        "d": "Tradition built on Aristotle’s logic, metaphysics and ethics"
+      },
+      {
+        "w": "skepticism",
+        "d": "School or method suspending judgment about uncertain claims"
+      },
+      {
+        "w": "Cynicism",
+        "d": "Ancient school rejecting convention and luxury"
+      },
+      {
+        "w": "Neoplatonism",
+        "d": "Late antique tradition centered on emanation from the One"
+      },
+      {
+        "w": "Scholasticism",
+        "d": "Medieval method combining theology, logic and commentary"
+      },
+      {
+        "w": "Rationalism",
+        "d": "View giving reason a central role in knowledge"
+      },
+      {
+        "w": "Empiricism",
+        "d": "View grounding knowledge in experience and observation"
+      },
+      {
+        "w": "Existentialism",
+        "d": "Philosophy of freedom, choice, anxiety and meaning"
+      },
+      {
+        "w": "Phenomenology",
+        "d": "Method describing structures of lived experience"
+      },
+      {
+        "w": "Positivism",
+        "d": "View that authentic knowledge comes from empirical science"
+      },
+      {
+        "w": "Pragmatism",
+        "d": "American tradition judging ideas by practical consequences"
+      },
+      {
+        "w": "Utilitarianism",
+        "d": "Ethical theory maximizing happiness or welfare"
+      },
+      {
+        "w": "Marxism",
+        "d": "Theory of class, capitalism and historical change"
+      },
+      {
+        "w": "Nihilism",
+        "d": "Position denying objective meaning or value"
+      },
+      {
+        "w": "Structuralism",
+        "d": "Approach analyzing systems of relations beneath culture"
+      },
+      {
+        "w": "Post-structuralism",
+        "d": "Critique of stable structures, meanings and subjects"
+      },
+      {
+        "w": "Hermeneutics",
+        "d": "Theory and practice of interpretation"
+      },
+      {
+        "w": "analytic philosophy",
+        "d": "Tradition emphasizing clarity, language and logical argument"
+      },
+      {
+        "w": "logical positivism",
+        "d": "Movement linking meaning to verification and formal logic"
+      },
+      {
+        "w": "critical rationalism",
+        "d": "Popper’s view of knowledge through conjecture and refutation"
+      },
+      {
+        "w": "Neo-Kantianism",
+        "d": "Revival and reinterpretation of Kant in modern philosophy"
+      },
+      {
+        "w": "personalism",
+        "d": "Philosophy placing personhood at the center of value"
+      },
+      {
+        "w": "Thomism",
+        "d": "School based on Thomas Aquinas"
+      },
+      {
+        "w": "Pythagoreanism",
+        "d": "Ancient school linking number, harmony and metaphysics"
+      },
+      {
+        "w": "sophistry",
+        "d": "Ancient teaching tradition associated with rhetoric and relativism"
+      },
+      {
+        "w": "Objectivism",
+        "d": "Ayn Rand’s philosophy of rational self-interest and capitalism"
+      },
+      {
+        "w": "anarchism",
+        "d": "Political philosophy opposing coercive hierarchy and the state"
+      },
+      {
+        "w": "Daoism",
+        "d": "Chinese tradition centered on the Dao, spontaneity and nonforcing"
+      },
+      {
+        "w": "Confucianism",
+        "d": "Chinese ethical-political tradition of ritual, family and virtue"
+      },
+      {
+        "w": "Buddhist philosophy",
+        "d": "Traditions analyzing suffering, impermanence and non-self"
+      },
+      {
+        "w": "process philosophy",
+        "d": "Metaphysics treating reality as becoming and events"
+      },
+      {
+        "w": "ordinary language philosophy",
+        "d": "Approach examining philosophical puzzles through everyday language"
+      }
+    ]
+  },
+  {
+    "name": "cloud types",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "cumulus",
+        "d": "Puffy low cloud with a heaped shape"
+      },
+      {
+        "w": "stratus",
+        "d": "Low layered cloud forming a gray sheet"
+      },
+      {
+        "w": "cirrus",
+        "d": "High wispy cloud made of ice crystals"
+      },
+      {
+        "w": "cumulonimbus",
+        "d": "Tall thunderstorm cloud with strong vertical development"
+      },
+      {
+        "w": "stratocumulus",
+        "d": "Low lumpy cloud layer with breaks or rolls"
+      },
+      {
+        "w": "altocumulus",
+        "d": "Mid-level patchy cloud often appearing as rounded clumps"
+      },
+      {
+        "w": "altostratus",
+        "d": "Mid-level gray sheet that can cover the sky"
+      },
+      {
+        "w": "cirrocumulus",
+        "d": "High cloud forming small rippled patches"
+      },
+      {
+        "w": "cirrostratus",
+        "d": "High thin veil often producing halos"
+      },
+      {
+        "w": "nimbostratus",
+        "d": "Thick rain cloud forming a widespread dark layer"
+      },
+      {
+        "w": "noctilucent clouds",
+        "d": "Very high clouds visible after sunset or before sunrise"
+      },
+      {
+        "w": "nacreous clouds",
+        "d": "Polar stratospheric clouds with pearly colors"
+      },
+      {
+        "w": "lenticular clouds",
+        "d": "Lens-shaped clouds formed in mountain wave airflow"
+      },
+      {
+        "w": "mammatus clouds",
+        "d": "Clouds with pouch-like hanging lobes"
+      },
+      {
+        "w": "Kelvin-Helmholtz clouds",
+        "d": "Wave-like clouds formed by wind shear"
+      },
+      {
+        "w": "pyrocumulus",
+        "d": "Cumulus cloud formed by fire-driven convection"
+      },
+      {
+        "w": "shelf cloud",
+        "d": "Low wedge-shaped cloud along a thunderstorm gust front"
+      },
+      {
+        "w": "cap cloud",
+        "d": "Cloud sitting over a mountain summit"
+      },
+      {
+        "w": "wall cloud",
+        "d": "Lowering beneath a thunderstorm associated with tornado risk"
+      },
+      {
+        "w": "towering cumulus",
+        "d": "Cumulus cloud growing strongly upward"
+      },
+      {
+        "w": "undulatus clouds",
+        "d": "Clouds with a wave-like pattern"
+      },
+      {
+        "w": "orographic clouds",
+        "d": "Clouds formed as air rises over terrain"
+      },
+      {
+        "w": "pileus",
+        "d": "Smooth cap cloud above a growing cumulus tower"
+      },
+      {
+        "w": "arcus cloud",
+        "d": "Low horizontal cloud formation along a thunderstorm front"
+      },
+      {
+        "w": "fluctus",
+        "d": "Cloud wave feature named for breaking waves"
+      },
+      {
+        "w": "mammatus",
+        "d": "Supplementary cloud feature of hanging rounded pouches"
+      },
+      {
+        "w": "asperitas",
+        "d": "Cloud feature with rough, turbulent wave-like underside"
+      },
+      {
+        "w": "funnel feature",
+        "d": "Cloud feature shaped like a funnel below the cloud base"
+      },
+      {
+        "w": "mamma",
+        "d": "Pouch-like cloud structures hanging beneath a cloud base"
+      },
+      {
+        "w": "ash cloud",
+        "d": "Cloud of volcanic ash from an eruption"
+      },
+      {
+        "w": "cavum",
+        "d": "Hole-punch cloud feature in a cloud layer"
+      },
+      {
+        "w": "jet-stream cirrus",
+        "d": "High cirrus shaped by strong upper-level winds"
+      },
+      {
+        "w": "roll cloud",
+        "d": "Detached horizontal tube-shaped cloud"
+      },
+      {
+        "w": "funnel cloud",
+        "d": "Rotating funnel that has not reached the ground"
+      },
+      {
+        "w": "contrail",
+        "d": "Artificial cloud trail left by aircraft exhaust"
+      }
+    ]
+  },
+  {
+    "name": "vitamins & vitamers",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "retinol",
+        "d": "Vitamin A form important for vision and epithelial tissues"
+      },
+      {
+        "w": "thiamine",
+        "d": "Vitamin B1"
+      },
+      {
+        "w": "riboflavin",
+        "d": "Vitamin B2"
+      },
+      {
+        "w": "niacin",
+        "d": "Vitamin B3"
+      },
+      {
+        "w": "pantothenic acid",
+        "d": "Vitamin B5"
+      },
+      {
+        "w": "pyridoxine",
+        "d": "Vitamin B6 vitamer"
+      },
+      {
+        "w": "biotin",
+        "d": "Vitamin B7"
+      },
+      {
+        "w": "folate",
+        "d": "Vitamin B9 form involved in one-carbon metabolism"
+      },
+      {
+        "w": "cobalamin",
+        "d": "Vitamin B12 family"
+      },
+      {
+        "w": "menaquinone",
+        "d": "Vitamin K2 form"
+      },
+      {
+        "w": "cholecalciferol",
+        "d": "Vitamin D3"
+      },
+      {
+        "w": "tocopherol",
+        "d": "Vitamin E form"
+      },
+      {
+        "w": "phylloquinone",
+        "d": "Vitamin K1"
+      },
+      {
+        "w": "benfotiamine",
+        "d": "Fat-soluble thiamine derivative"
+      },
+      {
+        "w": "vitamin A",
+        "d": "Fat-soluble vitamin group including retinoids"
+      },
+      {
+        "w": "vitamin B1",
+        "d": "Thiamine"
+      },
+      {
+        "w": "vitamin B2",
+        "d": "Riboflavin"
+      },
+      {
+        "w": "vitamin B3",
+        "d": "Niacin"
+      },
+      {
+        "w": "vitamin B5",
+        "d": "Pantothenic acid"
+      },
+      {
+        "w": "vitamin B6",
+        "d": "Pyridoxine and related vitamers"
+      },
+      {
+        "w": "cyanocobalamin",
+        "d": "Synthetic form of vitamin B12"
+      },
+      {
+        "w": "vitamin C",
+        "d": "Ascorbic acid"
+      },
+      {
+        "w": "calciferol",
+        "d": "Vitamin D family name"
+      },
+      {
+        "w": "vitamin E",
+        "d": "Tocopherols and tocotrienols"
+      },
+      {
+        "w": "menadione",
+        "d": "Synthetic vitamin K-related compound"
+      },
+      {
+        "w": "beta-carotene",
+        "d": "Provitamin A carotenoid"
+      },
+      {
+        "w": "ergocalciferol",
+        "d": "Vitamin D2"
+      },
+      {
+        "w": "choline",
+        "d": "Essential nutrient often grouped near B vitamins"
+      },
+      {
+        "w": "vitamin B7",
+        "d": "Biotin"
+      },
+      {
+        "w": "vitamin B9",
+        "d": "Folate"
+      },
+      {
+        "w": "vitamin B12",
+        "d": "Cobalamin"
+      },
+      {
+        "w": "vitamin K2",
+        "d": "Menaquinone"
+      },
+      {
+        "w": "vitamin D3",
+        "d": "Cholecalciferol"
+      },
+      {
+        "w": "inositol",
+        "d": "Vitamin-like compound once called vitamin B8"
+      },
+      {
+        "w": "ubiquinone",
+        "d": "Coenzyme Q compound sometimes marketed as vitamin-like"
+      }
+    ]
+  },
+  {
+    "name": "narratology & storytelling craft",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "plot",
+        "d": "Sequence of connected events arranged to create narrative movement"
+      },
+      {
+        "w": "fabula",
+        "d": "Chronological story material before it is reshaped by narration"
+      },
+      {
+        "w": "syuzhet",
+        "d": "The arranged presentation of story events in a narrative"
+      },
+      {
+        "w": "inciting incident",
+        "d": "Event that disrupts the initial situation and starts the main action"
+      },
+      {
+        "w": "climax",
+        "d": "Point of highest tension or decisive conflict in a story"
+      },
+      {
+        "w": "denouement",
+        "d": "Closing section that resolves the main complications"
+      },
+      {
+        "w": "exposition",
+        "d": "Opening material that gives the reader necessary context"
+      },
+      {
+        "w": "peripeteia",
+        "d": "Sudden reversal in a plot or a character’s fortune"
+      },
+      {
+        "w": "anagnorisis",
+        "d": "Moment of recognition or discovery in a dramatic plot"
+      },
+      {
+        "w": "prologue",
+        "d": "Introductory section before the main narrative begins"
+      },
+      {
+        "w": "epilogue",
+        "d": "Final section after the main action has ended"
+      },
+      {
+        "w": "leitmotif",
+        "d": "Recurring image, phrase or motif that gathers meaning across a work"
+      },
+      {
+        "w": "intertextuality",
+        "d": "Meaning created through links to other texts"
+      },
+      {
+        "w": "metanarrative",
+        "d": "Narrative that comments on storytelling or on larger explanatory stories"
+      },
+      {
+        "w": "defamiliarization",
+        "d": "Technique that makes the familiar seem strange or newly visible"
+      },
+      {
+        "w": "epigraph",
+        "d": "Quotation placed at the start of a work or chapter"
+      },
+      {
+        "w": "allusion",
+        "d": "Indirect reference to another text, event or cultural object"
+      },
+      {
+        "w": "reminiscence",
+        "d": "Echo of an earlier text or remembered artistic source"
+      },
+      {
+        "w": "subtext",
+        "d": "Implied meaning beneath what characters openly say or do"
+      },
+      {
+        "w": "paratext",
+        "d": "Titles, prefaces, notes and other framing material around a text"
+      },
+      {
+        "w": "stream of consciousness",
+        "d": "Narration that follows the flow of a character’s thoughts"
+      },
+      {
+        "w": "unreliable narrator",
+        "d": "Narrator whose account cannot be fully trusted"
+      },
+      {
+        "w": "embedded narrative",
+        "d": "Story placed inside another story"
+      },
+      {
+        "w": "antihero",
+        "d": "Central character lacking conventional heroic qualities"
+      },
+      {
+        "w": "MacGuffin",
+        "d": "Object or goal that drives the plot more than it matters itself"
+      },
+      {
+        "w": "cliffhanger",
+        "d": "Suspenseful ending that leaves the outcome unresolved"
+      },
+      {
+        "w": "Chekhov’s gun",
+        "d": "Narrative principle that a highlighted element should later matter"
+      },
+      {
+        "w": "flashback",
+        "d": "Scene that interrupts the present action with an earlier event"
+      },
+      {
+        "w": "flashforward",
+        "d": "Scene that jumps ahead to a future event"
+      },
+      {
+        "w": "in medias res",
+        "d": "Opening technique that starts in the middle of the action"
+      },
+      {
+        "w": "focalization",
+        "d": "Perspective through which narrative information is filtered"
+      },
+      {
+        "w": "chronotope",
+        "d": "Pattern of time and space that structures a narrative world"
+      },
+      {
+        "w": "setting",
+        "d": "Time and place in which a story unfolds"
+      },
+      {
+        "w": "character arc",
+        "d": "Pattern of change or development experienced by a character"
+      },
+      {
+        "w": "false clue",
+        "d": "Misleading detail that sends the reader toward a wrong interpretation"
+      }
+    ]
+  },
+  {
+    "name": "psychotherapy approaches",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "CBT",
+        "d": "Cognitive behavioral therapy focused on thoughts, behaviors and symptoms"
+      },
+      {
+        "w": "psychoanalysis",
+        "d": "Therapy tradition centered on unconscious conflict and interpretation"
+      },
+      {
+        "w": "Gestalt therapy",
+        "d": "Approach emphasizing awareness, contact and unfinished situations"
+      },
+      {
+        "w": "existential analysis",
+        "d": "Therapy exploring meaning, freedom, responsibility and mortality"
+      },
+      {
+        "w": "person-centered therapy",
+        "d": "Rogers’s approach built around empathy and unconditional positive regard"
+      },
+      {
+        "w": "DBT",
+        "d": "Dialectical behavior therapy developed for emotion regulation and self-harm risk"
+      },
+      {
+        "w": "EMDR",
+        "d": "Eye-movement desensitization method used especially for trauma processing"
+      },
+      {
+        "w": "art therapy",
+        "d": "Psychotherapy using visual creation as part of treatment"
+      },
+      {
+        "w": "music therapy",
+        "d": "Therapeutic use of music and sound-based interaction"
+      },
+      {
+        "w": "sandplay therapy",
+        "d": "Therapy using miniature scenes built in a sand tray"
+      },
+      {
+        "w": "somatic psychology",
+        "d": "Approach linking emotional work with bodily sensations"
+      },
+      {
+        "w": "transactional analysis",
+        "d": "Model analyzing ego states and repeated interpersonal scripts"
+      },
+      {
+        "w": "narrative therapy",
+        "d": "Approach that helps clients re-author problem-saturated stories"
+      },
+      {
+        "w": "family systems therapy",
+        "d": "Therapy that treats problems through relationship patterns in a family system"
+      },
+      {
+        "w": "logotherapy",
+        "d": "Frankl’s therapy centered on meaning as a human motivation"
+      },
+      {
+        "w": "positive psychotherapy",
+        "d": "Approach focused on resources, strengths and balanced development"
+      },
+      {
+        "w": "hypnotherapy",
+        "d": "Therapeutic use of trance, suggestion and focused attention"
+      },
+      {
+        "w": "REBT",
+        "d": "Rational emotive behavior therapy created by Albert Ellis"
+      },
+      {
+        "w": "schema therapy",
+        "d": "Young’s model working with deep maladaptive patterns"
+      },
+      {
+        "w": "ACT",
+        "d": "Acceptance and commitment therapy using values and psychological flexibility"
+      },
+      {
+        "w": "MBSR",
+        "d": "Mindfulness-based stress reduction program developed by Jon Kabat-Zinn"
+      },
+      {
+        "w": "Jungian analysis",
+        "d": "Depth-psychology therapy using archetypes, dreams and individuation"
+      },
+      {
+        "w": "Adlerian therapy",
+        "d": "Approach based on social interest, lifestyle and inferiority feelings"
+      },
+      {
+        "w": "interpersonal therapy",
+        "d": "Time-limited therapy focused on relationships and role transitions"
+      },
+      {
+        "w": "psychodrama",
+        "d": "Therapy using dramatic enactment and role reversal"
+      },
+      {
+        "w": "body-oriented therapy",
+        "d": "Therapy that works directly with posture, movement and bodily tension"
+      },
+      {
+        "w": "cognitive analytic therapy",
+        "d": "Integrative therapy mapping repeated relational procedures"
+      },
+      {
+        "w": "emotion-focused therapy",
+        "d": "Approach that works with emotional processing and attachment needs"
+      },
+      {
+        "w": "biofeedback",
+        "d": "Training that uses real-time physiological signals for self-regulation"
+      },
+      {
+        "w": "internal family systems",
+        "d": "Parts-based therapy model developed by Richard Schwartz"
+      },
+      {
+        "w": "mentalization-based therapy",
+        "d": "Therapy strengthening the ability to understand mental states"
+      },
+      {
+        "w": "reality therapy",
+        "d": "Glasser’s approach focused on choice, needs and responsibility"
+      },
+      {
+        "w": "sensorimotor psychotherapy",
+        "d": "Trauma therapy combining body awareness with cognitive and emotional work"
+      },
+      {
+        "w": "solution-focused therapy",
+        "d": "Brief therapy organized around exceptions, resources and desired outcomes"
+      },
+      {
+        "w": "compassion-focused therapy",
+        "d": "Approach using compassion training for shame and self-criticism"
+      }
+    ]
+  },
+  {
+    "name": "Nobel laureates in physics",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Wilhelm Röntgen",
+        "d": "First physics laureate, honored for discovering X-rays"
+      },
+      {
+        "w": "Hendrik Lorentz",
+        "d": "Dutch laureate for work on electromagnetic theory"
+      },
+      {
+        "w": "Pieter Zeeman",
+        "d": "Laureate for discovering the splitting of spectral lines in a magnetic field"
+      },
+      {
+        "w": "Antoine Henri Becquerel",
+        "d": "Laureate for discovering spontaneous radioactivity"
+      },
+      {
+        "w": "Pierre Curie",
+        "d": "Laureate for research on radiation phenomena"
+      },
+      {
+        "w": "Lord Rayleigh",
+        "d": "Laureate for studying gas densities and discovering argon"
+      },
+      {
+        "w": "J. J. Thomson",
+        "d": "Laureate for investigations of electrical conduction in gases"
+      },
+      {
+        "w": "Albert Michelson",
+        "d": "Laureate for precision optical instruments and measurements"
+      },
+      {
+        "w": "Max Planck",
+        "d": "Laureate for founding quantum theory"
+      },
+      {
+        "w": "Albert Einstein",
+        "d": "Laureate for explaining the photoelectric effect"
+      },
+      {
+        "w": "Niels Bohr",
+        "d": "Laureate for work on atomic structure and radiation"
+      },
+      {
+        "w": "Robert Millikan",
+        "d": "Laureate for measuring the elementary electric charge"
+      },
+      {
+        "w": "Arthur Compton",
+        "d": "Laureate for discovering the Compton effect"
+      },
+      {
+        "w": "Louis de Broglie",
+        "d": "Laureate for the wave nature of electrons"
+      },
+      {
+        "w": "Werner Heisenberg",
+        "d": "Laureate for creating quantum mechanics"
+      },
+      {
+        "w": "Erwin Schrödinger",
+        "d": "Laureate for wave mechanics"
+      },
+      {
+        "w": "Paul Dirac",
+        "d": "Laureate for new productive forms of atomic theory"
+      },
+      {
+        "w": "James Chadwick",
+        "d": "Laureate for discovering the neutron"
+      },
+      {
+        "w": "Enrico Fermi",
+        "d": "Laureate for nuclear reactions caused by slow neutrons"
+      },
+      {
+        "w": "Wolfgang Pauli",
+        "d": "Laureate for the exclusion principle"
+      },
+      {
+        "w": "Max Born",
+        "d": "Laureate for statistical interpretation of the wave function"
+      },
+      {
+        "w": "Richard Feynman",
+        "d": "Laureate for quantum electrodynamics"
+      },
+      {
+        "w": "Julian Schwinger",
+        "d": "Co-laureate for fundamental work in quantum electrodynamics"
+      },
+      {
+        "w": "Sin-Itiro Tomonaga",
+        "d": "Co-laureate for renormalization work in quantum electrodynamics"
+      },
+      {
+        "w": "Lev Landau",
+        "d": "Laureate for theories of condensed matter, especially liquid helium"
+      },
+      {
+        "w": "Murray Gell-Mann",
+        "d": "Laureate for classification of elementary particles"
+      },
+      {
+        "w": "Abdus Salam",
+        "d": "Co-laureate for electroweak unification"
+      },
+      {
+        "w": "Steven Weinberg",
+        "d": "Co-laureate for electroweak unification"
+      },
+      {
+        "w": "Sheldon Glashow",
+        "d": "Co-laureate for electroweak unification"
+      },
+      {
+        "w": "Subrahmanyan Chandrasekhar",
+        "d": "Laureate for the structure and evolution of stars"
+      },
+      {
+        "w": "Carlo Rubbia",
+        "d": "Laureate connected with discovery of the W and Z bosons"
+      },
+      {
+        "w": "Donna Strickland",
+        "d": "Laureate for chirped pulse amplification in laser physics"
+      },
+      {
+        "w": "Roger Penrose",
+        "d": "Laureate for black-hole theory in general relativity"
+      },
+      {
+        "w": "Kip Thorne",
+        "d": "Laureate for gravitational-wave detection"
+      },
+      {
+        "w": "Peter Higgs",
+        "d": "Laureate for the mechanism behind the Higgs boson"
+      }
+    ]
+  },
+  {
+    "name": "Nobel laureates in literature",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Ivan Bunin",
+        "d": "First Russian-language writer awarded the Nobel Prize in Literature"
+      },
+      {
+        "w": "Mikhail Sholokhov",
+        "d": "Laureate known for the epic novel And Quiet Flows the Don"
+      },
+      {
+        "w": "Boris Pasternak",
+        "d": "Laureate associated with Doctor Zhivago"
+      },
+      {
+        "w": "Aleksandr Solzhenitsyn",
+        "d": "Laureate whose work exposed the Soviet camp system"
+      },
+      {
+        "w": "Joseph Brodsky",
+        "d": "Poet and essayist awarded after emigration from the USSR"
+      },
+      {
+        "w": "Gabriel García Márquez",
+        "d": "Laureate central to magical realism and One Hundred Years of Solitude"
+      },
+      {
+        "w": "Ernest Hemingway",
+        "d": "Laureate known for terse prose and The Old Man and the Sea"
+      },
+      {
+        "w": "William Faulkner",
+        "d": "Laureate known for modernist Southern fiction"
+      },
+      {
+        "w": "Albert Camus",
+        "d": "Laureate associated with absurdism and The Stranger"
+      },
+      {
+        "w": "Jean-Paul Sartre",
+        "d": "Laureate who famously declined the prize"
+      },
+      {
+        "w": "Thomas Mann",
+        "d": "Laureate known for Buddenbrooks and The Magic Mountain"
+      },
+      {
+        "w": "Hermann Hesse",
+        "d": "Laureate known for Siddhartha and The Glass Bead Game"
+      },
+      {
+        "w": "George Bernard Shaw",
+        "d": "Playwright laureate known for wit and social criticism"
+      },
+      {
+        "w": "Rudyard Kipling",
+        "d": "Early laureate known for stories and poems of the British Empire"
+      },
+      {
+        "w": "Rabindranath Tagore",
+        "d": "First non-European literature laureate"
+      },
+      {
+        "w": "W. B. Yeats",
+        "d": "Irish poet and dramatist awarded in 1923"
+      },
+      {
+        "w": "Samuel Beckett",
+        "d": "Laureate known for minimalist drama and Waiting for Godot"
+      },
+      {
+        "w": "Toni Morrison",
+        "d": "Laureate known for Beloved and African American historical memory"
+      },
+      {
+        "w": "Bob Dylan",
+        "d": "Songwriter laureate honored for new poetic expressions"
+      },
+      {
+        "w": "Kazuo Ishiguro",
+        "d": "Laureate known for memory, restraint and unreliable narration"
+      },
+      {
+        "w": "Olga Tokarczuk",
+        "d": "Polish laureate known for Flights and The Books of Jacob"
+      },
+      {
+        "w": "Abdulrazak Gurnah",
+        "d": "Laureate whose novels explore colonialism, migration and exile"
+      },
+      {
+        "w": "Svetlana Alexievich",
+        "d": "Laureate known for documentary polyphonic prose"
+      },
+      {
+        "w": "Orhan Pamuk",
+        "d": "Turkish laureate known for Istanbul and My Name Is Red"
+      },
+      {
+        "w": "Mario Vargas Llosa",
+        "d": "Peruvian laureate known for political and historical novels"
+      },
+      {
+        "w": "Patrick Modiano",
+        "d": "French laureate known for memory, occupation and identity"
+      },
+      {
+        "w": "José Saramago",
+        "d": "Portuguese laureate known for allegorical novels and long sentences"
+      },
+      {
+        "w": "Wisława Szymborska",
+        "d": "Polish poet laureate known for irony and philosophical compression"
+      },
+      {
+        "w": "Dario Fo",
+        "d": "Italian dramatist laureate known for political farce"
+      },
+      {
+        "w": "Han Kang",
+        "d": "Korean laureate known for The Vegetarian and Human Acts"
+      },
+      {
+        "w": "Sinclair Lewis",
+        "d": "First U.S. literature laureate"
+      },
+      {
+        "w": "Pearl Buck",
+        "d": "Laureate known for novels about China and The Good Earth"
+      },
+      {
+        "w": "Naguib Mahfouz",
+        "d": "Egyptian laureate known for the Cairo Trilogy"
+      },
+      {
+        "w": "Harold Pinter",
+        "d": "British playwright laureate known for pauses, menace and power games"
+      },
+      {
+        "w": "Elfriede Jelinek",
+        "d": "Austrian laureate known for linguistic critique and social violence"
+      }
+    ]
+  },
+  {
+    "name": "economic terms",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "inflation",
+        "d": "General rise in prices that reduces purchasing power"
+      },
+      {
+        "w": "deflation",
+        "d": "General fall in prices across an economy"
+      },
+      {
+        "w": "stagflation",
+        "d": "Combination of high inflation and weak economic growth"
+      },
+      {
+        "w": "recession",
+        "d": "Broad contraction in economic activity lasting months or longer"
+      },
+      {
+        "w": "default",
+        "d": "Failure to meet debt obligations on schedule"
+      },
+      {
+        "w": "devaluation",
+        "d": "Official lowering of a currency’s value"
+      },
+      {
+        "w": "revaluation",
+        "d": "Official raising of a currency’s value"
+      },
+      {
+        "w": "money issuance",
+        "d": "Creation of new money by a monetary authority"
+      },
+      {
+        "w": "derivative",
+        "d": "Financial contract whose value depends on an underlying asset"
+      },
+      {
+        "w": "futures contract",
+        "d": "Agreement to buy or sell an asset later at a set price"
+      },
+      {
+        "w": "option",
+        "d": "Contract giving the right, but not the obligation, to trade an asset"
+      },
+      {
+        "w": "hedging",
+        "d": "Reducing risk by taking an offsetting financial position"
+      },
+      {
+        "w": "profit margin",
+        "d": "Share of revenue left after costs"
+      },
+      {
+        "w": "liquidity",
+        "d": "Ease with which an asset can be converted into cash"
+      },
+      {
+        "w": "volatility",
+        "d": "Degree of price fluctuation over time"
+      },
+      {
+        "w": "diversification",
+        "d": "Spreading investments or risks across different assets"
+      },
+      {
+        "w": "market capitalization",
+        "d": "Total market value of a company’s outstanding shares"
+      },
+      {
+        "w": "depreciation",
+        "d": "Accounting allocation of an asset’s cost over time"
+      },
+      {
+        "w": "dividend",
+        "d": "Distribution of company profits to shareholders"
+      },
+      {
+        "w": "bond",
+        "d": "Debt security issued by a government or company"
+      },
+      {
+        "w": "share",
+        "d": "Unit of ownership in a company"
+      },
+      {
+        "w": "index",
+        "d": "Indicator tracking a basket of securities or economic values"
+      },
+      {
+        "w": "spread",
+        "d": "Difference between two prices, rates or yields"
+      },
+      {
+        "w": "arbitrage",
+        "d": "Profit from price differences across markets"
+      },
+      {
+        "w": "monopoly",
+        "d": "Market structure with one dominant seller"
+      },
+      {
+        "w": "oligopoly",
+        "d": "Market structure controlled by a few major sellers"
+      },
+      {
+        "w": "dumping",
+        "d": "Selling abroad at unusually low prices to gain market share"
+      },
+      {
+        "w": "embargo",
+        "d": "Official ban on trade with a country or product"
+      },
+      {
+        "w": "subsidy",
+        "d": "Government support that lowers costs or raises income"
+      },
+      {
+        "w": "tariff",
+        "d": "Tax imposed on imported or exported goods"
+      },
+      {
+        "w": "stagnation",
+        "d": "Long period of weak or absent economic growth"
+      },
+      {
+        "w": "bankruptcy",
+        "d": "Legal status of being unable to pay debts"
+      },
+      {
+        "w": "securitization",
+        "d": "Pooling assets and turning their cash flows into tradable securities"
+      },
+      {
+        "w": "capital recycling",
+        "d": "Selling mature assets to fund new investment"
+      },
+      {
+        "w": "tax multiplier",
+        "d": "Effect of tax changes on total economic output"
+      }
+    ]
+  },
+  {
+    "name": "Nobel laureates in chemistry",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Jacobus van ’t Hoff",
+        "d": "First chemistry laureate, honored for chemical dynamics and osmotic pressure"
+      },
+      {
+        "w": "Emil Fischer",
+        "d": "Laureate for work on sugars and purines"
+      },
+      {
+        "w": "Svante Arrhenius",
+        "d": "Laureate for the theory of electrolytic dissociation"
+      },
+      {
+        "w": "William Ramsay",
+        "d": "Laureate for discovering noble gases in the air"
+      },
+      {
+        "w": "Wilhelm Ostwald",
+        "d": "Laureate for catalysis, equilibria and reaction rates"
+      },
+      {
+        "w": "Marie Curie",
+        "d": "Chemistry laureate for discovering radium and polonium"
+      },
+      {
+        "w": "Victor Grignard",
+        "d": "Laureate for the organomagnesium reagent that bears his name"
+      },
+      {
+        "w": "Alfred Werner",
+        "d": "Laureate for coordination chemistry"
+      },
+      {
+        "w": "Fritz Haber",
+        "d": "Laureate for synthesizing ammonia from nitrogen and hydrogen"
+      },
+      {
+        "w": "Frederick Soddy",
+        "d": "Laureate for work on isotopes and radioactive substances"
+      },
+      {
+        "w": "Richard Willstätter",
+        "d": "Laureate for plant pigments, especially chlorophyll"
+      },
+      {
+        "w": "Walther Nernst",
+        "d": "Laureate for thermochemistry and the third law"
+      },
+      {
+        "w": "Theodor Svedberg",
+        "d": "Laureate for disperse systems and ultracentrifuge methods"
+      },
+      {
+        "w": "Heinrich Wieland",
+        "d": "Laureate for research on bile acids"
+      },
+      {
+        "w": "Adolf Windaus",
+        "d": "Laureate for sterols and their connection with vitamins"
+      },
+      {
+        "w": "Hans Fischer",
+        "d": "Laureate for work on hemin and chlorophyll"
+      },
+      {
+        "w": "Harold Urey",
+        "d": "Laureate for discovering deuterium"
+      },
+      {
+        "w": "Linus Pauling",
+        "d": "Laureate for the nature of the chemical bond"
+      },
+      {
+        "w": "Frederick Sanger",
+        "d": "Two-time chemistry laureate for protein and DNA sequencing work"
+      },
+      {
+        "w": "Melvin Calvin",
+        "d": "Laureate for mapping the carbon cycle in photosynthesis"
+      },
+      {
+        "w": "Robert Burns Woodward",
+        "d": "Laureate for achievements in organic synthesis"
+      },
+      {
+        "w": "Lars Onsager",
+        "d": "Laureate for reciprocal relations in irreversible processes"
+      },
+      {
+        "w": "Ilya Prigogine",
+        "d": "Laureate for nonequilibrium thermodynamics"
+      },
+      {
+        "w": "Georg Wittig",
+        "d": "Laureate for phosphorus compounds used in organic synthesis"
+      },
+      {
+        "w": "Herbert C. Brown",
+        "d": "Laureate for organoboranes in synthesis"
+      },
+      {
+        "w": "Roald Hoffmann",
+        "d": "Laureate for theories of chemical reactions"
+      },
+      {
+        "w": "Kenichi Fukui",
+        "d": "Laureate for frontier orbital theory"
+      },
+      {
+        "w": "Dudley Herschbach",
+        "d": "Laureate for molecular-beam studies of reaction dynamics"
+      },
+      {
+        "w": "Yuan T. Lee",
+        "d": "Laureate for reaction dynamics using crossed molecular beams"
+      },
+      {
+        "w": "John Polanyi",
+        "d": "Laureate for infrared chemiluminescence in reaction dynamics"
+      },
+      {
+        "w": "Jean-Marie Lehn",
+        "d": "Laureate for supramolecular chemistry"
+      },
+      {
+        "w": "Kary Mullis",
+        "d": "Laureate for inventing PCR"
+      },
+      {
+        "w": "Richard Smalley",
+        "d": "Co-laureate for the discovery of fullerenes"
+      },
+      {
+        "w": "Harold Kroto",
+        "d": "Co-laureate for the discovery of fullerenes"
+      },
+      {
+        "w": "John B. Goodenough",
+        "d": "Laureate for lithium-ion battery development"
+      }
+    ]
+  },
+  {
+    "name": "major philosophers",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Socrates",
+        "d": "Greek philosopher known through Plato’s dialogues and the Socratic method"
+      },
+      {
+        "w": "Plato",
+        "d": "Founder of the Academy and author of dialogues on forms and justice"
+      },
+      {
+        "w": "Aristotle",
+        "d": "Greek philosopher who shaped logic, ethics, politics and natural philosophy"
+      },
+      {
+        "w": "René Descartes",
+        "d": "Early modern philosopher associated with methodic doubt and cogito"
+      },
+      {
+        "w": "Immanuel Kant",
+        "d": "Philosopher of critique, autonomy and transcendental idealism"
+      },
+      {
+        "w": "Georg Hegel",
+        "d": "German idealist known for dialectics and historical reason"
+      },
+      {
+        "w": "Friedrich Nietzsche",
+        "d": "Critic of morality, metaphysics and modern culture"
+      },
+      {
+        "w": "Karl Marx",
+        "d": "Philosopher of capitalism, class conflict and historical materialism"
+      },
+      {
+        "w": "Baruch Spinoza",
+        "d": "Rationalist philosopher of substance, nature and God"
+      },
+      {
+        "w": "Gottfried Leibniz",
+        "d": "Rationalist philosopher of monads, logic and possible worlds"
+      },
+      {
+        "w": "John Locke",
+        "d": "Empiricist philosopher of knowledge, property and liberal government"
+      },
+      {
+        "w": "David Hume",
+        "d": "Empiricist philosopher of causation, skepticism and human nature"
+      },
+      {
+        "w": "Arthur Schopenhauer",
+        "d": "Philosopher of will, pessimism and aesthetic release"
+      },
+      {
+        "w": "Søren Kierkegaard",
+        "d": "Philosopher of faith, anxiety and individual existence"
+      },
+      {
+        "w": "Martin Heidegger",
+        "d": "Philosopher of Being, time and modern technology"
+      },
+      {
+        "w": "Henri Bergson",
+        "d": "Philosopher of duration, intuition and creative evolution"
+      },
+      {
+        "w": "Parmenides",
+        "d": "Pre-Socratic thinker of Being and the impossibility of non-being"
+      },
+      {
+        "w": "Michel Foucault",
+        "d": "Thinker of power, knowledge, discipline and discourse"
+      },
+      {
+        "w": "Gilles Deleuze",
+        "d": "Philosopher of difference, repetition and assemblages"
+      },
+      {
+        "w": "Jacques Derrida",
+        "d": "Founder of deconstruction and critic of logocentrism"
+      },
+      {
+        "w": "Ludwig Wittgenstein",
+        "d": "Philosopher of language games, logic and meaning"
+      },
+      {
+        "w": "Bertrand Russell",
+        "d": "Analytic philosopher and logician of descriptions and paradoxes"
+      },
+      {
+        "w": "Karl Popper",
+        "d": "Philosopher of science known for falsifiability"
+      },
+      {
+        "w": "Thomas Kuhn",
+        "d": "Philosopher of science known for paradigm shifts"
+      },
+      {
+        "w": "Confucius",
+        "d": "Chinese thinker of ritual, virtue and social harmony"
+      },
+      {
+        "w": "Laozi",
+        "d": "Daoist sage associated with the Dao De Jing"
+      },
+      {
+        "w": "Epicurus",
+        "d": "Greek philosopher of pleasure, friendship and freedom from fear"
+      },
+      {
+        "w": "Zeno of Citium",
+        "d": "Founder of Stoicism in ancient Athens"
+      },
+      {
+        "w": "Seneca",
+        "d": "Roman Stoic philosopher, dramatist and adviser to Nero"
+      },
+      {
+        "w": "Maurice Merleau-Ponty",
+        "d": "Phenomenologist of embodiment and perception"
+      },
+      {
+        "w": "Simone de Beauvoir",
+        "d": "Existentialist philosopher of freedom and gender"
+      },
+      {
+        "w": "Hannah Arendt",
+        "d": "Political thinker of totalitarianism, action and the public realm"
+      },
+      {
+        "w": "John Stuart Mill",
+        "d": "Utilitarian and liberal philosopher of liberty"
+      },
+      {
+        "w": "Thomas Aquinas",
+        "d": "Medieval philosopher-theologian who synthesized Aristotle and Christianity"
+      },
+      {
+        "w": "Avicenna",
+        "d": "Persian polymath whose metaphysics shaped medieval philosophy"
+      }
+    ]
+  },
+  {
+    "name": "astrophysical objects & phenomena",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "spiral galaxy",
+        "d": "Galaxy with a disk, bulge and spiral arms"
+      },
+      {
+        "w": "elliptical galaxy",
+        "d": "Smooth galaxy shaped like an ellipsoid and poor in gas"
+      },
+      {
+        "w": "lenticular galaxy",
+        "d": "Disk galaxy between spiral and elliptical types"
+      },
+      {
+        "w": "irregular galaxy",
+        "d": "Galaxy lacking a clear spiral or elliptical structure"
+      },
+      {
+        "w": "quasar",
+        "d": "Extremely luminous active galactic nucleus powered by a black hole"
+      },
+      {
+        "w": "pulsar",
+        "d": "Rotating neutron star observed through regular radiation pulses"
+      },
+      {
+        "w": "magnetar",
+        "d": "Neutron star with an extraordinarily strong magnetic field"
+      },
+      {
+        "w": "black hole",
+        "d": "Region whose gravity prevents light from escaping"
+      },
+      {
+        "w": "white dwarf",
+        "d": "Dense remnant of a low- or medium-mass star"
+      },
+      {
+        "w": "red giant",
+        "d": "Late stellar phase with an expanded cool outer envelope"
+      },
+      {
+        "w": "neutron star",
+        "d": "Ultra-dense remnant left after some supernovae"
+      },
+      {
+        "w": "supernova",
+        "d": "Explosive stellar event that can briefly outshine a galaxy"
+      },
+      {
+        "w": "protostar",
+        "d": "Young object still gathering mass before stable hydrogen fusion"
+      },
+      {
+        "w": "planetary nebula",
+        "d": "Glowing shell ejected by a dying Sun-like star"
+      },
+      {
+        "w": "dark matter",
+        "d": "Unseen mass inferred from gravity and cosmic structure"
+      },
+      {
+        "w": "dark energy",
+        "d": "Unknown driver associated with the accelerating expansion of the universe"
+      },
+      {
+        "w": "cosmic microwave background",
+        "d": "Relic radiation from the early universe"
+      },
+      {
+        "w": "redshift",
+        "d": "Stretching of light toward longer wavelengths"
+      },
+      {
+        "w": "gravitational lens",
+        "d": "Bending and magnifying of light by gravity"
+      },
+      {
+        "w": "accretion disk",
+        "d": "Rotating disk of matter falling toward a compact object"
+      },
+      {
+        "w": "relativistic jet",
+        "d": "High-speed plasma stream ejected near a compact object"
+      },
+      {
+        "w": "globular cluster",
+        "d": "Dense spherical cluster of old stars"
+      },
+      {
+        "w": "open cluster",
+        "d": "Looser group of young stars formed together"
+      },
+      {
+        "w": "gas giant",
+        "d": "Large planet composed mostly of hydrogen and helium"
+      },
+      {
+        "w": "exoplanet",
+        "d": "Planet orbiting a star outside the Solar System"
+      },
+      {
+        "w": "Orion Nebula",
+        "d": "Bright stellar nursery visible in the constellation Orion"
+      },
+      {
+        "w": "Andromeda Galaxy",
+        "d": "Large spiral galaxy nearest to the Milky Way"
+      },
+      {
+        "w": "comet",
+        "d": "Icy small body that can form a coma and tail near the Sun"
+      },
+      {
+        "w": "asteroid",
+        "d": "Rocky small body orbiting the Sun"
+      },
+      {
+        "w": "meteor shower",
+        "d": "Event when many meteors appear from one radiant"
+      },
+      {
+        "w": "Great Attractor",
+        "d": "Mass concentration influencing the motion of nearby galaxies"
+      },
+      {
+        "w": "Seyfert galaxy",
+        "d": "Active galaxy with a bright nucleus and strong emission lines"
+      },
+      {
+        "w": "cosmic void",
+        "d": "Large underdense region between galaxy filaments"
+      },
+      {
+        "w": "galactic bar",
+        "d": "Bar-shaped stellar structure crossing some spiral galaxy centers"
+      },
+      {
+        "w": "heliopause",
+        "d": "Boundary where the solar wind gives way to interstellar space"
+      }
+    ]
+  },
+  {
+    "name": "machine learning methods",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "linear regression",
+        "d": "Model predicting a numeric value from a linear combination of features"
+      },
+      {
+        "w": "logistic regression",
+        "d": "Classifier estimating probabilities with a logistic function"
+      },
+      {
+        "w": "decision tree",
+        "d": "Model that splits data through a tree of feature tests"
+      },
+      {
+        "w": "random forest",
+        "d": "Ensemble of decision trees trained on varied samples and features"
+      },
+      {
+        "w": "support vector machine",
+        "d": "Classifier that finds a separating margin between classes"
+      },
+      {
+        "w": "naive Bayes classifier",
+        "d": "Probabilistic classifier assuming conditional independence of features"
+      },
+      {
+        "w": "k-nearest neighbors",
+        "d": "Method predicting from the labels or values of nearby examples"
+      },
+      {
+        "w": "principal component analysis",
+        "d": "Dimensionality reduction using directions of maximum variance"
+      },
+      {
+        "w": "k-means clustering",
+        "d": "Algorithm that partitions data around k centroids"
+      },
+      {
+        "w": "hierarchical clustering",
+        "d": "Clustering method that builds nested groups"
+      },
+      {
+        "w": "extra trees",
+        "d": "Randomized tree ensemble using extremely random splits"
+      },
+      {
+        "w": "XGBoost",
+        "d": "Gradient-boosting library widely used for tabular data"
+      },
+      {
+        "w": "LightGBM",
+        "d": "Gradient-boosting framework optimized for speed and large data"
+      },
+      {
+        "w": "CatBoost",
+        "d": "Gradient-boosting library designed to handle categorical features"
+      },
+      {
+        "w": "AdaBoost",
+        "d": "Boosting algorithm that reweights difficult examples"
+      },
+      {
+        "w": "HDBSCAN",
+        "d": "Density-based clustering method that handles variable density"
+      },
+      {
+        "w": "stacking",
+        "d": "Ensemble method that trains a meta-model on base model outputs"
+      },
+      {
+        "w": "DBSCAN",
+        "d": "Density-based clustering algorithm that marks sparse points as noise"
+      },
+      {
+        "w": "t-SNE",
+        "d": "Nonlinear visualization method for high-dimensional data"
+      },
+      {
+        "w": "UMAP",
+        "d": "Manifold-learning method for dimensionality reduction and visualization"
+      },
+      {
+        "w": "latent Dirichlet allocation",
+        "d": "Topic model that represents documents as mixtures of themes"
+      },
+      {
+        "w": "isolation forest",
+        "d": "Anomaly-detection method based on random partitioning"
+      },
+      {
+        "w": "EM algorithm",
+        "d": "Iterative method alternating hidden-variable estimation and parameter updates"
+      },
+      {
+        "w": "reinforcement learning",
+        "d": "Learning setup where an agent improves through rewards"
+      },
+      {
+        "w": "Q-learning",
+        "d": "Reinforcement-learning method estimating action values"
+      },
+      {
+        "w": "neural network",
+        "d": "Model built from layers of weighted artificial neurons"
+      },
+      {
+        "w": "bagging",
+        "d": "Ensemble method that trains models on bootstrap samples"
+      },
+      {
+        "w": "convolutional neural network",
+        "d": "Neural architecture especially effective for images and grids"
+      },
+      {
+        "w": "recurrent neural network",
+        "d": "Neural architecture designed for sequences"
+      },
+      {
+        "w": "generative adversarial network",
+        "d": "Two-network model where generator and discriminator compete"
+      },
+      {
+        "w": "gradient boosting",
+        "d": "Ensemble method that adds weak learners to reduce errors"
+      },
+      {
+        "w": "Bayesian optimization",
+        "d": "Strategy for optimizing expensive black-box functions"
+      },
+      {
+        "w": "supervised learning",
+        "d": "Learning from labeled examples"
+      },
+      {
+        "w": "unsupervised learning",
+        "d": "Learning patterns without target labels"
+      },
+      {
+        "w": "federated learning",
+        "d": "Training approach where data stays on separate devices or servers"
+      }
+    ]
+  },
+  {
+    "name": "methods of scientific inquiry",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "induction",
+        "d": "Reasoning from observed cases toward a general rule"
+      },
+      {
+        "w": "deduction",
+        "d": "Reasoning from general premises to a necessary conclusion"
+      },
+      {
+        "w": "abduction",
+        "d": "Inference to the best available explanation"
+      },
+      {
+        "w": "analogy",
+        "d": "Reasoning from similarity between cases"
+      },
+      {
+        "w": "synthesis",
+        "d": "Combining elements into a coherent whole or explanation"
+      },
+      {
+        "w": "analysis",
+        "d": "Breaking a problem into parts for examination"
+      },
+      {
+        "w": "observation",
+        "d": "Systematic watching or measurement of a phenomenon"
+      },
+      {
+        "w": "experiment",
+        "d": "Controlled intervention used to test a hypothesis"
+      },
+      {
+        "w": "modeling",
+        "d": "Building a simplified representation of a system"
+      },
+      {
+        "w": "classification",
+        "d": "Grouping objects or cases by shared traits"
+      },
+      {
+        "w": "systematization",
+        "d": "Organizing knowledge into a structured order"
+      },
+      {
+        "w": "formalization",
+        "d": "Expressing ideas through formal symbols or rules"
+      },
+      {
+        "w": "idealization",
+        "d": "Using a simplified construct that omits messy details"
+      },
+      {
+        "w": "abstraction",
+        "d": "Focusing on essential features while ignoring particulars"
+      },
+      {
+        "w": "verification",
+        "d": "Checking whether a claim is supported by evidence"
+      },
+      {
+        "w": "falsification",
+        "d": "Testing whether a claim can be refuted"
+      },
+      {
+        "w": "operationalization",
+        "d": "Turning an abstract concept into measurable indicators"
+      },
+      {
+        "w": "methodological triangulation",
+        "d": "Combining different methods or data sources to test the same claim"
+      },
+      {
+        "w": "hermeneutic interpretation",
+        "d": "Interpretive method focused on meaning and context"
+      },
+      {
+        "w": "phenomenological reduction",
+        "d": "Suspending assumptions to examine experience itself"
+      },
+      {
+        "w": "thought experiment",
+        "d": "Imagined scenario used to test concepts or arguments"
+      },
+      {
+        "w": "extrapolation",
+        "d": "Extending a pattern beyond observed data"
+      },
+      {
+        "w": "interpolation",
+        "d": "Estimating values inside the range of observed data"
+      },
+      {
+        "w": "comparative method",
+        "d": "Studying cases side by side to identify patterns"
+      },
+      {
+        "w": "genetic method",
+        "d": "Explaining something through its origin and development"
+      },
+      {
+        "w": "counterfactual reasoning",
+        "d": "Asking how outcomes would differ under altered conditions"
+      },
+      {
+        "w": "systems analysis",
+        "d": "Studying relations and feedbacks within a whole system"
+      },
+      {
+        "w": "control group",
+        "d": "Comparison group that does not receive the tested intervention"
+      },
+      {
+        "w": "double-blind study",
+        "d": "Study where participants and assessors do not know assignments"
+      },
+      {
+        "w": "randomization",
+        "d": "Assigning cases by chance to reduce bias"
+      },
+      {
+        "w": "reproducibility",
+        "d": "Ability to obtain comparable results using the same method"
+      },
+      {
+        "w": "discourse analysis",
+        "d": "Method studying language practices and meaning in context"
+      },
+      {
+        "w": "operational definition",
+        "d": "Definition stated in terms of observable operations"
+      },
+      {
+        "w": "reductionism",
+        "d": "Explaining a whole mainly through its parts"
+      },
+      {
+        "w": "holism",
+        "d": "Approach that treats wholes as more than sums of parts"
+      }
+    ]
+  },
+  {
+    "name": "physical laws & principles",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "F = ma",
+        "d": "Newton’s second law relating force, mass and acceleration"
+      },
+      {
+        "w": "Ohm’s law",
+        "d": "Relation between voltage, current and resistance"
+      },
+      {
+        "w": "Coulomb’s law",
+        "d": "Force law for electrostatic interaction between charges"
+      },
+      {
+        "w": "Hooke’s law",
+        "d": "Linear relation between elastic force and deformation"
+      },
+      {
+        "w": "Archimedes’ principle",
+        "d": "Buoyant force on a body immersed in a fluid"
+      },
+      {
+        "w": "Bernoulli’s principle",
+        "d": "Fluid relation between pressure, speed and height"
+      },
+      {
+        "w": "Boyle–Mariotte law",
+        "d": "Gas law connecting pressure and volume at constant temperature"
+      },
+      {
+        "w": "Gay-Lussac’s law",
+        "d": "Gas law relating pressure and temperature at constant volume"
+      },
+      {
+        "w": "Faraday’s law of induction",
+        "d": "Law describing voltage induced by changing magnetic flux"
+      },
+      {
+        "w": "Ampère’s force law",
+        "d": "Magnetic force between electric currents"
+      },
+      {
+        "w": "Heisenberg uncertainty principle",
+        "d": "Limit on simultaneous precision of paired quantum quantities"
+      },
+      {
+        "w": "Pauli exclusion principle",
+        "d": "Rule preventing identical fermions from sharing the same quantum state"
+      },
+      {
+        "w": "superposition principle",
+        "d": "Principle that compatible states or waves can add together"
+      },
+      {
+        "w": "least action principle",
+        "d": "Rule that physical paths make the action stationary"
+      },
+      {
+        "w": "equivalence principle",
+        "d": "Idea that gravity and acceleration are locally indistinguishable"
+      },
+      {
+        "w": "Planck’s law",
+        "d": "Formula for blackbody radiation spectrum"
+      },
+      {
+        "w": "conservation of energy",
+        "d": "Principle that total energy in a closed system remains constant"
+      },
+      {
+        "w": "conservation of momentum",
+        "d": "Principle that total momentum is conserved in isolated systems"
+      },
+      {
+        "w": "law of universal gravitation",
+        "d": "Newton’s inverse-square law of gravitational attraction"
+      },
+      {
+        "w": "Snell’s law",
+        "d": "Refraction law relating incident and refracted angles"
+      },
+      {
+        "w": "Kepler’s laws",
+        "d": "Rules describing planetary orbits around the Sun"
+      },
+      {
+        "w": "Dalton’s law",
+        "d": "Gas law for the total pressure of a gas mixture"
+      },
+      {
+        "w": "Schrödinger equation",
+        "d": "Quantum equation governing the evolution of a wavefunction"
+      },
+      {
+        "w": "Maxwell’s equations",
+        "d": "Equations unifying electricity, magnetism and light"
+      },
+      {
+        "w": "Avogadro’s law",
+        "d": "Gas law relating volume and amount of substance"
+      },
+      {
+        "w": "Joule–Lenz law",
+        "d": "Law for heat produced by electric current in a conductor"
+      },
+      {
+        "w": "Mach’s principle",
+        "d": "Idea linking inertia to the mass distribution of the universe"
+      },
+      {
+        "w": "correspondence principle",
+        "d": "Requirement that quantum theory match classical results in the proper limit"
+      },
+      {
+        "w": "CPT symmetry",
+        "d": "Combined symmetry of charge, parity and time reversal"
+      },
+      {
+        "w": "Hubble’s law",
+        "d": "Relation between galaxy distance and recession velocity"
+      },
+      {
+        "w": "Noether’s theorem",
+        "d": "Theorem connecting symmetries with conservation laws"
+      },
+      {
+        "w": "observability principle",
+        "d": "Principle favoring physically measurable quantities in theory"
+      },
+      {
+        "w": "Galilean relativity",
+        "d": "Principle that mechanics is the same in inertial frames"
+      },
+      {
+        "w": "Stefan–Boltzmann law",
+        "d": "Law giving total radiation emitted by a blackbody"
+      },
+      {
+        "w": "Carnot theorem",
+        "d": "Limit on the efficiency of heat engines"
+      }
+    ]
+  },
+  {
+    "name": "dating methods in archaeology & geology",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "radiocarbon dating",
+        "d": "Dating organic remains by the decay of carbon-14"
+      },
+      {
+        "w": "potassium-argon dating",
+        "d": "Radiometric method used for volcanic rocks and early human sites"
+      },
+      {
+        "w": "uranium-lead dating",
+        "d": "Radiometric method often used on zircon crystals"
+      },
+      {
+        "w": "thermoluminescence dating",
+        "d": "Dating fired materials by stored radiation released as light"
+      },
+      {
+        "w": "dendrochronology",
+        "d": "Dating wood by annual tree-ring patterns"
+      },
+      {
+        "w": "paleomagnetic dating",
+        "d": "Dating using changes in Earth’s magnetic field recorded in materials"
+      },
+      {
+        "w": "stratigraphy",
+        "d": "Dating by the order and context of layers"
+      },
+      {
+        "w": "typology",
+        "d": "Relative dating by comparing artifact forms"
+      },
+      {
+        "w": "cross-dating",
+        "d": "Matching a site or object to dated sequences elsewhere"
+      },
+      {
+        "w": "amino acid racemization",
+        "d": "Dating organic material through changes in amino acid forms"
+      },
+      {
+        "w": "fission-track dating",
+        "d": "Dating minerals by tracks left from uranium fission"
+      },
+      {
+        "w": "rubidium-strontium dating",
+        "d": "Radiometric method using decay from rubidium to strontium"
+      },
+      {
+        "w": "electron spin resonance",
+        "d": "Dating trapped charges in tooth enamel, shells or sediments"
+      },
+      {
+        "w": "optically stimulated luminescence",
+        "d": "Dating the last exposure of sediments to light"
+      },
+      {
+        "w": "varve chronology",
+        "d": "Dating by annual lake-sediment layers"
+      },
+      {
+        "w": "lichenometry",
+        "d": "Dating exposed rock surfaces by lichen growth"
+      },
+      {
+        "w": "obsidian hydration",
+        "d": "Dating obsidian artifacts by hydration-rind thickness"
+      },
+      {
+        "w": "palynology",
+        "d": "Dating and reconstructing environments through pollen records"
+      },
+      {
+        "w": "uranium-series dating",
+        "d": "Radiometric dating using uranium decay chains"
+      },
+      {
+        "w": "cosmogenic nuclide dating",
+        "d": "Dating exposed surfaces through isotopes made by cosmic rays"
+      },
+      {
+        "w": "archaeomagnetic dating",
+        "d": "Dating fired features by past magnetic-field directions"
+      },
+      {
+        "w": "tephrochronology",
+        "d": "Dating layers by matching volcanic ash deposits"
+      },
+      {
+        "w": "samarium-neodymium dating",
+        "d": "Radiometric method used for ancient rocks"
+      },
+      {
+        "w": "rhenium-osmium dating",
+        "d": "Isotope method useful for sulfide minerals and sediments"
+      },
+      {
+        "w": "magnetostratigraphy",
+        "d": "Dating rock sequences through magnetic reversals"
+      },
+      {
+        "w": "seriation",
+        "d": "Relative dating by ordering artifacts into stylistic sequences"
+      },
+      {
+        "w": "iconographic dating",
+        "d": "Dating by identifiable imagery and visual conventions"
+      },
+      {
+        "w": "numismatic dating",
+        "d": "Dating contexts through coins and minting evidence"
+      },
+      {
+        "w": "DNA chronometry",
+        "d": "Estimating time from genetic change and ancient DNA"
+      },
+      {
+        "w": "biostratigraphy",
+        "d": "Dating strata through fossil assemblages"
+      },
+      {
+        "w": "strontium isotope analysis",
+        "d": "Method using strontium ratios to infer origin and movement"
+      },
+      {
+        "w": "chlorine-36 dating",
+        "d": "Cosmogenic isotope method for exposed rocks and surfaces"
+      },
+      {
+        "w": "archaeometric dating",
+        "d": "Scientific dating of archaeological materials by laboratory methods"
+      },
+      {
+        "w": "weathering-rind dating",
+        "d": "Dating exposed stone by the thickness of weathered surfaces"
+      },
+      {
+        "w": "archaeomagnetic intensity dating",
+        "d": "Dating fired materials by recorded magnetic-field strength"
+      }
+    ]
+  },
+  {
+    "name": "engine types & propulsion systems",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "internal combustion engine",
+        "d": "Engine that burns fuel inside the working chamber"
+      },
+      {
+        "w": "diesel engine",
+        "d": "Compression-ignition internal combustion engine"
+      },
+      {
+        "w": "gasoline engine",
+        "d": "Spark-ignition internal combustion engine"
+      },
+      {
+        "w": "Wankel rotary engine",
+        "d": "Engine using a rotating triangular rotor instead of pistons"
+      },
+      {
+        "w": "gas turbine",
+        "d": "Engine extracting power from hot gas through turbine stages"
+      },
+      {
+        "w": "turbojet",
+        "d": "Jet engine producing thrust from a high-speed exhaust stream"
+      },
+      {
+        "w": "liquid rocket engine",
+        "d": "Rocket engine burning liquid propellants"
+      },
+      {
+        "w": "electric motor",
+        "d": "Machine converting electrical energy into mechanical motion"
+      },
+      {
+        "w": "stepper motor",
+        "d": "Motor moving in discrete angular steps"
+      },
+      {
+        "w": "induction motor",
+        "d": "AC motor driven by electromagnetic induction in the rotor"
+      },
+      {
+        "w": "synchronous motor",
+        "d": "AC motor whose rotor turns in step with the supply frequency"
+      },
+      {
+        "w": "linear motor",
+        "d": "Motor that produces linear motion instead of rotation"
+      },
+      {
+        "w": "reciprocating steam engine",
+        "d": "Piston engine powered by steam pressure"
+      },
+      {
+        "w": "steam turbine",
+        "d": "Turbine driven by high-pressure steam"
+      },
+      {
+        "w": "Stirling engine",
+        "d": "External-combustion engine using a sealed working gas"
+      },
+      {
+        "w": "Hall-effect thruster",
+        "d": "Electric spacecraft thruster using a plasma discharge"
+      },
+      {
+        "w": "ion thruster",
+        "d": "Electric propulsion system accelerating ions"
+      },
+      {
+        "w": "plasma engine",
+        "d": "Propulsion system using ionized gas as the working medium"
+      },
+      {
+        "w": "boxer engine",
+        "d": "Flat engine with opposed pistons moving horizontally"
+      },
+      {
+        "w": "V engine",
+        "d": "Engine with cylinders arranged in two angled banks"
+      },
+      {
+        "w": "inline engine",
+        "d": "Engine with cylinders arranged in a single line"
+      },
+      {
+        "w": "turboprop",
+        "d": "Gas turbine driving a propeller"
+      },
+      {
+        "w": "turbofan",
+        "d": "Jet engine using a fan to move bypass air"
+      },
+      {
+        "w": "turboshaft",
+        "d": "Gas turbine designed to deliver shaft power"
+      },
+      {
+        "w": "pulsejet",
+        "d": "Jet engine with intermittent combustion pulses"
+      },
+      {
+        "w": "ramjet",
+        "d": "Air-breathing jet engine with no compressor"
+      },
+      {
+        "w": "scramjet",
+        "d": "Supersonic-combustion ramjet for very high speeds"
+      },
+      {
+        "w": "hydrogen engine",
+        "d": "Engine using hydrogen as fuel"
+      },
+      {
+        "w": "nuclear thermal rocket",
+        "d": "Rocket heated by a nuclear reactor rather than combustion"
+      },
+      {
+        "w": "solar sail",
+        "d": "Propulsion system using radiation pressure from sunlight"
+      },
+      {
+        "w": "combined-cycle plant",
+        "d": "Power system combining gas and steam turbine cycles"
+      },
+      {
+        "w": "hybrid engine",
+        "d": "Propulsion system combining two power sources or modes"
+      },
+      {
+        "w": "magnetohydrodynamic drive",
+        "d": "Drive concept that moves conductive fluid with magnetic fields"
+      },
+      {
+        "w": "detonation engine",
+        "d": "Engine using detonation waves for combustion"
+      },
+      {
+        "w": "pneumatic motor",
+        "d": "Motor powered by compressed air"
+      }
+    ]
+  },
+  {
+    "name": "writing systems",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Latin alphabet",
+        "d": "Alphabet used for English and many other languages"
+      },
+      {
+        "w": "Cyrillic script",
+        "d": "Script used for Russian, Bulgarian, Serbian and other languages"
+      },
+      {
+        "w": "Arabic script",
+        "d": "Right-to-left script used for Arabic, Persian, Urdu and others"
+      },
+      {
+        "w": "Devanagari",
+        "d": "Abugida used for Hindi, Sanskrit, Marathi and Nepali"
+      },
+      {
+        "w": "Chinese characters",
+        "d": "Logographic writing system used in Chinese and historically across East Asia"
+      },
+      {
+        "w": "hiragana",
+        "d": "Japanese syllabary used for native words and grammar"
+      },
+      {
+        "w": "katakana",
+        "d": "Japanese syllabary often used for loanwords and emphasis"
+      },
+      {
+        "w": "Hangul",
+        "d": "Korean alphabet created in the fifteenth century"
+      },
+      {
+        "w": "Georgian script",
+        "d": "Distinctive script used for the Georgian language"
+      },
+      {
+        "w": "Armenian script",
+        "d": "Alphabet created for Armenian in the early fifth century"
+      },
+      {
+        "w": "Thai script",
+        "d": "Abugida used for the Thai language"
+      },
+      {
+        "w": "Tibetan script",
+        "d": "Abugida used for Tibetan and related languages"
+      },
+      {
+        "w": "Ge’ez script",
+        "d": "Ethiopic abugida used for Amharic, Tigrinya and liturgy"
+      },
+      {
+        "w": "Hebrew alphabet",
+        "d": "Consonantal alphabet used for Hebrew and Yiddish"
+      },
+      {
+        "w": "Egyptian hieroglyphs",
+        "d": "Ancient Egyptian writing with pictorial signs"
+      },
+      {
+        "w": "cuneiform",
+        "d": "Wedge-shaped writing used in Mesopotamia"
+      },
+      {
+        "w": "runes",
+        "d": "Runic letters used by Germanic peoples"
+      },
+      {
+        "w": "Glagolitic script",
+        "d": "Old Slavic script associated with Cyril and Methodius"
+      },
+      {
+        "w": "Phoenician alphabet",
+        "d": "Ancient consonantal alphabet influential for later scripts"
+      },
+      {
+        "w": "Brahmi script",
+        "d": "Ancient South Asian script ancestral to many Indic scripts"
+      },
+      {
+        "w": "Tamil script",
+        "d": "Abugida used for Tamil"
+      },
+      {
+        "w": "Bengali script",
+        "d": "Abugida used for Bengali and Assamese"
+      },
+      {
+        "w": "Sinhala script",
+        "d": "Script used for Sinhala in Sri Lanka"
+      },
+      {
+        "w": "Braille",
+        "d": "Tactile writing system read by touch"
+      },
+      {
+        "w": "Khmer script",
+        "d": "Abugida used for Khmer in Cambodia"
+      },
+      {
+        "w": "Cherokee syllabary",
+        "d": "Syllabary created by Sequoyah for the Cherokee language"
+      },
+      {
+        "w": "Mongolian script",
+        "d": "Vertical script used historically for Mongolian"
+      },
+      {
+        "w": "Syriac script",
+        "d": "Aramaic-derived script used in Syriac Christian traditions"
+      },
+      {
+        "w": "N’Ko script",
+        "d": "Alphabet created for Mande languages of West Africa"
+      },
+      {
+        "w": "Lao script",
+        "d": "Abugida used for Lao"
+      },
+      {
+        "w": "Chữ Nôm",
+        "d": "Vietnamese logographic script based on Chinese characters"
+      },
+      {
+        "w": "Greek alphabet",
+        "d": "Alphabet used for Greek and scientific notation"
+      },
+      {
+        "w": "Canadian Aboriginal syllabics",
+        "d": "Syllabic writing system used for Cree, Inuktitut and others"
+      },
+      {
+        "w": "Tifinagh",
+        "d": "Script used for Amazigh languages"
+      },
+      {
+        "w": "SignWriting",
+        "d": "Writing system for recording sign languages"
+      }
+    ]
+  },
+  {
+    "name": "precipitation & atmospheric phenomena",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "rain",
+        "d": "Liquid precipitation falling from clouds"
+      },
+      {
+        "w": "snow",
+        "d": "Ice crystals falling as precipitation"
+      },
+      {
+        "w": "hail",
+        "d": "Balls or lumps of ice produced in strong thunderstorms"
+      },
+      {
+        "w": "drizzle",
+        "d": "Very small liquid drops falling close together"
+      },
+      {
+        "w": "freezing rain",
+        "d": "Rain that freezes on contact with cold surfaces"
+      },
+      {
+        "w": "rime",
+        "d": "Ice deposit formed when supercooled droplets freeze on surfaces"
+      },
+      {
+        "w": "dew",
+        "d": "Water droplets condensing on cool surfaces near the ground"
+      },
+      {
+        "w": "frost",
+        "d": "Ice crystals deposited on surfaces below freezing"
+      },
+      {
+        "w": "glaze ice",
+        "d": "Smooth ice coating formed by freezing rain or drizzle"
+      },
+      {
+        "w": "black ice",
+        "d": "Thin transparent ice layer on roads or pavements"
+      },
+      {
+        "w": "fog",
+        "d": "Suspension of tiny water droplets near the ground"
+      },
+      {
+        "w": "smog",
+        "d": "Air pollution mixed with fog or haze"
+      },
+      {
+        "w": "haze",
+        "d": "Reduced visibility from fine particles in the air"
+      },
+      {
+        "w": "sleet",
+        "d": "Mixed precipitation of rain and partially frozen drops or ice pellets"
+      },
+      {
+        "w": "snowstorm",
+        "d": "Storm with substantial snowfall"
+      },
+      {
+        "w": "blowing snow",
+        "d": "Snow lifted and driven by wind"
+      },
+      {
+        "w": "tornado",
+        "d": "Violently rotating column of air reaching the ground"
+      },
+      {
+        "w": "waterspout",
+        "d": "Tornado-like vortex over water"
+      },
+      {
+        "w": "hurricane",
+        "d": "Large tropical cyclone in the Atlantic or eastern Pacific"
+      },
+      {
+        "w": "typhoon",
+        "d": "Large tropical cyclone in the western Pacific"
+      },
+      {
+        "w": "thunderstorm",
+        "d": "Storm with lightning and thunder"
+      },
+      {
+        "w": "lightning",
+        "d": "Electrical discharge in the atmosphere"
+      },
+      {
+        "w": "ball lightning",
+        "d": "Rare luminous atmospheric phenomenon reported during storms"
+      },
+      {
+        "w": "rainbow",
+        "d": "Optical arc formed by reflection and refraction in droplets"
+      },
+      {
+        "w": "22-degree halo",
+        "d": "Optical ring around the Sun or Moon caused by ice crystals"
+      },
+      {
+        "w": "mirage",
+        "d": "Optical distortion caused by layers of air at different temperatures"
+      },
+      {
+        "w": "aurora",
+        "d": "Polar light display caused by charged particles in the upper atmosphere"
+      },
+      {
+        "w": "heat lightning",
+        "d": "Distant lightning seen without audible thunder"
+      },
+      {
+        "w": "dry wind",
+        "d": "Hot dry wind that can intensify heat and drought"
+      },
+      {
+        "w": "dust storm",
+        "d": "Storm carrying large amounts of dust or sand"
+      },
+      {
+        "w": "foehn",
+        "d": "Warm dry downslope wind on the lee side of mountains"
+      },
+      {
+        "w": "graupel",
+        "d": "Soft pellets of snow rimed by supercooled droplets"
+      },
+      {
+        "w": "virga",
+        "d": "Precipitation that evaporates before reaching the ground"
+      },
+      {
+        "w": "squall",
+        "d": "Sudden sharp increase in wind speed"
+      },
+      {
+        "w": "diamond dust",
+        "d": "Tiny ice crystals suspended in very cold air"
+      }
+    ]
+  },
+  {
+    "name": "neuroimaging methods",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "structural MRI",
+        "d": "Magnetic resonance imaging used to show brain anatomy"
+      },
+      {
+        "w": "fMRI",
+        "d": "Functional MRI measuring brain activity through blood-oxygen changes"
+      },
+      {
+        "w": "CT",
+        "d": "Computed tomography using X-rays to create cross-sectional images"
+      },
+      {
+        "w": "PET",
+        "d": "Positron emission tomography showing metabolic or molecular activity"
+      },
+      {
+        "w": "SPECT",
+        "d": "Single-photon emission computed tomography for functional imaging"
+      },
+      {
+        "w": "EEG",
+        "d": "Recording of electrical brain activity from scalp electrodes"
+      },
+      {
+        "w": "MEG",
+        "d": "Recording of magnetic fields produced by neural activity"
+      },
+      {
+        "w": "diffusion tensor imaging",
+        "d": "MRI method mapping white-matter fiber direction"
+      },
+      {
+        "w": "transcranial Doppler",
+        "d": "Ultrasound method measuring blood flow in brain vessels"
+      },
+      {
+        "w": "near-infrared spectroscopy",
+        "d": "Optical method tracking oxygenation through near-infrared light"
+      },
+      {
+        "w": "voxel-based morphometry",
+        "d": "MRI analysis comparing local brain-tissue volumes"
+      },
+      {
+        "w": "tractography",
+        "d": "Reconstruction of white-matter pathways from diffusion data"
+      },
+      {
+        "w": "cerebral angiography",
+        "d": "Imaging of blood vessels in the brain"
+      },
+      {
+        "w": "myelography",
+        "d": "Imaging of the spinal canal after contrast injection"
+      },
+      {
+        "w": "fNIRS",
+        "d": "Functional near-infrared spectroscopy of brain activity"
+      },
+      {
+        "w": "magnetic resonance spectroscopy",
+        "d": "MRI-based method estimating tissue chemical composition"
+      },
+      {
+        "w": "perfusion imaging",
+        "d": "Imaging of blood flow through brain tissue"
+      },
+      {
+        "w": "skull radiography",
+        "d": "X-ray imaging of the skull"
+      },
+      {
+        "w": "ultrasonography",
+        "d": "Imaging using high-frequency sound waves"
+      },
+      {
+        "w": "neurosonography",
+        "d": "Ultrasound imaging of the brain, often through infant fontanelles"
+      },
+      {
+        "w": "electrocorticography",
+        "d": "Recording brain activity from electrodes placed on the cortex"
+      },
+      {
+        "w": "stereo-EEG",
+        "d": "Depth-electrode recording used to localize epileptic activity"
+      },
+      {
+        "w": "two-photon microscopy",
+        "d": "Microscopy method for imaging living neural tissue in depth"
+      },
+      {
+        "w": "resting-state fMRI",
+        "d": "fMRI method studying connectivity while the subject performs no task"
+      },
+      {
+        "w": "amyloid PET",
+        "d": "PET imaging of amyloid plaques in the brain"
+      },
+      {
+        "w": "calcium imaging",
+        "d": "Optical method tracking neural activity through calcium signals"
+      },
+      {
+        "w": "optogenetics",
+        "d": "Light-based method for controlling and observing genetically modified neurons"
+      },
+      {
+        "w": "CLARITY",
+        "d": "Tissue-clearing method that makes brain structures optically accessible"
+      },
+      {
+        "w": "PET-CT",
+        "d": "Hybrid imaging combining positron emission tomography and CT"
+      },
+      {
+        "w": "MR spectroscopy",
+        "d": "Magnetic resonance method for measuring metabolites"
+      },
+      {
+        "w": "serial block-face electron microscopy",
+        "d": "Electron microscopy technique for 3D neural ultrastructure"
+      },
+      {
+        "w": "invasive ECoG",
+        "d": "Electrocorticography performed with implanted cortical electrodes"
+      },
+      {
+        "w": "navigated TMS",
+        "d": "Magnetically guided stimulation mapped to individual brain anatomy"
+      },
+      {
+        "w": "positron autoradiography",
+        "d": "Tracer method visualizing radioactive positron-emitting molecules in tissue"
+      },
+      {
+        "w": "high-field fMRI",
+        "d": "Functional MRI performed on very high magnetic-field scanners"
+      }
+    ]
+  },
+  {
+    "name": "microorganism types",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "bacterium",
+        "d": "Single-celled prokaryotic microorganism"
+      },
+      {
+        "w": "virus",
+        "d": "Infectious agent that replicates only inside host cells"
+      },
+      {
+        "w": "archaeon",
+        "d": "Prokaryotic microorganism from the domain Archaea"
+      },
+      {
+        "w": "fungus",
+        "d": "Eukaryotic organism including yeasts and molds"
+      },
+      {
+        "w": "protozoan",
+        "d": "Single-celled eukaryotic organism, often motile"
+      },
+      {
+        "w": "bacteriophage",
+        "d": "Virus that infects bacteria"
+      },
+      {
+        "w": "plasmid",
+        "d": "Small DNA molecule that can replicate separately from chromosomes"
+      },
+      {
+        "w": "prion",
+        "d": "Misfolded infectious protein causing transmissible disease"
+      },
+      {
+        "w": "viroid",
+        "d": "Tiny infectious RNA molecule affecting plants"
+      },
+      {
+        "w": "mycoplasma",
+        "d": "Very small bacterium lacking a cell wall"
+      },
+      {
+        "w": "spirochete",
+        "d": "Spiral-shaped bacterium with corkscrew motility"
+      },
+      {
+        "w": "rickettsia",
+        "d": "Intracellular bacterial parasite often spread by arthropods"
+      },
+      {
+        "w": "chlamydia",
+        "d": "Intracellular bacterium with a distinctive life cycle"
+      },
+      {
+        "w": "actinomycete",
+        "d": "Filamentous bacterium often important in soil and antibiotics"
+      },
+      {
+        "w": "cyanobacterium",
+        "d": "Photosynthetic bacterium that produces oxygen"
+      },
+      {
+        "w": "yeast",
+        "d": "Single-celled fungus used in fermentation"
+      },
+      {
+        "w": "mold",
+        "d": "Filamentous fungus growing as hyphae"
+      },
+      {
+        "w": "amoeba",
+        "d": "Protozoan that moves by pseudopods"
+      },
+      {
+        "w": "ciliate",
+        "d": "Protozoan covered with short hairlike cilia"
+      },
+      {
+        "w": "flagellate",
+        "d": "Microorganism moving with one or more flagella"
+      },
+      {
+        "w": "apicomplexan",
+        "d": "Parasitic protozoan group that includes malaria parasites"
+      },
+      {
+        "w": "diatom",
+        "d": "Photosynthetic microalga with a silica shell"
+      },
+      {
+        "w": "chlorella",
+        "d": "Green microalga often studied for photosynthesis and biomass"
+      },
+      {
+        "w": "euglena",
+        "d": "Flagellated protist with both plantlike and animal-like traits"
+      },
+      {
+        "w": "spirulina",
+        "d": "Cyanobacterial biomass used as a dietary supplement"
+      },
+      {
+        "w": "thermophile",
+        "d": "Microorganism adapted to high temperatures"
+      },
+      {
+        "w": "methanogen",
+        "d": "Archaeon that produces methane"
+      },
+      {
+        "w": "halophile",
+        "d": "Microorganism adapted to high salt concentrations"
+      },
+      {
+        "w": "nitrogen-fixing bacterium",
+        "d": "Bacterium converting atmospheric nitrogen into usable compounds"
+      },
+      {
+        "w": "retrovirus",
+        "d": "RNA virus that copies its genome into DNA"
+      },
+      {
+        "w": "nitrifier",
+        "d": "Microorganism that oxidizes ammonia or nitrite"
+      },
+      {
+        "w": "Deinococcus radiodurans",
+        "d": "Bacterium famous for extreme radiation resistance"
+      },
+      {
+        "w": "mycorrhiza",
+        "d": "Symbiotic association between fungi and plant roots"
+      },
+      {
+        "w": "oomycete",
+        "d": "Fungus-like eukaryote including many plant pathogens"
+      },
+      {
+        "w": "zoospore",
+        "d": "Motile spore produced by some algae, fungi and oomycetes"
+      }
+    ]
+  },
+  {
+    "name": "great economists",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Milton Friedman",
+        "d": "Monetarist economist associated with inflation and money supply"
+      },
+      {
+        "w": "John Maynard Keynes",
+        "d": "Economist whose work reshaped macroeconomics and fiscal policy"
+      },
+      {
+        "w": "Paul Samuelson",
+        "d": "Economist who helped formalize modern economics"
+      },
+      {
+        "w": "Friedrich Hayek",
+        "d": "Austrian-school economist and critic of central planning"
+      },
+      {
+        "w": "John Nash",
+        "d": "Mathematician whose equilibrium concept transformed game theory"
+      },
+      {
+        "w": "Amartya Sen",
+        "d": "Economist of welfare, capabilities and famine"
+      },
+      {
+        "w": "Joseph Stiglitz",
+        "d": "Economist known for information asymmetry and public policy"
+      },
+      {
+        "w": "Daniel Kahneman",
+        "d": "Psychologist whose work helped create behavioral economics"
+      },
+      {
+        "w": "Paul Krugman",
+        "d": "Economist known for trade theory and economic geography"
+      },
+      {
+        "w": "Richard Thaler",
+        "d": "Behavioral economist associated with nudges and mental accounting"
+      },
+      {
+        "w": "George Akerlof",
+        "d": "Economist known for the market for lemons"
+      },
+      {
+        "w": "Kenneth Arrow",
+        "d": "Economist known for social choice theory and general equilibrium"
+      },
+      {
+        "w": "Ronald Coase",
+        "d": "Economist known for transaction costs and property rights"
+      },
+      {
+        "w": "Franco Modigliani",
+        "d": "Economist known for life-cycle saving and corporate finance"
+      },
+      {
+        "w": "Jean Tirole",
+        "d": "Economist of industrial organization and regulation"
+      },
+      {
+        "w": "Adam Smith",
+        "d": "Classical economist associated with markets and The Wealth of Nations"
+      },
+      {
+        "w": "David Ricardo",
+        "d": "Classical economist known for comparative advantage"
+      },
+      {
+        "w": "Thomas Malthus",
+        "d": "Economist known for population theory"
+      },
+      {
+        "w": "Robert Shiller",
+        "d": "Economist of asset prices and speculative bubbles"
+      },
+      {
+        "w": "James Heckman",
+        "d": "Economist known for selection bias and human-capital research"
+      },
+      {
+        "w": "Robert Merton",
+        "d": "Economist of finance and option-pricing theory"
+      },
+      {
+        "w": "George Stigler",
+        "d": "Economist known for regulation and information economics"
+      },
+      {
+        "w": "Hyman Minsky",
+        "d": "Economist associated with financial instability"
+      },
+      {
+        "w": "Arthur Lewis",
+        "d": "Development economist known for the dual-sector model"
+      },
+      {
+        "w": "Lawrence Klein",
+        "d": "Econometrician known for macroeconomic models"
+      },
+      {
+        "w": "Léon Walras",
+        "d": "Economist associated with general equilibrium theory"
+      },
+      {
+        "w": "Alfred Marshall",
+        "d": "Neoclassical economist known for supply and demand analysis"
+      },
+      {
+        "w": "Joseph Schumpeter",
+        "d": "Economist of innovation and creative destruction"
+      },
+      {
+        "w": "Thorstein Veblen",
+        "d": "Economist and social critic of conspicuous consumption"
+      },
+      {
+        "w": "Carl Menger",
+        "d": "Founder of the Austrian school of economics"
+      },
+      {
+        "w": "Wassily Leontief",
+        "d": "Economist known for input-output analysis"
+      },
+      {
+        "w": "Douglass North",
+        "d": "Economist known for institutions and economic history"
+      },
+      {
+        "w": "Elinor Ostrom",
+        "d": "Political economist of commons governance"
+      },
+      {
+        "w": "Gary Becker",
+        "d": "Economist applying economics to human behavior and family life"
+      },
+      {
+        "w": "Robert Solow",
+        "d": "Economist known for growth theory"
+      }
+    ]
+  },
+  {
+    "name": "Nobel Peace Prize laureates",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Nelson Mandela",
+        "d": "Co-laureate for ending apartheid and building democratic South Africa"
+      },
+      {
+        "w": "F. W. de Klerk",
+        "d": "Co-laureate with Mandela for South Africa’s peaceful transition"
+      },
+      {
+        "w": "Mother Teresa",
+        "d": "Laureate honored for humanitarian work with the poor"
+      },
+      {
+        "w": "Lech Wałęsa",
+        "d": "Solidarity leader and Polish laureate"
+      },
+      {
+        "w": "Mikhail Gorbachev",
+        "d": "Laureate for his role in ending Cold War tensions"
+      },
+      {
+        "w": "Yasser Arafat",
+        "d": "Co-laureate for the Oslo peace process"
+      },
+      {
+        "w": "Shimon Peres",
+        "d": "Co-laureate for the Oslo peace process"
+      },
+      {
+        "w": "Emily Greene Balch",
+        "d": "Pacifist and social reformer awarded after World War II"
+      },
+      {
+        "w": "Andrei Sakharov",
+        "d": "Soviet physicist and human-rights laureate"
+      },
+      {
+        "w": "Liu Xiaobo",
+        "d": "Chinese writer and human-rights laureate"
+      },
+      {
+        "w": "Malala Yousafzai",
+        "d": "Laureate for advocacy of girls’ education"
+      },
+      {
+        "w": "Kailash Satyarthi",
+        "d": "Indian activist honored for work against child labor"
+      },
+      {
+        "w": "Ralph Bunche",
+        "d": "Diplomat awarded for mediation in the Arab-Israeli conflict"
+      },
+      {
+        "w": "Desmond Tutu",
+        "d": "South African cleric and anti-apartheid laureate"
+      },
+      {
+        "w": "Albert Schweitzer",
+        "d": "Doctor and humanitarian honored for reverence-for-life ethics"
+      },
+      {
+        "w": "Fridtjof Nansen",
+        "d": "Explorer and humanitarian honored for refugee work"
+      },
+      {
+        "w": "Shirin Ebadi",
+        "d": "Iranian lawyer and human-rights laureate"
+      },
+      {
+        "w": "Rigoberta Menchú",
+        "d": "Guatemalan Indigenous rights activist and laureate"
+      },
+      {
+        "w": "Muhammad Yunus",
+        "d": "Founder of Grameen Bank and microcredit laureate"
+      },
+      {
+        "w": "Jane Addams",
+        "d": "Social reformer and peace activist awarded in 1931"
+      },
+      {
+        "w": "Mohamed ElBaradei",
+        "d": "IAEA director honored for work against nuclear proliferation"
+      },
+      {
+        "w": "Aung San Suu Kyi",
+        "d": "Myanmar opposition leader awarded while under house arrest"
+      },
+      {
+        "w": "Tawakkol Karman",
+        "d": "Yemeni activist and Arab Spring laureate"
+      },
+      {
+        "w": "Denis Mukwege",
+        "d": "Doctor honored for work with survivors of sexual violence"
+      },
+      {
+        "w": "Bertha von Suttner",
+        "d": "Pacifist writer and early Peace Prize laureate"
+      },
+      {
+        "w": "Martti Ahtisaari",
+        "d": "Finnish mediator and peace negotiator"
+      },
+      {
+        "w": "International Committee of the Red Cross",
+        "d": "Organization awarded repeatedly for humanitarian work in war"
+      },
+      {
+        "w": "Elie Wiesel",
+        "d": "Holocaust survivor and writer honored for human-rights advocacy"
+      },
+      {
+        "w": "Al Gore",
+        "d": "Co-laureate for climate-change awareness work"
+      },
+      {
+        "w": "Le Duc Tho",
+        "d": "Vietnamese negotiator who declined the Peace Prize"
+      },
+      {
+        "w": "Leymah Gbowee",
+        "d": "Liberian peace activist and women’s movement leader"
+      },
+      {
+        "w": "Óscar Arias Sánchez",
+        "d": "Costa Rican president honored for Central American peace efforts"
+      },
+      {
+        "w": "Wangari Maathai",
+        "d": "Kenyan environmentalist and Green Belt Movement founder"
+      },
+      {
+        "w": "ICAN",
+        "d": "Campaign awarded for work toward banning nuclear weapons"
+      },
+      {
+        "w": "Juan Manuel Santos",
+        "d": "Colombian president honored for the FARC peace agreement"
+      }
+    ]
+  },
+  {
+    "name": "dissidents & opposition figures",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Václav Havel",
+        "d": "Czech dissident playwright who became president after the Velvet Revolution"
+      },
+      {
+        "w": "Adam Michnik",
+        "d": "Polish dissident and Solidarity intellectual"
+      },
+      {
+        "w": "Natan Sharansky",
+        "d": "Soviet refusenik and human-rights activist"
+      },
+      {
+        "w": "Oswaldo Payá",
+        "d": "Cuban opposition activist behind the Varela Project"
+      },
+      {
+        "w": "Alexander Dubček",
+        "d": "Czechoslovak reformer associated with the Prague Spring"
+      },
+      {
+        "w": "Natalia Gorbanevskaya",
+        "d": "Soviet dissident who protested the invasion of Czechoslovakia"
+      },
+      {
+        "w": "Andrei Sinyavsky",
+        "d": "Soviet writer tried for publishing works abroad"
+      },
+      {
+        "w": "Yuli Daniel",
+        "d": "Soviet writer tried alongside Sinyavsky"
+      },
+      {
+        "w": "Vladimir Bukovsky",
+        "d": "Soviet dissident who exposed psychiatric abuse"
+      },
+      {
+        "w": "Mustafa Dzhemilev",
+        "d": "Crimean Tatar rights leader and Soviet dissident"
+      },
+      {
+        "w": "Elena Bonner",
+        "d": "Soviet human-rights activist and public intellectual"
+      },
+      {
+        "w": "Larisa Bogoraz",
+        "d": "Dissident who joined the 1968 Red Square demonstration"
+      },
+      {
+        "w": "Pyotr Grigorenko",
+        "d": "Soviet general turned dissident and rights defender"
+      },
+      {
+        "w": "Sergei Kovalev",
+        "d": "Russian human-rights activist and former dissident"
+      },
+      {
+        "w": "Lyudmila Alexeyeva",
+        "d": "Historian of Soviet dissent and rights activist"
+      },
+      {
+        "w": "Vladimir Kara-Murza",
+        "d": "Russian opposition politician and political prisoner"
+      },
+      {
+        "w": "Ilya Yashin",
+        "d": "Russian opposition politician and political prisoner"
+      },
+      {
+        "w": "Mikhail Khodorkovsky",
+        "d": "Russian former oligarch turned opposition figure"
+      },
+      {
+        "w": "Alexei Navalny",
+        "d": "Russian opposition leader known for anti-corruption investigations"
+      },
+      {
+        "w": "Sviatlana Tsikhanouskaya",
+        "d": "Belarusian opposition leader after the 2020 election"
+      },
+      {
+        "w": "Juan Guaidó",
+        "d": "Venezuelan opposition politician recognized by many states as interim president"
+      },
+      {
+        "w": "Wei Jingsheng",
+        "d": "Chinese democracy activist known for the Fifth Modernization essay"
+      },
+      {
+        "w": "Fang Lizhi",
+        "d": "Chinese astrophysicist and democracy advocate"
+      },
+      {
+        "w": "Chen Guangcheng",
+        "d": "Chinese legal activist known for rural rights cases"
+      },
+      {
+        "w": "Ai Weiwei",
+        "d": "Chinese artist and critic of state censorship"
+      },
+      {
+        "w": "Alexander Yesenin-Volpin",
+        "d": "Soviet mathematician and rights activist"
+      },
+      {
+        "w": "Grigory Pomerants",
+        "d": "Soviet philosopher and dissident essayist"
+      },
+      {
+        "w": "Merab Kostava",
+        "d": "Georgian dissident and independence activist"
+      },
+      {
+        "w": "Vyacheslav Chornovil",
+        "d": "Ukrainian dissident and independence politician"
+      },
+      {
+        "w": "Milovan Djilas",
+        "d": "Yugoslav communist official turned dissident"
+      },
+      {
+        "w": "Zhelyu Zhelev",
+        "d": "Bulgarian dissident and later president"
+      },
+      {
+        "w": "Jan Palach",
+        "d": "Czech student who self-immolated after the Soviet invasion"
+      },
+      {
+        "w": "Liu Xia",
+        "d": "Chinese poet and widow of Liu Xiaobo"
+      },
+      {
+        "w": "Ken Saro-Wiwa",
+        "d": "Nigerian writer and Ogoni rights activist executed by the regime"
+      },
+      {
+        "w": "José Diokno",
+        "d": "Filipino senator and human-rights opposition figure under Marcos"
+      }
+    ]
+  },
+  {
+    "name": "political assassinations",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Franz Ferdinand assassination",
+        "d": "Sarajevo killing that helped trigger World War I"
+      },
+      {
+        "w": "Lincoln assassination",
+        "d": "1865 murder of the U.S. president by John Wilkes Booth"
+      },
+      {
+        "w": "JFK assassination",
+        "d": "1963 murder of John F. Kennedy in Dallas"
+      },
+      {
+        "w": "King assassination",
+        "d": "1968 murder of civil-rights leader Martin Luther King Jr."
+      },
+      {
+        "w": "Anwar Sadat assassination",
+        "d": "1981 killing of the Egyptian president during a military parade"
+      },
+      {
+        "w": "Rabin assassination",
+        "d": "1995 killing of the Israeli prime minister by an extremist"
+      },
+      {
+        "w": "Benazir Bhutto assassination",
+        "d": "2007 killing of Pakistan’s former prime minister after a rally"
+      },
+      {
+        "w": "Oscar Romero assassination",
+        "d": "1980 murder of the Salvadoran archbishop during Mass"
+      },
+      {
+        "w": "Salvador Allende death",
+        "d": "Death of Chile’s president during the 1973 coup"
+      },
+      {
+        "w": "Trotsky assassination",
+        "d": "1940 ice-axe murder of Leon Trotsky in Mexico"
+      },
+      {
+        "w": "Olof Palme assassination",
+        "d": "1986 murder of Sweden’s prime minister in Stockholm"
+      },
+      {
+        "w": "Aldo Moro murder",
+        "d": "1978 killing of the Italian statesman by the Red Brigades"
+      },
+      {
+        "w": "Malcolm X assassination",
+        "d": "1965 killing of the Black nationalist leader in New York"
+      },
+      {
+        "w": "Rajiv Gandhi assassination",
+        "d": "1991 suicide bombing that killed India’s former prime minister"
+      },
+      {
+        "w": "Indira Gandhi assassination",
+        "d": "1984 killing of India’s prime minister by her bodyguards"
+      },
+      {
+        "w": "Alexander II assassination",
+        "d": "1881 killing of the Russian emperor by Narodnaya Volya"
+      },
+      {
+        "w": "Stolypin assassination",
+        "d": "1911 killing of the Russian prime minister in Kyiv"
+      },
+      {
+        "w": "Rafic Hariri assassination",
+        "d": "2005 Beirut bombing that killed Lebanon’s former prime minister"
+      },
+      {
+        "w": "Kim Jong-nam assassination",
+        "d": "2017 nerve-agent killing of Kim Jong-un’s half-brother"
+      },
+      {
+        "w": "Litvinenko poisoning",
+        "d": "2006 polonium killing of former Russian officer Alexander Litvinenko"
+      },
+      {
+        "w": "Boris Nemtsov murder",
+        "d": "2015 killing of the Russian opposition politician near the Kremlin"
+      },
+      {
+        "w": "Anna Politkovskaya murder",
+        "d": "2006 killing of the Russian investigative journalist"
+      },
+      {
+        "w": "Jean Jaurès assassination",
+        "d": "1914 murder of the French socialist leader"
+      },
+      {
+        "w": "Benigno Aquino Jr. assassination",
+        "d": "1983 killing of the Filipino opposition leader at Manila airport"
+      },
+      {
+        "w": "Park Chung Hee assassination",
+        "d": "1979 killing of South Korea’s president by his intelligence chief"
+      },
+      {
+        "w": "Carlos I regicide",
+        "d": "1908 murder of the king of Portugal in Lisbon"
+      },
+      {
+        "w": "Walter Lübcke murder",
+        "d": "2019 killing of a German politician by a far-right extremist"
+      },
+      {
+        "w": "Georges Mandel murder",
+        "d": "1944 killing of the French politician by collaborationist militia"
+      },
+      {
+        "w": "Garfield assassination",
+        "d": "1881 murder of U.S. president James A. Garfield"
+      },
+      {
+        "w": "McKinley assassination",
+        "d": "1901 murder of U.S. president William McKinley"
+      },
+      {
+        "w": "Robert Kennedy assassination",
+        "d": "1968 killing of the U.S. senator after a primary victory"
+      },
+      {
+        "w": "Georgi Markov murder",
+        "d": "1978 ricin umbrella killing of the Bulgarian dissident"
+      },
+      {
+        "w": "Carrero Blanco assassination",
+        "d": "1973 ETA bombing that killed Spain’s prime minister"
+      },
+      {
+        "w": "Patrice Lumumba murder",
+        "d": "1961 killing of Congo’s first prime minister"
+      },
+      {
+        "w": "Thomas Sankara assassination",
+        "d": "1987 killing of Burkina Faso’s revolutionary leader"
+      }
+    ]
+  },
+  {
+    "name": "great mathematicians",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Alexander Grothendieck",
+        "d": "Mathematician who transformed algebraic geometry"
+      },
+      {
+        "w": "Michael Atiyah",
+        "d": "Geometer and Fields Medalist linked to the index theorem"
+      },
+      {
+        "w": "Jean-Pierre Serre",
+        "d": "Algebraic geometer and youngest Fields Medalist"
+      },
+      {
+        "w": "Stephen Smale",
+        "d": "Topologist known for the h-cobordism theorem"
+      },
+      {
+        "w": "William Thurston",
+        "d": "Mathematician who reshaped low-dimensional topology"
+      },
+      {
+        "w": "Shing-Tung Yau",
+        "d": "Geometer known for Calabi-Yau manifolds"
+      },
+      {
+        "w": "Andrew Wiles",
+        "d": "Mathematician who proved Fermat’s Last Theorem"
+      },
+      {
+        "w": "Grigori Perelman",
+        "d": "Mathematician who proved the Poincaré conjecture"
+      },
+      {
+        "w": "Maryam Mirzakhani",
+        "d": "Fields Medalist known for work on moduli spaces"
+      },
+      {
+        "w": "Terence Tao",
+        "d": "Mathematician known for breadth across analysis and number theory"
+      },
+      {
+        "w": "Euclid of Alexandria",
+        "d": "Ancient author of the Elements"
+      },
+      {
+        "w": "Archimedes",
+        "d": "Ancient mathematician of geometry, mechanics and approximation"
+      },
+      {
+        "w": "Pierre de Fermat",
+        "d": "Number theorist associated with Fermat’s Last Theorem"
+      },
+      {
+        "w": "Pierre-Simon Laplace",
+        "d": "Mathematician of probability and celestial mechanics"
+      },
+      {
+        "w": "Joseph Fourier",
+        "d": "Mathematician known for Fourier series and heat analysis"
+      },
+      {
+        "w": "Augustin-Louis Cauchy",
+        "d": "Founder figure in rigorous analysis"
+      },
+      {
+        "w": "Niels Henrik Abel",
+        "d": "Mathematician of elliptic functions and unsolvability results"
+      },
+      {
+        "w": "Évariste Galois",
+        "d": "Founder of group-theoretic approach to polynomial equations"
+      },
+      {
+        "w": "Karl Weierstrass",
+        "d": "Analyst known for rigorous foundations of calculus"
+      },
+      {
+        "w": "Heisuke Hironaka",
+        "d": "Fields Medalist known for resolution of singularities"
+      },
+      {
+        "w": "Pierre Deligne",
+        "d": "Mathematician known for the Weil conjectures"
+      },
+      {
+        "w": "Charles Fefferman",
+        "d": "Analyst and Fields Medalist"
+      },
+      {
+        "w": "Maxim Kontsevich",
+        "d": "Mathematician known for deformation quantization and mirror symmetry"
+      },
+      {
+        "w": "Carl Friedrich Gauss",
+        "d": "Mathematician called the prince of mathematicians"
+      },
+      {
+        "w": "Leonhard Euler",
+        "d": "Prolific mathematician of analysis, graph theory and notation"
+      },
+      {
+        "w": "Bernhard Riemann",
+        "d": "Mathematician of geometry, complex analysis and the zeta function"
+      },
+      {
+        "w": "Henri Poincaré",
+        "d": "Mathematician of topology, dynamics and celestial mechanics"
+      },
+      {
+        "w": "Isaac Newton",
+        "d": "Mathematician and physicist who developed calculus and mechanics"
+      },
+      {
+        "w": "Srinivasa Ramanujan",
+        "d": "Self-taught mathematician of number theory and infinite series"
+      },
+      {
+        "w": "David Hilbert",
+        "d": "Mathematician known for Hilbert spaces and famous problems"
+      },
+      {
+        "w": "Georg Cantor",
+        "d": "Founder of set theory and transfinite numbers"
+      },
+      {
+        "w": "John von Neumann",
+        "d": "Mathematician of operator theory, games and computing"
+      },
+      {
+        "w": "Kurt Gödel",
+        "d": "Logician known for incompleteness theorems"
+      },
+      {
+        "w": "Blaise Pascal",
+        "d": "Mathematician of probability, projective geometry and Pascal’s triangle"
+      },
+      {
+        "w": "André Weil",
+        "d": "Number theorist and founder of the Bourbaki group"
+      }
+    ]
+  },
+  {
+    "name": "world-class conductors",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Leonard Bernstein",
+        "d": "American conductor and composer of West Side Story"
+      },
+      {
+        "w": "Herbert von Karajan",
+        "d": "Austrian conductor long associated with the Berlin Philharmonic"
+      },
+      {
+        "w": "Sergiu Celibidache",
+        "d": "Romanian conductor known for intense rehearsal and tempo control"
+      },
+      {
+        "w": "Claudio Abbado",
+        "d": "Italian conductor of La Scala, Vienna and Berlin"
+      },
+      {
+        "w": "Riccardo Muti",
+        "d": "Italian conductor known for opera and symphonic repertory"
+      },
+      {
+        "w": "Valery Gergiev",
+        "d": "Russian conductor associated with the Mariinsky Theatre"
+      },
+      {
+        "w": "Yuri Temirkanov",
+        "d": "Russian conductor long linked with the St. Petersburg Philharmonic"
+      },
+      {
+        "w": "Karl Böhm",
+        "d": "Austrian conductor known for Mozart, Strauss and Wagner"
+      },
+      {
+        "w": "Carlos Kleiber",
+        "d": "Conductor famous for rare appearances and legendary recordings"
+      },
+      {
+        "w": "Bruno Walter",
+        "d": "Conductor associated with Mahler and the Austro-German repertoire"
+      },
+      {
+        "w": "Arturo Toscanini",
+        "d": "Italian conductor known for precision and NBC Symphony broadcasts"
+      },
+      {
+        "w": "Wilhelm Furtwängler",
+        "d": "German conductor known for flexible, monumental interpretations"
+      },
+      {
+        "w": "Simon Rattle",
+        "d": "British conductor of Birmingham, Berlin and London orchestras"
+      },
+      {
+        "w": "Gustavo Dudamel",
+        "d": "Venezuelan conductor associated with El Sistema"
+      },
+      {
+        "w": "Mariss Jansons",
+        "d": "Latvian conductor of major European orchestras"
+      },
+      {
+        "w": "Nikolaus Harnoncourt",
+        "d": "Conductor central to historically informed performance"
+      },
+      {
+        "w": "André Previn",
+        "d": "Conductor, pianist and composer active in classical and film music"
+      },
+      {
+        "w": "Gennady Rozhdestvensky",
+        "d": "Russian conductor known for wide repertory and premieres"
+      },
+      {
+        "w": "Yevgeny Mravinsky",
+        "d": "Longtime conductor of the Leningrad Philharmonic"
+      },
+      {
+        "w": "Kirill Kondrashin",
+        "d": "Soviet conductor associated with Shostakovich performances"
+      },
+      {
+        "w": "Yevgeny Svetlanov",
+        "d": "Russian conductor and champion of Russian symphonic music"
+      },
+      {
+        "w": "Carlo Maria Giulini",
+        "d": "Italian conductor known for lyrical depth"
+      },
+      {
+        "w": "Pierre Monteux",
+        "d": "Conductor of important early Stravinsky and French performances"
+      },
+      {
+        "w": "Andris Nelsons",
+        "d": "Latvian conductor of Boston and Leipzig orchestras"
+      },
+      {
+        "w": "Nikolai Golovanov",
+        "d": "Soviet conductor associated with opera and Russian music"
+      },
+      {
+        "w": "Kurt Masur",
+        "d": "German conductor linked with Leipzig and New York"
+      },
+      {
+        "w": "Colin Davis",
+        "d": "British conductor known for Berlioz and Mozart"
+      },
+      {
+        "w": "Esa-Pekka Salonen",
+        "d": "Finnish conductor and composer"
+      },
+      {
+        "w": "Christian Thielemann",
+        "d": "German conductor associated with Wagner and Strauss"
+      },
+      {
+        "w": "Riccardo Chailly",
+        "d": "Italian conductor of Amsterdam, Leipzig and Lucerne"
+      },
+      {
+        "w": "Seiji Ozawa",
+        "d": "Japanese conductor long associated with the Boston Symphony"
+      },
+      {
+        "w": "Mikhail Pletnev",
+        "d": "Russian pianist and conductor"
+      },
+      {
+        "w": "Neeme Järvi",
+        "d": "Estonian conductor with a huge recorded repertoire"
+      },
+      {
+        "w": "Charles Mackerras",
+        "d": "Conductor known for Czech music and historically informed opera"
+      },
+      {
+        "w": "Iván Fischer",
+        "d": "Hungarian conductor and founder of the Budapest Festival Orchestra"
+      }
+    ]
+  },
+  {
+    "name": "sculptors",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Auguste Rodin",
+        "d": "French sculptor of The Thinker and The Burghers of Calais"
+      },
+      {
+        "w": "Constantin Brâncuși",
+        "d": "Modernist sculptor of simplified forms such as Bird in Space"
+      },
+      {
+        "w": "Alberto Giacometti",
+        "d": "Sculptor known for elongated postwar figures"
+      },
+      {
+        "w": "Antoine Bourdelle",
+        "d": "French sculptor and former assistant of Rodin"
+      },
+      {
+        "w": "Henry Moore",
+        "d": "British sculptor known for reclining figures"
+      },
+      {
+        "w": "Aristide Maillol",
+        "d": "French sculptor of calm classical female figures"
+      },
+      {
+        "w": "Alexander Calder",
+        "d": "Artist known for mobiles and stabiles"
+      },
+      {
+        "w": "Anna Golubkina",
+        "d": "Russian sculptor associated with expressive portraiture"
+      },
+      {
+        "w": "Louise Bourgeois",
+        "d": "Sculptor known for Maman and psychological installations"
+      },
+      {
+        "w": "Barbara Hepworth",
+        "d": "British modernist sculptor of pierced abstract forms"
+      },
+      {
+        "w": "Richard Serra",
+        "d": "American sculptor known for monumental steel works"
+      },
+      {
+        "w": "Isamu Noguchi",
+        "d": "Japanese American sculptor and designer"
+      },
+      {
+        "w": "Jean Arp",
+        "d": "Dada and abstract sculptor of biomorphic forms"
+      },
+      {
+        "w": "Sergei Konenkov",
+        "d": "Russian sculptor nicknamed the Russian Rodin"
+      },
+      {
+        "w": "Vera Mukhina",
+        "d": "Soviet sculptor of Worker and Kolkhoz Woman"
+      },
+      {
+        "w": "Yevgeny Vuchetich",
+        "d": "Soviet sculptor of monumental war memorials"
+      },
+      {
+        "w": "Mikhail Anikushin",
+        "d": "Soviet sculptor known for Pushkin monuments"
+      },
+      {
+        "w": "Claes Oldenburg",
+        "d": "Pop artist known for giant soft sculptures of everyday objects"
+      },
+      {
+        "w": "Dan Flavin",
+        "d": "Artist known for sculptural installations using fluorescent light"
+      },
+      {
+        "w": "David Smith",
+        "d": "American abstract sculptor working in welded steel"
+      },
+      {
+        "w": "Mark Antokolsky",
+        "d": "Russian sculptor known for historical and religious figures"
+      },
+      {
+        "w": "Stepan Erzia",
+        "d": "Sculptor who worked with expressive wood carving"
+      },
+      {
+        "w": "Meret Oppenheim",
+        "d": "Surrealist artist known for sculptural objects"
+      },
+      {
+        "w": "Peter Clodt",
+        "d": "Russian sculptor famous for equestrian groups"
+      },
+      {
+        "w": "Gian Lorenzo Bernini",
+        "d": "Baroque sculptor of ecstatic marble and theatrical space"
+      },
+      {
+        "w": "Praxiteles",
+        "d": "Ancient Greek sculptor associated with the Aphrodite of Knidos"
+      },
+      {
+        "w": "Phidias",
+        "d": "Classical Greek sculptor linked to the Parthenon and Athena"
+      },
+      {
+        "w": "Antonio Canova",
+        "d": "Neoclassical sculptor of polished marble figures"
+      },
+      {
+        "w": "Bertel Thorvaldsen",
+        "d": "Danish neoclassical sculptor active in Rome"
+      },
+      {
+        "w": "Damien Hirst",
+        "d": "Contemporary artist using vitrines, animals and medical imagery"
+      },
+      {
+        "w": "Louise Nevelson",
+        "d": "Sculptor known for large monochrome wooden assemblages"
+      },
+      {
+        "w": "Yves Klein",
+        "d": "Artist whose work included sculptural monochrome and body imprints"
+      },
+      {
+        "w": "Camille Claudel",
+        "d": "French sculptor known for expressive figures and bronzes"
+      },
+      {
+        "w": "Rachel Whiteread",
+        "d": "Sculptor known for casts of negative space"
+      },
+      {
+        "w": "Anish Kapoor",
+        "d": "Sculptor known for large reflective and void-like forms"
+      }
+    ]
+  },
+  {
+    "name": "UN leaders & world diplomats",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Gladwyn Jebb",
+        "d": "Acting first UN secretary-general before Trygve Lie"
+      },
+      {
+        "w": "Trygve Lie",
+        "d": "First elected secretary-general of the United Nations"
+      },
+      {
+        "w": "Dag Hammarskjöld",
+        "d": "UN secretary-general remembered for peacekeeping diplomacy"
+      },
+      {
+        "w": "U Thant",
+        "d": "Burmese diplomat who led the UN during the Cuban Missile Crisis era"
+      },
+      {
+        "w": "Kurt Waldheim",
+        "d": "Austrian diplomat and UN secretary-general"
+      },
+      {
+        "w": "Javier Pérez de Cuéllar",
+        "d": "Peruvian UN secretary-general and mediator"
+      },
+      {
+        "w": "Boutros Boutros-Ghali",
+        "d": "Egyptian UN secretary-general after the Cold War"
+      },
+      {
+        "w": "Kofi Annan",
+        "d": "UN secretary-general and reform advocate"
+      },
+      {
+        "w": "Madeleine Albright",
+        "d": "U.S. secretary of state and UN ambassador"
+      },
+      {
+        "w": "António Guterres",
+        "d": "UN secretary-general and former refugee commissioner"
+      },
+      {
+        "w": "Otto von Bismarck",
+        "d": "Statesman who used diplomacy to unify Germany"
+      },
+      {
+        "w": "Lord Castlereagh",
+        "d": "British diplomat of the Congress of Vienna"
+      },
+      {
+        "w": "George Canning",
+        "d": "British foreign secretary associated with Latin American independence policy"
+      },
+      {
+        "w": "Benjamin Franklin",
+        "d": "American envoy who secured French support during the Revolution"
+      },
+      {
+        "w": "Sergei Witte",
+        "d": "Russian statesman who negotiated the Treaty of Portsmouth"
+      },
+      {
+        "w": "Sérgio Vieira de Mello",
+        "d": "UN diplomat killed in Baghdad in 2003"
+      },
+      {
+        "w": "Sadako Ogata",
+        "d": "UN High Commissioner for Refugees during major crises"
+      },
+      {
+        "w": "George Marshall",
+        "d": "U.S. statesman behind the European Recovery Program"
+      },
+      {
+        "w": "George Kennan",
+        "d": "Diplomat and architect of containment policy"
+      },
+      {
+        "w": "Dean Acheson",
+        "d": "U.S. secretary of state during early Cold War institution-building"
+      },
+      {
+        "w": "Georgy Chicherin",
+        "d": "Soviet foreign minister in the early USSR"
+      },
+      {
+        "w": "Eleanor Roosevelt",
+        "d": "Diplomat central to the Universal Declaration of Human Rights"
+      },
+      {
+        "w": "Karl Nesselrode",
+        "d": "Long-serving foreign minister of the Russian Empire"
+      },
+      {
+        "w": "Nikolay Ignatyev",
+        "d": "Russian diplomat involved in Balkan and Ottoman policy"
+      },
+      {
+        "w": "Andrei Gromyko",
+        "d": "Soviet foreign minister known as “Mr. No”"
+      },
+      {
+        "w": "Talleyrand",
+        "d": "French diplomat who survived and served multiple regimes"
+      },
+      {
+        "w": "Henry Kissinger",
+        "d": "U.S. diplomat associated with détente and shuttle diplomacy"
+      },
+      {
+        "w": "Metternich",
+        "d": "Austrian statesman of the Congress system"
+      },
+      {
+        "w": "Alexander Gorchakov",
+        "d": "Russian foreign minister after the Crimean War"
+      },
+      {
+        "w": "Willy Brandt",
+        "d": "German chancellor associated with Ostpolitik"
+      },
+      {
+        "w": "Cardinal Richelieu",
+        "d": "French statesman who shaped early modern diplomacy"
+      },
+      {
+        "w": "Cyrus Vance",
+        "d": "U.S. secretary of state under Jimmy Carter"
+      },
+      {
+        "w": "Ban Ki-moon",
+        "d": "UN secretary-general from South Korea"
+      },
+      {
+        "w": "Lakhdar Brahimi",
+        "d": "Algerian UN mediator in Afghanistan, Iraq and Syria"
+      },
+      {
+        "w": "Richard Holbrooke",
+        "d": "U.S. diplomat associated with the Dayton Accords"
+      }
+    ]
+  },
+  {
+    "name": "ballet dancers & choreographers",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Rudolf Nureyev",
+        "d": "Ballet star whose defection made him a Cold War cultural icon"
+      },
+      {
+        "w": "Maya Plisetskaya",
+        "d": "Bolshoi ballerina known for dramatic power and longevity"
+      },
+      {
+        "w": "Anna Pavlova",
+        "d": "Ballerina whose touring made ballet globally famous"
+      },
+      {
+        "w": "Vaslav Nijinsky",
+        "d": "Ballets Russes dancer and choreographer of modernist scandal"
+      },
+      {
+        "w": "Galina Ulanova",
+        "d": "Soviet ballerina celebrated for lyricism and tragic roles"
+      },
+      {
+        "w": "George Balanchine",
+        "d": "Choreographer who shaped American neoclassical ballet"
+      },
+      {
+        "w": "Isadora Duncan",
+        "d": "Modern dance pioneer who rejected rigid ballet convention"
+      },
+      {
+        "w": "Mikhail Baryshnikov",
+        "d": "Latvian-born dancer and global ballet star"
+      },
+      {
+        "w": "Olga Spessivtseva",
+        "d": "Russian ballerina associated with Giselle and tragic intensity"
+      },
+      {
+        "w": "Serge Lifar",
+        "d": "Dancer and choreographer who led Paris Opera Ballet"
+      },
+      {
+        "w": "Margot Fonteyn",
+        "d": "British ballerina and long-time partner of Nureyev"
+      },
+      {
+        "w": "Natalia Makarova",
+        "d": "Ballerina known for classical roles after leaving the USSR"
+      },
+      {
+        "w": "Marius Petipa",
+        "d": "Choreographer of the imperial ballet repertory"
+      },
+      {
+        "w": "Michel Fokine",
+        "d": "Choreographer who modernized Ballets Russes storytelling"
+      },
+      {
+        "w": "Agrippina Vaganova",
+        "d": "Teacher whose method shaped Russian ballet training"
+      },
+      {
+        "w": "Nikolai Tsiskaridze",
+        "d": "Bolshoi dancer and later ballet academy rector"
+      },
+      {
+        "w": "Natalia Dudinskaya",
+        "d": "Soviet ballerina and teacher at the Vaganova Academy"
+      },
+      {
+        "w": "Yuri Grigorovich",
+        "d": "Bolshoi choreographer of Spartacus and Ivan the Terrible"
+      },
+      {
+        "w": "Diana Vishneva",
+        "d": "Russian ballerina known for both classical and contemporary roles"
+      },
+      {
+        "w": "Natalia Osipova",
+        "d": "Ballerina famous for explosive jumps and dramatic attack"
+      },
+      {
+        "w": "Ulyana Lopatkina",
+        "d": "Mariinsky ballerina associated with Swan Lake purity"
+      },
+      {
+        "w": "Alicia Markova",
+        "d": "British ballerina who helped popularize classical ballet"
+      },
+      {
+        "w": "Frederick Ashton",
+        "d": "Founder choreographer of the English ballet style"
+      },
+      {
+        "w": "Maurice Béjart",
+        "d": "Choreographer known for large-scale modern ballet spectacles"
+      },
+      {
+        "w": "Maris Liepa",
+        "d": "Latvian-Soviet dancer celebrated as Crassus in Spartacus"
+      },
+      {
+        "w": "Tamara Karsavina",
+        "d": "Ballets Russes ballerina and partner of Nijinsky"
+      },
+      {
+        "w": "Sergei Diaghilev",
+        "d": "Impresario who created the Ballets Russes"
+      },
+      {
+        "w": "José Limón",
+        "d": "Modern dance choreographer known for expressive technique"
+      },
+      {
+        "w": "Merce Cunningham",
+        "d": "Choreographer who separated dance from narrative and music"
+      },
+      {
+        "w": "Pina Bausch",
+        "d": "Choreographer of Tanztheater Wuppertal"
+      },
+      {
+        "w": "Roland Petit",
+        "d": "French choreographer known for theatrical ballet"
+      },
+      {
+        "w": "William Forsythe",
+        "d": "Choreographer who deconstructed classical ballet vocabulary"
+      },
+      {
+        "w": "Sylvie Guillem",
+        "d": "French ballerina famed for extreme line and flexibility"
+      },
+      {
+        "w": "Svetlana Zakharova",
+        "d": "Bolshoi and La Scala prima ballerina"
+      },
+      {
+        "w": "Jorge Donn",
+        "d": "Argentine dancer closely associated with Béjart"
+      }
+    ]
+  },
+  {
+    "name": "linguists & decipherers",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Ferdinand de Saussure",
+        "d": "Founder figure of structural linguistics"
+      },
+      {
+        "w": "Noam Chomsky",
+        "d": "Linguist associated with generative grammar"
+      },
+      {
+        "w": "Roman Jakobson",
+        "d": "Structuralist linguist and theorist of communication"
+      },
+      {
+        "w": "Jan Baudouin de Courtenay",
+        "d": "Linguist who helped develop the phoneme concept"
+      },
+      {
+        "w": "Alexander Potebnja",
+        "d": "Philologist known for work on language, thought and folklore"
+      },
+      {
+        "w": "Edward Sapir",
+        "d": "Linguist and anthropologist linked to linguistic relativity"
+      },
+      {
+        "w": "Leonard Bloomfield",
+        "d": "American structural linguist and author of Language"
+      },
+      {
+        "w": "Nikolai Trubetzkoy",
+        "d": "Founder figure in phonology and the Prague School"
+      },
+      {
+        "w": "Jean-François Champollion",
+        "d": "Scholar who deciphered Egyptian hieroglyphs"
+      },
+      {
+        "w": "Alexey Shakhmatov",
+        "d": "Russian philologist and historian of Slavic languages"
+      },
+      {
+        "w": "Wilhelm von Humboldt",
+        "d": "Thinker of language as an activity shaping worldviews"
+      },
+      {
+        "w": "Georg Friedrich Grotefend",
+        "d": "Pioneer in deciphering Old Persian cuneiform"
+      },
+      {
+        "w": "Antoine Meillet",
+        "d": "Indo-Europeanist and teacher of major linguists"
+      },
+      {
+        "w": "Henry Rawlinson",
+        "d": "Key decipherer of cuneiform through the Behistun inscription"
+      },
+      {
+        "w": "Michael Ventris",
+        "d": "Architect who deciphered Linear B"
+      },
+      {
+        "w": "Yuri Knorozov",
+        "d": "Scholar who proved the phonetic nature of Maya writing"
+      },
+      {
+        "w": "Anna Wierzbicka",
+        "d": "Linguist known for natural semantic metalanguage"
+      },
+      {
+        "w": "Joseph Greenberg",
+        "d": "Linguist known for language universals and classification"
+      },
+      {
+        "w": "Mikhail Bakhtin",
+        "d": "Philologist and theorist of dialogism and chronotope"
+      },
+      {
+        "w": "Yuri Lotman",
+        "d": "Semiotician of culture and the Tartu-Moscow school"
+      },
+      {
+        "w": "Viktor Vinogradov",
+        "d": "Russian linguist and scholar of literary language"
+      },
+      {
+        "w": "Sergei Ozhegov",
+        "d": "Lexicographer known for a major Russian dictionary"
+      },
+      {
+        "w": "Vladimir Dal",
+        "d": "Collector and lexicographer of Russian vocabulary"
+      },
+      {
+        "w": "Umberto Eco",
+        "d": "Semiotician and novelist who studied signs and interpretation"
+      },
+      {
+        "w": "Gérard Genette",
+        "d": "Narratologist and theorist of transtextuality"
+      },
+      {
+        "w": "Thomas Young",
+        "d": "Polymath who helped identify values in Egyptian hieroglyphs"
+      },
+      {
+        "w": "Benjamin Lee Whorf",
+        "d": "Linguist associated with linguistic relativity"
+      },
+      {
+        "w": "André Martinet",
+        "d": "Linguist known for functionalism and double articulation"
+      },
+      {
+        "w": "Bedřich Hrozný",
+        "d": "Scholar who deciphered Hittite"
+      },
+      {
+        "w": "Alice Kober",
+        "d": "Classicist whose work prepared the decipherment of Linear B"
+      },
+      {
+        "w": "Andrey Zaliznyak",
+        "d": "Russian linguist known for grammar and birchbark letters"
+      },
+      {
+        "w": "Diego de Landa",
+        "d": "Bishop whose alphabet notes later helped Maya decipherment"
+      },
+      {
+        "w": "Michael Coe",
+        "d": "Maya scholar who popularized and advanced decipherment work"
+      },
+      {
+        "w": "Pāṇini",
+        "d": "Ancient grammarian of Sanskrit"
+      },
+      {
+        "w": "Aspid the cat",
+        "d": "Knorozov’s cat, jokingly credited by him as a co-author"
+      }
+    ]
+  },
+  {
+    "name": "famous physicians & anatomists",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Hippocrates",
+        "d": "Ancient Greek physician associated with medical ethics"
+      },
+      {
+        "w": "Galen",
+        "d": "Ancient physician whose anatomy dominated medicine for centuries"
+      },
+      {
+        "w": "Andreas Vesalius",
+        "d": "Renaissance anatomist who corrected Galenic anatomy"
+      },
+      {
+        "w": "Nikolay Pirogov",
+        "d": "Russian surgeon and pioneer of field surgery"
+      },
+      {
+        "w": "William Harvey",
+        "d": "Physician who described systemic blood circulation"
+      },
+      {
+        "w": "Joseph Lister",
+        "d": "Surgeon who promoted antiseptic methods"
+      },
+      {
+        "w": "Ignaz Semmelweis",
+        "d": "Physician who showed handwashing reduced childbed fever"
+      },
+      {
+        "w": "Dominique Jean Larrey",
+        "d": "Napoleonic surgeon who developed battlefield ambulance systems"
+      },
+      {
+        "w": "Louis Pasteur",
+        "d": "Scientist whose germ theory transformed medicine"
+      },
+      {
+        "w": "Ibn Sina",
+        "d": "Physician-philosopher known in Europe as Avicenna"
+      },
+      {
+        "w": "Edward Jenner",
+        "d": "Physician who developed smallpox vaccination"
+      },
+      {
+        "w": "William Morton",
+        "d": "Dentist associated with public ether anesthesia"
+      },
+      {
+        "w": "Christiaan Barnard",
+        "d": "Surgeon who performed the first human heart transplant"
+      },
+      {
+        "w": "Sergey Botkin",
+        "d": "Russian clinician and founder of a medical school"
+      },
+      {
+        "w": "Rudolf Virchow",
+        "d": "Pathologist known for cellular pathology"
+      },
+      {
+        "w": "Vladimir Bekhterev",
+        "d": "Neurologist and psychiatrist known for reflex studies"
+      },
+      {
+        "w": "Grigory Zakharyin",
+        "d": "Russian clinician known for diagnostic teaching"
+      },
+      {
+        "w": "Ivan Sechenov",
+        "d": "Physiologist called the father of Russian physiology"
+      },
+      {
+        "w": "Nikolay Sklifosovsky",
+        "d": "Russian surgeon associated with military and emergency surgery"
+      },
+      {
+        "w": "Gavriil Ilizarov",
+        "d": "Orthopedic surgeon who developed an external fixation method"
+      },
+      {
+        "w": "Nikolay Burdenko",
+        "d": "Neurosurgeon and founder of Soviet neurosurgery"
+      },
+      {
+        "w": "James Young Simpson",
+        "d": "Physician who introduced chloroform anesthesia in obstetrics"
+      },
+      {
+        "w": "John Hunter",
+        "d": "Surgeon and anatomist important for scientific surgery"
+      },
+      {
+        "w": "René Laennec",
+        "d": "Physician who invented the stethoscope"
+      },
+      {
+        "w": "William Osler",
+        "d": "Clinician who shaped modern medical education"
+      },
+      {
+        "w": "Herophilos",
+        "d": "Ancient anatomist who studied the nervous system"
+      },
+      {
+        "w": "Erasistratus",
+        "d": "Ancient anatomist and physiologist in Alexandria"
+      },
+      {
+        "w": "Émile Roux",
+        "d": "Pasteur collaborator important in diphtheria antitoxin work"
+      },
+      {
+        "w": "Theodor Kocher",
+        "d": "Surgeon known for thyroid surgery"
+      },
+      {
+        "w": "Adolf Kussmaul",
+        "d": "Physician associated with named signs and diagnostic methods"
+      },
+      {
+        "w": "Michael DeBakey",
+        "d": "Cardiac surgeon and developer of vascular surgery techniques"
+      },
+      {
+        "w": "Antonie van Leeuwenhoek",
+        "d": "Microscopist who observed microorganisms"
+      },
+      {
+        "w": "William Worrall Mayo",
+        "d": "Physician whose family founded the Mayo Clinic tradition"
+      },
+      {
+        "w": "Willem Einthoven",
+        "d": "Physician who developed electrocardiography"
+      },
+      {
+        "w": "Abraham Flexner",
+        "d": "Reformer whose report reshaped medical education"
+      }
+    ]
+  },
+  {
+    "name": "named winds",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "mistral",
+        "d": "Cold dry wind blowing from southern France to the Mediterranean"
+      },
+      {
+        "w": "sirocco",
+        "d": "Hot dusty wind blowing from the Sahara toward the Mediterranean"
+      },
+      {
+        "w": "bora",
+        "d": "Cold gusty wind descending toward the Adriatic"
+      },
+      {
+        "w": "khamsin",
+        "d": "Hot dry Egyptian wind carrying desert dust"
+      },
+      {
+        "w": "Föhn",
+        "d": "Warm dry downslope wind on the lee side of mountains"
+      },
+      {
+        "w": "tramontane",
+        "d": "Cold northern wind in the western Mediterranean"
+      },
+      {
+        "w": "trade wind",
+        "d": "Persistent tropical wind blowing toward the equator"
+      },
+      {
+        "w": "monsoon",
+        "d": "Seasonal wind system that reverses direction"
+      },
+      {
+        "w": "samum",
+        "d": "Hot desert wind of the Sahara and Arabian deserts"
+      },
+      {
+        "w": "chinook",
+        "d": "Warm dry downslope wind east of the Rockies"
+      },
+      {
+        "w": "levant",
+        "d": "Easterly Mediterranean wind"
+      },
+      {
+        "w": "pampero",
+        "d": "Cold wind sweeping across the Pampas"
+      },
+      {
+        "w": "sea breeze",
+        "d": "Daytime wind blowing from sea toward land"
+      },
+      {
+        "w": "nord-ost",
+        "d": "Northeasterly wind name used in parts of Europe"
+      },
+      {
+        "w": "harmattan",
+        "d": "Dry dusty West African trade wind"
+      },
+      {
+        "w": "Santa Ana wind",
+        "d": "Hot dry wind of Southern California"
+      },
+      {
+        "w": "leveche",
+        "d": "Hot southerly wind in southeastern Spain"
+      },
+      {
+        "w": "košava",
+        "d": "Strong southeasterly wind in Serbia and the Danube region"
+      },
+      {
+        "w": "sarma",
+        "d": "Strong local wind near Lake Baikal"
+      },
+      {
+        "w": "embat",
+        "d": "Sea breeze of Mallorca"
+      },
+      {
+        "w": "garbí",
+        "d": "Southwesterly wind name in Catalan and Balearic regions"
+      },
+      {
+        "w": "shamal",
+        "d": "Northwesterly wind of Iraq and the Persian Gulf"
+      },
+      {
+        "w": "afghanets",
+        "d": "Dry dusty wind of Central Asian deserts"
+      },
+      {
+        "w": "nizovik",
+        "d": "Cold lower-direction wind name used around Russian waters"
+      },
+      {
+        "w": "shilli",
+        "d": "Local hot wind name used in parts of the Caucasus"
+      },
+      {
+        "w": "sukhovey",
+        "d": "Hot dry wind that damages crops in steppe regions"
+      },
+      {
+        "w": "zephyr",
+        "d": "Mild west wind from classical tradition"
+      },
+      {
+        "w": "haboob",
+        "d": "Intense dust storm wind front"
+      },
+      {
+        "w": "yuzhak",
+        "d": "Southerly wind name in Russian usage"
+      },
+      {
+        "w": "polar vortex",
+        "d": "Large rotating region of cold polar air"
+      },
+      {
+        "w": "willy-willy",
+        "d": "Australian name for a dust whirl or tropical cyclone"
+      },
+      {
+        "w": "berg wind",
+        "d": "Hot dry downslope wind in South Africa"
+      },
+      {
+        "w": "jug",
+        "d": "Warm southerly wind on the Adriatic"
+      },
+      {
+        "w": "etezian",
+        "d": "Seasonal northerly wind of the Aegean"
+      },
+      {
+        "w": "gregale",
+        "d": "Strong northeasterly wind in the central Mediterranean"
+      }
+    ]
+  },
+  {
+    "name": "nautical knots",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "bowline",
+        "d": "Loop knot valued because it does not slip under load"
+      },
+      {
+        "w": "clove hitch",
+        "d": "Hitch used to fasten a rope to a post or spar"
+      },
+      {
+        "w": "sheet bend",
+        "d": "Knot for joining two ropes of unequal size"
+      },
+      {
+        "w": "prusik knot",
+        "d": "Friction hitch used in climbing and rope work"
+      },
+      {
+        "w": "figure-eight knot",
+        "d": "Stopper knot shaped like the numeral eight"
+      },
+      {
+        "w": "running bowline",
+        "d": "Sliding noose formed from a bowline"
+      },
+      {
+        "w": "constrictor knot",
+        "d": "Binding knot that grips tightly and is hard to untie"
+      },
+      {
+        "w": "double fisherman’s knot",
+        "d": "Secure knot for joining two rope ends"
+      },
+      {
+        "w": "cat’s paw",
+        "d": "Knot used to attach a rope to a hook"
+      },
+      {
+        "w": "cleat hitch",
+        "d": "Knot used to secure a line to a cleat"
+      },
+      {
+        "w": "reef knot",
+        "d": "Flat knot used for reefing sails or light binding"
+      },
+      {
+        "w": "grapevine knot",
+        "d": "Another name for the double fisherman’s knot"
+      },
+      {
+        "w": "Turk’s head",
+        "d": "Decorative woven knot forming a closed ring"
+      },
+      {
+        "w": "marlinspike hitch",
+        "d": "Temporary hitch used with a spike or handle"
+      },
+      {
+        "w": "rolling hitch",
+        "d": "Hitch that grips another line under lengthwise pull"
+      },
+      {
+        "w": "alpine butterfly",
+        "d": "Loop knot that can take load in multiple directions"
+      },
+      {
+        "w": "masthead knot",
+        "d": "Decorative or functional knot associated with mast rigging"
+      },
+      {
+        "w": "dock line hitch",
+        "d": "Practical hitch for securing a boat at a dock"
+      },
+      {
+        "w": "sheepshank",
+        "d": "Knot used to shorten a rope without cutting it"
+      },
+      {
+        "w": "double sheet bend",
+        "d": "Stronger version of the sheet bend"
+      },
+      {
+        "w": "noose knot",
+        "d": "Sliding loop knot that tightens under pull"
+      },
+      {
+        "w": "ratline hitch",
+        "d": "Hitch used for lines on rope ladders or rigging"
+      },
+      {
+        "w": "perline knot",
+        "d": "Traditional rope knot used in seamanship"
+      },
+      {
+        "w": "anchor bend",
+        "d": "Knot used to attach rope to an anchor ring"
+      },
+      {
+        "w": "skipper’s knot",
+        "d": "Practical working knot associated with boating"
+      },
+      {
+        "w": "stopper knot",
+        "d": "Knot tied to prevent a rope end from passing through"
+      },
+      {
+        "w": "weaver’s knot",
+        "d": "Knot used to join thread or light cord"
+      },
+      {
+        "w": "overhand knot",
+        "d": "Simple stopper knot made by passing an end through a loop"
+      },
+      {
+        "w": "surgeon’s knot",
+        "d": "Knot with an extra turn for added friction"
+      },
+      {
+        "w": "dummy knot",
+        "d": "Practice knot used for teaching or demonstration"
+      },
+      {
+        "w": "slip knot",
+        "d": "Adjustable knot that releases by pulling the free end"
+      },
+      {
+        "w": "liana knot",
+        "d": "Improvised knot name used for vine-like flexible material"
+      },
+      {
+        "w": "cat anchor knot",
+        "d": "Anchor-related hitch variant used for securing a line"
+      },
+      {
+        "w": "carrick bend",
+        "d": "Decorative and strong bend for joining heavy ropes"
+      },
+      {
+        "w": "monkey’s fist",
+        "d": "Weighted stopper knot often used on heaving lines"
+      }
+    ]
+  },
+  {
+    "name": "medical eponyms",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "arachnodactyly",
+        "d": "Long slender fingers classically associated with Marfan syndrome"
+      },
+      {
+        "w": "Crohn’s disease",
+        "d": "Inflammatory bowel disease named after Burrill Crohn"
+      },
+      {
+        "w": "trisomy 21",
+        "d": "Chromosomal condition also known as Down syndrome"
+      },
+      {
+        "w": "Cushing syndrome",
+        "d": "Hormonal disorder caused by excess cortisol"
+      },
+      {
+        "w": "Addison’s disease",
+        "d": "Adrenal insufficiency named after Thomas Addison"
+      },
+      {
+        "w": "Wernicke encephalopathy",
+        "d": "Neurologic syndrome caused by thiamine deficiency"
+      },
+      {
+        "w": "Graves’ disease",
+        "d": "Autoimmune hyperthyroidism named after Robert Graves"
+      },
+      {
+        "w": "Ehlers-Danlos syndrome",
+        "d": "Connective-tissue disorders often involving joint hypermobility"
+      },
+      {
+        "w": "Wilson disease",
+        "d": "Inherited disorder of copper metabolism"
+      },
+      {
+        "w": "Lesch-Nyhan syndrome",
+        "d": "HGPRT deficiency causing neurologic and metabolic symptoms"
+      },
+      {
+        "w": "Charcot-Marie-Tooth disease",
+        "d": "Inherited peripheral neuropathy"
+      },
+      {
+        "w": "ankylosing spondylitis",
+        "d": "Inflammatory disease of the spine historically called Bechterew disease"
+      },
+      {
+        "w": "Raynaud syndrome",
+        "d": "Vascular spasm causing color changes in fingers or toes"
+      },
+      {
+        "w": "factitious disorder",
+        "d": "Condition in which illness is deliberately produced or feigned"
+      },
+      {
+        "w": "Paget disease",
+        "d": "Bone disorder named after James Paget"
+      },
+      {
+        "w": "Sjögren syndrome",
+        "d": "Autoimmune disease affecting tear and salivary glands"
+      },
+      {
+        "w": "Felty syndrome",
+        "d": "Rheumatoid arthritis with splenomegaly and low neutrophils"
+      },
+      {
+        "w": "von Gierke disease",
+        "d": "Glycogen storage disease type I"
+      },
+      {
+        "w": "Klinefelter syndrome",
+        "d": "Chromosomal condition involving an extra X chromosome in males"
+      },
+      {
+        "w": "Lambert-Eaton syndrome",
+        "d": "Autoimmune disorder of neuromuscular transmission"
+      },
+      {
+        "w": "Takayasu arteritis",
+        "d": "Large-vessel vasculitis often affecting the aorta"
+      },
+      {
+        "w": "Churg-Strauss syndrome",
+        "d": "Eosinophilic granulomatosis with polyangiitis"
+      },
+      {
+        "w": "Still’s disease",
+        "d": "Inflammatory disease with fever, rash and arthritis"
+      },
+      {
+        "w": "Horner syndrome",
+        "d": "Neurologic syndrome causing ptosis, miosis and anhidrosis"
+      },
+      {
+        "w": "Pompe disease",
+        "d": "Glycogen storage disease affecting muscles"
+      },
+      {
+        "w": "Down syndrome",
+        "d": "Genetic condition caused by trisomy 21"
+      },
+      {
+        "w": "Parkinson disease",
+        "d": "Neurodegenerative movement disorder named after James Parkinson"
+      },
+      {
+        "w": "Alzheimer disease",
+        "d": "Dementia disorder named after Alois Alzheimer"
+      },
+      {
+        "w": "Tourette syndrome",
+        "d": "Neurodevelopmental disorder involving motor and vocal tics"
+      },
+      {
+        "w": "Huntington disease",
+        "d": "Inherited neurodegenerative disorder with chorea"
+      },
+      {
+        "w": "Marfan syndrome",
+        "d": "Connective-tissue disorder affecting skeleton, eyes and aorta"
+      },
+      {
+        "w": "loop of Henle",
+        "d": "Kidney tubule segment named after Friedrich Henle"
+      },
+      {
+        "w": "Babinski reflex",
+        "d": "Plantar reflex sign used in neurologic examination"
+      },
+      {
+        "w": "Kupffer cells",
+        "d": "Liver macrophages named after Karl Wilhelm von Kupffer"
+      },
+      {
+        "w": "islets of Langerhans",
+        "d": "Pancreatic cell clusters producing hormones such as insulin"
+      }
+    ]
+  },
+  {
+    "name": "heraldic terms",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "azure",
+        "d": "Blue tincture in heraldry"
+      },
+      {
+        "w": "gules",
+        "d": "Red tincture in heraldry"
+      },
+      {
+        "w": "ermine",
+        "d": "Fur pattern represented by black spots on white"
+      },
+      {
+        "w": "chevron",
+        "d": "V-shaped ordinary on a shield"
+      },
+      {
+        "w": "supporter",
+        "d": "Figure placed beside a shield to hold it"
+      },
+      {
+        "w": "mantling",
+        "d": "Decorative cloth flowing from a helmet in a coat of arms"
+      },
+      {
+        "w": "crest",
+        "d": "Device placed above the helmet or wreath"
+      },
+      {
+        "w": "motto",
+        "d": "Phrase displayed with a coat of arms"
+      },
+      {
+        "w": "fess",
+        "d": "Horizontal band across the middle of a shield"
+      },
+      {
+        "w": "tincture",
+        "d": "Heraldic color, metal or fur"
+      },
+      {
+        "w": "armed",
+        "d": "Blazon term describing claws, horns or beaks in a tincture"
+      },
+      {
+        "w": "chief",
+        "d": "Horizontal band across the top of a shield"
+      },
+      {
+        "w": "pale",
+        "d": "Vertical band down the center of a shield"
+      },
+      {
+        "w": "bend",
+        "d": "Diagonal band running from upper left to lower right"
+      },
+      {
+        "w": "ordinary",
+        "d": "Basic geometric charge on a shield"
+      },
+      {
+        "w": "canton",
+        "d": "Small square charge usually placed in the upper corner"
+      },
+      {
+        "w": "charge",
+        "d": "Object, figure or symbol placed on a shield"
+      },
+      {
+        "w": "blazon",
+        "d": "Formal written description of a coat of arms"
+      },
+      {
+        "w": "proper",
+        "d": "Blazon term meaning shown in natural colors"
+      },
+      {
+        "w": "purpure",
+        "d": "Purple tincture in heraldry"
+      },
+      {
+        "w": "vair",
+        "d": "Fur pattern made of alternating bell shapes"
+      },
+      {
+        "w": "mantle",
+        "d": "Outer drapery around some achievements of arms"
+      },
+      {
+        "w": "torse",
+        "d": "Twisted wreath between helmet and crest"
+      },
+      {
+        "w": "lambrequin",
+        "d": "Ornamental mantling around a helmet"
+      },
+      {
+        "w": "or",
+        "d": "Gold or yellow metal in heraldry"
+      },
+      {
+        "w": "argent",
+        "d": "Silver or white metal in heraldry"
+      },
+      {
+        "w": "sinister",
+        "d": "Left side of the shield from the bearer’s viewpoint"
+      },
+      {
+        "w": "cadency",
+        "d": "System for marking branches of a family"
+      },
+      {
+        "w": "shield",
+        "d": "Central escutcheon bearing the arms"
+      },
+      {
+        "w": "armorial",
+        "d": "Book or collection of coats of arms"
+      },
+      {
+        "w": "label",
+        "d": "Cadency mark often used for an eldest son"
+      },
+      {
+        "w": "wreath",
+        "d": "Twisted band of cloth below a crest"
+      },
+      {
+        "w": "difference",
+        "d": "Mark showing a distinct branch or bearer"
+      },
+      {
+        "w": "eagle displayed",
+        "d": "Eagle shown with wings spread in heraldic style"
+      },
+      {
+        "w": "lozenge",
+        "d": "Diamond-shaped heraldic figure or shield"
+      }
+    ]
+  },
+  {
+    "name": "glass & ceramic materials",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Murano glass",
+        "d": "Decorative glass tradition from the Venetian island of Murano"
+      },
+      {
+        "w": "faience",
+        "d": "Tin-glazed earthenware or glazed ceramic material"
+      },
+      {
+        "w": "maiolica",
+        "d": "Italian tin-glazed pottery with painted decoration"
+      },
+      {
+        "w": "celadon",
+        "d": "Greenish glazed ceramic associated with East Asian traditions"
+      },
+      {
+        "w": "porcelain",
+        "d": "High-fired ceramic known for whiteness and translucency"
+      },
+      {
+        "w": "biscuit ware",
+        "d": "Unglazed fired porcelain or pottery"
+      },
+      {
+        "w": "opaline glass",
+        "d": "Milky decorative glass popular in the nineteenth century"
+      },
+      {
+        "w": "terracotta",
+        "d": "Fired clay ceramic, often reddish-brown"
+      },
+      {
+        "w": "raku",
+        "d": "Japanese low-fire pottery technique with dramatic surfaces"
+      },
+      {
+        "w": "borosilicate glass",
+        "d": "Heat-resistant glass containing boron trioxide"
+      },
+      {
+        "w": "crystal glass",
+        "d": "Glass with high brilliance and refractive quality"
+      },
+      {
+        "w": "stained glass",
+        "d": "Colored glass assembled into decorative panels"
+      },
+      {
+        "w": "fireclay",
+        "d": "Refractory clay used for heat-resistant ceramics"
+      },
+      {
+        "w": "soapstone",
+        "d": "Soft stone used for carving and heat-resistant vessels"
+      },
+      {
+        "w": "tempered glass",
+        "d": "Glass strengthened by controlled heating and cooling"
+      },
+      {
+        "w": "laminated glass",
+        "d": "Safety glass made of layers bonded with interlayer material"
+      },
+      {
+        "w": "foam glass",
+        "d": "Lightweight insulating glass with many pores"
+      },
+      {
+        "w": "smalt",
+        "d": "Blue cobalt glass ground as pigment or used in mosaic"
+      },
+      {
+        "w": "clinker brick",
+        "d": "Dense vitrified ceramic brick fired at high temperature"
+      },
+      {
+        "w": "cordierite",
+        "d": "Ceramic material valued for thermal-shock resistance"
+      },
+      {
+        "w": "fused quartz",
+        "d": "High-purity silica glass with strong heat resistance"
+      },
+      {
+        "w": "Egyptian faience",
+        "d": "Ancient glazed non-clay ceramic material"
+      },
+      {
+        "w": "glass-ceramic",
+        "d": "Material partly crystallized from glass for strength or heat resistance"
+      },
+      {
+        "w": "sgraffito",
+        "d": "Decoration made by scratching through a surface layer"
+      },
+      {
+        "w": "engobe",
+        "d": "Clay slip coating applied before firing"
+      },
+      {
+        "w": "refractory ceramic",
+        "d": "Ceramic designed to withstand very high temperatures"
+      },
+      {
+        "w": "crackle glaze",
+        "d": "Glaze deliberately showing a network of fine cracks"
+      },
+      {
+        "w": "flint glass",
+        "d": "Dense optical glass with high refractive index"
+      },
+      {
+        "w": "Delftware",
+        "d": "Blue-and-white tin-glazed pottery associated with Delft"
+      },
+      {
+        "w": "lusterware",
+        "d": "Ceramic with metallic iridescent glaze"
+      },
+      {
+        "w": "frosted glass",
+        "d": "Glass with a roughened surface that diffuses light"
+      },
+      {
+        "w": "mirror glass",
+        "d": "Glass backed with a reflective coating"
+      },
+      {
+        "w": "cotto",
+        "d": "Italian terracotta floor tile material"
+      },
+      {
+        "w": "biscuit porcelain",
+        "d": "Unglazed porcelain with a matte surface"
+      },
+      {
+        "w": "kaolin",
+        "d": "White clay essential for porcelain production"
+      }
+    ]
+  },
+  {
+    "name": "calendars & dating eras",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Old Style",
+        "d": "Julian-calendar dating used where Gregorian reform came later"
+      },
+      {
+        "w": "New Style",
+        "d": "Gregorian-calendar dating contrasted with Old Style dates"
+      },
+      {
+        "w": "Hijri calendar",
+        "d": "Islamic lunar calendar counted from the Hijra"
+      },
+      {
+        "w": "Anno Mundi",
+        "d": "Era counting years from a calculated creation of the world"
+      },
+      {
+        "w": "Coptic calendar",
+        "d": "Egyptian Christian calendar used by the Coptic Church"
+      },
+      {
+        "w": "Buddhist calendar",
+        "d": "Calendar era based on the traditional date of the Buddha’s death"
+      },
+      {
+        "w": "Japanese calendar",
+        "d": "Era-name system used alongside Gregorian dates in Japan"
+      },
+      {
+        "w": "Tzolk’in",
+        "d": "260-day sacred calendar of Mesoamerica"
+      },
+      {
+        "w": "Solar Hijri calendar",
+        "d": "Iranian solar calendar counted from the Hijra"
+      },
+      {
+        "w": "proleptic Gregorian calendar",
+        "d": "Gregorian calendar projected backward before its adoption"
+      },
+      {
+        "w": "Chinese calendar",
+        "d": "Lunisolar calendar used for traditional Chinese holidays"
+      },
+      {
+        "w": "Sun Stone",
+        "d": "Aztec calendar stone associated with cosmic cycles"
+      },
+      {
+        "w": "Ethiopian calendar",
+        "d": "Calendar used in Ethiopia with its own year numbering"
+      },
+      {
+        "w": "Avestan calendar",
+        "d": "Zoroastrian calendar tradition with Avestan month names"
+      },
+      {
+        "w": "Lo-sar calendar",
+        "d": "Tibetan New Year cycle and associated lunar dating"
+      },
+      {
+        "w": "Roman calendar",
+        "d": "Ancient calendar system preceding Julian reform"
+      },
+      {
+        "w": "Vendémiaire–Fructidor",
+        "d": "Range from first to last months of the French Republican calendar"
+      },
+      {
+        "w": "ancient Egyptian calendar",
+        "d": "Solar civil calendar used in pharaonic Egypt"
+      },
+      {
+        "w": "Nisan to Adar",
+        "d": "Span of months in the Hebrew calendar cycle"
+      },
+      {
+        "w": "lunar calendar",
+        "d": "Calendar based primarily on phases of the Moon"
+      },
+      {
+        "w": "International Fixed Calendar",
+        "d": "Proposed calendar with thirteen equal months"
+      },
+      {
+        "w": "runic calendar",
+        "d": "Perpetual calendar marked with runes in northern Europe"
+      },
+      {
+        "w": "Indian national calendar",
+        "d": "Saka-era civil calendar used officially in India"
+      },
+      {
+        "w": "Long Count",
+        "d": "Mesoamerican count of days from a mythic starting point"
+      },
+      {
+        "w": "Navasard",
+        "d": "Armenian New Year month in older calendar tradition"
+      },
+      {
+        "w": "Julian calendar",
+        "d": "Calendar introduced by Julius Caesar"
+      },
+      {
+        "w": "Gregorian calendar",
+        "d": "Calendar reform introduced under Pope Gregory XIII"
+      },
+      {
+        "w": "Babylonian calendar",
+        "d": "Ancient lunisolar calendar of Mesopotamia"
+      },
+      {
+        "w": "Maya Long Count",
+        "d": "Long-count dating system of the Maya"
+      },
+      {
+        "w": "Persian calendar",
+        "d": "Solar calendar tradition used in Iran"
+      },
+      {
+        "w": "French Republican calendar",
+        "d": "Revolutionary calendar with renamed months and decimal time"
+      },
+      {
+        "w": "Hebrew calendar",
+        "d": "Jewish lunisolar calendar used for religious dates"
+      },
+      {
+        "w": "ISO 8601",
+        "d": "International standard for writing dates and times"
+      },
+      {
+        "w": "Bengali calendar",
+        "d": "Solar calendar used in Bengal"
+      },
+      {
+        "w": "tonalpohualli",
+        "d": "260-day sacred calendar of central Mexico"
+      }
+    ]
+  },
+  {
+    "name": "symmetry & patterns",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "reflection symmetry",
+        "d": "Invariance under mirror reflection"
+      },
+      {
+        "w": "bilateral symmetry",
+        "d": "Left-right symmetry around a central plane"
+      },
+      {
+        "w": "translational invariance",
+        "d": "Property unchanged when shifted in space"
+      },
+      {
+        "w": "rotational invariance",
+        "d": "Property unchanged after rotation"
+      },
+      {
+        "w": "spiral symmetry",
+        "d": "Pattern preserving form through rotation and scaling"
+      },
+      {
+        "w": "radial symmetry",
+        "d": "Symmetry around a central point or axis"
+      },
+      {
+        "w": "spontaneous symmetry breaking",
+        "d": "Symmetric laws producing an asymmetric state"
+      },
+      {
+        "w": "supersymmetry",
+        "d": "Proposed symmetry relating bosons and fermions"
+      },
+      {
+        "w": "chirality",
+        "d": "Handedness that cannot be superimposed on a mirror image"
+      },
+      {
+        "w": "space group",
+        "d": "Symmetry group describing periodic crystal structures"
+      },
+      {
+        "w": "parity symmetry",
+        "d": "Invariance under spatial inversion"
+      },
+      {
+        "w": "time-reversal symmetry",
+        "d": "Invariance when the direction of time is reversed"
+      },
+      {
+        "w": "charge conjugation symmetry",
+        "d": "Symmetry exchanging particles with antiparticles"
+      },
+      {
+        "w": "CP symmetry",
+        "d": "Combined charge-conjugation and parity symmetry"
+      },
+      {
+        "w": "gauge invariance",
+        "d": "Symmetry under local transformations of fields"
+      },
+      {
+        "w": "self-similarity",
+        "d": "Pattern resembling itself at different scales"
+      },
+      {
+        "w": "spherical symmetry",
+        "d": "Symmetry under all rotations around a center"
+      },
+      {
+        "w": "discrete symmetry",
+        "d": "Symmetry with separated transformations rather than a continuum"
+      },
+      {
+        "w": "continuous symmetry",
+        "d": "Symmetry described by smooth continuous transformations"
+      },
+      {
+        "w": "fivefold symmetry",
+        "d": "Rotational symmetry by fifth-turn angles"
+      },
+      {
+        "w": "glide reflection",
+        "d": "Symmetry combining reflection with translation"
+      },
+      {
+        "w": "permutation invariance",
+        "d": "Property unchanged when labels are rearranged"
+      },
+      {
+        "w": "fractal",
+        "d": "Pattern with structure repeated across scales"
+      },
+      {
+        "w": "tessellation",
+        "d": "Tiling of a surface without gaps or overlaps"
+      },
+      {
+        "w": "logarithmic spiral",
+        "d": "Spiral that keeps the same shape as it grows"
+      },
+      {
+        "w": "wallpaper group",
+        "d": "One of the symmetry groups of repeating plane patterns"
+      },
+      {
+        "w": "quasicrystal",
+        "d": "Ordered structure without periodic translational symmetry"
+      },
+      {
+        "w": "Fibonacci spiral",
+        "d": "Approximate spiral pattern related to Fibonacci growth"
+      },
+      {
+        "w": "Penrose tiling",
+        "d": "Aperiodic tiling with ordered nonrepeating structure"
+      },
+      {
+        "w": "kaleidoscopic symmetry",
+        "d": "Pattern symmetry produced by repeated mirror reflections"
+      },
+      {
+        "w": "symmetry group",
+        "d": "Mathematical group of transformations preserving a structure"
+      },
+      {
+        "w": "inversion symmetry",
+        "d": "Invariance under mapping each point through a center"
+      },
+      {
+        "w": "mirror symmetry",
+        "d": "Symmetry between paired geometric or physical structures"
+      },
+      {
+        "w": "scale invariance",
+        "d": "Property unchanged when lengths are rescaled"
+      },
+      {
+        "w": "axisymmetry",
+        "d": "Rotational symmetry around a single axis"
+      }
+    ]
+  },
+  {
+    "name": "molecular biology methods",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "PCR",
+        "d": "Amplification of DNA using repeated temperature cycles"
+      },
+      {
+        "w": "RT-PCR",
+        "d": "PCR after reverse transcription from RNA to cDNA"
+      },
+      {
+        "w": "qPCR",
+        "d": "Quantitative PCR measuring amplification in real time"
+      },
+      {
+        "w": "digital PCR",
+        "d": "PCR partitioned into many reactions for absolute quantification"
+      },
+      {
+        "w": "gel electrophoresis",
+        "d": "Separation of DNA, RNA or proteins by size in a gel"
+      },
+      {
+        "w": "Western blot",
+        "d": "Protein detection after electrophoresis and antibody staining"
+      },
+      {
+        "w": "Northern blot",
+        "d": "RNA detection by hybridization after gel separation"
+      },
+      {
+        "w": "Southern blot",
+        "d": "DNA detection by hybridization after gel separation"
+      },
+      {
+        "w": "immunoprecipitation",
+        "d": "Pulling down a target protein with an antibody"
+      },
+      {
+        "w": "co-immunoprecipitation",
+        "d": "Testing protein interactions by pulling down a complex"
+      },
+      {
+        "w": "ChIP-seq",
+        "d": "Sequencing DNA fragments bound by a protein of interest"
+      },
+      {
+        "w": "ATAC-seq",
+        "d": "Method mapping open chromatin through transposase accessibility"
+      },
+      {
+        "w": "RNA sequencing",
+        "d": "Sequencing transcripts to measure gene expression"
+      },
+      {
+        "w": "Sanger sequencing",
+        "d": "Chain-termination method for reading DNA sequence"
+      },
+      {
+        "w": "next-generation sequencing",
+        "d": "Massively parallel sequencing of DNA or RNA"
+      },
+      {
+        "w": "FISH",
+        "d": "Fluorescent in situ hybridization for locating nucleic acids"
+      },
+      {
+        "w": "in situ hybridization",
+        "d": "Detecting specific nucleic acid sequences in cells or tissue"
+      },
+      {
+        "w": "flow cytometry",
+        "d": "Laser-based measurement of properties of many single cells"
+      },
+      {
+        "w": "immunofluorescence",
+        "d": "Antibody staining visualized by fluorescent labels"
+      },
+      {
+        "w": "fluorescence microscopy",
+        "d": "Microscopy using fluorescent probes or proteins"
+      },
+      {
+        "w": "cryo-electron microscopy",
+        "d": "Imaging frozen biological samples with an electron beam"
+      },
+      {
+        "w": "mass spectrometry",
+        "d": "Measuring molecules by mass-to-charge ratio"
+      },
+      {
+        "w": "NMR spectroscopy",
+        "d": "Spectroscopic method for molecular structure and dynamics"
+      },
+      {
+        "w": "X-ray crystallography",
+        "d": "Determining molecular structure from crystal diffraction"
+      },
+      {
+        "w": "ELISA",
+        "d": "Antibody-based plate assay for proteins or antigens"
+      },
+      {
+        "w": "EMSA",
+        "d": "Assay detecting protein binding to DNA or RNA"
+      },
+      {
+        "w": "FRET",
+        "d": "Fluorescence method measuring nanoscale molecular proximity"
+      },
+      {
+        "w": "two-hybrid system",
+        "d": "Genetic assay for protein-protein interactions"
+      },
+      {
+        "w": "reporter assay",
+        "d": "Assay using a measurable reporter to track regulation"
+      },
+      {
+        "w": "enzyme assay",
+        "d": "Measurement of enzyme activity under defined conditions"
+      },
+      {
+        "w": "FACS",
+        "d": "Cell sorting based on flow-cytometry signals"
+      },
+      {
+        "w": "SILAC",
+        "d": "Mass-spectrometry labeling method for quantitative proteomics"
+      },
+      {
+        "w": "DNA microarray",
+        "d": "Chip-based measurement of many nucleic acid sequences"
+      },
+      {
+        "w": "metagenomic sequencing",
+        "d": "Sequencing mixed DNA from a microbial community"
+      },
+      {
+        "w": "pulldown assay",
+        "d": "Affinity-based capture of a molecule and its partners"
+      }
+    ]
+  },
+  {
+    "name": "model organisms",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Drosophila melanogaster",
+        "d": "Fruit fly used widely in genetics and development"
+      },
+      {
+        "w": "Caenorhabditis elegans",
+        "d": "Transparent nematode model for development and neuroscience"
+      },
+      {
+        "w": "zebrafish",
+        "d": "Small vertebrate model with transparent embryos"
+      },
+      {
+        "w": "Arabidopsis thaliana",
+        "d": "Small plant model for genetics and development"
+      },
+      {
+        "w": "Escherichia coli",
+        "d": "Bacterium used as a core model in molecular biology"
+      },
+      {
+        "w": "Saccharomyces cerevisiae",
+        "d": "Budding yeast model for eukaryotic cell biology"
+      },
+      {
+        "w": "axolotl",
+        "d": "Salamander model for regeneration studies"
+      },
+      {
+        "w": "Xenopus laevis",
+        "d": "African clawed frog used in embryology and cell biology"
+      },
+      {
+        "w": "knockout mouse",
+        "d": "Mouse strain engineered with a disabled gene"
+      },
+      {
+        "w": "rhesus macaque",
+        "d": "Primate model used in neuroscience and medicine"
+      },
+      {
+        "w": "sea urchin",
+        "d": "Marine model for fertilization and early development"
+      },
+      {
+        "w": "planarian",
+        "d": "Flatworm model famous for regeneration"
+      },
+      {
+        "w": "Chinese hamster ovary cells",
+        "d": "Mammalian cell line used for genetics and biotechnology"
+      },
+      {
+        "w": "guinea pig",
+        "d": "Classic animal model in immunology and physiology"
+      },
+      {
+        "w": "rabbit",
+        "d": "Mammalian model used in physiology and antibody production"
+      },
+      {
+        "w": "Chlamydomonas reinhardtii",
+        "d": "Green alga model for flagella and photosynthesis"
+      },
+      {
+        "w": "Neurospora crassa",
+        "d": "Bread mold used in genetics and metabolism"
+      },
+      {
+        "w": "goldfish",
+        "d": "Fish model used in neurobiology and vision research"
+      },
+      {
+        "w": "Xenopus tropicalis",
+        "d": "Diploid frog model for genetics and development"
+      },
+      {
+        "w": "medaka",
+        "d": "Small fish model used in genetics and developmental biology"
+      },
+      {
+        "w": "octopus",
+        "d": "Cephalopod model for behavior and nervous-system studies"
+      },
+      {
+        "w": "honeybee",
+        "d": "Insect model for social behavior and learning"
+      },
+      {
+        "w": "deer mouse",
+        "d": "Rodent model for ecology, evolution and disease"
+      },
+      {
+        "w": "Pristionchus pacificus",
+        "d": "Nematode model for evolutionary developmental biology"
+      },
+      {
+        "w": "turbellarian",
+        "d": "Flatworm group used in regeneration and developmental studies"
+      },
+      {
+        "w": "Tetrahymena",
+        "d": "Ciliate model important in cell and molecular biology"
+      },
+      {
+        "w": "chimpanzee",
+        "d": "Primate model in cognition, evolution and disease history"
+      },
+      {
+        "w": "Hydra vulgaris",
+        "d": "Cnidarian model for regeneration and aging"
+      },
+      {
+        "w": "Volvox",
+        "d": "Green alga model for multicellularity"
+      },
+      {
+        "w": "European mink",
+        "d": "Mammal used in conservation and disease research"
+      },
+      {
+        "w": "humpback whale",
+        "d": "Large mammal model for communication and behavior studies"
+      },
+      {
+        "w": "Caenorhabditis briggsae",
+        "d": "Nematode used for comparative genetics"
+      },
+      {
+        "w": "mouse lemur",
+        "d": "Small primate model for aging and neurodegeneration"
+      },
+      {
+        "w": "killifish",
+        "d": "Short-lived fish model for aging research"
+      },
+      {
+        "w": "ferret",
+        "d": "Mammalian model used in influenza and neuroscience studies"
+      }
+    ]
+  },
+  {
+    "name": "RNA types",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "mRNA",
+        "d": "Messenger RNA carrying protein-coding information"
+      },
+      {
+        "w": "tRNA",
+        "d": "Transfer RNA delivering amino acids during translation"
+      },
+      {
+        "w": "rRNA",
+        "d": "Ribosomal RNA forming the core of ribosomes"
+      },
+      {
+        "w": "microRNA",
+        "d": "Small regulatory RNA that represses target transcripts"
+      },
+      {
+        "w": "siRNA",
+        "d": "Small interfering RNA guiding sequence-specific silencing"
+      },
+      {
+        "w": "long noncoding RNA",
+        "d": "Long RNA molecule that does not code for protein"
+      },
+      {
+        "w": "ribozyme",
+        "d": "RNA molecule with catalytic activity"
+      },
+      {
+        "w": "antisense RNA",
+        "d": "RNA complementary to another transcript"
+      },
+      {
+        "w": "guide RNA",
+        "d": "RNA that directs a protein complex to a target sequence"
+      },
+      {
+        "w": "telomerase RNA",
+        "d": "RNA template used by telomerase at chromosome ends"
+      },
+      {
+        "w": "piRNA",
+        "d": "Small RNA involved in transposon silencing in germ cells"
+      },
+      {
+        "w": "snRNA",
+        "d": "Small nuclear RNA involved in splicing"
+      },
+      {
+        "w": "snoRNA",
+        "d": "Small nucleolar RNA involved in ribosomal RNA modification"
+      },
+      {
+        "w": "circular RNA",
+        "d": "RNA molecule forming a covalently closed circle"
+      },
+      {
+        "w": "7SK RNA",
+        "d": "Small nuclear RNA regulating transcription elongation"
+      },
+      {
+        "w": "Y RNA",
+        "d": "Small RNA involved in DNA replication and RNA quality control"
+      },
+      {
+        "w": "RNA primer",
+        "d": "Short RNA segment used to start DNA synthesis"
+      },
+      {
+        "w": "pre-mRNA",
+        "d": "Primary messenger RNA transcript before processing"
+      },
+      {
+        "w": "XIST",
+        "d": "Long noncoding RNA that drives X-chromosome inactivation"
+      },
+      {
+        "w": "HOTAIR",
+        "d": "Long noncoding RNA involved in chromatin regulation"
+      },
+      {
+        "w": "MALAT1",
+        "d": "Abundant long noncoding RNA linked to splicing and cancer biology"
+      },
+      {
+        "w": "double-stranded RNA",
+        "d": "RNA duplex that can trigger antiviral or silencing pathways"
+      },
+      {
+        "w": "crRNA",
+        "d": "CRISPR RNA that helps recognize target sequences"
+      },
+      {
+        "w": "pre-tRNA",
+        "d": "Transfer RNA precursor before trimming and modification"
+      },
+      {
+        "w": "enhancer RNA",
+        "d": "RNA transcribed from enhancer regions"
+      },
+      {
+        "w": "telomeric RNA",
+        "d": "RNA transcribed from telomeric repeats"
+      },
+      {
+        "w": "saRNA",
+        "d": "Small activating RNA that can increase gene expression"
+      },
+      {
+        "w": "extracellular RNA",
+        "d": "RNA found outside cells in fluids or vesicles"
+      },
+      {
+        "w": "retroviral RNA",
+        "d": "RNA genome carried by retroviruses"
+      },
+      {
+        "w": "CAR RNA",
+        "d": "Chimeric antigen receptor transcript used in engineered cells"
+      },
+      {
+        "w": "mtRNA",
+        "d": "Mitochondrial RNA transcribed from mitochondrial DNA"
+      },
+      {
+        "w": "transposon RNA",
+        "d": "RNA produced from mobile genetic elements"
+      },
+      {
+        "w": "7SL RNA",
+        "d": "Signal-recognition-particle RNA involved in protein targeting"
+      },
+      {
+        "w": "spike RNA",
+        "d": "RNA sequence encoding a viral spike protein"
+      },
+      {
+        "w": "vault RNA",
+        "d": "Small RNA associated with vault ribonucleoprotein particles"
+      }
+    ]
+  },
+  {
+    "name": "genetic engineering tools",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "CRISPR-Cas9",
+        "d": "RNA-guided nuclease system widely used for genome editing"
+      },
+      {
+        "w": "CRISPR-Cas12a",
+        "d": "Genome-editing nuclease with staggered cuts and different PAM rules"
+      },
+      {
+        "w": "Cas13",
+        "d": "RNA-targeting CRISPR enzyme"
+      },
+      {
+        "w": "TALEN",
+        "d": "Engineered nuclease built from transcription activator-like effectors"
+      },
+      {
+        "w": "ZFN",
+        "d": "Zinc-finger nuclease for targeted DNA cutting"
+      },
+      {
+        "w": "primer",
+        "d": "Short nucleic acid sequence that starts DNA synthesis"
+      },
+      {
+        "w": "plasmid vector",
+        "d": "Circular DNA carrier used to clone or express sequences"
+      },
+      {
+        "w": "viral vector",
+        "d": "Virus-derived delivery vehicle for genetic material"
+      },
+      {
+        "w": "expression cassette",
+        "d": "DNA unit containing regulatory elements and a coding sequence"
+      },
+      {
+        "w": "polylinker",
+        "d": "Multiple-cloning site with several restriction sites"
+      },
+      {
+        "w": "reporter gene",
+        "d": "Gene whose product makes expression easy to measure"
+      },
+      {
+        "w": "GFP",
+        "d": "Green fluorescent protein used as a reporter"
+      },
+      {
+        "w": "synthetic promoter",
+        "d": "Designed DNA sequence controlling transcription"
+      },
+      {
+        "w": "transcription terminator",
+        "d": "Sequence that stops transcription"
+      },
+      {
+        "w": "selectable marker",
+        "d": "Gene allowing cells with an insert to be selected"
+      },
+      {
+        "w": "AAV vector",
+        "d": "Adeno-associated viral vector used for gene delivery"
+      },
+      {
+        "w": "lentiviral vector",
+        "d": "Retrovirus-derived vector that can integrate into genomes"
+      },
+      {
+        "w": "retroviral vector",
+        "d": "Gene-delivery vector derived from retroviruses"
+      },
+      {
+        "w": "BAC",
+        "d": "Bacterial artificial chromosome for large DNA inserts"
+      },
+      {
+        "w": "cosmid",
+        "d": "Hybrid plasmid-phage cloning vector"
+      },
+      {
+        "w": "PiggyBac",
+        "d": "Transposon system used for genome insertion"
+      },
+      {
+        "w": "Sleeping Beauty transposon",
+        "d": "Synthetic transposon system used for gene transfer"
+      },
+      {
+        "w": "Cre-Lox",
+        "d": "Site-specific recombination system from bacteriophage P1"
+      },
+      {
+        "w": "Flp-FRT",
+        "d": "Yeast recombinase system used for genetic manipulation"
+      },
+      {
+        "w": "Gibson assembly",
+        "d": "Method joining DNA fragments with overlapping ends"
+      },
+      {
+        "w": "Golden Gate assembly",
+        "d": "DNA assembly method using type IIS restriction enzymes"
+      },
+      {
+        "w": "base editing",
+        "d": "Genome editing that changes bases without a double-strand break"
+      },
+      {
+        "w": "prime editing",
+        "d": "Genome editing using a reverse transcriptase and guide design"
+      },
+      {
+        "w": "gene drive",
+        "d": "Genetic system biased to spread through a population"
+      },
+      {
+        "w": "knockout",
+        "d": "Genetic alteration that disables a gene"
+      },
+      {
+        "w": "knock-in",
+        "d": "Insertion of a defined sequence into a genome"
+      },
+      {
+        "w": "CRISPRi",
+        "d": "CRISPR interference method for repressing transcription"
+      },
+      {
+        "w": "CRISPRa",
+        "d": "CRISPR activation method for increasing transcription"
+      },
+      {
+        "w": "antisense oligonucleotide",
+        "d": "Short synthetic nucleic acid used to alter RNA function"
+      },
+      {
+        "w": "morpholino",
+        "d": "Synthetic oligonucleotide used to block translation or splicing"
+      }
+    ]
+  },
+  {
+    "name": "epigenetic mechanisms",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "DNA methylation",
+        "d": "Addition of methyl groups to DNA, often at CpG sites"
+      },
+      {
+        "w": "histone acetylation",
+        "d": "Modification usually associated with more open chromatin"
+      },
+      {
+        "w": "histone deacetylation",
+        "d": "Removal of acetyl groups from histones"
+      },
+      {
+        "w": "genomic imprinting",
+        "d": "Parent-of-origin-specific gene expression"
+      },
+      {
+        "w": "X-inactivation",
+        "d": "Silencing of one X chromosome in many female mammals"
+      },
+      {
+        "w": "chromatin remodeling",
+        "d": "ATP-dependent repositioning or restructuring of nucleosomes"
+      },
+      {
+        "w": "noncoding RNA",
+        "d": "RNA that regulates genes without encoding a protein"
+      },
+      {
+        "w": "CpG island",
+        "d": "DNA region rich in CpG sites often near promoters"
+      },
+      {
+        "w": "histone code",
+        "d": "Combinatorial idea of histone marks regulating chromatin function"
+      },
+      {
+        "w": "DNA methyltransferase",
+        "d": "Enzyme that adds methyl groups to DNA"
+      },
+      {
+        "w": "histone phosphorylation",
+        "d": "Addition of phosphate groups to histones"
+      },
+      {
+        "w": "ubiquitination",
+        "d": "Protein modification involving ubiquitin attachment"
+      },
+      {
+        "w": "SUMOylation",
+        "d": "Protein modification with SUMO proteins"
+      },
+      {
+        "w": "Polycomb repression",
+        "d": "Gene silencing mediated by Polycomb-group complexes"
+      },
+      {
+        "w": "Trithorax activation",
+        "d": "Gene activation maintained by Trithorax-group proteins"
+      },
+      {
+        "w": "DNA demethylation",
+        "d": "Removal or reversal of DNA methylation marks"
+      },
+      {
+        "w": "bromodomain",
+        "d": "Protein domain that recognizes acetylated lysines"
+      },
+      {
+        "w": "chromodomain",
+        "d": "Protein domain that recognizes methylated histones"
+      },
+      {
+        "w": "nucleosome positioning",
+        "d": "Placement of nucleosomes along DNA"
+      },
+      {
+        "w": "insulator",
+        "d": "DNA element that blocks enhancer-promoter communication or chromatin spread"
+      },
+      {
+        "w": "topologically associating domain",
+        "d": "Chromosome region with frequent internal contacts"
+      },
+      {
+        "w": "lamina association",
+        "d": "Interaction of chromatin with the nuclear lamina"
+      },
+      {
+        "w": "RNA interference",
+        "d": "Small-RNA pathway that silences gene expression"
+      },
+      {
+        "w": "histone variant",
+        "d": "Alternative histone form that changes chromatin properties"
+      },
+      {
+        "w": "enhancer",
+        "d": "Regulatory DNA element increasing transcription"
+      },
+      {
+        "w": "TET demethylase",
+        "d": "Enzyme family involved in active DNA demethylation"
+      },
+      {
+        "w": "super-enhancer",
+        "d": "Large cluster of enhancers driving strong cell-identity genes"
+      },
+      {
+        "w": "spatial epigenetics",
+        "d": "Study of chromatin regulation in three-dimensional nuclear space"
+      },
+      {
+        "w": "epigenetic clock",
+        "d": "Methylation-based estimator of biological age"
+      },
+      {
+        "w": "transgenerational epigenetics",
+        "d": "Inheritance of epigenetic effects across generations"
+      },
+      {
+        "w": "condensin",
+        "d": "Protein complex that compacts chromosomes"
+      },
+      {
+        "w": "cohesin",
+        "d": "Protein complex shaping chromosome loops and sister-chromatid cohesion"
+      },
+      {
+        "w": "phase separation",
+        "d": "Formation of liquid-like molecular compartments in cells"
+      },
+      {
+        "w": "de novo DNA methylation",
+        "d": "Establishment of new DNA methylation patterns"
+      },
+      {
+        "w": "heterochromatin spreading",
+        "d": "Expansion of compact silenced chromatin across a region"
+      }
+    ]
+  },
+  {
+    "name": "tech companies & decacorns",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "NVIDIA",
+        "d": "Chip company whose GPUs became central to AI computing"
+      },
+      {
+        "w": "Palantir",
+        "d": "Data-analytics company serving governments and large organizations"
+      },
+      {
+        "w": "Snowflake",
+        "d": "Cloud data-warehouse company"
+      },
+      {
+        "w": "Databricks",
+        "d": "Lakehouse data platform built around Apache Spark"
+      },
+      {
+        "w": "Stripe",
+        "d": "Payments infrastructure company for online businesses"
+      },
+      {
+        "w": "Shopify",
+        "d": "E-commerce platform company for online stores"
+      },
+      {
+        "w": "Salesforce",
+        "d": "Cloud software company centered on customer relationship management"
+      },
+      {
+        "w": "ServiceNow",
+        "d": "Enterprise workflow and IT-service management platform"
+      },
+      {
+        "w": "Cloudflare",
+        "d": "Internet infrastructure company for CDN, security and edge services"
+      },
+      {
+        "w": "Confluent",
+        "d": "Data-streaming company built around Apache Kafka"
+      },
+      {
+        "w": "MongoDB",
+        "d": "Company behind a widely used document database"
+      },
+      {
+        "w": "Twilio",
+        "d": "Cloud communications platform for messaging, voice and APIs"
+      },
+      {
+        "w": "HubSpot",
+        "d": "Inbound marketing and CRM software company"
+      },
+      {
+        "w": "Datadog",
+        "d": "Monitoring and observability platform for cloud systems"
+      },
+      {
+        "w": "HashiCorp",
+        "d": "Infrastructure automation company behind Terraform and Vault"
+      },
+      {
+        "w": "Elastic",
+        "d": "Search and observability company behind Elasticsearch"
+      },
+      {
+        "w": "Okta",
+        "d": "Identity and access management company"
+      },
+      {
+        "w": "Zendesk",
+        "d": "Customer-support software company"
+      },
+      {
+        "w": "Workday",
+        "d": "Enterprise software company for HR and finance"
+      },
+      {
+        "w": "CrowdStrike",
+        "d": "Cybersecurity company known for endpoint protection"
+      },
+      {
+        "w": "UiPath",
+        "d": "Robotic process automation company"
+      },
+      {
+        "w": "OpenAI",
+        "d": "AI research and product company behind ChatGPT"
+      },
+      {
+        "w": "Anthropic",
+        "d": "AI company behind the Claude assistant"
+      },
+      {
+        "w": "Figma",
+        "d": "Collaborative design software company"
+      },
+      {
+        "w": "SpaceX",
+        "d": "Private space company developing reusable rockets and spacecraft"
+      },
+      {
+        "w": "Canva",
+        "d": "Online design platform company"
+      },
+      {
+        "w": "Revolut",
+        "d": "Fintech company offering app-based banking and payments"
+      },
+      {
+        "w": "Klarna",
+        "d": "Buy-now-pay-later and payments company"
+      },
+      {
+        "w": "Chime",
+        "d": "U.S. financial technology company focused on mobile banking"
+      },
+      {
+        "w": "Rippling",
+        "d": "Workforce-management platform for HR, IT and payroll"
+      },
+      {
+        "w": "Checkout.com",
+        "d": "Payments company serving online merchants"
+      },
+      {
+        "w": "Scale AI",
+        "d": "Data and infrastructure company for AI model development"
+      },
+      {
+        "w": "Wiz",
+        "d": "Cloud security company"
+      },
+      {
+        "w": "Anduril",
+        "d": "Defense technology company building autonomous systems"
+      },
+      {
+        "w": "Ramp",
+        "d": "Corporate card and spend-management fintech"
+      }
+    ]
+  },
+  {
+    "name": "venture funds & investors",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Sequoia Capital",
+        "d": "Venture firm known for early investments in major tech companies"
+      },
+      {
+        "w": "Andreessen Horowitz",
+        "d": "Silicon Valley venture firm also known as a16z"
+      },
+      {
+        "w": "Y Combinator",
+        "d": "Startup accelerator and seed investor"
+      },
+      {
+        "w": "Benchmark",
+        "d": "Venture firm known for concentrated early-stage bets"
+      },
+      {
+        "w": "Accel",
+        "d": "Global venture firm with early investments in internet companies"
+      },
+      {
+        "w": "Kleiner Perkins",
+        "d": "Classic Silicon Valley venture-capital firm"
+      },
+      {
+        "w": "SoftBank Vision Fund",
+        "d": "Large technology investment fund backed by SoftBank"
+      },
+      {
+        "w": "Tiger Global",
+        "d": "Investment firm active in growth-stage technology companies"
+      },
+      {
+        "w": "Founders Fund",
+        "d": "Venture firm focused on ambitious technology startups"
+      },
+      {
+        "w": "Greylock",
+        "d": "Venture firm with a long Silicon Valley history"
+      },
+      {
+        "w": "General Catalyst",
+        "d": "Venture firm investing from seed to growth stages"
+      },
+      {
+        "w": "Index Ventures",
+        "d": "International venture firm backing software and consumer startups"
+      },
+      {
+        "w": "Lightspeed Venture Partners",
+        "d": "Venture firm investing in enterprise and consumer technology"
+      },
+      {
+        "w": "Bessemer Venture Partners",
+        "d": "Old venture firm with a large cloud-software portfolio"
+      },
+      {
+        "w": "NEA",
+        "d": "New Enterprise Associates, a large venture-capital firm"
+      },
+      {
+        "w": "Coatue",
+        "d": "Investment manager active in technology growth companies"
+      },
+      {
+        "w": "Insight Partners",
+        "d": "Growth investor focused on software companies"
+      },
+      {
+        "w": "GV",
+        "d": "Alphabet’s venture-capital arm"
+      },
+      {
+        "w": "First Round Capital",
+        "d": "Seed-stage venture firm"
+      },
+      {
+        "w": "Union Square Ventures",
+        "d": "New York venture firm known for network businesses"
+      },
+      {
+        "w": "Felicis",
+        "d": "Venture firm backing early-stage technology companies"
+      },
+      {
+        "w": "Khosla Ventures",
+        "d": "Venture firm founded by Vinod Khosla"
+      },
+      {
+        "w": "CRV",
+        "d": "Early-stage venture firm formerly known as Charles River Ventures"
+      },
+      {
+        "w": "Balderton Capital",
+        "d": "European venture-capital firm"
+      },
+      {
+        "w": "Lux Capital",
+        "d": "Venture firm focused on science and frontier technology"
+      },
+      {
+        "w": "DST Global",
+        "d": "Technology investment firm known for late-stage deals"
+      },
+      {
+        "w": "Dragoneer",
+        "d": "Growth investor in software and internet companies"
+      },
+      {
+        "w": "Ribbit Capital",
+        "d": "Venture firm focused on fintech"
+      },
+      {
+        "w": "Spark Capital",
+        "d": "Venture firm backing consumer and software companies"
+      },
+      {
+        "w": "Norwest Venture Partners",
+        "d": "Venture and growth equity firm"
+      },
+      {
+        "w": "a16z crypto",
+        "d": "Andreessen Horowitz fund focused on crypto and web3"
+      },
+      {
+        "w": "Lowercase Capital",
+        "d": "Early-stage fund associated with early Twitter and Uber bets"
+      },
+      {
+        "w": "Thrive Capital",
+        "d": "Venture firm active in internet and software companies"
+      },
+      {
+        "w": "IVP",
+        "d": "Later-stage venture firm investing in technology companies"
+      },
+      {
+        "w": "Menlo Ventures",
+        "d": "Silicon Valley venture firm with enterprise and consumer bets"
+      }
+    ]
+  },
+  {
+    "name": "financial instruments",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "margin call",
+        "d": "Demand for extra collateral when a leveraged position loses value"
+      },
+      {
+        "w": "short squeeze",
+        "d": "Rapid price rise forcing short sellers to buy back shares"
+      },
+      {
+        "w": "stop-loss order",
+        "d": "Order designed to limit losses after a price crosses a threshold"
+      },
+      {
+        "w": "leverage",
+        "d": "Use of borrowed money or derivatives to magnify exposure"
+      },
+      {
+        "w": "IPO",
+        "d": "Initial public offering of company shares"
+      },
+      {
+        "w": "underwriting",
+        "d": "Process by which banks arrange and guarantee securities issuance"
+      },
+      {
+        "w": "asset-backed securitization",
+        "d": "Packaging cash-flowing assets into tradable securities"
+      },
+      {
+        "w": "clearing",
+        "d": "Post-trade process of settling and guaranteeing obligations"
+      },
+      {
+        "w": "interest-rate cap",
+        "d": "Derivative limiting exposure to rising interest rates"
+      },
+      {
+        "w": "escrow",
+        "d": "Arrangement where a third party holds funds or assets until conditions are met"
+      },
+      {
+        "w": "ETF",
+        "d": "Exchange-traded fund that trades like a stock"
+      },
+      {
+        "w": "currency swap",
+        "d": "Derivative exchanging cash flows in different currencies"
+      },
+      {
+        "w": "CDS",
+        "d": "Credit default swap transferring default risk"
+      },
+      {
+        "w": "REIT",
+        "d": "Real-estate investment trust"
+      },
+      {
+        "w": "convertible note",
+        "d": "Debt that can convert into equity"
+      },
+      {
+        "w": "SAFE",
+        "d": "Startup financing agreement for future equity"
+      },
+      {
+        "w": "straddle",
+        "d": "Options position using both a call and a put"
+      },
+      {
+        "w": "bid-ask spread",
+        "d": "Difference between quoted buying and selling prices"
+      },
+      {
+        "w": "credit derivative",
+        "d": "Derivative whose value depends on credit risk"
+      },
+      {
+        "w": "risk-free arbitrage",
+        "d": "Theoretical profit from price mismatch without risk"
+      },
+      {
+        "w": "capital-protected note",
+        "d": "Structured note designed to preserve principal"
+      },
+      {
+        "w": "CLO",
+        "d": "Collateralized loan obligation backed by corporate loans"
+      },
+      {
+        "w": "SPAC warrant",
+        "d": "Warrant issued by a special-purpose acquisition company"
+      },
+      {
+        "w": "preferred share",
+        "d": "Equity security with priority over common stock"
+      },
+      {
+        "w": "convertible bond",
+        "d": "Bond that can be converted into shares"
+      },
+      {
+        "w": "forward contract",
+        "d": "Private agreement to trade an asset later at a set price"
+      },
+      {
+        "w": "call option",
+        "d": "Option giving the right to buy an asset"
+      },
+      {
+        "w": "put option",
+        "d": "Option giving the right to sell an asset"
+      },
+      {
+        "w": "futures",
+        "d": "Exchange-traded contract for future delivery or settlement"
+      },
+      {
+        "w": "swaption",
+        "d": "Option to enter into an interest-rate swap"
+      },
+      {
+        "w": "synthetic ETF",
+        "d": "ETF using derivatives to replicate an index"
+      },
+      {
+        "w": "index fund",
+        "d": "Fund that tracks a market index"
+      },
+      {
+        "w": "mezzanine financing",
+        "d": "Hybrid debt-equity financing below senior debt"
+      },
+      {
+        "w": "covenant",
+        "d": "Contractual restriction or requirement in a debt agreement"
+      },
+      {
+        "w": "infrastructure bond",
+        "d": "Bond issued to finance infrastructure projects"
+      }
+    ]
+  },
+  {
+    "name": "logistics terms",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "fulfillment",
+        "d": "Process of storing, picking, packing and shipping orders"
+      },
+      {
+        "w": "cross-docking",
+        "d": "Moving goods from inbound to outbound transport with minimal storage"
+      },
+      {
+        "w": "dropshipping",
+        "d": "Retail model where a supplier ships directly to the customer"
+      },
+      {
+        "w": "last-mile delivery",
+        "d": "Final delivery segment from a local hub to the customer"
+      },
+      {
+        "w": "pallet",
+        "d": "Platform used to stack and move goods"
+      },
+      {
+        "w": "freight",
+        "d": "Goods transported in bulk by truck, rail, ship or aircraft"
+      },
+      {
+        "w": "Incoterms",
+        "d": "International rules defining responsibilities in trade delivery"
+      },
+      {
+        "w": "bill of lading",
+        "d": "Transport document acknowledging cargo receipt"
+      },
+      {
+        "w": "customs broker",
+        "d": "Specialist handling customs clearance for shipments"
+      },
+      {
+        "w": "RFID reader",
+        "d": "Device reading radio-frequency tags on goods"
+      },
+      {
+        "w": "3PL",
+        "d": "Third-party logistics provider"
+      },
+      {
+        "w": "4PL",
+        "d": "Fourth-party logistics integrator managing multiple providers"
+      },
+      {
+        "w": "WMS",
+        "d": "Warehouse management system"
+      },
+      {
+        "w": "TMS",
+        "d": "Transportation management system"
+      },
+      {
+        "w": "EDI",
+        "d": "Electronic data interchange between business systems"
+      },
+      {
+        "w": "supply chain",
+        "d": "Network moving goods from suppliers to customers"
+      },
+      {
+        "w": "multimodal transport",
+        "d": "Shipment using more than one transport mode"
+      },
+      {
+        "w": "freight forwarder",
+        "d": "Intermediary arranging cargo transport"
+      },
+      {
+        "w": "cargo consolidation",
+        "d": "Combining smaller shipments into a larger load"
+      },
+      {
+        "w": "air freight",
+        "d": "Cargo transported by aircraft"
+      },
+      {
+        "w": "FOB",
+        "d": "Incoterm meaning free on board"
+      },
+      {
+        "w": "DDP",
+        "d": "Incoterm meaning delivered duty paid"
+      },
+      {
+        "w": "cargo declaration",
+        "d": "Document describing goods for customs or transport"
+      },
+      {
+        "w": "reverse logistics",
+        "d": "Flow of returns, repairs or recycling back from customers"
+      },
+      {
+        "w": "delivery slot",
+        "d": "Assigned time window for delivery"
+      },
+      {
+        "w": "omnichannel logistics",
+        "d": "Logistics serving integrated online and offline sales channels"
+      },
+      {
+        "w": "cold chain",
+        "d": "Temperature-controlled supply chain"
+      },
+      {
+        "w": "end-to-end traceability",
+        "d": "Ability to track goods through every supply-chain step"
+      },
+      {
+        "w": "dispatching",
+        "d": "Assigning vehicles, drivers or orders for transport"
+      },
+      {
+        "w": "freight broker",
+        "d": "Intermediary matching shippers with carriers"
+      },
+      {
+        "w": "automated warehouse",
+        "d": "Warehouse using robotics or automated storage systems"
+      },
+      {
+        "w": "express customs clearance",
+        "d": "Accelerated customs processing for shipments"
+      },
+      {
+        "w": "groupage shipment",
+        "d": "Consolidated shipment made from smaller consignments"
+      },
+      {
+        "w": "reverse customs",
+        "d": "Customs handling for returned or re-exported goods"
+      },
+      {
+        "w": "silent delivery",
+        "d": "Delivery arranged with minimal noise or disturbance"
+      }
+    ]
+  },
+  {
+    "name": "organizational structures",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "holacracy",
+        "d": "Self-management system distributing authority across roles"
+      },
+      {
+        "w": "matrix organization",
+        "d": "Structure where employees report along two dimensions"
+      },
+      {
+        "w": "divisional structure",
+        "d": "Organization grouped by product, market or region"
+      },
+      {
+        "w": "functional structure",
+        "d": "Organization grouped by specialized departments"
+      },
+      {
+        "w": "flat organization",
+        "d": "Structure with few management layers"
+      },
+      {
+        "w": "network organization",
+        "d": "Organization coordinated through external and internal networks"
+      },
+      {
+        "w": "projectized organization",
+        "d": "Structure built around projects rather than permanent functions"
+      },
+      {
+        "w": "virtual organization",
+        "d": "Distributed organization coordinated digitally"
+      },
+      {
+        "w": "adhocracy",
+        "d": "Flexible organization designed for innovation and adaptation"
+      },
+      {
+        "w": "bureaucracy",
+        "d": "Rule-bound hierarchical administrative structure"
+      },
+      {
+        "w": "line organization",
+        "d": "Simple hierarchy with direct authority lines"
+      },
+      {
+        "w": "staff organization",
+        "d": "Structure adding advisory staff to line management"
+      },
+      {
+        "w": "tribe model",
+        "d": "Agile structure grouping squads into larger tribes"
+      },
+      {
+        "w": "dual organization",
+        "d": "Structure combining operational hierarchy with a second change network"
+      },
+      {
+        "w": "hybrid structure",
+        "d": "Organization combining multiple structural principles"
+      },
+      {
+        "w": "clan culture",
+        "d": "Organization coordinated through shared values and belonging"
+      },
+      {
+        "w": "spiral dynamics",
+        "d": "Developmental model sometimes used in organizational change"
+      },
+      {
+        "w": "self-managed team",
+        "d": "Team with authority to organize its own work"
+      },
+      {
+        "w": "tensor structure",
+        "d": "Multi-dimensional organization beyond a simple matrix"
+      },
+      {
+        "w": "lean organization",
+        "d": "Organization designed around waste reduction and flow"
+      },
+      {
+        "w": "guild structure",
+        "d": "Community-of-practice layer sharing expertise across teams"
+      },
+      {
+        "w": "DAO",
+        "d": "Decentralized autonomous organization governed through code or tokens"
+      },
+      {
+        "w": "cellular organization",
+        "d": "Structure made of semi-autonomous small units"
+      },
+      {
+        "w": "hierarchical structure",
+        "d": "Organization with ranked levels of authority"
+      },
+      {
+        "w": "ambidextrous organization",
+        "d": "Structure balancing exploration and exploitation"
+      },
+      {
+        "w": "ecosystem organization",
+        "d": "Organization coordinated through partners and platforms"
+      },
+      {
+        "w": "decentralized structure",
+        "d": "Authority distributed away from a central top"
+      },
+      {
+        "w": "agile organization",
+        "d": "Structure built for iterative work and rapid adaptation"
+      },
+      {
+        "w": "cooperative",
+        "d": "Member-owned organization governed for shared benefit"
+      },
+      {
+        "w": "franchise organization",
+        "d": "Network structure built around licensed local operators"
+      },
+      {
+        "w": "startup studio",
+        "d": "Organization that repeatedly builds new companies"
+      },
+      {
+        "w": "platform organization",
+        "d": "Business organized around a platform connecting participants"
+      },
+      {
+        "w": "umbrella company",
+        "d": "Entity providing shared administration for separate workers or units"
+      },
+      {
+        "w": "consortium",
+        "d": "Association of organizations formed for a shared project"
+      },
+      {
+        "w": "tactical organization",
+        "d": "Structure emphasizing temporary task-focused coordination"
+      }
+    ]
+  },
+  {
+    "name": "unicorn startups under $10B",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Amplitude",
+        "d": "Product analytics company used to study user behavior"
+      },
+      {
+        "w": "Mixpanel",
+        "d": "Analytics platform focused on product usage funnels"
+      },
+      {
+        "w": "PagerDuty",
+        "d": "Incident-response and on-call management platform"
+      },
+      {
+        "w": "Pendo",
+        "d": "Product-experience platform for software teams"
+      },
+      {
+        "w": "Perplexity",
+        "d": "AI search and answer engine startup"
+      },
+      {
+        "w": "Vercel",
+        "d": "Frontend cloud platform behind Next.js deployment"
+      },
+      {
+        "w": "Linear",
+        "d": "Issue-tracking and product-planning tool for software teams"
+      },
+      {
+        "w": "Notion",
+        "d": "Workspace app combining documents, databases and collaboration"
+      },
+      {
+        "w": "Airtable",
+        "d": "Spreadsheet-database hybrid used for no-code workflows"
+      },
+      {
+        "w": "Retool",
+        "d": "Platform for building internal business tools"
+      },
+      {
+        "w": "Mistral AI",
+        "d": "French AI company developing large language models"
+      },
+      {
+        "w": "Plaid",
+        "d": "Fintech infrastructure company connecting bank accounts to apps"
+      },
+      {
+        "w": "Instacart",
+        "d": "Grocery delivery and retail technology company"
+      },
+      {
+        "w": "Brex",
+        "d": "Fintech company offering corporate cards and spend management"
+      },
+      {
+        "w": "Navan",
+        "d": "Business travel and expense-management platform"
+      },
+      {
+        "w": "Deel",
+        "d": "Global payroll and contractor management platform"
+      },
+      {
+        "w": "Miro",
+        "d": "Online collaborative whiteboard platform"
+      },
+      {
+        "w": "Loom",
+        "d": "Video messaging tool for workplace communication"
+      },
+      {
+        "w": "Hugging Face",
+        "d": "AI community and model-hosting platform"
+      },
+      {
+        "w": "Cohere",
+        "d": "AI company developing enterprise language models"
+      },
+      {
+        "w": "Harvey",
+        "d": "Legal AI startup for law firms and legal teams"
+      },
+      {
+        "w": "ElevenLabs",
+        "d": "AI audio company known for voice generation"
+      },
+      {
+        "w": "Replit",
+        "d": "Cloud coding platform and developer tool company"
+      },
+      {
+        "w": "Together AI",
+        "d": "AI infrastructure company for open models"
+      },
+      {
+        "w": "Character.AI",
+        "d": "Conversational AI startup focused on character chatbots"
+      },
+      {
+        "w": "Glean",
+        "d": "Enterprise search and knowledge assistant company"
+      },
+      {
+        "w": "Synthesia",
+        "d": "AI video generation company"
+      },
+      {
+        "w": "Wayve",
+        "d": "Autonomous-driving AI company"
+      },
+      {
+        "w": "Monzo",
+        "d": "UK digital bank and fintech company"
+      },
+      {
+        "w": "Starling Bank",
+        "d": "UK app-based bank"
+      },
+      {
+        "w": "OakNorth",
+        "d": "UK fintech focused on business lending"
+      },
+      {
+        "w": "SumUp",
+        "d": "Payments company serving small merchants"
+      },
+      {
+        "w": "Blockchain.com",
+        "d": "Cryptocurrency wallet and exchange company"
+      },
+      {
+        "w": "Octopus Energy",
+        "d": "Energy technology and retail company"
+      },
+      {
+        "w": "Groupon",
+        "d": "Deals marketplace company once seen as a startup breakout"
+      }
+    ]
+  },
+  {
+    "name": "tennis strokes & plays",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "forehand",
+        "d": "Groundstroke hit on the dominant side of the body"
+      },
+      {
+        "w": "backhand",
+        "d": "Groundstroke hit across the body from the non-dominant side"
+      },
+      {
+        "w": "one-handed backhand",
+        "d": "Backhand stroke hit with one hand on the racket"
+      },
+      {
+        "w": "two-handed backhand",
+        "d": "Backhand stroke hit with both hands on the racket"
+      },
+      {
+        "w": "serve",
+        "d": "Stroke that starts a tennis point"
+      },
+      {
+        "w": "first serve",
+        "d": "Initial serve attempt in a point"
+      },
+      {
+        "w": "second serve",
+        "d": "Serve attempt taken after a first-serve fault"
+      },
+      {
+        "w": "service ace",
+        "d": "Serve the receiver cannot touch"
+      },
+      {
+        "w": "double fault",
+        "d": "Two missed serves that lose the point"
+      },
+      {
+        "w": "kick serve",
+        "d": "Serve with topspin that jumps high after bouncing"
+      },
+      {
+        "w": "slice serve",
+        "d": "Serve with sidespin that curves away"
+      },
+      {
+        "w": "flat serve",
+        "d": "Fast serve hit with little spin"
+      },
+      {
+        "w": "net cord serve",
+        "d": "Serve touching the net before landing in"
+      },
+      {
+        "w": "volley",
+        "d": "Shot struck before the ball bounces"
+      },
+      {
+        "w": "drive volley",
+        "d": "Aggressive volley swung like a groundstroke"
+      },
+      {
+        "w": "half-volley",
+        "d": "Shot taken just after the ball bounces"
+      },
+      {
+        "w": "stretch volley",
+        "d": "Volley reached at full extension"
+      },
+      {
+        "w": "drop volley",
+        "d": "Soft volley intended to die near the net"
+      },
+      {
+        "w": "smash",
+        "d": "Overhead attacking shot"
+      },
+      {
+        "w": "lob",
+        "d": "High shot sent over an opponent near the net"
+      },
+      {
+        "w": "drop shot",
+        "d": "Soft shot intended to land short"
+      },
+      {
+        "w": "slice",
+        "d": "Shot hit with backspin or sidespin"
+      },
+      {
+        "w": "topspin",
+        "d": "Forward rotation that makes the ball dip and jump"
+      },
+      {
+        "w": "sliced backhand",
+        "d": "Backhand hit with underspin"
+      },
+      {
+        "w": "passing shot",
+        "d": "Shot hit past an opponent at the net"
+      },
+      {
+        "w": "down-the-line shot",
+        "d": "Shot hit parallel to the sideline"
+      },
+      {
+        "w": "crosscourt shot",
+        "d": "Shot hit diagonally across the court"
+      },
+      {
+        "w": "inside-out forehand",
+        "d": "Forehand hit from the backhand side toward the opposite corner"
+      },
+      {
+        "w": "inside-in forehand",
+        "d": "Forehand hit from the backhand side down the same line"
+      },
+      {
+        "w": "tweener",
+        "d": "Shot hit between the legs"
+      },
+      {
+        "w": "block return",
+        "d": "Compact return using the server’s pace"
+      },
+      {
+        "w": "chip and charge",
+        "d": "Slice return followed by a rush to the net"
+      },
+      {
+        "w": "serve and volley",
+        "d": "Serve followed immediately by an approach to the net"
+      },
+      {
+        "w": "winner",
+        "d": "Shot that wins the point outright"
+      },
+      {
+        "w": "approach shot",
+        "d": "Shot used to move forward toward the net"
+      }
+    ]
+  },
+  {
+    "name": "martial arts techniques",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "ippon seoi nage",
+        "d": "One-arm shoulder throw in judo"
+      },
+      {
+        "w": "mawashi geri",
+        "d": "Roundhouse kick in karate and related arts"
+      },
+      {
+        "w": "ushiro geri",
+        "d": "Back kick delivered to the rear"
+      },
+      {
+        "w": "armbar",
+        "d": "Joint lock hyperextending the elbow"
+      },
+      {
+        "w": "guillotine choke",
+        "d": "Front headlock choke used in grappling"
+      },
+      {
+        "w": "elbow lock",
+        "d": "Joint lock attacking the elbow"
+      },
+      {
+        "w": "ude garami",
+        "d": "Bent-arm shoulder lock in judo"
+      },
+      {
+        "w": "osoto gari",
+        "d": "Major outer reap throw in judo"
+      },
+      {
+        "w": "triangle choke",
+        "d": "Choke using the legs to trap neck and arm"
+      },
+      {
+        "w": "kimura",
+        "d": "Shoulder lock named in Brazilian jiu-jitsu after Masahiko Kimura"
+      },
+      {
+        "w": "harai goshi",
+        "d": "Sweeping hip throw in judo"
+      },
+      {
+        "w": "uchi mata",
+        "d": "Inner-thigh throw in judo"
+      },
+      {
+        "w": "o goshi",
+        "d": "Major hip throw in judo"
+      },
+      {
+        "w": "kosoto gari",
+        "d": "Minor outer reap in judo"
+      },
+      {
+        "w": "ouchi gari",
+        "d": "Major inner reap in judo"
+      },
+      {
+        "w": "tomoe nage",
+        "d": "Circle throw using a foot on the opponent’s body"
+      },
+      {
+        "w": "mae geri",
+        "d": "Front kick in karate"
+      },
+      {
+        "w": "yoko geri",
+        "d": "Side kick in karate"
+      },
+      {
+        "w": "shuto uchi",
+        "d": "Knife-hand strike"
+      },
+      {
+        "w": "uppercut",
+        "d": "Rising punch from below"
+      },
+      {
+        "w": "hook punch",
+        "d": "Curving punch delivered from the side"
+      },
+      {
+        "w": "suplex",
+        "d": "Throw arching backward to take an opponent over"
+      },
+      {
+        "w": "kaeshi waza",
+        "d": "Counter-technique in Japanese martial arts"
+      },
+      {
+        "w": "kata guruma",
+        "d": "Shoulder-wheel throw in judo"
+      },
+      {
+        "w": "Shaolin throw",
+        "d": "Throw associated with Chinese martial-arts practice"
+      },
+      {
+        "w": "side control",
+        "d": "Grappling hold pinning the opponent from the side"
+      },
+      {
+        "w": "leg lock",
+        "d": "Joint lock attacking the knee, ankle or foot"
+      },
+      {
+        "w": "rear naked choke",
+        "d": "Choke applied from behind without using the gi"
+      },
+      {
+        "w": "elbow strike",
+        "d": "Strike delivered with the elbow"
+      },
+      {
+        "w": "hooking throw",
+        "d": "Throw using a leg hook to disrupt balance"
+      },
+      {
+        "w": "arm drag",
+        "d": "Pulling motion used to expose the opponent’s side or back"
+      },
+      {
+        "w": "spinning kick",
+        "d": "Kick delivered after rotating the body"
+      },
+      {
+        "w": "double-leg takedown",
+        "d": "Takedown attacking both legs"
+      },
+      {
+        "w": "rear trip",
+        "d": "Takedown using a backward leg block or reap"
+      },
+      {
+        "w": "full nelson",
+        "d": "Grappling hold with both arms under the opponent’s arms and behind the neck"
+      }
+    ]
+  },
+  {
+    "name": "chess terms",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "zugzwang",
+        "d": "Position where any move worsens the player’s situation"
+      },
+      {
+        "w": "fork",
+        "d": "Tactic attacking two or more pieces at once"
+      },
+      {
+        "w": "pin",
+        "d": "Tactic where a piece cannot move without exposing a more valuable one"
+      },
+      {
+        "w": "castling",
+        "d": "King-and-rook move that improves safety and development"
+      },
+      {
+        "w": "chess endgame",
+        "d": "Final phase of a chess game with fewer pieces"
+      },
+      {
+        "w": "stalemate",
+        "d": "Position where a player has no legal move but is not in check"
+      },
+      {
+        "w": "gambit",
+        "d": "Opening sacrifice offered for compensation"
+      },
+      {
+        "w": "tempo",
+        "d": "Unit of time represented by one move"
+      },
+      {
+        "w": "fianchetto",
+        "d": "Development of a bishop to a long diagonal through a flank pawn move"
+      },
+      {
+        "w": "zwischenzug",
+        "d": "Intermediate move inserted before an expected recapture"
+      },
+      {
+        "w": "passed pawn",
+        "d": "Pawn with no opposing pawn blocking or able to stop it on nearby files"
+      },
+      {
+        "w": "isolated pawn",
+        "d": "Pawn with no friendly pawns on adjacent files"
+      },
+      {
+        "w": "doubled pawns",
+        "d": "Two pawns of the same color on one file"
+      },
+      {
+        "w": "exchange sacrifice",
+        "d": "Sacrificing a rook for a minor piece"
+      },
+      {
+        "w": "opposition",
+        "d": "King maneuver where direct facing controls key squares"
+      },
+      {
+        "w": "triangulation with kings",
+        "d": "King maneuver using three squares to lose a tempo"
+      },
+      {
+        "w": "open file",
+        "d": "File with no pawns on it"
+      },
+      {
+        "w": "outpost",
+        "d": "Protected square where a piece can be strongly placed"
+      },
+      {
+        "w": "pawn structure",
+        "d": "Arrangement of pawns that shapes plans and weaknesses"
+      },
+      {
+        "w": "blunder",
+        "d": "Serious mistake, often losing material or the game"
+      },
+      {
+        "w": "rook ending",
+        "d": "Endgame centered on rooks and pawns"
+      },
+      {
+        "w": "critical square",
+        "d": "Key square whose control decides a pawn ending"
+      },
+      {
+        "w": "opening trap",
+        "d": "Prepared tactical trap in the opening phase"
+      },
+      {
+        "w": "exchange",
+        "d": "Trade of pieces or material"
+      },
+      {
+        "w": "active defense",
+        "d": "Defensive play using counterplay rather than passive holding"
+      },
+      {
+        "w": "mating net",
+        "d": "Set of threats that traps the enemy king"
+      },
+      {
+        "w": "opening",
+        "d": "First phase of a chess game"
+      },
+      {
+        "w": "middlegame",
+        "d": "Phase after opening development and before the endgame"
+      },
+      {
+        "w": "check",
+        "d": "Attack on the king that must be answered"
+      },
+      {
+        "w": "counterattack",
+        "d": "Attack launched in response to an opponent’s pressure"
+      },
+      {
+        "w": "pawn break",
+        "d": "Pawn move that challenges or opens a structure"
+      },
+      {
+        "w": "interference",
+        "d": "Tactic blocking a line between enemy pieces"
+      },
+      {
+        "w": "smothered mate",
+        "d": "Checkmate delivered by a knight when the king is boxed by its own pieces"
+      },
+      {
+        "w": "king triangulation",
+        "d": "King maneuver using three squares to lose a tempo"
+      },
+      {
+        "w": "problem combination",
+        "d": "Multi-move tactical sequence in a composed or practical position"
+      }
+    ]
+  },
+  {
+    "name": "military units & formations",
+    "tags": {
+      "a": "geek",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "phalanx",
+        "d": "Dense infantry formation with overlapping spears or shields"
+      },
+      {
+        "w": "cohort",
+        "d": "Roman military unit within a legion"
+      },
+      {
+        "w": "legion",
+        "d": "Large Roman military formation"
+      },
+      {
+        "w": "century",
+        "d": "Roman unit traditionally commanded by a centurion"
+      },
+      {
+        "w": "maniple",
+        "d": "Flexible Roman tactical unit of the Republic"
+      },
+      {
+        "w": "winged hussars",
+        "d": "Polish-Lithuanian shock cavalry formation"
+      },
+      {
+        "w": "infantry square",
+        "d": "Defensive formation used against cavalry"
+      },
+      {
+        "w": "dragoons",
+        "d": "Mounted troops who could fight on foot"
+      },
+      {
+        "w": "reiters",
+        "d": "Early modern pistol-armed cavalry"
+      },
+      {
+        "w": "tümen",
+        "d": "Mongol unit of ten thousand soldiers"
+      },
+      {
+        "w": "sotnia",
+        "d": "Cossack or Slavic unit of roughly a hundred"
+      },
+      {
+        "w": "tercio",
+        "d": "Spanish early modern infantry formation"
+      },
+      {
+        "w": "agema",
+        "d": "Elite guard unit in ancient Macedonian armies"
+      },
+      {
+        "w": "syntagma",
+        "d": "Ancient Greek or Macedonian tactical unit"
+      },
+      {
+        "w": "lochos",
+        "d": "Ancient Greek military company or band"
+      },
+      {
+        "w": "bandon",
+        "d": "Byzantine military unit"
+      },
+      {
+        "w": "tagma",
+        "d": "Byzantine professional guard unit"
+      },
+      {
+        "w": "cataphracts",
+        "d": "Heavily armored cavalry of ancient and medieval armies"
+      },
+      {
+        "w": "clibanarii",
+        "d": "Heavily armored cavalry similar to cataphracts"
+      },
+      {
+        "w": "thema",
+        "d": "Byzantine military-administrative district"
+      },
+      {
+        "w": "horde",
+        "d": "Large mobile military grouping, especially in steppe contexts"
+      },
+      {
+        "w": "mingghan",
+        "d": "Mongol unit of one thousand"
+      },
+      {
+        "w": "arban",
+        "d": "Mongol unit of ten"
+      },
+      {
+        "w": "kheshig",
+        "d": "Mongol imperial guard"
+      },
+      {
+        "w": "akıncı",
+        "d": "Ottoman light cavalry raider"
+      },
+      {
+        "w": "sipahi",
+        "d": "Ottoman cavalryman or cavalry class"
+      },
+      {
+        "w": "corps",
+        "d": "Large military formation made of several divisions"
+      },
+      {
+        "w": "flankers",
+        "d": "Troops deployed to protect or threaten a flank"
+      },
+      {
+        "w": "cavalry column",
+        "d": "Mounted formation arranged for movement or shock action"
+      },
+      {
+        "w": "rear guard",
+        "d": "Force protecting the rear of a moving army"
+      },
+      {
+        "w": "vanguard",
+        "d": "Advance force at the front of an army"
+      },
+      {
+        "w": "detachment",
+        "d": "Temporary unit separated for a specific task"
+      },
+      {
+        "w": "wedge formation",
+        "d": "Attack formation narrowing to a point"
+      },
+      {
+        "w": "schiltron",
+        "d": "Scottish spear formation for defense against cavalry"
+      },
+      {
+        "w": "shield wall",
+        "d": "Close infantry formation with overlapping shields"
+      }
+    ]
+  },
+  {
+    "name": "Byzantium: politics & society",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "basileus",
+        "d": "Greek imperial title used by Byzantine emperors"
+      },
+      {
+        "w": "autokrator",
+        "d": "Imperial title stressing sole sovereign authority"
+      },
+      {
+        "w": "despot",
+        "d": "High Byzantine court title, later used by rulers of successor states"
+      },
+      {
+        "w": "sebastokrator",
+        "d": "Prestigious court title created under the Komnenoi"
+      },
+      {
+        "w": "kaisar title",
+        "d": "Imperial title retained in Byzantine court hierarchy"
+      },
+      {
+        "w": "logothete",
+        "d": "Senior official managing finance, posts or state administration"
+      },
+      {
+        "w": "eparch",
+        "d": "Urban prefect responsible for Constantinople’s order and commerce"
+      },
+      {
+        "w": "protospatharios",
+        "d": "Court dignity originally linked to imperial guards"
+      },
+      {
+        "w": "kouropalates",
+        "d": "High court title meaning supervisor of the palace"
+      },
+      {
+        "w": "domestikos",
+        "d": "Byzantine title for a senior household or military official"
+      },
+      {
+        "w": "Blue faction",
+        "d": "Hippodrome faction involved in politics and urban unrest"
+      },
+      {
+        "w": "Green faction",
+        "d": "Rival Hippodrome faction to the Blues"
+      },
+      {
+        "w": "demes",
+        "d": "Urban factions tied to circus, ceremony and public order"
+      },
+      {
+        "w": "Hippodrome",
+        "d": "Constantinople arena central to ceremony and politics"
+      },
+      {
+        "w": "kathisma",
+        "d": "Imperial box in the Hippodrome"
+      },
+      {
+        "w": "Nika revolt",
+        "d": "Mass uprising in Constantinople against Justinian"
+      },
+      {
+        "w": "Byzantine iconoclasm",
+        "d": "Policy and controversy over destroying or rejecting icons"
+      },
+      {
+        "w": "icon veneration",
+        "d": "Defense and ritual honoring of sacred images"
+      },
+      {
+        "w": "synkletos",
+        "d": "Byzantine senate or council of high-ranking elites"
+      },
+      {
+        "w": "porphyrogennetos",
+        "d": "Title for someone born in the purple imperial chamber"
+      },
+      {
+        "w": "porphyry chamber",
+        "d": "Purple-stone palace room linked to legitimate imperial birth"
+      },
+      {
+        "w": "exarch",
+        "d": "Governor with broad civil and military authority"
+      },
+      {
+        "w": "dynatoi",
+        "d": "Powerful landed elites of Byzantine society"
+      },
+      {
+        "w": "paroikoi",
+        "d": "Dependent peasants tied to land or estate obligations"
+      },
+      {
+        "w": "pronoia",
+        "d": "Grant of revenue rights in exchange for service"
+      },
+      {
+        "w": "chrysobull",
+        "d": "Imperial charter sealed with gold"
+      },
+      {
+        "w": "imperial sceptre",
+        "d": "Ceremonial staff symbolizing imperial authority"
+      },
+      {
+        "w": "augusta",
+        "d": "Imperial title for an empress"
+      },
+      {
+        "w": "Justinian’s Novels",
+        "d": "Later laws issued by emperor Justinian"
+      },
+      {
+        "w": "patriarch of Constantinople",
+        "d": "Senior bishop at the center of Byzantine church politics"
+      },
+      {
+        "w": "schism of 1054",
+        "d": "Break between Constantinople and Rome traditionally dated to 1054"
+      },
+      {
+        "w": "Book of the Eparch",
+        "d": "Regulation book for Constantinople’s guilds and trades"
+      },
+      {
+        "w": "Ecloga",
+        "d": "Byzantine legal code issued under Leo III"
+      },
+      {
+        "w": "nomisma",
+        "d": "Byzantine gold coin central to the empire’s economy"
+      },
+      {
+        "w": "caesaropapism",
+        "d": "Modern label for close imperial control over church affairs"
+      }
+    ]
+  },
+  {
+    "name": "Byzantium: military affairs",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Byzantine strategos",
+        "d": "Military governor or general in Byzantine administration"
+      },
+      {
+        "w": "akritai",
+        "d": "Frontier soldiers and border warriors in Byzantine tradition"
+      },
+      {
+        "w": "chelandion",
+        "d": "Byzantine warship and transport vessel"
+      },
+      {
+        "w": "stratiotic estate",
+        "d": "Military landholding connected with soldier service"
+      },
+      {
+        "w": "tagmatarch",
+        "d": "Commander associated with a professional guard formation"
+      },
+      {
+        "w": "merarch",
+        "d": "Commander of a Byzantine meros"
+      },
+      {
+        "w": "Anatolic Theme",
+        "d": "Major military province in Asia Minor"
+      },
+      {
+        "w": "Scholai",
+        "d": "Imperial guard regiment of the middle Byzantine army"
+      },
+      {
+        "w": "Numeri",
+        "d": "Byzantine guard unit associated with Constantinople"
+      },
+      {
+        "w": "akontistai",
+        "d": "Javelin troops in Byzantine military terminology"
+      },
+      {
+        "w": "toxotai",
+        "d": "Archers in Greek and Byzantine terminology"
+      },
+      {
+        "w": "kontarion",
+        "d": "Lance or spear used by Byzantine cavalry"
+      },
+      {
+        "w": "parakoimomenos",
+        "d": "Powerful palace official who could influence military command"
+      },
+      {
+        "w": "domestikos ton scholon",
+        "d": "Commander of the Scholai and later senior army commander"
+      },
+      {
+        "w": "droungarios of the fleet",
+        "d": "Naval commander in Byzantine administration"
+      },
+      {
+        "w": "doux",
+        "d": "Military governor or commander in Byzantine usage"
+      },
+      {
+        "w": "protostrator",
+        "d": "Court and military office connected with imperial horses and command"
+      },
+      {
+        "w": "apelatai",
+        "d": "Border raiders or irregular fighters in Byzantine sources"
+      },
+      {
+        "w": "skutatoi",
+        "d": "Shield-bearing Byzantine infantry"
+      },
+      {
+        "w": "psiloi",
+        "d": "Light infantry or skirmishers"
+      },
+      {
+        "w": "Excubitors",
+        "d": "Imperial guard corps with late Roman origins"
+      },
+      {
+        "w": "liquid fire",
+        "d": "Incendiary weapon associated with Byzantine naval warfare"
+      },
+      {
+        "w": "tagmatic army",
+        "d": "Professional central army distinct from provincial forces"
+      },
+      {
+        "w": "stratiot allotment",
+        "d": "Land or revenue basis connected to soldier service"
+      },
+      {
+        "w": "kleisoura",
+        "d": "Fortified mountain district or frontier command"
+      },
+      {
+        "w": "aplekton",
+        "d": "Byzantine military assembly and supply base"
+      },
+      {
+        "w": "Domestic of the East",
+        "d": "Senior commander for eastern field armies"
+      },
+      {
+        "w": "Nikephoros military manual",
+        "d": "Treatise associated with emperor Nikephoros II Phokas"
+      },
+      {
+        "w": "Boukellarioi",
+        "d": "Byzantine troops originally tied to household military service"
+      },
+      {
+        "w": "tourmarches",
+        "d": "Commander of a tourma within the provincial army"
+      },
+      {
+        "w": "katepano",
+        "d": "High military governor, especially in frontier regions"
+      },
+      {
+        "w": "Mardaites",
+        "d": "Mountain people recruited into Byzantine military service"
+      },
+      {
+        "w": "cheiroballistra",
+        "d": "Late antique mechanical arrow-shooter in Byzantine use"
+      },
+      {
+        "w": "klibanophoros",
+        "d": "Heavily armored Byzantine cavalryman"
+      },
+      {
+        "w": "De velitatione bellica",
+        "d": "Byzantine treatise on skirmishing and frontier warfare"
+      }
+    ]
+  },
+  {
+    "name": "Mongol Empire: khans & commanders",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Chinggis Khan",
+        "d": "Founder of the Mongol Empire"
+      },
+      {
+        "w": "Ögedei Khan",
+        "d": "Successor of Chinggis Khan and second great khan"
+      },
+      {
+        "w": "Güyük Khan",
+        "d": "Third great khan of the Mongol Empire"
+      },
+      {
+        "w": "Möngke Khan",
+        "d": "Great khan who expanded campaigns across Eurasia"
+      },
+      {
+        "w": "Khubilai Khan",
+        "d": "Founder of the Yuan dynasty in China"
+      },
+      {
+        "w": "Ariq Böke",
+        "d": "Rival claimant in the Toluid civil war"
+      },
+      {
+        "w": "Kaidu",
+        "d": "Ogedeid prince who resisted Khubilai’s authority"
+      },
+      {
+        "w": "Jochi",
+        "d": "Eldest son of Chinggis Khan and ancestor of the Jochids"
+      },
+      {
+        "w": "Chagatai Khan",
+        "d": "Son of Chinggis Khan and namesake of the Chagatai ulus"
+      },
+      {
+        "w": "Tolui",
+        "d": "Youngest son of Chinggis Khan and father of major rulers"
+      },
+      {
+        "w": "Batu Khan",
+        "d": "Leader of the western campaign and founder of the Golden Horde"
+      },
+      {
+        "w": "Berke Khan",
+        "d": "Jochid ruler who converted to Islam"
+      },
+      {
+        "w": "Möngke Temür",
+        "d": "Khan of the Golden Horde in the late thirteenth century"
+      },
+      {
+        "w": "Töde Möngke",
+        "d": "Golden Horde khan known for religious devotion"
+      },
+      {
+        "w": "Toqta",
+        "d": "Golden Horde khan who fought Nogai"
+      },
+      {
+        "w": "Öz Beg Khan",
+        "d": "Golden Horde ruler under whom Islam became dominant"
+      },
+      {
+        "w": "Jani Beg Khan",
+        "d": "Golden Horde khan during the Black Death era"
+      },
+      {
+        "w": "Tokhtamysh",
+        "d": "Khan who briefly reunited parts of the Golden Horde"
+      },
+      {
+        "w": "Ahmed Khan",
+        "d": "Great Horde ruler associated with the stand on the Ugra"
+      },
+      {
+        "w": "Mamai",
+        "d": "Powerful warlord defeated at Kulikovo"
+      },
+      {
+        "w": "Nogai",
+        "d": "Jochid commander and kingmaker in the western steppe"
+      },
+      {
+        "w": "Subutai",
+        "d": "Mongol general famed for long-range campaigns"
+      },
+      {
+        "w": "Jebe",
+        "d": "General who campaigned with Subutai across Eurasia"
+      },
+      {
+        "w": "Muqali",
+        "d": "General entrusted with campaigns in northern China"
+      },
+      {
+        "w": "Bo’orchu",
+        "d": "Early companion and commander of Chinggis Khan"
+      },
+      {
+        "w": "Jelme",
+        "d": "Early Mongol companion and commander"
+      },
+      {
+        "w": "Jamukha",
+        "d": "Blood brother and rival of Chinggis Khan"
+      },
+      {
+        "w": "Toghrul",
+        "d": "Kerait ruler and early ally of Temüjin"
+      },
+      {
+        "w": "Hulagu",
+        "d": "Mongol commander who founded the Ilkhanate"
+      },
+      {
+        "w": "Kitbuqa",
+        "d": "Mongol general defeated at Ain Jalut"
+      },
+      {
+        "w": "Nayan",
+        "d": "Mongol prince who rebelled against Khubilai"
+      },
+      {
+        "w": "Timur-Qutlugh",
+        "d": "Golden Horde khan associated with the battle of the Vorskla"
+      },
+      {
+        "w": "Edigu",
+        "d": "Powerful emir of the Golden Horde"
+      },
+      {
+        "w": "Hacı I Giray",
+        "d": "Founder of the Crimean Khanate"
+      },
+      {
+        "w": "Ulugh Muhammad",
+        "d": "Khan linked to the founding of the Kazan Khanate"
+      }
+    ]
+  },
+  {
+    "name": "monastic orders & traditions",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Benedictines",
+        "d": "Western monastic order following the Rule of Saint Benedict"
+      },
+      {
+        "w": "Franciscans",
+        "d": "Mendicant order founded by Francis of Assisi"
+      },
+      {
+        "w": "Dominicans",
+        "d": "Order of Preachers founded by Dominic de Guzmán"
+      },
+      {
+        "w": "Cistercians",
+        "d": "Reform monastic order emphasizing austerity and manual labor"
+      },
+      {
+        "w": "Carthusians",
+        "d": "Strict contemplative order founded by Bruno of Cologne"
+      },
+      {
+        "w": "Templar order",
+        "d": "Military-monastic order of the Crusades"
+      },
+      {
+        "w": "Teutonic Order",
+        "d": "Military order active in the Baltic and Central Europe"
+      },
+      {
+        "w": "bhikkhu",
+        "d": "Buddhist monk in Theravada and broader Buddhist usage"
+      },
+      {
+        "w": "dervishes",
+        "d": "Sufi ascetics or members of devotional orders"
+      },
+      {
+        "w": "Sufis",
+        "d": "Islamic mystics organized in many tariqas"
+      },
+      {
+        "w": "sannyasin",
+        "d": "Hindu renunciant who has left household life"
+      },
+      {
+        "w": "Essenes",
+        "d": "Ancient Jewish ascetic community often linked to the Dead Sea Scrolls"
+      },
+      {
+        "w": "Shaolin monks",
+        "d": "Chinese Buddhist monks associated with martial training"
+      },
+      {
+        "w": "lamas",
+        "d": "Tibetan Buddhist teachers or monks"
+      },
+      {
+        "w": "bonzes",
+        "d": "European term for Buddhist monks in East Asia"
+      },
+      {
+        "w": "Trappists",
+        "d": "Strict Cistercian order known for silence and work"
+      },
+      {
+        "w": "Augustinians",
+        "d": "Religious order following the Rule of Saint Augustine"
+      },
+      {
+        "w": "Carmelites",
+        "d": "Catholic order with eremitic roots on Mount Carmel"
+      },
+      {
+        "w": "Society of Jesus",
+        "d": "Catholic order founded by Ignatius of Loyola"
+      },
+      {
+        "w": "Benedict of Nursia",
+        "d": "Founder figure of Western monasticism"
+      },
+      {
+        "w": "Maronite Order",
+        "d": "Monastic order within the Maronite Catholic tradition"
+      },
+      {
+        "w": "Theravada monks",
+        "d": "Monks of the oldest surviving Buddhist school"
+      },
+      {
+        "w": "Zen monks",
+        "d": "Monastics in East Asian Zen Buddhist traditions"
+      },
+      {
+        "w": "Francis of Assisi",
+        "d": "Founder of the Franciscan order"
+      },
+      {
+        "w": "preceptor",
+        "d": "Officer or teacher within some religious and military orders"
+      },
+      {
+        "w": "abbot",
+        "d": "Head of a monastery"
+      },
+      {
+        "w": "commendator",
+        "d": "Holder of an abbey or benefice in commendam"
+      },
+      {
+        "w": "novice",
+        "d": "Person undergoing probation before taking vows"
+      },
+      {
+        "w": "sangha",
+        "d": "Buddhist monastic community"
+      },
+      {
+        "w": "Cluniacs",
+        "d": "Medieval Benedictine reform movement centered on Cluny"
+      },
+      {
+        "w": "Dominic de Guzmán",
+        "d": "Founder of the Dominican order"
+      },
+      {
+        "w": "mendicant friars",
+        "d": "Religious orders living from preaching and alms"
+      },
+      {
+        "w": "hesychasm",
+        "d": "Eastern Christian contemplative prayer tradition"
+      },
+      {
+        "w": "universals debate",
+        "d": "Medieval dispute over the status of general concepts"
+      },
+      {
+        "w": "angels on a pin",
+        "d": "Popular shorthand for scholastic subtlety"
+      }
+    ]
+  },
+  {
+    "name": "electoral mechanisms & manipulation",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "gerrymandering",
+        "d": "Drawing district boundaries to advantage a party or group"
+      },
+      {
+        "w": "first-past-the-post",
+        "d": "Plurality system where the top candidate wins"
+      },
+      {
+        "w": "proportional representation",
+        "d": "System allocating seats according to vote shares"
+      },
+      {
+        "w": "primary election",
+        "d": "Election selecting a party’s candidate"
+      },
+      {
+        "w": "caucus",
+        "d": "Local meeting or process for choosing delegates or candidates"
+      },
+      {
+        "w": "superdelegate",
+        "d": "Party delegate not bound by primary results"
+      },
+      {
+        "w": "electoral threshold",
+        "d": "Minimum vote share required to win representation"
+      },
+      {
+        "w": "Electoral College",
+        "d": "Indirect body that formally elects the U.S. president"
+      },
+      {
+        "w": "no-confidence vote",
+        "d": "Parliamentary vote that can remove a government"
+      },
+      {
+        "w": "impeachment",
+        "d": "Formal accusation process against a public official"
+      },
+      {
+        "w": "filibuster",
+        "d": "Delay tactic using extended debate or procedure"
+      },
+      {
+        "w": "cloture",
+        "d": "Procedure used to end debate and overcome a filibuster"
+      },
+      {
+        "w": "abstentionism",
+        "d": "Refusal to vote or take seats as a political strategy"
+      },
+      {
+        "w": "stateless persons",
+        "d": "People without citizenship who often lack voting rights"
+      },
+      {
+        "w": "electoral volatility",
+        "d": "Degree of vote-share change between elections"
+      },
+      {
+        "w": "spoiler candidate",
+        "d": "Candidate who changes the outcome by splitting a vote"
+      },
+      {
+        "w": "list voting",
+        "d": "Voting for a party list rather than only individuals"
+      },
+      {
+        "w": "preferential voting",
+        "d": "System where voters rank candidates by preference"
+      },
+      {
+        "w": "two-round system",
+        "d": "Election with a runoff if no candidate wins enough votes"
+      },
+      {
+        "w": "mixed-member system",
+        "d": "Electoral system combining district and proportional seats"
+      },
+      {
+        "w": "panachage",
+        "d": "Voting across candidates from different party lists"
+      },
+      {
+        "w": "electoral machine",
+        "d": "Organization that mobilizes votes through patronage or control"
+      },
+      {
+        "w": "vote buying",
+        "d": "Offering money or goods in exchange for votes"
+      },
+      {
+        "w": "carousel voting",
+        "d": "Fraud scheme recycling marked ballots through voters"
+      },
+      {
+        "w": "ballot stuffing",
+        "d": "Adding fraudulent ballots to the count"
+      },
+      {
+        "w": "incumbent",
+        "d": "Officeholder running for reelection"
+      },
+      {
+        "w": "turnout",
+        "d": "Share of eligible voters who cast ballots"
+      },
+      {
+        "w": "legal threshold",
+        "d": "Formal vote barrier for entering a parliament"
+      },
+      {
+        "w": "electoral cycle",
+        "d": "Recurring sequence of elections and campaign periods"
+      },
+      {
+        "w": "electoral district",
+        "d": "Geographic constituency for representation"
+      },
+      {
+        "w": "suffrage",
+        "d": "Right to vote"
+      },
+      {
+        "w": "turnout manipulation",
+        "d": "Changing participation patterns to affect election results"
+      },
+      {
+        "w": "compulsory voting",
+        "d": "Legal requirement to vote"
+      },
+      {
+        "w": "silent majority",
+        "d": "Claimed bloc of voters said to be underrepresented in public debate"
+      },
+      {
+        "w": "election management body",
+        "d": "Institution responsible for administering elections"
       }
     ]
   }
