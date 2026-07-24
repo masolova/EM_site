@@ -1220,16 +1220,16 @@ const CATEGORIES_EN = [
         "d": "British spy with gadgets, martinis, and a licence to kill"
       },
       {
-        "w": "The Matrix",
-        "d": "Humanity is enslaved in a simulation — red pill reveals the truth"
+        "w": "The Conjuring Universe",
+        "d": "Horror franchise built around paranormal cases and demonic artifacts"
       },
       {
         "w": "Indiana Jones",
         "d": "Archaeologist professor who punches Nazis and hates snakes"
       },
       {
-        "w": "Back to the Future",
-        "d": "DeLorean time machine requires 1.21 gigawatts to rewrite history"
+        "w": "Bourne",
+        "d": "Action spy franchise about an amnesiac CIA assassin"
       },
       {
         "w": "The Hunger Games",
@@ -1256,8 +1256,8 @@ const CATEGORIES_EN = [
         "d": "Epic fantasy trilogy that set the standard for blockbuster filmmaking"
       },
       {
-        "w": "Star Wars",
-        "d": "Galaxy-spanning saga about light vs dark that started in 1977"
+        "w": "Minions",
+        "d": "Animated comedy franchise spun out of Despicable Me"
       },
       {
         "w": "Transformers",
@@ -1284,8 +1284,8 @@ const CATEGORIES_EN = [
         "d": "Brooding billionaire vigilante beating criminals in a rubber suit"
       },
       {
-        "w": "Terminator",
-        "d": "Robot assassin sent from future to kill the mother of humanity's saviour"
+        "w": "Godzilla",
+        "d": "Long-running monster franchise centered on the giant kaiju"
       },
       {
         "w": "Despicable Me",
@@ -1300,8 +1300,8 @@ const CATEGORIES_EN = [
         "d": "Underdog boxer goes the distance in Philadelphia — inspiring underdog epic"
       },
       {
-        "w": "Alien",
-        "d": "In space, no one can hear you scream — Xenomorph is cinema's best monster"
+        "w": "Twilight",
+        "d": "Vampire romance franchise adapted from Stephenie Meyer novels"
       },
       {
         "w": "Die Hard",
@@ -1336,16 +1336,16 @@ const CATEGORIES_EN = [
         "d": "Apes in charge, humans enslaved — sci-fi's most enduring franchise"
       },
       {
-        "w": "Dune",
-        "d": "Desert planet holds the universe's most valuable substance — spice"
+        "w": "Mad Max",
+        "d": "Post-apocalyptic action franchise created by George Miller"
       },
       {
         "w": "Top Gun",
         "d": "Fighter pilots, aviator shades, and volleyball — 80s cinema peak"
       },
       {
-        "w": "Oppenheimer",
-        "d": "The man who built the atomic bomb and instantly regretted it"
+        "w": "The Fast Saga",
+        "d": "Car-chase blockbuster series built around family and heists"
       }
     ]
   },
@@ -1718,8 +1718,8 @@ const CATEGORIES_EN = [
         "d": "Granada's stunning Moorish palace with intricate tilework and gardens"
       },
       {
-        "w": "Colossus of Rhodes",
-        "d": "Giant bronze sun-god statue once straddling Rhodes harbour entrance"
+        "w": "Baalbek",
+        "d": "Ancient temple complex in Lebanon with some of the Roman world's largest stones"
       },
       {
         "w": "Lighthouse of Alexandria",
@@ -1762,8 +1762,8 @@ const CATEGORIES_EN = [
         "d": "Colossal Egyptian temple carved from rock face by Ramesses II"
       },
       {
-        "w": "Terracotta Army",
-        "d": "8,000 life-sized clay soldiers buried with China's first emperor"
+        "w": "Sigiriya",
+        "d": "Ancient rock fortress in Sri Lanka with gardens, frescoes and palace ruins"
       },
       {
         "w": "Chartres Cathedral",
@@ -1790,8 +1790,8 @@ const CATEGORIES_EN = [
         "d": "Egypt's royal burial ground hiding treasures including Tutankhamun's tomb"
       },
       {
-        "w": "Sphinx",
-        "d": "Colossal limestone guardian at Giza — nose missing, origins debated"
+        "w": "Ellora Caves",
+        "d": "Indian rock-cut cave complex with Buddhist, Hindu and Jain monuments"
       },
       {
         "w": "Olympia",
@@ -4090,8 +4090,8 @@ const CATEGORIES_EN = [
         "d": "Mad King Ludwig's fairytale Bavarian castle that inspired Disney's Cinderella"
       },
       {
-        "w": "Pompidou Centre",
-        "d": "Paris museum with all its colourful pipes and ducts worn on the outside"
+        "w": "Kimbell Art Museum",
+        "d": "Louis Kahn museum in Texas celebrated for its vaulted daylight"
       },
       {
         "w": "Farnsworth House",
@@ -4134,8 +4134,8 @@ const CATEGORIES_EN = [
         "d": "Romanesque Italian tower that started sinking during construction"
       },
       {
-        "w": "Golden Gate Bridge",
-        "d": "San Francisco's fog-wrapped art-deco suspension bridge since 1937"
+        "w": "Seagram Building",
+        "d": "Mies van der Rohe skyscraper that shaped modern corporate architecture"
       },
       {
         "w": "Petra Treasury",
@@ -4154,8 +4154,8 @@ const CATEGORIES_EN = [
         "d": "Ivan the Terrible's Red Square cathedral — legend says he blinded the architect"
       },
       {
-        "w": "Christ the Redeemer",
-        "d": "Rio's art-deco Christ statue spreading arms over the city from Corcovado"
+        "w": "The Shard",
+        "d": "London skyscraper by Renzo Piano with a sharp glass silhouette"
       },
       {
         "w": "Sydney Opera House",
@@ -4170,8 +4170,8 @@ const CATEGORIES_EN = [
         "d": "Frank Lloyd Wright house built dramatically over a waterfall"
       },
       {
-        "w": "Sagrada Familia",
-        "d": "Gaudi basilica in Barcelona, still defined by its long construction"
+        "w": "Heydar Aliyev Center",
+        "d": "Zaha Hadid cultural center known for its flowing white shell"
       },
       {
         "w": "Guggenheim Bilbao",
@@ -13366,8 +13366,8 @@ const CATEGORIES_EN = [
         "d": "Massive stone tombs built to launch pharaohs into the afterlife."
       },
       {
-        "w": "Great Sphinx",
-        "d": "Lion body, human head — guarding the Giza pyramids for 4,500 years."
+        "w": "Dendera Zodiac",
+        "d": "Egyptian temple relief showing a famous ancient star map"
       },
       {
         "w": "Tutankhamun",
@@ -13796,6 +13796,11892 @@ const CATEGORIES_EN = [
       {
         "w": "Triwizard Cup",
         "d": "Goblet of Fire chose champions — turned out to be a portkey to a graveyard."
+      }
+    ]
+  },
+  {
+    "name": "fashion: silhouettes, runway & icons",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Little black dress",
+        "d": "Chanel-linked evening basic designed to look simple, sharp and endlessly reusable"
+      },
+      {
+        "w": "Pencil skirt",
+        "d": "Narrow skirt shape that follows the hips and tapers toward the knees"
+      },
+      {
+        "w": "New Look",
+        "d": "Dior silhouette of 1947 with a tiny waist and a full skirt"
+      },
+      {
+        "w": "Miniskirt",
+        "d": "Short 1960s fashion symbol associated with youth culture and Mary Quant"
+      },
+      {
+        "w": "Wrap dress",
+        "d": "Diane von Furstenberg staple tied around the body with a crossing front"
+      },
+      {
+        "w": "Power suit",
+        "d": "Tailored suit used as a symbol of corporate authority and 1980s dressing"
+      },
+      {
+        "w": "Pret-a-porter",
+        "d": "Ready-to-wear fashion produced in standard sizes, not custom couture"
+      },
+      {
+        "w": "Haute couture",
+        "d": "Made-to-measure high fashion under strict Parisian rules and craft standards"
+      },
+      {
+        "w": "Capsule wardrobe",
+        "d": "Small coordinated wardrobe built from a limited set of versatile pieces"
+      },
+      {
+        "w": "Color blocking",
+        "d": "Outfit or garment built from bold, separate blocks of color"
+      },
+      {
+        "w": "Paris Fashion Week",
+        "d": "Major runway week and one of the central events of the fashion calendar"
+      },
+      {
+        "w": "Milan Fashion Week",
+        "d": "Italian fashion week tied to luxury houses, tailoring and accessories"
+      },
+      {
+        "w": "New York Fashion Week",
+        "d": "American runway week tied to ready-to-wear and commercial fashion"
+      },
+      {
+        "w": "London Fashion Week",
+        "d": "British fashion week known for young designers and experimental style"
+      },
+      {
+        "w": "Bias cut",
+        "d": "Cutting fabric diagonally so it drapes and clings more fluidly"
+      },
+      {
+        "w": "Slip dress",
+        "d": "Dress inspired by lingerie, often cut from silk or satin"
+      },
+      {
+        "w": "Baby doll dress",
+        "d": "Short loose dress with a high waist and youthful proportions"
+      },
+      {
+        "w": "Trench coat",
+        "d": "Military-derived raincoat with belt, storm flap and double-breasted front"
+      },
+      {
+        "w": "Stiletto heel",
+        "d": "Thin high heel that became a signature of mid-century glamour"
+      },
+      {
+        "w": "Platform shoe",
+        "d": "Shoe raised by a thick sole under both toe and heel"
+      },
+      {
+        "w": "Shoulder pads",
+        "d": "Structured padding used to broaden the silhouette of jackets and dresses"
+      },
+      {
+        "w": "A-line dress",
+        "d": "Dress silhouette that narrows at the shoulders and widens toward the hem"
+      },
+      {
+        "w": "Chanel suit",
+        "d": "Boxy jacket and skirt ensemble associated with Coco Chanel"
+      },
+      {
+        "w": "Le Smoking",
+        "d": "Yves Saint Laurent tuxedo suit for women, introduced in the 1960s"
+      },
+      {
+        "w": "Birkin bag",
+        "d": "Hermes handbag turned into a global luxury status symbol"
+      },
+      {
+        "w": "Streetwear",
+        "d": "Casual style rooted in skate, hip-hop and sneaker culture"
+      },
+      {
+        "w": "Twiggy",
+        "d": "British model whose androgynous look defined the 1960s mod image"
+      },
+      {
+        "w": "Naomi Campbell",
+        "d": "British supermodel and one of the most visible runway figures of the 1990s"
+      },
+      {
+        "w": "Kate Moss",
+        "d": "British model linked to waif style and 1990s fashion photography"
+      },
+      {
+        "w": "Cindy Crawford",
+        "d": "American supermodel known for commercial glamour and a signature beauty mark"
+      },
+      {
+        "w": "Linda Evangelista",
+        "d": "Canadian supermodel famous for dramatic transformations on the runway"
+      },
+      {
+        "w": "Claudia Schiffer",
+        "d": "German supermodel associated with 1990s luxury campaigns"
+      },
+      {
+        "w": "Gisele Bundchen",
+        "d": "Brazilian model who became one of the highest-paid runway stars"
+      },
+      {
+        "w": "Iman",
+        "d": "Somali-American model and cosmetics entrepreneur"
+      },
+      {
+        "w": "Veruschka",
+        "d": "German model of the 1960s known for theatrical poses and body art"
+      }
+    ]
+  },
+  {
+    "name": "scammers & famous frauds",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Charles Ponzi",
+        "d": "Name behind the Ponzi scheme, built on paying old investors with new money"
+      },
+      {
+        "w": "Bernie Madoff",
+        "d": "Wall Street fraudster behind a massive decades-long investment scheme"
+      },
+      {
+        "w": "Cassie Chadwick",
+        "d": "Impostor who posed as Andrew Carnegies illegitimate daughter to obtain loans"
+      },
+      {
+        "w": "Barry Minkow",
+        "d": "Teen entrepreneur whose carpet-cleaning company became a fraud case"
+      },
+      {
+        "w": "Anna Delvey",
+        "d": "Fake heiress who infiltrated New York social and art circles"
+      },
+      {
+        "w": "Elizabeth Holmes",
+        "d": "Theranos founder convicted after misleading investors about blood testing"
+      },
+      {
+        "w": "Sam Bankman-Fried",
+        "d": "FTX founder convicted after the collapse of his crypto exchange"
+      },
+      {
+        "w": "Gregor MacGregor",
+        "d": "Sold imaginary land in a fake Central American colony called Poyais"
+      },
+      {
+        "w": "Stephen Jay Russell",
+        "d": "American impostor and escape artist known for repeated frauds"
+      },
+      {
+        "w": "William Thompson",
+        "d": "Nineteenth-century swindler tied to the phrase confidence man"
+      },
+      {
+        "w": "Joseph Weil",
+        "d": "American con artist nicknamed Yellow Kid"
+      },
+      {
+        "w": "Ferdinand Demara",
+        "d": "Serial impostor who worked under false identities in several professions"
+      },
+      {
+        "w": "Christophe Rocancourt",
+        "d": "French impostor who posed as wealthy or well-connected figures"
+      },
+      {
+        "w": "John Brinkley",
+        "d": "Fake doctor who sold goat-gland cures by radio advertising"
+      },
+      {
+        "w": "Robert Hendy-Freegard",
+        "d": "British con man who posed as a spy handler"
+      },
+      {
+        "w": "Martin Frankel",
+        "d": "Financial fraudster who looted insurance companies in the 1990s"
+      },
+      {
+        "w": "George Parker",
+        "d": "Con man who repeatedly claimed to sell New York landmarks"
+      },
+      {
+        "w": "South Sea Bubble",
+        "d": "Eighteenth-century investment mania around the South Sea Company"
+      },
+      {
+        "w": "Tulip mania",
+        "d": "Dutch speculative bubble around rare tulip bulbs"
+      },
+      {
+        "w": "Nigerian prince scam",
+        "d": "Advance-fee fraud promising huge rewards after a small payment"
+      },
+      {
+        "w": "Advance-fee fraud",
+        "d": "Scheme that asks for upfront money before a promised fortune appears"
+      },
+      {
+        "w": "Pyramid scheme",
+        "d": "Recruitment-based scheme that collapses when new participants run out"
+      },
+      {
+        "w": "Ponzi scheme",
+        "d": "Investment fraud using new deposits to pay fake returns"
+      },
+      {
+        "w": "Pump and dump",
+        "d": "Market manipulation that inflates a security before insiders sell"
+      },
+      {
+        "w": "Boiler room",
+        "d": "High-pressure sales operation pushing dubious investments by phone"
+      },
+      {
+        "w": "Affinity fraud",
+        "d": "Fraud that exploits trust inside a community or identity group"
+      },
+      {
+        "w": "Phishing",
+        "d": "Fraudulent message designed to steal credentials or payment data"
+      },
+      {
+        "w": "Romance scam",
+        "d": "Online relationship fraud used to extract money from a victim"
+      },
+      {
+        "w": "Fake charity",
+        "d": "Fundraising fraud built around a false cause or disaster appeal"
+      },
+      {
+        "w": "Check kiting",
+        "d": "Fraud exploiting the delay between depositing and clearing checks"
+      },
+      {
+        "w": "Forged provenance",
+        "d": "Fake ownership history used to sell art or antiquities"
+      },
+      {
+        "w": "Art forgery",
+        "d": "Fake artwork passed off as an original by a known artist"
+      },
+      {
+        "w": "Psychic fraud",
+        "d": "Con that sells supernatural help or curse removal for money"
+      },
+      {
+        "w": "MLM scheme",
+        "d": "Multi-level sales model that can function mainly through recruitment"
+      },
+      {
+        "w": "Exit scam",
+        "d": "Fraud where operators vanish after collecting customers money"
+      }
+    ]
+  },
+  {
+    "name": "renaissance people & ideas",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Lorenzo de Medici",
+        "d": "Florentine patron whose court helped shape Renaissance culture"
+      },
+      {
+        "w": "Savonarola",
+        "d": "Preacher who briefly dominated Florence with moral and political reform"
+      },
+      {
+        "w": "Machiavelli",
+        "d": "Florentine political thinker and author of The Prince"
+      },
+      {
+        "w": "Baldassare Castiglione",
+        "d": "Author of The Book of the Courtier, a guide to elite conduct"
+      },
+      {
+        "w": "Petrarch",
+        "d": "Humanist poet often treated as a starting point for Renaissance letters"
+      },
+      {
+        "w": "Boccaccio",
+        "d": "Author of The Decameron and key figure in early Italian humanism"
+      },
+      {
+        "w": "Erasmus",
+        "d": "Northern humanist who used scholarship and satire to criticize church abuses"
+      },
+      {
+        "w": "Pico della Mirandola",
+        "d": "Thinker associated with the dignity and potential of human beings"
+      },
+      {
+        "w": "Marsilio Ficino",
+        "d": "Florentine scholar who translated Plato and shaped Renaissance Platonism"
+      },
+      {
+        "w": "Lorenzo Valla",
+        "d": "Humanist philologist who exposed the Donation of Constantine as a forgery"
+      },
+      {
+        "w": "Guicciardini",
+        "d": "Florentine historian and statesman of Renaissance Italy"
+      },
+      {
+        "w": "Christine de Pizan",
+        "d": "Writer who defended womens learning and moral worth before the Renaissance peak"
+      },
+      {
+        "w": "Aldus Manutius",
+        "d": "Venetian printer whose editions helped circulate classical learning"
+      },
+      {
+        "w": "Isabella d Este",
+        "d": "Mantuan patron and political figure of Renaissance court culture"
+      },
+      {
+        "w": "Niccolo Niccoli",
+        "d": "Collector and humanist linked to manuscript recovery and book culture"
+      },
+      {
+        "w": "Humanism",
+        "d": "Intellectual movement centered on classical texts and human capacities"
+      },
+      {
+        "w": "Linear perspective",
+        "d": "Mathematical technique for representing depth on a flat surface"
+      },
+      {
+        "w": "Civic humanism",
+        "d": "Idea that classical learning should serve active public life"
+      },
+      {
+        "w": "Courtier ideal",
+        "d": "Model of polished manners, education and social performance at court"
+      },
+      {
+        "w": "Patronage",
+        "d": "Support system through which rulers and elites funded artists and scholars"
+      },
+      {
+        "w": "Quattrocento",
+        "d": "Italian fifteenth century, especially early Renaissance culture"
+      },
+      {
+        "w": "Cinquecento",
+        "d": "Italian sixteenth century, including High Renaissance and Mannerist phases"
+      },
+      {
+        "w": "Studia humanitatis",
+        "d": "Humanist curriculum of grammar, rhetoric, poetry, history and moral philosophy"
+      },
+      {
+        "w": "Universal man",
+        "d": "Ideal of broad mastery across arts, science, letters and practical skill"
+      },
+      {
+        "w": "Ad fontes",
+        "d": "Humanist call to return to original sources and ancient texts"
+      },
+      {
+        "w": "Platonic Academy",
+        "d": "Florentine circle associated with Ficino and renewed Plato studies"
+      },
+      {
+        "w": "Printing revolution",
+        "d": "Expansion of printed books that accelerated the spread of new ideas"
+      },
+      {
+        "w": "Textual criticism",
+        "d": "Scholarly comparison of manuscripts to restore reliable texts"
+      },
+      {
+        "w": "Antiquarianism",
+        "d": "Study and collecting of ancient objects, inscriptions and ruins"
+      },
+      {
+        "w": "Mannerism",
+        "d": "Late Renaissance style with artificial poses and complex elegance"
+      },
+      {
+        "w": "Studiolo",
+        "d": "Private study or cabinet for books, art and learned display"
+      },
+      {
+        "w": "Humanist correspondence",
+        "d": "Scholarly letter exchange that linked Renaissance readers and writers"
+      },
+      {
+        "w": "Anatomical drawing",
+        "d": "Visual study of the body linking art, medicine and observation"
+      },
+      {
+        "w": "Vitruvian revival",
+        "d": "Renewed use of ancient architectural theory in Renaissance design"
+      },
+      {
+        "w": "Medici bank",
+        "d": "Financial power base that supported Florentine politics and patronage"
+      }
+    ]
+  },
+  {
+    "name": "enlightenment ideas & salons",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Diderot",
+        "d": "French editor of the Encyclopedie and central Enlightenment organizer"
+      },
+      {
+        "w": "d Alembert",
+        "d": "Mathematician and co-editor of the Encyclopedie"
+      },
+      {
+        "w": "Voltaire",
+        "d": "Writer and polemicist associated with tolerance and attacks on fanaticism"
+      },
+      {
+        "w": "Rousseau",
+        "d": "Thinker of the social contract, education and popular sovereignty"
+      },
+      {
+        "w": "Montesquieu",
+        "d": "Political writer known for separation of powers"
+      },
+      {
+        "w": "Beccaria",
+        "d": "Author who argued against torture and the death penalty"
+      },
+      {
+        "w": "Kant",
+        "d": "Philosopher who defined Enlightenment as emergence from self-imposed immaturity"
+      },
+      {
+        "w": "Hume",
+        "d": "Scottish philosopher of empiricism, skepticism and human nature"
+      },
+      {
+        "w": "Adam Smith",
+        "d": "Scottish moral philosopher and economist of market society"
+      },
+      {
+        "w": "Mary Wollstonecraft",
+        "d": "Author of a foundational defense of womens rights and education"
+      },
+      {
+        "w": "Emilie du Chatelet",
+        "d": "Mathematician and translator of Newton into French"
+      },
+      {
+        "w": "Benjamin Franklin",
+        "d": "Printer, scientist and diplomat of the Atlantic Enlightenment"
+      },
+      {
+        "w": "Thomas Paine",
+        "d": "Pamphleteer of rights, revolution and republican politics"
+      },
+      {
+        "w": "Encyclopedie",
+        "d": "French reference project meant to organize and spread useful knowledge"
+      },
+      {
+        "w": "Salon",
+        "d": "Elite gathering where writers, nobles and patrons debated ideas"
+      },
+      {
+        "w": "Coffeehouse",
+        "d": "Urban meeting place for newspapers, conversation and political opinion"
+      },
+      {
+        "w": "Republic of Letters",
+        "d": "International network of scholars exchanging books and correspondence"
+      },
+      {
+        "w": "Natural rights",
+        "d": "Idea that people possess rights not granted by rulers"
+      },
+      {
+        "w": "Separation of powers",
+        "d": "Division of political authority among branches of government"
+      },
+      {
+        "w": "Social contract",
+        "d": "Theory that political authority rests on an agreement among people"
+      },
+      {
+        "w": "Religious toleration",
+        "d": "Demand that states stop punishing dissenting belief"
+      },
+      {
+        "w": "Public sphere",
+        "d": "Space of debate created by print, clubs, salons and coffeehouses"
+      },
+      {
+        "w": "Physiocracy",
+        "d": "Economic school that treated agriculture as the source of wealth"
+      },
+      {
+        "w": "Laissez-faire",
+        "d": "Economic principle favoring minimal state interference in markets"
+      },
+      {
+        "w": "Enlightened absolutism",
+        "d": "Monarchical reform justified by reason and administrative improvement"
+      },
+      {
+        "w": "Freethought",
+        "d": "Intellectual stance rejecting authority in matters of belief"
+      },
+      {
+        "w": "Deism",
+        "d": "Belief in a creator understood through reason rather than revelation"
+      },
+      {
+        "w": "Empiricism",
+        "d": "View that knowledge depends on experience and observation"
+      },
+      {
+        "w": "Rationalism",
+        "d": "View that reason can discover important truths about the world"
+      },
+      {
+        "w": "Progress",
+        "d": "Belief that knowledge and institutions can improve human life"
+      },
+      {
+        "w": "Useful knowledge",
+        "d": "Practical learning aimed at agriculture, industry, health and reform"
+      },
+      {
+        "w": "Masonic lodge",
+        "d": "Association where elites discussed morality, fraternity and reform"
+      },
+      {
+        "w": "Reading society",
+        "d": "Subscription club organized around shared books and periodicals"
+      },
+      {
+        "w": "Pamphlet culture",
+        "d": "Political world of short printed arguments and polemics"
+      },
+      {
+        "w": "Civil society",
+        "d": "Sphere of associations and debate outside the formal state"
+      }
+    ]
+  },
+  {
+    "name": "sports scandals & controversies",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Calciopoli",
+        "d": "Italian football scandal involving referee influence and club punishments"
+      },
+      {
+        "w": "Black Sox scandal",
+        "d": "Baseball scandal in which players were accused of throwing the 1919 World Series"
+      },
+      {
+        "w": "FIFA Gate",
+        "d": "Corruption investigation into football officials and marketing deals"
+      },
+      {
+        "w": "Deflategate",
+        "d": "NFL controversy over football air pressure in a Patriots playoff game"
+      },
+      {
+        "w": "Spygate",
+        "d": "NFL scandal over filming opponents signals"
+      },
+      {
+        "w": "Bloodgate",
+        "d": "Rugby scandal involving a fake blood injury to create a substitution"
+      },
+      {
+        "w": "Sandpapergate",
+        "d": "Cricket ball-tampering scandal involving the Australian team"
+      },
+      {
+        "w": "Astros sign-stealing",
+        "d": "Baseball scandal over illegal electronic sign stealing"
+      },
+      {
+        "w": "Salt Lake City 2002",
+        "d": "Olympic figure-skating judging scandal and shared gold medals"
+      },
+      {
+        "w": "Super League",
+        "d": "Breakaway football project that triggered a backlash from fans and leagues"
+      },
+      {
+        "w": "Rosie Ruiz",
+        "d": "Runner who appeared to win Boston after skipping much of the marathon"
+      },
+      {
+        "w": "Tonya Harding case",
+        "d": "Figure-skating scandal surrounding the attack on Nancy Kerrigan"
+      },
+      {
+        "w": "Materazzi incident",
+        "d": "World Cup final clash that ended with Zidanes red card"
+      },
+      {
+        "w": "Malice at the Palace",
+        "d": "NBA brawl between players and spectators in Detroit"
+      },
+      {
+        "w": "Bite Fight",
+        "d": "Boxing match in which Mike Tyson bit Evander Holyfields ear"
+      },
+      {
+        "w": "Spygate McLaren",
+        "d": "Formula One scandal over Ferrari technical documents found at McLaren"
+      },
+      {
+        "w": "Crashgate",
+        "d": "Formula One scandal involving a deliberate Renault crash in Singapore"
+      },
+      {
+        "w": "Biogenesis scandal",
+        "d": "Baseball doping case tied to a Florida anti-aging clinic"
+      },
+      {
+        "w": "BALCO scandal",
+        "d": "Steroid distribution case that implicated elite track and baseball athletes"
+      },
+      {
+        "w": "Operation Puerto",
+        "d": "Spanish blood-doping investigation centered on professional cycling"
+      },
+      {
+        "w": "Lance Armstrong case",
+        "d": "Cycling scandal ending with stripped Tour de France titles"
+      },
+      {
+        "w": "Ben Johnson Seoul",
+        "d": "Olympic sprint doping case after the 1988 100 meters final"
+      },
+      {
+        "w": "Marion Jones confession",
+        "d": "Olympic medals returned after admission of steroid use"
+      },
+      {
+        "w": "Russian doping scandal",
+        "d": "State-linked doping system exposed around the Sochi Olympics"
+      },
+      {
+        "w": "Tim Donaghy case",
+        "d": "NBA referee scandal involving betting and inside information"
+      },
+      {
+        "w": "Hansie Cronje case",
+        "d": "Cricket match-fixing scandal around the South African captain"
+      },
+      {
+        "w": "Pakistan spot-fixing",
+        "d": "Cricket scandal involving deliberate no-balls for betting markets"
+      },
+      {
+        "w": "Totonero",
+        "d": "Italian football betting scandal of 1980"
+      },
+      {
+        "w": "Korean World Cup refereeing",
+        "d": "Controversial 2002 match between Italy and South Korea"
+      },
+      {
+        "w": "Wembley goal",
+        "d": "Disputed 1966 World Cup final goal that still fuels debate"
+      },
+      {
+        "w": "Pine Tar Game",
+        "d": "Baseball controversy over George Bretts bat and too much pine tar"
+      },
+      {
+        "w": "Salary cap scandal",
+        "d": "Team punishment for secretly breaking league spending limits"
+      },
+      {
+        "w": "Age falsification",
+        "d": "Controversy over athletes competing with disputed birth records"
+      },
+      {
+        "w": "Hidden motor",
+        "d": "Cycling cheating case involving a motor concealed inside a bike"
+      },
+      {
+        "w": "Bottlegate",
+        "d": "NFL game where fans threw bottles after a disputed reversal"
+      }
+    ]
+  },
+  {
+    "name": "architectural details & elements",
+    "tags": {
+      "a": "human",
+      "b": "architecture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Doric order",
+        "d": "Greek column order with plain capital and heavy proportions"
+      },
+      {
+        "w": "Ionic order",
+        "d": "Classical order recognized by scroll-shaped volutes on the capital"
+      },
+      {
+        "w": "Corinthian order",
+        "d": "Classical order with ornate acanthus-leaf capitals"
+      },
+      {
+        "w": "Tuscan order",
+        "d": "Simple Roman order with plain shaft and capital"
+      },
+      {
+        "w": "Composite order",
+        "d": "Roman order combining Ionic volutes and Corinthian foliage"
+      },
+      {
+        "w": "Architrave",
+        "d": "Lowest horizontal band of an entablature above columns"
+      },
+      {
+        "w": "Frieze",
+        "d": "Middle band of an entablature, often decorated with relief sculpture"
+      },
+      {
+        "w": "Cornice",
+        "d": "Projecting upper molding that crowns a wall or entablature"
+      },
+      {
+        "w": "Entablature",
+        "d": "Horizontal structure carried by columns in classical architecture"
+      },
+      {
+        "w": "Pediment",
+        "d": "Triangular gable above a portico or classical facade"
+      },
+      {
+        "w": "Tympanum",
+        "d": "Recessed triangular or arched area inside a pediment or portal"
+      },
+      {
+        "w": "Pilaster",
+        "d": "Flat rectangular column attached to a wall"
+      },
+      {
+        "w": "Buttress",
+        "d": "External support built to resist outward pressure from a wall"
+      },
+      {
+        "w": "Flying buttress",
+        "d": "Arched exterior support carrying vault thrust away from a wall"
+      },
+      {
+        "w": "Rib vault",
+        "d": "Vault whose load is carried by projecting stone ribs"
+      },
+      {
+        "w": "Groin vault",
+        "d": "Vault made by the intersection of two barrel vaults"
+      },
+      {
+        "w": "Barrel vault",
+        "d": "Continuous half-cylinder vault over a space"
+      },
+      {
+        "w": "Pendentive",
+        "d": "Curved triangular support that lets a dome sit over a square room"
+      },
+      {
+        "w": "Squinch",
+        "d": "Corner arch or niche that transitions from square space to dome"
+      },
+      {
+        "w": "Clerestory",
+        "d": "High window zone bringing light into a tall interior"
+      },
+      {
+        "w": "Nave",
+        "d": "Main central space of a church, usually for the congregation"
+      },
+      {
+        "w": "Transept",
+        "d": "Cross arm of a church plan, forming a cruciform layout"
+      },
+      {
+        "w": "Apse",
+        "d": "Semicircular or polygonal end of a church behind the altar"
+      },
+      {
+        "w": "Ambulatory",
+        "d": "Passage around the choir or apse of a church"
+      },
+      {
+        "w": "Cloister",
+        "d": "Covered walkway around a monastery courtyard"
+      },
+      {
+        "w": "Arcade",
+        "d": "Series of arches carried by columns or piers"
+      },
+      {
+        "w": "Loggia",
+        "d": "Covered gallery open on one or more sides"
+      },
+      {
+        "w": "Cupola",
+        "d": "Small dome or dome-like roof element"
+      },
+      {
+        "w": "Oculus",
+        "d": "Round opening, often at the top of a dome"
+      },
+      {
+        "w": "Portico",
+        "d": "Columned porch or entrance structure"
+      },
+      {
+        "w": "Colonnade",
+        "d": "Row or sequence of columns supporting an entablature or roof"
+      },
+      {
+        "w": "Coffered ceiling",
+        "d": "Ceiling divided into sunken decorative panels"
+      },
+      {
+        "w": "Rustication",
+        "d": "Masonry treatment with rough or strongly emphasized stone blocks"
+      },
+      {
+        "w": "Mansard roof",
+        "d": "Double-sloped roof associated with French architecture"
+      },
+      {
+        "w": "Curtain wall",
+        "d": "Non-load-bearing exterior wall hung from a structural frame"
+      }
+    ]
+  },
+  {
+    "name": "video game platforms & services",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Atari 2600",
+        "d": "Early home console that made cartridge gaming a mass market"
+      },
+      {
+        "w": "Famicom",
+        "d": "Nintendo console released in Japan before its Western NES version"
+      },
+      {
+        "w": "NES",
+        "d": "Western Nintendo console that revived home gaming after the 1983 crash"
+      },
+      {
+        "w": "Super Nintendo",
+        "d": "Sixteen-bit Nintendo console associated with Mario, Zelda and Donkey Kong"
+      },
+      {
+        "w": "Sega Mega Drive",
+        "d": "Sixteen-bit Sega console known as Genesis in North America"
+      },
+      {
+        "w": "PlayStation",
+        "d": "Sony console that made disc-based 3D gaming mainstream"
+      },
+      {
+        "w": "PlayStation 2",
+        "d": "Best-selling home console and a major DVD playback device"
+      },
+      {
+        "w": "Xbox",
+        "d": "Microsofts first console, launched with Halo and network ambitions"
+      },
+      {
+        "w": "Xbox Live",
+        "d": "Online service that standardized console accounts and matchmaking"
+      },
+      {
+        "w": "Nintendo Switch",
+        "d": "Hybrid console that works as both handheld and home system"
+      },
+      {
+        "w": "Game Boy",
+        "d": "Nintendo handheld that turned portable gaming into a global market"
+      },
+      {
+        "w": "Game Boy Advance",
+        "d": "Thirty-two-bit handheld successor to the Game Boy line"
+      },
+      {
+        "w": "Nintendo DS",
+        "d": "Dual-screen handheld with a touchscreen and huge casual audience"
+      },
+      {
+        "w": "PSP",
+        "d": "Sony handheld using UMD discs and multimedia features"
+      },
+      {
+        "w": "Wii",
+        "d": "Nintendo console built around motion controls and broad family appeal"
+      },
+      {
+        "w": "Dreamcast",
+        "d": "Final Sega console, ahead of its time with online features"
+      },
+      {
+        "w": "Sega Saturn",
+        "d": "Sega console that struggled against the PlayStation"
+      },
+      {
+        "w": "Nintendo 64",
+        "d": "Cartridge-based console with analog stick and early 3D classics"
+      },
+      {
+        "w": "Neo Geo",
+        "d": "Expensive SNK arcade-style home system with premium cartridges"
+      },
+      {
+        "w": "ZX Spectrum",
+        "d": "British home computer central to early European game culture"
+      },
+      {
+        "w": "Commodore 64",
+        "d": "Home computer with a huge game library and strong sound chip"
+      },
+      {
+        "w": "Amiga",
+        "d": "Commodore computer known for graphics, sound and creative software"
+      },
+      {
+        "w": "Apple II",
+        "d": "Early personal computer with important educational and game titles"
+      },
+      {
+        "w": "MS-DOS",
+        "d": "PC operating environment where many 1980s and 1990s games ran"
+      },
+      {
+        "w": "Windows 95",
+        "d": "Platform that accelerated DirectX and mainstream PC gaming"
+      },
+      {
+        "w": "Steam",
+        "d": "Valve digital storefront that reshaped PC game distribution"
+      },
+      {
+        "w": "Steam Deck",
+        "d": "Valve handheld PC tied to the Steam library"
+      },
+      {
+        "w": "Epic Games Store",
+        "d": "Digital storefront competing with Steam through exclusives and giveaways"
+      },
+      {
+        "w": "itch.io",
+        "d": "Indie-friendly platform for experimental, small and self-published games"
+      },
+      {
+        "w": "Battle.net",
+        "d": "Blizzard online service for multiplayer and digital distribution"
+      },
+      {
+        "w": "PlayStation Network",
+        "d": "Sony online infrastructure for purchases, subscriptions and play"
+      },
+      {
+        "w": "Xbox Game Pass",
+        "d": "Microsoft subscription library for console, PC and cloud gaming"
+      },
+      {
+        "w": "GeForce Now",
+        "d": "Cloud gaming service that streams PC games from remote hardware"
+      },
+      {
+        "w": "Stadia",
+        "d": "Google cloud gaming platform remembered as a failed launch"
+      },
+      {
+        "w": "Oculus Quest",
+        "d": "Standalone Meta VR platform that made headset gaming more accessible"
+      }
+    ]
+  },
+  {
+    "name": "video game studios & publishers",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Nintendo",
+        "d": "Japanese company behind Mario, Zelda, Pokemon and major consoles"
+      },
+      {
+        "w": "Sega",
+        "d": "Japanese company that challenged Nintendo and created Sonic"
+      },
+      {
+        "w": "Atari",
+        "d": "Company tied to Pong, arcade culture and the Atari 2600"
+      },
+      {
+        "w": "Namco",
+        "d": "Japanese studio behind Pac-Man, Galaga and Tekken"
+      },
+      {
+        "w": "Capcom",
+        "d": "Publisher of Street Fighter, Mega Man, Resident Evil and Devil May Cry"
+      },
+      {
+        "w": "Konami",
+        "d": "Company behind Metal Gear, Castlevania, Contra and Silent Hill"
+      },
+      {
+        "w": "Square Enix",
+        "d": "Japanese publisher of Final Fantasy, Dragon Quest and Kingdom Hearts"
+      },
+      {
+        "w": "Blizzard",
+        "d": "Studio behind Warcraft, Diablo, StarCraft and World of Warcraft"
+      },
+      {
+        "w": "Valve",
+        "d": "Studio behind Half-Life, Portal, Dota 2 and the Steam platform"
+      },
+      {
+        "w": "id Software",
+        "d": "Creators of Doom, Quake and foundational shooter technology"
+      },
+      {
+        "w": "Epic Games",
+        "d": "Company behind Unreal, Fortnite and Unreal Engine"
+      },
+      {
+        "w": "Electronic Arts",
+        "d": "Major publisher of sports series, The Sims and Battlefield"
+      },
+      {
+        "w": "Ubisoft",
+        "d": "French publisher of Assassins Creed, Far Cry and Prince of Persia"
+      },
+      {
+        "w": "Rockstar Games",
+        "d": "Studio behind Grand Theft Auto and Red Dead Redemption"
+      },
+      {
+        "w": "FromSoftware",
+        "d": "Japanese studio known for Dark Souls, Bloodborne, Sekiro and Elden Ring"
+      },
+      {
+        "w": "BioWare",
+        "d": "Studio behind Baldurs Gate, Mass Effect and Dragon Age"
+      },
+      {
+        "w": "Bethesda",
+        "d": "Publisher and studio associated with The Elder Scrolls and Fallout"
+      },
+      {
+        "w": "Maxis",
+        "d": "Studio behind SimCity and The Sims"
+      },
+      {
+        "w": "Naughty Dog",
+        "d": "Studio behind Crash Bandicoot, Uncharted and The Last of Us"
+      },
+      {
+        "w": "Insomniac Games",
+        "d": "Studio behind Spyro, Ratchet and Clank and Spider-Man games"
+      },
+      {
+        "w": "Bungie",
+        "d": "Studio behind Marathon, Halo and Destiny"
+      },
+      {
+        "w": "Rare",
+        "d": "British studio behind GoldenEye, Banjo-Kazooie and Donkey Kong Country"
+      },
+      {
+        "w": "LucasArts",
+        "d": "Adventure and Star Wars game studio behind Monkey Island and Grim Fandango"
+      },
+      {
+        "w": "Sierra",
+        "d": "Company behind Kings Quest and early graphical adventure games"
+      },
+      {
+        "w": "Origin Systems",
+        "d": "Studio behind Ultima and Wing Commander"
+      },
+      {
+        "w": "Westwood",
+        "d": "Studio behind Command and Conquer and Dune II"
+      },
+      {
+        "w": "CD Projekt RED",
+        "d": "Polish studio behind The Witcher and Cyberpunk 2077"
+      },
+      {
+        "w": "Larian Studios",
+        "d": "Belgian studio behind Divinity and Baldurs Gate 3"
+      },
+      {
+        "w": "Mojang",
+        "d": "Swedish studio behind Minecraft, later bought by Microsoft"
+      },
+      {
+        "w": "Supergiant Games",
+        "d": "Indie studio behind Bastion, Transistor, Pyre and Hades"
+      },
+      {
+        "w": "Telltale Games",
+        "d": "Studio known for episodic interactive stories"
+      },
+      {
+        "w": "Riot Games",
+        "d": "Company behind League of Legends and Valorant"
+      },
+      {
+        "w": "Tencent Games",
+        "d": "Chinese gaming giant with stakes in many major studios"
+      },
+      {
+        "w": "Zynga",
+        "d": "Social-game company known for FarmVille and Facebook-era games"
+      },
+      {
+        "w": "Pixonic",
+        "d": "Mobile game studio known for War Robots"
+      }
+    ]
+  },
+  {
+    "name": "game designers & creators",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Shigeru Miyamoto",
+        "d": "Nintendo creator of Mario, Zelda and Donkey Kong"
+      },
+      {
+        "w": "Hideo Kojima",
+        "d": "Creator of Metal Gear and Death Stranding"
+      },
+      {
+        "w": "John Carmack",
+        "d": "Programmer behind Doom and Quake engine technology"
+      },
+      {
+        "w": "John Romero",
+        "d": "Designer associated with Doom, Quake and id Softwares early image"
+      },
+      {
+        "w": "Richard Garriott",
+        "d": "Creator of Ultima and the Lord British persona"
+      },
+      {
+        "w": "Warren Spector",
+        "d": "Designer tied to Deus Ex, System Shock and immersive design"
+      },
+      {
+        "w": "Sid Meier",
+        "d": "Creator of Civilization and Pirates"
+      },
+      {
+        "w": "Will Wright",
+        "d": "Creator of SimCity, The Sims and Spore"
+      },
+      {
+        "w": "Gabe Newell",
+        "d": "Valve cofounder tied to Half-Life, Steam and PC distribution"
+      },
+      {
+        "w": "Roberta Williams",
+        "d": "Co-creator of Kings Quest and a key adventure-game figure"
+      },
+      {
+        "w": "Ken Williams",
+        "d": "Sierra cofounder and producer of early graphical adventures"
+      },
+      {
+        "w": "Tim Schafer",
+        "d": "Designer of Grim Fandango, Psychonauts and comic adventures"
+      },
+      {
+        "w": "Ron Gilbert",
+        "d": "Creator of Maniac Mansion and Monkey Island"
+      },
+      {
+        "w": "Jane Jensen",
+        "d": "Writer and designer behind Gabriel Knight"
+      },
+      {
+        "w": "Amy Hennig",
+        "d": "Writer and creative lead associated with Uncharted"
+      },
+      {
+        "w": "Todd Howard",
+        "d": "Producer and director tied to The Elder Scrolls, Fallout and Starfield"
+      },
+      {
+        "w": "Ken Levine",
+        "d": "Creator of BioShock and System Shock 2"
+      },
+      {
+        "w": "Hidetaka Miyazaki",
+        "d": "FromSoftware director behind Dark Souls and Elden Ring"
+      },
+      {
+        "w": "Peter Molyneux",
+        "d": "Designer of Populous, Fable and Black and White"
+      },
+      {
+        "w": "Jonathan Blow",
+        "d": "Independent designer behind Braid and The Witness"
+      },
+      {
+        "w": "Edmund McMillen",
+        "d": "Indie creator of Super Meat Boy and The Binding of Isaac"
+      },
+      {
+        "w": "Markus Persson",
+        "d": "Original creator of Minecraft"
+      },
+      {
+        "w": "Toby Fox",
+        "d": "Creator of Undertale and Deltarune"
+      },
+      {
+        "w": "Derek Yu",
+        "d": "Creator of Spelunky"
+      },
+      {
+        "w": "Raphael Colantonio",
+        "d": "Arkane founder tied to Arx Fatalis, Dishonored and Prey"
+      },
+      {
+        "w": "Yoko Taro",
+        "d": "Designer known for Drakengard and NieR"
+      },
+      {
+        "w": "Fumito Ueda",
+        "d": "Creator of Ico, Shadow of the Colossus and The Last Guardian"
+      },
+      {
+        "w": "Hironobu Sakaguchi",
+        "d": "Creator of Final Fantasy"
+      },
+      {
+        "w": "Yu Suzuki",
+        "d": "Designer of Out Run, Virtua Fighter and Shenmue"
+      },
+      {
+        "w": "Toru Iwatani",
+        "d": "Creator of Pac-Man"
+      },
+      {
+        "w": "Alexey Pajitnov",
+        "d": "Creator of Tetris"
+      },
+      {
+        "w": "Julian Gollop",
+        "d": "Designer of X-COM: UFO Defense"
+      },
+      {
+        "w": "David Braben",
+        "d": "Co-creator of Elite"
+      },
+      {
+        "w": "Jordan Mechner",
+        "d": "Creator of Karateka and Prince of Persia"
+      },
+      {
+        "w": "Neil Druckmann",
+        "d": "Creative director associated with The Last of Us and Uncharted 4"
+      },
+      {
+        "w": "Sam Lake",
+        "d": "Writer behind Max Payne, Alan Wake and Control"
+      },
+      {
+        "w": "Hideki Kamiya",
+        "d": "Designer associated with Resident Evil 2, Devil May Cry and Bayonetta"
+      },
+      {
+        "w": "Shinji Mikami",
+        "d": "Creator of Resident Evil and The Evil Within"
+      }
+    ]
+  },
+  {
+    "name": "game design terms",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Roguelike",
+        "d": "Game style with procedural levels, permadeath and roots in Rogue"
+      },
+      {
+        "w": "Battle royale",
+        "d": "Last-player-standing multiplayer format on a shrinking map"
+      },
+      {
+        "w": "Soulslike",
+        "d": "Games inspired by Dark Souls difficulty, checkpoints and resource risk"
+      },
+      {
+        "w": "Speedrun",
+        "d": "Attempt to finish a game as fast as possible"
+      },
+      {
+        "w": "Loot box",
+        "d": "Randomized reward container often tied to monetization"
+      },
+      {
+        "w": "PvP",
+        "d": "Player-versus-player competition"
+      },
+      {
+        "w": "PvE",
+        "d": "Player-versus-environment play against game-controlled challenges"
+      },
+      {
+        "w": "Bullet hell",
+        "d": "Shooter style with dense patterns of projectiles"
+      },
+      {
+        "w": "Cooldown",
+        "d": "Waiting period before an ability can be used again"
+      },
+      {
+        "w": "Level design",
+        "d": "Craft of building spaces, routes, challenges and pacing"
+      },
+      {
+        "w": "Open world",
+        "d": "Large explorable game space with freedom of movement"
+      },
+      {
+        "w": "Procedural generation",
+        "d": "Algorithmic creation of levels, maps or content"
+      },
+      {
+        "w": "Permadeath",
+        "d": "Rule where a character or run ends permanently after death"
+      },
+      {
+        "w": "Skill tree",
+        "d": "Branching upgrade structure for abilities"
+      },
+      {
+        "w": "Tech tree",
+        "d": "Progression map of technologies or unlocks"
+      },
+      {
+        "w": "Side-scroller",
+        "d": "Game viewed from the side while movement runs horizontally"
+      },
+      {
+        "w": "Metagame",
+        "d": "Strategies and expectations around the game beyond one match"
+      },
+      {
+        "w": "Sandbox",
+        "d": "Game structure that gives players tools and freedom to experiment"
+      },
+      {
+        "w": "Quick time event",
+        "d": "Timed button prompt embedded in an action scene"
+      },
+      {
+        "w": "Hitbox",
+        "d": "Invisible shape used to determine whether an attack or collision connects"
+      },
+      {
+        "w": "Boss fight",
+        "d": "Major battle against a powerful enemy or final challenge"
+      },
+      {
+        "w": "Quest marker",
+        "d": "Interface indicator showing where an objective is located"
+      },
+      {
+        "w": "Dialogue tree",
+        "d": "Branching conversation structure with player choices"
+      },
+      {
+        "w": "Fog of war",
+        "d": "Hidden map information revealed through exploration or scouting"
+      },
+      {
+        "w": "Save point",
+        "d": "Designated place or moment where progress can be stored"
+      },
+      {
+        "w": "Checkpoint",
+        "d": "Automatic restart point after failure"
+      },
+      {
+        "w": "Respawn",
+        "d": "Return of a player, enemy or item after removal"
+      },
+      {
+        "w": "Nerf",
+        "d": "Update that weakens an ability, character or strategy"
+      },
+      {
+        "w": "Buff",
+        "d": "Update or effect that strengthens an ability or character"
+      },
+      {
+        "w": "Patch",
+        "d": "Software update that fixes or changes a game"
+      },
+      {
+        "w": "Modding",
+        "d": "Player modification of a game with new content or rules"
+      },
+      {
+        "w": "Crafting",
+        "d": "System for making items from gathered ingredients"
+      },
+      {
+        "w": "Grind",
+        "d": "Repeated play for resources, experience or rare rewards"
+      },
+      {
+        "w": "Endgame",
+        "d": "Activities designed for players after the main progression is complete"
+      },
+      {
+        "w": "Matchmaking",
+        "d": "System that places players into games with suitable opponents"
+      },
+      {
+        "w": "Gacha",
+        "d": "Random character or item draw system often tied to spending"
+      }
+    ]
+  },
+  {
+    "name": "scientific revolution",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Heliocentrism",
+        "d": "Model placing the Sun rather than Earth at the center of planetary motion"
+      },
+      {
+        "w": "Copernican Revolution",
+        "d": "Shift from geocentric astronomy toward a Sun-centered system"
+      },
+      {
+        "w": "Galileo Galilei",
+        "d": "Astronomer whose telescope observations supported new cosmology"
+      },
+      {
+        "w": "Keplers laws",
+        "d": "Mathematical laws describing elliptical planetary motion"
+      },
+      {
+        "w": "Newtons Principia",
+        "d": "Book that unified mechanics and gravitation in mathematical form"
+      },
+      {
+        "w": "Royal Society",
+        "d": "English scientific society founded in the seventeenth century"
+      },
+      {
+        "w": "Francis Bacon",
+        "d": "Thinker associated with empirical method and organized knowledge"
+      },
+      {
+        "w": "Robert Boyle",
+        "d": "Natural philosopher linked to air pressure and experimental chemistry"
+      },
+      {
+        "w": "Robert Hooke",
+        "d": "Experimentalist, microscopist and author of Micrographia"
+      },
+      {
+        "w": "Christiaan Huygens",
+        "d": "Scientist of pendulums, optics and planetary observation"
+      },
+      {
+        "w": "Tycho Brahe",
+        "d": "Astronomer whose precise observations helped Kepler build his laws"
+      },
+      {
+        "w": "Vesalius",
+        "d": "Anatomist whose work challenged older medical authority"
+      },
+      {
+        "w": "Telescope",
+        "d": "Instrument that transformed astronomy through direct observation"
+      },
+      {
+        "w": "Microscope",
+        "d": "Instrument that opened the world of cells and tiny structures"
+      },
+      {
+        "w": "Air pump",
+        "d": "Experimental device used to study vacuum and pressure"
+      },
+      {
+        "w": "Barometer",
+        "d": "Instrument measuring atmospheric pressure"
+      },
+      {
+        "w": "Experimental method",
+        "d": "Knowledge practice built around controlled observation and repeatable tests"
+      },
+      {
+        "w": "Mechanical philosophy",
+        "d": "View of nature as matter in motion governed by laws"
+      },
+      {
+        "w": "Natural philosophy",
+        "d": "Early modern field that later split into modern sciences"
+      },
+      {
+        "w": "Invisible college",
+        "d": "Informal network of experimenters before formal scientific societies"
+      },
+      {
+        "w": "Scientific journal",
+        "d": "Periodical form that spread observations, claims and disputes"
+      },
+      {
+        "w": "Mathematization of nature",
+        "d": "Use of mathematics to describe physical processes"
+      },
+      {
+        "w": "Elliptical orbit",
+        "d": "Planetary path shape central to Keplers astronomy"
+      },
+      {
+        "w": "Anatomical theater",
+        "d": "Public or teaching space for dissection and anatomy"
+      },
+      {
+        "w": "Magdeburg hemispheres",
+        "d": "Vacuum demonstration showing atmospheric pressure"
+      },
+      {
+        "w": "Philosophical Transactions",
+        "d": "Royal Society journal and early scientific periodical"
+      },
+      {
+        "w": "Micrographia",
+        "d": "Hookes illustrated book of microscopic observations"
+      },
+      {
+        "w": "Sidereus Nuncius",
+        "d": "Galileos report of telescopic discoveries"
+      },
+      {
+        "w": "Dialogue concerning two systems",
+        "d": "Galileos comparison of geocentric and heliocentric worldviews"
+      },
+      {
+        "w": "Nova methodus",
+        "d": "Mathematical style of the calculus era"
+      },
+      {
+        "w": "Calculus",
+        "d": "Mathematical tool developed by Newton and Leibniz"
+      },
+      {
+        "w": "Law of inertia",
+        "d": "Principle that motion continues unless acted on by force"
+      },
+      {
+        "w": "Universal gravitation",
+        "d": "Newtonian principle connecting falling bodies and planetary motion"
+      },
+      {
+        "w": "Boyles law",
+        "d": "Gas law relating pressure and volume"
+      },
+      {
+        "w": "Scientific instrument",
+        "d": "Purpose-built device that made observation more precise and public"
+      }
+    ]
+  },
+  {
+    "name": "industrial revolution",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Spinning jenny",
+        "d": "Multi-spindle spinning frame invented by James Hargreaves"
+      },
+      {
+        "w": "Water frame",
+        "d": "Water-powered spinning machine associated with Richard Arkwright"
+      },
+      {
+        "w": "Spinning mule",
+        "d": "Crompton machine combining features of earlier spinning devices"
+      },
+      {
+        "w": "Power loom",
+        "d": "Mechanized loom that transformed textile production"
+      },
+      {
+        "w": "Steam engine",
+        "d": "Power source that drove factories, mines and transport"
+      },
+      {
+        "w": "James Watt",
+        "d": "Engineer whose improvements made steam engines more efficient"
+      },
+      {
+        "w": "Bessemer process",
+        "d": "Industrial method for making steel more cheaply"
+      },
+      {
+        "w": "Coke smelting",
+        "d": "Use of coke instead of charcoal in iron production"
+      },
+      {
+        "w": "Puddling",
+        "d": "Iron-refining process important before modern steelmaking"
+      },
+      {
+        "w": "Steam hammer",
+        "d": "Powerful forging machine used in heavy industry"
+      },
+      {
+        "w": "Railway",
+        "d": "Transport system that moved coal, goods and people at new speed"
+      },
+      {
+        "w": "Bridgewater Canal",
+        "d": "English canal linked to cheaper coal transport"
+      },
+      {
+        "w": "Factory system",
+        "d": "Concentrated production using machines, wage labor and discipline"
+      },
+      {
+        "w": "Textile mill",
+        "d": "Factory where spinning and weaving were mechanized"
+      },
+      {
+        "w": "Manchester",
+        "d": "Industrial city strongly associated with cotton manufacturing"
+      },
+      {
+        "w": "Lowell mills",
+        "d": "American textile mills using planned factory towns and female labor"
+      },
+      {
+        "w": "Cotton gin",
+        "d": "Machine that separated cotton fibers from seeds"
+      },
+      {
+        "w": "Interchangeable parts",
+        "d": "Standardized components that could be replaced without custom fitting"
+      },
+      {
+        "w": "Assembly line",
+        "d": "Sequential production system later central to mass manufacturing"
+      },
+      {
+        "w": "Factory whistle",
+        "d": "Signal regulating shifts and industrial time discipline"
+      },
+      {
+        "w": "Shift work",
+        "d": "Labor schedule organized around continuous or extended production"
+      },
+      {
+        "w": "Working class",
+        "d": "Industrial social group formed around wage labor"
+      },
+      {
+        "w": "Luddite movement",
+        "d": "Worker protest movement against machinery and wage pressure"
+      },
+      {
+        "w": "Enclosure",
+        "d": "Land reform that changed rural labor and ownership patterns"
+      },
+      {
+        "w": "Iron bridge",
+        "d": "Symbol of new iron construction in eighteenth-century Britain"
+      },
+      {
+        "w": "Blast furnace",
+        "d": "Industrial furnace for smelting iron ore"
+      },
+      {
+        "w": "Coalfield",
+        "d": "Region where coal extraction supplied factories and transport"
+      },
+      {
+        "w": "Mechanization",
+        "d": "Replacement or amplification of labor through machines"
+      },
+      {
+        "w": "Urbanization",
+        "d": "Growth of industrial cities around factories and transport"
+      },
+      {
+        "w": "Child factory labor",
+        "d": "Use of children in mills and mines under harsh conditions"
+      },
+      {
+        "w": "Mill town",
+        "d": "Settlement organized around a factory or group of factories"
+      },
+      {
+        "w": "Canal mania",
+        "d": "Burst of canal investment before the railway boom"
+      },
+      {
+        "w": "Patent system",
+        "d": "Legal framework that encouraged invention and industrial competition"
+      },
+      {
+        "w": "Steam locomotive",
+        "d": "Rail vehicle powered by a steam engine"
+      },
+      {
+        "w": "Industrial capitalism",
+        "d": "Economic order built around factories, capital investment and wage labor"
+      }
+    ]
+  },
+  {
+    "name": "transport & urban mobility",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Horse tram",
+        "d": "Street railway vehicle pulled by horses before electrification"
+      },
+      {
+        "w": "Electric tram",
+        "d": "Urban rail vehicle powered by overhead or street-level electricity"
+      },
+      {
+        "w": "Subway",
+        "d": "Underground urban railway for high-capacity city travel"
+      },
+      {
+        "w": "Elevated railway",
+        "d": "Urban railway built above streets on a raised structure"
+      },
+      {
+        "w": "Commuter rail",
+        "d": "Rail service carrying passengers between suburbs and a central city"
+      },
+      {
+        "w": "Cable car",
+        "d": "Vehicle moved by a continuously running cable"
+      },
+      {
+        "w": "Trolleybus",
+        "d": "Electric bus drawing power from overhead wires"
+      },
+      {
+        "w": "Light rail",
+        "d": "Urban rail mode lighter and more street-integrated than metro systems"
+      },
+      {
+        "w": "Maglev",
+        "d": "Train technology using magnetic levitation instead of wheel contact"
+      },
+      {
+        "w": "High-speed rail",
+        "d": "Rail service designed for sustained very fast travel"
+      },
+      {
+        "w": "Funicular",
+        "d": "Cable railway for steep slopes with counterbalanced cars"
+      },
+      {
+        "w": "Gondola lift",
+        "d": "Cable-suspended cabins used in mountains or urban transit"
+      },
+      {
+        "w": "Bus rapid transit",
+        "d": "Bus system with dedicated lanes and station-like stops"
+      },
+      {
+        "w": "Park and ride",
+        "d": "Facility where drivers transfer to public transport"
+      },
+      {
+        "w": "Bike share",
+        "d": "Short-term public bicycle rental network"
+      },
+      {
+        "w": "E-scooter",
+        "d": "Small electric scooter used for short urban trips"
+      },
+      {
+        "w": "Ride-hailing",
+        "d": "App-based car service connecting riders and drivers"
+      },
+      {
+        "w": "Carsharing",
+        "d": "Short-term access to shared cars without owning one"
+      },
+      {
+        "w": "Congestion pricing",
+        "d": "Fee system meant to reduce traffic in crowded areas"
+      },
+      {
+        "w": "Low-floor tram",
+        "d": "Tram with floor height designed for easier boarding"
+      },
+      {
+        "w": "Transit hub",
+        "d": "Place where several transport modes connect"
+      },
+      {
+        "w": "Intermodal transfer",
+        "d": "Change between different transport modes during a trip"
+      },
+      {
+        "w": "Roundabout",
+        "d": "Circular intersection designed to keep traffic moving"
+      },
+      {
+        "w": "Express bus",
+        "d": "Bus route with limited stops for faster travel"
+      },
+      {
+        "w": "Tuk-tuk",
+        "d": "Small three-wheeled vehicle common in many Asian cities"
+      },
+      {
+        "w": "Rickshaw",
+        "d": "Passenger vehicle pulled, pedaled or motorized in urban service"
+      },
+      {
+        "w": "Water taxi",
+        "d": "Small passenger boat used for point-to-point urban travel"
+      },
+      {
+        "w": "Hovercraft",
+        "d": "Vehicle riding on a cushion of air over land or water"
+      },
+      {
+        "w": "Ferry",
+        "d": "Boat service carrying passengers or vehicles across water"
+      },
+      {
+        "w": "People mover",
+        "d": "Automated small-scale transit system for airports or campuses"
+      },
+      {
+        "w": "Mobility as a service",
+        "d": "Integrated app-based access to multiple transport options"
+      },
+      {
+        "w": "Last mile",
+        "d": "Final short segment of a trip between transit and destination"
+      },
+      {
+        "w": "Traffic calming",
+        "d": "Street design that slows vehicles and improves safety"
+      },
+      {
+        "w": "Protected bike lane",
+        "d": "Cycling lane separated from motor traffic by barriers or space"
+      },
+      {
+        "w": "Pedestrian zone",
+        "d": "Area where walking is prioritized and cars are restricted"
+      }
+    ]
+  },
+  {
+    "name": "maps, navigation & exploration",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Mercator projection",
+        "d": "Map projection preserving angles while enlarging high latitudes"
+      },
+      {
+        "w": "Portolan chart",
+        "d": "Medieval nautical chart focused on coastlines and sailing routes"
+      },
+      {
+        "w": "Compass rose",
+        "d": "Diagram showing directions on a map or nautical chart"
+      },
+      {
+        "w": "Magnetic declination",
+        "d": "Angle between magnetic north and true north"
+      },
+      {
+        "w": "Dead reckoning",
+        "d": "Navigation by estimating position from course, speed and time"
+      },
+      {
+        "w": "Marine chronometer",
+        "d": "Clock precise enough to calculate longitude at sea"
+      },
+      {
+        "w": "Sextant",
+        "d": "Instrument measuring angles between celestial bodies and the horizon"
+      },
+      {
+        "w": "Astrolabe",
+        "d": "Historical instrument used for astronomy and navigation"
+      },
+      {
+        "w": "Latitude",
+        "d": "North-south position measured in degrees from the equator"
+      },
+      {
+        "w": "Longitude",
+        "d": "East-west position measured in degrees from a prime meridian"
+      },
+      {
+        "w": "Prime meridian",
+        "d": "Reference line for zero degrees longitude"
+      },
+      {
+        "w": "Rhumb line",
+        "d": "Path crossing meridians at a constant angle"
+      },
+      {
+        "w": "Great circle",
+        "d": "Shortest route between two points on a sphere"
+      },
+      {
+        "w": "Contour line",
+        "d": "Map line connecting points of equal elevation"
+      },
+      {
+        "w": "Topographic map",
+        "d": "Map showing terrain, elevation and physical features"
+      },
+      {
+        "w": "Triangulation",
+        "d": "Surveying method using triangles to determine positions"
+      },
+      {
+        "w": "Geodesy",
+        "d": "Science of measuring Earths shape, gravity field and position"
+      },
+      {
+        "w": "GPS",
+        "d": "Satellite navigation system giving position and time"
+      },
+      {
+        "w": "Nautical chart",
+        "d": "Map designed for marine navigation"
+      },
+      {
+        "w": "Inset map",
+        "d": "Small secondary map placed inside a larger map for detail or context"
+      },
+      {
+        "w": "Map scale",
+        "d": "Ratio between distance on a map and distance on the ground"
+      },
+      {
+        "w": "Legend",
+        "d": "Map key explaining symbols and colors"
+      },
+      {
+        "w": "Atlas",
+        "d": "Collection of maps bound or presented together"
+      },
+      {
+        "w": "Bathymetry",
+        "d": "Mapping of underwater depth and seafloor shape"
+      },
+      {
+        "w": "Sounding",
+        "d": "Measurement of water depth"
+      },
+      {
+        "w": "Wayfinding",
+        "d": "Process of navigating through spaces using signs and cues"
+      },
+      {
+        "w": "Survey marker",
+        "d": "Fixed point used as a reference in mapping and surveying"
+      },
+      {
+        "w": "Graticule",
+        "d": "Network of latitude and longitude lines"
+      },
+      {
+        "w": "Isoline",
+        "d": "Line connecting equal values on a map"
+      },
+      {
+        "w": "Cartographic generalization",
+        "d": "Simplifying map detail for scale and readability"
+      },
+      {
+        "w": "Georeferencing",
+        "d": "Assigning real-world coordinates to a map or image"
+      },
+      {
+        "w": "Remote sensing",
+        "d": "Gathering information from satellites or aircraft"
+      },
+      {
+        "w": "Landsat",
+        "d": "Satellite program central to long-term Earth observation"
+      },
+      {
+        "w": "Transit of Venus",
+        "d": "Astronomical event once used to estimate solar system scale"
+      },
+      {
+        "w": "Northwest Passage",
+        "d": "Sought-after sea route through the Arctic"
+      }
+    ]
+  },
+  {
+    "name": "book history & printing",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Codex",
+        "d": "Book form made of bound pages, replacing the scroll in many uses"
+      },
+      {
+        "w": "Scroll",
+        "d": "Long rolled writing support used before bound books became dominant"
+      },
+      {
+        "w": "Incunabulum",
+        "d": "Book printed in Europe before 1501"
+      },
+      {
+        "w": "Gutenberg Bible",
+        "d": "Early major printed book made with movable type"
+      },
+      {
+        "w": "Movable type",
+        "d": "Reusable individual letters or characters used for printing"
+      },
+      {
+        "w": "Type case",
+        "d": "Tray holding pieces of metal type for hand composition"
+      },
+      {
+        "w": "Compositor",
+        "d": "Worker who arranged type for printing"
+      },
+      {
+        "w": "Printing forme",
+        "d": "Locked arrangement of type ready for printing"
+      },
+      {
+        "w": "Folio",
+        "d": "Book format made by folding a sheet once"
+      },
+      {
+        "w": "Quarto",
+        "d": "Book format made by folding a sheet twice"
+      },
+      {
+        "w": "Octavo",
+        "d": "Book format made by folding a sheet three times"
+      },
+      {
+        "w": "Colophon",
+        "d": "Publication note often placed at the end of a book"
+      },
+      {
+        "w": "Frontispiece",
+        "d": "Illustration facing a title page"
+      },
+      {
+        "w": "Title page",
+        "d": "Page giving the books title and publication details"
+      },
+      {
+        "w": "Catchword",
+        "d": "Word printed at a page bottom to guide binding order"
+      },
+      {
+        "w": "Signature mark",
+        "d": "Mark helping printers and binders arrange gatherings correctly"
+      },
+      {
+        "w": "Gathering",
+        "d": "Group of folded leaves nested together in a book"
+      },
+      {
+        "w": "Quire",
+        "d": "Set of leaves folded or gathered for binding"
+      },
+      {
+        "w": "Book block",
+        "d": "Stack of pages before covers are attached"
+      },
+      {
+        "w": "Sewn binding",
+        "d": "Binding method using thread through folded gatherings"
+      },
+      {
+        "w": "Vellum",
+        "d": "Fine prepared animal skin used for manuscripts"
+      },
+      {
+        "w": "Parchment",
+        "d": "Prepared animal skin used as a writing material"
+      },
+      {
+        "w": "Palimpsest",
+        "d": "Manuscript page reused after earlier writing was scraped or washed off"
+      },
+      {
+        "w": "Illuminated manuscript",
+        "d": "Handwritten book decorated with color, gold or elaborate initials"
+      },
+      {
+        "w": "Scriptorium",
+        "d": "Writing room where manuscripts were copied"
+      },
+      {
+        "w": "Woodblock printing",
+        "d": "Printing from carved wooden blocks"
+      },
+      {
+        "w": "Lithography",
+        "d": "Printing process based on oil and water repulsion on a flat surface"
+      },
+      {
+        "w": "Letterpress",
+        "d": "Relief printing from raised type or plates"
+      },
+      {
+        "w": "Linotype",
+        "d": "Machine that cast whole lines of metal type"
+      },
+      {
+        "w": "Offset printing",
+        "d": "Printing method transferring ink from plate to rubber blanket to paper"
+      },
+      {
+        "w": "Dust jacket",
+        "d": "Paper cover wrapped around a hardback book"
+      },
+      {
+        "w": "ISBN",
+        "d": "International identifier assigned to a book edition"
+      },
+      {
+        "w": "Copyright page",
+        "d": "Page listing rights, edition and publication metadata"
+      },
+      {
+        "w": "Errata slip",
+        "d": "Inserted list correcting mistakes after printing"
+      },
+      {
+        "w": "Marginalia",
+        "d": "Notes written in the margins of a book"
+      }
+    ]
+  },
+  {
+    "name": "reformation & religious wars",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Martin Luther",
+        "d": "German reformer whose theses challenged indulgences and church authority"
+      },
+      {
+        "w": "John Calvin",
+        "d": "Reformer associated with Geneva and predestination"
+      },
+      {
+        "w": "Huldrych Zwingli",
+        "d": "Swiss reformer active in Zurich"
+      },
+      {
+        "w": "Indulgences",
+        "d": "Church remissions whose sale helped trigger reform protest"
+      },
+      {
+        "w": "Ninety-five Theses",
+        "d": "Luthers 1517 critique of indulgence practices"
+      },
+      {
+        "w": "Diet of Worms",
+        "d": "Imperial assembly where Luther refused to recant"
+      },
+      {
+        "w": "Sola scriptura",
+        "d": "Doctrine that scripture alone is the highest religious authority"
+      },
+      {
+        "w": "Sola fide",
+        "d": "Doctrine of justification by faith alone"
+      },
+      {
+        "w": "Protestantism",
+        "d": "Broad movement of churches breaking with Roman Catholic authority"
+      },
+      {
+        "w": "Counter-Reformation",
+        "d": "Catholic reform and renewal in response to Protestantism"
+      },
+      {
+        "w": "Council of Trent",
+        "d": "Catholic council defining doctrine and reform from 1545 to 1563"
+      },
+      {
+        "w": "Jesuits",
+        "d": "Catholic order central to education, missions and Counter-Reformation work"
+      },
+      {
+        "w": "Huguenots",
+        "d": "French Protestants often caught in religious conflict"
+      },
+      {
+        "w": "Edict of Nantes",
+        "d": "French decree granting limited rights to Huguenots"
+      },
+      {
+        "w": "St Bartholomews Day massacre",
+        "d": "Mass killing of Huguenots in France in 1572"
+      },
+      {
+        "w": "Thirty Years War",
+        "d": "Devastating Central European conflict tied to religion and power politics"
+      },
+      {
+        "w": "Peace of Augsburg",
+        "d": "Settlement allowing rulers in the empire to choose Lutheranism or Catholicism"
+      },
+      {
+        "w": "Peace of Westphalia",
+        "d": "Treaties ending the Thirty Years War and reshaping European politics"
+      },
+      {
+        "w": "Anabaptists",
+        "d": "Radical reform movement emphasizing adult baptism"
+      },
+      {
+        "w": "Munster Rebellion",
+        "d": "Anabaptist takeover and siege in a German city"
+      },
+      {
+        "w": "Anglicanism",
+        "d": "English church tradition formed through royal and parliamentary reform"
+      },
+      {
+        "w": "Act of Supremacy",
+        "d": "English law making the monarch head of the Church of England"
+      },
+      {
+        "w": "Book of Common Prayer",
+        "d": "Central prayer book of English Protestant worship"
+      },
+      {
+        "w": "Puritans",
+        "d": "English Protestants seeking further reform of church practice"
+      },
+      {
+        "w": "Genevan Consistory",
+        "d": "Church court enforcing moral discipline in Calvinist Geneva"
+      },
+      {
+        "w": "Schmalkaldic League",
+        "d": "Alliance of Lutheran princes in the Holy Roman Empire"
+      },
+      {
+        "w": "Iconoclasm",
+        "d": "Destruction or rejection of religious images"
+      },
+      {
+        "w": "Catechism",
+        "d": "Instructional summary of doctrine in question-and-answer form"
+      },
+      {
+        "w": "Predestination",
+        "d": "Doctrine that salvation is determined by divine choice"
+      },
+      {
+        "w": "Confessionalization",
+        "d": "Formation of disciplined religious identities and institutions"
+      },
+      {
+        "w": "Confessional peace",
+        "d": "Settlement allowing coexistence between rival Christian confessions"
+      },
+      {
+        "w": "Bohemian Revolt",
+        "d": "Uprising that helped ignite the Thirty Years War"
+      },
+      {
+        "w": "Defenestration of Prague",
+        "d": "Throwing officials from a window, triggering Bohemian revolt"
+      },
+      {
+        "w": "Augsburg Confession",
+        "d": "Foundational statement of Lutheran belief"
+      },
+      {
+        "w": "Wars of Religion",
+        "d": "Series of conflicts in France between Catholics and Huguenots"
+      }
+    ]
+  },
+  {
+    "name": "baroque & rococo",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Bernini",
+        "d": "Sculptor and architect who shaped Roman Baroque spectacle"
+      },
+      {
+        "w": "Borromini",
+        "d": "Roman Baroque architect known for inventive curves and geometry"
+      },
+      {
+        "w": "Caravaggism",
+        "d": "Baroque painting current shaped by dramatic realism and sharp light"
+      },
+      {
+        "w": "Rubens",
+        "d": "Flemish painter of dynamic figures, color and courtly grandeur"
+      },
+      {
+        "w": "Velazquez",
+        "d": "Spanish court painter of Las Meninas and royal portraits"
+      },
+      {
+        "w": "Rembrandt",
+        "d": "Dutch painter known for psychological depth and light"
+      },
+      {
+        "w": "Versailles",
+        "d": "Royal palace that embodied French absolutist display"
+      },
+      {
+        "w": "Louis XIV",
+        "d": "French monarch whose court culture shaped Baroque politics"
+      },
+      {
+        "w": "Versailles gardens",
+        "d": "Formal landscape of axes, parterres and royal spectacle"
+      },
+      {
+        "w": "Chiaroscuro",
+        "d": "Strong contrast of light and dark used for volume and drama"
+      },
+      {
+        "w": "Tenebrism",
+        "d": "Extreme dark-light contrast associated with Caravaggesque painting"
+      },
+      {
+        "w": "Trompe l oeil",
+        "d": "Illusionistic painting that tricks the eye"
+      },
+      {
+        "w": "Quadratura",
+        "d": "Ceiling painting that extends architecture into illusionistic space"
+      },
+      {
+        "w": "Bel composto",
+        "d": "Baroque unity of architecture, sculpture and painting"
+      },
+      {
+        "w": "Absolutist spectacle",
+        "d": "Artistic staging of royal power and hierarchy"
+      },
+      {
+        "w": "Counter-Reformation art",
+        "d": "Catholic art designed for persuasion, emotion and doctrine"
+      },
+      {
+        "w": "Cabinet of curiosities",
+        "d": "Collection of rare objects, specimens and marvels"
+      },
+      {
+        "w": "Rocaille",
+        "d": "Shell-like ornament central to Rococo decoration"
+      },
+      {
+        "w": "Watteau",
+        "d": "Painter of elegant outdoor entertainments called fetes galantes"
+      },
+      {
+        "w": "Fragonard",
+        "d": "Rococo painter of playful erotic and aristocratic scenes"
+      },
+      {
+        "w": "Boucher",
+        "d": "French Rococo painter favored by court patrons"
+      },
+      {
+        "w": "Meissen porcelain",
+        "d": "Early European hard-paste porcelain associated with luxury display"
+      },
+      {
+        "w": "Fete galante",
+        "d": "Rococo scene of refined leisure and flirtation"
+      },
+      {
+        "w": "Pastoral idyll",
+        "d": "Idealized rural scene used in courtly art"
+      },
+      {
+        "w": "Grand manner",
+        "d": "Elevated style of painting for noble or historical subjects"
+      },
+      {
+        "w": "Ceiling fresco",
+        "d": "Large painted ceiling opening space to drama or heaven"
+      },
+      {
+        "w": "Oval salon",
+        "d": "Curved room form favored in Rococo interiors"
+      },
+      {
+        "w": "Salon culture",
+        "d": "Aristocratic and literary social world of conversation and taste"
+      },
+      {
+        "w": "Rameau",
+        "d": "French composer associated with late Baroque opera and theory"
+      },
+      {
+        "w": "Basso continuo",
+        "d": "Continuous bass accompaniment central to Baroque music"
+      },
+      {
+        "w": "Tiepolo",
+        "d": "Painter of luminous frescoes and grand decorative cycles"
+      },
+      {
+        "w": "Guarini",
+        "d": "Baroque architect known for complex domes and geometry"
+      },
+      {
+        "w": "Zwinger Palace",
+        "d": "Dresden palace complex associated with Baroque display"
+      },
+      {
+        "w": "Rococo asymmetry",
+        "d": "Decorative preference for playful irregular curves and shells"
+      },
+      {
+        "w": "Theater machinery",
+        "d": "Stage technology used for dramatic Baroque spectacle"
+      }
+    ]
+  },
+  {
+    "name": "history of photography",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Camera obscura",
+        "d": "Optical device projecting an outside scene into a darkened space"
+      },
+      {
+        "w": "Daguerreotype",
+        "d": "Early photographic process producing a unique image on metal"
+      },
+      {
+        "w": "Calotype",
+        "d": "Talbot process using paper negatives to make multiple prints"
+      },
+      {
+        "w": "Wet collodion",
+        "d": "Nineteenth-century process requiring plates prepared and developed while wet"
+      },
+      {
+        "w": "Dry plate",
+        "d": "Glass negative technology easier to store and use than wet plates"
+      },
+      {
+        "w": "Gelatin silver print",
+        "d": "Dominant black-and-white photographic print process"
+      },
+      {
+        "w": "Glass negative",
+        "d": "Transparent plate negative used before flexible film became dominant"
+      },
+      {
+        "w": "Contact print",
+        "d": "Print made by placing negative directly against photographic paper"
+      },
+      {
+        "w": "Albumen print",
+        "d": "Photographic print process using egg white binder"
+      },
+      {
+        "w": "Carte de visite",
+        "d": "Small photographic portrait format popular in the nineteenth century"
+      },
+      {
+        "w": "Tintype",
+        "d": "Direct positive photograph made on a thin metal sheet"
+      },
+      {
+        "w": "Brownie camera",
+        "d": "Kodak camera that made snapshot photography cheap and popular"
+      },
+      {
+        "w": "Leica",
+        "d": "Compact 35 mm camera important to photojournalism and street photography"
+      },
+      {
+        "w": "Kodak",
+        "d": "Company that popularized roll film and consumer photography"
+      },
+      {
+        "w": "Polaroid",
+        "d": "Instant photography system producing prints without separate processing"
+      },
+      {
+        "w": "Instant photo",
+        "d": "Photograph developed inside the camera or film pack"
+      },
+      {
+        "w": "Autochrome",
+        "d": "Early color photography process using dyed starch grains"
+      },
+      {
+        "w": "Color slide",
+        "d": "Positive transparency meant for projection or viewing"
+      },
+      {
+        "w": "Photojournalism",
+        "d": "Use of photography to report news and public events"
+      },
+      {
+        "w": "Magnum Photos",
+        "d": "Photographer-owned agency founded after World War II"
+      },
+      {
+        "w": "Robert Capa",
+        "d": "War photographer and cofounder of Magnum Photos"
+      },
+      {
+        "w": "Dorothea Lange",
+        "d": "Documentary photographer of Depression-era America"
+      },
+      {
+        "w": "Ansel Adams",
+        "d": "Landscape photographer known for the zone system and Western views"
+      },
+      {
+        "w": "Eadweard Muybridge",
+        "d": "Photographer whose motion studies prefigured cinema"
+      },
+      {
+        "w": "Nadar",
+        "d": "French portraitist and aerial photography pioneer"
+      },
+      {
+        "w": "Mathew Brady",
+        "d": "Photographer associated with the American Civil War"
+      },
+      {
+        "w": "Straight photography",
+        "d": "Modernist approach emphasizing sharp detail and camera qualities"
+      },
+      {
+        "w": "Pictorialism",
+        "d": "Photography movement imitating painterly softness and atmosphere"
+      },
+      {
+        "w": "Zone system",
+        "d": "Exposure and development method associated with Ansel Adams"
+      },
+      {
+        "w": "Depth of field",
+        "d": "Range of distance that appears acceptably sharp"
+      },
+      {
+        "w": "Shutter speed",
+        "d": "Length of time the camera sensor or film is exposed"
+      },
+      {
+        "w": "Aperture",
+        "d": "Lens opening controlling light and depth of field"
+      },
+      {
+        "w": "Contact sheet",
+        "d": "Sheet showing many small frames from a roll of film"
+      },
+      {
+        "w": "Street photography",
+        "d": "Unposed photography of public urban life"
+      },
+      {
+        "w": "Cindy Sherman",
+        "d": "Artist known for staged photographic self-portraits"
+      }
+    ]
+  },
+  {
+    "name": "film production & movie technology",
+    "tags": {
+      "a": "human",
+      "b": "movies",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Cinematograph",
+        "d": "Lumiere device combining camera, printer and projector"
+      },
+      {
+        "w": "Storyboard",
+        "d": "Sequence of drawings planning shots before filming"
+      },
+      {
+        "w": "Shooting script",
+        "d": "Script version prepared for production with scene details"
+      },
+      {
+        "w": "Call sheet",
+        "d": "Daily production document listing schedule, cast and locations"
+      },
+      {
+        "w": "Clapperboard",
+        "d": "Slate used to sync picture and sound at the start of a take"
+      },
+      {
+        "w": "Crane shot",
+        "d": "Camera shot made from a rising or moving crane"
+      },
+      {
+        "w": "Dolly shot",
+        "d": "Camera movement on a wheeled platform or track"
+      },
+      {
+        "w": "Tracking shot",
+        "d": "Shot in which the camera moves through space with the action"
+      },
+      {
+        "w": "Steadicam",
+        "d": "Stabilizing rig allowing smooth handheld camera movement"
+      },
+      {
+        "w": "Matte painting",
+        "d": "Painted or digital background used to extend a scene"
+      },
+      {
+        "w": "Practical effect",
+        "d": "Physical effect made on set rather than only in postproduction"
+      },
+      {
+        "w": "Visual effects",
+        "d": "Imagery created or altered after filming"
+      },
+      {
+        "w": "Motion capture",
+        "d": "Recording human movement to animate digital characters"
+      },
+      {
+        "w": "Green screen",
+        "d": "Colored background removed and replaced in compositing"
+      },
+      {
+        "w": "Blue screen",
+        "d": "Older or alternative chroma-key background for compositing"
+      },
+      {
+        "w": "Rear projection",
+        "d": "Technique projecting background footage behind actors"
+      },
+      {
+        "w": "Three-point lighting",
+        "d": "Lighting setup using key, fill and back lights"
+      },
+      {
+        "w": "Key light",
+        "d": "Main light source defining the subject"
+      },
+      {
+        "w": "Fill light",
+        "d": "Light used to soften shadows from the key light"
+      },
+      {
+        "w": "Gaffer",
+        "d": "Chief lighting technician on a film set"
+      },
+      {
+        "w": "Grip",
+        "d": "Crew member handling rigging, supports and camera movement equipment"
+      },
+      {
+        "w": "Cinematographer",
+        "d": "Director of photography responsible for the image"
+      },
+      {
+        "w": "Focus puller",
+        "d": "Camera assistant who keeps the subject sharply focused"
+      },
+      {
+        "w": "Color grading",
+        "d": "Postproduction adjustment of color, contrast and mood"
+      },
+      {
+        "w": "Sound mix",
+        "d": "Balancing dialogue, effects and music for the final soundtrack"
+      },
+      {
+        "w": "ADR",
+        "d": "Postproduction rerecording of dialogue"
+      },
+      {
+        "w": "Foley",
+        "d": "Custom performance and recording of everyday sound effects"
+      },
+      {
+        "w": "Continuity",
+        "d": "Consistency of details across shots and scenes"
+      },
+      {
+        "w": "Jump cut",
+        "d": "Edit that creates a visible leap within continuous action"
+      },
+      {
+        "w": "Match cut",
+        "d": "Edit linking shots through similar shape, motion or meaning"
+      },
+      {
+        "w": "Parallel editing",
+        "d": "Cutting between simultaneous lines of action"
+      },
+      {
+        "w": "Montage",
+        "d": "Editing sequence compressing time or building meaning through images"
+      },
+      {
+        "w": "Aspect ratio",
+        "d": "Proportional relationship between image width and height"
+      },
+      {
+        "w": "Anamorphic lens",
+        "d": "Lens system squeezing wide image onto standard frame"
+      },
+      {
+        "w": "Digital cinema package",
+        "d": "Standard digital file bundle for theatrical projection"
+      }
+    ]
+  },
+  {
+    "name": "cities, infrastructure & urbanism",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Zoning",
+        "d": "Legal control over land use and building types"
+      },
+      {
+        "w": "Mixed-use development",
+        "d": "Project combining housing, shops, offices or services"
+      },
+      {
+        "w": "Transit-oriented development",
+        "d": "Dense planning around public transport stops"
+      },
+      {
+        "w": "Urban sprawl",
+        "d": "Low-density expansion of a city into surrounding land"
+      },
+      {
+        "w": "Green belt",
+        "d": "Protected ring of open land limiting urban growth"
+      },
+      {
+        "w": "Density",
+        "d": "Number of people, homes or floor area in a given urban space"
+      },
+      {
+        "w": "Floor area ratio",
+        "d": "Measure comparing building floor area with plot size"
+      },
+      {
+        "w": "Superblock",
+        "d": "Large urban block that limits through traffic inside it"
+      },
+      {
+        "w": "Cul-de-sac",
+        "d": "Dead-end street with only one vehicle access point"
+      },
+      {
+        "w": "Complete street",
+        "d": "Street designed for pedestrians, cyclists, transit and cars"
+      },
+      {
+        "w": "Road diet",
+        "d": "Reduction of car lanes to calm traffic or add other uses"
+      },
+      {
+        "w": "School street",
+        "d": "Street restricted near a school to improve safety and walking"
+      },
+      {
+        "w": "Raised crosswalk",
+        "d": "Pedestrian crossing lifted to sidewalk level"
+      },
+      {
+        "w": "Bollard",
+        "d": "Short post controlling or blocking vehicle access"
+      },
+      {
+        "w": "Bus lane",
+        "d": "Traffic lane reserved for buses"
+      },
+      {
+        "w": "Cycle track",
+        "d": "Separated cycling path built as part of street infrastructure"
+      },
+      {
+        "w": "Mobility hub",
+        "d": "Urban node combining transit, bikes, scooters or shared vehicles"
+      },
+      {
+        "w": "Parklet",
+        "d": "Small public seating area converted from curbside parking"
+      },
+      {
+        "w": "Tactical urbanism",
+        "d": "Low-cost temporary interventions to test urban change"
+      },
+      {
+        "w": "Placemaking",
+        "d": "Design and programming that makes public spaces more usable"
+      },
+      {
+        "w": "Public realm",
+        "d": "Streets, squares and spaces shared by the public"
+      },
+      {
+        "w": "Storm drain",
+        "d": "Drainage system carrying rainwater away from streets"
+      },
+      {
+        "w": "Water main",
+        "d": "Large pipe distributing treated water"
+      },
+      {
+        "w": "Sewer system",
+        "d": "Network carrying wastewater away from buildings"
+      },
+      {
+        "w": "District heating",
+        "d": "Centralized heat supply distributed through pipes"
+      },
+      {
+        "w": "Substation",
+        "d": "Electrical facility transforming voltage for distribution"
+      },
+      {
+        "w": "Landfill",
+        "d": "Engineered site for disposing of waste"
+      },
+      {
+        "w": "Recycling center",
+        "d": "Facility sorting or processing recyclable materials"
+      },
+      {
+        "w": "Wastewater plant",
+        "d": "Facility treating sewage before release or reuse"
+      },
+      {
+        "w": "Parking minimums",
+        "d": "Rules requiring a set amount of off-street parking"
+      },
+      {
+        "w": "Congestion charge",
+        "d": "Fee for driving into crowded urban zones"
+      },
+      {
+        "w": "Car-free center",
+        "d": "Urban area where private cars are restricted or banned"
+      },
+      {
+        "w": "Livable street",
+        "d": "Street designed for safety, access and everyday social life"
+      },
+      {
+        "w": "Fifteen-minute city",
+        "d": "Planning idea where daily needs are close to home"
+      },
+      {
+        "w": "Urban heat island",
+        "d": "City warming effect caused by surfaces, density and low vegetation"
+      }
+    ]
+  },
+  {
+    "name": "advertising & PR",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Brand strategy",
+        "d": "Long-term plan for how a brand should be perceived"
+      },
+      {
+        "w": "Target audience",
+        "d": "Specific group a campaign is designed to reach"
+      },
+      {
+        "w": "Focus group",
+        "d": "Small moderated group used to test reactions and ideas"
+      },
+      {
+        "w": "Brand awareness",
+        "d": "Measure of how many people recognize or recall a brand"
+      },
+      {
+        "w": "Positioning",
+        "d": "Place a brand or product tries to occupy in consumers minds"
+      },
+      {
+        "w": "Slogan",
+        "d": "Short memorable phrase attached to a campaign or brand"
+      },
+      {
+        "w": "Jingle",
+        "d": "Short musical phrase used in advertising"
+      },
+      {
+        "w": "Logo",
+        "d": "Graphic mark representing a brand or organization"
+      },
+      {
+        "w": "Tagline",
+        "d": "Brief line expressing a brands promise or personality"
+      },
+      {
+        "w": "Creative brief",
+        "d": "Document defining goals, audience, message and constraints"
+      },
+      {
+        "w": "Media buying",
+        "d": "Purchasing advertising space or time across channels"
+      },
+      {
+        "w": "Product placement",
+        "d": "Paid or arranged appearance of a product inside media content"
+      },
+      {
+        "w": "Influencer marketing",
+        "d": "Promotion through people with online audiences"
+      },
+      {
+        "w": "Brand ambassador",
+        "d": "Person who publicly represents and promotes a brand"
+      },
+      {
+        "w": "Press release",
+        "d": "Official text sent to journalists with news or announcements"
+      },
+      {
+        "w": "Media kit",
+        "d": "Package of facts, images and background for journalists"
+      },
+      {
+        "w": "Crisis communications",
+        "d": "Messaging used when an organization faces public trouble"
+      },
+      {
+        "w": "Spin doctor",
+        "d": "Advisor who frames events to influence public interpretation"
+      },
+      {
+        "w": "Earned media",
+        "d": "Coverage gained through publicity rather than paid placement"
+      },
+      {
+        "w": "Owned media",
+        "d": "Channels controlled by a brand, such as its site or newsletter"
+      },
+      {
+        "w": "Paid media",
+        "d": "Exposure bought through advertising placements"
+      },
+      {
+        "w": "Call to action",
+        "d": "Prompt telling an audience what to do next"
+      },
+      {
+        "w": "Conversion funnel",
+        "d": "Model of steps from awareness to purchase or action"
+      },
+      {
+        "w": "A/B test",
+        "d": "Experiment comparing two message or design variants"
+      },
+      {
+        "w": "Click-through rate",
+        "d": "Share of viewers who click an ad or link"
+      },
+      {
+        "w": "Impressions",
+        "d": "Number of times an ad or item is displayed"
+      },
+      {
+        "w": "Reach",
+        "d": "Number of distinct people exposed to a message"
+      },
+      {
+        "w": "Frequency",
+        "d": "Average number of exposures per person"
+      },
+      {
+        "w": "GRP",
+        "d": "Gross rating points used to summarize campaign weight"
+      },
+      {
+        "w": "Teaser campaign",
+        "d": "Campaign that hints before revealing the full product or message"
+      },
+      {
+        "w": "Guerrilla marketing",
+        "d": "Unconventional low-cost promotion in public or unexpected spaces"
+      },
+      {
+        "w": "Viral video",
+        "d": "Video designed or lucky enough to spread rapidly online"
+      },
+      {
+        "w": "Rebranding",
+        "d": "Changing the name, identity or perception of a brand"
+      },
+      {
+        "w": "Reputation management",
+        "d": "Work to shape public trust and response to criticism"
+      },
+      {
+        "w": "Tone of voice",
+        "d": "Consistent style and personality of brand communication"
+      }
+    ]
+  },
+  {
+    "name": "technological disasters & accidents",
+    "tags": {
+      "a": "geek",
+      "b": "tech",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Chernobyl reactor 4",
+        "d": "Reactor unit whose explosion caused the 1986 nuclear disaster"
+      },
+      {
+        "w": "Fukushima Daiichi",
+        "d": "Japanese nuclear accident triggered by earthquake and tsunami in 2011"
+      },
+      {
+        "w": "Three Mile Island",
+        "d": "Partial nuclear meltdown in Pennsylvania in 1979"
+      },
+      {
+        "w": "Kyshtym disaster",
+        "d": "Soviet nuclear waste accident in the Urals in 1957"
+      },
+      {
+        "w": "Windscale fire",
+        "d": "British nuclear reactor fire in 1957"
+      },
+      {
+        "w": "Bhopal",
+        "d": "Industrial gas leak in India involving Union Carbide in 1984"
+      },
+      {
+        "w": "Seveso",
+        "d": "Italian chemical accident that gave its name to EU safety rules"
+      },
+      {
+        "w": "Minamata disease",
+        "d": "Mercury poisoning disaster linked to industrial discharge in Japan"
+      },
+      {
+        "w": "Sayano-Shushenskaya",
+        "d": "Russian hydroelectric plant accident in 2009"
+      },
+      {
+        "w": "Kursk submarine",
+        "d": "Russian submarine disaster in the Barents Sea in 2000"
+      },
+      {
+        "w": "Apollo 1",
+        "d": "Launch-pad fire that killed three astronauts during a ground test"
+      },
+      {
+        "w": "Soyuz 11",
+        "d": "Spaceflight disaster after cabin depressurization on reentry"
+      },
+      {
+        "w": "Hindenburg",
+        "d": "Airship fire that ended the era of passenger zeppelins"
+      },
+      {
+        "w": "Lac-Megantic",
+        "d": "Runaway oil train explosion in Quebec in 2013"
+      },
+      {
+        "w": "Beirut explosion",
+        "d": "Ammonium nitrate blast at the port of Beirut in 2020"
+      },
+      {
+        "w": "Rana Plaza",
+        "d": "Factory collapse in Bangladesh tied to garment supply chains"
+      },
+      {
+        "w": "Baia Mare spill",
+        "d": "Cyanide spill from gold mining that polluted rivers in 2000"
+      },
+      {
+        "w": "Sandoz spill",
+        "d": "Chemical warehouse fire that polluted the Rhine in 1986"
+      },
+      {
+        "w": "Buncefield fire",
+        "d": "Oil storage explosion in England in 2005"
+      },
+      {
+        "w": "Flixborough",
+        "d": "British chemical plant explosion in 1974"
+      },
+      {
+        "w": "Tenerife airport disaster",
+        "d": "Runway collision of two Boeing 747 aircraft in 1977"
+      },
+      {
+        "w": "Hyatt Regency walkway",
+        "d": "Kansas City hotel walkway collapse in 1981"
+      },
+      {
+        "w": "Deepwater Horizon",
+        "d": "Offshore drilling disaster and oil spill in the Gulf of Mexico"
+      },
+      {
+        "w": "Exxon Valdez",
+        "d": "Oil tanker spill off Alaska in 1989"
+      },
+      {
+        "w": "Piper Alpha",
+        "d": "North Sea oil platform disaster in 1988"
+      },
+      {
+        "w": "Texas City refinery",
+        "d": "Refinery explosion in 2005 after safety failures"
+      },
+      {
+        "w": "Space Shuttle Challenger",
+        "d": "Shuttle breakup after launch in 1986"
+      },
+      {
+        "w": "Space Shuttle Columbia",
+        "d": "Shuttle breakup during reentry in 2003"
+      },
+      {
+        "w": "Herald of Free Enterprise",
+        "d": "Ferry capsizing after sailing with bow doors open"
+      },
+      {
+        "w": "Eschede disaster",
+        "d": "High-speed train derailment in Germany in 1998"
+      },
+      {
+        "w": "AZF Toulouse",
+        "d": "Fertilizer plant explosion in France in 2001"
+      },
+      {
+        "w": "Love Canal",
+        "d": "Toxic waste neighborhood scandal in New York State"
+      },
+      {
+        "w": "Banqiao Dam",
+        "d": "Chinese dam failure after Typhoon Nina in 1975"
+      },
+      {
+        "w": "Vajont Dam",
+        "d": "Italian reservoir disaster caused by a landslide wave"
+      },
+      {
+        "w": "Aberfan disaster",
+        "d": "Welsh coal-tip collapse that buried a school and village homes"
+      }
+    ]
+  },
+  {
+    "name": "libraries, bookcraft & binding",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Library of Congress",
+        "d": "Largest library in the United States and a national research institution"
+      },
+      {
+        "w": "Library of Alexandria",
+        "d": "Ancient library that became a symbol of lost knowledge"
+      },
+      {
+        "w": "British Library",
+        "d": "National library of the United Kingdom"
+      },
+      {
+        "w": "Bodleian Library",
+        "d": "Historic Oxford library with major manuscript holdings"
+      },
+      {
+        "w": "Vatican Library",
+        "d": "Papal library preserving manuscripts, archives and rare books"
+      },
+      {
+        "w": "Bibliotheque nationale",
+        "d": "National library of France"
+      },
+      {
+        "w": "New York Public Library",
+        "d": "Major public research library known for its main reading room"
+      },
+      {
+        "w": "Celsus Library",
+        "d": "Ancient Roman library facade preserved at Ephesus"
+      },
+      {
+        "w": "Ashurbanipal library",
+        "d": "Ancient Assyrian collection of cuneiform tablets"
+      },
+      {
+        "w": "St Catherine monastery library",
+        "d": "Sinai monastery library with major manuscript holdings"
+      },
+      {
+        "w": "Library card",
+        "d": "User credential allowing borrowing or access"
+      },
+      {
+        "w": "Call number",
+        "d": "Shelf code locating a book within a classification system"
+      },
+      {
+        "w": "Dewey Decimal",
+        "d": "Library classification system using numbered subject classes"
+      },
+      {
+        "w": "Library of Congress Classification",
+        "d": "Subject classification system common in academic libraries"
+      },
+      {
+        "w": "Catalog record",
+        "d": "Bibliographic description used to find and identify an item"
+      },
+      {
+        "w": "Interlibrary loan",
+        "d": "Service borrowing material from another library for a user"
+      },
+      {
+        "w": "Reading room",
+        "d": "Supervised space for consulting books, manuscripts or archives"
+      },
+      {
+        "w": "Rare book room",
+        "d": "Controlled library space for valuable or fragile printed works"
+      },
+      {
+        "w": "Reference desk",
+        "d": "Service point for research help and information questions"
+      },
+      {
+        "w": "Archive",
+        "d": "Institution or collection preserving records and documents"
+      },
+      {
+        "w": "Stacks",
+        "d": "Shelving area where library books are stored"
+      },
+      {
+        "w": "Closed stacks",
+        "d": "Storage area where staff retrieve books for readers"
+      },
+      {
+        "w": "Legal deposit",
+        "d": "Requirement to submit copies of publications to designated libraries"
+      },
+      {
+        "w": "Accession number",
+        "d": "Unique number assigned when an item enters a collection"
+      },
+      {
+        "w": "Provenance",
+        "d": "Ownership and custody history of a book or object"
+      },
+      {
+        "w": "Ex libris",
+        "d": "Bookplate or mark showing ownership"
+      },
+      {
+        "w": "Spine",
+        "d": "Bound edge of a book visible on a shelf"
+      },
+      {
+        "w": "Cover board",
+        "d": "Rigid board forming the front or back of a hard cover"
+      },
+      {
+        "w": "Endpaper",
+        "d": "Paper sheet connecting book block and cover"
+      },
+      {
+        "w": "Headband",
+        "d": "Small decorative or strengthening band at the top of a spine"
+      },
+      {
+        "w": "Flyleaf",
+        "d": "Blank leaf near the front or back of a book"
+      },
+      {
+        "w": "Book clasp",
+        "d": "Fastener used to keep a manuscript or binding closed"
+      },
+      {
+        "w": "Fore-edge",
+        "d": "Outer edge of the pages opposite the spine"
+      },
+      {
+        "w": "Conservation box",
+        "d": "Protective container made for storing fragile books"
+      },
+      {
+        "w": "Book cradle",
+        "d": "Support used to hold a fragile book open safely"
+      }
+    ]
+  },
+  {
+    "name": "futures & utopian projects",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Utopia",
+        "d": "Thomas Mores imagined island society and source of the genre name"
+      },
+      {
+        "w": "New Atlantis",
+        "d": "Francis Bacons vision of a society organized around knowledge"
+      },
+      {
+        "w": "City of the Sun",
+        "d": "Campanellas philosophical utopia ruled by reason and shared life"
+      },
+      {
+        "w": "Looking Backward",
+        "d": "Bellamy novel imagining a cooperative future America"
+      },
+      {
+        "w": "News from Nowhere",
+        "d": "William Morris socialist utopia of craft and communal life"
+      },
+      {
+        "w": "Icarie",
+        "d": "Utopian socialist community imagined by Etienne Cabet"
+      },
+      {
+        "w": "Phalanstery",
+        "d": "Fourierist communal building for cooperative living and labor"
+      },
+      {
+        "w": "Brook Farm",
+        "d": "American communal experiment inspired by reform ideals"
+      },
+      {
+        "w": "Oneida Community",
+        "d": "Nineteenth-century American utopian religious community"
+      },
+      {
+        "w": "Garden City",
+        "d": "Ebenezer Howards planned city combining town and country"
+      },
+      {
+        "w": "Radiant City",
+        "d": "Le Corbusiers modernist vision of towers, order and open space"
+      },
+      {
+        "w": "Broadacre City",
+        "d": "Frank Lloyd Wrights decentralized car-based urban vision"
+      },
+      {
+        "w": "Linear City",
+        "d": "Urban concept organized along a long infrastructure axis"
+      },
+      {
+        "w": "New Babylon",
+        "d": "Constant Nieuwenhuys vision of nomadic creative urban life"
+      },
+      {
+        "w": "Project Cybersyn",
+        "d": "Chilean cybernetic planning experiment under Allende"
+      },
+      {
+        "w": "Technocracy movement",
+        "d": "Movement imagining rule by engineers and technical experts"
+      },
+      {
+        "w": "Whole Earth Catalog",
+        "d": "Counterculture publication linking tools, systems and alternative futures"
+      },
+      {
+        "w": "Buckminster Fuller",
+        "d": "Designer of geodesic domes and whole-systems future thinking"
+      },
+      {
+        "w": "Arcology",
+        "d": "Fusion of architecture and ecology in dense self-contained structures"
+      },
+      {
+        "w": "O Neill cylinder",
+        "d": "Rotating space habitat concept for artificial gravity"
+      },
+      {
+        "w": "Generation ship",
+        "d": "Starship designed for a voyage lasting many human generations"
+      },
+      {
+        "w": "Terraforming Mars",
+        "d": "Concept of transforming Mars into a more Earth-like environment"
+      },
+      {
+        "w": "Undersea city",
+        "d": "Future settlement imagined beneath the ocean surface"
+      },
+      {
+        "w": "Post-scarcity",
+        "d": "Imagined economy where basic material goods are abundant"
+      },
+      {
+        "w": "Universal basic income",
+        "d": "Policy idea of regular cash payments to all citizens"
+      },
+      {
+        "w": "Four-day week",
+        "d": "Work-time reform imagining shorter labor without lost productivity"
+      },
+      {
+        "w": "Automated luxury communism",
+        "d": "Political slogan for abundance through automation"
+      },
+      {
+        "w": "Solarpunk",
+        "d": "Optimistic ecological future aesthetic and fiction mode"
+      },
+      {
+        "w": "Cybernetic society",
+        "d": "Future image built around feedback, computation and governance"
+      },
+      {
+        "w": "Smart city",
+        "d": "Urban future model using sensors, data and networked services"
+      },
+      {
+        "w": "Seasteading",
+        "d": "Proposal for autonomous communities built on floating ocean platforms"
+      },
+      {
+        "w": "Vertical farm",
+        "d": "Indoor stacked agriculture imagined for dense cities"
+      },
+      {
+        "w": "Lab-grown meat",
+        "d": "Cultured meat proposed as a future food system"
+      },
+      {
+        "w": "Fusion power",
+        "d": "Long-promised energy source based on nuclear fusion"
+      },
+      {
+        "w": "World government",
+        "d": "Political dream of a unified global authority"
+      }
+    ]
+  },
+  {
+    "name": "mafias, cartels & crime syndicates",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Cosa Nostra",
+        "d": "Sicilian mafia network with ritual membership and family structures"
+      },
+      {
+        "w": "Ndrangheta",
+        "d": "Calabrian organized crime group with global cocaine trafficking power"
+      },
+      {
+        "w": "Camorra",
+        "d": "Organized crime network rooted in Naples and Campania"
+      },
+      {
+        "w": "Sacra Corona Unita",
+        "d": "Apulian mafia organization from southern Italy"
+      },
+      {
+        "w": "Five Families",
+        "d": "New York mafia families central to American organized crime"
+      },
+      {
+        "w": "Gambino family",
+        "d": "One of the major New York mafia families"
+      },
+      {
+        "w": "Genovese family",
+        "d": "Powerful New York mafia family known for secrecy and influence"
+      },
+      {
+        "w": "Bonanno family",
+        "d": "New York mafia family tied to internal wars and federal cases"
+      },
+      {
+        "w": "Lucky Luciano",
+        "d": "Mobster associated with the modern American mafia structure"
+      },
+      {
+        "w": "Al Capone",
+        "d": "Chicago gangster linked to Prohibition-era bootlegging"
+      },
+      {
+        "w": "Meyer Lansky",
+        "d": "Organized crime financier tied to gambling and syndicate networks"
+      },
+      {
+        "w": "Bugsy Siegel",
+        "d": "Mobster associated with Las Vegas casino development"
+      },
+      {
+        "w": "Yakuza",
+        "d": "Japanese organized crime groups with formalized hierarchies"
+      },
+      {
+        "w": "Triads",
+        "d": "Chinese secret-society-derived criminal networks"
+      },
+      {
+        "w": "Medellin Cartel",
+        "d": "Colombian cocaine cartel associated with Pablo Escobar"
+      },
+      {
+        "w": "Cali Cartel",
+        "d": "Colombian cartel that rivaled and outlasted Medellin"
+      },
+      {
+        "w": "Sinaloa Cartel",
+        "d": "Mexican cartel with major international trafficking networks"
+      },
+      {
+        "w": "Los Zetas",
+        "d": "Mexican cartel formed by former special-forces members"
+      },
+      {
+        "w": "El Chapo",
+        "d": "Joaquin Guzman, leader of the Sinaloa Cartel"
+      },
+      {
+        "w": "Pablo Escobar",
+        "d": "Medellin Cartel leader and symbol of narco power"
+      },
+      {
+        "w": "MS-13",
+        "d": "Gang founded by Salvadoran migrants in Los Angeles"
+      },
+      {
+        "w": "Primeiro Comando da Capital",
+        "d": "Brazilian prison-born criminal organization"
+      },
+      {
+        "w": "Red Command",
+        "d": "Brazilian criminal organization rooted in Rio de Janeiro prisons"
+      },
+      {
+        "w": "Bratva",
+        "d": "Loose term for Russian organized crime networks"
+      },
+      {
+        "w": "Vory v zakone",
+        "d": "Soviet and post-Soviet criminal elite known as thieves-in-law"
+      },
+      {
+        "w": "RICO Act",
+        "d": "American law used against organized criminal enterprises"
+      },
+      {
+        "w": "Omerta",
+        "d": "Code of silence associated with mafia culture"
+      },
+      {
+        "w": "Money laundering",
+        "d": "Process of disguising criminal proceeds as legitimate funds"
+      },
+      {
+        "w": "Protection racket",
+        "d": "Extortion scheme selling protection from harm often caused by the seller"
+      },
+      {
+        "w": "Bootlegging",
+        "d": "Illegal production or distribution of alcohol during prohibition"
+      },
+      {
+        "w": "Witness protection",
+        "d": "Program relocating witnesses threatened by criminal groups"
+      },
+      {
+        "w": "Anti-mafia pool",
+        "d": "Italian team of magistrates coordinating mafia prosecutions"
+      },
+      {
+        "w": "Giovanni Falcone",
+        "d": "Italian judge and symbol of anti-mafia investigations"
+      },
+      {
+        "w": "Paolo Borsellino",
+        "d": "Italian judge murdered after pursuing Cosa Nostra cases"
+      },
+      {
+        "w": "Black Hand",
+        "d": "Early extortion network associated with Italian-American crime"
+      }
+    ]
+  },
+  {
+    "name": "archaeology: monuments, finds & methods",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Tomb of Tutankhamun",
+        "d": "Nearly intact Egyptian royal tomb opened by Howard Carter"
+      },
+      {
+        "w": "Schliemanns Troy",
+        "d": "Excavated site in Turkey identified with ancient Troy"
+      },
+      {
+        "w": "Dead Sea Scrolls",
+        "d": "Ancient Jewish manuscripts found near Qumran"
+      },
+      {
+        "w": "Nazca geoglyphs",
+        "d": "Huge desert figures in Peru visible from above"
+      },
+      {
+        "w": "Mausoleum of Qin Shi Huang",
+        "d": "Imperial tomb complex guarded by thousands of clay soldiers"
+      },
+      {
+        "w": "Lascaux Cave",
+        "d": "French cave famous for Paleolithic animal paintings"
+      },
+      {
+        "w": "Otzi",
+        "d": "Copper Age ice mummy found in the Alps"
+      },
+      {
+        "w": "Knossos",
+        "d": "Minoan palace center on Crete excavated by Arthur Evans"
+      },
+      {
+        "w": "Akrotiri",
+        "d": "Bronze Age settlement on Santorini preserved by volcanic ash"
+      },
+      {
+        "w": "Gobekli Tepe",
+        "d": "Neolithic ritual site in Anatolia with carved stone pillars"
+      },
+      {
+        "w": "Nebra sky disk",
+        "d": "Bronze Age artifact with gold celestial symbols"
+      },
+      {
+        "w": "Scythian kurgans",
+        "d": "Burial mounds of steppe nomads with rich grave goods"
+      },
+      {
+        "w": "Pazyryk burials",
+        "d": "Frozen Altai tombs preserving textiles, tattoos and horses"
+      },
+      {
+        "w": "Antikythera device",
+        "d": "Ancient Greek geared object for astronomical calculation"
+      },
+      {
+        "w": "Herculaneum",
+        "d": "Roman town preserved by the eruption of Vesuvius"
+      },
+      {
+        "w": "Nag Hammadi find",
+        "d": "Manuscript cache important for the study of Gnostic texts"
+      },
+      {
+        "w": "Catalhoyuk",
+        "d": "Neolithic settlement in Anatolia with dense mudbrick houses"
+      },
+      {
+        "w": "Vindolanda tablets",
+        "d": "Roman writing tablets from northern Britain"
+      },
+      {
+        "w": "Bog bodies",
+        "d": "Human remains preserved in peat wetlands"
+      },
+      {
+        "w": "Sutton Hoo",
+        "d": "Anglo-Saxon ship burial in eastern England"
+      },
+      {
+        "w": "Staffordshire Hoard",
+        "d": "Large Anglo-Saxon gold and garnet treasure find"
+      },
+      {
+        "w": "Altamira",
+        "d": "Spanish cave with famous Paleolithic paintings"
+      },
+      {
+        "w": "Avebury",
+        "d": "Large Neolithic henge and stone circle in England"
+      },
+      {
+        "w": "Skara Brae",
+        "d": "Stone-built Neolithic village in Orkney"
+      },
+      {
+        "w": "Archaeological stratigraphy",
+        "d": "Layer analysis used to establish relative sequence at a site"
+      },
+      {
+        "w": "Excavation grid",
+        "d": "Square system used to control archaeological digging"
+      },
+      {
+        "w": "Cultural layer",
+        "d": "Deposit containing human activity and material remains"
+      },
+      {
+        "w": "Field notebook",
+        "d": "Primary record of observations made during excavation"
+      },
+      {
+        "w": "Radiocarbon dating",
+        "d": "Dating method based on radioactive carbon decay"
+      },
+      {
+        "w": "Thermoluminescence",
+        "d": "Dating method for heated minerals and ceramics"
+      },
+      {
+        "w": "Typology",
+        "d": "Classification of artifacts by form, style or function"
+      },
+      {
+        "w": "Archaeological context",
+        "d": "Relationship between a find, its layer and nearby material"
+      },
+      {
+        "w": "Post-depositional process",
+        "d": "Natural or human process changing a site after deposition"
+      },
+      {
+        "w": "Ground-penetrating radar",
+        "d": "Remote-sensing method for detecting buried features"
+      },
+      {
+        "w": "Rescue archaeology",
+        "d": "Rapid excavation before construction or destruction"
+      }
+    ]
+  },
+  {
+    "name": "state symbols & signs of power",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Union Jack",
+        "d": "Flag combining crosses associated with the United Kingdom"
+      },
+      {
+        "w": "Stars and Stripes",
+        "d": "Common name for the flag of the United States"
+      },
+      {
+        "w": "Tricolour",
+        "d": "Three-color flag form used by many modern states"
+      },
+      {
+        "w": "Maple Leaf",
+        "d": "Canadian national symbol centered on the flag"
+      },
+      {
+        "w": "Rising Sun flag",
+        "d": "Japanese military flag with radiating red rays"
+      },
+      {
+        "w": "Double-headed eagle",
+        "d": "Imperial heraldic bird looking in two directions"
+      },
+      {
+        "w": "Fleur-de-lis",
+        "d": "Stylized lily associated with French monarchy and heraldry"
+      },
+      {
+        "w": "Red star",
+        "d": "Symbol of revolution, armies and communist movements"
+      },
+      {
+        "w": "Hammer and sickle",
+        "d": "Soviet symbol of workers and peasants"
+      },
+      {
+        "w": "Ashoka Chakra",
+        "d": "Wheel symbol at the center of the Indian flag"
+      },
+      {
+        "w": "Chrysanthemum Seal",
+        "d": "Japanese imperial emblem"
+      },
+      {
+        "w": "Royal Standard",
+        "d": "Flag used to indicate the presence of a monarch"
+      },
+      {
+        "w": "Great Seal",
+        "d": "Official emblem used to authenticate acts of state"
+      },
+      {
+        "w": "Coat of arms",
+        "d": "Heraldic design identifying a person, family or state"
+      },
+      {
+        "w": "Heraldic shield",
+        "d": "Shield-shaped field carrying heraldic charges"
+      },
+      {
+        "w": "Crown jewels",
+        "d": "Ceremonial regalia used to display royal authority"
+      },
+      {
+        "w": "Orb",
+        "d": "Royal regalia symbolizing Christian sovereignty over the world"
+      },
+      {
+        "w": "Sceptre",
+        "d": "Ceremonial staff representing authority"
+      },
+      {
+        "w": "Coronation mantle",
+        "d": "Robe worn during a coronation ceremony"
+      },
+      {
+        "w": "Order chain",
+        "d": "Ceremonial collar of an order of chivalry or state honor"
+      },
+      {
+        "w": "State anthem",
+        "d": "Official song representing a nation or state"
+      },
+      {
+        "w": "National motto",
+        "d": "Short phrase expressing state identity or values"
+      },
+      {
+        "w": "Presidential seal",
+        "d": "Official emblem of a presidency"
+      },
+      {
+        "w": "Fasces",
+        "d": "Bundle of rods used as a symbol of authority"
+      },
+      {
+        "w": "Phrygian cap",
+        "d": "Cap associated with liberty and revolution"
+      },
+      {
+        "w": "Laurel wreath",
+        "d": "Classical symbol of victory and honor"
+      },
+      {
+        "w": "White Eagle",
+        "d": "Polish state symbol and heraldic emblem"
+      },
+      {
+        "w": "Lion of Saint Mark",
+        "d": "Winged lion symbol associated with Venice"
+      },
+      {
+        "w": "Eagle of Saladin",
+        "d": "Heraldic eagle used by several Arab states"
+      },
+      {
+        "w": "Black eagle",
+        "d": "Heraldic eagle associated with Prussia and other states"
+      },
+      {
+        "w": "Royal cypher",
+        "d": "Monogram of a reigning monarch"
+      },
+      {
+        "w": "Imperial seal",
+        "d": "Official seal connected with imperial authority"
+      },
+      {
+        "w": "Dragon standard",
+        "d": "Dragon emblem used in royal or military symbolism"
+      },
+      {
+        "w": "National emblem",
+        "d": "Official visual symbol of a state"
+      },
+      {
+        "w": "State flag protocol",
+        "d": "Rules governing display and use of national flags"
+      }
+    ]
+  },
+  {
+    "name": "censorship & underground culture",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Samizdat",
+        "d": "Self-published dissident texts copied outside official channels"
+      },
+      {
+        "w": "Tamizdat",
+        "d": "Banned or unofficial texts published abroad and smuggled back"
+      },
+      {
+        "w": "Index Librorum Prohibitorum",
+        "d": "Catholic list of prohibited books"
+      },
+      {
+        "w": "Banned book",
+        "d": "Book removed or forbidden by authorities or institutions"
+      },
+      {
+        "w": "Book burning",
+        "d": "Public destruction of books as political or moral theater"
+      },
+      {
+        "w": "Redacted text",
+        "d": "Text with parts blacked out or removed"
+      },
+      {
+        "w": "Bowdlerization",
+        "d": "Removal of supposedly offensive material from a work"
+      },
+      {
+        "w": "Expurgation",
+        "d": "Cleaning a text by deleting unacceptable passages"
+      },
+      {
+        "w": "Blue pencil",
+        "d": "Editorial or censorial deletion mark"
+      },
+      {
+        "w": "Censors stamp",
+        "d": "Official mark approving or restricting publication"
+      },
+      {
+        "w": "Underground press",
+        "d": "Unofficial publishing network outside mainstream control"
+      },
+      {
+        "w": "Zine",
+        "d": "Small self-published magazine often tied to subcultures"
+      },
+      {
+        "w": "Mimeograph",
+        "d": "Duplicating machine widely used for unofficial printed material"
+      },
+      {
+        "w": "Carbon copy",
+        "d": "Duplicate made with carbon paper in typewritten circulation"
+      },
+      {
+        "w": "Typewriter copy",
+        "d": "Typed reproduction used before easy photocopying"
+      },
+      {
+        "w": "Pirate radio",
+        "d": "Unlicensed radio broadcasting outside official systems"
+      },
+      {
+        "w": "Radio Free Europe",
+        "d": "Cold War broadcaster aimed at audiences behind the Iron Curtain"
+      },
+      {
+        "w": "Voice of America",
+        "d": "US international broadcaster heard across closed media systems"
+      },
+      {
+        "w": "Banned film",
+        "d": "Film denied release or public screening"
+      },
+      {
+        "w": "Shelf film",
+        "d": "Completed film withheld from release by authorities or studios"
+      },
+      {
+        "w": "Salon des Refuses",
+        "d": "Exhibition of works rejected by the official Paris Salon"
+      },
+      {
+        "w": "Degenerate art",
+        "d": "Nazi label for modern art condemned by the regime"
+      },
+      {
+        "w": "Banned jazz",
+        "d": "Jazz restricted or stigmatized under some authoritarian regimes"
+      },
+      {
+        "w": "Rock on bones",
+        "d": "Soviet bootleg records cut onto discarded X-ray film"
+      },
+      {
+        "w": "Dissident publishing",
+        "d": "Publishing tied to political opposition under repression"
+      },
+      {
+        "w": "Blacklist",
+        "d": "List excluding people from work, publication or public life"
+      },
+      {
+        "w": "Forbidden list",
+        "d": "Index of works or people subject to censorship"
+      },
+      {
+        "w": "Banned author",
+        "d": "Writer blocked from publication or circulation"
+      },
+      {
+        "w": "Obscenity trial",
+        "d": "Court case over allegedly indecent art or literature"
+      },
+      {
+        "w": "Prior restraint",
+        "d": "Government action blocking publication before release"
+      },
+      {
+        "w": "Chilling effect",
+        "d": "Self-censorship caused by fear of punishment"
+      },
+      {
+        "w": "Coded language",
+        "d": "Indirect phrasing used to evade censorship"
+      },
+      {
+        "w": "Contraband book",
+        "d": "Book smuggled or possessed despite prohibition"
+      },
+      {
+        "w": "Customs seizure",
+        "d": "Border confiscation of prohibited printed material"
+      },
+      {
+        "w": "Banned exhibition",
+        "d": "Art show closed or forbidden by authorities"
+      }
+    ]
+  },
+  {
+    "name": "musicals",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "The Phantom of the Opera",
+        "d": "Andrew Lloyd Webber musical about a masked figure in the Paris Opera"
+      },
+      {
+        "w": "Les Miserables",
+        "d": "Stage musical based on Victor Hugos novel of revolution and redemption"
+      },
+      {
+        "w": "Hamilton musical",
+        "d": "Hip-hop-influenced stage show about Alexander Hamilton"
+      },
+      {
+        "w": "West Side Story",
+        "d": "Leonard Bernstein musical retelling Romeo and Juliet in New York gangs"
+      },
+      {
+        "w": "Cats",
+        "d": "Andrew Lloyd Webber musical based on T. S. Eliots cat poems"
+      },
+      {
+        "w": "Chicago",
+        "d": "Kander and Ebb musical about murder, celebrity and media spectacle"
+      },
+      {
+        "w": "Cabaret",
+        "d": "Musical set in Weimar Berlin around the Kit Kat Club"
+      },
+      {
+        "w": "Rent",
+        "d": "Rock musical inspired by La Boheme and set in New Yorks East Village"
+      },
+      {
+        "w": "Wicked",
+        "d": "Musical reimagining the witches of Oz before Dorothy arrives"
+      },
+      {
+        "w": "The Lion King",
+        "d": "Disney stage musical known for masks, puppetry and African-inspired staging"
+      },
+      {
+        "w": "Mamma Mia!",
+        "d": "ABBA jukebox musical built around a wedding and family mystery"
+      },
+      {
+        "w": "Evita",
+        "d": "Andrew Lloyd Webber and Tim Rice musical about Eva Peron"
+      },
+      {
+        "w": "Jesus Christ Superstar",
+        "d": "Rock opera about the final days of Jesus"
+      },
+      {
+        "w": "Fiddler on the Roof",
+        "d": "Musical about Tevye, family tradition and change in a Jewish village"
+      },
+      {
+        "w": "Oklahoma!",
+        "d": "Rodgers and Hammerstein musical that helped define the integrated book musical"
+      },
+      {
+        "w": "The Sound of Music",
+        "d": "Rodgers and Hammerstein musical about the von Trapp family"
+      },
+      {
+        "w": "My Fair Lady",
+        "d": "Musical adaptation of Pygmalion with Eliza Doolittle"
+      },
+      {
+        "w": "A Chorus Line",
+        "d": "Backstage musical about dancers auditioning for a show"
+      },
+      {
+        "w": "Sweeney Todd",
+        "d": "Sondheim musical about a murderous barber and revenge"
+      },
+      {
+        "w": "Into the Woods",
+        "d": "Sondheim musical weaving fairy tales into darker consequences"
+      },
+      {
+        "w": "Company",
+        "d": "Sondheim musical about relationships and urban adulthood"
+      },
+      {
+        "w": "Sunday in the Park with George",
+        "d": "Sondheim musical inspired by Seurats painting"
+      },
+      {
+        "w": "Hair",
+        "d": "Counterculture rock musical of the 1960s"
+      },
+      {
+        "w": "Hairspray",
+        "d": "Musical about dance television, race and 1960s Baltimore"
+      },
+      {
+        "w": "The Book of Mormon",
+        "d": "Satirical musical by Trey Parker, Matt Stone and Robert Lopez"
+      },
+      {
+        "w": "Dear Evan Hansen",
+        "d": "Contemporary musical about loneliness, lies and online grief"
+      },
+      {
+        "w": "Hadestown",
+        "d": "Folk-jazz musical retelling Orpheus and Eurydice"
+      },
+      {
+        "w": "Moulin Rouge!",
+        "d": "Jukebox stage musical adapted from the Baz Luhrmann film"
+      },
+      {
+        "w": "Six",
+        "d": "Pop concert-style musical about the wives of Henry VIII"
+      },
+      {
+        "w": "Miss Saigon",
+        "d": "Musical inspired by Madame Butterfly and the Vietnam War"
+      },
+      {
+        "w": "The Producers",
+        "d": "Mel Brooks musical about staging a deliberately terrible show"
+      },
+      {
+        "w": "Little Shop of Horrors",
+        "d": "Dark comic musical about a carnivorous plant"
+      },
+      {
+        "w": "Guys and Dolls",
+        "d": "Classic musical about gamblers, romance and Broadway nightlife"
+      },
+      {
+        "w": "Carousel",
+        "d": "Rodgers and Hammerstein musical with a darker romantic plot"
+      },
+      {
+        "w": "South Pacific",
+        "d": "Rodgers and Hammerstein musical about war and prejudice"
+      }
+    ]
+  },
+  {
+    "name": "classic film directors",
+    "tags": {
+      "a": "human",
+      "b": "movies",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Alfred Hitchcock",
+        "d": "British suspense master behind Psycho, Vertigo and Rear Window"
+      },
+      {
+        "w": "Stanley Kubrick",
+        "d": "Director of 2001, Dr. Strangelove, The Shining and Barry Lyndon"
+      },
+      {
+        "w": "Federico Fellini",
+        "d": "Italian auteur of La Dolce Vita, 8½ and Amarcord"
+      },
+      {
+        "w": "Ingmar Bergman",
+        "d": "Swedish director of Persona, Wild Strawberries and The Seventh Seal"
+      },
+      {
+        "w": "Akira Kurosawa",
+        "d": "Japanese master whose samurai films reshaped world cinema"
+      },
+      {
+        "w": "Andrei Tarkovsky",
+        "d": "Russian director of Solaris, Stalker and Mirror"
+      },
+      {
+        "w": "Jean-Luc Godard",
+        "d": "French New Wave radical behind Breathless and Weekend"
+      },
+      {
+        "w": "François Truffaut",
+        "d": "French New Wave director of The 400 Blows and Jules and Jim"
+      },
+      {
+        "w": "Michelangelo Antonioni",
+        "d": "Italian modernist of L’Avventura, Blow-Up and Red Desert"
+      },
+      {
+        "w": "Luis Buñuel",
+        "d": "Surrealist filmmaker of Un Chien Andalou and The Discreet Charm of the Bourgeoisie"
+      },
+      {
+        "w": "Billy Wilder",
+        "d": "Writer-director of Some Like It Hot, Sunset Boulevard and The Apartment"
+      },
+      {
+        "w": "John Ford",
+        "d": "American director famous for westerns such as Stagecoach and The Searchers"
+      },
+      {
+        "w": "Fritz Lang",
+        "d": "German-American director of Metropolis and M"
+      },
+      {
+        "w": "Carl Theodor Dreyer",
+        "d": "Danish director of The Passion of Joan of Arc and Ordet"
+      },
+      {
+        "w": "Sergei Eisenstein",
+        "d": "Soviet montage theorist and director of Battleship Potemkin"
+      },
+      {
+        "w": "Dziga Vertov",
+        "d": "Soviet documentarian behind Man with a Movie Camera"
+      },
+      {
+        "w": "Charlie Chaplin",
+        "d": "Silent-era comic genius behind City Lights and Modern Times"
+      },
+      {
+        "w": "Orson Welles",
+        "d": "Director-star of Citizen Kane and Touch of Evil"
+      },
+      {
+        "w": "Luchino Visconti",
+        "d": "Italian director of The Leopard, Rocco and His Brothers and Death in Venice"
+      },
+      {
+        "w": "Pier Paolo Pasolini",
+        "d": "Italian poet-filmmaker of The Gospel According to St. Matthew and Salò"
+      },
+      {
+        "w": "Vittorio De Sica",
+        "d": "Neorealist director of Bicycle Thieves and Umberto D."
+      },
+      {
+        "w": "Roberto Rossellini",
+        "d": "Italian neorealist director of Rome, Open City"
+      },
+      {
+        "w": "Robert Bresson",
+        "d": "French minimalist director of Pickpocket and A Man Escaped"
+      },
+      {
+        "w": "Alain Resnais",
+        "d": "French modernist of Hiroshima mon amour and Last Year at Marienbad"
+      },
+      {
+        "w": "Bernardo Bertolucci",
+        "d": "Italian director of The Conformist and Last Tango in Paris"
+      },
+      {
+        "w": "Sergei Parajanov",
+        "d": "Armenian-Georgian visionary behind The Color of Pomegranates"
+      },
+      {
+        "w": "Andrzej Wajda",
+        "d": "Polish director of Ashes and Diamonds and Man of Iron"
+      },
+      {
+        "w": "Martin Scorsese",
+        "d": "American director of Taxi Driver, Goodfellas and Raging Bull"
+      },
+      {
+        "w": "Francis Ford Coppola",
+        "d": "American director of The Godfather trilogy and Apocalypse Now"
+      },
+      {
+        "w": "F. W. Murnau",
+        "d": "German silent-film director of Nosferatu and Sunrise"
+      },
+      {
+        "w": "Jean Renoir",
+        "d": "French director of Grand Illusion and The Rules of the Game"
+      },
+      {
+        "w": "Buster Keaton",
+        "d": "Silent comic filmmaker behind The General and Sherlock Jr."
+      },
+      {
+        "w": "Werner Herzog",
+        "d": "German director of Aguirre, Fitzcarraldo and Grizzly Man"
+      },
+      {
+        "w": "Yasujiro Ozu",
+        "d": "Japanese director of Tokyo Story and Late Spring"
+      },
+      {
+        "w": "Satyajit Ray",
+        "d": "Indian director of the Apu Trilogy and The Music Room"
+      }
+    ]
+  },
+  {
+    "name": "impressionists & post-impressionists",
+    "tags": {
+      "a": "human",
+      "b": "art",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Claude Monet",
+        "d": "French impressionist whose water lilies and haystacks studied light"
+      },
+      {
+        "w": "Édouard Manet",
+        "d": "Painter whose Olympia and Luncheon on the Grass shocked Paris"
+      },
+      {
+        "w": "Pierre-Auguste Renoir",
+        "d": "Impressionist known for luminous social scenes and portraits"
+      },
+      {
+        "w": "Edgar Degas",
+        "d": "Painter of ballet dancers, racecourses and modern Paris interiors"
+      },
+      {
+        "w": "Camille Pissarro",
+        "d": "Impressionist elder who painted rural and urban scenes"
+      },
+      {
+        "w": "Alfred Sisley",
+        "d": "Landscape impressionist focused on rivers, snow and sky"
+      },
+      {
+        "w": "Berthe Morisot",
+        "d": "Impressionist painter of domestic life and luminous brushwork"
+      },
+      {
+        "w": "Gustave Caillebotte",
+        "d": "Painter of Paris streets and modern urban perspectives"
+      },
+      {
+        "w": "Frédéric Bazille",
+        "d": "Early impressionist killed young during the Franco-Prussian War"
+      },
+      {
+        "w": "Paul Cézanne",
+        "d": "Post-impressionist whose forms helped lead toward cubism"
+      },
+      {
+        "w": "Vincent van Gogh",
+        "d": "Dutch post-impressionist of Starry Night, sunflowers and intense color"
+      },
+      {
+        "w": "Paul Gauguin",
+        "d": "Post-impressionist associated with Tahiti and symbolic color"
+      },
+      {
+        "w": "Georges Seurat",
+        "d": "Pointillist painter of A Sunday Afternoon on La Grande Jatte"
+      },
+      {
+        "w": "Paul Signac",
+        "d": "Neo-impressionist who developed pointillism after Seurat"
+      },
+      {
+        "w": "Henri de Toulouse-Lautrec",
+        "d": "Painter and poster artist of Montmartre nightlife"
+      },
+      {
+        "w": "Pierre Bonnard",
+        "d": "Post-impressionist Nabi painter of interiors and color"
+      },
+      {
+        "w": "Édouard Vuillard",
+        "d": "Nabi artist known for patterned rooms and intimate scenes"
+      },
+      {
+        "w": "Maurice Denis",
+        "d": "Nabi theorist who stressed painting as a flat colored surface"
+      },
+      {
+        "w": "Henri-Edmond Cross",
+        "d": "Neo-impressionist painter of Mediterranean light"
+      },
+      {
+        "w": "Maximilien Luce",
+        "d": "Neo-impressionist known for workers, factories and Paris scenes"
+      },
+      {
+        "w": "Armand Guillaumin",
+        "d": "Impressionist painter of landscapes and bright color"
+      },
+      {
+        "w": "Mary Cassatt",
+        "d": "American impressionist known for mothers, children and prints"
+      },
+      {
+        "w": "Eugène Boudin",
+        "d": "Marine painter who influenced Monet with plein-air practice"
+      },
+      {
+        "w": "Paul Sérusier",
+        "d": "Nabi painter of The Talisman and synthetic color"
+      },
+      {
+        "w": "Félix Vallotton",
+        "d": "Swiss-French Nabi painter and printmaker"
+      },
+      {
+        "w": "Odilon Redon",
+        "d": "Symbolist painter linked to post-impressionist color experiments"
+      },
+      {
+        "w": "Louis Anquetin",
+        "d": "Painter associated with cloisonnism and bold outlines"
+      },
+      {
+        "w": "Théo van Rysselberghe",
+        "d": "Belgian neo-impressionist and pointillist portraitist"
+      },
+      {
+        "w": "Joaquín Sorolla",
+        "d": "Spanish painter of sunlit beaches and loose luminous brushwork"
+      },
+      {
+        "w": "Henri Martin",
+        "d": "French painter who adapted pointillism to murals and landscapes"
+      },
+      {
+        "w": "Georges Lemmen",
+        "d": "Belgian neo-impressionist painter and designer"
+      },
+      {
+        "w": "Ker-Xavier Roussel",
+        "d": "Nabi painter of mythological and decorative landscapes"
+      },
+      {
+        "w": "Suzanne Valadon",
+        "d": "French painter of figures and still lifes in post-impressionist circles"
+      },
+      {
+        "w": "Charles Angrand",
+        "d": "French neo-impressionist known for subtle pointillist drawings"
+      },
+      {
+        "w": "Albert Dubois-Pillet",
+        "d": "Neo-impressionist painter and early supporter of Seurat"
+      }
+    ]
+  },
+  {
+    "name": "fashion designers",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Gabrielle Chanel",
+        "d": "Designer who made jersey suits, perfume and the little black dress iconic"
+      },
+      {
+        "w": "Christian Dior",
+        "d": "Creator of the postwar New Look silhouette in 1947"
+      },
+      {
+        "w": "Yves Henri Saint Laurent",
+        "d": "Designer behind Le Smoking and modern ready-to-wear luxury"
+      },
+      {
+        "w": "Gianni Versace",
+        "d": "Italian designer known for baroque glamour and bold prints"
+      },
+      {
+        "w": "Giorgio Armani",
+        "d": "Italian designer associated with soft tailoring and power suits"
+      },
+      {
+        "w": "Karl Lagerfeld",
+        "d": "Longtime creative force at Chanel, Fendi and his own label"
+      },
+      {
+        "w": "Yohji Yamamoto",
+        "d": "Japanese designer known for black, asymmetry and deconstruction"
+      },
+      {
+        "w": "Lee Alexander McQueen",
+        "d": "British designer famous for theatrical runway shows and sharp tailoring"
+      },
+      {
+        "w": "Rei Kawakubo",
+        "d": "Comme des Garçons founder known for radical anti-fashion forms"
+      },
+      {
+        "w": "Cristóbal Balenciaga",
+        "d": "Spanish couturier revered for sculptural silhouettes"
+      },
+      {
+        "w": "Jean-Paul Gaultier",
+        "d": "French designer known for corsets, sailor stripes and pop spectacle"
+      },
+      {
+        "w": "Vivienne Westwood",
+        "d": "British designer who brought punk into fashion"
+      },
+      {
+        "w": "John Galliano",
+        "d": "Gibraltar-born designer known for theatrical couture narratives"
+      },
+      {
+        "w": "Thierry Mugler",
+        "d": "French designer of exaggerated shoulders, corsetry and perfume"
+      },
+      {
+        "w": "Pierre Cardin",
+        "d": "Designer who popularized space-age fashion and licensing"
+      },
+      {
+        "w": "Christian Lacroix",
+        "d": "French couturier known for exuberant color and historicism"
+      },
+      {
+        "w": "Oscar de la Renta",
+        "d": "Designer of polished eveningwear and First Lady wardrobes"
+      },
+      {
+        "w": "Salvatore Ferragamo",
+        "d": "Italian shoemaker whose craft became a luxury house"
+      },
+      {
+        "w": "Calvin Richard Klein",
+        "d": "American designer of minimalist sportswear and denim branding"
+      },
+      {
+        "w": "Gianfranco Ferré",
+        "d": "Italian architect-designer once called the architect of fashion"
+      },
+      {
+        "w": "Emilio Pucci",
+        "d": "Italian designer known for swirling colorful prints"
+      },
+      {
+        "w": "Paco Rabanne",
+        "d": "Designer famous for metal dresses and futuristic materials"
+      },
+      {
+        "w": "Charles Frederick Worth",
+        "d": "English designer in Paris often called the father of haute couture"
+      },
+      {
+        "w": "Tom Ford",
+        "d": "Designer who revived Gucci before launching his own brand"
+      },
+      {
+        "w": "Mary Quant",
+        "d": "British designer associated with the miniskirt and Swinging London"
+      },
+      {
+        "w": "Donna Karan",
+        "d": "American designer behind the Seven Easy Pieces wardrobe idea"
+      },
+      {
+        "w": "Riccardo Tisci",
+        "d": "Italian designer known for Gothic Givenchy and street-luxury hybrids"
+      },
+      {
+        "w": "Helmut Lang",
+        "d": "Austrian designer of minimalist 1990s tailoring"
+      },
+      {
+        "w": "Demna Gvasalia",
+        "d": "Georgian designer behind Vetements and Balenciaga revivals"
+      },
+      {
+        "w": "Manolo Blahnik",
+        "d": "Shoe designer whose stilettos became pop-cultural icons"
+      },
+      {
+        "w": "Nicolas Ghesquière",
+        "d": "French designer known for futuristic Balenciaga and Louis Vuitton work"
+      },
+      {
+        "w": "Alexander Wang",
+        "d": "American designer known for downtown streetwear and sportswear"
+      },
+      {
+        "w": "Iris van Herpen",
+        "d": "Dutch designer using 3D printing and biomorphic couture"
+      },
+      {
+        "w": "Azzedine Alaïa",
+        "d": "Tunisian couturier famed for sculptural body-conscious dresses"
+      },
+      {
+        "w": "Miuccia Prada",
+        "d": "Designer who turned Prada into an intellectual fashion powerhouse"
+      }
+    ]
+  },
+  {
+    "name": "Russian classic novels",
+    "tags": {
+      "a": "human",
+      "b": "books",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "War and Peace",
+        "d": "Tolstoy epic of families, Napoleon and Russian society"
+      },
+      {
+        "w": "Anna Karenina",
+        "d": "Tolstoy novel about love, marriage and social judgment"
+      },
+      {
+        "w": "Crime and Punishment",
+        "d": "Dostoevsky novel about Raskolnikov, guilt and moral reckoning"
+      },
+      {
+        "w": "The Brothers Karamazov",
+        "d": "Dostoevsky family novel of faith, murder and freedom"
+      },
+      {
+        "w": "The Idiot",
+        "d": "Dostoevsky novel centered on Prince Myshkin"
+      },
+      {
+        "w": "Demons",
+        "d": "Dostoevsky political novel about radicalism and spiritual collapse"
+      },
+      {
+        "w": "Dead Souls",
+        "d": "Gogol satire about Chichikov buying names of dead serfs"
+      },
+      {
+        "w": "Oblomov",
+        "d": "Goncharov novel whose hero became a symbol of inertia"
+      },
+      {
+        "w": "Fathers and Sons",
+        "d": "Turgenev novel that popularized the figure of the nihilist"
+      },
+      {
+        "w": "A Hero of Our Time",
+        "d": "Lermontov novel built around the Byronic Pechorin"
+      },
+      {
+        "w": "The Captain’s Daughter",
+        "d": "Pushkin historical novella set during Pugachev’s rebellion"
+      },
+      {
+        "w": "The Overcoat",
+        "d": "Gogol story about Akaky Akakievich and a stolen coat"
+      },
+      {
+        "w": "The Nose",
+        "d": "Gogol absurd story about a runaway nose with official rank"
+      },
+      {
+        "w": "The Cherry Orchard",
+        "d": "Chekhov play about a family estate and social change"
+      },
+      {
+        "w": "Uncle Vanya",
+        "d": "Chekhov play of wasted lives, work and provincial frustration"
+      },
+      {
+        "w": "The Seagull",
+        "d": "Chekhov play about art, love and failed performance"
+      },
+      {
+        "w": "Three Sisters",
+        "d": "Chekhov play about longing for Moscow and a different life"
+      },
+      {
+        "w": "The Storm",
+        "d": "Ostrovsky drama about Katerina and provincial tyranny"
+      },
+      {
+        "w": "Lady Macbeth of Mtsensk",
+        "d": "Leskov novella of crime, passion and merchant-class violence"
+      },
+      {
+        "w": "The Enchanted Wanderer",
+        "d": "Leskov tale of a wandering Russian adventurer"
+      },
+      {
+        "w": "Resurrection",
+        "d": "Tolstoy late novel about guilt, courts and moral reform"
+      },
+      {
+        "w": "What Is to Be Done?",
+        "d": "Chernyshevsky novel of radical plans and social dreams"
+      },
+      {
+        "w": "Poor Folk",
+        "d": "Dostoevsky epistolary debut about poverty and tenderness"
+      },
+      {
+        "w": "The Adolescent",
+        "d": "Dostoevsky novel about ambition, illegitimacy and money"
+      },
+      {
+        "w": "The Raw Youth",
+        "d": "Alternate English title for Dostoevsky’s The Adolescent"
+      },
+      {
+        "w": "The Golovlyov Family",
+        "d": "Saltykov-Shchedrin dark satire of a decaying gentry family"
+      },
+      {
+        "w": "Virgin Soil",
+        "d": "Turgenev novel about populists and failed revolutionary hope"
+      },
+      {
+        "w": "Smoke",
+        "d": "Turgenev novel about love and politics among Russians abroad"
+      },
+      {
+        "w": "Rudin",
+        "d": "Turgenev novel about an eloquent but ineffective intellectual"
+      },
+      {
+        "w": "Home of the Gentry",
+        "d": "Turgenev novel of love, duty and a ruined estate"
+      },
+      {
+        "w": "On the Eve",
+        "d": "Turgenev novel about idealism before the Crimean War era"
+      },
+      {
+        "w": "Doctor Zhivago",
+        "d": "Pasternak novel of revolution, poetry and private fate"
+      },
+      {
+        "w": "Hadji Murat",
+        "d": "Tolstoy late novella set in the Caucasian War"
+      },
+      {
+        "w": "The Steppe",
+        "d": "Chekhov novella about a boy’s journey across the steppe"
+      },
+      {
+        "w": "The Lower Depths",
+        "d": "Gorky play about people living in a lodging house"
+      }
+    ]
+  },
+  {
+    "name": "20th-century classic novels",
+    "tags": {
+      "a": "human",
+      "b": "books",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Ulysses",
+        "d": "Joyce novel that follows one day in Dublin through radical style"
+      },
+      {
+        "w": "In Search of Lost Time",
+        "d": "Proust cycle about memory, time and society"
+      },
+      {
+        "w": "The Castle",
+        "d": "Kafka novel about bureaucracy and unreachable authority"
+      },
+      {
+        "w": "The Magic Mountain",
+        "d": "Thomas Mann novel set in a Swiss sanatorium before World War I"
+      },
+      {
+        "w": "The Master and Margarita",
+        "d": "Bulgakov novel mixing Soviet satire, Pilate and the devil in Moscow"
+      },
+      {
+        "w": "Steppenwolf",
+        "d": "Hesse novel about a divided man and modern alienation"
+      },
+      {
+        "w": "The Stranger",
+        "d": "Camus novel of absurdism, murder and emotional detachment"
+      },
+      {
+        "w": "To the Lighthouse",
+        "d": "Virginia Woolf novel of memory, perception and family life"
+      },
+      {
+        "w": "Doctor Faustus",
+        "d": "Thomas Mann novel about music, genius and Germany’s catastrophe"
+      },
+      {
+        "w": "Pale Fire",
+        "d": "Nabokov novel built as a poem with obsessive commentary"
+      },
+      {
+        "w": "Under the Volcano",
+        "d": "Lowry novel set during the Day of the Dead in Mexico"
+      },
+      {
+        "w": "Journey to the End of the Night",
+        "d": "Céline novel of war, colonialism and bitter modernity"
+      },
+      {
+        "w": "Berlin Alexanderplatz",
+        "d": "Döblin modernist novel about Franz Biberkopf in Weimar Berlin"
+      },
+      {
+        "w": "The Grapes of Wrath",
+        "d": "Steinbeck novel about Dust Bowl migrants and labor struggle"
+      },
+      {
+        "w": "For Whom the Bell Tolls",
+        "d": "Hemingway novel set in the Spanish Civil War"
+      },
+      {
+        "w": "One Day in the Life of Ivan Denisovich",
+        "d": "Solzhenitsyn novella about survival in a Soviet labor camp"
+      },
+      {
+        "w": "The Name of the Rose",
+        "d": "Eco novel mixing medieval murder mystery, theology and books"
+      },
+      {
+        "w": "Lolita",
+        "d": "Nabokov novel infamous for its unreliable narrator and style"
+      },
+      {
+        "w": "The Sound and the Fury",
+        "d": "Faulkner novel using fractured time and multiple voices"
+      },
+      {
+        "w": "Froth on the Daydream",
+        "d": "Boris Vian novel of surreal romance and illness"
+      },
+      {
+        "w": "The Plague",
+        "d": "Camus novel about an epidemic and moral endurance"
+      },
+      {
+        "w": "The Catcher in the Rye",
+        "d": "Salinger novel narrated by Holden Caulfield"
+      },
+      {
+        "w": "To Kill a Mockingbird",
+        "d": "Harper Lee novel about racism, childhood and justice"
+      },
+      {
+        "w": "The Great Gatsby",
+        "d": "Fitzgerald novel of wealth, longing and American illusion"
+      },
+      {
+        "w": "The French Lieutenant’s Woman",
+        "d": "Fowles novel that plays with Victorian fiction and endings"
+      },
+      {
+        "w": "The Glass Bead Game",
+        "d": "Hesse novel about an elite intellectual order"
+      },
+      {
+        "w": "Infinite Jest",
+        "d": "David Foster Wallace novel of addiction, entertainment and systems"
+      },
+      {
+        "w": "Heart of Darkness",
+        "d": "Conrad novella about imperial violence and moral darkness"
+      },
+      {
+        "w": "Midnight’s Children",
+        "d": "Rushdie novel linking India’s independence to magical realism"
+      },
+      {
+        "w": "The Tin Drum",
+        "d": "Grass novel of memory, guilt and a boy who refuses to grow"
+      },
+      {
+        "w": "A Bend in the River",
+        "d": "Naipaul novel about postcolonial Africa and displacement"
+      },
+      {
+        "w": "The Unbearable Lightness of Being",
+        "d": "Kundera novel about love, politics and the Prague Spring"
+      },
+      {
+        "w": "The Leopard",
+        "d": "Lampedusa novel about aristocratic decline during Italian unification"
+      },
+      {
+        "w": "The Alexandria Quartet",
+        "d": "Durrell four-novel sequence set in Alexandria"
+      },
+      {
+        "w": "The Man Without Qualities",
+        "d": "Musil modernist novel about prewar Austria and ideas"
+      }
+    ]
+  },
+  {
+    "name": "gothic literature & horror",
+    "tags": {
+      "a": "human",
+      "b": "books",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Frankenstein",
+        "d": "Mary Shelley novel about creation, responsibility and a made being"
+      },
+      {
+        "w": "Bram Stoker’s Dracula",
+        "d": "Victorian vampire novel that shaped modern vampire lore"
+      },
+      {
+        "w": "The Mysteries of Udolpho",
+        "d": "Ann Radcliffe gothic novel of castles, fear and sensibility"
+      },
+      {
+        "w": "Shirley Jackson’s Hill House",
+        "d": "Shirley Jackson novel about a house that may be alive"
+      },
+      {
+        "w": "Henry James’s Turn of the Screw",
+        "d": "Henry James ghost story full of ambiguity and dread"
+      },
+      {
+        "w": "Jekyll and Hyde",
+        "d": "Stevenson novella about a divided self and hidden violence"
+      },
+      {
+        "w": "The Fall of the House of Usher",
+        "d": "Poe story of a collapsing house and family line"
+      },
+      {
+        "w": "The Shining",
+        "d": "Stephen King novel about isolation, alcoholism and a haunted hotel"
+      },
+      {
+        "w": "The Monk",
+        "d": "Matthew Lewis scandalous gothic novel of temptation and horror"
+      },
+      {
+        "w": "The Castle of Otranto",
+        "d": "Horace Walpole novel often called the first gothic novel"
+      },
+      {
+        "w": "The Sandman",
+        "d": "Hoffmann uncanny tale about eyes, childhood fear and obsession"
+      },
+      {
+        "w": "The Woman in White",
+        "d": "Wilkie Collins sensation novel of secrets and identity"
+      },
+      {
+        "w": "The Picture of Dorian Gray",
+        "d": "Oscar Wilde novel about beauty, corruption and a hidden portrait"
+      },
+      {
+        "w": "The Call of Cthulhu",
+        "d": "Lovecraft story that launched a cosmic-horror mythos"
+      },
+      {
+        "w": "Rosemary’s Baby",
+        "d": "Ira Levin novel of pregnancy, paranoia and satanic neighbors"
+      },
+      {
+        "w": "House of Leaves",
+        "d": "Experimental horror novel built from documents and impossible architecture"
+      },
+      {
+        "w": "The Legend of Sleepy Hollow",
+        "d": "Irving tale of Ichabod Crane and the Headless Horseman"
+      },
+      {
+        "w": "The Great God Pan",
+        "d": "Arthur Machen novella of occult experiment and terror"
+      },
+      {
+        "w": "The Italian",
+        "d": "Ann Radcliffe gothic novel of imprisonment and pursuit"
+      },
+      {
+        "w": "Viy",
+        "d": "Gogol tale of a student, a witch and a terrifying church vigil"
+      },
+      {
+        "w": "Interview with the Vampire",
+        "d": "Anne Rice novel narrated by the vampire Louis"
+      },
+      {
+        "w": "At the Mountains of Madness",
+        "d": "Lovecraft novella of Antarctic ruins and ancient beings"
+      },
+      {
+        "w": "Carmilla",
+        "d": "Sheridan Le Fanu vampire novella predating Dracula"
+      },
+      {
+        "w": "The Yellow Wallpaper",
+        "d": "Charlotte Perkins Gilman story of confinement and mental collapse"
+      },
+      {
+        "w": "Melmoth the Wanderer",
+        "d": "Maturin gothic novel about a damned wanderer"
+      },
+      {
+        "w": "The Black Cat",
+        "d": "Poe tale of guilt, violence and a hidden corpse"
+      },
+      {
+        "w": "The Oval Portrait",
+        "d": "Poe story of art draining life from its subject"
+      },
+      {
+        "w": "Rebecca",
+        "d": "Daphne du Maurier gothic novel haunted by an absent first wife"
+      },
+      {
+        "w": "The Willows",
+        "d": "Algernon Blackwood story of cosmic dread on the Danube"
+      },
+      {
+        "w": "The House on the Borderland",
+        "d": "Hodgson novel of a house facing cosmic invasion"
+      },
+      {
+        "w": "The King in Yellow",
+        "d": "Chambers collection linked by a forbidden play"
+      },
+      {
+        "w": "Something Wicked This Way Comes",
+        "d": "Bradbury dark fantasy about a sinister carnival"
+      },
+      {
+        "w": "The Exorcist",
+        "d": "Blatty novel about possession and Catholic ritual"
+      },
+      {
+        "w": "Hellbound Heart",
+        "d": "Clive Barker novella that introduced the Cenobites"
+      },
+      {
+        "w": "Mexican Gothic",
+        "d": "Silvia Moreno-Garcia novel of a decaying house and family secret"
+      }
+    ]
+  },
+  {
+    "name": "cult films & sci-fi classics",
+    "tags": {
+      "a": "human",
+      "b": "movies",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "The Godfather",
+        "d": "Coppola crime saga about the Corleone family and American power"
+      },
+      {
+        "w": "Fight Club",
+        "d": "Fincher film about masculinity, consumer culture and an underground club"
+      },
+      {
+        "w": "The Shawshank Redemption",
+        "d": "Prison drama about friendship, patience and hope"
+      },
+      {
+        "w": "The Silence of the Lambs",
+        "d": "Thriller about Clarice Starling and Hannibal Lecter"
+      },
+      {
+        "w": "Forrest Gump",
+        "d": "Zemeckis film placing one man inside decades of American history"
+      },
+      {
+        "w": "Taxi Driver",
+        "d": "Scorsese portrait of alienation and violence in 1970s New York"
+      },
+      {
+        "w": "Citizen Kane",
+        "d": "Orson Welles film built around the mystery of Rosebud"
+      },
+      {
+        "w": "Psycho",
+        "d": "Hitchcock thriller that changed screen suspense and horror"
+      },
+      {
+        "w": "2001: A Space Odyssey",
+        "d": "Kubrick science-fiction epic about evolution, AI and a monolith"
+      },
+      {
+        "w": "Gattaca",
+        "d": "Genetic-selection dystopia about identity and ambition"
+      },
+      {
+        "w": "Django Unchained",
+        "d": "Tarantino western about slavery, revenge and spectacle"
+      },
+      {
+        "w": "Reservoir Dogs",
+        "d": "Tarantino debut about a failed robbery and mistrust"
+      },
+      {
+        "w": "The Big Lebowski",
+        "d": "Coen brothers cult comedy about the Dude and a mistaken rug"
+      },
+      {
+        "w": "Fargo film",
+        "d": "Coen crime film mixing bleak violence and deadpan comedy"
+      },
+      {
+        "w": "No Country for Old Men",
+        "d": "Coen neo-western centered on Anton Chigurh and chance"
+      },
+      {
+        "w": "Mulholland Drive",
+        "d": "David Lynch dreamlike noir about Hollywood identity"
+      },
+      {
+        "w": "Inception",
+        "d": "Nolan science-fiction thriller about shared dreams and heists"
+      },
+      {
+        "w": "The Social Network",
+        "d": "Fincher film about Facebook, ambition and betrayal"
+      },
+      {
+        "w": "Snatch",
+        "d": "Guy Ritchie crime comedy with diamonds, boxing and tangled schemes"
+      },
+      {
+        "w": "Catch Me If You Can",
+        "d": "Spielberg film about con artist Frank Abagnale"
+      },
+      {
+        "w": "Traffic",
+        "d": "Soderbergh mosaic about the drug trade and its systems"
+      },
+      {
+        "w": "Home Alone",
+        "d": "Holiday comedy about a boy defending his house from burglars"
+      },
+      {
+        "w": "Rain Man",
+        "d": "Road drama about two brothers and autism"
+      },
+      {
+        "w": "Apocalypse Now",
+        "d": "Coppola Vietnam War epic inspired by Heart of Darkness"
+      },
+      {
+        "w": "Twelve Monkeys",
+        "d": "Gilliam time-travel film about memory, plague and causality"
+      },
+      {
+        "w": "The Matrix",
+        "d": "Wachowski cyberpunk film about simulation and the red pill"
+      },
+      {
+        "w": "Dark City",
+        "d": "Noir science-fiction film about memory and a manipulated city"
+      },
+      {
+        "w": "Pulp Fiction",
+        "d": "Tarantino nonlinear crime film of hitmen, boxers and diners"
+      },
+      {
+        "w": "Once Upon a Time in America",
+        "d": "Leone gangster epic about memory and betrayal"
+      },
+      {
+        "w": "Casablanca",
+        "d": "Hollywood classic about love, exile and wartime choices"
+      },
+      {
+        "w": "Blade Runner",
+        "d": "Ridley Scott film about replicants, memory and noir futurism"
+      },
+      {
+        "w": "Back to the Future",
+        "d": "Time-travel comedy about Marty McFly and the DeLorean"
+      },
+      {
+        "w": "Jaws",
+        "d": "Spielberg thriller that helped create the summer blockbuster"
+      },
+      {
+        "w": "Arrival",
+        "d": "Villeneuve film about language, time and first contact"
+      },
+      {
+        "w": "Dune",
+        "d": "Epic adaptation of Frank Herbert’s desert-planet saga"
+      },
+      {
+        "w": "Alien",
+        "d": "Ridley Scott space horror about the Nostromo and a xenomorph"
+      },
+      {
+        "w": "Terminator",
+        "d": "Cameron film about a cyborg assassin from the future"
+      },
+      {
+        "w": "Interstellar",
+        "d": "Nolan film about gravity, survival and a journey through a wormhole"
+      },
+      {
+        "w": "A New Hope",
+        "d": "Original Star Wars film about Luke Skywalker and the Rebel Alliance"
+      },
+      {
+        "w": "Solaris",
+        "d": "Tarkovsky adaptation of Lem’s novel about memory and an alien ocean"
+      }
+    ]
+  },
+  {
+    "name": "classic painting masterpieces",
+    "tags": {
+      "a": "human",
+      "b": "art",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Mona Lisa",
+        "d": "Leonardo portrait famous for its ambiguous smile"
+      },
+      {
+        "w": "The Last Supper",
+        "d": "Leonardo mural of Christ and the apostles at the moment of betrayal"
+      },
+      {
+        "w": "The Creation of Adam",
+        "d": "Michelangelo ceiling fresco in the Sistine Chapel"
+      },
+      {
+        "w": "The Birth of Venus",
+        "d": "Botticelli painting of Venus arriving on a shell"
+      },
+      {
+        "w": "Primavera",
+        "d": "Botticelli mythological painting of spring and courtly symbolism"
+      },
+      {
+        "w": "The School of Athens",
+        "d": "Raphael fresco gathering philosophers in an ideal classical space"
+      },
+      {
+        "w": "Sistine Madonna",
+        "d": "Raphael painting famous for its two cherubs below"
+      },
+      {
+        "w": "Girl with a Pearl Earring",
+        "d": "Vermeer portrait often called the Dutch Mona Lisa"
+      },
+      {
+        "w": "The Night Watch",
+        "d": "Rembrandt militia portrait with dramatic light and motion"
+      },
+      {
+        "w": "Las Meninas",
+        "d": "Velázquez painting that turns portraiture into a puzzle of looking"
+      },
+      {
+        "w": "The Garden of Earthly Delights",
+        "d": "Bosch triptych of paradise, pleasure and punishment"
+      },
+      {
+        "w": "The Carrying of the Cross",
+        "d": "Bosch or follower image of Christ amid grotesque faces"
+      },
+      {
+        "w": "The Anatomy Lesson",
+        "d": "Rembrandt group portrait of Dr. Tulp and a public dissection"
+      },
+      {
+        "w": "Luncheon on the Grass",
+        "d": "Manet painting that scandalized Paris in 1863"
+      },
+      {
+        "w": "Olympia by Manet",
+        "d": "Manet painting that confronted viewers with a modern nude"
+      },
+      {
+        "w": "Liberty Leading the People",
+        "d": "Delacroix revolutionary allegory of 1830 France"
+      },
+      {
+        "w": "The Raft of the Medusa",
+        "d": "Géricault painting of shipwreck, survival and political scandal"
+      },
+      {
+        "w": "Grande Odalisque",
+        "d": "Ingres reclining nude with elongated proportions"
+      },
+      {
+        "w": "Impression, Sunrise",
+        "d": "Monet painting that gave Impressionism its name"
+      },
+      {
+        "w": "Water Lilies",
+        "d": "Monet series of ponds, reflections and late abstraction"
+      },
+      {
+        "w": "Dance at Le Moulin de la Galette",
+        "d": "Renoir painting of a crowded Montmartre dance garden"
+      },
+      {
+        "w": "The Starry Night",
+        "d": "Van Gogh night landscape of swirling sky and village"
+      },
+      {
+        "w": "Sunflowers",
+        "d": "Van Gogh still-life series of yellow flowers"
+      },
+      {
+        "w": "The Potato Eaters",
+        "d": "Van Gogh painting of peasants sharing a dark meal"
+      },
+      {
+        "w": "Where Do We Come From?",
+        "d": "Gauguin Tahitian canvas posing questions about life"
+      },
+      {
+        "w": "The Large Bathers",
+        "d": "Cézanne composition of figures and landscape structure"
+      },
+      {
+        "w": "The Kiss",
+        "d": "Klimt gold-period painting of lovers embraced"
+      },
+      {
+        "w": "Judith I",
+        "d": "Klimt painting of Judith with the head of Holofernes"
+      },
+      {
+        "w": "Dance",
+        "d": "Matisse painting of red figures in a circular rhythm"
+      },
+      {
+        "w": "The Sower",
+        "d": "Millet rural painting of labor and dignity"
+      },
+      {
+        "w": "The Third of May 1808",
+        "d": "Goya painting of execution and resistance in Madrid"
+      },
+      {
+        "w": "The Triumph of Death",
+        "d": "Bruegel vision of death overwhelming the world"
+      },
+      {
+        "w": "The Hay Wain",
+        "d": "Constable rural English landscape with a wagon in water"
+      },
+      {
+        "w": "The Fighting Temeraire",
+        "d": "Turner painting of an old warship towed to be broken up"
+      },
+      {
+        "w": "Wanderer above the Sea of Fog",
+        "d": "Friedrich icon of Romantic solitude and sublime landscape"
+      }
+    ]
+  },
+  {
+    "name": "modern painting masterpieces",
+    "tags": {
+      "a": "human",
+      "b": "art",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Guernica",
+        "d": "Picasso mural against the bombing of a Basque town"
+      },
+      {
+        "w": "Les Demoiselles d’Avignon",
+        "d": "Picasso painting that broke bodies into proto-cubist forms"
+      },
+      {
+        "w": "Black Square",
+        "d": "Malevich suprematist icon of radical abstraction"
+      },
+      {
+        "w": "Red Square",
+        "d": "Malevich abstract square subtitled painterly realism of a peasant woman"
+      },
+      {
+        "w": "Composition VIII",
+        "d": "Kandinsky abstract work of circles, lines and geometry"
+      },
+      {
+        "w": "Yellow-Red-Blue",
+        "d": "Kandinsky painting balancing color, line and abstraction"
+      },
+      {
+        "w": "Fountain",
+        "d": "Duchamp readymade urinal that challenged the definition of art"
+      },
+      {
+        "w": "Violin and Candlestick",
+        "d": "Braque cubist still life of fragmented planes"
+      },
+      {
+        "w": "Marilyn Diptych",
+        "d": "Warhol silkscreen linking celebrity, repetition and death"
+      },
+      {
+        "w": "Campbell’s Soup Cans",
+        "d": "Warhol pop-art grid of supermarket imagery"
+      },
+      {
+        "w": "Number 31",
+        "d": "Pollock drip painting of large-scale action abstraction"
+      },
+      {
+        "w": "Blue Nudes",
+        "d": "Matisse cut-out series reducing bodies to blue paper shapes"
+      },
+      {
+        "w": "The Sick Child",
+        "d": "Munch painting of grief, illness and memory"
+      },
+      {
+        "w": "Madonna",
+        "d": "Munch image of eroticism, fertility and anxiety"
+      },
+      {
+        "w": "Girl with Balloon",
+        "d": "Banksy stencil image of a child reaching for a red balloon"
+      },
+      {
+        "w": "Flowers",
+        "d": "Warhol pop-art series based on hibiscus photographs"
+      },
+      {
+        "w": "The Two Fridas",
+        "d": "Kahlo double self-portrait of identity and pain"
+      },
+      {
+        "w": "The Acrobats",
+        "d": "Picasso rose-period image of circus performers"
+      },
+      {
+        "w": "Woman with a Fan",
+        "d": "Picasso portrait built from angular planes"
+      },
+      {
+        "w": "The Tower of Blue Horses",
+        "d": "Franz Marc expressionist animal painting"
+      },
+      {
+        "w": "Cross in the Mountains",
+        "d": "Friedrich altarpiece merging landscape and devotion"
+      },
+      {
+        "w": "I and the Village",
+        "d": "Chagall painting of memory, folklore and village life"
+      },
+      {
+        "w": "Suprematist Composition",
+        "d": "Malevich arrangement of floating geometric forms"
+      },
+      {
+        "w": "The Red Room",
+        "d": "Matisse decorative interior of intense flat color"
+      },
+      {
+        "w": "Sky and Water I",
+        "d": "Escher tessellation shifting birds into fish"
+      },
+      {
+        "w": "Portrait of Dora Maar",
+        "d": "Picasso portrait of the artist and photographer"
+      },
+      {
+        "w": "The Red Tower",
+        "d": "de Chirico metaphysical cityscape with a looming tower"
+      },
+      {
+        "w": "Three Musicians",
+        "d": "Picasso synthetic cubist scene of masked performers"
+      },
+      {
+        "w": "Portrait of Ambroise Vollard",
+        "d": "Picasso cubist portrait of the art dealer"
+      },
+      {
+        "w": "Broadway Boogie Woogie",
+        "d": "Mondrian abstract grid inspired by New York rhythm"
+      },
+      {
+        "w": "Nighthawks",
+        "d": "Hopper painting of a late-night diner and urban loneliness"
+      },
+      {
+        "w": "American Gothic",
+        "d": "Grant Wood image of a farmer and daughter before a house"
+      },
+      {
+        "w": "The Persistence of Memory",
+        "d": "Dalí surreal landscape with melting clocks"
+      },
+      {
+        "w": "The Treachery of Images",
+        "d": "Magritte painting declaring that a pipe is not a pipe"
+      },
+      {
+        "w": "No. 5, 1948",
+        "d": "Pollock drip painting known for dense layered abstraction"
+      }
+    ]
+  },
+  {
+    "name": "famous sculptures & statues",
+    "tags": {
+      "a": "human",
+      "b": "art",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "David",
+        "d": "Michelangelo marble hero standing before battle with Goliath"
+      },
+      {
+        "w": "Venus de Milo",
+        "d": "Ancient Greek marble Aphrodite discovered on Milos without arms"
+      },
+      {
+        "w": "The Thinker",
+        "d": "Rodin bronze figure absorbed in muscular contemplation"
+      },
+      {
+        "w": "Rodin’s The Kiss",
+        "d": "Rodin marble group of lovers in an embrace"
+      },
+      {
+        "w": "Laocoon and His Sons",
+        "d": "Ancient group of a Trojan priest and sons attacked by serpents"
+      },
+      {
+        "w": "Discobolus",
+        "d": "Greek statue of a discus thrower known through Roman copies"
+      },
+      {
+        "w": "Pieta",
+        "d": "Michelangelo sculpture of Mary holding the dead Christ"
+      },
+      {
+        "w": "Moses",
+        "d": "Michelangelo statue for the tomb of Pope Julius II"
+      },
+      {
+        "w": "Gattamelata",
+        "d": "Donatello equestrian statue of the condottiere in Padua"
+      },
+      {
+        "w": "Athena Parthenos",
+        "d": "Lost chryselephantine statue by Phidias once inside the Parthenon"
+      },
+      {
+        "w": "Head of Nefertiti",
+        "d": "Painted bust of the Egyptian queen from Amarna"
+      },
+      {
+        "w": "Michelangelo’s Slaves",
+        "d": "Unfinished figures that seem to struggle out of marble"
+      },
+      {
+        "w": "Balzac by Rodin",
+        "d": "Rodin monument to the novelist, controversial for its abstraction"
+      },
+      {
+        "w": "Brancusi’s The Kiss",
+        "d": "Compact limestone couple reduced to simple geometric forms"
+      },
+      {
+        "w": "Bird in Space",
+        "d": "Brancusi polished form suggesting flight rather than anatomy"
+      },
+      {
+        "w": "Riace Bronzes",
+        "d": "Two Greek bronze warriors recovered from the sea near Calabria"
+      },
+      {
+        "w": "Equestrian Marcus Aurelius",
+        "d": "Ancient Roman bronze emperor on horseback"
+      },
+      {
+        "w": "Ecstasy of Saint Teresa",
+        "d": "Bernini chapel group of mystical vision and theatrical light"
+      },
+      {
+        "w": "Apollo and Daphne",
+        "d": "Bernini marble moment of Daphne turning into a laurel tree"
+      },
+      {
+        "w": "Donatello’s David",
+        "d": "Early Renaissance bronze nude of David after victory"
+      },
+      {
+        "w": "Winged Victory of Samothrace",
+        "d": "Hellenistic Nike statue displayed at the Louvre"
+      },
+      {
+        "w": "Unique Forms of Continuity in Space",
+        "d": "Boccioni futurist figure striding through motion"
+      },
+      {
+        "w": "Sleeping Muse",
+        "d": "Brancusi bronze head reduced to an oval dream form"
+      },
+      {
+        "w": "Little Dancer Aged Fourteen",
+        "d": "Degas sculpture of a young ballet student"
+      },
+      {
+        "w": "Minin and Pozharsky Monument",
+        "d": "Moscow sculptural monument to the leaders of the 1612 militia"
+      },
+      {
+        "w": "Dying Gaul",
+        "d": "Ancient statue of a wounded warrior in defeat"
+      },
+      {
+        "w": "Aphrodite of Knidos",
+        "d": "Praxiteles statue famous as a landmark of Greek nude sculpture"
+      },
+      {
+        "w": "Perseus with the Head of Medusa",
+        "d": "Cellini bronze in Florence showing Perseus after the killing"
+      },
+      {
+        "w": "Rape of Proserpina",
+        "d": "Bernini marble group with dramatic flesh and motion"
+      },
+      {
+        "w": "The Burghers of Calais",
+        "d": "Rodin group honoring citizens who surrendered to save their city"
+      },
+      {
+        "w": "Walking Man",
+        "d": "Giacometti elongated bronze figure of existential movement"
+      },
+      {
+        "w": "Maman",
+        "d": "Louise Bourgeois giant spider sculpture about motherhood and fear"
+      },
+      {
+        "w": "Cloud Gate",
+        "d": "Anish Kapoor mirrored public sculpture in Chicago"
+      },
+      {
+        "w": "Balloon Dog",
+        "d": "Jeff Koons polished steel sculpture mimicking an inflated toy"
+      },
+      {
+        "w": "The Gates of Hell",
+        "d": "Rodin monumental portal inspired by Dante"
+      }
+    ]
+  },
+  {
+    "name": "monumental statues & public memorials",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Christ the Redeemer",
+        "d": "Art Deco statue of Christ overlooking Rio de Janeiro"
+      },
+      {
+        "w": "Statue of Liberty",
+        "d": "New York Harbor monument symbolizing liberty and immigration"
+      },
+      {
+        "w": "Great Sphinx of Giza",
+        "d": "Colossal reclining guardian with human head and lion body"
+      },
+      {
+        "w": "Moai",
+        "d": "Large stone ancestor figures carved on Easter Island"
+      },
+      {
+        "w": "Terracotta Army",
+        "d": "Thousands of clay soldiers buried with Qin Shi Huang"
+      },
+      {
+        "w": "Motherland Calls",
+        "d": "Huge Volgograd monument of a woman raising a sword"
+      },
+      {
+        "w": "Mount Rushmore",
+        "d": "South Dakota mountain carving of four U.S. presidents"
+      },
+      {
+        "w": "Manneken Pis",
+        "d": "Small Brussels fountain statue of a urinating boy"
+      },
+      {
+        "w": "Copenhagen Little Mermaid",
+        "d": "Copenhagen bronze inspired by Hans Christian Andersen"
+      },
+      {
+        "w": "Nelson’s Column",
+        "d": "London Trafalgar Square monument to Admiral Nelson"
+      },
+      {
+        "w": "Arc de Triomphe",
+        "d": "Paris monument honoring French military victories"
+      },
+      {
+        "w": "Brandenburg Gate",
+        "d": "Berlin neoclassical gate turned national symbol"
+      },
+      {
+        "w": "Gateway Arch",
+        "d": "St. Louis stainless-steel arch memorializing westward expansion"
+      },
+      {
+        "w": "Crazy Horse Memorial",
+        "d": "Unfinished South Dakota mountain carving of the Lakota leader"
+      },
+      {
+        "w": "African Renaissance Monument",
+        "d": "Dakar bronze monument to African renewal"
+      },
+      {
+        "w": "Mamayev Kurgan",
+        "d": "Volgograd memorial complex around the Battle of Stalingrad"
+      },
+      {
+        "w": "Marine Corps War Memorial",
+        "d": "Iwo Jima flag-raising monument near Washington, D.C."
+      },
+      {
+        "w": "Lincoln Memorial",
+        "d": "Washington monument with a seated statue of Abraham Lincoln"
+      },
+      {
+        "w": "Jefferson Memorial",
+        "d": "Washington rotunda honoring Thomas Jefferson"
+      },
+      {
+        "w": "Mao Zedong Mausoleum",
+        "d": "Beijing memorial hall containing Mao’s preserved body"
+      },
+      {
+        "w": "Atatürk Mausoleum",
+        "d": "Ankara memorial complex for Mustafa Kemal Atatürk"
+      },
+      {
+        "w": "Lenin Mausoleum",
+        "d": "Red Square tomb containing Lenin’s embalmed body"
+      },
+      {
+        "w": "Valley of the Fallen",
+        "d": "Spanish monument complex tied to Franco-era memory"
+      },
+      {
+        "w": "Mother Armenia",
+        "d": "Yerevan statue replacing a former Stalin monument"
+      },
+      {
+        "w": "Freedom Monument Riga",
+        "d": "Riga monument of a woman holding three stars"
+      },
+      {
+        "w": "Buzludzha Monument",
+        "d": "Bulgarian communist-era monument shaped like a flying saucer"
+      },
+      {
+        "w": "Monument to the Discoveries",
+        "d": "Lisbon riverside monument to Portuguese exploration"
+      },
+      {
+        "w": "Tugu Negara",
+        "d": "Malaysian national monument honoring fallen soldiers"
+      },
+      {
+        "w": "Statue of Unity",
+        "d": "India’s colossal statue of Vallabhbhai Patel"
+      },
+      {
+        "w": "Ushiku Daibutsu",
+        "d": "Japanese giant Buddha statue in Ibaraki Prefecture"
+      },
+      {
+        "w": "Laykyun Sekkya",
+        "d": "Myanmar standing Buddha among the world’s tallest statues"
+      },
+      {
+        "w": "Spring Temple Buddha",
+        "d": "Chinese colossal Vairocana Buddha statue"
+      },
+      {
+        "w": "The Motherland Monument Kyiv",
+        "d": "Kyiv stainless-steel statue holding sword and shield"
+      },
+      {
+        "w": "Korean War Veterans Memorial",
+        "d": "Washington memorial with stainless-steel soldiers on patrol"
+      },
+      {
+        "w": "Vietnam Veterans Memorial",
+        "d": "Washington wall listing names of U.S. war dead"
+      }
+    ]
+  },
+  {
+    "name": "fashion houses & luxury brands",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Chanel",
+        "d": "French house associated with tweed suits, No. 5 and the double C logo"
+      },
+      {
+        "w": "Dior",
+        "d": "Paris house founded by Christian Dior and the New Look"
+      },
+      {
+        "w": "Hermès",
+        "d": "Luxury house known for leather goods, scarves and equestrian roots"
+      },
+      {
+        "w": "Valentino",
+        "d": "Italian couture house known for red gowns and romantic glamour"
+      },
+      {
+        "w": "Prada",
+        "d": "Milan house famous for intellectual minimalism and nylon bags"
+      },
+      {
+        "w": "Givenchy",
+        "d": "French house linked to Audrey Hepburn and refined couture"
+      },
+      {
+        "w": "Saint Laurent house",
+        "d": "Paris fashion house known for Le Smoking and modern luxury"
+      },
+      {
+        "w": "Louis Vuitton",
+        "d": "French luxury house built from trunks, monograms and leather goods"
+      },
+      {
+        "w": "Gucci",
+        "d": "Italian brand known for horsebit loafers and maximalist revivals"
+      },
+      {
+        "w": "Burberry",
+        "d": "British house associated with trench coats and check pattern"
+      },
+      {
+        "w": "Cartier",
+        "d": "French jewelry house known for watches, panthers and royal clients"
+      },
+      {
+        "w": "Tiffany & Co.",
+        "d": "American jewelry house famous for its blue box"
+      },
+      {
+        "w": "Bulgari",
+        "d": "Roman jewelry house known for colored stones and serpents"
+      },
+      {
+        "w": "Fendi",
+        "d": "Italian house known for fur, bags and the Baguette"
+      },
+      {
+        "w": "Bottega Veneta",
+        "d": "Italian house famous for intrecciato woven leather"
+      },
+      {
+        "w": "Alexander McQueen",
+        "d": "British house known for dramatic tailoring and runway theater"
+      },
+      {
+        "w": "Celine",
+        "d": "French house associated with clean luxury and leather goods"
+      },
+      {
+        "w": "Loewe",
+        "d": "Spanish house famous for leather craft and sculptural fashion"
+      },
+      {
+        "w": "Miu Miu",
+        "d": "Prada’s younger sister label with playful styling"
+      },
+      {
+        "w": "Lacoste",
+        "d": "French brand built around the crocodile polo shirt"
+      },
+      {
+        "w": "Ralph Lauren",
+        "d": "American brand built around preppy and western imagery"
+      },
+      {
+        "w": "Calvin Klein",
+        "d": "American brand famous for minimalism, denim and underwear"
+      },
+      {
+        "w": "Tommy Hilfiger",
+        "d": "American brand built around red-white-blue sportswear"
+      },
+      {
+        "w": "Moncler",
+        "d": "Luxury outerwear brand known for down jackets"
+      },
+      {
+        "w": "Stone Island",
+        "d": "Italian technical sportswear brand known for fabric research"
+      },
+      {
+        "w": "Off-White",
+        "d": "Streetwear-luxury label founded by Virgil Abloh"
+      },
+      {
+        "w": "Massimo Dutti",
+        "d": "Spanish Inditex label focused on polished basics"
+      },
+      {
+        "w": "Mango",
+        "d": "Spanish high-street fashion brand"
+      },
+      {
+        "w": "Jil Sander",
+        "d": "German house associated with severe minimalism"
+      },
+      {
+        "w": "Versace",
+        "d": "Italian house known for Medusa logo and bold glamour"
+      },
+      {
+        "w": "Balenciaga",
+        "d": "House known for Cristóbal Balenciaga and later avant-garde street luxury"
+      },
+      {
+        "w": "Armani",
+        "d": "Italian house famous for soft tailoring and restrained elegance"
+      },
+      {
+        "w": "Gaultier Paris",
+        "d": "French fashion house known for corsets, stripes and theatrical perfume bottles"
+      },
+      {
+        "w": "Comme des Garçons",
+        "d": "Rei Kawakubo label known for conceptual black forms"
+      },
+      {
+        "w": "Maison Margiela",
+        "d": "Paris house associated with deconstruction and anonymous white labels"
+      }
+    ]
+  },
+  {
+    "name": "jewelry craft & famous jewels",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Hope Diamond",
+        "d": "Deep-blue diamond in the Smithsonian with a legendary curse"
+      },
+      {
+        "w": "Koh-i-Noor",
+        "d": "Historic diamond now set in the British Crown Jewels"
+      },
+      {
+        "w": "Cullinan Diamond",
+        "d": "Largest gem-quality rough diamond ever found"
+      },
+      {
+        "w": "Tiffany setting",
+        "d": "Six-prong ring setting that lifts a stone above the band"
+      },
+      {
+        "w": "Cabochon",
+        "d": "Smooth rounded gem cut without facets"
+      },
+      {
+        "w": "Marquise cut",
+        "d": "Elongated pointed oval cut named for courtly legend"
+      },
+      {
+        "w": "Emerald cut",
+        "d": "Rectangular step cut with clipped corners"
+      },
+      {
+        "w": "Asscher cut",
+        "d": "Square step cut associated with Art Deco jewelry"
+      },
+      {
+        "w": "Pavé setting",
+        "d": "Setting where many small stones cover a surface like pavement"
+      },
+      {
+        "w": "Filigree",
+        "d": "Delicate jewelry work made from twisted metal threads"
+      },
+      {
+        "w": "Cloisonné enamel",
+        "d": "Enamel technique using metal partitions to hold colored glass"
+      },
+      {
+        "w": "Guilloché enamel",
+        "d": "Engine-turned pattern covered with translucent enamel"
+      },
+      {
+        "w": "Cameo",
+        "d": "Relief carving in layered stone or shell"
+      },
+      {
+        "w": "Intaglio",
+        "d": "Carved design cut into a gem or seal surface"
+      },
+      {
+        "w": "Signet ring",
+        "d": "Ring engraved with a family crest or identifying seal"
+      },
+      {
+        "w": "Tiara",
+        "d": "Formal jeweled head ornament worn on ceremonial occasions"
+      },
+      {
+        "w": "Diadem",
+        "d": "Crown-like headband associated with royalty"
+      },
+      {
+        "w": "Brooch",
+        "d": "Decorative pin worn on clothing"
+      },
+      {
+        "w": "Tennis bracelet",
+        "d": "Flexible line bracelet popularized by Chris Evert"
+      },
+      {
+        "w": "Lavalier necklace",
+        "d": "Pendant necklace hanging from a fine chain"
+      },
+      {
+        "w": "Rivière necklace",
+        "d": "Necklace made from a continuous line of graduated stones"
+      },
+      {
+        "w": "Art Deco jewelry",
+        "d": "Geometric jewelry style of the 1920s and 1930s"
+      },
+      {
+        "w": "Fabergé egg",
+        "d": "Jeweled imperial Easter egg made by the House of Fabergé"
+      },
+      {
+        "w": "Cartier panther",
+        "d": "Feline motif that became a Cartier signature"
+      },
+      {
+        "w": "Bulgari Serpenti",
+        "d": "Snake-shaped jewelry and watches from Bulgari"
+      },
+      {
+        "w": "Van Cleef Alhambra",
+        "d": "Four-leaf clover jewelry motif by Van Cleef & Arpels"
+      },
+      {
+        "w": "Mikimoto pearls",
+        "d": "Cultured pearls associated with Kokichi Mikimoto"
+      },
+      {
+        "w": "Black opal",
+        "d": "Dark-bodied opal prized for flashes of color"
+      },
+      {
+        "w": "Paraiba tourmaline",
+        "d": "Vivid blue-green copper-bearing tourmaline"
+      },
+      {
+        "w": "Alexandrite effect",
+        "d": "Gem color change from greenish daylight to reddish incandescent light"
+      },
+      {
+        "w": "Rhodium plating",
+        "d": "Thin rhodium layer used to brighten white gold"
+      },
+      {
+        "w": "Hallmarking",
+        "d": "Official marking of precious-metal purity"
+      },
+      {
+        "w": "Lost-wax casting",
+        "d": "Jewelry casting method using a wax model"
+      },
+      {
+        "w": "Mokume-gane",
+        "d": "Japanese metalworking pattern resembling wood grain"
+      },
+      {
+        "w": "Granulation",
+        "d": "Ancient technique of soldering tiny metal spheres onto a surface"
+      }
+    ]
+  },
+  {
+    "name": "flowers & gardening",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Peony",
+        "d": "Showy garden flower prized for large fragrant blooms"
+      },
+      {
+        "w": "Hydrangea",
+        "d": "Shrub with ball-shaped flower clusters that can change color by soil"
+      },
+      {
+        "w": "Orchid",
+        "d": "Large plant family with elaborate flowers and specialized pollination"
+      },
+      {
+        "w": "Lavender",
+        "d": "Aromatic purple plant used in gardens, perfumes and cooking"
+      },
+      {
+        "w": "Rose",
+        "d": "Classic flowering shrub with thorns and many cultivated varieties"
+      },
+      {
+        "w": "Tulip",
+        "d": "Spring bulb flower famously traded during Dutch tulip mania"
+      },
+      {
+        "w": "Magnolia",
+        "d": "Tree or shrub with large waxy blossoms"
+      },
+      {
+        "w": "Jasmine",
+        "d": "Fragrant flowering vine or shrub used in tea and perfume"
+      },
+      {
+        "w": "Camellia",
+        "d": "Glossy-leaved shrub with formal winter or spring flowers"
+      },
+      {
+        "w": "Chrysanthemum",
+        "d": "Autumn flower important in East Asian and European gardening"
+      },
+      {
+        "w": "Iris",
+        "d": "Flower named for the rainbow, with sword-like leaves"
+      },
+      {
+        "w": "Lily",
+        "d": "Bulb flower with large trumpet-shaped blooms"
+      },
+      {
+        "w": "Dahlia",
+        "d": "Tuberous flower with many forms and bright colors"
+      },
+      {
+        "w": "Violet",
+        "d": "Small purple flower also used as a scent and flavor"
+      },
+      {
+        "w": "Daffodil",
+        "d": "Spring narcissus flower with a central trumpet"
+      },
+      {
+        "w": "Gladiolus",
+        "d": "Tall spike flower named for a small sword"
+      },
+      {
+        "w": "Azalea",
+        "d": "Rhododendron relative grown for masses of spring flowers"
+      },
+      {
+        "w": "Begonia",
+        "d": "Shade-loving plant with colorful flowers or foliage"
+      },
+      {
+        "w": "Clematis",
+        "d": "Climbing vine with large star-like flowers"
+      },
+      {
+        "w": "Wisteria",
+        "d": "Woody vine with hanging clusters of purple flowers"
+      },
+      {
+        "w": "Ikebana",
+        "d": "Japanese art of arranging flowers and branches"
+      },
+      {
+        "w": "Topiary",
+        "d": "Training shrubs into geometric or figurative shapes"
+      },
+      {
+        "w": "Greenhouse",
+        "d": "Glass or plastic structure for controlled plant growing"
+      },
+      {
+        "w": "Herbarium",
+        "d": "Preserved plant collection used for study"
+      },
+      {
+        "w": "Bonsai",
+        "d": "Japanese art of growing miniature shaped trees"
+      },
+      {
+        "w": "Hyacinth",
+        "d": "Fragrant spring bulb with dense flower spikes"
+      },
+      {
+        "w": "Lilac",
+        "d": "Fragrant spring shrub with purple, white or pink flowers"
+      },
+      {
+        "w": "Rhododendron",
+        "d": "Evergreen shrub with large clusters of flowers"
+      },
+      {
+        "w": "Freesia",
+        "d": "Fragrant cut flower with funnel-shaped blossoms"
+      },
+      {
+        "w": "Anemone",
+        "d": "Flower whose name means windflower"
+      },
+      {
+        "w": "Lisianthus",
+        "d": "Elegant cut flower also called eustoma"
+      },
+      {
+        "w": "Ranunculus",
+        "d": "Layered spring flower resembling a small peony"
+      },
+      {
+        "w": "Poppy",
+        "d": "Papery flower associated with remembrance and opium species"
+      },
+      {
+        "w": "Alstroemeria",
+        "d": "Cut flower also called Peruvian lily"
+      },
+      {
+        "w": "Amaryllis",
+        "d": "Large winter bulb flower often grown indoors"
+      }
+    ]
+  },
+  {
+    "name": "colonies & decolonization",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "British Raj",
+        "d": "British rule in India from 1858 to 1947"
+      },
+      {
+        "w": "French Algeria",
+        "d": "French colony and settler society that fought a brutal war of independence"
+      },
+      {
+        "w": "Belgian Congo",
+        "d": "Central African colony notorious for forced labor and extraction"
+      },
+      {
+        "w": "Portuguese Brazil",
+        "d": "Major Portuguese colony that became independent in 1822"
+      },
+      {
+        "w": "Dutch East Indies",
+        "d": "Netherlands colony that became Indonesia after a war of independence"
+      },
+      {
+        "w": "French Indochina",
+        "d": "French colonial federation including Vietnam, Laos and Cambodia"
+      },
+      {
+        "w": "German South West Africa",
+        "d": "German colony in present-day Namibia, site of the Herero and Nama genocide"
+      },
+      {
+        "w": "Italian Libya",
+        "d": "North African colony conquered and ruled by Italy"
+      },
+      {
+        "w": "Portuguese Angola",
+        "d": "African colony that fought a long liberation war"
+      },
+      {
+        "w": "British Mandate",
+        "d": "League of Nations mandate system administered by Britain"
+      },
+      {
+        "w": "Conquista",
+        "d": "Spanish conquest of Indigenous polities in the Americas"
+      },
+      {
+        "w": "Dutch East India Company",
+        "d": "Chartered company that ruled trade posts and colonies in Asia"
+      },
+      {
+        "w": "Encomienda",
+        "d": "Spanish colonial labor and tribute system in the Americas"
+      },
+      {
+        "w": "Direct rule",
+        "d": "Colonial administration through officials from the imperial power"
+      },
+      {
+        "w": "Protectorate",
+        "d": "Colonial arrangement preserving local rulers under foreign control"
+      },
+      {
+        "w": "Cape Colony",
+        "d": "British and Dutch colony at the southern tip of Africa"
+      },
+      {
+        "w": "Berlin Conference",
+        "d": "1884-85 meeting that formalized the Scramble for Africa"
+      },
+      {
+        "w": "Settler colony",
+        "d": "Colony where incoming settlers became a dominant political force"
+      },
+      {
+        "w": "Trading post",
+        "d": "Commercial outpost used as a foothold for empire"
+      },
+      {
+        "w": "French Madagascar",
+        "d": "French colony on the island of Madagascar"
+      },
+      {
+        "w": "Opium Wars",
+        "d": "Wars that forced China into unequal treaties with Britain and France"
+      },
+      {
+        "w": "Rhodesia",
+        "d": "White-minority state that later became Zimbabwe"
+      },
+      {
+        "w": "East India Company",
+        "d": "British company that became a territorial power in India"
+      },
+      {
+        "w": "Gold Coast",
+        "d": "British West African colony that became Ghana"
+      },
+      {
+        "w": "French West Africa",
+        "d": "Federation of French colonies across West Africa"
+      },
+      {
+        "w": "Balfour Declaration",
+        "d": "1917 British statement supporting a Jewish national home in Palestine"
+      },
+      {
+        "w": "Bandung Conference",
+        "d": "1955 Afro-Asian conference symbolizing anti-colonial solidarity"
+      },
+      {
+        "w": "Year of Africa",
+        "d": "1960, when many African colonies became independent"
+      },
+      {
+        "w": "Viet Minh",
+        "d": "Vietnamese anti-colonial movement led by Ho Chi Minh"
+      },
+      {
+        "w": "Sukarno",
+        "d": "First president of Indonesia and anti-colonial leader"
+      },
+      {
+        "w": "Algerian War",
+        "d": "War of independence against France from 1954 to 1962"
+      },
+      {
+        "w": "Timor-Leste",
+        "d": "Former Portuguese colony later occupied by Indonesia before independence"
+      },
+      {
+        "w": "Mau Mau uprising",
+        "d": "Kenyan anti-colonial rebellion against British rule"
+      },
+      {
+        "w": "Simon Bolívar",
+        "d": "Leader of independence movements in northern South America"
+      },
+      {
+        "w": "Frantz Fanon",
+        "d": "Anti-colonial thinker and author of The Wretched of the Earth"
+      }
+    ]
+  },
+  {
+    "name": "pharaohs of ancient Egypt",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Narmer",
+        "d": "Early king often linked to the unification of Upper and Lower Egypt"
+      },
+      {
+        "w": "Djoser",
+        "d": "Old Kingdom pharaoh associated with the Step Pyramid at Saqqara"
+      },
+      {
+        "w": "Sneferu",
+        "d": "Pharaoh who built major pyramids at Meidum and Dahshur"
+      },
+      {
+        "w": "Khufu",
+        "d": "Old Kingdom ruler traditionally credited with the Great Pyramid"
+      },
+      {
+        "w": "Khafre",
+        "d": "Fourth Dynasty pharaoh linked to the second pyramid at Giza"
+      },
+      {
+        "w": "Menkaure",
+        "d": "Pharaoh associated with the smallest of the three main Giza pyramids"
+      },
+      {
+        "w": "Mentuhotep II",
+        "d": "Ruler who reunified Egypt and began the Middle Kingdom"
+      },
+      {
+        "w": "Senusret I",
+        "d": "Middle Kingdom pharaoh known for building and administrative strength"
+      },
+      {
+        "w": "Senusret III",
+        "d": "Powerful Middle Kingdom ruler remembered for Nubian campaigns"
+      },
+      {
+        "w": "Amenemhat III",
+        "d": "Middle Kingdom pharaoh associated with major irrigation and building works"
+      },
+      {
+        "w": "Ahmose I",
+        "d": "Founder of the Eighteenth Dynasty who expelled the Hyksos"
+      },
+      {
+        "w": "Hatshepsut pharaoh",
+        "d": "Female pharaoh known for trade expeditions and Deir el-Bahri temple"
+      },
+      {
+        "w": "Thutmose I",
+        "d": "Eighteenth Dynasty ruler who campaigned into Nubia and Syria"
+      },
+      {
+        "w": "Thutmose III",
+        "d": "Warrior pharaoh whose campaigns expanded Egypt’s empire"
+      },
+      {
+        "w": "Amenhotep III",
+        "d": "Wealthy New Kingdom ruler known for diplomacy and monument building"
+      },
+      {
+        "w": "Akhenaten",
+        "d": "Pharaoh who promoted the worship of Aten and founded Amarna"
+      },
+      {
+        "w": "Smenkhkare",
+        "d": "Obscure Amarna-period ruler with debated identity"
+      },
+      {
+        "w": "Ay",
+        "d": "Successor after Tutankhamun and a senior official of the Amarna age"
+      },
+      {
+        "w": "Horemheb",
+        "d": "General who became pharaoh and restored traditional order"
+      },
+      {
+        "w": "Seti I",
+        "d": "Nineteenth Dynasty pharaoh known for military campaigns and fine reliefs"
+      },
+      {
+        "w": "Ramesses the Great",
+        "d": "Long-reigning pharaoh associated with Kadesh and Abu Simbel"
+      },
+      {
+        "w": "Merneptah",
+        "d": "Pharaoh whose victory stele contains an early reference to Israel"
+      },
+      {
+        "w": "Ramesses III",
+        "d": "New Kingdom ruler who fought the Sea Peoples"
+      },
+      {
+        "w": "Psusennes I",
+        "d": "Tanis ruler whose intact silver coffin became a major discovery"
+      },
+      {
+        "w": "Shoshenq I",
+        "d": "Libyan-origin pharaoh often linked with biblical Shishak"
+      },
+      {
+        "w": "Taharqa",
+        "d": "Kushite pharaoh of the Twenty-fifth Dynasty"
+      },
+      {
+        "w": "Necho II",
+        "d": "Saite ruler who sponsored naval and canal projects"
+      },
+      {
+        "w": "Psamtik I",
+        "d": "Saite pharaoh who reunified Egypt after Assyrian domination"
+      },
+      {
+        "w": "Amasis II",
+        "d": "Late Period pharaoh known for prosperity and Greek contacts"
+      },
+      {
+        "w": "Nectanebo II",
+        "d": "Last native Egyptian pharaoh before Persian conquest"
+      },
+      {
+        "w": "Ptolemy I Soter",
+        "d": "Macedonian general who founded the Ptolemaic dynasty"
+      },
+      {
+        "w": "Ptolemy II Philadelphus",
+        "d": "Ptolemaic ruler linked to Alexandria’s cultural power"
+      },
+      {
+        "w": "Ptolemy V Epiphanes",
+        "d": "Ruler named in the Rosetta Stone decree"
+      },
+      {
+        "w": "Cleopatra as pharaoh",
+        "d": "Last active ruler of Ptolemaic Egypt"
+      },
+      {
+        "w": "Twosret",
+        "d": "Female ruler at the end of the Nineteenth Dynasty"
+      }
+    ]
+  },
+  {
+    "name": "Cold War events & symbols",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Berlin Wall",
+        "d": "Concrete barrier dividing East and West Berlin from 1961 to 1989"
+      },
+      {
+        "w": "Iron Curtain",
+        "d": "Churchill phrase for the division between Soviet and Western blocs"
+      },
+      {
+        "w": "Truman Doctrine",
+        "d": "U.S. policy of containing communism after 1947"
+      },
+      {
+        "w": "Marshall Plan",
+        "d": "American reconstruction aid program for postwar Western Europe"
+      },
+      {
+        "w": "Warsaw Pact",
+        "d": "Soviet-led military alliance created in 1955"
+      },
+      {
+        "w": "Arms race",
+        "d": "U.S.-Soviet competition to build larger and better weapons arsenals"
+      },
+      {
+        "w": "Space race",
+        "d": "Competition for prestige through satellites, humans in orbit and Moon landings"
+      },
+      {
+        "w": "Gagarin’s flight",
+        "d": "1961 orbital flight that made Yuri Gagarin the first human in space"
+      },
+      {
+        "w": "McCarthyism",
+        "d": "American anti-communist investigations and accusations of the early Cold War"
+      },
+      {
+        "w": "Berlin Airlift",
+        "d": "Western supply operation during the Soviet blockade of West Berlin"
+      },
+      {
+        "w": "Prague Spring",
+        "d": "1968 reform movement in Czechoslovakia crushed by Warsaw Pact troops"
+      },
+      {
+        "w": "Brezhnev Doctrine",
+        "d": "Soviet claim of the right to intervene in socialist countries"
+      },
+      {
+        "w": "Strategic Defense Initiative",
+        "d": "Reagan missile-defense plan nicknamed Star Wars"
+      },
+      {
+        "w": "Korean War",
+        "d": "1950-53 war that hardened Cold War divisions in Asia"
+      },
+      {
+        "w": "Vietnam War",
+        "d": "Conflict that became a central Cold War proxy war"
+      },
+      {
+        "w": "Cominform",
+        "d": "Soviet-led organization coordinating communist parties"
+      },
+      {
+        "w": "Red Scare",
+        "d": "Fear-driven anti-communist politics in the United States"
+      },
+      {
+        "w": "Fall of the Wall",
+        "d": "1989 opening and collapse of the Berlin Wall"
+      },
+      {
+        "w": "Reaganomics",
+        "d": "Market-oriented policies of Ronald Reagan in the 1980s"
+      },
+      {
+        "w": "Budapest 1956",
+        "d": "Hungarian uprising crushed by Soviet forces"
+      },
+      {
+        "w": "Suez Crisis",
+        "d": "1956 crisis revealing the limits of old European empires"
+      },
+      {
+        "w": "Fulton speech",
+        "d": "Churchill speech popularizing the Iron Curtain metaphor"
+      },
+      {
+        "w": "Afghan War",
+        "d": "Soviet intervention in Afghanistan from 1979 to 1989"
+      },
+      {
+        "w": "Cuban Missile Crisis",
+        "d": "1962 nuclear standoff over Soviet missiles in Cuba"
+      },
+      {
+        "w": "VOA broadcasts",
+        "d": "U.S. broadcasts aimed partly at audiences behind the Iron Curtain"
+      },
+      {
+        "w": "Détente",
+        "d": "Period of reduced U.S.-Soviet tensions in the 1970s"
+      },
+      {
+        "w": "Nuclear parity",
+        "d": "Strategic balance that made nuclear war mutually catastrophic"
+      },
+      {
+        "w": "Non-Aligned Movement",
+        "d": "States trying to avoid formal alignment with either Cold War bloc"
+      },
+      {
+        "w": "Checkpoint Charlie",
+        "d": "Berlin crossing point and symbol of Cold War confrontation"
+      },
+      {
+        "w": "SALT I",
+        "d": "Arms-control agreement limiting strategic nuclear weapons"
+      },
+      {
+        "w": "Helsinki Final Act",
+        "d": "1975 agreement linking borders, cooperation and human rights"
+      },
+      {
+        "w": "Polish Solidarity",
+        "d": "Trade-union movement that challenged communist rule in Poland"
+      },
+      {
+        "w": "Soviet dissidents",
+        "d": "Activists and writers opposing repression within the USSR"
+      },
+      {
+        "w": "Kitchen Debate",
+        "d": "1959 Nixon-Khrushchev debate staged in a model kitchen"
+      },
+      {
+        "w": "Able Archer 83",
+        "d": "NATO exercise that heightened fears of nuclear escalation"
+      }
+    ]
+  },
+  {
+    "name": "Cold War operations & secret missions",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Operation Ajax",
+        "d": "1953 CIA-MI6 operation against Iranian prime minister Mohammad Mossadegh"
+      },
+      {
+        "w": "Project MKUltra",
+        "d": "CIA program of illegal experiments on mind control and drugs"
+      },
+      {
+        "w": "Operation Cobra Mist",
+        "d": "British-American over-the-horizon radar project in England"
+      },
+      {
+        "w": "Operation Mongoose",
+        "d": "U.S. covert program against Fidel Castro’s Cuba"
+      },
+      {
+        "w": "Operation Gold",
+        "d": "CIA and MI6 tunnel operation to tap Soviet communications in Berlin"
+      },
+      {
+        "w": "Operation Gladio",
+        "d": "Secret stay-behind networks prepared in Western Europe"
+      },
+      {
+        "w": "ECHELON",
+        "d": "Signals-intelligence collection network associated with Five Eyes"
+      },
+      {
+        "w": "U-2 incident",
+        "d": "1960 shootdown of Francis Gary Powers over the Soviet Union"
+      },
+      {
+        "w": "Phoenix Program",
+        "d": "CIA-linked counterinsurgency program during the Vietnam War"
+      },
+      {
+        "w": "Operation Infektion",
+        "d": "Soviet disinformation campaign claiming AIDS was made by the U.S."
+      },
+      {
+        "w": "Operation Condor",
+        "d": "South American campaign of repression coordinated by dictatorships"
+      },
+      {
+        "w": "Operation Cyclone",
+        "d": "CIA support for Afghan mujahideen against Soviet forces"
+      },
+      {
+        "w": "Cambridge Five",
+        "d": "British spy ring that passed secrets to the Soviet Union"
+      },
+      {
+        "w": "Project Rainbow",
+        "d": "Experimental U.S. naval camouflage and radar-avoidance project legend"
+      },
+      {
+        "w": "Operation Northwoods",
+        "d": "Rejected U.S. plan proposing false-flag pretexts against Cuba"
+      },
+      {
+        "w": "Drop Shot",
+        "d": "U.S. war plan for possible conflict with the Soviet Union"
+      },
+      {
+        "w": "COINTELPRO",
+        "d": "FBI covert program targeting domestic political groups"
+      },
+      {
+        "w": "Operation Charly",
+        "d": "Argentine support operation for anti-communist forces in Central America"
+      },
+      {
+        "w": "Operation Anadyr",
+        "d": "Soviet deployment of missiles to Cuba in 1962"
+      },
+      {
+        "w": "Operation Paperclip",
+        "d": "U.S. recruitment of German scientists after World War II"
+      },
+      {
+        "w": "VENONA",
+        "d": "U.S. program decrypting Soviet intelligence messages"
+      },
+      {
+        "w": "Rosenberg case",
+        "d": "Espionage trial of Julius and Ethel Rosenberg"
+      },
+      {
+        "w": "Berlin Tunnel",
+        "d": "Western tunnel used to intercept Soviet communications"
+      },
+      {
+        "w": "Operation Ivy Bells",
+        "d": "U.S. tapping of Soviet undersea communication cables"
+      },
+      {
+        "w": "Farewell Dossier",
+        "d": "French-sourced intelligence on Soviet technology theft networks"
+      },
+      {
+        "w": "Operation Neptune",
+        "d": "Czechoslovak disinformation operation involving forged Nazi documents"
+      },
+      {
+        "w": "Operation CHAOS",
+        "d": "CIA domestic surveillance program during the Vietnam era"
+      },
+      {
+        "w": "Operation Washtub",
+        "d": "U.S. stay-behind plan prepared for Alaska"
+      },
+      {
+        "w": "Operation Sunrise",
+        "d": "Secret World War II contacts that shaped early Cold War distrust"
+      },
+      {
+        "w": "Operation Valuable",
+        "d": "Western attempt to infiltrate agents into communist Albania"
+      },
+      {
+        "w": "Project Azorian",
+        "d": "CIA attempt to recover a sunken Soviet submarine"
+      },
+      {
+        "w": "Operation Mockingbird",
+        "d": "Alleged CIA influence operations involving journalists and media"
+      },
+      {
+        "w": "Operation RYAN",
+        "d": "Soviet intelligence effort to detect a surprise nuclear attack"
+      },
+      {
+        "w": "Operation Vula",
+        "d": "ANC covert network during the late apartheid Cold War context"
+      },
+      {
+        "w": "Operation Menu",
+        "d": "Secret U.S. bombing campaign in Cambodia"
+      }
+    ]
+  },
+  {
+    "name": "natural disasters",
+    "tags": {
+      "a": "geek",
+      "b": "nature",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Spitak earthquake",
+        "d": "1988 Armenian earthquake that devastated Spitak and Leninakan"
+      },
+      {
+        "w": "Indian Ocean tsunami",
+        "d": "2004 tsunami that killed more than 200,000 people across many countries"
+      },
+      {
+        "w": "Tohoku earthquake",
+        "d": "2011 Japanese megathrust quake that triggered a tsunami"
+      },
+      {
+        "w": "Tangshan earthquake",
+        "d": "1976 Chinese earthquake among the deadliest of the twentieth century"
+      },
+      {
+        "w": "Haiti earthquake",
+        "d": "2010 earthquake that devastated Port-au-Prince"
+      },
+      {
+        "w": "Lisbon earthquake",
+        "d": "1755 quake and tsunami that shook European thought"
+      },
+      {
+        "w": "Krakatoa eruption",
+        "d": "1883 volcanic eruption heard across the Indian Ocean"
+      },
+      {
+        "w": "Tambora eruption",
+        "d": "1815 eruption that helped cause the Year Without a Summer"
+      },
+      {
+        "w": "Vesuvius eruption",
+        "d": "AD 79 eruption that buried Pompeii and Herculaneum"
+      },
+      {
+        "w": "Mount St. Helens",
+        "d": "1980 explosive eruption in Washington State"
+      },
+      {
+        "w": "Nevado del Ruiz",
+        "d": "1985 eruption whose lahars destroyed Armero"
+      },
+      {
+        "w": "Hurricane Katrina",
+        "d": "2005 hurricane and flood disaster in New Orleans"
+      },
+      {
+        "w": "Galveston hurricane",
+        "d": "1900 hurricane, the deadliest natural disaster in U.S. history"
+      },
+      {
+        "w": "Bhola cyclone",
+        "d": "1970 cyclone in East Pakistan that killed hundreds of thousands"
+      },
+      {
+        "w": "Cyclone Nargis",
+        "d": "2008 cyclone that devastated Myanmar"
+      },
+      {
+        "w": "Typhoon Haiyan",
+        "d": "2013 super typhoon that struck the Philippines"
+      },
+      {
+        "w": "Great Kanto earthquake",
+        "d": "1923 earthquake that devastated Tokyo and Yokohama"
+      },
+      {
+        "w": "Sichuan earthquake",
+        "d": "2008 earthquake centered in Wenchuan, China"
+      },
+      {
+        "w": "Pakistan floods",
+        "d": "2010 floods affecting millions along the Indus basin"
+      },
+      {
+        "w": "Yellow River flood",
+        "d": "1887 flood considered one of history’s deadliest natural disasters"
+      },
+      {
+        "w": "Dust Bowl",
+        "d": "1930s drought and dust storms across the U.S. Great Plains"
+      },
+      {
+        "w": "Sahel drought",
+        "d": "Long drought and famine crisis in West Africa"
+      },
+      {
+        "w": "Black Saturday bushfires",
+        "d": "2009 Australian fires in Victoria"
+      },
+      {
+        "w": "Camp Fire",
+        "d": "2018 California wildfire that destroyed Paradise"
+      },
+      {
+        "w": "Laki eruption",
+        "d": "1783 Icelandic eruption causing climate and famine effects"
+      },
+      {
+        "w": "Eyjafjallajökull eruption",
+        "d": "2010 Icelandic eruption that disrupted European air travel"
+      },
+      {
+        "w": "Valdivia earthquake",
+        "d": "1960 Chile quake, the largest instrumentally recorded earthquake"
+      },
+      {
+        "w": "Aleppo earthquake",
+        "d": "1138 earthquake often listed among the deadliest in history"
+      },
+      {
+        "w": "Daulatpur-Saturia tornado",
+        "d": "1989 Bangladesh tornado with catastrophic casualties"
+      },
+      {
+        "w": "Lake Nyos disaster",
+        "d": "1986 limnic eruption of carbon dioxide in Cameroon"
+      },
+      {
+        "w": "Armero tragedy",
+        "d": "Colombian lahar disaster after the Nevado del Ruiz eruption"
+      },
+      {
+        "w": "Boxing Day tsunami",
+        "d": "Another name for the 2004 Indian Ocean tsunami"
+      },
+      {
+        "w": "Hurricane Mitch",
+        "d": "1998 hurricane that devastated Central America"
+      },
+      {
+        "w": "Great Chilean earthquake",
+        "d": "Common name for the 1960 Valdivia megathrust event"
+      },
+      {
+        "w": "Aegean Sea earthquake",
+        "d": "2020 quake affecting İzmir and Samos"
+      }
+    ]
+  },
+  {
+    "name": "spies & double agents",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "hard"
+    },
+    "words": [
+      {
+        "w": "Kim Philby",
+        "d": "British intelligence officer and Soviet agent in the Cambridge Five"
+      },
+      {
+        "w": "Guy Burgess",
+        "d": "British diplomat and Soviet spy who defected in 1951"
+      },
+      {
+        "w": "Donald Maclean",
+        "d": "British diplomat who passed atomic and diplomatic secrets to Moscow"
+      },
+      {
+        "w": "Anthony Blunt",
+        "d": "Art historian and Surveyor of the Queen’s Pictures exposed as a Soviet spy"
+      },
+      {
+        "w": "John Cairncross",
+        "d": "British civil servant and fifth Cambridge spy"
+      },
+      {
+        "w": "Oleg Gordievsky",
+        "d": "KGB officer who secretly worked for Britain and escaped to the West"
+      },
+      {
+        "w": "Aldrich Ames",
+        "d": "CIA officer who spied for the Soviet Union and Russia"
+      },
+      {
+        "w": "Robert Hanssen",
+        "d": "FBI agent who spied for Moscow for years"
+      },
+      {
+        "w": "Mata Hari",
+        "d": "Dutch dancer executed by France as a spy in World War I"
+      },
+      {
+        "w": "Richard Sorge",
+        "d": "Soviet intelligence officer active in Tokyo before World War II"
+      },
+      {
+        "w": "Klaus Fuchs",
+        "d": "Physicist who passed atomic secrets to the Soviet Union"
+      },
+      {
+        "w": "Rudolf Abel",
+        "d": "Soviet illegal intelligence officer arrested in the United States"
+      },
+      {
+        "w": "Francis Gary Powers",
+        "d": "U-2 pilot shot down over the Soviet Union in 1960"
+      },
+      {
+        "w": "Sidney Reilly",
+        "d": "Adventurer-spy later mythologized as an ace of spies"
+      },
+      {
+        "w": "Virginia Hall",
+        "d": "American spy in occupied France known for evading the Gestapo"
+      },
+      {
+        "w": "Noor Inayat Khan",
+        "d": "SOE radio operator captured and killed by the Nazis"
+      },
+      {
+        "w": "Nancy Wake",
+        "d": "Allied agent and resistance courier in occupied France"
+      },
+      {
+        "w": "Eli Cohen",
+        "d": "Israeli spy who penetrated Syrian leadership circles"
+      },
+      {
+        "w": "Markus Wolf",
+        "d": "East German intelligence chief nicknamed the man without a face"
+      },
+      {
+        "w": "Hede Massing",
+        "d": "Soviet agent involved in prewar espionage networks"
+      },
+      {
+        "w": "Whittaker Chambers",
+        "d": "Former Soviet courier who accused Alger Hiss"
+      },
+      {
+        "w": "Alger Hiss",
+        "d": "American official convicted of perjury amid espionage accusations"
+      },
+      {
+        "w": "Julius Rosenberg",
+        "d": "American executed for conspiracy to commit espionage"
+      },
+      {
+        "w": "Ethel Rosenberg",
+        "d": "American executed with Julius Rosenberg in the atomic-spy case"
+      },
+      {
+        "w": "Anna Chapman",
+        "d": "Russian sleeper agent arrested in the United States in 2010"
+      },
+      {
+        "w": "Christopher Steele",
+        "d": "Former MI6 officer later known for the Trump-Russia dossier"
+      },
+      {
+        "w": "Melita Norwood",
+        "d": "British civil servant who passed atomic information to the USSR"
+      },
+      {
+        "w": "George Blake",
+        "d": "MI6 officer who became a Soviet double agent"
+      },
+      {
+        "w": "Alexander Litvinenko",
+        "d": "Former Russian security officer poisoned in London after defection"
+      },
+      {
+        "w": "Gouzenko",
+        "d": "Soviet cipher clerk whose defection exposed espionage in Canada"
+      },
+      {
+        "w": "Jona von Ustinov",
+        "d": "German-born agent who worked for British intelligence"
+      },
+      {
+        "w": "Fritz Kolbe",
+        "d": "German diplomat who secretly passed Nazi documents to the Allies"
+      },
+      {
+        "w": "Juan Pujol Garcia",
+        "d": "Double agent Garbo who misled Germany before D-Day"
+      },
+      {
+        "w": "Dusko Popov",
+        "d": "Double agent Tricycle who inspired later spy fiction"
+      },
+      {
+        "w": "Violette Szabo",
+        "d": "SOE agent in occupied France, executed at Ravensbrück"
+      }
+    ]
+  },
+  {
+    "name": "ancient Greece: civilization",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Polis",
+        "d": "Self-governing Greek city-state such as Athens or Sparta"
+      },
+      {
+        "w": "Agora",
+        "d": "Public marketplace and civic center of a Greek city"
+      },
+      {
+        "w": "Pnyx",
+        "d": "Hill in Athens where the democratic citizen assembly met"
+      },
+      {
+        "w": "Areopagus",
+        "d": "Athenian council and court associated with an ancient hill"
+      },
+      {
+        "w": "Ostracism",
+        "d": "Athenian vote to exile a citizen for ten years"
+      },
+      {
+        "w": "Deme",
+        "d": "Local district and unit of Athenian citizenship"
+      },
+      {
+        "w": "Strategos",
+        "d": "Elected Athenian military general"
+      },
+      {
+        "w": "Archon",
+        "d": "Magistrate title in several Greek city-states"
+      },
+      {
+        "w": "Hoplite",
+        "d": "Citizen-soldier infantryman with spear and shield"
+      },
+      {
+        "w": "Phalanx",
+        "d": "Dense infantry formation with overlapping shields"
+      },
+      {
+        "w": "Trireme",
+        "d": "Greek warship rowed by three banks of oars"
+      },
+      {
+        "w": "Delian League",
+        "d": "Athenian-led alliance that became an empire"
+      },
+      {
+        "w": "Peloponnesian League",
+        "d": "Spartan-led alliance opposed to Athens"
+      },
+      {
+        "w": "Panhellenic games",
+        "d": "Athletic festivals open to Greeks from many city-states"
+      },
+      {
+        "w": "Oracle of Delphi",
+        "d": "Sanctuary where Apollo’s priestess delivered prophecies"
+      },
+      {
+        "w": "Symposium",
+        "d": "Drinking party with conversation, poetry and music"
+      },
+      {
+        "w": "Oikos",
+        "d": "Household as a basic economic and social unit"
+      },
+      {
+        "w": "Metic",
+        "d": "Resident foreigner in Athens without citizen rights"
+      },
+      {
+        "w": "Helot",
+        "d": "State-owned serf population under Spartan control"
+      },
+      {
+        "w": "Gerousia",
+        "d": "Spartan council of elders"
+      },
+      {
+        "w": "Ephor",
+        "d": "Spartan magistrate supervising kings and public life"
+      },
+      {
+        "w": "Boule",
+        "d": "Council that prepared business for the Athenian assembly"
+      },
+      {
+        "w": "Ecclesia",
+        "d": "Citizen assembly of democratic Athens"
+      },
+      {
+        "w": "Sophist",
+        "d": "Professional teacher of rhetoric and argument"
+      },
+      {
+        "w": "Socratic method",
+        "d": "Questioning technique associated with Socrates"
+      },
+      {
+        "w": "Academy",
+        "d": "Plato’s philosophical school outside Athens"
+      },
+      {
+        "w": "Lyceum",
+        "d": "Aristotle’s school and research community"
+      },
+      {
+        "w": "Stoa",
+        "d": "Covered walkway linked to Stoic philosophy"
+      },
+      {
+        "w": "Mystery cult",
+        "d": "Religious rites promising special initiation and secrecy"
+      },
+      {
+        "w": "Eleusinian Mysteries",
+        "d": "Major initiation rites connected to Demeter and Persephone"
+      },
+      {
+        "w": "Koiné Greek",
+        "d": "Common Greek language spread after Alexander"
+      },
+      {
+        "w": "Macedonian phalanx",
+        "d": "Formation using long sarissa pikes under Philip and Alexander"
+      },
+      {
+        "w": "Sacred Band of Thebes",
+        "d": "Elite Theban military unit of paired soldiers"
+      },
+      {
+        "w": "Athenian democracy",
+        "d": "Direct citizen government developed in classical Athens"
+      },
+      {
+        "w": "Cleisthenes",
+        "d": "Athenian reformer often called a founder of democracy"
+      }
+    ]
+  },
+  {
+    "name": "ancient Rome: civilization",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Mos maiorum",
+        "d": "Ancestral custom and moral code valued by Roman elites"
+      },
+      {
+        "w": "Patrician",
+        "d": "Member of Rome’s hereditary aristocratic class"
+      },
+      {
+        "w": "Plebeian",
+        "d": "Common citizen class that fought for political rights"
+      },
+      {
+        "w": "Tribune of the plebs",
+        "d": "Official elected to defend plebeian interests"
+      },
+      {
+        "w": "Consul",
+        "d": "One of two annually elected chief magistrates"
+      },
+      {
+        "w": "Praetor",
+        "d": "Roman magistrate often responsible for courts and command"
+      },
+      {
+        "w": "Censor",
+        "d": "Official conducting census and supervising public morals"
+      },
+      {
+        "w": "Quaestor",
+        "d": "Financial magistrate and entry-level political office"
+      },
+      {
+        "w": "Aedile",
+        "d": "Magistrate responsible for markets, games and public works"
+      },
+      {
+        "w": "Senate",
+        "d": "Council of elite men guiding Roman policy"
+      },
+      {
+        "w": "Comitia centuriata",
+        "d": "Assembly organized by military and wealth classes"
+      },
+      {
+        "w": "Twelve Tables",
+        "d": "Early written code of Roman law"
+      },
+      {
+        "w": "Paterfamilias",
+        "d": "Male head of a Roman household with legal authority"
+      },
+      {
+        "w": "Clientela",
+        "d": "Patron-client network central to Roman social life"
+      },
+      {
+        "w": "Roman patronage",
+        "d": "Powerful protector relationship central to Roman social life"
+      },
+      {
+        "w": "Equites",
+        "d": "Wealthy order below senators, often tied to business and administration"
+      },
+      {
+        "w": "Latifundium",
+        "d": "Large agricultural estate worked by slaves or tenants"
+      },
+      {
+        "w": "Manumission",
+        "d": "Legal freeing of an enslaved person"
+      },
+      {
+        "w": "Freedman",
+        "d": "Former slave with limited but real social opportunities"
+      },
+      {
+        "w": "Legion",
+        "d": "Main Roman military unit of heavy infantry"
+      },
+      {
+        "w": "Centurion",
+        "d": "Professional officer commanding a century"
+      },
+      {
+        "w": "Cohort",
+        "d": "Tactical subdivision of a Roman legion"
+      },
+      {
+        "w": "Auxilia",
+        "d": "Non-citizen troops serving alongside Roman legions"
+      },
+      {
+        "w": "Testudo",
+        "d": "Shield-roof formation used by Roman soldiers"
+      },
+      {
+        "w": "Triumph",
+        "d": "Public victory procession granted to a successful commander"
+      },
+      {
+        "w": "Imperium",
+        "d": "Legal power to command armies and hold high office"
+      },
+      {
+        "w": "Princeps",
+        "d": "First citizen title used by early emperors"
+      },
+      {
+        "w": "Pax Romana",
+        "d": "Long period of relative imperial peace and stability"
+      },
+      {
+        "w": "Edict of Caracalla",
+        "d": "Law granting Roman citizenship to free inhabitants of the empire"
+      },
+      {
+        "w": "Bread and circuses",
+        "d": "Phrase for food distributions and entertainment as political control"
+      },
+      {
+        "w": "Forum Romanum",
+        "d": "Civic and political heart of ancient Rome"
+      },
+      {
+        "w": "Cursus honorum",
+        "d": "Sequence of offices in a Roman political career"
+      },
+      {
+        "w": "Pontifex Maximus",
+        "d": "Chief priestly title later held by emperors"
+      },
+      {
+        "w": "Auctoritas",
+        "d": "Prestige and moral authority in Roman public life"
+      },
+      {
+        "w": "Cato the Younger",
+        "d": "Stoic politician famous for opposition to Caesar and defense of the republic"
+      }
+    ]
+  },
+  {
+    "name": "iconic bands",
+    "tags": {
+      "a": "human",
+      "b": "music",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "The Beatles",
+        "d": "Liverpool band that transformed pop music in the 1960s"
+      },
+      {
+        "w": "The Rolling Stones",
+        "d": "British rock band built around blues, riffs and swagger"
+      },
+      {
+        "w": "Led Zeppelin",
+        "d": "Hard-rock band known for heavy riffs and epic concerts"
+      },
+      {
+        "w": "Queen",
+        "d": "British band with theatrical rock and Freddie Mercury vocals"
+      },
+      {
+        "w": "Pink Floyd",
+        "d": "Progressive rock band known for concept albums and soundscapes"
+      },
+      {
+        "w": "The Who",
+        "d": "British rock band famous for rock operas and explosive shows"
+      },
+      {
+        "w": "Nirvana",
+        "d": "Seattle grunge band that brought alternative rock mainstream"
+      },
+      {
+        "w": "Radiohead",
+        "d": "British band known for art rock and electronic experimentation"
+      },
+      {
+        "w": "U2",
+        "d": "Irish band with arena anthems and political themes"
+      },
+      {
+        "w": "ABBA",
+        "d": "Swedish pop group with global disco-era hits"
+      },
+      {
+        "w": "Fleetwood Mac",
+        "d": "British-American band whose Rumours became a classic album"
+      },
+      {
+        "w": "The Clash",
+        "d": "British punk band mixing politics, reggae and rock"
+      },
+      {
+        "w": "Ramones",
+        "d": "New York punk band built on speed, simplicity and hooks"
+      },
+      {
+        "w": "Sex Pistols",
+        "d": "British punk band that became a symbol of rebellion"
+      },
+      {
+        "w": "Metallica",
+        "d": "Thrash-metal band that became a global stadium act"
+      },
+      {
+        "w": "Black Sabbath",
+        "d": "Birmingham band often credited with inventing heavy metal"
+      },
+      {
+        "w": "Deep Purple",
+        "d": "Hard-rock band famous for riffs and organ-heavy sound"
+      },
+      {
+        "w": "The Doors",
+        "d": "Los Angeles band fronted by Jim Morrison"
+      },
+      {
+        "w": "R.E.M.",
+        "d": "American alternative-rock band from Athens, Georgia"
+      },
+      {
+        "w": "Oasis",
+        "d": "Britpop band known for rivalry and huge 1990s anthems"
+      },
+      {
+        "w": "Blur",
+        "d": "Britpop band that later moved into art rock and experimentation"
+      },
+      {
+        "w": "Depeche Mode",
+        "d": "Electronic band that brought synth darkness to stadiums"
+      },
+      {
+        "w": "Kraftwerk",
+        "d": "German group whose electronic minimalism shaped modern pop"
+      },
+      {
+        "w": "Talking Heads",
+        "d": "New York art-rock band led by David Byrne"
+      },
+      {
+        "w": "The Smiths",
+        "d": "Manchester band known for jangly guitars and Morrissey lyrics"
+      },
+      {
+        "w": "The Cure",
+        "d": "British post-punk band associated with gothic pop"
+      },
+      {
+        "w": "Pearl Jam",
+        "d": "Seattle band and major grunge-era survivor"
+      },
+      {
+        "w": "Red Hot Chili Peppers",
+        "d": "Funk-rock band from Los Angeles"
+      },
+      {
+        "w": "Guns N’ Roses",
+        "d": "Hard-rock band behind Appetite for Destruction"
+      },
+      {
+        "w": "Aerosmith",
+        "d": "American rock band fronted by Steven Tyler"
+      },
+      {
+        "w": "The Beach Boys",
+        "d": "California group famous for harmonies and studio innovation"
+      },
+      {
+        "w": "Bee Gees",
+        "d": "Pop group central to disco-era sound"
+      },
+      {
+        "w": "The Supremes",
+        "d": "Motown vocal group with a string of 1960s hits"
+      },
+      {
+        "w": "The Velvet Underground",
+        "d": "New York band influential far beyond its original sales"
+      },
+      {
+        "w": "Joy Division",
+        "d": "Manchester post-punk band with a brief, intense legacy"
+      }
+    ]
+  },
+  {
+    "name": "legendary albums",
+    "tags": {
+      "a": "human",
+      "b": "music",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Abbey Road",
+        "d": "Beatles album with the famous zebra-crossing cover"
+      },
+      {
+        "w": "Sgt. Pepper’s Lonely Hearts Club Band",
+        "d": "Beatles concept album that became a 1960s landmark"
+      },
+      {
+        "w": "Revolver",
+        "d": "Beatles album of studio experimentation and sharp songwriting"
+      },
+      {
+        "w": "The Dark Side of the Moon",
+        "d": "Pink Floyd album about time, money and madness"
+      },
+      {
+        "w": "Wish You Were Here",
+        "d": "Pink Floyd album reflecting absence and music-industry alienation"
+      },
+      {
+        "w": "Rumours",
+        "d": "Fleetwood Mac album made amid romantic breakups"
+      },
+      {
+        "w": "Nevermind",
+        "d": "Nirvana album that brought grunge into the mainstream"
+      },
+      {
+        "w": "Pet Sounds",
+        "d": "Beach Boys album admired for harmonies and studio craft"
+      },
+      {
+        "w": "Thriller album",
+        "d": "Michael Jackson album that became a global pop phenomenon"
+      },
+      {
+        "w": "Purple Rain album",
+        "d": "Prince album and film soundtrack of rock, funk and pop"
+      },
+      {
+        "w": "Blue",
+        "d": "Joni Mitchell album of intimate singer-songwriter confession"
+      },
+      {
+        "w": "Kind of Blue",
+        "d": "Miles Davis modal jazz album and all-time classic"
+      },
+      {
+        "w": "A Love Supreme",
+        "d": "John Coltrane spiritual jazz suite"
+      },
+      {
+        "w": "London Calling",
+        "d": "The Clash double album mixing punk, reggae and rock"
+      },
+      {
+        "w": "OK Computer",
+        "d": "Radiohead album of alienation, technology and art rock"
+      },
+      {
+        "w": "Kid A",
+        "d": "Radiohead album that embraced electronics and abstraction"
+      },
+      {
+        "w": "The Joshua Tree",
+        "d": "U2 album of American landscapes and anthemic rock"
+      },
+      {
+        "w": "Born to Run album",
+        "d": "Bruce Springsteen breakthrough album of escape and yearning"
+      },
+      {
+        "w": "Blood on the Tracks",
+        "d": "Bob Dylan album often read as a breakup masterpiece"
+      },
+      {
+        "w": "Highway 61 Revisited",
+        "d": "Bob Dylan album with Like a Rolling Stone"
+      },
+      {
+        "w": "What’s Going On",
+        "d": "Marvin Gaye soul album about war, poverty and ecology"
+      },
+      {
+        "w": "Songs in the Key of Life",
+        "d": "Stevie Wonder double album of soul, pop and social vision"
+      },
+      {
+        "w": "Back to Black",
+        "d": "Amy Winehouse album of retro soul and heartbreak"
+      },
+      {
+        "w": "The Miseducation of Lauryn Hill",
+        "d": "Lauryn Hill album blending hip-hop, soul and personal testimony"
+      },
+      {
+        "w": "Illmatic",
+        "d": "Nas debut album revered as a hip-hop classic"
+      },
+      {
+        "w": "The Chronic",
+        "d": "Dr. Dre album that defined G-funk"
+      },
+      {
+        "w": "Enter the Wu-Tang",
+        "d": "Wu-Tang Clan debut with raw group mythology"
+      },
+      {
+        "w": "The Velvet Underground & Nico",
+        "d": "Experimental rock album with the banana cover"
+      },
+      {
+        "w": "Horses",
+        "d": "Patti Smith debut linking punk energy and poetry"
+      },
+      {
+        "w": "Unknown Pleasures",
+        "d": "Joy Division debut with the pulsar cover"
+      },
+      {
+        "w": "Remain in Light",
+        "d": "Talking Heads album of polyrhythms and anxious funk"
+      },
+      {
+        "w": "Led Zeppelin IV",
+        "d": "Rock album containing Stairway to Heaven"
+      },
+      {
+        "w": "Appetite for Destruction",
+        "d": "Guns N’ Roses debut of hard rock excess"
+      },
+      {
+        "w": "Never Mind the Bollocks",
+        "d": "Sex Pistols album that defined British punk shock"
+      },
+      {
+        "w": "Discovery",
+        "d": "Daft Punk album of glossy French house and pop hooks"
+      }
+    ]
+  },
+  {
+    "name": "perfume: scents & icons",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Chanel No. 5",
+        "d": "Aldehydic floral perfume launched in 1921 and made globally iconic"
+      },
+      {
+        "w": "L’Eau par Kenzo",
+        "d": "Fresh aquatic-floral fragrance associated with water and transparency"
+      },
+      {
+        "w": "Shalimar",
+        "d": "Guerlain oriental perfume inspired by Mughal gardens"
+      },
+      {
+        "w": "Mitsouko",
+        "d": "Guerlain chypre with peach and oakmoss character"
+      },
+      {
+        "w": "Jicky",
+        "d": "Guerlain fragrance often called a bridge to modern perfumery"
+      },
+      {
+        "w": "Opium",
+        "d": "Yves Saint Laurent spicy oriental fragrance launched in 1977"
+      },
+      {
+        "w": "Poison",
+        "d": "Dior perfume famous for intense 1980s tuberose drama"
+      },
+      {
+        "w": "Angel",
+        "d": "Thierry Mugler gourmand fragrance built around patchouli and sweet notes"
+      },
+      {
+        "w": "CK One",
+        "d": "Calvin Klein unisex fragrance of the 1990s"
+      },
+      {
+        "w": "Light Blue",
+        "d": "Dolce & Gabbana citrus-woody fragrance associated with summer"
+      },
+      {
+        "w": "Acqua di Gio",
+        "d": "Giorgio Armani aquatic fragrance inspired by the sea"
+      },
+      {
+        "w": "Terre d’Hermès",
+        "d": "Hermès woody-mineral fragrance by Jean-Claude Ellena"
+      },
+      {
+        "w": "Black Orchid",
+        "d": "Tom Ford dark floral fragrance with luxury-gothic styling"
+      },
+      {
+        "w": "Noir de Noir",
+        "d": "Tom Ford rose, patchouli and truffle scent"
+      },
+      {
+        "w": "Santal 33",
+        "d": "Le Labo sandalwood fragrance that became a niche-perfume phenomenon"
+      },
+      {
+        "w": "Baccarat Rouge 540",
+        "d": "Maison Francis Kurkdjian amber-woody perfume with huge projection"
+      },
+      {
+        "w": "Aventus",
+        "d": "Creed fragrance associated with pineapple, smoke and status"
+      },
+      {
+        "w": "Portrait of a Lady",
+        "d": "Frédéric Malle rose-patchouli perfume by Dominique Ropion"
+      },
+      {
+        "w": "L’Air du Temps",
+        "d": "Nina Ricci floral fragrance with dove-shaped bottle"
+      },
+      {
+        "w": "Eau de Cologne",
+        "d": "Classic citrus aromatic fragrance family from Cologne tradition"
+      },
+      {
+        "w": "Chypre",
+        "d": "Perfume family built around citrus, labdanum and oakmoss"
+      },
+      {
+        "w": "Fougère",
+        "d": "Perfume family based on lavender, coumarin and mossy notes"
+      },
+      {
+        "w": "Aldehydes",
+        "d": "Sparkling synthetic notes that made Chanel No. 5 famous"
+      },
+      {
+        "w": "Amber accord",
+        "d": "Warm resinous accord often using labdanum, vanilla and benzoin"
+      },
+      {
+        "w": "Oud",
+        "d": "Resinous agarwood note prized in Middle Eastern perfumery"
+      },
+      {
+        "w": "Vetiver",
+        "d": "Dry grassy root note used in masculine and unisex fragrances"
+      },
+      {
+        "w": "Iris butter",
+        "d": "Luxurious orris-root material with powdery elegance"
+      },
+      {
+        "w": "Iso E Super",
+        "d": "Woody-amber aroma molecule known for a transparent aura"
+      },
+      {
+        "w": "Calone",
+        "d": "Marine aroma molecule associated with aquatic 1990s perfumes"
+      },
+      {
+        "w": "Sillage",
+        "d": "Trail of scent left by a fragrance in the air"
+      },
+      {
+        "w": "Drydown",
+        "d": "Later stage of a perfume after volatile top notes fade"
+      },
+      {
+        "w": "Top notes",
+        "d": "First impression of a fragrance after application"
+      },
+      {
+        "w": "Heart notes",
+        "d": "Middle stage that defines a fragrance’s main character"
+      },
+      {
+        "w": "Base notes",
+        "d": "Long-lasting foundation of a perfume"
+      },
+      {
+        "w": "Flanker",
+        "d": "Variation released under the name of an existing perfume"
+      }
+    ]
+  },
+  {
+    "name": "Korea: history, culture & modernization",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Gojoseon",
+        "d": "Legendary early Korean kingdom associated with Dangun"
+      },
+      {
+        "w": "Silla",
+        "d": "Korean kingdom that helped unify much of the peninsula"
+      },
+      {
+        "w": "Goguryeo",
+        "d": "Northern Korean kingdom known for military power and murals"
+      },
+      {
+        "w": "Baekje",
+        "d": "Southwestern kingdom that transmitted culture to Japan"
+      },
+      {
+        "w": "Goryeo",
+        "d": "Dynasty that gave Korea its Western name"
+      },
+      {
+        "w": "Joseon",
+        "d": "Long-lived dynasty that ruled Korea from 1392 to 1897"
+      },
+      {
+        "w": "King Sejong",
+        "d": "Joseon ruler credited with creating Hangul"
+      },
+      {
+        "w": "Hangul",
+        "d": "Korean alphabet designed in the fifteenth century"
+      },
+      {
+        "w": "Yi Sun-sin",
+        "d": "Admiral famous for victories against Japanese invasions"
+      },
+      {
+        "w": "Turtle ship",
+        "d": "Armored Korean warship associated with Yi Sun-sin"
+      },
+      {
+        "w": "Hwacha",
+        "d": "Korean multiple-rocket launcher of the Joseon era"
+      },
+      {
+        "w": "Hwarang",
+        "d": "Silla youth elite associated with training and aristocratic culture"
+      },
+      {
+        "w": "Yangban",
+        "d": "Joseon scholar-official aristocracy"
+      },
+      {
+        "w": "Gisaeng",
+        "d": "Female entertainers trained in music, poetry and performance"
+      },
+      {
+        "w": "Pansori",
+        "d": "Korean musical storytelling tradition"
+      },
+      {
+        "w": "Talchum",
+        "d": "Korean mask dance drama"
+      },
+      {
+        "w": "Chuseok",
+        "d": "Korean harvest holiday and family festival"
+      },
+      {
+        "w": "Hanbok",
+        "d": "Traditional Korean clothing"
+      },
+      {
+        "w": "Hanok",
+        "d": "Traditional Korean house form"
+      },
+      {
+        "w": "Ondol",
+        "d": "Korean underfloor heating system"
+      },
+      {
+        "w": "Kimchi",
+        "d": "Fermented vegetable dish central to Korean cuisine"
+      },
+      {
+        "w": "Chaebol",
+        "d": "Family-controlled South Korean conglomerate"
+      },
+      {
+        "w": "Samsung",
+        "d": "South Korean conglomerate central to electronics and industry"
+      },
+      {
+        "w": "Hyundai chaebol",
+        "d": "South Korean conglomerate known for cars, ships and construction"
+      },
+      {
+        "w": "POSCO",
+        "d": "South Korean steel company central to industrialization"
+      },
+      {
+        "w": "Korean Wave",
+        "d": "Global spread of South Korean pop culture"
+      },
+      {
+        "w": "Manhwa",
+        "d": "Korean comics and graphic storytelling"
+      },
+      {
+        "w": "K-drama",
+        "d": "Television drama format exported globally from South Korea"
+      },
+      {
+        "w": "38th parallel",
+        "d": "Latitude line tied to Korea’s division after World War II"
+      },
+      {
+        "w": "DMZ",
+        "d": "Demilitarized zone separating North and South Korea"
+      },
+      {
+        "w": "Pusan Perimeter",
+        "d": "Defensive line during the Korean War in 1950"
+      },
+      {
+        "w": "Incheon landing",
+        "d": "MacArthur’s amphibious operation during the Korean War"
+      },
+      {
+        "w": "Gwangju uprising",
+        "d": "1980 democratic uprising and massacre in South Korea"
+      },
+      {
+        "w": "Miracle on the Han River",
+        "d": "Phrase for South Korea’s rapid economic growth"
+      },
+      {
+        "w": "Juche",
+        "d": "North Korean ideology of self-reliance"
+      }
+    ]
+  },
+  {
+    "name": "dog breeds",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Labrador Retriever",
+        "d": "Friendly retrieving breed often used as a guide and family dog"
+      },
+      {
+        "w": "German Shepherd",
+        "d": "Versatile herding breed widely used in police and service work"
+      },
+      {
+        "w": "Golden Retriever",
+        "d": "Gentle retrieving breed with a golden coat"
+      },
+      {
+        "w": "English Bulldog",
+        "d": "Stocky companion breed with a pushed-in face and wrinkled skin"
+      },
+      {
+        "w": "Beagle",
+        "d": "Small scent hound with strong nose and merry temperament"
+      },
+      {
+        "w": "Poodle",
+        "d": "Curly-coated breed found in toy, miniature and standard sizes"
+      },
+      {
+        "w": "Rottweiler",
+        "d": "Powerful working breed descended from cattle-driving dogs"
+      },
+      {
+        "w": "Doberman Pinscher",
+        "d": "Sleek guard and companion breed developed in Germany"
+      },
+      {
+        "w": "Boxer",
+        "d": "Energetic German working breed with a square muzzle"
+      },
+      {
+        "w": "Siberian Husky",
+        "d": "Northern sled dog known for endurance and thick coat"
+      },
+      {
+        "w": "Dalmatian",
+        "d": "Spotted breed historically linked to carriage work"
+      },
+      {
+        "w": "Shar Pei",
+        "d": "Chinese breed known for deep wrinkles and blue-black tongue"
+      },
+      {
+        "w": "Chow Chow",
+        "d": "Fluffy Chinese breed with lion-like mane and blue-black tongue"
+      },
+      {
+        "w": "Akita Inu",
+        "d": "Japanese spitz breed known for loyalty and dignity"
+      },
+      {
+        "w": "Shiba Inu",
+        "d": "Small Japanese spitz breed with foxlike expression"
+      },
+      {
+        "w": "Welsh Corgi",
+        "d": "Short-legged herding dog associated with Wales and royal pets"
+      },
+      {
+        "w": "Dachshund",
+        "d": "Long-bodied German badger-hunting breed"
+      },
+      {
+        "w": "Pug",
+        "d": "Small companion dog with wrinkled face and curled tail"
+      },
+      {
+        "w": "Chihuahua",
+        "d": "Tiny Mexican companion breed"
+      },
+      {
+        "w": "Yorkshire Terrier",
+        "d": "Small silky-coated terrier from northern England"
+      },
+      {
+        "w": "Pomeranian",
+        "d": "Small spitz breed with a fluffy coat"
+      },
+      {
+        "w": "Samoyed",
+        "d": "White Arctic spitz breed with a smiling expression"
+      },
+      {
+        "w": "Alaskan Malamute",
+        "d": "Large sled dog bred for hauling heavy loads"
+      },
+      {
+        "w": "Border Collie",
+        "d": "Highly intelligent sheepdog famous for herding skill"
+      },
+      {
+        "w": "Cocker Spaniel",
+        "d": "Sporting breed with long ears and merry temperament"
+      },
+      {
+        "w": "Bernese Mountain Dog",
+        "d": "Large Swiss working dog with tri-color coat"
+      },
+      {
+        "w": "Irish Setter",
+        "d": "Red-coated gundog known for elegance and energy"
+      },
+      {
+        "w": "Weimaraner",
+        "d": "Gray German hunting dog sometimes called the gray ghost"
+      },
+      {
+        "w": "German Shorthaired Pointer",
+        "d": "Versatile hunting breed with short coat"
+      },
+      {
+        "w": "German Wirehaired Pointer",
+        "d": "Rough-coated hunting breed developed in Germany"
+      },
+      {
+        "w": "Giant Schnauzer",
+        "d": "Large working schnauzer breed originally used for driving cattle"
+      },
+      {
+        "w": "Maltese",
+        "d": "Small white toy breed from the Mediterranean"
+      },
+      {
+        "w": "Rhodesian Ridgeback",
+        "d": "African hound with a ridge of hair along the back"
+      },
+      {
+        "w": "Miniature Schnauzer",
+        "d": "Small bearded terrier-like schnauzer breed"
+      },
+      {
+        "w": "Afghan Hound",
+        "d": "Elegant sighthound with long silky coat"
+      }
+    ]
+  },
+  {
+    "name": "Greek & Roman gods",
+    "tags": {
+      "a": "human",
+      "b": "mythology",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Zeus",
+        "d": "Greek king of the gods, thunder and sky"
+      },
+      {
+        "w": "Hera",
+        "d": "Greek goddess of marriage and queen of Olympus"
+      },
+      {
+        "w": "Poseidon",
+        "d": "Greek god of the sea, earthquakes and horses"
+      },
+      {
+        "w": "Hades of the underworld",
+        "d": "Greek ruler of the underworld"
+      },
+      {
+        "w": "Athena",
+        "d": "Greek goddess of wisdom, war strategy and crafts"
+      },
+      {
+        "w": "Apollo",
+        "d": "Greek god of music, prophecy, healing and the sun"
+      },
+      {
+        "w": "Artemis",
+        "d": "Greek goddess of hunting, wilderness and the moon"
+      },
+      {
+        "w": "Ares",
+        "d": "Greek god of war and bloodlust"
+      },
+      {
+        "w": "Aphrodite",
+        "d": "Greek goddess of love and beauty"
+      },
+      {
+        "w": "Hephaestus",
+        "d": "Greek god of smiths, fire and metalwork"
+      },
+      {
+        "w": "Hermes",
+        "d": "Greek messenger god of travelers, trade and thieves"
+      },
+      {
+        "w": "Dionysus",
+        "d": "Greek god of wine, theater and ecstatic ritual"
+      },
+      {
+        "w": "Demeter",
+        "d": "Greek goddess of agriculture and grain"
+      },
+      {
+        "w": "Hestia",
+        "d": "Greek goddess of the hearth and household fire"
+      },
+      {
+        "w": "Persephone",
+        "d": "Greek queen of the underworld and spring return"
+      },
+      {
+        "w": "Eros",
+        "d": "Greek god of desire and erotic love"
+      },
+      {
+        "w": "Pan",
+        "d": "Rustic Greek god of shepherds, flocks and wild music"
+      },
+      {
+        "w": "Nike goddess",
+        "d": "Greek goddess of victory"
+      },
+      {
+        "w": "Nemesis",
+        "d": "Greek goddess of retribution against hubris"
+      },
+      {
+        "w": "Tyche",
+        "d": "Greek goddess of fortune and city luck"
+      },
+      {
+        "w": "Helios",
+        "d": "Greek sun god who drives a solar chariot"
+      },
+      {
+        "w": "Selene",
+        "d": "Greek moon goddess"
+      },
+      {
+        "w": "Eos",
+        "d": "Greek dawn goddess"
+      },
+      {
+        "w": "Prometheus",
+        "d": "Titan who stole fire for humanity"
+      },
+      {
+        "w": "Titan Atlas",
+        "d": "Titan condemned to hold up the sky"
+      },
+      {
+        "w": "Cronus",
+        "d": "Titan father of Zeus and ruler of the Golden Age"
+      },
+      {
+        "w": "Rhea",
+        "d": "Titan mother of the Olympian gods"
+      },
+      {
+        "w": "Uranus",
+        "d": "Primordial sky god and father of the Titans"
+      },
+      {
+        "w": "Gaia",
+        "d": "Primordial earth goddess"
+      },
+      {
+        "w": "Hypnos",
+        "d": "Greek god of sleep"
+      },
+      {
+        "w": "Thanatos",
+        "d": "Greek personification of death"
+      },
+      {
+        "w": "Asclepius",
+        "d": "God of medicine and healing"
+      },
+      {
+        "w": "Janus",
+        "d": "Roman god of doorways, beginnings and transitions"
+      },
+      {
+        "w": "Vesta",
+        "d": "Roman goddess of the hearth"
+      },
+      {
+        "w": "Mars",
+        "d": "Roman god of war and father of Romulus"
+      }
+    ]
+  },
+  {
+    "name": "music genres",
+    "tags": {
+      "a": "human",
+      "b": "music",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Blues",
+        "d": "Genre rooted in African American song forms and blue notes"
+      },
+      {
+        "w": "Jazz",
+        "d": "Improvised music tradition born from blues, ragtime and brass bands"
+      },
+      {
+        "w": "Rock and roll",
+        "d": "1950s popular music built from rhythm and blues and country"
+      },
+      {
+        "w": "Punk rock",
+        "d": "Fast, raw rock style built around simplicity and rebellion"
+      },
+      {
+        "w": "Heavy metal",
+        "d": "Loud guitar-driven genre descended from hard rock"
+      },
+      {
+        "w": "Reggae",
+        "d": "Jamaican genre with offbeat rhythm and bass emphasis"
+      },
+      {
+        "w": "Hip-hop",
+        "d": "Culture and music built around rapping, DJing and beats"
+      },
+      {
+        "w": "Electronic dance music",
+        "d": "Club-oriented music made with electronic instruments"
+      },
+      {
+        "w": "Techno",
+        "d": "Electronic dance genre associated with Detroit and machine rhythm"
+      },
+      {
+        "w": "House music",
+        "d": "Dance genre born in Chicago clubs with four-on-the-floor beats"
+      },
+      {
+        "w": "Trance",
+        "d": "Electronic dance music with long builds and hypnotic melodies"
+      },
+      {
+        "w": "Ambient",
+        "d": "Atmospheric music focused on texture rather than song structure"
+      },
+      {
+        "w": "Funk",
+        "d": "Groove-centered genre with syncopated bass and rhythm guitar"
+      },
+      {
+        "w": "Soul",
+        "d": "Vocal music blending gospel, rhythm and blues"
+      },
+      {
+        "w": "R&B",
+        "d": "Rhythm-and-blues family of groove-based popular music"
+      },
+      {
+        "w": "Country",
+        "d": "American popular genre rooted in folk, fiddle and storytelling"
+      },
+      {
+        "w": "Folk",
+        "d": "Traditional or acoustic song-based music tied to communities"
+      },
+      {
+        "w": "Gospel",
+        "d": "Christian vocal music with roots in Black church traditions"
+      },
+      {
+        "w": "Grunge",
+        "d": "Alternative rock style associated with Seattle in the early 1990s"
+      },
+      {
+        "w": "Indie rock",
+        "d": "Guitar music associated with independent labels and aesthetics"
+      },
+      {
+        "w": "Post-punk",
+        "d": "Experimental music that followed punk’s first explosion"
+      },
+      {
+        "w": "New wave",
+        "d": "Pop-leaning post-punk style with synths and sharp visuals"
+      },
+      {
+        "w": "Synth-pop",
+        "d": "Pop music built around synthesizers and drum machines"
+      },
+      {
+        "w": "Dubstep",
+        "d": "Bass-heavy electronic genre with syncopated drops"
+      },
+      {
+        "w": "Drum and bass",
+        "d": "Fast breakbeat electronic genre with heavy basslines"
+      },
+      {
+        "w": "Ska",
+        "d": "Jamaican upbeat genre that influenced reggae and punk revivals"
+      },
+      {
+        "w": "Bossa nova",
+        "d": "Brazilian style mixing samba rhythm and cool jazz harmony"
+      },
+      {
+        "w": "Grime",
+        "d": "British electronic rap style born in London"
+      },
+      {
+        "w": "Ragtime",
+        "d": "Piano style with syncopated rhythm, popular before jazz"
+      },
+      {
+        "w": "Bebop",
+        "d": "Fast, complex jazz style associated with Parker and Gillespie"
+      },
+      {
+        "w": "Jazz fusion",
+        "d": "Blend of jazz improvisation with rock, funk or electronics"
+      },
+      {
+        "w": "Afrobeat",
+        "d": "West African style associated with Fela Kuti and political groove"
+      },
+      {
+        "w": "Lo-fi hip-hop",
+        "d": "Relaxed beat style with warm, imperfect textures"
+      },
+      {
+        "w": "Trap",
+        "d": "Hip-hop style with hi-hats, booming bass and Southern roots"
+      },
+      {
+        "w": "K-pop",
+        "d": "South Korean pop industry known for groups, choreography and fandoms"
+      }
+    ]
+  },
+  {
+    "name": "jazz legends",
+    "tags": {
+      "a": "human",
+      "b": "music",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Louis Armstrong",
+        "d": "Trumpeter and singer who transformed early jazz soloing"
+      },
+      {
+        "w": "Duke Ellington",
+        "d": "Bandleader and composer of sophisticated jazz suites"
+      },
+      {
+        "w": "Charlie Parker",
+        "d": "Alto saxophonist and central creator of bebop"
+      },
+      {
+        "w": "Dizzy Gillespie",
+        "d": "Trumpeter who helped invent bebop and Afro-Cuban jazz"
+      },
+      {
+        "w": "Miles Davis",
+        "d": "Trumpeter who shaped cool jazz, modal jazz and fusion"
+      },
+      {
+        "w": "John Coltrane",
+        "d": "Saxophonist known for Giant Steps and A Love Supreme"
+      },
+      {
+        "w": "Thelonious Monk",
+        "d": "Pianist-composer with angular melodies and percussive touch"
+      },
+      {
+        "w": "Ella Fitzgerald",
+        "d": "Singer famed for scat improvisation and songbook recordings"
+      },
+      {
+        "w": "Billie Holiday",
+        "d": "Singer whose phrasing made songs sound newly personal"
+      },
+      {
+        "w": "Oscar Peterson",
+        "d": "Virtuosic Canadian jazz pianist"
+      },
+      {
+        "w": "Charles Mingus",
+        "d": "Bassist-composer mixing swing, blues and modernism"
+      },
+      {
+        "w": "Sonny Rollins",
+        "d": "Tenor saxophonist known for thematic improvisation"
+      },
+      {
+        "w": "Herbie Hancock",
+        "d": "Pianist who moved from hard bop to funk and fusion"
+      },
+      {
+        "w": "Dave Brubeck",
+        "d": "Pianist associated with unusual meters and Take Five"
+      },
+      {
+        "w": "Benny Goodman",
+        "d": "Clarinetist and Swing Era bandleader"
+      },
+      {
+        "w": "Count Basie",
+        "d": "Bandleader known for Kansas City swing and spare piano"
+      },
+      {
+        "w": "Art Tatum",
+        "d": "Pianist admired for dazzling technique and harmonic imagination"
+      },
+      {
+        "w": "Lionel Hampton",
+        "d": "Vibraphonist and bandleader of the swing era"
+      },
+      {
+        "w": "Erroll Garner",
+        "d": "Pianist known for Misty and orchestral swing feel"
+      },
+      {
+        "w": "Art Blakey",
+        "d": "Drummer and leader of the Jazz Messengers"
+      },
+      {
+        "w": "Horace Silver",
+        "d": "Pianist-composer associated with hard bop and funky themes"
+      },
+      {
+        "w": "Keith Jarrett",
+        "d": "Pianist known for solo improvisations and the Köln Concert"
+      },
+      {
+        "w": "Max Roach",
+        "d": "Drummer who helped define bebop rhythm"
+      },
+      {
+        "w": "Wayne Shorter",
+        "d": "Saxophonist-composer in Miles Davis’s quintet and Weather Report"
+      },
+      {
+        "w": "Chet Baker",
+        "d": "Trumpeter and singer known for cool-jazz lyricism"
+      },
+      {
+        "w": "Chick Corea",
+        "d": "Keyboardist central to fusion and modern jazz"
+      },
+      {
+        "w": "McCoy Tyner",
+        "d": "Pianist whose quartal harmonies powered Coltrane’s classic group"
+      },
+      {
+        "w": "Clifford Brown",
+        "d": "Trumpeter whose brief career shaped hard bop"
+      },
+      {
+        "w": "Ornette Coleman",
+        "d": "Alto saxophonist who launched free jazz"
+      },
+      {
+        "w": "Sarah Vaughan",
+        "d": "Singer with operatic range and harmonic daring"
+      },
+      {
+        "w": "Nina Simone",
+        "d": "Singer-pianist blending jazz, soul and civil-rights protest"
+      },
+      {
+        "w": "Stan Getz",
+        "d": "Tenor saxophonist who popularized bossa nova in the United States"
+      },
+      {
+        "w": "Wynton Marsalis",
+        "d": "Trumpeter and public advocate for jazz tradition"
+      },
+      {
+        "w": "Cannonball Adderley",
+        "d": "Alto saxophonist known for soulful hard bop"
+      },
+      {
+        "w": "Bill Evans",
+        "d": "Pianist whose trio style reshaped modern jazz harmony"
+      }
+    ]
+  },
+  {
+    "name": "rock frontmen",
+    "tags": {
+      "a": "human",
+      "b": "music",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Mick Jagger",
+        "d": "Rolling Stones singer famous for swagger and stage presence"
+      },
+      {
+        "w": "Robert Plant",
+        "d": "Led Zeppelin vocalist with high blues-rock power"
+      },
+      {
+        "w": "Freddie Mercury",
+        "d": "Queen singer known for range, theatricality and Live Aid"
+      },
+      {
+        "w": "David Bowie",
+        "d": "Rock chameleon of Ziggy Stardust, Berlin and art-pop reinvention"
+      },
+      {
+        "w": "Kurt Cobain",
+        "d": "Nirvana singer-songwriter and reluctant grunge icon"
+      },
+      {
+        "w": "Jim Morrison",
+        "d": "Doors frontman known for poetry, danger and baritone voice"
+      },
+      {
+        "w": "Bruce Springsteen",
+        "d": "American songwriter-performer nicknamed the Boss"
+      },
+      {
+        "w": "Jimi Hendrix",
+        "d": "Guitar revolutionary who also fronted his own Experience"
+      },
+      {
+        "w": "Frank Zappa",
+        "d": "Composer-guitarist leading Mothers of Invention and solo bands"
+      },
+      {
+        "w": "Eddie Vedder",
+        "d": "Pearl Jam singer with a distinctive baritone"
+      },
+      {
+        "w": "Peter Gabriel",
+        "d": "Original Genesis singer later known for theatrical solo work"
+      },
+      {
+        "w": "Roger Waters",
+        "d": "Pink Floyd bassist, lyricist and conceptual force"
+      },
+      {
+        "w": "James Hetfield",
+        "d": "Metallica vocalist and rhythm guitarist"
+      },
+      {
+        "w": "Ozzy Osbourne",
+        "d": "Black Sabbath singer and solo heavy-metal personality"
+      },
+      {
+        "w": "Steven Tyler",
+        "d": "Aerosmith singer known for scarves, screams and showmanship"
+      },
+      {
+        "w": "Lemmy Kilmister",
+        "d": "Motörhead bassist-singer and gravel-voiced rock icon"
+      },
+      {
+        "w": "Bryan Ferry",
+        "d": "Roxy Music singer and elegant art-rock frontman"
+      },
+      {
+        "w": "Ronnie James Dio",
+        "d": "Heavy-metal singer known for powerful fantasy vocals"
+      },
+      {
+        "w": "Lou Reed",
+        "d": "Velvet Underground singer-songwriter and later solo rock figure"
+      },
+      {
+        "w": "John Lennon",
+        "d": "Beatles singer-songwriter and later solo activist"
+      },
+      {
+        "w": "Chris Cornell",
+        "d": "Soundgarden and Audioslave singer with huge vocal range"
+      },
+      {
+        "w": "Thom Yorke",
+        "d": "Radiohead singer known for anxious falsetto and experimentation"
+      },
+      {
+        "w": "Iggy Pop",
+        "d": "Stooges frontman and prototype of punk performance"
+      },
+      {
+        "w": "Marc Bolan",
+        "d": "T. Rex singer and glam-rock star"
+      },
+      {
+        "w": "Neil Young",
+        "d": "Singer-guitarist spanning folk rock, country rock and noise"
+      },
+      {
+        "w": "Axl Rose",
+        "d": "Guns N’ Roses singer known for range and volatility"
+      },
+      {
+        "w": "Alice Cooper",
+        "d": "Shock-rock performer whose name became a band and persona"
+      },
+      {
+        "w": "Anthony Kiedis",
+        "d": "Red Hot Chili Peppers vocalist blending rap and funk rock"
+      },
+      {
+        "w": "Dave Grohl",
+        "d": "Foo Fighters frontman and former Nirvana drummer"
+      },
+      {
+        "w": "Bono",
+        "d": "U2 singer known for arena anthems and activism"
+      },
+      {
+        "w": "Morrissey",
+        "d": "Smiths singer with mordant lyrics and cult following"
+      },
+      {
+        "w": "Ian Curtis",
+        "d": "Joy Division singer whose brief career shaped post-punk"
+      },
+      {
+        "w": "Robert Smith",
+        "d": "The Cure singer-guitarist with iconic gothic look"
+      },
+      {
+        "w": "Debbie Harry",
+        "d": "Blondie singer who bridged punk, pop and new wave"
+      },
+      {
+        "w": "Siouxsie Sioux",
+        "d": "Siouxsie and the Banshees singer central to post-punk and goth"
+      }
+    ]
+  },
+  {
+    "name": "world megacities",
+    "tags": {
+      "a": "human",
+      "b": "geography",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Shanghai",
+        "d": "Chinese megacity and global port at the Yangtze River delta"
+      },
+      {
+        "w": "Mumbai",
+        "d": "Indian financial capital and enormous Arabian Sea metropolis"
+      },
+      {
+        "w": "São Paulo",
+        "d": "Brazilian megacity and economic powerhouse"
+      },
+      {
+        "w": "Lagos",
+        "d": "Nigeria’s largest city and one of Africa’s biggest urban areas"
+      },
+      {
+        "w": "Istanbul",
+        "d": "Transcontinental Turkish metropolis linking Europe and Asia"
+      },
+      {
+        "w": "Karachi",
+        "d": "Pakistan’s largest city and major Arabian Sea port"
+      },
+      {
+        "w": "Chongqing",
+        "d": "Vast Chinese municipality on the upper Yangtze"
+      },
+      {
+        "w": "Guangzhou",
+        "d": "Pearl River Delta megacity and manufacturing hub"
+      },
+      {
+        "w": "Shenzhen",
+        "d": "Chinese tech megacity grown from a special economic zone"
+      },
+      {
+        "w": "Tianjin",
+        "d": "Northern Chinese port city near Beijing"
+      },
+      {
+        "w": "Bangalore",
+        "d": "Indian technology hub also known as Bengaluru"
+      },
+      {
+        "w": "Chennai",
+        "d": "South Indian metropolis on the Bay of Bengal"
+      },
+      {
+        "w": "Hyderabad",
+        "d": "Indian city known for tech, film and historic monuments"
+      },
+      {
+        "w": "Kolkata",
+        "d": "Indian metropolis on the Hooghly River"
+      },
+      {
+        "w": "Lahore",
+        "d": "Pakistani cultural capital in Punjab"
+      },
+      {
+        "w": "Pune",
+        "d": "Indian education and automotive center"
+      },
+      {
+        "w": "Surat",
+        "d": "Indian diamond and textile city"
+      },
+      {
+        "w": "Chengdu",
+        "d": "Sichuan megacity famous for pandas and spicy food"
+      },
+      {
+        "w": "Zhengzhou",
+        "d": "Chinese transport hub in Henan province"
+      },
+      {
+        "w": "Kinshasa",
+        "d": "Capital of DR Congo and one of Africa’s largest cities"
+      },
+      {
+        "w": "Luanda",
+        "d": "Angolan coastal metropolis shaped by oil wealth"
+      },
+      {
+        "w": "Dar es Salaam",
+        "d": "Tanzanian port city and commercial center"
+      },
+      {
+        "w": "Khartoum",
+        "d": "Sudanese city at the meeting of the Niles"
+      },
+      {
+        "w": "Accra",
+        "d": "Ghanaian coastal capital and fast-growing metropolis"
+      },
+      {
+        "w": "Alexandria",
+        "d": "Egyptian Mediterranean city founded by Alexander the Great"
+      },
+      {
+        "w": "Yangon",
+        "d": "Myanmar’s largest city and former capital"
+      },
+      {
+        "w": "Jakarta",
+        "d": "Indonesian megacity facing flooding and subsidence"
+      },
+      {
+        "w": "Lima",
+        "d": "Peruvian coastal capital and Andean-Pacific metropolis"
+      },
+      {
+        "w": "Abidjan",
+        "d": "Ivorian economic capital and one of West Africa’s largest cities"
+      },
+      {
+        "w": "Bogotá",
+        "d": "High-altitude Colombian capital and huge Andean city"
+      },
+      {
+        "w": "Ahmedabad",
+        "d": "Major city in Gujarat known for textiles and industry"
+      },
+      {
+        "w": "Ho Chi Minh City",
+        "d": "Vietnamese metropolis formerly called Saigon"
+      },
+      {
+        "w": "Osaka",
+        "d": "Japanese urban region with commerce and food culture"
+      },
+      {
+        "w": "Nagoya",
+        "d": "Japanese industrial metropolis tied to automobiles"
+      },
+      {
+        "w": "Medellín",
+        "d": "Colombian city known for urban transformation and metro cableways"
+      }
+    ]
+  },
+  {
+    "name": "great rivers of the world",
+    "tags": {
+      "a": "human",
+      "b": "geography",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Amazon River",
+        "d": "South American river with the world’s largest discharge"
+      },
+      {
+        "w": "Nile",
+        "d": "African river traditionally called the world’s longest"
+      },
+      {
+        "w": "Congo River",
+        "d": "Central African river crossing the equator twice"
+      },
+      {
+        "w": "Mekong",
+        "d": "Southeast Asian river flowing through six countries"
+      },
+      {
+        "w": "Ob River",
+        "d": "Major Siberian river flowing into the Arctic Ocean"
+      },
+      {
+        "w": "Paraná",
+        "d": "South American river running through Brazil, Paraguay and Argentina"
+      },
+      {
+        "w": "Lena River",
+        "d": "Siberian river flowing north into the Laptev Sea"
+      },
+      {
+        "w": "Irtysh",
+        "d": "Long tributary system of the Ob"
+      },
+      {
+        "w": "Yangtze",
+        "d": "China’s longest river and site of the Three Gorges Dam"
+      },
+      {
+        "w": "Niger River",
+        "d": "West African river bending through Mali, Niger and Nigeria"
+      },
+      {
+        "w": "Mississippi",
+        "d": "Great river system of the central United States"
+      },
+      {
+        "w": "Amur",
+        "d": "River forming part of the Russia-China border"
+      },
+      {
+        "w": "Murray River",
+        "d": "Australia’s longest river"
+      },
+      {
+        "w": "Volga",
+        "d": "Europe’s longest river, flowing through Russia to the Caspian Sea"
+      },
+      {
+        "w": "Zambezi",
+        "d": "African river famous for Victoria Falls"
+      },
+      {
+        "w": "Mackenzie River",
+        "d": "Major Canadian river flowing to the Arctic Ocean"
+      },
+      {
+        "w": "Tigris",
+        "d": "Mesopotamian river paired with the Euphrates"
+      },
+      {
+        "w": "Euphrates",
+        "d": "River central to ancient Mesopotamia"
+      },
+      {
+        "w": "Missouri River",
+        "d": "Longest river in the United States by source-to-mouth length"
+      },
+      {
+        "w": "Indus",
+        "d": "River central to Pakistan and the ancient Indus civilization"
+      },
+      {
+        "w": "Danube",
+        "d": "European river flowing from Germany to the Black Sea"
+      },
+      {
+        "w": "Columbia River",
+        "d": "Pacific Northwest river with major hydroelectric dams"
+      },
+      {
+        "w": "Rhine",
+        "d": "European river linking Alpine regions to the North Sea"
+      },
+      {
+        "w": "Senegal River",
+        "d": "West African river forming parts of national borders"
+      },
+      {
+        "w": "Colorado River",
+        "d": "River that carved the Grand Canyon"
+      },
+      {
+        "w": "Ganges",
+        "d": "Sacred Indian river flowing to the Bay of Bengal"
+      },
+      {
+        "w": "Brahmaputra",
+        "d": "Himalayan river joining the Ganges delta system"
+      },
+      {
+        "w": "Blue Nile",
+        "d": "Ethiopian tributary that carries much Nile floodwater"
+      },
+      {
+        "w": "Orinoco",
+        "d": "Venezuelan and Colombian river with a vast delta"
+      },
+      {
+        "w": "Yellow River",
+        "d": "Chinese river also called Huang He"
+      },
+      {
+        "w": "Don River",
+        "d": "Russian river flowing to the Sea of Azov"
+      },
+      {
+        "w": "Seine",
+        "d": "French river running through Paris"
+      },
+      {
+        "w": "Limpopo",
+        "d": "Southern African river flowing to the Indian Ocean"
+      },
+      {
+        "w": "Orange River",
+        "d": "Major river of southern Africa"
+      },
+      {
+        "w": "Tobol",
+        "d": "Siberian river and tributary of the Irtysh"
+      }
+    ]
+  },
+  {
+    "name": "big novels & literary cycles",
+    "tags": {
+      "a": "human",
+      "b": "books",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "And Quiet Flows the Don",
+        "d": "Sholokhov epic of Cossacks, revolution and civil war"
+      },
+      {
+        "w": "Buddenbrooks",
+        "d": "Thomas Mann family chronicle of a declining merchant dynasty"
+      },
+      {
+        "w": "Jean-Christophe",
+        "d": "Romain Rolland multi-volume novel about a musician’s life"
+      },
+      {
+        "w": "The Thibaults",
+        "d": "Roger Martin du Gard cycle about a French family before World War I"
+      },
+      {
+        "w": "The Life of Klim Samgin",
+        "d": "Gorky four-volume chronicle of Russian intelligentsia life"
+      },
+      {
+        "w": "The Forsyte Saga",
+        "d": "Galsworthy family saga about property, marriage and class"
+      },
+      {
+        "w": "Finnegans Wake",
+        "d": "Joyce’s notoriously difficult dream-language novel"
+      },
+      {
+        "w": "American Pastoral",
+        "d": "Philip Roth novel about a family and American upheaval"
+      },
+      {
+        "w": "Les Rougon-Macquart",
+        "d": "Zola cycle tracing a family under the Second Empire"
+      },
+      {
+        "w": "Vanity Fair",
+        "d": "Thackeray novel subtitled a novel without a hero"
+      },
+      {
+        "w": "The Human Comedy",
+        "d": "Balzac’s vast connected world of French society"
+      },
+      {
+        "w": "Gargantua and Pantagruel",
+        "d": "Rabelais comic Renaissance cycle of giants and satire"
+      },
+      {
+        "w": "David Copperfield",
+        "d": "Dickens Bildungsroman based partly on his own life"
+      },
+      {
+        "w": "The Red and the Black",
+        "d": "Stendhal novel of ambition, class and Restoration France"
+      },
+      {
+        "w": "Tom Jones",
+        "d": "Fielding comic novel of foundlings, desire and society"
+      },
+      {
+        "w": "Children of the Arbat",
+        "d": "Rybakov cycle about Stalinism and Soviet youth"
+      },
+      {
+        "w": "Clarissa",
+        "d": "Richardson epistolary novel of virtue, coercion and tragedy"
+      },
+      {
+        "w": "The Count of Monte Cristo",
+        "d": "Dumas adventure novel of betrayal, prison and revenge"
+      },
+      {
+        "w": "The Three Musketeers",
+        "d": "Dumas swashbuckling novel of friendship and intrigue"
+      },
+      {
+        "w": "Joseph and His Brothers",
+        "d": "Thomas Mann tetralogy reworking the biblical Joseph story"
+      },
+      {
+        "w": "Kristin Lavransdatter",
+        "d": "Sigrid Undset trilogy about medieval Norway"
+      },
+      {
+        "w": "Middlemarch",
+        "d": "George Eliot panoramic novel of provincial English life"
+      },
+      {
+        "w": "Palliser novels",
+        "d": "Trollope political cycle centered on Parliament and marriage"
+      },
+      {
+        "w": "Manhattan Transfer",
+        "d": "Dos Passos modernist portrait of New York City"
+      },
+      {
+        "w": "U.S.A. Trilogy",
+        "d": "Dos Passos trilogy of American lives, headlines and montage"
+      },
+      {
+        "w": "Fortunata and Jacinta",
+        "d": "Galdós Spanish realist novel of marriage and class"
+      },
+      {
+        "w": "Absalom, Absalom!",
+        "d": "Faulkner novel of Southern memory and family doom"
+      },
+      {
+        "w": "Rabbit Tetralogy",
+        "d": "Updike cycle following Harry Rabbit Angstrom across decades"
+      },
+      {
+        "w": "The Way of All Flesh",
+        "d": "Samuel Butler family novel attacking Victorian hypocrisy"
+      },
+      {
+        "w": "Men of Good Will",
+        "d": "Jules Romains vast cycle about French society"
+      },
+      {
+        "w": "The Charterhouse of Parma",
+        "d": "Stendhal novel of politics, love and Italian intrigue"
+      },
+      {
+        "w": "The Cairo Trilogy",
+        "d": "Naguib Mahfouz family saga set in twentieth-century Cairo"
+      },
+      {
+        "w": "A Dance to the Music of Time",
+        "d": "Anthony Powell twelve-novel cycle of British society"
+      },
+      {
+        "w": "The Balkan Trilogy",
+        "d": "Olivia Manning wartime sequence about expatriates in Europe"
+      },
+      {
+        "w": "Parade’s End",
+        "d": "Ford Madox Ford tetralogy about war, marriage and old England"
+      }
+    ]
+  },
+  {
+    "name": "World War II novels",
+    "tags": {
+      "a": "human",
+      "b": "books",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Life and Fate",
+        "d": "Grossman novel often compared to War and Peace for World War II"
+      },
+      {
+        "w": "A Time to Love and a Time to Die",
+        "d": "Remarque novel about a German soldier on leave"
+      },
+      {
+        "w": "If This Is a Man",
+        "d": "Primo Levi account of survival in Auschwitz"
+      },
+      {
+        "w": "Naked Among Wolves",
+        "d": "Bruno Apitz novel set in Buchenwald"
+      },
+      {
+        "w": "The Pianist",
+        "d": "Władysław Szpilman memoir of survival in occupied Warsaw"
+      },
+      {
+        "w": "Catch-22",
+        "d": "Heller satirical novel about absurdity in the U.S. air war"
+      },
+      {
+        "w": "Hiroshima",
+        "d": "John Hersey reportage about survivors of the atomic bombing"
+      },
+      {
+        "w": "The Thin Red Line",
+        "d": "James Jones novel about combat on Guadalcanal"
+      },
+      {
+        "w": "Night",
+        "d": "Elie Wiesel memoir of deportation and Auschwitz"
+      },
+      {
+        "w": "The Tin Drum WWII",
+        "d": "Grass novel marked by Nazism, war and German memory"
+      },
+      {
+        "w": "The Bridge on the Drina",
+        "d": "Andrić chronicle spanning Balkan history and occupation"
+      },
+      {
+        "w": "The Diary of Anne Frank",
+        "d": "Diary of a Jewish girl hiding in Amsterdam"
+      },
+      {
+        "w": "Kaputt",
+        "d": "Malaparte wartime reportage-novel from European fronts"
+      },
+      {
+        "w": "The Naked and the Dead",
+        "d": "Mailer novel about U.S. soldiers in the Pacific"
+      },
+      {
+        "w": "In the Trenches of Stalingrad",
+        "d": "Nekrasov novel based on front-line experience"
+      },
+      {
+        "w": "The Moment of Truth",
+        "d": "Bogomolov novel about Soviet counterintelligence in 1944"
+      },
+      {
+        "w": "The Notebook",
+        "d": "Ágota Kristóf novel of wartime childhood and brutality"
+      },
+      {
+        "w": "Hot Snow",
+        "d": "Bondarev novel centered on the Battle of Stalingrad"
+      },
+      {
+        "w": "The Unwomanly Face of War",
+        "d": "Alexievich oral history of Soviet women in World War II"
+      },
+      {
+        "w": "The Bridge on the River Kwai",
+        "d": "Boulle novel about prisoners building a railway bridge"
+      },
+      {
+        "w": "Night in Lisbon",
+        "d": "Remarque novel about refugees escaping Nazi Europe"
+      },
+      {
+        "w": "The Last of the Just",
+        "d": "Schwarz-Bart novel about Jewish suffering and memory"
+      },
+      {
+        "w": "Slaughterhouse-Five",
+        "d": "Vonnegut novel linking Dresden, trauma and time travel"
+      },
+      {
+        "w": "Band of Brothers book",
+        "d": "Ambrose account of Easy Company in Europe"
+      },
+      {
+        "w": "Schindler’s List",
+        "d": "Keneally novel about Oskar Schindler saving Jews"
+      },
+      {
+        "w": "Tomorrow Was the War",
+        "d": "Vasiliev story of Soviet youth before the war"
+      },
+      {
+        "w": "The Periodic Table",
+        "d": "Primo Levi book where war memory enters chemical autobiography"
+      },
+      {
+        "w": "The Book Thief",
+        "d": "Zusak novel narrated by Death in Nazi Germany"
+      },
+      {
+        "w": "Mother Night",
+        "d": "Vonnegut novel about propaganda, identity and guilt"
+      },
+      {
+        "w": "The Fox of the Desert",
+        "d": "Book title associated with Rommel and the North African war"
+      },
+      {
+        "w": "All the Light We Cannot See",
+        "d": "Doerr novel about a blind French girl and a German boy"
+      },
+      {
+        "w": "The Kindly Ones",
+        "d": "Littell novel narrated by an SS officer"
+      },
+      {
+        "w": "Suite Française",
+        "d": "Némirovsky novel of France under German occupation"
+      },
+      {
+        "w": "The Caine Mutiny",
+        "d": "Wouk novel about a U.S. Navy ship during World War II"
+      },
+      {
+        "w": "From Here to Eternity",
+        "d": "James Jones novel set around Pearl Harbor"
+      }
+    ]
+  },
+  {
+    "name": "queens & women rulers",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Zenobia",
+        "d": "Palmyrene queen who challenged Roman power in the third century"
+      },
+      {
+        "w": "Tomyris",
+        "d": "Massagetae queen said to have defeated Cyrus the Great"
+      },
+      {
+        "w": "Thatcher premiership",
+        "d": "British premiership associated with privatization and the Falklands War"
+      },
+      {
+        "w": "Angela Merkel",
+        "d": "German chancellor who dominated European politics for sixteen years"
+      },
+      {
+        "w": "Indira Gandhi premiership",
+        "d": "Indian prime minister and central figure of Indian politics"
+      },
+      {
+        "w": "Golda Meir",
+        "d": "Israeli prime minister during the Yom Kippur War"
+      },
+      {
+        "w": "Corazon Aquino",
+        "d": "Philippine president who came to power after the People Power Revolution"
+      },
+      {
+        "w": "Ellen Johnson Sirleaf",
+        "d": "Liberian president and Nobel Peace Prize winner"
+      },
+      {
+        "w": "Boudica",
+        "d": "Iceni queen who led a revolt against Rome"
+      },
+      {
+        "w": "Elizabeth Tudor",
+        "d": "Tudor queen whose reign saw England’s Elizabethan age"
+      },
+      {
+        "w": "Queen Victoria",
+        "d": "British monarch whose reign defined the Victorian era"
+      },
+      {
+        "w": "Catherine the Great",
+        "d": "Russian empress who expanded and westernized the empire"
+      },
+      {
+        "w": "Maria Theresa",
+        "d": "Habsburg ruler and mother of Joseph II and Marie Antoinette"
+      },
+      {
+        "w": "Isabella of Castile",
+        "d": "Queen who sponsored Columbus and helped unify Spain"
+      },
+      {
+        "w": "Sirimavo Bandaranaike",
+        "d": "Sri Lankan politician, the world’s first female prime minister"
+      },
+      {
+        "w": "Vigdís Finnbogadóttir",
+        "d": "Icelandic president and first woman directly elected as head of state"
+      },
+      {
+        "w": "Michelle Bachelet",
+        "d": "Chilean president and former UN human-rights commissioner"
+      },
+      {
+        "w": "Jacinda Ardern",
+        "d": "New Zealand prime minister known for crisis leadership"
+      },
+      {
+        "w": "Sheikh Hasina",
+        "d": "Long-serving Bangladeshi prime minister"
+      },
+      {
+        "w": "Cristina Fernández de Kirchner",
+        "d": "Argentine president and influential Peronist leader"
+      },
+      {
+        "w": "Dilma Rousseff",
+        "d": "Brazilian president and former guerrilla activist"
+      },
+      {
+        "w": "Sanna Marin",
+        "d": "Finnish prime minister associated with a young coalition government"
+      },
+      {
+        "w": "Jóhanna Sigurðardóttir",
+        "d": "Icelandic prime minister and prominent LGBTQ political leader"
+      },
+      {
+        "w": "Pratibha Patil",
+        "d": "First woman president of India"
+      },
+      {
+        "w": "Tamar the Great",
+        "d": "Medieval Georgian queen during a golden age"
+      },
+      {
+        "w": "Nzinga Mbande",
+        "d": "Queen of Ndongo and Matamba resisting Portuguese power"
+      },
+      {
+        "w": "Empress Theodora",
+        "d": "Byzantine empress and powerful partner of Justinian"
+      },
+      {
+        "w": "Rani Lakshmibai",
+        "d": "Queen of Jhansi and symbol of the 1857 uprising"
+      },
+      {
+        "w": "Arwa al-Sulayhi",
+        "d": "Yemeni queen who ruled in her own name"
+      },
+      {
+        "w": "Empress Matilda",
+        "d": "English claimant whose civil war shaped the Plantagenet succession"
+      },
+      {
+        "w": "Queen Liliʻuokalani",
+        "d": "Last sovereign monarch of Hawaii"
+      },
+      {
+        "w": "Eleanor of Aquitaine",
+        "d": "Queen of France and England, major medieval political figure"
+      },
+      {
+        "w": "Roxelana",
+        "d": "Ottoman imperial consort and political actor as Hürrem Sultan"
+      },
+      {
+        "w": "Wu Zetian",
+        "d": "Only woman to rule China as emperor in her own name"
+      },
+      {
+        "w": "Amina of Zazzau",
+        "d": "Hausa warrior queen remembered in legends of Zazzau"
+      }
+    ]
+  },
+  {
+    "name": "women writers",
+    "tags": {
+      "a": "human",
+      "b": "books",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Jane Austen",
+        "d": "English novelist of irony, courtship and social observation"
+      },
+      {
+        "w": "Charlotte Brontë",
+        "d": "Author of Jane Eyre and major Victorian novelist"
+      },
+      {
+        "w": "Virginia Woolf",
+        "d": "Modernist writer of Mrs Dalloway and To the Lighthouse"
+      },
+      {
+        "w": "Anna Akhmatova",
+        "d": "Russian poet of Acmeism, grief and Soviet terror"
+      },
+      {
+        "w": "Marina Tsvetaeva",
+        "d": "Russian poet known for intensity and exile"
+      },
+      {
+        "w": "Agatha Christie",
+        "d": "Crime writer who created Poirot and Miss Marple"
+      },
+      {
+        "w": "Doris May Lessing",
+        "d": "Nobel-winning author of The Golden Notebook"
+      },
+      {
+        "w": "Alice Munro",
+        "d": "Canadian master of the short story"
+      },
+      {
+        "w": "Margaret Atwood",
+        "d": "Canadian author of The Handmaid’s Tale and many novels"
+      },
+      {
+        "w": "Sappho",
+        "d": "Ancient Greek lyric poet from Lesbos"
+      },
+      {
+        "w": "George Eliot",
+        "d": "Pen name of Mary Ann Evans, author of Middlemarch"
+      },
+      {
+        "w": "Sylvia Plath",
+        "d": "Poet and novelist of Ariel and The Bell Jar"
+      },
+      {
+        "w": "Marguerite Duras",
+        "d": "French writer and filmmaker of The Lover"
+      },
+      {
+        "w": "Emily Dickinson",
+        "d": "American poet of compressed, elliptical verse"
+      },
+      {
+        "w": "Ursula K. Le Guin",
+        "d": "Science-fiction and fantasy author of Earthsea and The Left Hand of Darkness"
+      },
+      {
+        "w": "Anaïs Nin",
+        "d": "Writer known for diaries and literary erotica"
+      },
+      {
+        "w": "Mary Oliver",
+        "d": "American poet of nature and attention"
+      },
+      {
+        "w": "Zora Neale Hurston",
+        "d": "Harlem Renaissance writer of Their Eyes Were Watching God"
+      },
+      {
+        "w": "Mary Shelley",
+        "d": "Author of Frankenstein"
+      },
+      {
+        "w": "Audre Lorde",
+        "d": "Poet and essayist of Black feminism and identity"
+      },
+      {
+        "w": "Chimamanda Ngozi Adichie",
+        "d": "Nigerian novelist of Half of a Yellow Sun and Americanah"
+      },
+      {
+        "w": "Maya Angelou",
+        "d": "Poet and memoirist of I Know Why the Caged Bird Sings"
+      },
+      {
+        "w": "Harper Lee",
+        "d": "Author of To Kill a Mockingbird"
+      },
+      {
+        "w": "Svetlana Alexievich",
+        "d": "Belarusian Nobel laureate known for documentary oral histories"
+      },
+      {
+        "w": "Teffi",
+        "d": "Russian émigré writer and humorist"
+      },
+      {
+        "w": "Toni Morrison novels",
+        "d": "Nobel-winning body of work including Beloved and Song of Solomon"
+      },
+      {
+        "w": "J. K. Rowling",
+        "d": "Author of the Harry Potter series"
+      },
+      {
+        "w": "Annie Ernaux",
+        "d": "French Nobel laureate known for autobiographical social writing"
+      },
+      {
+        "w": "Clarice Lispector",
+        "d": "Brazilian modernist novelist of inner life and language"
+      },
+      {
+        "w": "Zadie Smith",
+        "d": "British novelist of White Teeth and NW"
+      },
+      {
+        "w": "Isabel Allende",
+        "d": "Chilean writer of The House of the Spirits"
+      },
+      {
+        "w": "Herta Müller",
+        "d": "Nobel-winning Romanian-German writer of dictatorship and exile"
+      },
+      {
+        "w": "Elena Ferrante",
+        "d": "Italian novelist known for the Neapolitan Quartet"
+      },
+      {
+        "w": "Flannery O’Connor",
+        "d": "American writer of Southern Gothic stories"
+      },
+      {
+        "w": "Octavia Butler",
+        "d": "Speculative-fiction author of Kindred and Parable of the Sower"
+      }
+    ]
+  },
+  {
+    "name": "U.S. states",
+    "tags": {
+      "a": "human",
+      "b": "geography",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Alabama",
+        "d": "Southern U.S. state with capital Montgomery"
+      },
+      {
+        "w": "Alaska",
+        "d": "Largest U.S. state by area, separated from the mainland"
+      },
+      {
+        "w": "Arizona",
+        "d": "Southwestern state containing much of the Grand Canyon"
+      },
+      {
+        "w": "Arkansas",
+        "d": "Southern state crossed by the Ozarks and Mississippi lowlands"
+      },
+      {
+        "w": "Colorado",
+        "d": "Mountain state known for the Rockies"
+      },
+      {
+        "w": "Connecticut",
+        "d": "New England state between New York and Rhode Island"
+      },
+      {
+        "w": "Delaware",
+        "d": "Small Mid-Atlantic state, first to ratify the Constitution"
+      },
+      {
+        "w": "Florida",
+        "d": "Peninsula state known for beaches, wetlands and Miami"
+      },
+      {
+        "w": "Georgia",
+        "d": "Southern state with Atlanta as capital"
+      },
+      {
+        "w": "Hawaii",
+        "d": "Pacific island state and former kingdom"
+      },
+      {
+        "w": "Idaho",
+        "d": "Mountain West state known for potatoes and wilderness"
+      },
+      {
+        "w": "Illinois",
+        "d": "Midwestern state with Chicago as its largest city"
+      },
+      {
+        "w": "Indiana",
+        "d": "Midwestern state known for Indianapolis and auto racing"
+      },
+      {
+        "w": "Iowa",
+        "d": "Midwestern farming state and early presidential caucuses"
+      },
+      {
+        "w": "Kansas",
+        "d": "Great Plains state associated with wheat and prairie"
+      },
+      {
+        "w": "Kentucky",
+        "d": "State known for bourbon, horses and bluegrass"
+      },
+      {
+        "w": "Louisiana",
+        "d": "Gulf Coast state with French, Spanish and Creole heritage"
+      },
+      {
+        "w": "Maine",
+        "d": "Northeastern state known for coastline and lobster"
+      },
+      {
+        "w": "Maryland",
+        "d": "Mid-Atlantic state around Chesapeake Bay"
+      },
+      {
+        "w": "Massachusetts",
+        "d": "New England state central to colonial and revolutionary history"
+      },
+      {
+        "w": "Michigan",
+        "d": "Great Lakes state shaped by automobiles"
+      },
+      {
+        "w": "Minnesota",
+        "d": "Northern state known as the Land of 10,000 Lakes"
+      },
+      {
+        "w": "State of Mississippi",
+        "d": "Southern state named for the Mississippi River"
+      },
+      {
+        "w": "Missouri",
+        "d": "State where the Midwest meets the South"
+      },
+      {
+        "w": "Montana",
+        "d": "Big Sky Country in the northern Rockies"
+      },
+      {
+        "w": "Nebraska",
+        "d": "Great Plains state with capital Lincoln"
+      },
+      {
+        "w": "Nevada",
+        "d": "Desert state known for Las Vegas and mining"
+      },
+      {
+        "w": "New Hampshire",
+        "d": "New England state with the White Mountains"
+      },
+      {
+        "w": "New Mexico",
+        "d": "Southwestern state with Pueblo, Hispanic and desert cultures"
+      },
+      {
+        "w": "North Carolina",
+        "d": "Atlantic state from Outer Banks to Blue Ridge"
+      },
+      {
+        "w": "Ohio",
+        "d": "Midwestern state with major cities on Lake Erie and the Ohio River"
+      },
+      {
+        "w": "Oregon",
+        "d": "Pacific Northwest state of forests, coast and high desert"
+      },
+      {
+        "w": "Pennsylvania",
+        "d": "State central to early U.S. history and industry"
+      },
+      {
+        "w": "Texas",
+        "d": "Large southern state with distinct former-republic identity"
+      },
+      {
+        "w": "Washington State",
+        "d": "Pacific Northwest state with Seattle and the Cascades"
+      }
+    ]
+  },
+  {
+    "name": "U.S. national parks",
+    "tags": {
+      "a": "human",
+      "b": "geography",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Yellowstone National Park",
+        "d": "First U.S. national park, famous for geysers and wildlife"
+      },
+      {
+        "w": "Yosemite",
+        "d": "Sierra Nevada park known for granite cliffs and waterfalls"
+      },
+      {
+        "w": "Grand Canyon",
+        "d": "Arizona park centered on the vast Colorado River canyon"
+      },
+      {
+        "w": "Zion",
+        "d": "Utah canyon park with red cliffs and narrow hikes"
+      },
+      {
+        "w": "Glacier",
+        "d": "Montana park with alpine scenery and shrinking glaciers"
+      },
+      {
+        "w": "Everglades",
+        "d": "Florida wetland park of sawgrass, mangroves and alligators"
+      },
+      {
+        "w": "Sequoia",
+        "d": "California park protecting giant sequoia groves"
+      },
+      {
+        "w": "Olympic",
+        "d": "Washington park combining rainforest, mountains and coast"
+      },
+      {
+        "w": "Acadia",
+        "d": "Maine coastal park with granite peaks and Atlantic views"
+      },
+      {
+        "w": "Joshua Tree",
+        "d": "Desert park where Mojave and Colorado ecosystems meet"
+      },
+      {
+        "w": "Denali",
+        "d": "Alaska park containing North America’s highest mountain"
+      },
+      {
+        "w": "Mount Rainier",
+        "d": "Washington volcano park centered on a glaciated peak"
+      },
+      {
+        "w": "Crater Lake",
+        "d": "Oregon park built around a deep blue volcanic lake"
+      },
+      {
+        "w": "Bryce Canyon",
+        "d": "Utah park famous for hoodoo rock formations"
+      },
+      {
+        "w": "Arches",
+        "d": "Utah park with thousands of natural stone arches"
+      },
+      {
+        "w": "Badlands",
+        "d": "South Dakota park of eroded buttes and fossil beds"
+      },
+      {
+        "w": "Big Bend",
+        "d": "Texas park along the Rio Grande and Chisos Mountains"
+      },
+      {
+        "w": "Great Smoky Mountains",
+        "d": "Appalachian park known for biodiversity and misty ridges"
+      },
+      {
+        "w": "Hawaiʻi Volcanoes",
+        "d": "Park protecting active volcanic landscapes on Hawaii Island"
+      },
+      {
+        "w": "Saguaro",
+        "d": "Arizona park named for giant cactus forests"
+      },
+      {
+        "w": "Wind Cave",
+        "d": "South Dakota park with a complex cave and prairie wildlife"
+      },
+      {
+        "w": "Petrified Forest",
+        "d": "Arizona park with fossilized trees and painted desert"
+      },
+      {
+        "w": "Mammoth Cave",
+        "d": "Kentucky park containing the world’s longest known cave system"
+      },
+      {
+        "w": "Redwood National Park",
+        "d": "Northern California park protecting coast redwoods"
+      },
+      {
+        "w": "Shenandoah",
+        "d": "Virginia park along the Blue Ridge Mountains"
+      },
+      {
+        "w": "Rocky Mountain",
+        "d": "Colorado park of alpine tundra and high peaks"
+      },
+      {
+        "w": "Grand Teton",
+        "d": "Wyoming park with dramatic mountain skyline"
+      },
+      {
+        "w": "Mesa Verde National Park",
+        "d": "Colorado park protecting Ancestral Pueblo cliff dwellings"
+      },
+      {
+        "w": "Lassen Volcanic",
+        "d": "California park with volcanic domes, fumaroles and hot springs"
+      },
+      {
+        "w": "Congaree",
+        "d": "South Carolina park preserving old-growth floodplain forest"
+      },
+      {
+        "w": "Canyonlands",
+        "d": "Utah park of canyons carved by the Colorado and Green rivers"
+      },
+      {
+        "w": "Hot Springs",
+        "d": "Arkansas park built around historic thermal baths"
+      },
+      {
+        "w": "Pinnacles",
+        "d": "California park of volcanic spires and condor habitat"
+      },
+      {
+        "w": "Indiana Dunes",
+        "d": "Lake Michigan park of beaches, dunes and wetlands"
+      },
+      {
+        "w": "Death Valley",
+        "d": "Desert park with extreme heat, salt flats and mountains"
+      }
+    ]
+  },
+  {
+    "name": "American brands",
+    "tags": {
+      "a": "geek",
+      "b": "business",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Coca-Cola",
+        "d": "Atlanta soft-drink brand and global advertising icon"
+      },
+      {
+        "w": "Boeing",
+        "d": "American aerospace company known for commercial jets"
+      },
+      {
+        "w": "Harley-Davidson",
+        "d": "Motorcycle brand associated with cruisers and biker culture"
+      },
+      {
+        "w": "Levi’s",
+        "d": "Denim brand famous for blue jeans"
+      },
+      {
+        "w": "Zippo",
+        "d": "Pennsylvania lighter brand with a windproof metal case"
+      },
+      {
+        "w": "Colt",
+        "d": "Firearms maker associated with revolvers and frontier mythology"
+      },
+      {
+        "w": "Winchester",
+        "d": "Firearms brand tied to lever-action rifles"
+      },
+      {
+        "w": "Budweiser",
+        "d": "American beer brand with Clydesdale advertising"
+      },
+      {
+        "w": "Jack Daniel’s",
+        "d": "Tennessee whiskey brand from Lynchburg"
+      },
+      {
+        "w": "Nike Inc.",
+        "d": "Sportswear giant built around the swoosh logo"
+      },
+      {
+        "w": "Marlboro",
+        "d": "Cigarette brand famous for cowboy advertising"
+      },
+      {
+        "w": "McDonald’s",
+        "d": "Fast-food chain symbolized by the Golden Arches"
+      },
+      {
+        "w": "Apple",
+        "d": "California technology company behind iPhone and Mac"
+      },
+      {
+        "w": "Walmart",
+        "d": "Retail giant founded by Sam Walton"
+      },
+      {
+        "w": "Pepsi",
+        "d": "Soft-drink brand and Coca-Cola rival"
+      },
+      {
+        "w": "Amazon",
+        "d": "E-commerce and cloud-computing company founded by Jeff Bezos"
+      },
+      {
+        "w": "Intel",
+        "d": "American semiconductor company central to microprocessor history"
+      },
+      {
+        "w": "Gillette",
+        "d": "Razor and shaving-products brand"
+      },
+      {
+        "w": "Heinz",
+        "d": "Food brand famous for ketchup"
+      },
+      {
+        "w": "Tabasco",
+        "d": "Hot sauce brand from Avery Island, Louisiana"
+      },
+      {
+        "w": "IBM",
+        "d": "American technology company central to mainframes and enterprise computing"
+      },
+      {
+        "w": "Colgate",
+        "d": "Oral-care brand known for toothpaste"
+      },
+      {
+        "w": "Google",
+        "d": "Search and advertising company from Silicon Valley"
+      },
+      {
+        "w": "Microsoft",
+        "d": "Software company behind Windows and Office"
+      },
+      {
+        "w": "Starbucks",
+        "d": "Coffee chain founded in Seattle"
+      },
+      {
+        "w": "3M",
+        "d": "Industrial company known for Post-it Notes and materials"
+      },
+      {
+        "w": "Pfizer",
+        "d": "Pharmaceutical company known for major vaccines and medicines"
+      },
+      {
+        "w": "New Balance",
+        "d": "American athletic-footwear brand based in Boston"
+      },
+      {
+        "w": "Ray-Ban",
+        "d": "Eyewear brand famous for Aviator and Wayfarer frames"
+      },
+      {
+        "w": "Motorola",
+        "d": "Telecommunications brand linked to early mobile phones"
+      },
+      {
+        "w": "Wrigley’s",
+        "d": "Chewing-gum brand founded in Chicago"
+      },
+      {
+        "w": "FedEx Corporation",
+        "d": "Delivery company known for overnight shipping"
+      },
+      {
+        "w": "Disney Company",
+        "d": "Entertainment company built around films, parks and media"
+      },
+      {
+        "w": "Procter & Gamble",
+        "d": "Consumer-goods company behind many household brands"
+      },
+      {
+        "w": "Blue Origin",
+        "d": "American space company founded by Jeff Bezos"
+      }
+    ]
+  },
+  {
+    "name": "American music genres",
+    "tags": {
+      "a": "human",
+      "b": "music",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Delta blues",
+        "d": "Acoustic blues style associated with the Mississippi Delta"
+      },
+      {
+        "w": "Chicago blues",
+        "d": "Electric urban blues shaped by migration to Chicago"
+      },
+      {
+        "w": "New Orleans jazz",
+        "d": "Early jazz style rooted in brass bands and collective improvisation"
+      },
+      {
+        "w": "Motown sound",
+        "d": "Polished Detroit soul-pop style from Motown Records"
+      },
+      {
+        "w": "Doo-wop",
+        "d": "Vocal-harmony style with nonsense syllables and street-corner roots"
+      },
+      {
+        "w": "Bluegrass",
+        "d": "Fast acoustic string-band music linked to Appalachia"
+      },
+      {
+        "w": "Cajun music",
+        "d": "Louisiana French dance music with fiddle and accordion"
+      },
+      {
+        "w": "Louisiana zydeco",
+        "d": "Creole dance music from Louisiana with accordion and washboard"
+      },
+      {
+        "w": "Honky-tonk",
+        "d": "Country-bar style with steel guitar and heartbreak lyrics"
+      },
+      {
+        "w": "Nashville sound",
+        "d": "Smooth country-pop production style of the late 1950s onward"
+      },
+      {
+        "w": "Western swing",
+        "d": "Dance music blending country fiddles and big-band swing"
+      },
+      {
+        "w": "Surf rock",
+        "d": "Guitar-driven style associated with California beaches"
+      },
+      {
+        "w": "Folk rock",
+        "d": "Electric folk style popularized in the 1960s"
+      },
+      {
+        "w": "Psychedelic rock",
+        "d": "1960s rock linked to acid culture and extended sound"
+      },
+      {
+        "w": "Detroit techno",
+        "d": "Electronic dance style created by Detroit producers"
+      },
+      {
+        "w": "Philadelphia soul",
+        "d": "Smooth orchestrated soul style from Philadelphia"
+      },
+      {
+        "w": "Southern soul",
+        "d": "Gritty soul style associated with Memphis and Muscle Shoals"
+      },
+      {
+        "w": "G-funk",
+        "d": "West Coast hip-hop style with synths and laid-back grooves"
+      },
+      {
+        "w": "Crunk",
+        "d": "Southern hip-hop club style with shouted hooks"
+      },
+      {
+        "w": "Atlanta trap",
+        "d": "Trap style rooted in Atlanta hip-hop production"
+      },
+      {
+        "w": "Drill music",
+        "d": "Dark rap style that developed in Chicago and later spread"
+      },
+      {
+        "w": "Old-school hip-hop",
+        "d": "Early hip-hop style before the genre’s commercial explosion"
+      },
+      {
+        "w": "Rockabilly",
+        "d": "Early rock style mixing country twang and rhythm-and-blues drive"
+      },
+      {
+        "w": "Hardcore punk",
+        "d": "Fast aggressive punk style that grew in U.S. scenes"
+      },
+      {
+        "w": "No wave",
+        "d": "Experimental downtown New York reaction against new wave polish"
+      },
+      {
+        "w": "Math rock",
+        "d": "Guitar music using odd meters and intricate rhythms"
+      },
+      {
+        "w": "Emo",
+        "d": "Rock style focused on emotional intensity and confessional lyrics"
+      },
+      {
+        "w": "Skate punk",
+        "d": "Fast punk style tied to skateboarding culture"
+      },
+      {
+        "w": "Americana",
+        "d": "Roots-music umbrella mixing folk, country, blues and rock"
+      },
+      {
+        "w": "Neo-soul",
+        "d": "Modern soul style with jazz, hip-hop and R&B influences"
+      },
+      {
+        "w": "Boom bap",
+        "d": "Hip-hop production style with hard drums and chopped samples"
+      },
+      {
+        "w": "Hyphy",
+        "d": "Bay Area hip-hop style of energetic beats and slang"
+      },
+      {
+        "w": "Chopped and screwed",
+        "d": "Houston remix style slowing tracks into woozy textures"
+      },
+      {
+        "w": "Minimal techno",
+        "d": "Stripped-down electronic dance style with repetitive structures"
+      },
+      {
+        "w": "Garage rock revival",
+        "d": "Raw early-2000s guitar-rock wave with retro energy"
+      }
+    ]
+  },
+  {
+    "name": "NHL teams",
+    "tags": {
+      "a": "human",
+      "b": "sport",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Montreal Canadiens",
+        "d": "Historic NHL team with the league’s most Stanley Cups"
+      },
+      {
+        "w": "Toronto Maple Leafs",
+        "d": "Original Six team and Toronto hockey institution"
+      },
+      {
+        "w": "Boston Bruins",
+        "d": "Original Six team known for black-and-gold colors"
+      },
+      {
+        "w": "Chicago Blackhawks",
+        "d": "Original Six franchise from Chicago"
+      },
+      {
+        "w": "Detroit Red Wings",
+        "d": "Original Six team nicknamed Hockeytown’s club"
+      },
+      {
+        "w": "New York Rangers",
+        "d": "Original Six franchise playing at Madison Square Garden"
+      },
+      {
+        "w": "Pittsburgh Penguins",
+        "d": "NHL team associated with Lemieux and Crosby"
+      },
+      {
+        "w": "Tampa Bay Lightning",
+        "d": "Florida team with recent Stanley Cup success"
+      },
+      {
+        "w": "Edmonton Oilers",
+        "d": "Alberta franchise associated with Wayne Gretzky and Connor McDavid"
+      },
+      {
+        "w": "Colorado Avalanche",
+        "d": "Denver team that relocated from Quebec"
+      },
+      {
+        "w": "Washington Capitals",
+        "d": "D.C. franchise long led by Alex Ovechkin"
+      },
+      {
+        "w": "Vegas Golden Knights",
+        "d": "Expansion team that won a Cup quickly"
+      },
+      {
+        "w": "Florida Panthers",
+        "d": "South Florida team based in Sunrise"
+      },
+      {
+        "w": "Carolina Hurricanes",
+        "d": "Raleigh team formerly known as the Hartford Whalers"
+      },
+      {
+        "w": "Dallas Stars",
+        "d": "Texas franchise that moved from Minnesota"
+      },
+      {
+        "w": "St. Louis Blues",
+        "d": "Missouri team named for the city’s music heritage"
+      },
+      {
+        "w": "Minnesota Wild",
+        "d": "Twin Cities team replacing the departed North Stars"
+      },
+      {
+        "w": "Nashville Predators",
+        "d": "Tennessee franchise with a saber-toothed cat logo"
+      },
+      {
+        "w": "Vancouver Canucks",
+        "d": "British Columbia team with a long-suffering fan base"
+      },
+      {
+        "w": "Calgary Flames",
+        "d": "Alberta team that moved from Atlanta"
+      },
+      {
+        "w": "Winnipeg Jets",
+        "d": "Manitoba franchise name revived after the Thrashers moved"
+      },
+      {
+        "w": "Ottawa Senators",
+        "d": "Canadian capital team named for an older franchise"
+      },
+      {
+        "w": "Seattle Kraken",
+        "d": "Pacific Northwest expansion team with nautical branding"
+      },
+      {
+        "w": "New Jersey Devils",
+        "d": "Franchise named for a local folklore creature"
+      },
+      {
+        "w": "Anaheim Ducks",
+        "d": "California team born from a Disney movie brand"
+      },
+      {
+        "w": "New York Islanders",
+        "d": "Long Island team with a 1980s dynasty"
+      },
+      {
+        "w": "Philadelphia Flyers",
+        "d": "Pennsylvania team known for Broad Street Bullies history"
+      },
+      {
+        "w": "San Jose Sharks",
+        "d": "Bay Area team with teal colors"
+      },
+      {
+        "w": "Buffalo Sabres",
+        "d": "Upstate New York team with crossed-swords logo"
+      },
+      {
+        "w": "Los Angeles Kings",
+        "d": "California team with Gretzky-era glamour and later Cups"
+      },
+      {
+        "w": "Columbus Blue Jackets",
+        "d": "Ohio team named for Civil War history"
+      },
+      {
+        "w": "Utah Mammoth",
+        "d": "Utah NHL franchise name adopted after relocation"
+      },
+      {
+        "w": "Quebec Nordiques",
+        "d": "Former NHL team that became the Colorado Avalanche"
+      },
+      {
+        "w": "Hartford Whalers",
+        "d": "Former NHL team remembered for its logo and Brass Bonanza"
+      },
+      {
+        "w": "Atlanta Thrashers",
+        "d": "Former NHL franchise that became the Winnipeg Jets"
+      }
+    ]
+  },
+  {
+    "name": "San Francisco",
+    "tags": {
+      "a": "human",
+      "b": "geography",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Alcatraz Island",
+        "d": "Former prison island in San Francisco Bay"
+      },
+      {
+        "w": "Chinatown SF",
+        "d": "Historic Chinese-American neighborhood near downtown"
+      },
+      {
+        "w": "Fisherman’s Wharf",
+        "d": "Waterfront tourist district with seafood and piers"
+      },
+      {
+        "w": "Haight-Ashbury",
+        "d": "Neighborhood tied to 1960s counterculture and hippies"
+      },
+      {
+        "w": "Mission District",
+        "d": "Neighborhood known for murals, burritos and Latino culture"
+      },
+      {
+        "w": "San Francisco cable car",
+        "d": "Historic hill-climbing transit symbol of San Francisco"
+      },
+      {
+        "w": "Lombard Street",
+        "d": "Crooked street famous for tight hairpin turns"
+      },
+      {
+        "w": "Painted Ladies",
+        "d": "Victorian houses facing Alamo Square"
+      },
+      {
+        "w": "Karl the Fog",
+        "d": "Nickname for San Francisco’s recurring fog"
+      },
+      {
+        "w": "Twin Peaks hills",
+        "d": "Hilltop viewpoint over the city"
+      },
+      {
+        "w": "Coit Tower",
+        "d": "Art Deco tower with murals on Telegraph Hill"
+      },
+      {
+        "w": "Dolores Park",
+        "d": "Popular Mission District park with skyline views"
+      },
+      {
+        "w": "Presidio",
+        "d": "Former military post turned national park site"
+      },
+      {
+        "w": "Pier 39",
+        "d": "Tourist pier known for sea lions"
+      },
+      {
+        "w": "Mission Dolores",
+        "d": "Historic Spanish mission that gave the Mission District its name"
+      },
+      {
+        "w": "Sourdough bread",
+        "d": "Tangy bread strongly associated with San Francisco bakeries"
+      },
+      {
+        "w": "Duboce Triangle",
+        "d": "Small neighborhood near Castro and Lower Haight"
+      },
+      {
+        "w": "Castro District",
+        "d": "Historic LGBTQ neighborhood"
+      },
+      {
+        "w": "Noe Valley",
+        "d": "Residential neighborhood known for Victorian homes and hills"
+      },
+      {
+        "w": "SoMa",
+        "d": "South of Market district of tech offices, clubs and warehouses"
+      },
+      {
+        "w": "Civic Center SF",
+        "d": "District containing city hall and major cultural institutions"
+      },
+      {
+        "w": "Embarcadero",
+        "d": "Waterfront boulevard along the eastern edge of the city"
+      },
+      {
+        "w": "Golden Gate Bridge",
+        "d": "Suspension bridge and defining symbol of San Francisco"
+      },
+      {
+        "w": "Bay Bridge",
+        "d": "Bridge connecting San Francisco and Oakland"
+      },
+      {
+        "w": "Cesar Chavez Street",
+        "d": "Major east-west street named for the labor leader"
+      },
+      {
+        "w": "Mission murals",
+        "d": "Public mural tradition on walls and alleys in the Mission"
+      },
+      {
+        "w": "Tenderloin",
+        "d": "Dense central neighborhood with nightlife and social challenges"
+      },
+      {
+        "w": "Glen Park",
+        "d": "Neighborhood near a canyon park and transit hub"
+      },
+      {
+        "w": "Sutro Tower",
+        "d": "Tall red-and-white broadcast tower visible across the city"
+      },
+      {
+        "w": "Sutro Baths",
+        "d": "Ruins of a nineteenth-century bathhouse by the ocean"
+      },
+      {
+        "w": "Outer Sunset",
+        "d": "Foggy neighborhood by Ocean Beach"
+      },
+      {
+        "w": "Clipper Card",
+        "d": "Bay Area transit payment card"
+      },
+      {
+        "w": "Dogpatch",
+        "d": "Former industrial waterfront neighborhood turned mixed-use district"
+      },
+      {
+        "w": "Hayes Valley",
+        "d": "Central neighborhood known for shops and restaurants"
+      },
+      {
+        "w": "Golden Gate Park",
+        "d": "Large urban park stretching toward the Pacific"
+      }
+    ]
+  },
+  {
+    "name": "California",
+    "tags": {
+      "a": "human",
+      "b": "geography",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Giant sequoia",
+        "d": "Massive Sierra Nevada tree species among the world’s largest organisms"
+      },
+      {
+        "w": "Yosemite Valley",
+        "d": "Granite valley with cliffs, waterfalls and meadows"
+      },
+      {
+        "w": "Mojave Desert",
+        "d": "Arid desert region shaping much of Southern California"
+      },
+      {
+        "w": "Big Sur",
+        "d": "Dramatic coastline along California Highway 1"
+      },
+      {
+        "w": "Venice Beach",
+        "d": "Los Angeles beach district with boardwalk culture"
+      },
+      {
+        "w": "Malibu",
+        "d": "Coastal city associated with beaches and celebrity homes"
+      },
+      {
+        "w": "Hollywood",
+        "d": "Los Angeles district and symbol of the film industry"
+      },
+      {
+        "w": "Hayward Fault",
+        "d": "Bay Area fault considered a major earthquake risk"
+      },
+      {
+        "w": "Gold Rush",
+        "d": "1848-49 rush that transformed California’s population and economy"
+      },
+      {
+        "w": "California grizzly",
+        "d": "Extinct state-symbol bear shown on the state flag"
+      },
+      {
+        "w": "Joshua Tree landscape",
+        "d": "Mojave desert landscape of yucca trees and boulders"
+      },
+      {
+        "w": "Lake Tahoe",
+        "d": "Alpine lake on the California-Nevada border"
+      },
+      {
+        "w": "Mount Shasta",
+        "d": "Volcanic peak in Northern California"
+      },
+      {
+        "w": "Sierra Nevada",
+        "d": "Mountain range containing Yosemite and high granite peaks"
+      },
+      {
+        "w": "Napa Valley",
+        "d": "Famous wine region north of San Francisco Bay"
+      },
+      {
+        "w": "Freeway culture",
+        "d": "Car-centered transportation pattern associated with Southern California"
+      },
+      {
+        "w": "Griffith Observatory",
+        "d": "Los Angeles landmark overlooking the city"
+      },
+      {
+        "w": "Ballot initiative",
+        "d": "California direct-democracy mechanism for voter propositions"
+      },
+      {
+        "w": "Coast redwood forests",
+        "d": "Tall coastal forests of Northern California"
+      },
+      {
+        "w": "Monterey Bay",
+        "d": "Central Coast bay known for marine life"
+      },
+      {
+        "w": "Carpinteria",
+        "d": "Small coastal city near Santa Barbara"
+      },
+      {
+        "w": "Santa Barbara",
+        "d": "Coastal city with Spanish Colonial Revival architecture"
+      },
+      {
+        "w": "Bodega Bay",
+        "d": "Northern California coastal town linked to Hitchcock’s The Birds"
+      },
+      {
+        "w": "Point Reyes",
+        "d": "Windy peninsula and national seashore north of San Francisco"
+      },
+      {
+        "w": "Longboard culture",
+        "d": "Surf and skate style tied to California beaches"
+      },
+      {
+        "w": "Wildfires",
+        "d": "Recurring fire risk shaping California landscapes and policy"
+      },
+      {
+        "w": "California Aqueduct",
+        "d": "Water system moving water through the state"
+      },
+      {
+        "w": "Proposition 13",
+        "d": "1978 property-tax initiative that reshaped California finance"
+      },
+      {
+        "w": "Chavez Ravine",
+        "d": "Los Angeles area transformed by Dodger Stadium"
+      },
+      {
+        "w": "Pacific Coast Highway",
+        "d": "Scenic coastal highway along much of California"
+      },
+      {
+        "w": "Disney Concert Hall",
+        "d": "Frank Gehry building in downtown Los Angeles"
+      },
+      {
+        "w": "Santa Clara Valley",
+        "d": "Bay Area valley whose tech cluster became globally famous"
+      },
+      {
+        "w": "Central Valley",
+        "d": "Agricultural heartland between coastal ranges and Sierra Nevada"
+      },
+      {
+        "w": "Salton Sea",
+        "d": "Shrinking inland lake with environmental problems"
+      },
+      {
+        "w": "Channel Islands",
+        "d": "Island chain and national park off Southern California"
+      }
+    ]
+  },
+  {
+    "name": "California food, wine & cafe culture",
+    "tags": {
+      "a": "human",
+      "b": "culture",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "Napa Valley wine",
+        "d": "Wine culture centered on Cabernet Sauvignon and tasting rooms"
+      },
+      {
+        "w": "Sonoma wine country",
+        "d": "Wine region north of San Francisco with a relaxed reputation"
+      },
+      {
+        "w": "Cabernet Sauvignon",
+        "d": "Flagship red grape of Napa Valley"
+      },
+      {
+        "w": "Zinfandel",
+        "d": "Red grape strongly associated with California wine history"
+      },
+      {
+        "w": "Pinot Noir",
+        "d": "Cool-climate red grape grown in Sonoma and Santa Barbara"
+      },
+      {
+        "w": "Chardonnay",
+        "d": "Major California white wine often aged in oak"
+      },
+      {
+        "w": "In-N-Out Burger",
+        "d": "California burger chain with a cult following"
+      },
+      {
+        "w": "Animal Style",
+        "d": "In-N-Out secret-menu preparation with mustard, onions and sauce"
+      },
+      {
+        "w": "Cioppino",
+        "d": "San Francisco seafood stew with Italian immigrant roots"
+      },
+      {
+        "w": "Dungeness crab",
+        "d": "Pacific crab central to winter seafood in Northern California"
+      },
+      {
+        "w": "Sourdough loaf",
+        "d": "Tangy bread associated with San Francisco bakeries"
+      },
+      {
+        "w": "California roll",
+        "d": "Sushi roll popularized on the West Coast"
+      },
+      {
+        "w": "Cobb salad",
+        "d": "Los Angeles salad with chicken, avocado, bacon and blue cheese"
+      },
+      {
+        "w": "Fish taco",
+        "d": "Baja-influenced taco popular in Southern California"
+      },
+      {
+        "w": "Santa Maria tri-tip",
+        "d": "Central Coast barbecue style built around beef tri-tip"
+      },
+      {
+        "w": "Garlic fries",
+        "d": "Ballpark fries strongly associated with Bay Area food culture"
+      },
+      {
+        "w": "Date shake",
+        "d": "Palm Springs desert milkshake made with dates"
+      },
+      {
+        "w": "Meyer lemon",
+        "d": "Fragrant citrus often used in California cooking"
+      },
+      {
+        "w": "Castroville artichoke",
+        "d": "Central Coast crop celebrated in a town festival"
+      },
+      {
+        "w": "Ghirardelli Chocolate",
+        "d": "San Francisco chocolate brand and tourist landmark"
+      },
+      {
+        "w": "Tartine Bakery",
+        "d": "Mission District bakery famous for bread and pastries"
+      },
+      {
+        "w": "Chez Panisse",
+        "d": "Berkeley restaurant that defined California cuisine"
+      },
+      {
+        "w": "Blue Bottle Coffee",
+        "d": "Oakland-born coffee company tied to third-wave coffee culture"
+      },
+      {
+        "w": "Peet’s Coffee",
+        "d": "Berkeley coffee company that influenced American specialty coffee"
+      },
+      {
+        "w": "Mission burrito",
+        "d": "Large foil-wrapped burrito style from San Francisco"
+      },
+      {
+        "w": "Farm-to-table",
+        "d": "Restaurant philosophy of local sourcing and seasonal produce"
+      },
+      {
+        "w": "Kombucha",
+        "d": "Fermented tea drink embraced by California wellness culture"
+      },
+      {
+        "w": "Craft beer",
+        "d": "Small-brewery culture strong in San Diego and the Bay Area"
+      },
+      {
+        "w": "Orange wine",
+        "d": "Skin-contact white wine embraced by natural-wine bars"
+      },
+      {
+        "w": "Biodynamic wine",
+        "d": "Winegrowing approach using ecological and ritualized farming ideas"
+      },
+      {
+        "w": "Rosé season",
+        "d": "Summer pink-wine culture in California wine country"
+      },
+      {
+        "w": "Santa Maria barbecue",
+        "d": "Central Coast grilling tradition with oak smoke"
+      },
+      {
+        "w": "Green Goddess dressing",
+        "d": "Herb-heavy dressing created at San Francisco’s Palace Hotel"
+      },
+      {
+        "w": "Ranch dressing",
+        "d": "California-born buttermilk herb dressing turned national staple"
+      },
+      {
+        "w": "Almond milk latte",
+        "d": "Cafe drink tied to California wellness and coffee culture"
+      }
+    ]
+  },
+  {
+    "name": "Canada",
+    "tags": {
+      "a": "human",
+      "b": "geography",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Maple syrup",
+        "d": "Canadian food symbol made from sugar maple sap"
+      },
+      {
+        "w": "Ice hockey",
+        "d": "Winter sport deeply tied to Canadian identity"
+      },
+      {
+        "w": "Quebec City",
+        "d": "Historic French-speaking city and capital of Quebec province"
+      },
+      {
+        "w": "Niagara Falls",
+        "d": "Huge waterfall system on the Canada-U.S. border"
+      },
+      {
+        "w": "Banff",
+        "d": "Rocky Mountain town and national park in Alberta"
+      },
+      {
+        "w": "Inuit",
+        "d": "Indigenous peoples of Arctic Canada and Greenland"
+      },
+      {
+        "w": "Quebec",
+        "d": "French-speaking province with distinct culture and politics"
+      },
+      {
+        "w": "Toronto",
+        "d": "Canada’s largest city and financial center"
+      },
+      {
+        "w": "Vancouver",
+        "d": "Pacific coastal city between mountains and ocean"
+      },
+      {
+        "w": "Montreal",
+        "d": "Quebec metropolis known for bilingual culture and festivals"
+      },
+      {
+        "w": "Mountie",
+        "d": "Member of the Royal Canadian Mounted Police"
+      },
+      {
+        "w": "Kayak",
+        "d": "Arctic boat term borrowed from Inuit languages"
+      },
+      {
+        "w": "Yukon",
+        "d": "Northern territory associated with gold rush history"
+      },
+      {
+        "w": "Canadian Rockies",
+        "d": "Mountain range spanning Alberta and British Columbia"
+      },
+      {
+        "w": "Totem pole",
+        "d": "Monumental carved pole of Indigenous peoples of the Pacific Northwest"
+      },
+      {
+        "w": "Baffin Island",
+        "d": "Huge Arctic island in Nunavut"
+      },
+      {
+        "w": "Tim Hortons",
+        "d": "Coffee-and-doughnut chain treated as a Canadian icon"
+      },
+      {
+        "w": "Lacrosse",
+        "d": "Sport officially recognized as Canada’s summer national game"
+      },
+      {
+        "w": "First Nations",
+        "d": "Indigenous peoples of Canada excluding Inuit and Métis"
+      },
+      {
+        "w": "Nunavut",
+        "d": "Inuit-majority Canadian territory created in 1999"
+      },
+      {
+        "w": "Permafrost",
+        "d": "Permanently frozen ground across northern Canada"
+      },
+      {
+        "w": "Great Lakes",
+        "d": "Freshwater lake system shared by Canada and the United States"
+      },
+      {
+        "w": "Dominion of Canada",
+        "d": "Historic term for Canada’s status within the British Empire"
+      },
+      {
+        "w": "Louisbourg",
+        "d": "French fortress site in Nova Scotia"
+      },
+      {
+        "w": "Métis",
+        "d": "Indigenous people of mixed First Nations and European ancestry"
+      },
+      {
+        "w": "Justin Trudeau",
+        "d": "Canadian prime minister and son of Pierre Trudeau"
+      },
+      {
+        "w": "Group of Seven",
+        "d": "Canadian painters associated with national landscape art"
+      },
+      {
+        "w": "Alberta",
+        "d": "Prairie province known for oil, cattle and mountains"
+      },
+      {
+        "w": "NAFTA",
+        "d": "North American free-trade agreement including Canada"
+      },
+      {
+        "w": "Anne of Green Gables",
+        "d": "Prince Edward Island literary icon by Lucy Maud Montgomery"
+      },
+      {
+        "w": "Trans-Canada Highway",
+        "d": "Road network crossing the country from coast to coast"
+      },
+      {
+        "w": "Curling",
+        "d": "Ice sport with stones, brooms and strategy"
+      },
+      {
+        "w": "Hudson Bay",
+        "d": "Large inland sea central to fur-trade history"
+      },
+      {
+        "w": "RCMP",
+        "d": "Federal police force known for red serge uniforms"
+      },
+      {
+        "w": "Canadian Shield",
+        "d": "Ancient rock region covering much of eastern and central Canada"
+      }
+    ]
+  },
+  {
+    "name": "literary genres & forms",
+    "tags": {
+      "a": "human",
+      "b": "books",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Novel",
+        "d": "Long prose fiction with sustained plot and characters"
+      },
+      {
+        "w": "Novella",
+        "d": "Prose fiction shorter than a novel but longer than a short story"
+      },
+      {
+        "w": "Short story",
+        "d": "Brief prose fiction focused on a compact situation or turn"
+      },
+      {
+        "w": "Essay",
+        "d": "Prose form developing an argument, reflection or experiment"
+      },
+      {
+        "w": "Drama",
+        "d": "Literary work written for performance by actors"
+      },
+      {
+        "w": "Tragedy",
+        "d": "Drama form ending in catastrophe or irreversible loss"
+      },
+      {
+        "w": "Comedy",
+        "d": "Dramatic or narrative form built toward comic resolution"
+      },
+      {
+        "w": "Memoir",
+        "d": "First-person prose account of remembered life experience"
+      },
+      {
+        "w": "Autobiography",
+        "d": "Life story written by its own subject"
+      },
+      {
+        "w": "Diary",
+        "d": "Dated personal record of events and thoughts"
+      },
+      {
+        "w": "Chronicle",
+        "d": "Narrative record arranged by time order"
+      },
+      {
+        "w": "Fable",
+        "d": "Brief story using animals or figures to teach a lesson"
+      },
+      {
+        "w": "Parable",
+        "d": "Short narrative illustrating a moral or spiritual point"
+      },
+      {
+        "w": "Satire",
+        "d": "Work using ridicule to expose vice, folly or power"
+      },
+      {
+        "w": "Pamphlet",
+        "d": "Short polemical publication on a public issue"
+      },
+      {
+        "w": "Feuilleton",
+        "d": "Light literary or journalistic piece in a newspaper tradition"
+      },
+      {
+        "w": "Sketch",
+        "d": "Short descriptive or comic prose piece"
+      },
+      {
+        "w": "Libretto",
+        "d": "Text of an opera or musical stage work"
+      },
+      {
+        "w": "Farce",
+        "d": "Comic dramatic form based on absurd situations and speed"
+      },
+      {
+        "w": "Vaudeville",
+        "d": "Light theatrical entertainment with songs, jokes or sketches"
+      },
+      {
+        "w": "Detective fiction",
+        "d": "Genre centered on solving a crime or mystery"
+      },
+      {
+        "w": "Suspense fiction",
+        "d": "Genre built around danger, pursuit and tension"
+      },
+      {
+        "w": "Picaresque novel",
+        "d": "Episodic story of a roguish outsider moving through society"
+      },
+      {
+        "w": "Bildungsroman",
+        "d": "Coming-of-age novel of education and formation"
+      },
+      {
+        "w": "Epistolary novel",
+        "d": "Novel told through letters or documents"
+      },
+      {
+        "w": "Frame narrative",
+        "d": "Story structure containing another story inside it"
+      },
+      {
+        "w": "Roman-fleuve",
+        "d": "Long novel sequence following many characters or generations"
+      },
+      {
+        "w": "Family saga",
+        "d": "Narrative following a family across time"
+      },
+      {
+        "w": "Historical novel",
+        "d": "Fiction set in a past era with historical detail"
+      },
+      {
+        "w": "Campus novel",
+        "d": "Fiction set in academic institutions"
+      },
+      {
+        "w": "Travelogue",
+        "d": "Literary account of travel and places"
+      },
+      {
+        "w": "Pastoral prose",
+        "d": "Literary mode idealizing rural life"
+      },
+      {
+        "w": "Confession",
+        "d": "First-person form organized around admission and self-examination"
+      },
+      {
+        "w": "Manifesto",
+        "d": "Public declaration of artistic, political or literary principles"
+      },
+      {
+        "w": "Prose miniature",
+        "d": "Very short literary prose piece with concentrated effect"
+      }
+    ]
+  },
+  {
+    "name": "famous actresses",
+    "tags": {
+      "a": "human",
+      "b": "movies",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Meryl Streep",
+        "d": "American actress known for range and multiple Oscars"
+      },
+      {
+        "w": "Audrey Hepburn",
+        "d": "Actress and style icon of Roman Holiday and Breakfast at Tiffany’s"
+      },
+      {
+        "w": "Cate Blanchett",
+        "d": "Australian actress known for Elizabeth, Carol and Tár"
+      },
+      {
+        "w": "Vivien Leigh",
+        "d": "British actress who played Scarlett O’Hara and Blanche DuBois"
+      },
+      {
+        "w": "Marlene Dietrich",
+        "d": "German-American star of The Blue Angel and Hollywood glamour"
+      },
+      {
+        "w": "Sophia Loren",
+        "d": "Italian actress and international film icon"
+      },
+      {
+        "w": "Isabelle Huppert",
+        "d": "French actress known for daring psychological roles"
+      },
+      {
+        "w": "Judi Dench",
+        "d": "British stage and screen actress also known as M in Bond films"
+      },
+      {
+        "w": "Nicole Kidman",
+        "d": "Australian-American actress of Moulin Rouge! and The Hours"
+      },
+      {
+        "w": "Kate Winslet",
+        "d": "British actress of Titanic, Sense and Sensibility and more"
+      },
+      {
+        "w": "Fanny Ardant",
+        "d": "French actress associated with Truffaut and European cinema"
+      },
+      {
+        "w": "Monica Bellucci",
+        "d": "Italian actress and model with international film roles"
+      },
+      {
+        "w": "Greta Garbo",
+        "d": "Swedish Hollywood star famous for mystery and restraint"
+      },
+      {
+        "w": "Ingrid Bergman",
+        "d": "Swedish actress of Casablanca and Notorious"
+      },
+      {
+        "w": "Bette Davis",
+        "d": "Hollywood star known for fierce roles and sharp delivery"
+      },
+      {
+        "w": "Elizabeth Taylor",
+        "d": "Hollywood icon of Cleopatra and Who’s Afraid of Virginia Woolf?"
+      },
+      {
+        "w": "Tilda Swinton",
+        "d": "British actress known for androgynous style and art cinema"
+      },
+      {
+        "w": "Jeanne Moreau",
+        "d": "French New Wave actress of Jules and Jim"
+      },
+      {
+        "w": "Faye Dunaway",
+        "d": "American actress of Bonnie and Clyde and Network"
+      },
+      {
+        "w": "Gina Lollobrigida",
+        "d": "Italian star of postwar European cinema"
+      },
+      {
+        "w": "Catherine Deneuve",
+        "d": "French actress of Belle de Jour and The Umbrellas of Cherbourg"
+      },
+      {
+        "w": "Angelina Jolie",
+        "d": "American actress and director known for action and drama roles"
+      },
+      {
+        "w": "Natalie Portman",
+        "d": "Actress of Black Swan, Jackie and Star Wars prequels"
+      },
+      {
+        "w": "Halle Berry",
+        "d": "Oscar-winning actress of Monster’s Ball and action roles"
+      },
+      {
+        "w": "Charlize Theron",
+        "d": "South African-American actress of Monster and Mad Max: Fury Road"
+      },
+      {
+        "w": "Penélope Cruz",
+        "d": "Spanish actress associated with Almodóvar and international cinema"
+      },
+      {
+        "w": "Salma Hayek",
+        "d": "Mexican-American actress of Frida and many Hollywood roles"
+      },
+      {
+        "w": "Emma Thompson",
+        "d": "British actress and screenwriter known for wit and period drama"
+      },
+      {
+        "w": "Helen Mirren",
+        "d": "British actress known for The Queen and stage work"
+      },
+      {
+        "w": "Audrey Tautou",
+        "d": "French actress of Amélie"
+      },
+      {
+        "w": "Rita Moreno",
+        "d": "Puerto Rican EGOT winner of West Side Story"
+      },
+      {
+        "w": "Sigourney Weaver",
+        "d": "American actress of Alien and science-fiction cinema"
+      },
+      {
+        "w": "Marilyn Monroe",
+        "d": "Hollywood star and enduring pop-cultural icon"
+      },
+      {
+        "w": "Brigitte Bardot",
+        "d": "French actress and sex symbol of 1950s cinema"
+      },
+      {
+        "w": "Shirley MacLaine",
+        "d": "American actress of The Apartment and Terms of Endearment"
+      }
+    ]
+  },
+  {
+    "name": "desserts & pastries",
+    "tags": {
+      "a": "human",
+      "b": "food",
+      "difficulty": "easy"
+    },
+    "words": [
+      {
+        "w": "Macaron",
+        "d": "French almond meringue sandwich cookie with filling"
+      },
+      {
+        "w": "Tiramisu",
+        "d": "Italian coffee-soaked dessert with mascarpone"
+      },
+      {
+        "w": "Chocolate fondant",
+        "d": "Warm cake with a molten chocolate center"
+      },
+      {
+        "w": "Meringue",
+        "d": "Sweet foam of whipped egg whites and sugar"
+      },
+      {
+        "w": "Soufflé",
+        "d": "Light baked dish that rises dramatically in the oven"
+      },
+      {
+        "w": "Crème brûlée",
+        "d": "Custard dessert with a crisp caramelized sugar top"
+      },
+      {
+        "w": "Profiterole",
+        "d": "Small choux pastry filled with cream or ice cream"
+      },
+      {
+        "w": "Éclair",
+        "d": "Long choux pastry filled with cream and glazed"
+      },
+      {
+        "w": "Apple strudel",
+        "d": "Layered pastry associated with Austria and Central Europe"
+      },
+      {
+        "w": "Cheesecake",
+        "d": "Cream-cheese dessert with a crumb crust"
+      },
+      {
+        "w": "Panna cotta",
+        "d": "Italian set cream dessert"
+      },
+      {
+        "w": "Cannoli",
+        "d": "Sicilian pastry tubes filled with sweet ricotta"
+      },
+      {
+        "w": "Brioche",
+        "d": "Rich buttery French bread used in sweet baking"
+      },
+      {
+        "w": "Mille-feuille",
+        "d": "Layered puff-pastry dessert with cream"
+      },
+      {
+        "w": "Baklava",
+        "d": "Layered pastry with nuts and syrup"
+      },
+      {
+        "w": "Mochi",
+        "d": "Japanese rice cake with chewy texture"
+      },
+      {
+        "w": "Brownie",
+        "d": "Dense chocolate bar dessert"
+      },
+      {
+        "w": "Cupcake",
+        "d": "Small individual cake with frosting"
+      },
+      {
+        "w": "Galette",
+        "d": "Rustic flat pastry or cake"
+      },
+      {
+        "w": "Clafoutis",
+        "d": "French baked fruit custard dessert"
+      },
+      {
+        "w": "Sachertorte",
+        "d": "Viennese chocolate cake with apricot jam"
+      },
+      {
+        "w": "Opera cake",
+        "d": "Layered French cake with coffee and chocolate"
+      },
+      {
+        "w": "Medovik",
+        "d": "Russian honey layer cake"
+      },
+      {
+        "w": "Bird’s milk cake",
+        "d": "Eastern European soufflé-like cake and candy style"
+      },
+      {
+        "w": "Turkish delight",
+        "d": "Gelatinous sweet flavored with rose, citrus or nuts"
+      },
+      {
+        "w": "Halva",
+        "d": "Dense sweet made from sesame, sunflower seed or semolina"
+      },
+      {
+        "w": "Canelé",
+        "d": "Small Bordeaux pastry with caramelized crust and custardy center"
+      },
+      {
+        "w": "Madeleine",
+        "d": "Small shell-shaped French sponge cake"
+      },
+      {
+        "w": "Tarte Tatin",
+        "d": "Upside-down caramelized apple tart"
+      },
+      {
+        "w": "Dacquoise",
+        "d": "Layered dessert using nut meringue"
+      },
+      {
+        "w": "Financier",
+        "d": "Small almond cake shaped like a gold bar"
+      },
+      {
+        "w": "Pastel de nata",
+        "d": "Portuguese custard tart"
+      },
+      {
+        "w": "Pavlova",
+        "d": "Meringue dessert with cream and fruit"
+      },
+      {
+        "w": "Basbousa",
+        "d": "Semolina syrup cake popular in the Middle East"
+      },
+      {
+        "w": "Gulab jamun",
+        "d": "Indian milk-solid dumplings soaked in syrup"
+      }
+    ]
+  },
+  {
+    "name": "international organizations & alliances",
+    "tags": {
+      "a": "human",
+      "b": "history",
+      "difficulty": "medium"
+    },
+    "words": [
+      {
+        "w": "United Nations",
+        "d": "Global organization founded in 1945 after World War II"
+      },
+      {
+        "w": "NATO",
+        "d": "North Atlantic military alliance created in 1949"
+      },
+      {
+        "w": "European Union",
+        "d": "Political and economic union of European states"
+      },
+      {
+        "w": "African Union",
+        "d": "Continental organization of African countries"
+      },
+      {
+        "w": "ASEAN",
+        "d": "Association of Southeast Asian Nations"
+      },
+      {
+        "w": "OPEC",
+        "d": "Oil-producing countries organization coordinating petroleum policy"
+      },
+      {
+        "w": "G7",
+        "d": "Forum of major advanced economies"
+      },
+      {
+        "w": "G20",
+        "d": "Forum of major economies including developed and emerging powers"
+      },
+      {
+        "w": "World Trade Organization",
+        "d": "Organization governing global trade rules"
+      },
+      {
+        "w": "World Health Organization",
+        "d": "UN agency coordinating international public health"
+      },
+      {
+        "w": "Interpol",
+        "d": "International criminal-police cooperation organization"
+      },
+      {
+        "w": "OSCE",
+        "d": "Security organization rooted in the Helsinki process"
+      },
+      {
+        "w": "Council of Europe",
+        "d": "Human-rights organization separate from the European Union"
+      },
+      {
+        "w": "Commonwealth of Nations",
+        "d": "Association of states, many formerly in the British Empire"
+      },
+      {
+        "w": "Arab League",
+        "d": "Regional organization of Arab states"
+      },
+      {
+        "w": "Organization of American States",
+        "d": "Regional organization of states in the Americas"
+      },
+      {
+        "w": "Mercosur",
+        "d": "South American trade bloc centered on Brazil, Argentina, Paraguay and Uruguay"
+      },
+      {
+        "w": "BRICS",
+        "d": "Grouping of major emerging economies originally Brazil, Russia, India, China and South Africa"
+      },
+      {
+        "w": "Shanghai Cooperation Organisation",
+        "d": "Eurasian security and political organization led by China and Russia"
+      },
+      {
+        "w": "World Bank",
+        "d": "International development lender based in Washington"
+      },
+      {
+        "w": "International Monetary Fund",
+        "d": "Institution lending to states and monitoring financial stability"
+      },
+      {
+        "w": "International Labour Organization",
+        "d": "UN agency focused on labor standards"
+      },
+      {
+        "w": "UNESCO",
+        "d": "UN agency for education, science and culture"
+      },
+      {
+        "w": "UNICEF",
+        "d": "UN agency focused on children and humanitarian support"
+      },
+      {
+        "w": "UNHCR",
+        "d": "UN refugee agency"
+      },
+      {
+        "w": "IAEA",
+        "d": "International Atomic Energy Agency monitoring nuclear activity"
+      },
+      {
+        "w": "WIPO",
+        "d": "UN agency for intellectual property"
+      },
+      {
+        "w": "WMO",
+        "d": "UN agency for weather, climate and water"
+      },
+      {
+        "w": "OECD",
+        "d": "Organization of mostly high-income democracies focused on policy analysis"
+      },
+      {
+        "w": "Eurasian Economic Union",
+        "d": "Post-Soviet economic bloc led by Russia"
+      },
+      {
+        "w": "Pacific Islands Forum",
+        "d": "Regional organization of Pacific island states"
+      },
+      {
+        "w": "Nordic Council",
+        "d": "Cooperation body for Nordic countries"
+      },
+      {
+        "w": "Benelux Union",
+        "d": "Cooperation union of Belgium, Netherlands and Luxembourg"
+      },
+      {
+        "w": "SADC",
+        "d": "Southern African Development Community"
+      },
+      {
+        "w": "ECOWAS",
+        "d": "Economic Community of West African States"
       }
     ]
   }
